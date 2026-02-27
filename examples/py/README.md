@@ -28,10 +28,10 @@ Demonstrate channel movement on a STAR:
 python move_channels.py --url http://localhost:8080
 ```
 
-### Deck Query
+### Resource Query
 
-Query a deck server and print the resource tree:
+Query a resource server and print the resource tree:
 
 ```bash
-python deck_query.py --url http://localhost:8080
+python resource_query.py --url http://localhost:8080
 ```

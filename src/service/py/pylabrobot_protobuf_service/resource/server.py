@@ -1,4 +1,4 @@
-"""DeckService server implementation — wraps a real Deck object."""
+"""ResourceService server implementation — wraps a real Deck object."""
 
 from __future__ import annotations
 
@@ -13,8 +13,8 @@ from pylabrobot.resources.tip_rack import TipRack, TipSpot
 from pylabrobot.resources.trash import Trash
 from pylabrobot.resources.well import Well
 
-from ._generated import deck_service_pb2 as pb2
-from ._generated.deck_service_connect import DeckService, DeckServiceASGIApplication
+from ._generated import resource_service_pb2 as pb2
+from ._generated.resource_service_connect import ResourceService, ResourceServiceASGIApplication
 
 if TYPE_CHECKING:
   from connectrpc.request import RequestContext
@@ -137,7 +137,7 @@ def _resource_to_tree(resource: Resource) -> pb2.ResourceTree:
 # ============================================================
 
 
-class DeckServiceImpl(DeckService):
+class ResourceServiceImpl(ResourceService):
   """ConnectRPC service that wraps a real Deck object."""
 
   def __init__(self, deck: Deck):
@@ -379,17 +379,17 @@ class DeckServiceImpl(DeckService):
 # ============================================================
 
 
-def create_app(deck: Deck) -> DeckServiceASGIApplication:
+def create_app(deck: Deck) -> ResourceServiceASGIApplication:
   """Create an ASGI application for the given deck.
 
   Usage::
 
       import uvicorn
       from pylabrobot.resources import Deck
-      from pylabrobot_protobuf_service.deck import create_app
+      from pylabrobot_protobuf_service.resource import create_app
 
       deck = Deck.load_from_json_file("hamilton-layout.json")
       app = create_app(deck)
       uvicorn.run(app, host="0.0.0.0", port=8080)
   """
-  return DeckServiceASGIApplication(DeckServiceImpl(deck))
+  return ResourceServiceASGIApplication(ResourceServiceImpl(deck))

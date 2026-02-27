@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: deck/v1/deck_service.proto
+// source: resource/v1/resource_service.proto
 
-package deckv1
+package resourcev1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -29,7 +29,7 @@ type Empty struct {
 
 func (x *Empty) Reset() {
 	*x = Empty{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[0]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -41,7 +41,7 @@ func (x *Empty) String() string {
 func (*Empty) ProtoMessage() {}
 
 func (x *Empty) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[0]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -54,7 +54,7 @@ func (x *Empty) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Empty.ProtoReflect.Descriptor instead.
 func (*Empty) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{0}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{0}
 }
 
 type Coordinate struct {
@@ -68,7 +68,7 @@ type Coordinate struct {
 
 func (x *Coordinate) Reset() {
 	*x = Coordinate{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[1]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -80,7 +80,7 @@ func (x *Coordinate) String() string {
 func (*Coordinate) ProtoMessage() {}
 
 func (x *Coordinate) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[1]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -93,7 +93,7 @@ func (x *Coordinate) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Coordinate.ProtoReflect.Descriptor instead.
 func (*Coordinate) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{1}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Coordinate) GetX() float64 {
@@ -128,7 +128,7 @@ type Rotation struct {
 
 func (x *Rotation) Reset() {
 	*x = Rotation{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[2]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -140,7 +140,7 @@ func (x *Rotation) String() string {
 func (*Rotation) ProtoMessage() {}
 
 func (x *Rotation) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[2]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -153,7 +153,7 @@ func (x *Rotation) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Rotation.ProtoReflect.Descriptor instead.
 func (*Rotation) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{2}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *Rotation) GetX() float64 {
@@ -188,7 +188,7 @@ type Size struct {
 
 func (x *Size) Reset() {
 	*x = Size{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[3]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -200,7 +200,7 @@ func (x *Size) String() string {
 func (*Size) ProtoMessage() {}
 
 func (x *Size) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[3]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -213,7 +213,7 @@ func (x *Size) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Size.ProtoReflect.Descriptor instead.
 func (*Size) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{3}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *Size) GetX() float64 {
@@ -253,7 +253,7 @@ type TipData struct {
 
 func (x *TipData) Reset() {
 	*x = TipData{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[4]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -265,7 +265,7 @@ func (x *TipData) String() string {
 func (*TipData) ProtoMessage() {}
 
 func (x *TipData) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[4]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -278,7 +278,7 @@ func (x *TipData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TipData.ProtoReflect.Descriptor instead.
 func (*TipData) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{4}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *TipData) GetType() string {
@@ -364,7 +364,7 @@ type ResourceData struct {
 
 func (x *ResourceData) Reset() {
 	*x = ResourceData{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[5]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -376,7 +376,7 @@ func (x *ResourceData) String() string {
 func (*ResourceData) ProtoMessage() {}
 
 func (x *ResourceData) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[5]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -389,7 +389,7 @@ func (x *ResourceData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResourceData.ProtoReflect.Descriptor instead.
 func (*ResourceData) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{5}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *ResourceData) GetName() string {
@@ -535,7 +535,7 @@ type ResourceTree struct {
 
 func (x *ResourceTree) Reset() {
 	*x = ResourceTree{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[6]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -547,7 +547,7 @@ func (x *ResourceTree) String() string {
 func (*ResourceTree) ProtoMessage() {}
 
 func (x *ResourceTree) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[6]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -560,7 +560,7 @@ func (x *ResourceTree) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResourceTree.ProtoReflect.Descriptor instead.
 func (*ResourceTree) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{6}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *ResourceTree) GetData() *ResourceData {
@@ -589,7 +589,7 @@ type VolumeTrackerState struct {
 
 func (x *VolumeTrackerState) Reset() {
 	*x = VolumeTrackerState{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[7]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -601,7 +601,7 @@ func (x *VolumeTrackerState) String() string {
 func (*VolumeTrackerState) ProtoMessage() {}
 
 func (x *VolumeTrackerState) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[7]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -614,7 +614,7 @@ func (x *VolumeTrackerState) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VolumeTrackerState.ProtoReflect.Descriptor instead.
 func (*VolumeTrackerState) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{7}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *VolumeTrackerState) GetVolume() float64 {
@@ -656,7 +656,7 @@ type TipTrackerState struct {
 
 func (x *TipTrackerState) Reset() {
 	*x = TipTrackerState{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[8]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -668,7 +668,7 @@ func (x *TipTrackerState) String() string {
 func (*TipTrackerState) ProtoMessage() {}
 
 func (x *TipTrackerState) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[8]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -681,7 +681,7 @@ func (x *TipTrackerState) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TipTrackerState.ProtoReflect.Descriptor instead.
 func (*TipTrackerState) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{8}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *TipTrackerState) GetHasTip() bool {
@@ -714,7 +714,7 @@ type GetTreeRequest struct {
 
 func (x *GetTreeRequest) Reset() {
 	*x = GetTreeRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[9]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -726,7 +726,7 @@ func (x *GetTreeRequest) String() string {
 func (*GetTreeRequest) ProtoMessage() {}
 
 func (x *GetTreeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[9]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -739,7 +739,7 @@ func (x *GetTreeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTreeRequest.ProtoReflect.Descriptor instead.
 func (*GetTreeRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{9}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *GetTreeRequest) GetRootName() string {
@@ -758,7 +758,7 @@ type ResourceByNameRequest struct {
 
 func (x *ResourceByNameRequest) Reset() {
 	*x = ResourceByNameRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[10]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -770,7 +770,7 @@ func (x *ResourceByNameRequest) String() string {
 func (*ResourceByNameRequest) ProtoMessage() {}
 
 func (x *ResourceByNameRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[10]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -783,7 +783,7 @@ func (x *ResourceByNameRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResourceByNameRequest.ProtoReflect.Descriptor instead.
 func (*ResourceByNameRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{10}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *ResourceByNameRequest) GetName() string {
@@ -806,7 +806,7 @@ type GetLocationWrtRequest struct {
 
 func (x *GetLocationWrtRequest) Reset() {
 	*x = GetLocationWrtRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[11]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -818,7 +818,7 @@ func (x *GetLocationWrtRequest) String() string {
 func (*GetLocationWrtRequest) ProtoMessage() {}
 
 func (x *GetLocationWrtRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[11]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -831,7 +831,7 @@ func (x *GetLocationWrtRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetLocationWrtRequest.ProtoReflect.Descriptor instead.
 func (*GetLocationWrtRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{11}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *GetLocationWrtRequest) GetResourceName() string {
@@ -881,7 +881,7 @@ type GetAbsoluteLocationRequest struct {
 
 func (x *GetAbsoluteLocationRequest) Reset() {
 	*x = GetAbsoluteLocationRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[12]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -893,7 +893,7 @@ func (x *GetAbsoluteLocationRequest) String() string {
 func (*GetAbsoluteLocationRequest) ProtoMessage() {}
 
 func (x *GetAbsoluteLocationRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[12]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -906,7 +906,7 @@ func (x *GetAbsoluteLocationRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetAbsoluteLocationRequest.ProtoReflect.Descriptor instead.
 func (*GetAbsoluteLocationRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{12}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *GetAbsoluteLocationRequest) GetResourceName() string {
@@ -946,7 +946,7 @@ type GetAbsoluteRotationRequest struct {
 
 func (x *GetAbsoluteRotationRequest) Reset() {
 	*x = GetAbsoluteRotationRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[13]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -958,7 +958,7 @@ func (x *GetAbsoluteRotationRequest) String() string {
 func (*GetAbsoluteRotationRequest) ProtoMessage() {}
 
 func (x *GetAbsoluteRotationRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[13]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -971,7 +971,7 @@ func (x *GetAbsoluteRotationRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetAbsoluteRotationRequest.ProtoReflect.Descriptor instead.
 func (*GetAbsoluteRotationRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{13}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *GetAbsoluteRotationRequest) GetResourceName() string {
@@ -990,7 +990,7 @@ type GetAbsoluteSizeRequest struct {
 
 func (x *GetAbsoluteSizeRequest) Reset() {
 	*x = GetAbsoluteSizeRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[14]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1002,7 +1002,7 @@ func (x *GetAbsoluteSizeRequest) String() string {
 func (*GetAbsoluteSizeRequest) ProtoMessage() {}
 
 func (x *GetAbsoluteSizeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[14]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1015,7 +1015,7 @@ func (x *GetAbsoluteSizeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetAbsoluteSizeRequest.ProtoReflect.Descriptor instead.
 func (*GetAbsoluteSizeRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{14}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *GetAbsoluteSizeRequest) GetResourceName() string {
@@ -1034,7 +1034,7 @@ type GetHighestPointRequest struct {
 
 func (x *GetHighestPointRequest) Reset() {
 	*x = GetHighestPointRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[15]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1046,7 +1046,7 @@ func (x *GetHighestPointRequest) String() string {
 func (*GetHighestPointRequest) ProtoMessage() {}
 
 func (x *GetHighestPointRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[15]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1059,7 +1059,7 @@ func (x *GetHighestPointRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetHighestPointRequest.ProtoReflect.Descriptor instead.
 func (*GetHighestPointRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{15}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *GetHighestPointRequest) GetResourceName() string {
@@ -1082,7 +1082,7 @@ type LocationWrtItem struct {
 
 func (x *LocationWrtItem) Reset() {
 	*x = LocationWrtItem{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[16]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1094,7 +1094,7 @@ func (x *LocationWrtItem) String() string {
 func (*LocationWrtItem) ProtoMessage() {}
 
 func (x *LocationWrtItem) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[16]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1107,7 +1107,7 @@ func (x *LocationWrtItem) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LocationWrtItem.ProtoReflect.Descriptor instead.
 func (*LocationWrtItem) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{16}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *LocationWrtItem) GetResourceName() string {
@@ -1154,7 +1154,7 @@ type BatchGetLocationWrtRequest struct {
 
 func (x *BatchGetLocationWrtRequest) Reset() {
 	*x = BatchGetLocationWrtRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[17]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1166,7 +1166,7 @@ func (x *BatchGetLocationWrtRequest) String() string {
 func (*BatchGetLocationWrtRequest) ProtoMessage() {}
 
 func (x *BatchGetLocationWrtRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[17]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1179,7 +1179,7 @@ func (x *BatchGetLocationWrtRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BatchGetLocationWrtRequest.ProtoReflect.Descriptor instead.
 func (*BatchGetLocationWrtRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{17}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *BatchGetLocationWrtRequest) GetItems() []*LocationWrtItem {
@@ -1198,7 +1198,7 @@ type BatchCoordinateResponse struct {
 
 func (x *BatchCoordinateResponse) Reset() {
 	*x = BatchCoordinateResponse{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[18]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1210,7 +1210,7 @@ func (x *BatchCoordinateResponse) String() string {
 func (*BatchCoordinateResponse) ProtoMessage() {}
 
 func (x *BatchCoordinateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[18]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1223,7 +1223,7 @@ func (x *BatchCoordinateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BatchCoordinateResponse.ProtoReflect.Descriptor instead.
 func (*BatchCoordinateResponse) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{18}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *BatchCoordinateResponse) GetCoordinates() []*Coordinate {
@@ -1243,7 +1243,7 @@ type ComputeVolumeHeightRequest struct {
 
 func (x *ComputeVolumeHeightRequest) Reset() {
 	*x = ComputeVolumeHeightRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[19]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1255,7 +1255,7 @@ func (x *ComputeVolumeHeightRequest) String() string {
 func (*ComputeVolumeHeightRequest) ProtoMessage() {}
 
 func (x *ComputeVolumeHeightRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[19]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1268,7 +1268,7 @@ func (x *ComputeVolumeHeightRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ComputeVolumeHeightRequest.ProtoReflect.Descriptor instead.
 func (*ComputeVolumeHeightRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{19}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *ComputeVolumeHeightRequest) GetResourceName() string {
@@ -1294,7 +1294,7 @@ type FloatResponse struct {
 
 func (x *FloatResponse) Reset() {
 	*x = FloatResponse{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[20]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1306,7 +1306,7 @@ func (x *FloatResponse) String() string {
 func (*FloatResponse) ProtoMessage() {}
 
 func (x *FloatResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[20]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1319,7 +1319,7 @@ func (x *FloatResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FloatResponse.ProtoReflect.Descriptor instead.
 func (*FloatResponse) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{20}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *FloatResponse) GetValue() float64 {
@@ -1338,7 +1338,7 @@ type BoolResponse struct {
 
 func (x *BoolResponse) Reset() {
 	*x = BoolResponse{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[21]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[21]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1350,7 +1350,7 @@ func (x *BoolResponse) String() string {
 func (*BoolResponse) ProtoMessage() {}
 
 func (x *BoolResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[21]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[21]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1363,7 +1363,7 @@ func (x *BoolResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BoolResponse.ProtoReflect.Descriptor instead.
 func (*BoolResponse) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{21}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *BoolResponse) GetValue() bool {
@@ -1382,7 +1382,7 @@ type GetTipRequest struct {
 
 func (x *GetTipRequest) Reset() {
 	*x = GetTipRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[22]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[22]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1394,7 +1394,7 @@ func (x *GetTipRequest) String() string {
 func (*GetTipRequest) ProtoMessage() {}
 
 func (x *GetTipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[22]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[22]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1407,7 +1407,7 @@ func (x *GetTipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTipRequest.ProtoReflect.Descriptor instead.
 func (*GetTipRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{22}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *GetTipRequest) GetTipSpotName() string {
@@ -1427,7 +1427,7 @@ type TrackerOpRequest struct {
 
 func (x *TrackerOpRequest) Reset() {
 	*x = TrackerOpRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[23]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[23]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1439,7 +1439,7 @@ func (x *TrackerOpRequest) String() string {
 func (*TrackerOpRequest) ProtoMessage() {}
 
 func (x *TrackerOpRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[23]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[23]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1452,7 +1452,7 @@ func (x *TrackerOpRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TrackerOpRequest.ProtoReflect.Descriptor instead.
 func (*TrackerOpRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{23}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *TrackerOpRequest) GetResourceName() string {
@@ -1478,7 +1478,7 @@ type BatchTrackerOpRequest struct {
 
 func (x *BatchTrackerOpRequest) Reset() {
 	*x = BatchTrackerOpRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[24]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[24]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1490,7 +1490,7 @@ func (x *BatchTrackerOpRequest) String() string {
 func (*BatchTrackerOpRequest) ProtoMessage() {}
 
 func (x *BatchTrackerOpRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[24]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[24]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1503,7 +1503,7 @@ func (x *BatchTrackerOpRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BatchTrackerOpRequest.ProtoReflect.Descriptor instead.
 func (*BatchTrackerOpRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{24}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *BatchTrackerOpRequest) GetOps() []*TrackerOpRequest {
@@ -1522,7 +1522,7 @@ type TipTrackerOpRequest struct {
 
 func (x *TipTrackerOpRequest) Reset() {
 	*x = TipTrackerOpRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[25]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[25]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1534,7 +1534,7 @@ func (x *TipTrackerOpRequest) String() string {
 func (*TipTrackerOpRequest) ProtoMessage() {}
 
 func (x *TipTrackerOpRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[25]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[25]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1547,7 +1547,7 @@ func (x *TipTrackerOpRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TipTrackerOpRequest.ProtoReflect.Descriptor instead.
 func (*TipTrackerOpRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{25}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *TipTrackerOpRequest) GetTipSpotName() string {
@@ -1566,7 +1566,7 @@ type CommitRollbackRequest struct {
 
 func (x *CommitRollbackRequest) Reset() {
 	*x = CommitRollbackRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[26]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[26]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1578,7 +1578,7 @@ func (x *CommitRollbackRequest) String() string {
 func (*CommitRollbackRequest) ProtoMessage() {}
 
 func (x *CommitRollbackRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[26]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[26]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1591,7 +1591,7 @@ func (x *CommitRollbackRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CommitRollbackRequest.ProtoReflect.Descriptor instead.
 func (*CommitRollbackRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{26}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *CommitRollbackRequest) GetResourceNames() []string {
@@ -1612,7 +1612,7 @@ type AssignChildRequest struct {
 
 func (x *AssignChildRequest) Reset() {
 	*x = AssignChildRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[27]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[27]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1624,7 +1624,7 @@ func (x *AssignChildRequest) String() string {
 func (*AssignChildRequest) ProtoMessage() {}
 
 func (x *AssignChildRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[27]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[27]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1637,7 +1637,7 @@ func (x *AssignChildRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AssignChildRequest.ProtoReflect.Descriptor instead.
 func (*AssignChildRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{27}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *AssignChildRequest) GetChildName() string {
@@ -1670,7 +1670,7 @@ type UnassignChildRequest struct {
 
 func (x *UnassignChildRequest) Reset() {
 	*x = UnassignChildRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[28]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[28]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1682,7 +1682,7 @@ func (x *UnassignChildRequest) String() string {
 func (*UnassignChildRequest) ProtoMessage() {}
 
 func (x *UnassignChildRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[28]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[28]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1695,7 +1695,7 @@ func (x *UnassignChildRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnassignChildRequest.ProtoReflect.Descriptor instead.
 func (*UnassignChildRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{28}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *UnassignChildRequest) GetResourceName() string {
@@ -1714,7 +1714,7 @@ type HasLidRequest struct {
 
 func (x *HasLidRequest) Reset() {
 	*x = HasLidRequest{}
-	mi := &file_deck_v1_deck_service_proto_msgTypes[29]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[29]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1726,7 +1726,7 @@ func (x *HasLidRequest) String() string {
 func (*HasLidRequest) ProtoMessage() {}
 
 func (x *HasLidRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_deck_v1_deck_service_proto_msgTypes[29]
+	mi := &file_resource_v1_resource_service_proto_msgTypes[29]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1739,7 +1739,7 @@ func (x *HasLidRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HasLidRequest.ProtoReflect.Descriptor instead.
 func (*HasLidRequest) Descriptor() ([]byte, []int) {
-	return file_deck_v1_deck_service_proto_rawDescGZIP(), []int{29}
+	return file_resource_v1_resource_service_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *HasLidRequest) GetPlateName() string {
@@ -1749,11 +1749,11 @@ func (x *HasLidRequest) GetPlateName() string {
 	return ""
 }
 
-var File_deck_v1_deck_service_proto protoreflect.FileDescriptor
+var File_resource_v1_resource_service_proto protoreflect.FileDescriptor
 
-const file_deck_v1_deck_service_proto_rawDesc = "" +
+const file_resource_v1_resource_service_proto_rawDesc = "" +
 	"\n" +
-	"\x1adeck/v1/deck_service.proto\x12\x12pylabrobot.deck.v1\"\a\n" +
+	"\"resource/v1/resource_service.proto\x12\x16pylabrobot.resource.v1\"\a\n" +
 	"\x05Empty\"6\n" +
 	"\n" +
 	"Coordinate\x12\f\n" +
@@ -1777,7 +1777,7 @@ const file_deck_v1_deck_service_proto_rawDesc = "" +
 	"\x0emaximal_volume\x18\x05 \x01(\x01R\rmaximalVolume\x12#\n" +
 	"\rfitting_depth\x18\x06 \x01(\x01R\ffittingDepth\x12\x19\n" +
 	"\btip_size\x18\a \x01(\tR\atipSize\x12#\n" +
-	"\rpickup_method\x18\b \x01(\tR\fpickupMethod\"\xe6\x06\n" +
+	"\rpickup_method\x18\b \x01(\tR\fpickupMethod\"\xf6\x06\n" +
 	"\fResourceData\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x12\n" +
 	"\x04type\x18\x02 \x01(\tR\x04type\x12\x15\n" +
@@ -1785,9 +1785,9 @@ const file_deck_v1_deck_service_proto_rawDesc = "" +
 	"\x06size_y\x18\x04 \x01(\x01R\x05sizeY\x12\x15\n" +
 	"\x06size_z\x18\x05 \x01(\x01R\x05sizeZ\x12\x1a\n" +
 	"\bcategory\x18\x06 \x01(\tR\bcategory\x12\x14\n" +
-	"\x05model\x18\a \x01(\tR\x05model\x12:\n" +
-	"\blocation\x18\b \x01(\v2\x1e.pylabrobot.deck.v1.CoordinateR\blocation\x128\n" +
-	"\brotation\x18\t \x01(\v2\x1c.pylabrobot.deck.v1.RotationR\brotation\x12\x1f\n" +
+	"\x05model\x18\a \x01(\tR\x05model\x12>\n" +
+	"\blocation\x18\b \x01(\v2\".pylabrobot.resource.v1.CoordinateR\blocation\x12<\n" +
+	"\brotation\x18\t \x01(\v2 .pylabrobot.resource.v1.RotationR\brotation\x12\x1f\n" +
 	"\vparent_name\x18\n" +
 	" \x01(\tR\n" +
 	"parentName\x125\n" +
@@ -1798,29 +1798,29 @@ const file_deck_v1_deck_service_proto_rawDesc = "" +
 	"\x12cross_section_type\x18\x0e \x01(\tR\x10crossSectionType\x12\x1d\n" +
 	"\n" +
 	"plate_type\x18\x0f \x01(\tR\tplateType\x12\x17\n" +
-	"\ahas_lid\x18\x10 \x01(\bR\x06hasLid\x12@\n" +
-	"\rprototype_tip\x18\x11 \x01(\v2\x1b.pylabrobot.deck.v1.TipDataR\fprototypeTip\x12J\n" +
-	"\bordering\x18\x12 \x03(\v2..pylabrobot.deck.v1.ResourceData.OrderingEntryR\bordering\x12-\n" +
+	"\ahas_lid\x18\x10 \x01(\bR\x06hasLid\x12D\n" +
+	"\rprototype_tip\x18\x11 \x01(\v2\x1f.pylabrobot.resource.v1.TipDataR\fprototypeTip\x12N\n" +
+	"\bordering\x18\x12 \x03(\v22.pylabrobot.resource.v1.ResourceData.OrderingEntryR\bordering\x12-\n" +
 	"\x10nesting_z_height\x18\x13 \x01(\x01H\x02R\x0enestingZHeight\x88\x01\x01\x1a;\n" +
 	"\rOrderingEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
 	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01B\x17\n" +
 	"\x15_material_z_thicknessB\r\n" +
 	"\v_max_volumeB\x13\n" +
-	"\x11_nesting_z_height\"\x82\x01\n" +
-	"\fResourceTree\x124\n" +
-	"\x04data\x18\x01 \x01(\v2 .pylabrobot.deck.v1.ResourceDataR\x04data\x12<\n" +
-	"\bchildren\x18\x02 \x03(\v2 .pylabrobot.deck.v1.ResourceTreeR\bchildren\"\x93\x01\n" +
+	"\x11_nesting_z_height\"\x8a\x01\n" +
+	"\fResourceTree\x128\n" +
+	"\x04data\x18\x01 \x01(\v2$.pylabrobot.resource.v1.ResourceDataR\x04data\x12@\n" +
+	"\bchildren\x18\x02 \x03(\v2$.pylabrobot.resource.v1.ResourceTreeR\bchildren\"\x93\x01\n" +
 	"\x12VolumeTrackerState\x12\x16\n" +
 	"\x06volume\x18\x01 \x01(\x01R\x06volume\x12%\n" +
 	"\x0epending_volume\x18\x02 \x01(\x01R\rpendingVolume\x12\x1d\n" +
 	"\n" +
 	"max_volume\x18\x03 \x01(\x01R\tmaxVolume\x12\x1f\n" +
 	"\vis_disabled\x18\x04 \x01(\bR\n" +
-	"isDisabled\"z\n" +
+	"isDisabled\"~\n" +
 	"\x0fTipTrackerState\x12\x17\n" +
-	"\ahas_tip\x18\x01 \x01(\bR\x06hasTip\x12-\n" +
-	"\x03tip\x18\x02 \x01(\v2\x1b.pylabrobot.deck.v1.TipDataR\x03tip\x12\x1f\n" +
+	"\ahas_tip\x18\x01 \x01(\bR\x06hasTip\x121\n" +
+	"\x03tip\x18\x02 \x01(\v2\x1f.pylabrobot.resource.v1.TipDataR\x03tip\x12\x1f\n" +
 	"\vis_disabled\x18\x03 \x01(\bR\n" +
 	"isDisabled\"-\n" +
 	"\x0eGetTreeRequest\x12\x1b\n" +
@@ -1851,11 +1851,11 @@ const file_deck_v1_deck_service_proto_rawDesc = "" +
 	"other_name\x18\x02 \x01(\tR\totherName\x12\x19\n" +
 	"\banchor_x\x18\x03 \x01(\tR\aanchorX\x12\x19\n" +
 	"\banchor_y\x18\x04 \x01(\tR\aanchorY\x12\x19\n" +
-	"\banchor_z\x18\x05 \x01(\tR\aanchorZ\"W\n" +
-	"\x1aBatchGetLocationWrtRequest\x129\n" +
-	"\x05items\x18\x01 \x03(\v2#.pylabrobot.deck.v1.LocationWrtItemR\x05items\"[\n" +
-	"\x17BatchCoordinateResponse\x12@\n" +
-	"\vcoordinates\x18\x01 \x03(\v2\x1e.pylabrobot.deck.v1.CoordinateR\vcoordinates\"W\n" +
+	"\banchor_z\x18\x05 \x01(\tR\aanchorZ\"[\n" +
+	"\x1aBatchGetLocationWrtRequest\x12=\n" +
+	"\x05items\x18\x01 \x03(\v2'.pylabrobot.resource.v1.LocationWrtItemR\x05items\"_\n" +
+	"\x17BatchCoordinateResponse\x12D\n" +
+	"\vcoordinates\x18\x01 \x03(\v2\".pylabrobot.resource.v1.CoordinateR\vcoordinates\"W\n" +
 	"\x1aComputeVolumeHeightRequest\x12#\n" +
 	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12\x14\n" +
 	"\x05value\x18\x02 \x01(\x01R\x05value\"%\n" +
@@ -1867,174 +1867,174 @@ const file_deck_v1_deck_service_proto_rawDesc = "" +
 	"\rtip_spot_name\x18\x01 \x01(\tR\vtipSpotName\"O\n" +
 	"\x10TrackerOpRequest\x12#\n" +
 	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12\x16\n" +
-	"\x06volume\x18\x02 \x01(\x01R\x06volume\"O\n" +
-	"\x15BatchTrackerOpRequest\x126\n" +
-	"\x03ops\x18\x01 \x03(\v2$.pylabrobot.deck.v1.TrackerOpRequestR\x03ops\"9\n" +
+	"\x06volume\x18\x02 \x01(\x01R\x06volume\"S\n" +
+	"\x15BatchTrackerOpRequest\x12:\n" +
+	"\x03ops\x18\x01 \x03(\v2(.pylabrobot.resource.v1.TrackerOpRequestR\x03ops\"9\n" +
 	"\x13TipTrackerOpRequest\x12\"\n" +
 	"\rtip_spot_name\x18\x01 \x01(\tR\vtipSpotName\">\n" +
 	"\x15CommitRollbackRequest\x12%\n" +
-	"\x0eresource_names\x18\x01 \x03(\tR\rresourceNames\"\x90\x01\n" +
+	"\x0eresource_names\x18\x01 \x03(\tR\rresourceNames\"\x94\x01\n" +
 	"\x12AssignChildRequest\x12\x1d\n" +
 	"\n" +
 	"child_name\x18\x01 \x01(\tR\tchildName\x12\x1f\n" +
 	"\vparent_name\x18\x02 \x01(\tR\n" +
-	"parentName\x12:\n" +
-	"\blocation\x18\x03 \x01(\v2\x1e.pylabrobot.deck.v1.CoordinateR\blocation\";\n" +
+	"parentName\x12>\n" +
+	"\blocation\x18\x03 \x01(\v2\".pylabrobot.resource.v1.CoordinateR\blocation\";\n" +
 	"\x14UnassignChildRequest\x12#\n" +
 	"\rresource_name\x18\x01 \x01(\tR\fresourceName\".\n" +
 	"\rHasLidRequest\x12\x1d\n" +
 	"\n" +
-	"plate_name\x18\x01 \x01(\tR\tplateName2\xcc\x15\n" +
-	"\vDeckService\x12O\n" +
-	"\aGetTree\x12\".pylabrobot.deck.v1.GetTreeRequest\x1a .pylabrobot.deck.v1.ResourceTree\x12Z\n" +
-	"\vGetResource\x12).pylabrobot.deck.v1.ResourceByNameRequest\x1a .pylabrobot.deck.v1.ResourceData\x12Z\n" +
-	"\vHasResource\x12).pylabrobot.deck.v1.ResourceByNameRequest\x1a .pylabrobot.deck.v1.BoolResponse\x12K\n" +
-	"\fGetTrashArea\x12\x19.pylabrobot.deck.v1.Empty\x1a .pylabrobot.deck.v1.ResourceData\x12M\n" +
-	"\x0eGetTrashArea96\x12\x19.pylabrobot.deck.v1.Empty\x1a .pylabrobot.deck.v1.ResourceData\x12[\n" +
-	"\x0eGetLocationWrt\x12).pylabrobot.deck.v1.GetLocationWrtRequest\x1a\x1e.pylabrobot.deck.v1.Coordinate\x12e\n" +
-	"\x13GetAbsoluteLocation\x12..pylabrobot.deck.v1.GetAbsoluteLocationRequest\x1a\x1e.pylabrobot.deck.v1.Coordinate\x12c\n" +
-	"\x13GetAbsoluteRotation\x12..pylabrobot.deck.v1.GetAbsoluteRotationRequest\x1a\x1c.pylabrobot.deck.v1.Rotation\x12W\n" +
-	"\x0fGetAbsoluteSize\x12*.pylabrobot.deck.v1.GetAbsoluteSizeRequest\x1a\x18.pylabrobot.deck.v1.Size\x12`\n" +
-	"\x0fGetHighestPoint\x12*.pylabrobot.deck.v1.GetHighestPointRequest\x1a!.pylabrobot.deck.v1.FloatResponse\x12r\n" +
-	"\x13BatchGetLocationWrt\x12..pylabrobot.deck.v1.BatchGetLocationWrtRequest\x1a+.pylabrobot.deck.v1.BatchCoordinateResponse\x12l\n" +
-	"\x17ComputeVolumeFromHeight\x12..pylabrobot.deck.v1.ComputeVolumeHeightRequest\x1a!.pylabrobot.deck.v1.FloatResponse\x12l\n" +
-	"\x17ComputeHeightFromVolume\x12..pylabrobot.deck.v1.ComputeVolumeHeightRequest\x1a!.pylabrobot.deck.v1.FloatResponse\x12j\n" +
-	"\x1bSupportsComputeHeightVolume\x12).pylabrobot.deck.v1.ResourceByNameRequest\x1a .pylabrobot.deck.v1.BoolResponse\x12M\n" +
-	"\x06HasLid\x12!.pylabrobot.deck.v1.HasLidRequest\x1a .pylabrobot.deck.v1.BoolResponse\x12H\n" +
-	"\x06GetTip\x12!.pylabrobot.deck.v1.GetTipRequest\x1a\x1b.pylabrobot.deck.v1.TipData\x12j\n" +
-	"\x15GetVolumeTrackerState\x12).pylabrobot.deck.v1.ResourceByNameRequest\x1a&.pylabrobot.deck.v1.VolumeTrackerState\x12O\n" +
-	"\fRemoveLiquid\x12$.pylabrobot.deck.v1.TrackerOpRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12L\n" +
-	"\tAddLiquid\x12$.pylabrobot.deck.v1.TrackerOpRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12Y\n" +
-	"\x11BatchRemoveLiquid\x12).pylabrobot.deck.v1.BatchTrackerOpRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12V\n" +
-	"\x0eBatchAddLiquid\x12).pylabrobot.deck.v1.BatchTrackerOpRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12d\n" +
-	"\x12GetTipTrackerState\x12).pylabrobot.deck.v1.ResourceByNameRequest\x1a#.pylabrobot.deck.v1.TipTrackerState\x12O\n" +
-	"\tRemoveTip\x12'.pylabrobot.deck.v1.TipTrackerOpRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12L\n" +
-	"\x06AddTip\x12'.pylabrobot.deck.v1.TipTrackerOpRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12\\\n" +
-	"\x14CommitVolumeTrackers\x12).pylabrobot.deck.v1.CommitRollbackRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12^\n" +
-	"\x16RollbackVolumeTrackers\x12).pylabrobot.deck.v1.CommitRollbackRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12Y\n" +
-	"\x11CommitTipTrackers\x12).pylabrobot.deck.v1.CommitRollbackRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12[\n" +
-	"\x13RollbackTipTrackers\x12).pylabrobot.deck.v1.CommitRollbackRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12P\n" +
-	"\vAssignChild\x12&.pylabrobot.deck.v1.AssignChildRequest\x1a\x19.pylabrobot.deck.v1.Empty\x12T\n" +
-	"\rUnassignChild\x12(.pylabrobot.deck.v1.UnassignChildRequest\x1a\x19.pylabrobot.deck.v1.EmptyBLZJgithub.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/deck/v1;deckv1b\x06proto3"
+	"plate_name\x18\x01 \x01(\tR\tplateName2\xc0\x17\n" +
+	"\x0fResourceService\x12W\n" +
+	"\aGetTree\x12&.pylabrobot.resource.v1.GetTreeRequest\x1a$.pylabrobot.resource.v1.ResourceTree\x12b\n" +
+	"\vGetResource\x12-.pylabrobot.resource.v1.ResourceByNameRequest\x1a$.pylabrobot.resource.v1.ResourceData\x12b\n" +
+	"\vHasResource\x12-.pylabrobot.resource.v1.ResourceByNameRequest\x1a$.pylabrobot.resource.v1.BoolResponse\x12S\n" +
+	"\fGetTrashArea\x12\x1d.pylabrobot.resource.v1.Empty\x1a$.pylabrobot.resource.v1.ResourceData\x12U\n" +
+	"\x0eGetTrashArea96\x12\x1d.pylabrobot.resource.v1.Empty\x1a$.pylabrobot.resource.v1.ResourceData\x12c\n" +
+	"\x0eGetLocationWrt\x12-.pylabrobot.resource.v1.GetLocationWrtRequest\x1a\".pylabrobot.resource.v1.Coordinate\x12m\n" +
+	"\x13GetAbsoluteLocation\x122.pylabrobot.resource.v1.GetAbsoluteLocationRequest\x1a\".pylabrobot.resource.v1.Coordinate\x12k\n" +
+	"\x13GetAbsoluteRotation\x122.pylabrobot.resource.v1.GetAbsoluteRotationRequest\x1a .pylabrobot.resource.v1.Rotation\x12_\n" +
+	"\x0fGetAbsoluteSize\x12..pylabrobot.resource.v1.GetAbsoluteSizeRequest\x1a\x1c.pylabrobot.resource.v1.Size\x12h\n" +
+	"\x0fGetHighestPoint\x12..pylabrobot.resource.v1.GetHighestPointRequest\x1a%.pylabrobot.resource.v1.FloatResponse\x12z\n" +
+	"\x13BatchGetLocationWrt\x122.pylabrobot.resource.v1.BatchGetLocationWrtRequest\x1a/.pylabrobot.resource.v1.BatchCoordinateResponse\x12t\n" +
+	"\x17ComputeVolumeFromHeight\x122.pylabrobot.resource.v1.ComputeVolumeHeightRequest\x1a%.pylabrobot.resource.v1.FloatResponse\x12t\n" +
+	"\x17ComputeHeightFromVolume\x122.pylabrobot.resource.v1.ComputeVolumeHeightRequest\x1a%.pylabrobot.resource.v1.FloatResponse\x12r\n" +
+	"\x1bSupportsComputeHeightVolume\x12-.pylabrobot.resource.v1.ResourceByNameRequest\x1a$.pylabrobot.resource.v1.BoolResponse\x12U\n" +
+	"\x06HasLid\x12%.pylabrobot.resource.v1.HasLidRequest\x1a$.pylabrobot.resource.v1.BoolResponse\x12P\n" +
+	"\x06GetTip\x12%.pylabrobot.resource.v1.GetTipRequest\x1a\x1f.pylabrobot.resource.v1.TipData\x12r\n" +
+	"\x15GetVolumeTrackerState\x12-.pylabrobot.resource.v1.ResourceByNameRequest\x1a*.pylabrobot.resource.v1.VolumeTrackerState\x12W\n" +
+	"\fRemoveLiquid\x12(.pylabrobot.resource.v1.TrackerOpRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12T\n" +
+	"\tAddLiquid\x12(.pylabrobot.resource.v1.TrackerOpRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12a\n" +
+	"\x11BatchRemoveLiquid\x12-.pylabrobot.resource.v1.BatchTrackerOpRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12^\n" +
+	"\x0eBatchAddLiquid\x12-.pylabrobot.resource.v1.BatchTrackerOpRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12l\n" +
+	"\x12GetTipTrackerState\x12-.pylabrobot.resource.v1.ResourceByNameRequest\x1a'.pylabrobot.resource.v1.TipTrackerState\x12W\n" +
+	"\tRemoveTip\x12+.pylabrobot.resource.v1.TipTrackerOpRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12T\n" +
+	"\x06AddTip\x12+.pylabrobot.resource.v1.TipTrackerOpRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12d\n" +
+	"\x14CommitVolumeTrackers\x12-.pylabrobot.resource.v1.CommitRollbackRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12f\n" +
+	"\x16RollbackVolumeTrackers\x12-.pylabrobot.resource.v1.CommitRollbackRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12a\n" +
+	"\x11CommitTipTrackers\x12-.pylabrobot.resource.v1.CommitRollbackRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12c\n" +
+	"\x13RollbackTipTrackers\x12-.pylabrobot.resource.v1.CommitRollbackRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12X\n" +
+	"\vAssignChild\x12*.pylabrobot.resource.v1.AssignChildRequest\x1a\x1d.pylabrobot.resource.v1.Empty\x12\\\n" +
+	"\rUnassignChild\x12,.pylabrobot.resource.v1.UnassignChildRequest\x1a\x1d.pylabrobot.resource.v1.EmptyBTZRgithub.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/resource/v1;resourcev1b\x06proto3"
 
 var (
-	file_deck_v1_deck_service_proto_rawDescOnce sync.Once
-	file_deck_v1_deck_service_proto_rawDescData []byte
+	file_resource_v1_resource_service_proto_rawDescOnce sync.Once
+	file_resource_v1_resource_service_proto_rawDescData []byte
 )
 
-func file_deck_v1_deck_service_proto_rawDescGZIP() []byte {
-	file_deck_v1_deck_service_proto_rawDescOnce.Do(func() {
-		file_deck_v1_deck_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_deck_v1_deck_service_proto_rawDesc), len(file_deck_v1_deck_service_proto_rawDesc)))
+func file_resource_v1_resource_service_proto_rawDescGZIP() []byte {
+	file_resource_v1_resource_service_proto_rawDescOnce.Do(func() {
+		file_resource_v1_resource_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_resource_v1_resource_service_proto_rawDesc), len(file_resource_v1_resource_service_proto_rawDesc)))
 	})
-	return file_deck_v1_deck_service_proto_rawDescData
+	return file_resource_v1_resource_service_proto_rawDescData
 }
 
-var file_deck_v1_deck_service_proto_msgTypes = make([]protoimpl.MessageInfo, 31)
-var file_deck_v1_deck_service_proto_goTypes = []any{
-	(*Empty)(nil),                      // 0: pylabrobot.deck.v1.Empty
-	(*Coordinate)(nil),                 // 1: pylabrobot.deck.v1.Coordinate
-	(*Rotation)(nil),                   // 2: pylabrobot.deck.v1.Rotation
-	(*Size)(nil),                       // 3: pylabrobot.deck.v1.Size
-	(*TipData)(nil),                    // 4: pylabrobot.deck.v1.TipData
-	(*ResourceData)(nil),               // 5: pylabrobot.deck.v1.ResourceData
-	(*ResourceTree)(nil),               // 6: pylabrobot.deck.v1.ResourceTree
-	(*VolumeTrackerState)(nil),         // 7: pylabrobot.deck.v1.VolumeTrackerState
-	(*TipTrackerState)(nil),            // 8: pylabrobot.deck.v1.TipTrackerState
-	(*GetTreeRequest)(nil),             // 9: pylabrobot.deck.v1.GetTreeRequest
-	(*ResourceByNameRequest)(nil),      // 10: pylabrobot.deck.v1.ResourceByNameRequest
-	(*GetLocationWrtRequest)(nil),      // 11: pylabrobot.deck.v1.GetLocationWrtRequest
-	(*GetAbsoluteLocationRequest)(nil), // 12: pylabrobot.deck.v1.GetAbsoluteLocationRequest
-	(*GetAbsoluteRotationRequest)(nil), // 13: pylabrobot.deck.v1.GetAbsoluteRotationRequest
-	(*GetAbsoluteSizeRequest)(nil),     // 14: pylabrobot.deck.v1.GetAbsoluteSizeRequest
-	(*GetHighestPointRequest)(nil),     // 15: pylabrobot.deck.v1.GetHighestPointRequest
-	(*LocationWrtItem)(nil),            // 16: pylabrobot.deck.v1.LocationWrtItem
-	(*BatchGetLocationWrtRequest)(nil), // 17: pylabrobot.deck.v1.BatchGetLocationWrtRequest
-	(*BatchCoordinateResponse)(nil),    // 18: pylabrobot.deck.v1.BatchCoordinateResponse
-	(*ComputeVolumeHeightRequest)(nil), // 19: pylabrobot.deck.v1.ComputeVolumeHeightRequest
-	(*FloatResponse)(nil),              // 20: pylabrobot.deck.v1.FloatResponse
-	(*BoolResponse)(nil),               // 21: pylabrobot.deck.v1.BoolResponse
-	(*GetTipRequest)(nil),              // 22: pylabrobot.deck.v1.GetTipRequest
-	(*TrackerOpRequest)(nil),           // 23: pylabrobot.deck.v1.TrackerOpRequest
-	(*BatchTrackerOpRequest)(nil),      // 24: pylabrobot.deck.v1.BatchTrackerOpRequest
-	(*TipTrackerOpRequest)(nil),        // 25: pylabrobot.deck.v1.TipTrackerOpRequest
-	(*CommitRollbackRequest)(nil),      // 26: pylabrobot.deck.v1.CommitRollbackRequest
-	(*AssignChildRequest)(nil),         // 27: pylabrobot.deck.v1.AssignChildRequest
-	(*UnassignChildRequest)(nil),       // 28: pylabrobot.deck.v1.UnassignChildRequest
-	(*HasLidRequest)(nil),              // 29: pylabrobot.deck.v1.HasLidRequest
-	nil,                                // 30: pylabrobot.deck.v1.ResourceData.OrderingEntry
+var file_resource_v1_resource_service_proto_msgTypes = make([]protoimpl.MessageInfo, 31)
+var file_resource_v1_resource_service_proto_goTypes = []any{
+	(*Empty)(nil),                      // 0: pylabrobot.resource.v1.Empty
+	(*Coordinate)(nil),                 // 1: pylabrobot.resource.v1.Coordinate
+	(*Rotation)(nil),                   // 2: pylabrobot.resource.v1.Rotation
+	(*Size)(nil),                       // 3: pylabrobot.resource.v1.Size
+	(*TipData)(nil),                    // 4: pylabrobot.resource.v1.TipData
+	(*ResourceData)(nil),               // 5: pylabrobot.resource.v1.ResourceData
+	(*ResourceTree)(nil),               // 6: pylabrobot.resource.v1.ResourceTree
+	(*VolumeTrackerState)(nil),         // 7: pylabrobot.resource.v1.VolumeTrackerState
+	(*TipTrackerState)(nil),            // 8: pylabrobot.resource.v1.TipTrackerState
+	(*GetTreeRequest)(nil),             // 9: pylabrobot.resource.v1.GetTreeRequest
+	(*ResourceByNameRequest)(nil),      // 10: pylabrobot.resource.v1.ResourceByNameRequest
+	(*GetLocationWrtRequest)(nil),      // 11: pylabrobot.resource.v1.GetLocationWrtRequest
+	(*GetAbsoluteLocationRequest)(nil), // 12: pylabrobot.resource.v1.GetAbsoluteLocationRequest
+	(*GetAbsoluteRotationRequest)(nil), // 13: pylabrobot.resource.v1.GetAbsoluteRotationRequest
+	(*GetAbsoluteSizeRequest)(nil),     // 14: pylabrobot.resource.v1.GetAbsoluteSizeRequest
+	(*GetHighestPointRequest)(nil),     // 15: pylabrobot.resource.v1.GetHighestPointRequest
+	(*LocationWrtItem)(nil),            // 16: pylabrobot.resource.v1.LocationWrtItem
+	(*BatchGetLocationWrtRequest)(nil), // 17: pylabrobot.resource.v1.BatchGetLocationWrtRequest
+	(*BatchCoordinateResponse)(nil),    // 18: pylabrobot.resource.v1.BatchCoordinateResponse
+	(*ComputeVolumeHeightRequest)(nil), // 19: pylabrobot.resource.v1.ComputeVolumeHeightRequest
+	(*FloatResponse)(nil),              // 20: pylabrobot.resource.v1.FloatResponse
+	(*BoolResponse)(nil),               // 21: pylabrobot.resource.v1.BoolResponse
+	(*GetTipRequest)(nil),              // 22: pylabrobot.resource.v1.GetTipRequest
+	(*TrackerOpRequest)(nil),           // 23: pylabrobot.resource.v1.TrackerOpRequest
+	(*BatchTrackerOpRequest)(nil),      // 24: pylabrobot.resource.v1.BatchTrackerOpRequest
+	(*TipTrackerOpRequest)(nil),        // 25: pylabrobot.resource.v1.TipTrackerOpRequest
+	(*CommitRollbackRequest)(nil),      // 26: pylabrobot.resource.v1.CommitRollbackRequest
+	(*AssignChildRequest)(nil),         // 27: pylabrobot.resource.v1.AssignChildRequest
+	(*UnassignChildRequest)(nil),       // 28: pylabrobot.resource.v1.UnassignChildRequest
+	(*HasLidRequest)(nil),              // 29: pylabrobot.resource.v1.HasLidRequest
+	nil,                                // 30: pylabrobot.resource.v1.ResourceData.OrderingEntry
 }
-var file_deck_v1_deck_service_proto_depIdxs = []int32{
-	1,  // 0: pylabrobot.deck.v1.ResourceData.location:type_name -> pylabrobot.deck.v1.Coordinate
-	2,  // 1: pylabrobot.deck.v1.ResourceData.rotation:type_name -> pylabrobot.deck.v1.Rotation
-	4,  // 2: pylabrobot.deck.v1.ResourceData.prototype_tip:type_name -> pylabrobot.deck.v1.TipData
-	30, // 3: pylabrobot.deck.v1.ResourceData.ordering:type_name -> pylabrobot.deck.v1.ResourceData.OrderingEntry
-	5,  // 4: pylabrobot.deck.v1.ResourceTree.data:type_name -> pylabrobot.deck.v1.ResourceData
-	6,  // 5: pylabrobot.deck.v1.ResourceTree.children:type_name -> pylabrobot.deck.v1.ResourceTree
-	4,  // 6: pylabrobot.deck.v1.TipTrackerState.tip:type_name -> pylabrobot.deck.v1.TipData
-	16, // 7: pylabrobot.deck.v1.BatchGetLocationWrtRequest.items:type_name -> pylabrobot.deck.v1.LocationWrtItem
-	1,  // 8: pylabrobot.deck.v1.BatchCoordinateResponse.coordinates:type_name -> pylabrobot.deck.v1.Coordinate
-	23, // 9: pylabrobot.deck.v1.BatchTrackerOpRequest.ops:type_name -> pylabrobot.deck.v1.TrackerOpRequest
-	1,  // 10: pylabrobot.deck.v1.AssignChildRequest.location:type_name -> pylabrobot.deck.v1.Coordinate
-	9,  // 11: pylabrobot.deck.v1.DeckService.GetTree:input_type -> pylabrobot.deck.v1.GetTreeRequest
-	10, // 12: pylabrobot.deck.v1.DeckService.GetResource:input_type -> pylabrobot.deck.v1.ResourceByNameRequest
-	10, // 13: pylabrobot.deck.v1.DeckService.HasResource:input_type -> pylabrobot.deck.v1.ResourceByNameRequest
-	0,  // 14: pylabrobot.deck.v1.DeckService.GetTrashArea:input_type -> pylabrobot.deck.v1.Empty
-	0,  // 15: pylabrobot.deck.v1.DeckService.GetTrashArea96:input_type -> pylabrobot.deck.v1.Empty
-	11, // 16: pylabrobot.deck.v1.DeckService.GetLocationWrt:input_type -> pylabrobot.deck.v1.GetLocationWrtRequest
-	12, // 17: pylabrobot.deck.v1.DeckService.GetAbsoluteLocation:input_type -> pylabrobot.deck.v1.GetAbsoluteLocationRequest
-	13, // 18: pylabrobot.deck.v1.DeckService.GetAbsoluteRotation:input_type -> pylabrobot.deck.v1.GetAbsoluteRotationRequest
-	14, // 19: pylabrobot.deck.v1.DeckService.GetAbsoluteSize:input_type -> pylabrobot.deck.v1.GetAbsoluteSizeRequest
-	15, // 20: pylabrobot.deck.v1.DeckService.GetHighestPoint:input_type -> pylabrobot.deck.v1.GetHighestPointRequest
-	17, // 21: pylabrobot.deck.v1.DeckService.BatchGetLocationWrt:input_type -> pylabrobot.deck.v1.BatchGetLocationWrtRequest
-	19, // 22: pylabrobot.deck.v1.DeckService.ComputeVolumeFromHeight:input_type -> pylabrobot.deck.v1.ComputeVolumeHeightRequest
-	19, // 23: pylabrobot.deck.v1.DeckService.ComputeHeightFromVolume:input_type -> pylabrobot.deck.v1.ComputeVolumeHeightRequest
-	10, // 24: pylabrobot.deck.v1.DeckService.SupportsComputeHeightVolume:input_type -> pylabrobot.deck.v1.ResourceByNameRequest
-	29, // 25: pylabrobot.deck.v1.DeckService.HasLid:input_type -> pylabrobot.deck.v1.HasLidRequest
-	22, // 26: pylabrobot.deck.v1.DeckService.GetTip:input_type -> pylabrobot.deck.v1.GetTipRequest
-	10, // 27: pylabrobot.deck.v1.DeckService.GetVolumeTrackerState:input_type -> pylabrobot.deck.v1.ResourceByNameRequest
-	23, // 28: pylabrobot.deck.v1.DeckService.RemoveLiquid:input_type -> pylabrobot.deck.v1.TrackerOpRequest
-	23, // 29: pylabrobot.deck.v1.DeckService.AddLiquid:input_type -> pylabrobot.deck.v1.TrackerOpRequest
-	24, // 30: pylabrobot.deck.v1.DeckService.BatchRemoveLiquid:input_type -> pylabrobot.deck.v1.BatchTrackerOpRequest
-	24, // 31: pylabrobot.deck.v1.DeckService.BatchAddLiquid:input_type -> pylabrobot.deck.v1.BatchTrackerOpRequest
-	10, // 32: pylabrobot.deck.v1.DeckService.GetTipTrackerState:input_type -> pylabrobot.deck.v1.ResourceByNameRequest
-	25, // 33: pylabrobot.deck.v1.DeckService.RemoveTip:input_type -> pylabrobot.deck.v1.TipTrackerOpRequest
-	25, // 34: pylabrobot.deck.v1.DeckService.AddTip:input_type -> pylabrobot.deck.v1.TipTrackerOpRequest
-	26, // 35: pylabrobot.deck.v1.DeckService.CommitVolumeTrackers:input_type -> pylabrobot.deck.v1.CommitRollbackRequest
-	26, // 36: pylabrobot.deck.v1.DeckService.RollbackVolumeTrackers:input_type -> pylabrobot.deck.v1.CommitRollbackRequest
-	26, // 37: pylabrobot.deck.v1.DeckService.CommitTipTrackers:input_type -> pylabrobot.deck.v1.CommitRollbackRequest
-	26, // 38: pylabrobot.deck.v1.DeckService.RollbackTipTrackers:input_type -> pylabrobot.deck.v1.CommitRollbackRequest
-	27, // 39: pylabrobot.deck.v1.DeckService.AssignChild:input_type -> pylabrobot.deck.v1.AssignChildRequest
-	28, // 40: pylabrobot.deck.v1.DeckService.UnassignChild:input_type -> pylabrobot.deck.v1.UnassignChildRequest
-	6,  // 41: pylabrobot.deck.v1.DeckService.GetTree:output_type -> pylabrobot.deck.v1.ResourceTree
-	5,  // 42: pylabrobot.deck.v1.DeckService.GetResource:output_type -> pylabrobot.deck.v1.ResourceData
-	21, // 43: pylabrobot.deck.v1.DeckService.HasResource:output_type -> pylabrobot.deck.v1.BoolResponse
-	5,  // 44: pylabrobot.deck.v1.DeckService.GetTrashArea:output_type -> pylabrobot.deck.v1.ResourceData
-	5,  // 45: pylabrobot.deck.v1.DeckService.GetTrashArea96:output_type -> pylabrobot.deck.v1.ResourceData
-	1,  // 46: pylabrobot.deck.v1.DeckService.GetLocationWrt:output_type -> pylabrobot.deck.v1.Coordinate
-	1,  // 47: pylabrobot.deck.v1.DeckService.GetAbsoluteLocation:output_type -> pylabrobot.deck.v1.Coordinate
-	2,  // 48: pylabrobot.deck.v1.DeckService.GetAbsoluteRotation:output_type -> pylabrobot.deck.v1.Rotation
-	3,  // 49: pylabrobot.deck.v1.DeckService.GetAbsoluteSize:output_type -> pylabrobot.deck.v1.Size
-	20, // 50: pylabrobot.deck.v1.DeckService.GetHighestPoint:output_type -> pylabrobot.deck.v1.FloatResponse
-	18, // 51: pylabrobot.deck.v1.DeckService.BatchGetLocationWrt:output_type -> pylabrobot.deck.v1.BatchCoordinateResponse
-	20, // 52: pylabrobot.deck.v1.DeckService.ComputeVolumeFromHeight:output_type -> pylabrobot.deck.v1.FloatResponse
-	20, // 53: pylabrobot.deck.v1.DeckService.ComputeHeightFromVolume:output_type -> pylabrobot.deck.v1.FloatResponse
-	21, // 54: pylabrobot.deck.v1.DeckService.SupportsComputeHeightVolume:output_type -> pylabrobot.deck.v1.BoolResponse
-	21, // 55: pylabrobot.deck.v1.DeckService.HasLid:output_type -> pylabrobot.deck.v1.BoolResponse
-	4,  // 56: pylabrobot.deck.v1.DeckService.GetTip:output_type -> pylabrobot.deck.v1.TipData
-	7,  // 57: pylabrobot.deck.v1.DeckService.GetVolumeTrackerState:output_type -> pylabrobot.deck.v1.VolumeTrackerState
-	0,  // 58: pylabrobot.deck.v1.DeckService.RemoveLiquid:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 59: pylabrobot.deck.v1.DeckService.AddLiquid:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 60: pylabrobot.deck.v1.DeckService.BatchRemoveLiquid:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 61: pylabrobot.deck.v1.DeckService.BatchAddLiquid:output_type -> pylabrobot.deck.v1.Empty
-	8,  // 62: pylabrobot.deck.v1.DeckService.GetTipTrackerState:output_type -> pylabrobot.deck.v1.TipTrackerState
-	0,  // 63: pylabrobot.deck.v1.DeckService.RemoveTip:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 64: pylabrobot.deck.v1.DeckService.AddTip:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 65: pylabrobot.deck.v1.DeckService.CommitVolumeTrackers:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 66: pylabrobot.deck.v1.DeckService.RollbackVolumeTrackers:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 67: pylabrobot.deck.v1.DeckService.CommitTipTrackers:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 68: pylabrobot.deck.v1.DeckService.RollbackTipTrackers:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 69: pylabrobot.deck.v1.DeckService.AssignChild:output_type -> pylabrobot.deck.v1.Empty
-	0,  // 70: pylabrobot.deck.v1.DeckService.UnassignChild:output_type -> pylabrobot.deck.v1.Empty
+var file_resource_v1_resource_service_proto_depIdxs = []int32{
+	1,  // 0: pylabrobot.resource.v1.ResourceData.location:type_name -> pylabrobot.resource.v1.Coordinate
+	2,  // 1: pylabrobot.resource.v1.ResourceData.rotation:type_name -> pylabrobot.resource.v1.Rotation
+	4,  // 2: pylabrobot.resource.v1.ResourceData.prototype_tip:type_name -> pylabrobot.resource.v1.TipData
+	30, // 3: pylabrobot.resource.v1.ResourceData.ordering:type_name -> pylabrobot.resource.v1.ResourceData.OrderingEntry
+	5,  // 4: pylabrobot.resource.v1.ResourceTree.data:type_name -> pylabrobot.resource.v1.ResourceData
+	6,  // 5: pylabrobot.resource.v1.ResourceTree.children:type_name -> pylabrobot.resource.v1.ResourceTree
+	4,  // 6: pylabrobot.resource.v1.TipTrackerState.tip:type_name -> pylabrobot.resource.v1.TipData
+	16, // 7: pylabrobot.resource.v1.BatchGetLocationWrtRequest.items:type_name -> pylabrobot.resource.v1.LocationWrtItem
+	1,  // 8: pylabrobot.resource.v1.BatchCoordinateResponse.coordinates:type_name -> pylabrobot.resource.v1.Coordinate
+	23, // 9: pylabrobot.resource.v1.BatchTrackerOpRequest.ops:type_name -> pylabrobot.resource.v1.TrackerOpRequest
+	1,  // 10: pylabrobot.resource.v1.AssignChildRequest.location:type_name -> pylabrobot.resource.v1.Coordinate
+	9,  // 11: pylabrobot.resource.v1.ResourceService.GetTree:input_type -> pylabrobot.resource.v1.GetTreeRequest
+	10, // 12: pylabrobot.resource.v1.ResourceService.GetResource:input_type -> pylabrobot.resource.v1.ResourceByNameRequest
+	10, // 13: pylabrobot.resource.v1.ResourceService.HasResource:input_type -> pylabrobot.resource.v1.ResourceByNameRequest
+	0,  // 14: pylabrobot.resource.v1.ResourceService.GetTrashArea:input_type -> pylabrobot.resource.v1.Empty
+	0,  // 15: pylabrobot.resource.v1.ResourceService.GetTrashArea96:input_type -> pylabrobot.resource.v1.Empty
+	11, // 16: pylabrobot.resource.v1.ResourceService.GetLocationWrt:input_type -> pylabrobot.resource.v1.GetLocationWrtRequest
+	12, // 17: pylabrobot.resource.v1.ResourceService.GetAbsoluteLocation:input_type -> pylabrobot.resource.v1.GetAbsoluteLocationRequest
+	13, // 18: pylabrobot.resource.v1.ResourceService.GetAbsoluteRotation:input_type -> pylabrobot.resource.v1.GetAbsoluteRotationRequest
+	14, // 19: pylabrobot.resource.v1.ResourceService.GetAbsoluteSize:input_type -> pylabrobot.resource.v1.GetAbsoluteSizeRequest
+	15, // 20: pylabrobot.resource.v1.ResourceService.GetHighestPoint:input_type -> pylabrobot.resource.v1.GetHighestPointRequest
+	17, // 21: pylabrobot.resource.v1.ResourceService.BatchGetLocationWrt:input_type -> pylabrobot.resource.v1.BatchGetLocationWrtRequest
+	19, // 22: pylabrobot.resource.v1.ResourceService.ComputeVolumeFromHeight:input_type -> pylabrobot.resource.v1.ComputeVolumeHeightRequest
+	19, // 23: pylabrobot.resource.v1.ResourceService.ComputeHeightFromVolume:input_type -> pylabrobot.resource.v1.ComputeVolumeHeightRequest
+	10, // 24: pylabrobot.resource.v1.ResourceService.SupportsComputeHeightVolume:input_type -> pylabrobot.resource.v1.ResourceByNameRequest
+	29, // 25: pylabrobot.resource.v1.ResourceService.HasLid:input_type -> pylabrobot.resource.v1.HasLidRequest
+	22, // 26: pylabrobot.resource.v1.ResourceService.GetTip:input_type -> pylabrobot.resource.v1.GetTipRequest
+	10, // 27: pylabrobot.resource.v1.ResourceService.GetVolumeTrackerState:input_type -> pylabrobot.resource.v1.ResourceByNameRequest
+	23, // 28: pylabrobot.resource.v1.ResourceService.RemoveLiquid:input_type -> pylabrobot.resource.v1.TrackerOpRequest
+	23, // 29: pylabrobot.resource.v1.ResourceService.AddLiquid:input_type -> pylabrobot.resource.v1.TrackerOpRequest
+	24, // 30: pylabrobot.resource.v1.ResourceService.BatchRemoveLiquid:input_type -> pylabrobot.resource.v1.BatchTrackerOpRequest
+	24, // 31: pylabrobot.resource.v1.ResourceService.BatchAddLiquid:input_type -> pylabrobot.resource.v1.BatchTrackerOpRequest
+	10, // 32: pylabrobot.resource.v1.ResourceService.GetTipTrackerState:input_type -> pylabrobot.resource.v1.ResourceByNameRequest
+	25, // 33: pylabrobot.resource.v1.ResourceService.RemoveTip:input_type -> pylabrobot.resource.v1.TipTrackerOpRequest
+	25, // 34: pylabrobot.resource.v1.ResourceService.AddTip:input_type -> pylabrobot.resource.v1.TipTrackerOpRequest
+	26, // 35: pylabrobot.resource.v1.ResourceService.CommitVolumeTrackers:input_type -> pylabrobot.resource.v1.CommitRollbackRequest
+	26, // 36: pylabrobot.resource.v1.ResourceService.RollbackVolumeTrackers:input_type -> pylabrobot.resource.v1.CommitRollbackRequest
+	26, // 37: pylabrobot.resource.v1.ResourceService.CommitTipTrackers:input_type -> pylabrobot.resource.v1.CommitRollbackRequest
+	26, // 38: pylabrobot.resource.v1.ResourceService.RollbackTipTrackers:input_type -> pylabrobot.resource.v1.CommitRollbackRequest
+	27, // 39: pylabrobot.resource.v1.ResourceService.AssignChild:input_type -> pylabrobot.resource.v1.AssignChildRequest
+	28, // 40: pylabrobot.resource.v1.ResourceService.UnassignChild:input_type -> pylabrobot.resource.v1.UnassignChildRequest
+	6,  // 41: pylabrobot.resource.v1.ResourceService.GetTree:output_type -> pylabrobot.resource.v1.ResourceTree
+	5,  // 42: pylabrobot.resource.v1.ResourceService.GetResource:output_type -> pylabrobot.resource.v1.ResourceData
+	21, // 43: pylabrobot.resource.v1.ResourceService.HasResource:output_type -> pylabrobot.resource.v1.BoolResponse
+	5,  // 44: pylabrobot.resource.v1.ResourceService.GetTrashArea:output_type -> pylabrobot.resource.v1.ResourceData
+	5,  // 45: pylabrobot.resource.v1.ResourceService.GetTrashArea96:output_type -> pylabrobot.resource.v1.ResourceData
+	1,  // 46: pylabrobot.resource.v1.ResourceService.GetLocationWrt:output_type -> pylabrobot.resource.v1.Coordinate
+	1,  // 47: pylabrobot.resource.v1.ResourceService.GetAbsoluteLocation:output_type -> pylabrobot.resource.v1.Coordinate
+	2,  // 48: pylabrobot.resource.v1.ResourceService.GetAbsoluteRotation:output_type -> pylabrobot.resource.v1.Rotation
+	3,  // 49: pylabrobot.resource.v1.ResourceService.GetAbsoluteSize:output_type -> pylabrobot.resource.v1.Size
+	20, // 50: pylabrobot.resource.v1.ResourceService.GetHighestPoint:output_type -> pylabrobot.resource.v1.FloatResponse
+	18, // 51: pylabrobot.resource.v1.ResourceService.BatchGetLocationWrt:output_type -> pylabrobot.resource.v1.BatchCoordinateResponse
+	20, // 52: pylabrobot.resource.v1.ResourceService.ComputeVolumeFromHeight:output_type -> pylabrobot.resource.v1.FloatResponse
+	20, // 53: pylabrobot.resource.v1.ResourceService.ComputeHeightFromVolume:output_type -> pylabrobot.resource.v1.FloatResponse
+	21, // 54: pylabrobot.resource.v1.ResourceService.SupportsComputeHeightVolume:output_type -> pylabrobot.resource.v1.BoolResponse
+	21, // 55: pylabrobot.resource.v1.ResourceService.HasLid:output_type -> pylabrobot.resource.v1.BoolResponse
+	4,  // 56: pylabrobot.resource.v1.ResourceService.GetTip:output_type -> pylabrobot.resource.v1.TipData
+	7,  // 57: pylabrobot.resource.v1.ResourceService.GetVolumeTrackerState:output_type -> pylabrobot.resource.v1.VolumeTrackerState
+	0,  // 58: pylabrobot.resource.v1.ResourceService.RemoveLiquid:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 59: pylabrobot.resource.v1.ResourceService.AddLiquid:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 60: pylabrobot.resource.v1.ResourceService.BatchRemoveLiquid:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 61: pylabrobot.resource.v1.ResourceService.BatchAddLiquid:output_type -> pylabrobot.resource.v1.Empty
+	8,  // 62: pylabrobot.resource.v1.ResourceService.GetTipTrackerState:output_type -> pylabrobot.resource.v1.TipTrackerState
+	0,  // 63: pylabrobot.resource.v1.ResourceService.RemoveTip:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 64: pylabrobot.resource.v1.ResourceService.AddTip:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 65: pylabrobot.resource.v1.ResourceService.CommitVolumeTrackers:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 66: pylabrobot.resource.v1.ResourceService.RollbackVolumeTrackers:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 67: pylabrobot.resource.v1.ResourceService.CommitTipTrackers:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 68: pylabrobot.resource.v1.ResourceService.RollbackTipTrackers:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 69: pylabrobot.resource.v1.ResourceService.AssignChild:output_type -> pylabrobot.resource.v1.Empty
+	0,  // 70: pylabrobot.resource.v1.ResourceService.UnassignChild:output_type -> pylabrobot.resource.v1.Empty
 	41, // [41:71] is the sub-list for method output_type
 	11, // [11:41] is the sub-list for method input_type
 	11, // [11:11] is the sub-list for extension type_name
@@ -2042,27 +2042,27 @@ var file_deck_v1_deck_service_proto_depIdxs = []int32{
 	0,  // [0:11] is the sub-list for field type_name
 }
 
-func init() { file_deck_v1_deck_service_proto_init() }
-func file_deck_v1_deck_service_proto_init() {
-	if File_deck_v1_deck_service_proto != nil {
+func init() { file_resource_v1_resource_service_proto_init() }
+func file_resource_v1_resource_service_proto_init() {
+	if File_resource_v1_resource_service_proto != nil {
 		return
 	}
-	file_deck_v1_deck_service_proto_msgTypes[5].OneofWrappers = []any{}
+	file_resource_v1_resource_service_proto_msgTypes[5].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_deck_v1_deck_service_proto_rawDesc), len(file_deck_v1_deck_service_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_resource_v1_resource_service_proto_rawDesc), len(file_resource_v1_resource_service_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   31,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_deck_v1_deck_service_proto_goTypes,
-		DependencyIndexes: file_deck_v1_deck_service_proto_depIdxs,
-		MessageInfos:      file_deck_v1_deck_service_proto_msgTypes,
+		GoTypes:           file_resource_v1_resource_service_proto_goTypes,
+		DependencyIndexes: file_resource_v1_resource_service_proto_depIdxs,
+		MessageInfos:      file_resource_v1_resource_service_proto_msgTypes,
 	}.Build()
-	File_deck_v1_deck_service_proto = out.File
-	file_deck_v1_deck_service_proto_goTypes = nil
-	file_deck_v1_deck_service_proto_depIdxs = nil
+	File_resource_v1_resource_service_proto = out.File
+	file_resource_v1_resource_service_proto_goTypes = nil
+	file_resource_v1_resource_service_proto_depIdxs = nil
 }

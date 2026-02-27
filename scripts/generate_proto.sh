@@ -12,7 +12,7 @@ fi
 
 # Only regenerate _pb2.py runtime code.
 # The .pyi type stubs are hand-written and maintained separately.
-for svc in star deck; do
+for svc in star resource; do
   for target in service client; do
     pkg="pylabrobot_protobuf_${target}"
     $PROTOC \

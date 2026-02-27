@@ -1,6 +1,6 @@
 syntax = "proto3";
-package pylabrobot.deck.v1;
-option go_package = "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/deck/v1;deckv1";
+package pylabrobot.resource.v1;
+option go_package = "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/resource/v1;resourcev1";
 
 // ============================================================
 // Messages
@@ -190,7 +190,7 @@ message HasLidRequest {
 // Service
 // ============================================================
 
-service DeckService {
+service ResourceService {
   // --- Tree ---
 
   // Return the full resource tree rooted at the given resource (or the deck if empty).

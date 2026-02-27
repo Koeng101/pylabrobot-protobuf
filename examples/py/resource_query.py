@@ -1,4 +1,4 @@
-"""Connect to a deck server, query the resource tree, and print the structure."""
+"""Connect to a resource server, query the resource tree, and print the structure."""
 
 from __future__ import annotations
 
@@ -8,10 +8,10 @@ import sys
 
 
 def main(url: str) -> None:
-  from pylabrobot_protobuf_client.deck import RemoteDeck
+  from pylabrobot_protobuf_client.resource import RemoteResource
 
-  deck = RemoteDeck.connect(url)
-  print(f"Connected to deck server at {url}")
+  deck = RemoteResource.connect(url)
+  print(f"Connected to resource server at {url}")
   print(f"Deck: {deck.name} ({deck.get_size_x():.0f} x {deck.get_size_y():.0f} x "
         f"{deck.get_size_z():.0f})")
   print()
@@ -29,11 +29,11 @@ def main(url: str) -> None:
 
 
 if __name__ == "__main__":
-  parser = argparse.ArgumentParser(description="Deck structure query example")
+  parser = argparse.ArgumentParser(description="Resource structure query example")
   parser.add_argument(
     "--url",
-    default=os.environ.get("DECK_URL", "http://localhost:8080"),
-    help="Deck server URL (default: http://localhost:8080)",
+    default=os.environ.get("RESOURCE_URL", "http://localhost:8080"),
+    help="Resource server URL (default: http://localhost:8080)",
   )
   args = parser.parse_args()
 

@@ -15,11 +15,11 @@ from pylabrobot.resources.tip_rack import TipRack, TipSpot
 from pylabrobot.resources.trash import Trash
 from pylabrobot.resources.well import Well
 
-from ._generated import deck_service_pb2 as pb2
+from ._generated import resource_service_pb2 as pb2
 from .remote_trackers import RemoteTipTracker, RemoteVolumeTracker, _tip_from_proto
 
 if TYPE_CHECKING:
-  from ._generated.deck_service_connect import DeckServiceClientSync
+  from ._generated.resource_service_connect import ResourceServiceClientSync
 
 
 # ============================================================
@@ -33,7 +33,7 @@ class _SpatialMixin:
   Requires ``self._client`` and ``self.name`` to be set.
   """
 
-  _client: DeckServiceClientSync
+  _client: ResourceServiceClientSync
   name: str
 
   def get_location_wrt(self, other, x="l", y="f", z="b"):
@@ -90,7 +90,7 @@ class _SpatialMixin:
 class ResourceProxy(_SpatialMixin, Resource):
   """Base proxy. Holds immutable data locally, delegates spatial + state to server."""
 
-  def __init__(self, client: DeckServiceClientSync, data: pb2.ResourceData):
+  def __init__(self, client: ResourceServiceClientSync, data: pb2.ResourceData):
     Resource.__init__(
       self,
       name=data.name,
@@ -106,7 +106,7 @@ class ResourceProxy(_SpatialMixin, Resource):
 class ContainerProxy(_SpatialMixin, Container):
   """Proxy for Container — adds remote volume tracker."""
 
-  def __init__(self, client: DeckServiceClientSync, data: pb2.ResourceData):
+  def __init__(self, client: ResourceServiceClientSync, data: pb2.ResourceData):
     Container.__init__(
       self,
       name=data.name,
@@ -143,7 +143,7 @@ class ContainerProxy(_SpatialMixin, Container):
 class WellProxy(_SpatialMixin, Well):
   """Proxy for Well — passes isinstance(x, Well) and isinstance(x, Container)."""
 
-  def __init__(self, client: DeckServiceClientSync, data: pb2.ResourceData):
+  def __init__(self, client: ResourceServiceClientSync, data: pb2.ResourceData):
     Well.__init__(
       self,
       name=data.name,
@@ -182,7 +182,7 @@ class WellProxy(_SpatialMixin, Well):
 class TipSpotProxy(_SpatialMixin, TipSpot):
   """Proxy for TipSpot — tip creation and tracking go to server."""
 
-  def __init__(self, client: DeckServiceClientSync, data: pb2.ResourceData):
+  def __init__(self, client: ResourceServiceClientSync, data: pb2.ResourceData):
     prototype = data.prototype_tip
 
     def make_tip(name: str) -> Tip:
@@ -224,7 +224,7 @@ class PlateProxy(_SpatialMixin, Plate):
   """Proxy for Plate — has_lid() goes to server (lid can be moved)."""
 
   def __init__(
-    self, client: DeckServiceClientSync, data: pb2.ResourceData, ordering: Dict[str, str]
+    self, client: ResourceServiceClientSync, data: pb2.ResourceData, ordering: Dict[str, str]
   ):
     Plate.__init__(
       self,
@@ -248,7 +248,7 @@ class TipRackProxy(_SpatialMixin, TipRack):
   """Proxy for TipRack."""
 
   def __init__(
-    self, client: DeckServiceClientSync, data: pb2.ResourceData, ordering: Dict[str, str]
+    self, client: ResourceServiceClientSync, data: pb2.ResourceData, ordering: Dict[str, str]
   ):
     TipRack.__init__(
       self,
@@ -266,7 +266,7 @@ class TipRackProxy(_SpatialMixin, TipRack):
 class TrashProxy(_SpatialMixin, Trash):
   """Proxy for Trash."""
 
-  def __init__(self, client: DeckServiceClientSync, data: pb2.ResourceData):
+  def __init__(self, client: ResourceServiceClientSync, data: pb2.ResourceData):
     Trash.__init__(
       self,
       name=data.name,
@@ -287,7 +287,7 @@ class TrashProxy(_SpatialMixin, Trash):
 class LidProxy(_SpatialMixin, Lid):
   """Proxy for Lid."""
 
-  def __init__(self, client: DeckServiceClientSync, data: pb2.ResourceData):
+  def __init__(self, client: ResourceServiceClientSync, data: pb2.ResourceData):
     Lid.__init__(
       self,
       name=data.name,
@@ -316,7 +316,7 @@ _PROXY_MAP = {
 }
 
 
-def create_proxy(client: DeckServiceClientSync, data: pb2.ResourceData) -> Resource:
+def create_proxy(client: ResourceServiceClientSync, data: pb2.ResourceData) -> Resource:
   """Create the appropriate proxy object from a ResourceData message."""
   cls = _PROXY_MAP.get(data.type, ResourceProxy)
   if cls in (PlateProxy, TipRackProxy):

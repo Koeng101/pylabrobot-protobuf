@@ -1,4 +1,4 @@
-"""Remote tracker implementations that delegate to the DeckService server."""
+"""Remote tracker implementations that delegate to the ResourceService server."""
 
 from __future__ import annotations
 
@@ -6,10 +6,10 @@ from typing import TYPE_CHECKING, Optional
 
 from pylabrobot.resources.tip import Tip
 
-from ._generated import deck_service_pb2 as pb2
+from ._generated import resource_service_pb2 as pb2
 
 if TYPE_CHECKING:
-  from ._generated.deck_service_connect import DeckServiceClientSync
+  from ._generated.resource_service_connect import ResourceServiceClientSync
 
 
 def _tip_from_proto(tip_data: pb2.TipData) -> Tip:
@@ -37,7 +37,7 @@ def _tip_from_proto(tip_data: pb2.TipData) -> Tip:
 class RemoteVolumeTracker:
   """Drop-in replacement for VolumeTracker that delegates to the server."""
 
-  def __init__(self, client: DeckServiceClientSync, resource_name: str):
+  def __init__(self, client: ResourceServiceClientSync, resource_name: str):
     self._client = client
     self._resource_name = resource_name
 
@@ -103,7 +103,7 @@ class RemoteVolumeTracker:
 class RemoteTipTracker:
   """Drop-in replacement for TipTracker that delegates to the server."""
 
-  def __init__(self, client: DeckServiceClientSync, resource_name: str):
+  def __init__(self, client: ResourceServiceClientSync, resource_name: str):
     self._client = client
     self._resource_name = resource_name
 

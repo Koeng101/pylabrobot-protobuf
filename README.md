@@ -5,7 +5,7 @@ ConnectRPC service definitions and implementations for [PyLabRobot](https://gith
 ## Services
 
 - **STARService** (`proto/star/v1/`) — ~150 RPCs for Hamilton STAR liquid handler control
-- **DeckService** (`proto/deck/v1/`) — 28 RPCs for deck resource management
+- **ResourceService** (`proto/resource/v1/`) — 28 RPCs for deck resource management
 
 ## Packages
 

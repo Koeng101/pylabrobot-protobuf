@@ -24,16 +24,16 @@ from pylabrobot.resources.tip_tracker import set_tip_tracking
 from pylabrobot.resources.trash import Trash
 from pylabrobot.resources.volume_tracker import set_volume_tracking
 from pylabrobot.resources.well import Well
-from pylabrobot_protobuf_client.deck._generated import deck_service_pb2 as pb2
-from pylabrobot_protobuf_client.deck.client import RemoteDeck
-from pylabrobot_protobuf_client.deck.proxies import (
+from pylabrobot_protobuf_client.resource._generated import resource_service_pb2 as pb2
+from pylabrobot_protobuf_client.resource.client import RemoteResource
+from pylabrobot_protobuf_client.resource.proxies import (
   create_proxy,
 )
-from pylabrobot_protobuf_client.deck.remote_trackers import (
+from pylabrobot_protobuf_client.resource.remote_trackers import (
   _tip_from_proto,
 )
 
-from pylabrobot_protobuf_service.deck.server import (
+from pylabrobot_protobuf_service.resource.server import (
   _resource_to_data,
   _resource_to_tree,
   _tip_to_proto,
@@ -307,7 +307,7 @@ class TestProxyIsinstance(unittest.TestCase):
 _PORT = 18_123  # avoid collisions with common ports
 
 
-class TestRemoteDeckConnection(unittest.TestCase):
+class TestRemoteResourceConnection(unittest.TestCase):
   """Connect to a server, verify the tree is built correctly."""
 
   @classmethod
@@ -317,7 +317,7 @@ class TestRemoteDeckConnection(unittest.TestCase):
     cls.local_deck = _make_deck()
     cls.fixture = _ServerFixture(cls.local_deck, _PORT)
     cls.fixture.start()
-    cls.remote_deck = RemoteDeck.connect(cls.fixture.url)
+    cls.remote_deck = RemoteResource.connect(cls.fixture.url)
 
   @classmethod
   def tearDownClass(cls):
@@ -386,7 +386,7 @@ class TestRemoteSpatialRPCs(unittest.TestCase):
     cls.local_deck = _make_deck()
     cls.fixture = _ServerFixture(cls.local_deck, _PORT + 1)
     cls.fixture.start()
-    cls.remote_deck = RemoteDeck.connect(cls.fixture.url)
+    cls.remote_deck = RemoteResource.connect(cls.fixture.url)
 
   @classmethod
   def tearDownClass(cls):
@@ -448,7 +448,7 @@ class TestRemoteTrackers(unittest.TestCase):
     cls.local_deck.get_resource("plate_01_A1").tracker.set_volume(200.0)
     cls.fixture = _ServerFixture(cls.local_deck, _PORT + 2)
     cls.fixture.start()
-    cls.remote_deck = RemoteDeck.connect(cls.fixture.url)
+    cls.remote_deck = RemoteResource.connect(cls.fixture.url)
 
   @classmethod
   def tearDownClass(cls):
@@ -520,7 +520,7 @@ class TestRemotePlateFeatures(unittest.TestCase):
     cls.local_deck = _make_deck()
     cls.fixture = _ServerFixture(cls.local_deck, _PORT + 3)
     cls.fixture.start()
-    cls.remote_deck = RemoteDeck.connect(cls.fixture.url)
+    cls.remote_deck = RemoteResource.connect(cls.fixture.url)
 
   @classmethod
   def tearDownClass(cls):
@@ -548,8 +548,8 @@ class TestRemotePlateFeatures(unittest.TestCase):
 # ---------------------------------------------------------------------------
 
 
-class TestRemoteDeckWithLiquidHandler(unittest.IsolatedAsyncioTestCase):
-  """Run a full pick_up → aspirate → dispense → drop cycle through a RemoteDeck."""
+class TestRemoteResourceWithLiquidHandler(unittest.IsolatedAsyncioTestCase):
+  """Run a full pick_up → aspirate → dispense → drop cycle through a RemoteResource."""
 
   @classmethod
   def setUpClass(cls):
@@ -570,7 +570,7 @@ class TestRemoteDeckWithLiquidHandler(unittest.IsolatedAsyncioTestCase):
     except ImportError:
       self.skipTest("liquid_handling extras not installed")
 
-    deck = RemoteDeck.connect(self.fixture.url)
+    deck = RemoteResource.connect(self.fixture.url)
     lh = LiquidHandler(LiquidHandlerChatterboxBackend(num_channels=8), deck=deck)
     await lh.setup()
 

@@ -1,4 +1,4 @@
-"""RemoteDeck — drop-in Deck replacement that loads from a ConnectRPC server."""
+"""RemoteResource — drop-in Deck replacement that loads from a ConnectRPC server."""
 
 from __future__ import annotations
 
@@ -6,22 +6,22 @@ from pylabrobot.resources.coordinate import Coordinate
 from pylabrobot.resources.deck import Deck
 from pylabrobot.resources.resource import Resource
 
-from ._generated import deck_service_pb2 as pb2
-from ._generated.deck_service_connect import DeckServiceClientSync
+from ._generated import resource_service_pb2 as pb2
+from ._generated.resource_service_connect import ResourceServiceClientSync
 from .proxies import _SpatialMixin, create_proxy
 
 
-class RemoteDeck(_SpatialMixin, Deck):
+class RemoteResource(_SpatialMixin, Deck):
   """Drop-in replacement for Deck that loads its resource tree from a ConnectRPC server.
 
   Usage::
 
-      deck = RemoteDeck.connect("http://localhost:8080")
+      deck = RemoteResource.connect("http://localhost:8080")
       lh = LiquidHandler(backend=STARBackend(), deck=deck)
       await lh.setup()
   """
 
-  def __init__(self, client: DeckServiceClientSync):
+  def __init__(self, client: ResourceServiceClientSync):
     self._client = client
     self._building = True  # suppress RPC calls during initial tree build
 
@@ -60,13 +60,13 @@ class RemoteDeck(_SpatialMixin, Deck):
       self._build_tree(child_tree, parent=proxy)
 
   @classmethod
-  def connect(cls, base_url: str = "http://localhost:8080") -> RemoteDeck:
-    """Connect to a remote deck server.
+  def connect(cls, base_url: str = "http://localhost:8080") -> RemoteResource:
+    """Connect to a remote resource server.
 
     Args:
-        base_url: The HTTP URL of the deck server (e.g. "http://localhost:8080")
+        base_url: The HTTP URL of the resource server (e.g. "http://localhost:8080")
     """
-    client = DeckServiceClientSync(address=base_url)
+    client = ResourceServiceClientSync(address=base_url)
     return cls(client)
 
   # --- Structure mutations go to server ---
