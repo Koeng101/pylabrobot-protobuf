@@ -2,17 +2,11 @@ syntax = "proto3";
 package pylabrobot.liquid_handler.v1;
 option go_package = "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/liquid_handler/v1;liquidhandlerv1";
 
+import "types.proto";
+
 // ============================================================
 // Messages
 // ============================================================
-
-message Empty {}
-
-message Coordinate {
-  double x = 1;
-  double y = 2;
-  double z = 3;
-}
 
 message OptionalFloat {
   optional double value = 1;
@@ -48,26 +42,26 @@ message SetupRequest {
 message PickUpTipsRequest {
   repeated string tip_spot_names = 1;
   repeated int32 use_channels = 2;
-  repeated Coordinate offsets = 3;
+  repeated pylabrobot.common.v1.Coordinate offsets = 3;
 }
 
 message DropTipsRequest {
   repeated string tip_spot_names = 1;
   repeated int32 use_channels = 2;
-  repeated Coordinate offsets = 3;
+  repeated pylabrobot.common.v1.Coordinate offsets = 3;
   bool allow_nonzero_volume = 4;
 }
 
 message ReturnTipsRequest {
   repeated int32 use_channels = 1;
   bool allow_nonzero_volume = 2;
-  repeated Coordinate offsets = 3;
+  repeated pylabrobot.common.v1.Coordinate offsets = 3;
 }
 
 message DiscardTipsRequest {
   repeated int32 use_channels = 1;
   bool allow_nonzero_volume = 2;
-  repeated Coordinate offsets = 3;
+  repeated pylabrobot.common.v1.Coordinate offsets = 3;
 }
 
 // --- Single-channel liquid ---
@@ -77,7 +71,7 @@ message AspirateRequest {
   repeated double vols = 2;
   repeated int32 use_channels = 3;
   repeated OptionalFloat flow_rates = 4;
-  repeated Coordinate offsets = 5;
+  repeated pylabrobot.common.v1.Coordinate offsets = 5;
   repeated OptionalFloat liquid_height = 6;
   repeated OptionalFloat blow_out_air_volume = 7;
 }
@@ -87,7 +81,7 @@ message DispenseRequest {
   repeated double vols = 2;
   repeated int32 use_channels = 3;
   repeated OptionalFloat flow_rates = 4;
-  repeated Coordinate offsets = 5;
+  repeated pylabrobot.common.v1.Coordinate offsets = 5;
   repeated OptionalFloat liquid_height = 6;
   repeated OptionalFloat blow_out_air_volume = 7;
 }
@@ -96,18 +90,18 @@ message DispenseRequest {
 
 message PickUpTips96Request {
   string tip_rack_name = 1;
-  Coordinate offset = 2;
+  pylabrobot.common.v1.Coordinate offset = 2;
 }
 
 message DropTips96Request {
   string resource_name = 1;
-  Coordinate offset = 2;
+  pylabrobot.common.v1.Coordinate offset = 2;
   bool allow_nonzero_volume = 3;
 }
 
 message ReturnTips96Request {
   bool allow_nonzero_volume = 1;
-  Coordinate offset = 2;
+  pylabrobot.common.v1.Coordinate offset = 2;
 }
 
 message DiscardTips96Request {
@@ -119,7 +113,7 @@ message DiscardTips96Request {
 message Aspirate96Request {
   string resource_name = 1;
   double volume = 2;
-  Coordinate offset = 3;
+  pylabrobot.common.v1.Coordinate offset = 3;
   OptionalFloat flow_rate = 4;
   OptionalFloat liquid_height = 5;
   OptionalFloat blow_out_air_volume = 6;
@@ -128,7 +122,7 @@ message Aspirate96Request {
 message Dispense96Request {
   string resource_name = 1;
   double volume = 2;
-  Coordinate offset = 3;
+  pylabrobot.common.v1.Coordinate offset = 3;
   OptionalFloat flow_rate = 4;
   OptionalFloat liquid_height = 5;
   OptionalFloat blow_out_air_volume = 6;
@@ -140,11 +134,11 @@ message MoveResourceRequest {
   string resource_name = 1;
   oneof destination {
     string to_name = 2;
-    Coordinate to_coordinate = 3;
+    pylabrobot.common.v1.Coordinate to_coordinate = 3;
   }
-  repeated Coordinate intermediate_locations = 4;
-  Coordinate pickup_offset = 5;
-  Coordinate destination_offset = 6;
+  repeated pylabrobot.common.v1.Coordinate intermediate_locations = 4;
+  pylabrobot.common.v1.Coordinate pickup_offset = 5;
+  pylabrobot.common.v1.Coordinate destination_offset = 6;
   double pickup_distance_from_top = 7;
   GripDirection pickup_direction = 8;
   GripDirection drop_direction = 9;
@@ -154,11 +148,11 @@ message MovePlateRequest {
   string plate_name = 1;
   oneof destination {
     string to_name = 2;
-    Coordinate to_coordinate = 3;
+    pylabrobot.common.v1.Coordinate to_coordinate = 3;
   }
-  repeated Coordinate intermediate_locations = 4;
-  Coordinate pickup_offset = 5;
-  Coordinate destination_offset = 6;
+  repeated pylabrobot.common.v1.Coordinate intermediate_locations = 4;
+  pylabrobot.common.v1.Coordinate pickup_offset = 5;
+  pylabrobot.common.v1.Coordinate destination_offset = 6;
   GripDirection pickup_direction = 7;
   GripDirection drop_direction = 8;
   OptionalFloat pickup_distance_from_top = 9;
@@ -168,11 +162,11 @@ message MoveLidRequest {
   string lid_name = 1;
   oneof destination {
     string to_name = 2;
-    Coordinate to_coordinate = 3;
+    pylabrobot.common.v1.Coordinate to_coordinate = 3;
   }
-  repeated Coordinate intermediate_locations = 4;
-  Coordinate pickup_offset = 5;
-  Coordinate destination_offset = 6;
+  repeated pylabrobot.common.v1.Coordinate intermediate_locations = 4;
+  pylabrobot.common.v1.Coordinate pickup_offset = 5;
+  pylabrobot.common.v1.Coordinate destination_offset = 6;
   GripDirection pickup_direction = 7;
   GripDirection drop_direction = 8;
   OptionalFloat pickup_distance_from_top = 9;
@@ -182,23 +176,23 @@ message MoveLidRequest {
 
 message PickUpResourceRequest {
   string resource_name = 1;
-  Coordinate offset = 2;
+  pylabrobot.common.v1.Coordinate offset = 2;
   OptionalFloat pickup_distance_from_top = 3;
   GripDirection direction = 4;
 }
 
 message MovePickedUpResourceRequest {
-  Coordinate to = 1;
-  Coordinate offset = 2;
+  pylabrobot.common.v1.Coordinate to = 1;
+  pylabrobot.common.v1.Coordinate offset = 2;
   optional GripDirection direction = 3;
 }
 
 message DropResourceRequest {
   oneof destination {
     string destination_name = 1;
-    Coordinate destination_coordinate = 2;
+    pylabrobot.common.v1.Coordinate destination_coordinate = 2;
   }
-  Coordinate offset = 3;
+  pylabrobot.common.v1.Coordinate offset = 3;
   GripDirection direction = 4;
 }
 
@@ -223,68 +217,68 @@ service LiquidHandlerService {
   // --- Lifecycle ---
 
   // Connect to STAR and Resource servers, create and set up LiquidHandler.
-  rpc Setup(SetupRequest) returns (Empty);
+  rpc Setup(SetupRequest) returns (pylabrobot.common.v1.Empty);
   // Tear down the LiquidHandler and disconnect from backend servers.
-  rpc Stop(Empty) returns (Empty);
+  rpc Stop(pylabrobot.common.v1.Empty) returns (pylabrobot.common.v1.Empty);
 
   // --- Single-channel tips ---
 
   // Pick up tips from the given tip spots.
-  rpc PickUpTips(PickUpTipsRequest) returns (Empty);
+  rpc PickUpTips(PickUpTipsRequest) returns (pylabrobot.common.v1.Empty);
   // Drop tips into the given tip spots or trash.
-  rpc DropTips(DropTipsRequest) returns (Empty);
+  rpc DropTips(DropTipsRequest) returns (pylabrobot.common.v1.Empty);
   // Return tips to the spots they were originally picked up from.
-  rpc ReturnTips(ReturnTipsRequest) returns (Empty);
+  rpc ReturnTips(ReturnTipsRequest) returns (pylabrobot.common.v1.Empty);
   // Discard tips into the trash.
-  rpc DiscardTips(DiscardTipsRequest) returns (Empty);
+  rpc DiscardTips(DiscardTipsRequest) returns (pylabrobot.common.v1.Empty);
 
   // --- Single-channel liquid ---
 
   // Aspirate liquid from containers.
-  rpc Aspirate(AspirateRequest) returns (Empty);
+  rpc Aspirate(AspirateRequest) returns (pylabrobot.common.v1.Empty);
   // Dispense liquid into containers.
-  rpc Dispense(DispenseRequest) returns (Empty);
+  rpc Dispense(DispenseRequest) returns (pylabrobot.common.v1.Empty);
 
   // --- 96-head tips ---
 
   // Pick up tips with the 96-channel head from a tip rack.
-  rpc PickUpTips96(PickUpTips96Request) returns (Empty);
+  rpc PickUpTips96(PickUpTips96Request) returns (pylabrobot.common.v1.Empty);
   // Drop tips with the 96-channel head into a tip rack or trash.
-  rpc DropTips96(DropTips96Request) returns (Empty);
+  rpc DropTips96(DropTips96Request) returns (pylabrobot.common.v1.Empty);
   // Return 96-head tips to the rack they were originally picked up from.
-  rpc ReturnTips96(ReturnTips96Request) returns (Empty);
+  rpc ReturnTips96(ReturnTips96Request) returns (pylabrobot.common.v1.Empty);
   // Discard 96-head tips into the trash.
-  rpc DiscardTips96(DiscardTips96Request) returns (Empty);
+  rpc DiscardTips96(DiscardTips96Request) returns (pylabrobot.common.v1.Empty);
 
   // --- 96-head liquid ---
 
   // Aspirate liquid with the 96-channel head.
-  rpc Aspirate96(Aspirate96Request) returns (Empty);
+  rpc Aspirate96(Aspirate96Request) returns (pylabrobot.common.v1.Empty);
   // Dispense liquid with the 96-channel head.
-  rpc Dispense96(Dispense96Request) returns (Empty);
+  rpc Dispense96(Dispense96Request) returns (pylabrobot.common.v1.Empty);
 
   // --- Resource movement (high-level) ---
 
   // Move a resource from its current location to a destination.
-  rpc MoveResource(MoveResourceRequest) returns (Empty);
+  rpc MoveResource(MoveResourceRequest) returns (pylabrobot.common.v1.Empty);
   // Move a plate (convenience wrapper with plate-specific defaults).
-  rpc MovePlate(MovePlateRequest) returns (Empty);
+  rpc MovePlate(MovePlateRequest) returns (pylabrobot.common.v1.Empty);
   // Move a lid (convenience wrapper with lid-specific defaults).
-  rpc MoveLid(MoveLidRequest) returns (Empty);
+  rpc MoveLid(MoveLidRequest) returns (pylabrobot.common.v1.Empty);
 
   // --- Resource movement (low-level 3-step) ---
 
   // Pick up a resource with the gripper arm.
-  rpc PickUpResource(PickUpResourceRequest) returns (Empty);
+  rpc PickUpResource(PickUpResourceRequest) returns (pylabrobot.common.v1.Empty);
   // Move the currently picked-up resource to a new coordinate.
-  rpc MovePickedUpResource(MovePickedUpResourceRequest) returns (Empty);
+  rpc MovePickedUpResource(MovePickedUpResourceRequest) returns (pylabrobot.common.v1.Empty);
   // Drop the currently picked-up resource at a destination.
-  rpc DropResource(DropResourceRequest) returns (Empty);
+  rpc DropResource(DropResourceRequest) returns (pylabrobot.common.v1.Empty);
 
   // --- State queries ---
 
   // Get the tips currently mounted on each channel of the pipetting head.
-  rpc GetMountedTips(Empty) returns (GetMountedTipsResponse);
+  rpc GetMountedTips(pylabrobot.common.v1.Empty) returns (GetMountedTipsResponse);
   // Get the resource currently held by the gripper arm, if any.
-  rpc GetPickedUpResource(Empty) returns (GetPickedUpResourceResponse);
+  rpc GetPickedUpResource(pylabrobot.common.v1.Empty) returns (GetPickedUpResourceResponse);
 }

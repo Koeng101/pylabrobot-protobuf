@@ -9,6 +9,9 @@ from google.protobuf import message as _message
 from google.protobuf.internal import containers as _containers
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 
+from .types_pb2 import Coordinate as Coordinate
+from .types_pb2 import Empty as Empty
+
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class GripDirection(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
@@ -22,22 +25,6 @@ GRIP_DIRECTION_FRONT: GripDirection
 GRIP_DIRECTION_BACK: GripDirection
 GRIP_DIRECTION_LEFT: GripDirection
 GRIP_DIRECTION_RIGHT: GripDirection
-
-class Empty(_message.Message):
-  __slots__ = ()
-  def __init__(self) -> None: ...
-
-class Coordinate(_message.Message):
-  __slots__ = ("x", "y", "z")
-  X_FIELD_NUMBER: _ClassVar[int]
-  Y_FIELD_NUMBER: _ClassVar[int]
-  Z_FIELD_NUMBER: _ClassVar[int]
-  x: float
-  y: float
-  z: float
-  def __init__(
-    self, x: _Optional[float] = ..., y: _Optional[float] = ..., z: _Optional[float] = ...
-  ) -> None: ...
 
 class OptionalFloat(_message.Message):
   __slots__ = ("value",)

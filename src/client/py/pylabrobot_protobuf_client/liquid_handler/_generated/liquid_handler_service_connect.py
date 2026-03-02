@@ -18,6 +18,7 @@ from connectrpc.server import (
 )
 
 from . import liquid_handler_service_pb2 as pb2
+from . import types_pb2
 
 if TYPE_CHECKING:
   from collections.abc import AsyncGenerator, Iterable, Mapping
@@ -48,45 +49,45 @@ _NS = IdempotencyLevel.NO_SIDE_EFFECTS
 # ============================================================
 
 # Lifecycle
-_SETUP = _method("Setup", pb2.SetupRequest, pb2.Empty)
-_STOP = _method("Stop", pb2.Empty, pb2.Empty)
+_SETUP = _method("Setup", pb2.SetupRequest, types_pb2.Empty)
+_STOP = _method("Stop", types_pb2.Empty, types_pb2.Empty)
 
 # Single-channel tips
-_PICK_UP_TIPS = _method("PickUpTips", pb2.PickUpTipsRequest, pb2.Empty)
-_DROP_TIPS = _method("DropTips", pb2.DropTipsRequest, pb2.Empty)
-_RETURN_TIPS = _method("ReturnTips", pb2.ReturnTipsRequest, pb2.Empty)
-_DISCARD_TIPS = _method("DiscardTips", pb2.DiscardTipsRequest, pb2.Empty)
+_PICK_UP_TIPS = _method("PickUpTips", pb2.PickUpTipsRequest, types_pb2.Empty)
+_DROP_TIPS = _method("DropTips", pb2.DropTipsRequest, types_pb2.Empty)
+_RETURN_TIPS = _method("ReturnTips", pb2.ReturnTipsRequest, types_pb2.Empty)
+_DISCARD_TIPS = _method("DiscardTips", pb2.DiscardTipsRequest, types_pb2.Empty)
 
 # Single-channel liquid
-_ASPIRATE = _method("Aspirate", pb2.AspirateRequest, pb2.Empty)
-_DISPENSE = _method("Dispense", pb2.DispenseRequest, pb2.Empty)
+_ASPIRATE = _method("Aspirate", pb2.AspirateRequest, types_pb2.Empty)
+_DISPENSE = _method("Dispense", pb2.DispenseRequest, types_pb2.Empty)
 
 # 96-head tips
-_PICK_UP_TIPS96 = _method("PickUpTips96", pb2.PickUpTips96Request, pb2.Empty)
-_DROP_TIPS96 = _method("DropTips96", pb2.DropTips96Request, pb2.Empty)
-_RETURN_TIPS96 = _method("ReturnTips96", pb2.ReturnTips96Request, pb2.Empty)
-_DISCARD_TIPS96 = _method("DiscardTips96", pb2.DiscardTips96Request, pb2.Empty)
+_PICK_UP_TIPS96 = _method("PickUpTips96", pb2.PickUpTips96Request, types_pb2.Empty)
+_DROP_TIPS96 = _method("DropTips96", pb2.DropTips96Request, types_pb2.Empty)
+_RETURN_TIPS96 = _method("ReturnTips96", pb2.ReturnTips96Request, types_pb2.Empty)
+_DISCARD_TIPS96 = _method("DiscardTips96", pb2.DiscardTips96Request, types_pb2.Empty)
 
 # 96-head liquid
-_ASPIRATE96 = _method("Aspirate96", pb2.Aspirate96Request, pb2.Empty)
-_DISPENSE96 = _method("Dispense96", pb2.Dispense96Request, pb2.Empty)
+_ASPIRATE96 = _method("Aspirate96", pb2.Aspirate96Request, types_pb2.Empty)
+_DISPENSE96 = _method("Dispense96", pb2.Dispense96Request, types_pb2.Empty)
 
 # Resource movement (high-level)
-_MOVE_RESOURCE = _method("MoveResource", pb2.MoveResourceRequest, pb2.Empty)
-_MOVE_PLATE = _method("MovePlate", pb2.MovePlateRequest, pb2.Empty)
-_MOVE_LID = _method("MoveLid", pb2.MoveLidRequest, pb2.Empty)
+_MOVE_RESOURCE = _method("MoveResource", pb2.MoveResourceRequest, types_pb2.Empty)
+_MOVE_PLATE = _method("MovePlate", pb2.MovePlateRequest, types_pb2.Empty)
+_MOVE_LID = _method("MoveLid", pb2.MoveLidRequest, types_pb2.Empty)
 
 # Resource movement (low-level)
-_PICK_UP_RESOURCE = _method("PickUpResource", pb2.PickUpResourceRequest, pb2.Empty)
+_PICK_UP_RESOURCE = _method("PickUpResource", pb2.PickUpResourceRequest, types_pb2.Empty)
 _MOVE_PICKED_UP_RESOURCE = _method(
-  "MovePickedUpResource", pb2.MovePickedUpResourceRequest, pb2.Empty
+  "MovePickedUpResource", pb2.MovePickedUpResourceRequest, types_pb2.Empty
 )
-_DROP_RESOURCE = _method("DropResource", pb2.DropResourceRequest, pb2.Empty)
+_DROP_RESOURCE = _method("DropResource", pb2.DropResourceRequest, types_pb2.Empty)
 
 # State queries
-_GET_MOUNTED_TIPS = _method("GetMountedTips", pb2.Empty, pb2.GetMountedTipsResponse, _NS)
+_GET_MOUNTED_TIPS = _method("GetMountedTips", types_pb2.Empty, pb2.GetMountedTipsResponse, _NS)
 _GET_PICKED_UP_RESOURCE = _method(
-  "GetPickedUpResource", pb2.Empty, pb2.GetPickedUpResourceResponse, _NS
+  "GetPickedUpResource", types_pb2.Empty, pb2.GetPickedUpResourceResponse, _NS
 )
 
 
@@ -98,101 +99,101 @@ _GET_PICKED_UP_RESOURCE = _method(
 class LiquidHandlerService(Protocol):
   # --- Lifecycle ---
 
-  async def setup(self, request: pb2.SetupRequest, ctx: RequestContext) -> pb2.Empty:
+  async def setup(self, request: pb2.SetupRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def stop(self, request: pb2.Empty, ctx: RequestContext) -> pb2.Empty:
+  async def stop(self, request: types_pb2.Empty, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   # --- Single-channel tips ---
 
-  async def pick_up_tips(self, request: pb2.PickUpTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def pick_up_tips(self, request: pb2.PickUpTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def drop_tips(self, request: pb2.DropTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def drop_tips(self, request: pb2.DropTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def return_tips(self, request: pb2.ReturnTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def return_tips(self, request: pb2.ReturnTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def discard_tips(self, request: pb2.DiscardTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def discard_tips(self, request: pb2.DiscardTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   # --- Single-channel liquid ---
 
-  async def aspirate(self, request: pb2.AspirateRequest, ctx: RequestContext) -> pb2.Empty:
+  async def aspirate(self, request: pb2.AspirateRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def dispense(self, request: pb2.DispenseRequest, ctx: RequestContext) -> pb2.Empty:
+  async def dispense(self, request: pb2.DispenseRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   # --- 96-head tips ---
 
   async def pick_up_tips96(
     self, request: pb2.PickUpTips96Request, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def drop_tips96(self, request: pb2.DropTips96Request, ctx: RequestContext) -> pb2.Empty:
+  async def drop_tips96(self, request: pb2.DropTips96Request, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def return_tips96(
     self, request: pb2.ReturnTips96Request, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def discard_tips96(
     self, request: pb2.DiscardTips96Request, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   # --- 96-head liquid ---
 
-  async def aspirate96(self, request: pb2.Aspirate96Request, ctx: RequestContext) -> pb2.Empty:
+  async def aspirate96(self, request: pb2.Aspirate96Request, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def dispense96(self, request: pb2.Dispense96Request, ctx: RequestContext) -> pb2.Empty:
+  async def dispense96(self, request: pb2.Dispense96Request, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   # --- Resource movement (high-level) ---
 
   async def move_resource(
     self, request: pb2.MoveResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def move_plate(self, request: pb2.MovePlateRequest, ctx: RequestContext) -> pb2.Empty:
+  async def move_plate(self, request: pb2.MovePlateRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def move_lid(self, request: pb2.MoveLidRequest, ctx: RequestContext) -> pb2.Empty:
+  async def move_lid(self, request: pb2.MoveLidRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   # --- Resource movement (low-level) ---
 
   async def pick_up_resource(
     self, request: pb2.PickUpResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def move_picked_up_resource(
     self, request: pb2.MovePickedUpResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def drop_resource(
     self, request: pb2.DropResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   # --- State queries ---
 
   async def get_mounted_tips(
-    self, request: pb2.Empty, ctx: RequestContext
+    self, request: types_pb2.Empty, ctx: RequestContext
   ) -> pb2.GetMountedTipsResponse:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def get_picked_up_resource(
-    self, request: pb2.Empty, ctx: RequestContext
+    self, request: types_pb2.Empty, ctx: RequestContext
   ) -> pb2.GetPickedUpResourceResponse:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
@@ -285,18 +286,18 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_SETUP, headers=headers, timeout_ms=timeout_ms
     )
 
   async def stop(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_STOP, headers=headers, timeout_ms=timeout_ms
     )
@@ -309,7 +310,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_PICK_UP_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -320,7 +321,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_DROP_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -331,7 +332,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_RETURN_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -342,7 +343,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_DISCARD_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -355,7 +356,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_ASPIRATE, headers=headers, timeout_ms=timeout_ms
     )
@@ -366,7 +367,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_DISPENSE, headers=headers, timeout_ms=timeout_ms
     )
@@ -379,7 +380,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_PICK_UP_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -390,7 +391,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_DROP_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -401,7 +402,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_RETURN_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -412,7 +413,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_DISCARD_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -425,7 +426,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_ASPIRATE96, headers=headers, timeout_ms=timeout_ms
     )
@@ -436,7 +437,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_DISPENSE96, headers=headers, timeout_ms=timeout_ms
     )
@@ -449,7 +450,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_MOVE_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -460,7 +461,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_MOVE_PLATE, headers=headers, timeout_ms=timeout_ms
     )
@@ -471,7 +472,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_MOVE_LID, headers=headers, timeout_ms=timeout_ms
     )
@@ -484,7 +485,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_PICK_UP_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -495,7 +496,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_MOVE_PICKED_UP_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -506,7 +507,7 @@ class LiquidHandlerServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_DROP_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -515,7 +516,7 @@ class LiquidHandlerServiceClient(ConnectClient):
 
   async def get_mounted_tips(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
@@ -531,7 +532,7 @@ class LiquidHandlerServiceClient(ConnectClient):
 
   async def get_picked_up_resource(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
@@ -560,18 +561,18 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_SETUP, headers=headers, timeout_ms=timeout_ms
     )
 
   def stop(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_STOP, headers=headers, timeout_ms=timeout_ms
     )
@@ -584,7 +585,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_PICK_UP_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -595,7 +596,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_DROP_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -606,7 +607,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_RETURN_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -617,7 +618,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_DISCARD_TIPS, headers=headers, timeout_ms=timeout_ms
     )
@@ -630,7 +631,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_ASPIRATE, headers=headers, timeout_ms=timeout_ms
     )
@@ -641,7 +642,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_DISPENSE, headers=headers, timeout_ms=timeout_ms
     )
@@ -654,7 +655,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_PICK_UP_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -665,7 +666,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_DROP_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -676,7 +677,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_RETURN_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -687,7 +688,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_DISCARD_TIPS96, headers=headers, timeout_ms=timeout_ms
     )
@@ -700,7 +701,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_ASPIRATE96, headers=headers, timeout_ms=timeout_ms
     )
@@ -711,7 +712,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_DISPENSE96, headers=headers, timeout_ms=timeout_ms
     )
@@ -724,7 +725,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_MOVE_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -735,7 +736,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_MOVE_PLATE, headers=headers, timeout_ms=timeout_ms
     )
@@ -746,7 +747,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_MOVE_LID, headers=headers, timeout_ms=timeout_ms
     )
@@ -759,7 +760,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_PICK_UP_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -770,7 +771,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_MOVE_PICKED_UP_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -781,7 +782,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_DROP_RESOURCE, headers=headers, timeout_ms=timeout_ms
     )
@@ -790,7 +791,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
 
   def get_mounted_tips(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
@@ -806,7 +807,7 @@ class LiquidHandlerServiceClientSync(ConnectClientSync):
 
   def get_picked_up_resource(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,

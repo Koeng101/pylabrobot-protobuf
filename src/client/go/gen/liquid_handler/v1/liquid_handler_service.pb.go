@@ -2,11 +2,12 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: liquid_handler/v1/liquid_handler_service.proto
+// source: liquid_handler_service.proto
 
 package liquidhandlerv1
 
 import (
+	v1 "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/common/v1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -57,11 +58,11 @@ func (x GripDirection) String() string {
 }
 
 func (GripDirection) Descriptor() protoreflect.EnumDescriptor {
-	return file_liquid_handler_v1_liquid_handler_service_proto_enumTypes[0].Descriptor()
+	return file_liquid_handler_service_proto_enumTypes[0].Descriptor()
 }
 
 func (GripDirection) Type() protoreflect.EnumType {
-	return &file_liquid_handler_v1_liquid_handler_service_proto_enumTypes[0]
+	return &file_liquid_handler_service_proto_enumTypes[0]
 }
 
 func (x GripDirection) Number() protoreflect.EnumNumber {
@@ -70,103 +71,7 @@ func (x GripDirection) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use GripDirection.Descriptor instead.
 func (GripDirection) EnumDescriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{0}
-}
-
-type Empty struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Empty) Reset() {
-	*x = Empty{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Empty) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Empty) ProtoMessage() {}
-
-func (x *Empty) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Empty.ProtoReflect.Descriptor instead.
-func (*Empty) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{0}
-}
-
-type Coordinate struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	X             float64                `protobuf:"fixed64,1,opt,name=x,proto3" json:"x,omitempty"`
-	Y             float64                `protobuf:"fixed64,2,opt,name=y,proto3" json:"y,omitempty"`
-	Z             float64                `protobuf:"fixed64,3,opt,name=z,proto3" json:"z,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Coordinate) Reset() {
-	*x = Coordinate{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Coordinate) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Coordinate) ProtoMessage() {}
-
-func (x *Coordinate) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Coordinate.ProtoReflect.Descriptor instead.
-func (*Coordinate) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{1}
-}
-
-func (x *Coordinate) GetX() float64 {
-	if x != nil {
-		return x.X
-	}
-	return 0
-}
-
-func (x *Coordinate) GetY() float64 {
-	if x != nil {
-		return x.Y
-	}
-	return 0
-}
-
-func (x *Coordinate) GetZ() float64 {
-	if x != nil {
-		return x.Z
-	}
-	return 0
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{0}
 }
 
 type OptionalFloat struct {
@@ -178,7 +83,7 @@ type OptionalFloat struct {
 
 func (x *OptionalFloat) Reset() {
 	*x = OptionalFloat{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[2]
+	mi := &file_liquid_handler_service_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -190,7 +95,7 @@ func (x *OptionalFloat) String() string {
 func (*OptionalFloat) ProtoMessage() {}
 
 func (x *OptionalFloat) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[2]
+	mi := &file_liquid_handler_service_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -203,7 +108,7 @@ func (x *OptionalFloat) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use OptionalFloat.ProtoReflect.Descriptor instead.
 func (*OptionalFloat) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{2}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *OptionalFloat) GetValue() float64 {
@@ -227,7 +132,7 @@ type TipInfo struct {
 
 func (x *TipInfo) Reset() {
 	*x = TipInfo{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[3]
+	mi := &file_liquid_handler_service_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -239,7 +144,7 @@ func (x *TipInfo) String() string {
 func (*TipInfo) ProtoMessage() {}
 
 func (x *TipInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[3]
+	mi := &file_liquid_handler_service_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -252,7 +157,7 @@ func (x *TipInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TipInfo.ProtoReflect.Descriptor instead.
 func (*TipInfo) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{3}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *TipInfo) GetChannel() int32 {
@@ -307,7 +212,7 @@ type SetupRequest struct {
 
 func (x *SetupRequest) Reset() {
 	*x = SetupRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[4]
+	mi := &file_liquid_handler_service_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -319,7 +224,7 @@ func (x *SetupRequest) String() string {
 func (*SetupRequest) ProtoMessage() {}
 
 func (x *SetupRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[4]
+	mi := &file_liquid_handler_service_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -332,7 +237,7 @@ func (x *SetupRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetupRequest.ProtoReflect.Descriptor instead.
 func (*SetupRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{4}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *SetupRequest) GetStarUrl() string {
@@ -353,14 +258,14 @@ type PickUpTipsRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	TipSpotNames  []string               `protobuf:"bytes,1,rep,name=tip_spot_names,json=tipSpotNames,proto3" json:"tip_spot_names,omitempty"`
 	UseChannels   []int32                `protobuf:"varint,2,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
-	Offsets       []*Coordinate          `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
+	Offsets       []*v1.Coordinate       `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *PickUpTipsRequest) Reset() {
 	*x = PickUpTipsRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[5]
+	mi := &file_liquid_handler_service_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -372,7 +277,7 @@ func (x *PickUpTipsRequest) String() string {
 func (*PickUpTipsRequest) ProtoMessage() {}
 
 func (x *PickUpTipsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[5]
+	mi := &file_liquid_handler_service_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -385,7 +290,7 @@ func (x *PickUpTipsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTipsRequest.ProtoReflect.Descriptor instead.
 func (*PickUpTipsRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{5}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *PickUpTipsRequest) GetTipSpotNames() []string {
@@ -402,7 +307,7 @@ func (x *PickUpTipsRequest) GetUseChannels() []int32 {
 	return nil
 }
 
-func (x *PickUpTipsRequest) GetOffsets() []*Coordinate {
+func (x *PickUpTipsRequest) GetOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.Offsets
 	}
@@ -413,7 +318,7 @@ type DropTipsRequest struct {
 	state              protoimpl.MessageState `protogen:"open.v1"`
 	TipSpotNames       []string               `protobuf:"bytes,1,rep,name=tip_spot_names,json=tipSpotNames,proto3" json:"tip_spot_names,omitempty"`
 	UseChannels        []int32                `protobuf:"varint,2,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
-	Offsets            []*Coordinate          `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
+	Offsets            []*v1.Coordinate       `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
 	AllowNonzeroVolume bool                   `protobuf:"varint,4,opt,name=allow_nonzero_volume,json=allowNonzeroVolume,proto3" json:"allow_nonzero_volume,omitempty"`
 	unknownFields      protoimpl.UnknownFields
 	sizeCache          protoimpl.SizeCache
@@ -421,7 +326,7 @@ type DropTipsRequest struct {
 
 func (x *DropTipsRequest) Reset() {
 	*x = DropTipsRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[6]
+	mi := &file_liquid_handler_service_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -433,7 +338,7 @@ func (x *DropTipsRequest) String() string {
 func (*DropTipsRequest) ProtoMessage() {}
 
 func (x *DropTipsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[6]
+	mi := &file_liquid_handler_service_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -446,7 +351,7 @@ func (x *DropTipsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropTipsRequest.ProtoReflect.Descriptor instead.
 func (*DropTipsRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{6}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *DropTipsRequest) GetTipSpotNames() []string {
@@ -463,7 +368,7 @@ func (x *DropTipsRequest) GetUseChannels() []int32 {
 	return nil
 }
 
-func (x *DropTipsRequest) GetOffsets() []*Coordinate {
+func (x *DropTipsRequest) GetOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.Offsets
 	}
@@ -481,14 +386,14 @@ type ReturnTipsRequest struct {
 	state              protoimpl.MessageState `protogen:"open.v1"`
 	UseChannels        []int32                `protobuf:"varint,1,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
 	AllowNonzeroVolume bool                   `protobuf:"varint,2,opt,name=allow_nonzero_volume,json=allowNonzeroVolume,proto3" json:"allow_nonzero_volume,omitempty"`
-	Offsets            []*Coordinate          `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
+	Offsets            []*v1.Coordinate       `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
 	unknownFields      protoimpl.UnknownFields
 	sizeCache          protoimpl.SizeCache
 }
 
 func (x *ReturnTipsRequest) Reset() {
 	*x = ReturnTipsRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[7]
+	mi := &file_liquid_handler_service_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -500,7 +405,7 @@ func (x *ReturnTipsRequest) String() string {
 func (*ReturnTipsRequest) ProtoMessage() {}
 
 func (x *ReturnTipsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[7]
+	mi := &file_liquid_handler_service_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -513,7 +418,7 @@ func (x *ReturnTipsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReturnTipsRequest.ProtoReflect.Descriptor instead.
 func (*ReturnTipsRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{7}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *ReturnTipsRequest) GetUseChannels() []int32 {
@@ -530,7 +435,7 @@ func (x *ReturnTipsRequest) GetAllowNonzeroVolume() bool {
 	return false
 }
 
-func (x *ReturnTipsRequest) GetOffsets() []*Coordinate {
+func (x *ReturnTipsRequest) GetOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.Offsets
 	}
@@ -541,14 +446,14 @@ type DiscardTipsRequest struct {
 	state              protoimpl.MessageState `protogen:"open.v1"`
 	UseChannels        []int32                `protobuf:"varint,1,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
 	AllowNonzeroVolume bool                   `protobuf:"varint,2,opt,name=allow_nonzero_volume,json=allowNonzeroVolume,proto3" json:"allow_nonzero_volume,omitempty"`
-	Offsets            []*Coordinate          `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
+	Offsets            []*v1.Coordinate       `protobuf:"bytes,3,rep,name=offsets,proto3" json:"offsets,omitempty"`
 	unknownFields      protoimpl.UnknownFields
 	sizeCache          protoimpl.SizeCache
 }
 
 func (x *DiscardTipsRequest) Reset() {
 	*x = DiscardTipsRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[8]
+	mi := &file_liquid_handler_service_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -560,7 +465,7 @@ func (x *DiscardTipsRequest) String() string {
 func (*DiscardTipsRequest) ProtoMessage() {}
 
 func (x *DiscardTipsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[8]
+	mi := &file_liquid_handler_service_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -573,7 +478,7 @@ func (x *DiscardTipsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DiscardTipsRequest.ProtoReflect.Descriptor instead.
 func (*DiscardTipsRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{8}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *DiscardTipsRequest) GetUseChannels() []int32 {
@@ -590,7 +495,7 @@ func (x *DiscardTipsRequest) GetAllowNonzeroVolume() bool {
 	return false
 }
 
-func (x *DiscardTipsRequest) GetOffsets() []*Coordinate {
+func (x *DiscardTipsRequest) GetOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.Offsets
 	}
@@ -603,7 +508,7 @@ type AspirateRequest struct {
 	Vols             []float64              `protobuf:"fixed64,2,rep,packed,name=vols,proto3" json:"vols,omitempty"`
 	UseChannels      []int32                `protobuf:"varint,3,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
 	FlowRates        []*OptionalFloat       `protobuf:"bytes,4,rep,name=flow_rates,json=flowRates,proto3" json:"flow_rates,omitempty"`
-	Offsets          []*Coordinate          `protobuf:"bytes,5,rep,name=offsets,proto3" json:"offsets,omitempty"`
+	Offsets          []*v1.Coordinate       `protobuf:"bytes,5,rep,name=offsets,proto3" json:"offsets,omitempty"`
 	LiquidHeight     []*OptionalFloat       `protobuf:"bytes,6,rep,name=liquid_height,json=liquidHeight,proto3" json:"liquid_height,omitempty"`
 	BlowOutAirVolume []*OptionalFloat       `protobuf:"bytes,7,rep,name=blow_out_air_volume,json=blowOutAirVolume,proto3" json:"blow_out_air_volume,omitempty"`
 	unknownFields    protoimpl.UnknownFields
@@ -612,7 +517,7 @@ type AspirateRequest struct {
 
 func (x *AspirateRequest) Reset() {
 	*x = AspirateRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[9]
+	mi := &file_liquid_handler_service_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -624,7 +529,7 @@ func (x *AspirateRequest) String() string {
 func (*AspirateRequest) ProtoMessage() {}
 
 func (x *AspirateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[9]
+	mi := &file_liquid_handler_service_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -637,7 +542,7 @@ func (x *AspirateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AspirateRequest.ProtoReflect.Descriptor instead.
 func (*AspirateRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{9}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *AspirateRequest) GetResourceNames() []string {
@@ -668,7 +573,7 @@ func (x *AspirateRequest) GetFlowRates() []*OptionalFloat {
 	return nil
 }
 
-func (x *AspirateRequest) GetOffsets() []*Coordinate {
+func (x *AspirateRequest) GetOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.Offsets
 	}
@@ -695,7 +600,7 @@ type DispenseRequest struct {
 	Vols             []float64              `protobuf:"fixed64,2,rep,packed,name=vols,proto3" json:"vols,omitempty"`
 	UseChannels      []int32                `protobuf:"varint,3,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
 	FlowRates        []*OptionalFloat       `protobuf:"bytes,4,rep,name=flow_rates,json=flowRates,proto3" json:"flow_rates,omitempty"`
-	Offsets          []*Coordinate          `protobuf:"bytes,5,rep,name=offsets,proto3" json:"offsets,omitempty"`
+	Offsets          []*v1.Coordinate       `protobuf:"bytes,5,rep,name=offsets,proto3" json:"offsets,omitempty"`
 	LiquidHeight     []*OptionalFloat       `protobuf:"bytes,6,rep,name=liquid_height,json=liquidHeight,proto3" json:"liquid_height,omitempty"`
 	BlowOutAirVolume []*OptionalFloat       `protobuf:"bytes,7,rep,name=blow_out_air_volume,json=blowOutAirVolume,proto3" json:"blow_out_air_volume,omitempty"`
 	unknownFields    protoimpl.UnknownFields
@@ -704,7 +609,7 @@ type DispenseRequest struct {
 
 func (x *DispenseRequest) Reset() {
 	*x = DispenseRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[10]
+	mi := &file_liquid_handler_service_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -716,7 +621,7 @@ func (x *DispenseRequest) String() string {
 func (*DispenseRequest) ProtoMessage() {}
 
 func (x *DispenseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[10]
+	mi := &file_liquid_handler_service_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -729,7 +634,7 @@ func (x *DispenseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DispenseRequest.ProtoReflect.Descriptor instead.
 func (*DispenseRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{10}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *DispenseRequest) GetResourceNames() []string {
@@ -760,7 +665,7 @@ func (x *DispenseRequest) GetFlowRates() []*OptionalFloat {
 	return nil
 }
 
-func (x *DispenseRequest) GetOffsets() []*Coordinate {
+func (x *DispenseRequest) GetOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.Offsets
 	}
@@ -784,14 +689,14 @@ func (x *DispenseRequest) GetBlowOutAirVolume() []*OptionalFloat {
 type PickUpTips96Request struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	TipRackName   string                 `protobuf:"bytes,1,opt,name=tip_rack_name,json=tipRackName,proto3" json:"tip_rack_name,omitempty"`
-	Offset        *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset        *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *PickUpTips96Request) Reset() {
 	*x = PickUpTips96Request{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[11]
+	mi := &file_liquid_handler_service_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -803,7 +708,7 @@ func (x *PickUpTips96Request) String() string {
 func (*PickUpTips96Request) ProtoMessage() {}
 
 func (x *PickUpTips96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[11]
+	mi := &file_liquid_handler_service_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -816,7 +721,7 @@ func (x *PickUpTips96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTips96Request.ProtoReflect.Descriptor instead.
 func (*PickUpTips96Request) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{11}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *PickUpTips96Request) GetTipRackName() string {
@@ -826,7 +731,7 @@ func (x *PickUpTips96Request) GetTipRackName() string {
 	return ""
 }
 
-func (x *PickUpTips96Request) GetOffset() *Coordinate {
+func (x *PickUpTips96Request) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -836,7 +741,7 @@ func (x *PickUpTips96Request) GetOffset() *Coordinate {
 type DropTips96Request struct {
 	state              protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName       string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset             *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset             *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	AllowNonzeroVolume bool                   `protobuf:"varint,3,opt,name=allow_nonzero_volume,json=allowNonzeroVolume,proto3" json:"allow_nonzero_volume,omitempty"`
 	unknownFields      protoimpl.UnknownFields
 	sizeCache          protoimpl.SizeCache
@@ -844,7 +749,7 @@ type DropTips96Request struct {
 
 func (x *DropTips96Request) Reset() {
 	*x = DropTips96Request{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[12]
+	mi := &file_liquid_handler_service_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -856,7 +761,7 @@ func (x *DropTips96Request) String() string {
 func (*DropTips96Request) ProtoMessage() {}
 
 func (x *DropTips96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[12]
+	mi := &file_liquid_handler_service_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -869,7 +774,7 @@ func (x *DropTips96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropTips96Request.ProtoReflect.Descriptor instead.
 func (*DropTips96Request) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{12}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *DropTips96Request) GetResourceName() string {
@@ -879,7 +784,7 @@ func (x *DropTips96Request) GetResourceName() string {
 	return ""
 }
 
-func (x *DropTips96Request) GetOffset() *Coordinate {
+func (x *DropTips96Request) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -896,14 +801,14 @@ func (x *DropTips96Request) GetAllowNonzeroVolume() bool {
 type ReturnTips96Request struct {
 	state              protoimpl.MessageState `protogen:"open.v1"`
 	AllowNonzeroVolume bool                   `protobuf:"varint,1,opt,name=allow_nonzero_volume,json=allowNonzeroVolume,proto3" json:"allow_nonzero_volume,omitempty"`
-	Offset             *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset             *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	unknownFields      protoimpl.UnknownFields
 	sizeCache          protoimpl.SizeCache
 }
 
 func (x *ReturnTips96Request) Reset() {
 	*x = ReturnTips96Request{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[13]
+	mi := &file_liquid_handler_service_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -915,7 +820,7 @@ func (x *ReturnTips96Request) String() string {
 func (*ReturnTips96Request) ProtoMessage() {}
 
 func (x *ReturnTips96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[13]
+	mi := &file_liquid_handler_service_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -928,7 +833,7 @@ func (x *ReturnTips96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReturnTips96Request.ProtoReflect.Descriptor instead.
 func (*ReturnTips96Request) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{13}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *ReturnTips96Request) GetAllowNonzeroVolume() bool {
@@ -938,7 +843,7 @@ func (x *ReturnTips96Request) GetAllowNonzeroVolume() bool {
 	return false
 }
 
-func (x *ReturnTips96Request) GetOffset() *Coordinate {
+func (x *ReturnTips96Request) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -954,7 +859,7 @@ type DiscardTips96Request struct {
 
 func (x *DiscardTips96Request) Reset() {
 	*x = DiscardTips96Request{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[14]
+	mi := &file_liquid_handler_service_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -966,7 +871,7 @@ func (x *DiscardTips96Request) String() string {
 func (*DiscardTips96Request) ProtoMessage() {}
 
 func (x *DiscardTips96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[14]
+	mi := &file_liquid_handler_service_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -979,7 +884,7 @@ func (x *DiscardTips96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DiscardTips96Request.ProtoReflect.Descriptor instead.
 func (*DiscardTips96Request) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{14}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *DiscardTips96Request) GetAllowNonzeroVolume() bool {
@@ -993,7 +898,7 @@ type Aspirate96Request struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName     string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
 	Volume           float64                `protobuf:"fixed64,2,opt,name=volume,proto3" json:"volume,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
 	FlowRate         *OptionalFloat         `protobuf:"bytes,4,opt,name=flow_rate,json=flowRate,proto3" json:"flow_rate,omitempty"`
 	LiquidHeight     *OptionalFloat         `protobuf:"bytes,5,opt,name=liquid_height,json=liquidHeight,proto3" json:"liquid_height,omitempty"`
 	BlowOutAirVolume *OptionalFloat         `protobuf:"bytes,6,opt,name=blow_out_air_volume,json=blowOutAirVolume,proto3" json:"blow_out_air_volume,omitempty"`
@@ -1003,7 +908,7 @@ type Aspirate96Request struct {
 
 func (x *Aspirate96Request) Reset() {
 	*x = Aspirate96Request{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[15]
+	mi := &file_liquid_handler_service_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1015,7 +920,7 @@ func (x *Aspirate96Request) String() string {
 func (*Aspirate96Request) ProtoMessage() {}
 
 func (x *Aspirate96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[15]
+	mi := &file_liquid_handler_service_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1028,7 +933,7 @@ func (x *Aspirate96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Aspirate96Request.ProtoReflect.Descriptor instead.
 func (*Aspirate96Request) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{15}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *Aspirate96Request) GetResourceName() string {
@@ -1045,7 +950,7 @@ func (x *Aspirate96Request) GetVolume() float64 {
 	return 0
 }
 
-func (x *Aspirate96Request) GetOffset() *Coordinate {
+func (x *Aspirate96Request) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1077,7 +982,7 @@ type Dispense96Request struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName     string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
 	Volume           float64                `protobuf:"fixed64,2,opt,name=volume,proto3" json:"volume,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
 	FlowRate         *OptionalFloat         `protobuf:"bytes,4,opt,name=flow_rate,json=flowRate,proto3" json:"flow_rate,omitempty"`
 	LiquidHeight     *OptionalFloat         `protobuf:"bytes,5,opt,name=liquid_height,json=liquidHeight,proto3" json:"liquid_height,omitempty"`
 	BlowOutAirVolume *OptionalFloat         `protobuf:"bytes,6,opt,name=blow_out_air_volume,json=blowOutAirVolume,proto3" json:"blow_out_air_volume,omitempty"`
@@ -1087,7 +992,7 @@ type Dispense96Request struct {
 
 func (x *Dispense96Request) Reset() {
 	*x = Dispense96Request{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[16]
+	mi := &file_liquid_handler_service_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1099,7 +1004,7 @@ func (x *Dispense96Request) String() string {
 func (*Dispense96Request) ProtoMessage() {}
 
 func (x *Dispense96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[16]
+	mi := &file_liquid_handler_service_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1112,7 +1017,7 @@ func (x *Dispense96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Dispense96Request.ProtoReflect.Descriptor instead.
 func (*Dispense96Request) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{16}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *Dispense96Request) GetResourceName() string {
@@ -1129,7 +1034,7 @@ func (x *Dispense96Request) GetVolume() float64 {
 	return 0
 }
 
-func (x *Dispense96Request) GetOffset() *Coordinate {
+func (x *Dispense96Request) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1165,9 +1070,9 @@ type MoveResourceRequest struct {
 	//	*MoveResourceRequest_ToName
 	//	*MoveResourceRequest_ToCoordinate
 	Destination           isMoveResourceRequest_Destination `protobuf_oneof:"destination"`
-	IntermediateLocations []*Coordinate                     `protobuf:"bytes,4,rep,name=intermediate_locations,json=intermediateLocations,proto3" json:"intermediate_locations,omitempty"`
-	PickupOffset          *Coordinate                       `protobuf:"bytes,5,opt,name=pickup_offset,json=pickupOffset,proto3" json:"pickup_offset,omitempty"`
-	DestinationOffset     *Coordinate                       `protobuf:"bytes,6,opt,name=destination_offset,json=destinationOffset,proto3" json:"destination_offset,omitempty"`
+	IntermediateLocations []*v1.Coordinate                  `protobuf:"bytes,4,rep,name=intermediate_locations,json=intermediateLocations,proto3" json:"intermediate_locations,omitempty"`
+	PickupOffset          *v1.Coordinate                    `protobuf:"bytes,5,opt,name=pickup_offset,json=pickupOffset,proto3" json:"pickup_offset,omitempty"`
+	DestinationOffset     *v1.Coordinate                    `protobuf:"bytes,6,opt,name=destination_offset,json=destinationOffset,proto3" json:"destination_offset,omitempty"`
 	PickupDistanceFromTop float64                           `protobuf:"fixed64,7,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
 	PickupDirection       GripDirection                     `protobuf:"varint,8,opt,name=pickup_direction,json=pickupDirection,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"pickup_direction,omitempty"`
 	DropDirection         GripDirection                     `protobuf:"varint,9,opt,name=drop_direction,json=dropDirection,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"drop_direction,omitempty"`
@@ -1177,7 +1082,7 @@ type MoveResourceRequest struct {
 
 func (x *MoveResourceRequest) Reset() {
 	*x = MoveResourceRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[17]
+	mi := &file_liquid_handler_service_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1189,7 +1094,7 @@ func (x *MoveResourceRequest) String() string {
 func (*MoveResourceRequest) ProtoMessage() {}
 
 func (x *MoveResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[17]
+	mi := &file_liquid_handler_service_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1202,7 +1107,7 @@ func (x *MoveResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveResourceRequest.ProtoReflect.Descriptor instead.
 func (*MoveResourceRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{17}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *MoveResourceRequest) GetResourceName() string {
@@ -1228,7 +1133,7 @@ func (x *MoveResourceRequest) GetToName() string {
 	return ""
 }
 
-func (x *MoveResourceRequest) GetToCoordinate() *Coordinate {
+func (x *MoveResourceRequest) GetToCoordinate() *v1.Coordinate {
 	if x != nil {
 		if x, ok := x.Destination.(*MoveResourceRequest_ToCoordinate); ok {
 			return x.ToCoordinate
@@ -1237,21 +1142,21 @@ func (x *MoveResourceRequest) GetToCoordinate() *Coordinate {
 	return nil
 }
 
-func (x *MoveResourceRequest) GetIntermediateLocations() []*Coordinate {
+func (x *MoveResourceRequest) GetIntermediateLocations() []*v1.Coordinate {
 	if x != nil {
 		return x.IntermediateLocations
 	}
 	return nil
 }
 
-func (x *MoveResourceRequest) GetPickupOffset() *Coordinate {
+func (x *MoveResourceRequest) GetPickupOffset() *v1.Coordinate {
 	if x != nil {
 		return x.PickupOffset
 	}
 	return nil
 }
 
-func (x *MoveResourceRequest) GetDestinationOffset() *Coordinate {
+func (x *MoveResourceRequest) GetDestinationOffset() *v1.Coordinate {
 	if x != nil {
 		return x.DestinationOffset
 	}
@@ -1288,7 +1193,7 @@ type MoveResourceRequest_ToName struct {
 }
 
 type MoveResourceRequest_ToCoordinate struct {
-	ToCoordinate *Coordinate `protobuf:"bytes,3,opt,name=to_coordinate,json=toCoordinate,proto3,oneof"`
+	ToCoordinate *v1.Coordinate `protobuf:"bytes,3,opt,name=to_coordinate,json=toCoordinate,proto3,oneof"`
 }
 
 func (*MoveResourceRequest_ToName) isMoveResourceRequest_Destination() {}
@@ -1303,9 +1208,9 @@ type MovePlateRequest struct {
 	//	*MovePlateRequest_ToName
 	//	*MovePlateRequest_ToCoordinate
 	Destination           isMovePlateRequest_Destination `protobuf_oneof:"destination"`
-	IntermediateLocations []*Coordinate                  `protobuf:"bytes,4,rep,name=intermediate_locations,json=intermediateLocations,proto3" json:"intermediate_locations,omitempty"`
-	PickupOffset          *Coordinate                    `protobuf:"bytes,5,opt,name=pickup_offset,json=pickupOffset,proto3" json:"pickup_offset,omitempty"`
-	DestinationOffset     *Coordinate                    `protobuf:"bytes,6,opt,name=destination_offset,json=destinationOffset,proto3" json:"destination_offset,omitempty"`
+	IntermediateLocations []*v1.Coordinate               `protobuf:"bytes,4,rep,name=intermediate_locations,json=intermediateLocations,proto3" json:"intermediate_locations,omitempty"`
+	PickupOffset          *v1.Coordinate                 `protobuf:"bytes,5,opt,name=pickup_offset,json=pickupOffset,proto3" json:"pickup_offset,omitempty"`
+	DestinationOffset     *v1.Coordinate                 `protobuf:"bytes,6,opt,name=destination_offset,json=destinationOffset,proto3" json:"destination_offset,omitempty"`
 	PickupDirection       GripDirection                  `protobuf:"varint,7,opt,name=pickup_direction,json=pickupDirection,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"pickup_direction,omitempty"`
 	DropDirection         GripDirection                  `protobuf:"varint,8,opt,name=drop_direction,json=dropDirection,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"drop_direction,omitempty"`
 	PickupDistanceFromTop *OptionalFloat                 `protobuf:"bytes,9,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
@@ -1315,7 +1220,7 @@ type MovePlateRequest struct {
 
 func (x *MovePlateRequest) Reset() {
 	*x = MovePlateRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[18]
+	mi := &file_liquid_handler_service_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1327,7 +1232,7 @@ func (x *MovePlateRequest) String() string {
 func (*MovePlateRequest) ProtoMessage() {}
 
 func (x *MovePlateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[18]
+	mi := &file_liquid_handler_service_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1340,7 +1245,7 @@ func (x *MovePlateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MovePlateRequest.ProtoReflect.Descriptor instead.
 func (*MovePlateRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{18}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *MovePlateRequest) GetPlateName() string {
@@ -1366,7 +1271,7 @@ func (x *MovePlateRequest) GetToName() string {
 	return ""
 }
 
-func (x *MovePlateRequest) GetToCoordinate() *Coordinate {
+func (x *MovePlateRequest) GetToCoordinate() *v1.Coordinate {
 	if x != nil {
 		if x, ok := x.Destination.(*MovePlateRequest_ToCoordinate); ok {
 			return x.ToCoordinate
@@ -1375,21 +1280,21 @@ func (x *MovePlateRequest) GetToCoordinate() *Coordinate {
 	return nil
 }
 
-func (x *MovePlateRequest) GetIntermediateLocations() []*Coordinate {
+func (x *MovePlateRequest) GetIntermediateLocations() []*v1.Coordinate {
 	if x != nil {
 		return x.IntermediateLocations
 	}
 	return nil
 }
 
-func (x *MovePlateRequest) GetPickupOffset() *Coordinate {
+func (x *MovePlateRequest) GetPickupOffset() *v1.Coordinate {
 	if x != nil {
 		return x.PickupOffset
 	}
 	return nil
 }
 
-func (x *MovePlateRequest) GetDestinationOffset() *Coordinate {
+func (x *MovePlateRequest) GetDestinationOffset() *v1.Coordinate {
 	if x != nil {
 		return x.DestinationOffset
 	}
@@ -1426,7 +1331,7 @@ type MovePlateRequest_ToName struct {
 }
 
 type MovePlateRequest_ToCoordinate struct {
-	ToCoordinate *Coordinate `protobuf:"bytes,3,opt,name=to_coordinate,json=toCoordinate,proto3,oneof"`
+	ToCoordinate *v1.Coordinate `protobuf:"bytes,3,opt,name=to_coordinate,json=toCoordinate,proto3,oneof"`
 }
 
 func (*MovePlateRequest_ToName) isMovePlateRequest_Destination() {}
@@ -1441,9 +1346,9 @@ type MoveLidRequest struct {
 	//	*MoveLidRequest_ToName
 	//	*MoveLidRequest_ToCoordinate
 	Destination           isMoveLidRequest_Destination `protobuf_oneof:"destination"`
-	IntermediateLocations []*Coordinate                `protobuf:"bytes,4,rep,name=intermediate_locations,json=intermediateLocations,proto3" json:"intermediate_locations,omitempty"`
-	PickupOffset          *Coordinate                  `protobuf:"bytes,5,opt,name=pickup_offset,json=pickupOffset,proto3" json:"pickup_offset,omitempty"`
-	DestinationOffset     *Coordinate                  `protobuf:"bytes,6,opt,name=destination_offset,json=destinationOffset,proto3" json:"destination_offset,omitempty"`
+	IntermediateLocations []*v1.Coordinate             `protobuf:"bytes,4,rep,name=intermediate_locations,json=intermediateLocations,proto3" json:"intermediate_locations,omitempty"`
+	PickupOffset          *v1.Coordinate               `protobuf:"bytes,5,opt,name=pickup_offset,json=pickupOffset,proto3" json:"pickup_offset,omitempty"`
+	DestinationOffset     *v1.Coordinate               `protobuf:"bytes,6,opt,name=destination_offset,json=destinationOffset,proto3" json:"destination_offset,omitempty"`
 	PickupDirection       GripDirection                `protobuf:"varint,7,opt,name=pickup_direction,json=pickupDirection,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"pickup_direction,omitempty"`
 	DropDirection         GripDirection                `protobuf:"varint,8,opt,name=drop_direction,json=dropDirection,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"drop_direction,omitempty"`
 	PickupDistanceFromTop *OptionalFloat               `protobuf:"bytes,9,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
@@ -1453,7 +1358,7 @@ type MoveLidRequest struct {
 
 func (x *MoveLidRequest) Reset() {
 	*x = MoveLidRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[19]
+	mi := &file_liquid_handler_service_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1465,7 +1370,7 @@ func (x *MoveLidRequest) String() string {
 func (*MoveLidRequest) ProtoMessage() {}
 
 func (x *MoveLidRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[19]
+	mi := &file_liquid_handler_service_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1478,7 +1383,7 @@ func (x *MoveLidRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveLidRequest.ProtoReflect.Descriptor instead.
 func (*MoveLidRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{19}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *MoveLidRequest) GetLidName() string {
@@ -1504,7 +1409,7 @@ func (x *MoveLidRequest) GetToName() string {
 	return ""
 }
 
-func (x *MoveLidRequest) GetToCoordinate() *Coordinate {
+func (x *MoveLidRequest) GetToCoordinate() *v1.Coordinate {
 	if x != nil {
 		if x, ok := x.Destination.(*MoveLidRequest_ToCoordinate); ok {
 			return x.ToCoordinate
@@ -1513,21 +1418,21 @@ func (x *MoveLidRequest) GetToCoordinate() *Coordinate {
 	return nil
 }
 
-func (x *MoveLidRequest) GetIntermediateLocations() []*Coordinate {
+func (x *MoveLidRequest) GetIntermediateLocations() []*v1.Coordinate {
 	if x != nil {
 		return x.IntermediateLocations
 	}
 	return nil
 }
 
-func (x *MoveLidRequest) GetPickupOffset() *Coordinate {
+func (x *MoveLidRequest) GetPickupOffset() *v1.Coordinate {
 	if x != nil {
 		return x.PickupOffset
 	}
 	return nil
 }
 
-func (x *MoveLidRequest) GetDestinationOffset() *Coordinate {
+func (x *MoveLidRequest) GetDestinationOffset() *v1.Coordinate {
 	if x != nil {
 		return x.DestinationOffset
 	}
@@ -1564,7 +1469,7 @@ type MoveLidRequest_ToName struct {
 }
 
 type MoveLidRequest_ToCoordinate struct {
-	ToCoordinate *Coordinate `protobuf:"bytes,3,opt,name=to_coordinate,json=toCoordinate,proto3,oneof"`
+	ToCoordinate *v1.Coordinate `protobuf:"bytes,3,opt,name=to_coordinate,json=toCoordinate,proto3,oneof"`
 }
 
 func (*MoveLidRequest_ToName) isMoveLidRequest_Destination() {}
@@ -1574,7 +1479,7 @@ func (*MoveLidRequest_ToCoordinate) isMoveLidRequest_Destination() {}
 type PickUpResourceRequest struct {
 	state                 protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName          string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset                *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset                *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	PickupDistanceFromTop *OptionalFloat         `protobuf:"bytes,3,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
 	Direction             GripDirection          `protobuf:"varint,4,opt,name=direction,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"direction,omitempty"`
 	unknownFields         protoimpl.UnknownFields
@@ -1583,7 +1488,7 @@ type PickUpResourceRequest struct {
 
 func (x *PickUpResourceRequest) Reset() {
 	*x = PickUpResourceRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[20]
+	mi := &file_liquid_handler_service_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1595,7 +1500,7 @@ func (x *PickUpResourceRequest) String() string {
 func (*PickUpResourceRequest) ProtoMessage() {}
 
 func (x *PickUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[20]
+	mi := &file_liquid_handler_service_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1608,7 +1513,7 @@ func (x *PickUpResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*PickUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{20}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *PickUpResourceRequest) GetResourceName() string {
@@ -1618,7 +1523,7 @@ func (x *PickUpResourceRequest) GetResourceName() string {
 	return ""
 }
 
-func (x *PickUpResourceRequest) GetOffset() *Coordinate {
+func (x *PickUpResourceRequest) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1641,8 +1546,8 @@ func (x *PickUpResourceRequest) GetDirection() GripDirection {
 
 type MovePickedUpResourceRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	To            *Coordinate            `protobuf:"bytes,1,opt,name=to,proto3" json:"to,omitempty"`
-	Offset        *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	To            *v1.Coordinate         `protobuf:"bytes,1,opt,name=to,proto3" json:"to,omitempty"`
+	Offset        *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Direction     *GripDirection         `protobuf:"varint,3,opt,name=direction,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection,oneof" json:"direction,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -1650,7 +1555,7 @@ type MovePickedUpResourceRequest struct {
 
 func (x *MovePickedUpResourceRequest) Reset() {
 	*x = MovePickedUpResourceRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[21]
+	mi := &file_liquid_handler_service_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1662,7 +1567,7 @@ func (x *MovePickedUpResourceRequest) String() string {
 func (*MovePickedUpResourceRequest) ProtoMessage() {}
 
 func (x *MovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[21]
+	mi := &file_liquid_handler_service_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1675,17 +1580,17 @@ func (x *MovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MovePickedUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*MovePickedUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{21}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{19}
 }
 
-func (x *MovePickedUpResourceRequest) GetTo() *Coordinate {
+func (x *MovePickedUpResourceRequest) GetTo() *v1.Coordinate {
 	if x != nil {
 		return x.To
 	}
 	return nil
 }
 
-func (x *MovePickedUpResourceRequest) GetOffset() *Coordinate {
+func (x *MovePickedUpResourceRequest) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1706,7 +1611,7 @@ type DropResourceRequest struct {
 	//	*DropResourceRequest_DestinationName
 	//	*DropResourceRequest_DestinationCoordinate
 	Destination   isDropResourceRequest_Destination `protobuf_oneof:"destination"`
-	Offset        *Coordinate                       `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset        *v1.Coordinate                    `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
 	Direction     GripDirection                     `protobuf:"varint,4,opt,name=direction,proto3,enum=pylabrobot.liquid_handler.v1.GripDirection" json:"direction,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -1714,7 +1619,7 @@ type DropResourceRequest struct {
 
 func (x *DropResourceRequest) Reset() {
 	*x = DropResourceRequest{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[22]
+	mi := &file_liquid_handler_service_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1726,7 +1631,7 @@ func (x *DropResourceRequest) String() string {
 func (*DropResourceRequest) ProtoMessage() {}
 
 func (x *DropResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[22]
+	mi := &file_liquid_handler_service_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1739,7 +1644,7 @@ func (x *DropResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropResourceRequest.ProtoReflect.Descriptor instead.
 func (*DropResourceRequest) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{22}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *DropResourceRequest) GetDestination() isDropResourceRequest_Destination {
@@ -1758,7 +1663,7 @@ func (x *DropResourceRequest) GetDestinationName() string {
 	return ""
 }
 
-func (x *DropResourceRequest) GetDestinationCoordinate() *Coordinate {
+func (x *DropResourceRequest) GetDestinationCoordinate() *v1.Coordinate {
 	if x != nil {
 		if x, ok := x.Destination.(*DropResourceRequest_DestinationCoordinate); ok {
 			return x.DestinationCoordinate
@@ -1767,7 +1672,7 @@ func (x *DropResourceRequest) GetDestinationCoordinate() *Coordinate {
 	return nil
 }
 
-func (x *DropResourceRequest) GetOffset() *Coordinate {
+func (x *DropResourceRequest) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1790,7 +1695,7 @@ type DropResourceRequest_DestinationName struct {
 }
 
 type DropResourceRequest_DestinationCoordinate struct {
-	DestinationCoordinate *Coordinate `protobuf:"bytes,2,opt,name=destination_coordinate,json=destinationCoordinate,proto3,oneof"`
+	DestinationCoordinate *v1.Coordinate `protobuf:"bytes,2,opt,name=destination_coordinate,json=destinationCoordinate,proto3,oneof"`
 }
 
 func (*DropResourceRequest_DestinationName) isDropResourceRequest_Destination() {}
@@ -1806,7 +1711,7 @@ type GetMountedTipsResponse struct {
 
 func (x *GetMountedTipsResponse) Reset() {
 	*x = GetMountedTipsResponse{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[23]
+	mi := &file_liquid_handler_service_proto_msgTypes[21]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1818,7 +1723,7 @@ func (x *GetMountedTipsResponse) String() string {
 func (*GetMountedTipsResponse) ProtoMessage() {}
 
 func (x *GetMountedTipsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[23]
+	mi := &file_liquid_handler_service_proto_msgTypes[21]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1831,7 +1736,7 @@ func (x *GetMountedTipsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetMountedTipsResponse.ProtoReflect.Descriptor instead.
 func (*GetMountedTipsResponse) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{23}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *GetMountedTipsResponse) GetTips() []*TipInfo {
@@ -1851,7 +1756,7 @@ type GetPickedUpResourceResponse struct {
 
 func (x *GetPickedUpResourceResponse) Reset() {
 	*x = GetPickedUpResourceResponse{}
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[24]
+	mi := &file_liquid_handler_service_proto_msgTypes[22]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1863,7 +1768,7 @@ func (x *GetPickedUpResourceResponse) String() string {
 func (*GetPickedUpResourceResponse) ProtoMessage() {}
 
 func (x *GetPickedUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[24]
+	mi := &file_liquid_handler_service_proto_msgTypes[22]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1876,7 +1781,7 @@ func (x *GetPickedUpResourceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetPickedUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*GetPickedUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP(), []int{24}
+	return file_liquid_handler_service_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *GetPickedUpResourceResponse) GetHasResource() bool {
@@ -1893,17 +1798,11 @@ func (x *GetPickedUpResourceResponse) GetResourceName() string {
 	return ""
 }
 
-var File_liquid_handler_v1_liquid_handler_service_proto protoreflect.FileDescriptor
+var File_liquid_handler_service_proto protoreflect.FileDescriptor
 
-const file_liquid_handler_v1_liquid_handler_service_proto_rawDesc = "" +
+const file_liquid_handler_service_proto_rawDesc = "" +
 	"\n" +
-	".liquid_handler/v1/liquid_handler_service.proto\x12\x1cpylabrobot.liquid_handler.v1\"\a\n" +
-	"\x05Empty\"6\n" +
-	"\n" +
-	"Coordinate\x12\f\n" +
-	"\x01x\x18\x01 \x01(\x01R\x01x\x12\f\n" +
-	"\x01y\x18\x02 \x01(\x01R\x01y\x12\f\n" +
-	"\x01z\x18\x03 \x01(\x01R\x01z\"4\n" +
+	"\x1cliquid_handler_service.proto\x12\x1cpylabrobot.liquid_handler.v1\x1a\vtypes.proto\"4\n" +
 	"\rOptionalFloat\x12\x19\n" +
 	"\x05value\x18\x01 \x01(\x01H\x00R\x05value\x88\x01\x01B\b\n" +
 	"\x06_value\"\xd1\x01\n" +
@@ -1917,117 +1816,117 @@ const file_liquid_handler_v1_liquid_handler_service_proto_rawDesc = "" +
 	"\rfitting_depth\x18\x06 \x01(\x01R\ffittingDepth\"L\n" +
 	"\fSetupRequest\x12\x19\n" +
 	"\bstar_url\x18\x01 \x01(\tR\astarUrl\x12!\n" +
-	"\fresource_url\x18\x02 \x01(\tR\vresourceUrl\"\xa0\x01\n" +
+	"\fresource_url\x18\x02 \x01(\tR\vresourceUrl\"\x98\x01\n" +
 	"\x11PickUpTipsRequest\x12$\n" +
 	"\x0etip_spot_names\x18\x01 \x03(\tR\ftipSpotNames\x12!\n" +
-	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12B\n" +
-	"\aoffsets\x18\x03 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\aoffsets\"\xd0\x01\n" +
+	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12:\n" +
+	"\aoffsets\x18\x03 \x03(\v2 .pylabrobot.common.v1.CoordinateR\aoffsets\"\xc8\x01\n" +
 	"\x0fDropTipsRequest\x12$\n" +
 	"\x0etip_spot_names\x18\x01 \x03(\tR\ftipSpotNames\x12!\n" +
-	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12B\n" +
-	"\aoffsets\x18\x03 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\aoffsets\x120\n" +
-	"\x14allow_nonzero_volume\x18\x04 \x01(\bR\x12allowNonzeroVolume\"\xac\x01\n" +
+	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12:\n" +
+	"\aoffsets\x18\x03 \x03(\v2 .pylabrobot.common.v1.CoordinateR\aoffsets\x120\n" +
+	"\x14allow_nonzero_volume\x18\x04 \x01(\bR\x12allowNonzeroVolume\"\xa4\x01\n" +
 	"\x11ReturnTipsRequest\x12!\n" +
 	"\fuse_channels\x18\x01 \x03(\x05R\vuseChannels\x120\n" +
-	"\x14allow_nonzero_volume\x18\x02 \x01(\bR\x12allowNonzeroVolume\x12B\n" +
-	"\aoffsets\x18\x03 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\aoffsets\"\xad\x01\n" +
+	"\x14allow_nonzero_volume\x18\x02 \x01(\bR\x12allowNonzeroVolume\x12:\n" +
+	"\aoffsets\x18\x03 \x03(\v2 .pylabrobot.common.v1.CoordinateR\aoffsets\"\xa5\x01\n" +
 	"\x12DiscardTipsRequest\x12!\n" +
 	"\fuse_channels\x18\x01 \x03(\x05R\vuseChannels\x120\n" +
-	"\x14allow_nonzero_volume\x18\x02 \x01(\bR\x12allowNonzeroVolume\x12B\n" +
-	"\aoffsets\x18\x03 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\aoffsets\"\xad\x03\n" +
+	"\x14allow_nonzero_volume\x18\x02 \x01(\bR\x12allowNonzeroVolume\x12:\n" +
+	"\aoffsets\x18\x03 \x03(\v2 .pylabrobot.common.v1.CoordinateR\aoffsets\"\xa5\x03\n" +
 	"\x0fAspirateRequest\x12%\n" +
 	"\x0eresource_names\x18\x01 \x03(\tR\rresourceNames\x12\x12\n" +
 	"\x04vols\x18\x02 \x03(\x01R\x04vols\x12!\n" +
 	"\fuse_channels\x18\x03 \x03(\x05R\vuseChannels\x12J\n" +
 	"\n" +
-	"flow_rates\x18\x04 \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\tflowRates\x12B\n" +
-	"\aoffsets\x18\x05 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\aoffsets\x12P\n" +
+	"flow_rates\x18\x04 \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\tflowRates\x12:\n" +
+	"\aoffsets\x18\x05 \x03(\v2 .pylabrobot.common.v1.CoordinateR\aoffsets\x12P\n" +
 	"\rliquid_height\x18\x06 \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\fliquidHeight\x12Z\n" +
-	"\x13blow_out_air_volume\x18\a \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"\xad\x03\n" +
+	"\x13blow_out_air_volume\x18\a \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"\xa5\x03\n" +
 	"\x0fDispenseRequest\x12%\n" +
 	"\x0eresource_names\x18\x01 \x03(\tR\rresourceNames\x12\x12\n" +
 	"\x04vols\x18\x02 \x03(\x01R\x04vols\x12!\n" +
 	"\fuse_channels\x18\x03 \x03(\x05R\vuseChannels\x12J\n" +
 	"\n" +
-	"flow_rates\x18\x04 \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\tflowRates\x12B\n" +
-	"\aoffsets\x18\x05 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\aoffsets\x12P\n" +
+	"flow_rates\x18\x04 \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\tflowRates\x12:\n" +
+	"\aoffsets\x18\x05 \x03(\v2 .pylabrobot.common.v1.CoordinateR\aoffsets\x12P\n" +
 	"\rliquid_height\x18\x06 \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\fliquidHeight\x12Z\n" +
-	"\x13blow_out_air_volume\x18\a \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"{\n" +
+	"\x13blow_out_air_volume\x18\a \x03(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"s\n" +
 	"\x13PickUpTips96Request\x12\"\n" +
-	"\rtip_rack_name\x18\x01 \x01(\tR\vtipRackName\x12@\n" +
-	"\x06offset\x18\x02 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\"\xac\x01\n" +
+	"\rtip_rack_name\x18\x01 \x01(\tR\vtipRackName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\"\xa4\x01\n" +
 	"\x11DropTips96Request\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12@\n" +
-	"\x06offset\x18\x02 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\x120\n" +
-	"\x14allow_nonzero_volume\x18\x03 \x01(\bR\x12allowNonzeroVolume\"\x89\x01\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x120\n" +
+	"\x14allow_nonzero_volume\x18\x03 \x01(\bR\x12allowNonzeroVolume\"\x81\x01\n" +
 	"\x13ReturnTips96Request\x120\n" +
-	"\x14allow_nonzero_volume\x18\x01 \x01(\bR\x12allowNonzeroVolume\x12@\n" +
-	"\x06offset\x18\x02 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\"H\n" +
+	"\x14allow_nonzero_volume\x18\x01 \x01(\bR\x12allowNonzeroVolume\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\"H\n" +
 	"\x14DiscardTips96Request\x120\n" +
-	"\x14allow_nonzero_volume\x18\x01 \x01(\bR\x12allowNonzeroVolume\"\x8a\x03\n" +
+	"\x14allow_nonzero_volume\x18\x01 \x01(\bR\x12allowNonzeroVolume\"\x82\x03\n" +
 	"\x11Aspirate96Request\x12#\n" +
 	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12\x16\n" +
-	"\x06volume\x18\x02 \x01(\x01R\x06volume\x12@\n" +
-	"\x06offset\x18\x03 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\x12H\n" +
+	"\x06volume\x18\x02 \x01(\x01R\x06volume\x128\n" +
+	"\x06offset\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12H\n" +
 	"\tflow_rate\x18\x04 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\bflowRate\x12P\n" +
 	"\rliquid_height\x18\x05 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\fliquidHeight\x12Z\n" +
-	"\x13blow_out_air_volume\x18\x06 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"\x8a\x03\n" +
+	"\x13blow_out_air_volume\x18\x06 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"\x82\x03\n" +
 	"\x11Dispense96Request\x12#\n" +
 	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12\x16\n" +
-	"\x06volume\x18\x02 \x01(\x01R\x06volume\x12@\n" +
-	"\x06offset\x18\x03 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\x12H\n" +
+	"\x06volume\x18\x02 \x01(\x01R\x06volume\x128\n" +
+	"\x06offset\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12H\n" +
 	"\tflow_rate\x18\x04 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\bflowRate\x12P\n" +
 	"\rliquid_height\x18\x05 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\fliquidHeight\x12Z\n" +
-	"\x13blow_out_air_volume\x18\x06 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"\xa3\x05\n" +
+	"\x13blow_out_air_volume\x18\x06 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x10blowOutAirVolume\"\x83\x05\n" +
 	"\x13MoveResourceRequest\x12#\n" +
 	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12\x19\n" +
-	"\ato_name\x18\x02 \x01(\tH\x00R\x06toName\x12O\n" +
-	"\rto_coordinate\x18\x03 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateH\x00R\ftoCoordinate\x12_\n" +
-	"\x16intermediate_locations\x18\x04 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x15intermediateLocations\x12M\n" +
-	"\rpickup_offset\x18\x05 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\fpickupOffset\x12W\n" +
-	"\x12destination_offset\x18\x06 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x11destinationOffset\x127\n" +
+	"\ato_name\x18\x02 \x01(\tH\x00R\x06toName\x12G\n" +
+	"\rto_coordinate\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x00R\ftoCoordinate\x12W\n" +
+	"\x16intermediate_locations\x18\x04 \x03(\v2 .pylabrobot.common.v1.CoordinateR\x15intermediateLocations\x12E\n" +
+	"\rpickup_offset\x18\x05 \x01(\v2 .pylabrobot.common.v1.CoordinateR\fpickupOffset\x12O\n" +
+	"\x12destination_offset\x18\x06 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x11destinationOffset\x127\n" +
 	"\x18pickup_distance_from_top\x18\a \x01(\x01R\x15pickupDistanceFromTop\x12V\n" +
 	"\x10pickup_direction\x18\b \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\x0fpickupDirection\x12R\n" +
 	"\x0edrop_direction\x18\t \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\rdropDirectionB\r\n" +
-	"\vdestination\"\xc7\x05\n" +
+	"\vdestination\"\xa7\x05\n" +
 	"\x10MovePlateRequest\x12\x1d\n" +
 	"\n" +
 	"plate_name\x18\x01 \x01(\tR\tplateName\x12\x19\n" +
-	"\ato_name\x18\x02 \x01(\tH\x00R\x06toName\x12O\n" +
-	"\rto_coordinate\x18\x03 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateH\x00R\ftoCoordinate\x12_\n" +
-	"\x16intermediate_locations\x18\x04 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x15intermediateLocations\x12M\n" +
-	"\rpickup_offset\x18\x05 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\fpickupOffset\x12W\n" +
-	"\x12destination_offset\x18\x06 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x11destinationOffset\x12V\n" +
+	"\ato_name\x18\x02 \x01(\tH\x00R\x06toName\x12G\n" +
+	"\rto_coordinate\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x00R\ftoCoordinate\x12W\n" +
+	"\x16intermediate_locations\x18\x04 \x03(\v2 .pylabrobot.common.v1.CoordinateR\x15intermediateLocations\x12E\n" +
+	"\rpickup_offset\x18\x05 \x01(\v2 .pylabrobot.common.v1.CoordinateR\fpickupOffset\x12O\n" +
+	"\x12destination_offset\x18\x06 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x11destinationOffset\x12V\n" +
 	"\x10pickup_direction\x18\a \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\x0fpickupDirection\x12R\n" +
 	"\x0edrop_direction\x18\b \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\rdropDirection\x12d\n" +
 	"\x18pickup_distance_from_top\x18\t \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x15pickupDistanceFromTopB\r\n" +
-	"\vdestination\"\xc1\x05\n" +
+	"\vdestination\"\xa1\x05\n" +
 	"\x0eMoveLidRequest\x12\x19\n" +
 	"\blid_name\x18\x01 \x01(\tR\alidName\x12\x19\n" +
-	"\ato_name\x18\x02 \x01(\tH\x00R\x06toName\x12O\n" +
-	"\rto_coordinate\x18\x03 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateH\x00R\ftoCoordinate\x12_\n" +
-	"\x16intermediate_locations\x18\x04 \x03(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x15intermediateLocations\x12M\n" +
-	"\rpickup_offset\x18\x05 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\fpickupOffset\x12W\n" +
-	"\x12destination_offset\x18\x06 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x11destinationOffset\x12V\n" +
+	"\ato_name\x18\x02 \x01(\tH\x00R\x06toName\x12G\n" +
+	"\rto_coordinate\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x00R\ftoCoordinate\x12W\n" +
+	"\x16intermediate_locations\x18\x04 \x03(\v2 .pylabrobot.common.v1.CoordinateR\x15intermediateLocations\x12E\n" +
+	"\rpickup_offset\x18\x05 \x01(\v2 .pylabrobot.common.v1.CoordinateR\fpickupOffset\x12O\n" +
+	"\x12destination_offset\x18\x06 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x11destinationOffset\x12V\n" +
 	"\x10pickup_direction\x18\a \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\x0fpickupDirection\x12R\n" +
 	"\x0edrop_direction\x18\b \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\rdropDirection\x12d\n" +
 	"\x18pickup_distance_from_top\x18\t \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x15pickupDistanceFromTopB\r\n" +
-	"\vdestination\"\xaf\x02\n" +
+	"\vdestination\"\xa7\x02\n" +
 	"\x15PickUpResourceRequest\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12@\n" +
-	"\x06offset\x18\x02 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\x12d\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12d\n" +
 	"\x18pickup_distance_from_top\x18\x03 \x01(\v2+.pylabrobot.liquid_handler.v1.OptionalFloatR\x15pickupDistanceFromTop\x12I\n" +
-	"\tdirection\x18\x04 \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\tdirection\"\xf7\x01\n" +
-	"\x1bMovePickedUpResourceRequest\x128\n" +
-	"\x02to\x18\x01 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x02to\x12@\n" +
-	"\x06offset\x18\x02 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\x12N\n" +
+	"\tdirection\x18\x04 \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\tdirection\"\xe7\x01\n" +
+	"\x1bMovePickedUpResourceRequest\x120\n" +
+	"\x02to\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x02to\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12N\n" +
 	"\tdirection\x18\x03 \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionH\x00R\tdirection\x88\x01\x01B\f\n" +
 	"\n" +
-	"_direction\"\xc1\x02\n" +
+	"_direction\"\xb1\x02\n" +
 	"\x13DropResourceRequest\x12+\n" +
-	"\x10destination_name\x18\x01 \x01(\tH\x00R\x0fdestinationName\x12a\n" +
-	"\x16destination_coordinate\x18\x02 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateH\x00R\x15destinationCoordinate\x12@\n" +
-	"\x06offset\x18\x03 \x01(\v2(.pylabrobot.liquid_handler.v1.CoordinateR\x06offset\x12I\n" +
+	"\x10destination_name\x18\x01 \x01(\tH\x00R\x0fdestinationName\x12Y\n" +
+	"\x16destination_coordinate\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x00R\x15destinationCoordinate\x128\n" +
+	"\x06offset\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12I\n" +
 	"\tdirection\x18\x04 \x01(\x0e2+.pylabrobot.liquid_handler.v1.GripDirectionR\tdirectionB\r\n" +
 	"\vdestination\"S\n" +
 	"\x16GetMountedTipsResponse\x129\n" +
@@ -2039,176 +1938,176 @@ const file_liquid_handler_v1_liquid_handler_service_proto_rawDesc = "" +
 	"\x14GRIP_DIRECTION_FRONT\x10\x00\x12\x17\n" +
 	"\x13GRIP_DIRECTION_BACK\x10\x01\x12\x17\n" +
 	"\x13GRIP_DIRECTION_LEFT\x10\x02\x12\x18\n" +
-	"\x14GRIP_DIRECTION_RIGHT\x10\x032\xce\x11\n" +
-	"\x14LiquidHandlerService\x12X\n" +
-	"\x05Setup\x12*.pylabrobot.liquid_handler.v1.SetupRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12P\n" +
-	"\x04Stop\x12#.pylabrobot.liquid_handler.v1.Empty\x1a#.pylabrobot.liquid_handler.v1.Empty\x12b\n" +
+	"\x14GRIP_DIRECTION_RIGHT\x10\x032\x96\x10\n" +
+	"\x14LiquidHandlerService\x12P\n" +
+	"\x05Setup\x12*.pylabrobot.liquid_handler.v1.SetupRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12@\n" +
+	"\x04Stop\x12\x1b.pylabrobot.common.v1.Empty\x1a\x1b.pylabrobot.common.v1.Empty\x12Z\n" +
 	"\n" +
-	"PickUpTips\x12/.pylabrobot.liquid_handler.v1.PickUpTipsRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12^\n" +
-	"\bDropTips\x12-.pylabrobot.liquid_handler.v1.DropTipsRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12b\n" +
+	"PickUpTips\x12/.pylabrobot.liquid_handler.v1.PickUpTipsRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12V\n" +
+	"\bDropTips\x12-.pylabrobot.liquid_handler.v1.DropTipsRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12Z\n" +
 	"\n" +
-	"ReturnTips\x12/.pylabrobot.liquid_handler.v1.ReturnTipsRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12d\n" +
-	"\vDiscardTips\x120.pylabrobot.liquid_handler.v1.DiscardTipsRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12^\n" +
-	"\bAspirate\x12-.pylabrobot.liquid_handler.v1.AspirateRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12^\n" +
-	"\bDispense\x12-.pylabrobot.liquid_handler.v1.DispenseRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12f\n" +
-	"\fPickUpTips96\x121.pylabrobot.liquid_handler.v1.PickUpTips96Request\x1a#.pylabrobot.liquid_handler.v1.Empty\x12b\n" +
+	"ReturnTips\x12/.pylabrobot.liquid_handler.v1.ReturnTipsRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12\\\n" +
+	"\vDiscardTips\x120.pylabrobot.liquid_handler.v1.DiscardTipsRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12V\n" +
+	"\bAspirate\x12-.pylabrobot.liquid_handler.v1.AspirateRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12V\n" +
+	"\bDispense\x12-.pylabrobot.liquid_handler.v1.DispenseRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12^\n" +
+	"\fPickUpTips96\x121.pylabrobot.liquid_handler.v1.PickUpTips96Request\x1a\x1b.pylabrobot.common.v1.Empty\x12Z\n" +
 	"\n" +
-	"DropTips96\x12/.pylabrobot.liquid_handler.v1.DropTips96Request\x1a#.pylabrobot.liquid_handler.v1.Empty\x12f\n" +
-	"\fReturnTips96\x121.pylabrobot.liquid_handler.v1.ReturnTips96Request\x1a#.pylabrobot.liquid_handler.v1.Empty\x12h\n" +
-	"\rDiscardTips96\x122.pylabrobot.liquid_handler.v1.DiscardTips96Request\x1a#.pylabrobot.liquid_handler.v1.Empty\x12b\n" +
+	"DropTips96\x12/.pylabrobot.liquid_handler.v1.DropTips96Request\x1a\x1b.pylabrobot.common.v1.Empty\x12^\n" +
+	"\fReturnTips96\x121.pylabrobot.liquid_handler.v1.ReturnTips96Request\x1a\x1b.pylabrobot.common.v1.Empty\x12`\n" +
+	"\rDiscardTips96\x122.pylabrobot.liquid_handler.v1.DiscardTips96Request\x1a\x1b.pylabrobot.common.v1.Empty\x12Z\n" +
 	"\n" +
-	"Aspirate96\x12/.pylabrobot.liquid_handler.v1.Aspirate96Request\x1a#.pylabrobot.liquid_handler.v1.Empty\x12b\n" +
+	"Aspirate96\x12/.pylabrobot.liquid_handler.v1.Aspirate96Request\x1a\x1b.pylabrobot.common.v1.Empty\x12Z\n" +
 	"\n" +
-	"Dispense96\x12/.pylabrobot.liquid_handler.v1.Dispense96Request\x1a#.pylabrobot.liquid_handler.v1.Empty\x12f\n" +
-	"\fMoveResource\x121.pylabrobot.liquid_handler.v1.MoveResourceRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12`\n" +
-	"\tMovePlate\x12..pylabrobot.liquid_handler.v1.MovePlateRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12\\\n" +
-	"\aMoveLid\x12,.pylabrobot.liquid_handler.v1.MoveLidRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12j\n" +
-	"\x0ePickUpResource\x123.pylabrobot.liquid_handler.v1.PickUpResourceRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12v\n" +
-	"\x14MovePickedUpResource\x129.pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12f\n" +
-	"\fDropResource\x121.pylabrobot.liquid_handler.v1.DropResourceRequest\x1a#.pylabrobot.liquid_handler.v1.Empty\x12k\n" +
-	"\x0eGetMountedTips\x12#.pylabrobot.liquid_handler.v1.Empty\x1a4.pylabrobot.liquid_handler.v1.GetMountedTipsResponse\x12u\n" +
-	"\x13GetPickedUpResource\x12#.pylabrobot.liquid_handler.v1.Empty\x1a9.pylabrobot.liquid_handler.v1.GetPickedUpResourceResponseB_Z]github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/liquid_handler/v1;liquidhandlerv1b\x06proto3"
+	"Dispense96\x12/.pylabrobot.liquid_handler.v1.Dispense96Request\x1a\x1b.pylabrobot.common.v1.Empty\x12^\n" +
+	"\fMoveResource\x121.pylabrobot.liquid_handler.v1.MoveResourceRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12X\n" +
+	"\tMovePlate\x12..pylabrobot.liquid_handler.v1.MovePlateRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12T\n" +
+	"\aMoveLid\x12,.pylabrobot.liquid_handler.v1.MoveLidRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12b\n" +
+	"\x0ePickUpResource\x123.pylabrobot.liquid_handler.v1.PickUpResourceRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12n\n" +
+	"\x14MovePickedUpResource\x129.pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12^\n" +
+	"\fDropResource\x121.pylabrobot.liquid_handler.v1.DropResourceRequest\x1a\x1b.pylabrobot.common.v1.Empty\x12c\n" +
+	"\x0eGetMountedTips\x12\x1b.pylabrobot.common.v1.Empty\x1a4.pylabrobot.liquid_handler.v1.GetMountedTipsResponse\x12m\n" +
+	"\x13GetPickedUpResource\x12\x1b.pylabrobot.common.v1.Empty\x1a9.pylabrobot.liquid_handler.v1.GetPickedUpResourceResponseB_Z]github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/liquid_handler/v1;liquidhandlerv1b\x06proto3"
 
 var (
-	file_liquid_handler_v1_liquid_handler_service_proto_rawDescOnce sync.Once
-	file_liquid_handler_v1_liquid_handler_service_proto_rawDescData []byte
+	file_liquid_handler_service_proto_rawDescOnce sync.Once
+	file_liquid_handler_service_proto_rawDescData []byte
 )
 
-func file_liquid_handler_v1_liquid_handler_service_proto_rawDescGZIP() []byte {
-	file_liquid_handler_v1_liquid_handler_service_proto_rawDescOnce.Do(func() {
-		file_liquid_handler_v1_liquid_handler_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_liquid_handler_v1_liquid_handler_service_proto_rawDesc), len(file_liquid_handler_v1_liquid_handler_service_proto_rawDesc)))
+func file_liquid_handler_service_proto_rawDescGZIP() []byte {
+	file_liquid_handler_service_proto_rawDescOnce.Do(func() {
+		file_liquid_handler_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_liquid_handler_service_proto_rawDesc), len(file_liquid_handler_service_proto_rawDesc)))
 	})
-	return file_liquid_handler_v1_liquid_handler_service_proto_rawDescData
+	return file_liquid_handler_service_proto_rawDescData
 }
 
-var file_liquid_handler_v1_liquid_handler_service_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_liquid_handler_v1_liquid_handler_service_proto_msgTypes = make([]protoimpl.MessageInfo, 25)
-var file_liquid_handler_v1_liquid_handler_service_proto_goTypes = []any{
+var file_liquid_handler_service_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_liquid_handler_service_proto_msgTypes = make([]protoimpl.MessageInfo, 23)
+var file_liquid_handler_service_proto_goTypes = []any{
 	(GripDirection)(0),                  // 0: pylabrobot.liquid_handler.v1.GripDirection
-	(*Empty)(nil),                       // 1: pylabrobot.liquid_handler.v1.Empty
-	(*Coordinate)(nil),                  // 2: pylabrobot.liquid_handler.v1.Coordinate
-	(*OptionalFloat)(nil),               // 3: pylabrobot.liquid_handler.v1.OptionalFloat
-	(*TipInfo)(nil),                     // 4: pylabrobot.liquid_handler.v1.TipInfo
-	(*SetupRequest)(nil),                // 5: pylabrobot.liquid_handler.v1.SetupRequest
-	(*PickUpTipsRequest)(nil),           // 6: pylabrobot.liquid_handler.v1.PickUpTipsRequest
-	(*DropTipsRequest)(nil),             // 7: pylabrobot.liquid_handler.v1.DropTipsRequest
-	(*ReturnTipsRequest)(nil),           // 8: pylabrobot.liquid_handler.v1.ReturnTipsRequest
-	(*DiscardTipsRequest)(nil),          // 9: pylabrobot.liquid_handler.v1.DiscardTipsRequest
-	(*AspirateRequest)(nil),             // 10: pylabrobot.liquid_handler.v1.AspirateRequest
-	(*DispenseRequest)(nil),             // 11: pylabrobot.liquid_handler.v1.DispenseRequest
-	(*PickUpTips96Request)(nil),         // 12: pylabrobot.liquid_handler.v1.PickUpTips96Request
-	(*DropTips96Request)(nil),           // 13: pylabrobot.liquid_handler.v1.DropTips96Request
-	(*ReturnTips96Request)(nil),         // 14: pylabrobot.liquid_handler.v1.ReturnTips96Request
-	(*DiscardTips96Request)(nil),        // 15: pylabrobot.liquid_handler.v1.DiscardTips96Request
-	(*Aspirate96Request)(nil),           // 16: pylabrobot.liquid_handler.v1.Aspirate96Request
-	(*Dispense96Request)(nil),           // 17: pylabrobot.liquid_handler.v1.Dispense96Request
-	(*MoveResourceRequest)(nil),         // 18: pylabrobot.liquid_handler.v1.MoveResourceRequest
-	(*MovePlateRequest)(nil),            // 19: pylabrobot.liquid_handler.v1.MovePlateRequest
-	(*MoveLidRequest)(nil),              // 20: pylabrobot.liquid_handler.v1.MoveLidRequest
-	(*PickUpResourceRequest)(nil),       // 21: pylabrobot.liquid_handler.v1.PickUpResourceRequest
-	(*MovePickedUpResourceRequest)(nil), // 22: pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest
-	(*DropResourceRequest)(nil),         // 23: pylabrobot.liquid_handler.v1.DropResourceRequest
-	(*GetMountedTipsResponse)(nil),      // 24: pylabrobot.liquid_handler.v1.GetMountedTipsResponse
-	(*GetPickedUpResourceResponse)(nil), // 25: pylabrobot.liquid_handler.v1.GetPickedUpResourceResponse
+	(*OptionalFloat)(nil),               // 1: pylabrobot.liquid_handler.v1.OptionalFloat
+	(*TipInfo)(nil),                     // 2: pylabrobot.liquid_handler.v1.TipInfo
+	(*SetupRequest)(nil),                // 3: pylabrobot.liquid_handler.v1.SetupRequest
+	(*PickUpTipsRequest)(nil),           // 4: pylabrobot.liquid_handler.v1.PickUpTipsRequest
+	(*DropTipsRequest)(nil),             // 5: pylabrobot.liquid_handler.v1.DropTipsRequest
+	(*ReturnTipsRequest)(nil),           // 6: pylabrobot.liquid_handler.v1.ReturnTipsRequest
+	(*DiscardTipsRequest)(nil),          // 7: pylabrobot.liquid_handler.v1.DiscardTipsRequest
+	(*AspirateRequest)(nil),             // 8: pylabrobot.liquid_handler.v1.AspirateRequest
+	(*DispenseRequest)(nil),             // 9: pylabrobot.liquid_handler.v1.DispenseRequest
+	(*PickUpTips96Request)(nil),         // 10: pylabrobot.liquid_handler.v1.PickUpTips96Request
+	(*DropTips96Request)(nil),           // 11: pylabrobot.liquid_handler.v1.DropTips96Request
+	(*ReturnTips96Request)(nil),         // 12: pylabrobot.liquid_handler.v1.ReturnTips96Request
+	(*DiscardTips96Request)(nil),        // 13: pylabrobot.liquid_handler.v1.DiscardTips96Request
+	(*Aspirate96Request)(nil),           // 14: pylabrobot.liquid_handler.v1.Aspirate96Request
+	(*Dispense96Request)(nil),           // 15: pylabrobot.liquid_handler.v1.Dispense96Request
+	(*MoveResourceRequest)(nil),         // 16: pylabrobot.liquid_handler.v1.MoveResourceRequest
+	(*MovePlateRequest)(nil),            // 17: pylabrobot.liquid_handler.v1.MovePlateRequest
+	(*MoveLidRequest)(nil),              // 18: pylabrobot.liquid_handler.v1.MoveLidRequest
+	(*PickUpResourceRequest)(nil),       // 19: pylabrobot.liquid_handler.v1.PickUpResourceRequest
+	(*MovePickedUpResourceRequest)(nil), // 20: pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest
+	(*DropResourceRequest)(nil),         // 21: pylabrobot.liquid_handler.v1.DropResourceRequest
+	(*GetMountedTipsResponse)(nil),      // 22: pylabrobot.liquid_handler.v1.GetMountedTipsResponse
+	(*GetPickedUpResourceResponse)(nil), // 23: pylabrobot.liquid_handler.v1.GetPickedUpResourceResponse
+	(*v1.Coordinate)(nil),               // 24: pylabrobot.common.v1.Coordinate
+	(*v1.Empty)(nil),                    // 25: pylabrobot.common.v1.Empty
 }
-var file_liquid_handler_v1_liquid_handler_service_proto_depIdxs = []int32{
-	2,  // 0: pylabrobot.liquid_handler.v1.PickUpTipsRequest.offsets:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 1: pylabrobot.liquid_handler.v1.DropTipsRequest.offsets:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 2: pylabrobot.liquid_handler.v1.ReturnTipsRequest.offsets:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 3: pylabrobot.liquid_handler.v1.DiscardTipsRequest.offsets:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	3,  // 4: pylabrobot.liquid_handler.v1.AspirateRequest.flow_rates:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	2,  // 5: pylabrobot.liquid_handler.v1.AspirateRequest.offsets:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	3,  // 6: pylabrobot.liquid_handler.v1.AspirateRequest.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	3,  // 7: pylabrobot.liquid_handler.v1.AspirateRequest.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	3,  // 8: pylabrobot.liquid_handler.v1.DispenseRequest.flow_rates:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	2,  // 9: pylabrobot.liquid_handler.v1.DispenseRequest.offsets:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	3,  // 10: pylabrobot.liquid_handler.v1.DispenseRequest.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	3,  // 11: pylabrobot.liquid_handler.v1.DispenseRequest.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	2,  // 12: pylabrobot.liquid_handler.v1.PickUpTips96Request.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 13: pylabrobot.liquid_handler.v1.DropTips96Request.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 14: pylabrobot.liquid_handler.v1.ReturnTips96Request.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 15: pylabrobot.liquid_handler.v1.Aspirate96Request.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	3,  // 16: pylabrobot.liquid_handler.v1.Aspirate96Request.flow_rate:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	3,  // 17: pylabrobot.liquid_handler.v1.Aspirate96Request.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	3,  // 18: pylabrobot.liquid_handler.v1.Aspirate96Request.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	2,  // 19: pylabrobot.liquid_handler.v1.Dispense96Request.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	3,  // 20: pylabrobot.liquid_handler.v1.Dispense96Request.flow_rate:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	3,  // 21: pylabrobot.liquid_handler.v1.Dispense96Request.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	3,  // 22: pylabrobot.liquid_handler.v1.Dispense96Request.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	2,  // 23: pylabrobot.liquid_handler.v1.MoveResourceRequest.to_coordinate:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 24: pylabrobot.liquid_handler.v1.MoveResourceRequest.intermediate_locations:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 25: pylabrobot.liquid_handler.v1.MoveResourceRequest.pickup_offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 26: pylabrobot.liquid_handler.v1.MoveResourceRequest.destination_offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
+var file_liquid_handler_service_proto_depIdxs = []int32{
+	24, // 0: pylabrobot.liquid_handler.v1.PickUpTipsRequest.offsets:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 1: pylabrobot.liquid_handler.v1.DropTipsRequest.offsets:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 2: pylabrobot.liquid_handler.v1.ReturnTipsRequest.offsets:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 3: pylabrobot.liquid_handler.v1.DiscardTipsRequest.offsets:type_name -> pylabrobot.common.v1.Coordinate
+	1,  // 4: pylabrobot.liquid_handler.v1.AspirateRequest.flow_rates:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	24, // 5: pylabrobot.liquid_handler.v1.AspirateRequest.offsets:type_name -> pylabrobot.common.v1.Coordinate
+	1,  // 6: pylabrobot.liquid_handler.v1.AspirateRequest.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 7: pylabrobot.liquid_handler.v1.AspirateRequest.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 8: pylabrobot.liquid_handler.v1.DispenseRequest.flow_rates:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	24, // 9: pylabrobot.liquid_handler.v1.DispenseRequest.offsets:type_name -> pylabrobot.common.v1.Coordinate
+	1,  // 10: pylabrobot.liquid_handler.v1.DispenseRequest.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 11: pylabrobot.liquid_handler.v1.DispenseRequest.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	24, // 12: pylabrobot.liquid_handler.v1.PickUpTips96Request.offset:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 13: pylabrobot.liquid_handler.v1.DropTips96Request.offset:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 14: pylabrobot.liquid_handler.v1.ReturnTips96Request.offset:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 15: pylabrobot.liquid_handler.v1.Aspirate96Request.offset:type_name -> pylabrobot.common.v1.Coordinate
+	1,  // 16: pylabrobot.liquid_handler.v1.Aspirate96Request.flow_rate:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 17: pylabrobot.liquid_handler.v1.Aspirate96Request.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 18: pylabrobot.liquid_handler.v1.Aspirate96Request.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	24, // 19: pylabrobot.liquid_handler.v1.Dispense96Request.offset:type_name -> pylabrobot.common.v1.Coordinate
+	1,  // 20: pylabrobot.liquid_handler.v1.Dispense96Request.flow_rate:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 21: pylabrobot.liquid_handler.v1.Dispense96Request.liquid_height:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 22: pylabrobot.liquid_handler.v1.Dispense96Request.blow_out_air_volume:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	24, // 23: pylabrobot.liquid_handler.v1.MoveResourceRequest.to_coordinate:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 24: pylabrobot.liquid_handler.v1.MoveResourceRequest.intermediate_locations:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 25: pylabrobot.liquid_handler.v1.MoveResourceRequest.pickup_offset:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 26: pylabrobot.liquid_handler.v1.MoveResourceRequest.destination_offset:type_name -> pylabrobot.common.v1.Coordinate
 	0,  // 27: pylabrobot.liquid_handler.v1.MoveResourceRequest.pickup_direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
 	0,  // 28: pylabrobot.liquid_handler.v1.MoveResourceRequest.drop_direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
-	2,  // 29: pylabrobot.liquid_handler.v1.MovePlateRequest.to_coordinate:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 30: pylabrobot.liquid_handler.v1.MovePlateRequest.intermediate_locations:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 31: pylabrobot.liquid_handler.v1.MovePlateRequest.pickup_offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 32: pylabrobot.liquid_handler.v1.MovePlateRequest.destination_offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
+	24, // 29: pylabrobot.liquid_handler.v1.MovePlateRequest.to_coordinate:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 30: pylabrobot.liquid_handler.v1.MovePlateRequest.intermediate_locations:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 31: pylabrobot.liquid_handler.v1.MovePlateRequest.pickup_offset:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 32: pylabrobot.liquid_handler.v1.MovePlateRequest.destination_offset:type_name -> pylabrobot.common.v1.Coordinate
 	0,  // 33: pylabrobot.liquid_handler.v1.MovePlateRequest.pickup_direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
 	0,  // 34: pylabrobot.liquid_handler.v1.MovePlateRequest.drop_direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
-	3,  // 35: pylabrobot.liquid_handler.v1.MovePlateRequest.pickup_distance_from_top:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	2,  // 36: pylabrobot.liquid_handler.v1.MoveLidRequest.to_coordinate:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 37: pylabrobot.liquid_handler.v1.MoveLidRequest.intermediate_locations:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 38: pylabrobot.liquid_handler.v1.MoveLidRequest.pickup_offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 39: pylabrobot.liquid_handler.v1.MoveLidRequest.destination_offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
+	1,  // 35: pylabrobot.liquid_handler.v1.MovePlateRequest.pickup_distance_from_top:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	24, // 36: pylabrobot.liquid_handler.v1.MoveLidRequest.to_coordinate:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 37: pylabrobot.liquid_handler.v1.MoveLidRequest.intermediate_locations:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 38: pylabrobot.liquid_handler.v1.MoveLidRequest.pickup_offset:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 39: pylabrobot.liquid_handler.v1.MoveLidRequest.destination_offset:type_name -> pylabrobot.common.v1.Coordinate
 	0,  // 40: pylabrobot.liquid_handler.v1.MoveLidRequest.pickup_direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
 	0,  // 41: pylabrobot.liquid_handler.v1.MoveLidRequest.drop_direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
-	3,  // 42: pylabrobot.liquid_handler.v1.MoveLidRequest.pickup_distance_from_top:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
-	2,  // 43: pylabrobot.liquid_handler.v1.PickUpResourceRequest.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	3,  // 44: pylabrobot.liquid_handler.v1.PickUpResourceRequest.pickup_distance_from_top:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	1,  // 42: pylabrobot.liquid_handler.v1.MoveLidRequest.pickup_distance_from_top:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
+	24, // 43: pylabrobot.liquid_handler.v1.PickUpResourceRequest.offset:type_name -> pylabrobot.common.v1.Coordinate
+	1,  // 44: pylabrobot.liquid_handler.v1.PickUpResourceRequest.pickup_distance_from_top:type_name -> pylabrobot.liquid_handler.v1.OptionalFloat
 	0,  // 45: pylabrobot.liquid_handler.v1.PickUpResourceRequest.direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
-	2,  // 46: pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest.to:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 47: pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
+	24, // 46: pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest.to:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 47: pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest.offset:type_name -> pylabrobot.common.v1.Coordinate
 	0,  // 48: pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest.direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
-	2,  // 49: pylabrobot.liquid_handler.v1.DropResourceRequest.destination_coordinate:type_name -> pylabrobot.liquid_handler.v1.Coordinate
-	2,  // 50: pylabrobot.liquid_handler.v1.DropResourceRequest.offset:type_name -> pylabrobot.liquid_handler.v1.Coordinate
+	24, // 49: pylabrobot.liquid_handler.v1.DropResourceRequest.destination_coordinate:type_name -> pylabrobot.common.v1.Coordinate
+	24, // 50: pylabrobot.liquid_handler.v1.DropResourceRequest.offset:type_name -> pylabrobot.common.v1.Coordinate
 	0,  // 51: pylabrobot.liquid_handler.v1.DropResourceRequest.direction:type_name -> pylabrobot.liquid_handler.v1.GripDirection
-	4,  // 52: pylabrobot.liquid_handler.v1.GetMountedTipsResponse.tips:type_name -> pylabrobot.liquid_handler.v1.TipInfo
-	5,  // 53: pylabrobot.liquid_handler.v1.LiquidHandlerService.Setup:input_type -> pylabrobot.liquid_handler.v1.SetupRequest
-	1,  // 54: pylabrobot.liquid_handler.v1.LiquidHandlerService.Stop:input_type -> pylabrobot.liquid_handler.v1.Empty
-	6,  // 55: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips:input_type -> pylabrobot.liquid_handler.v1.PickUpTipsRequest
-	7,  // 56: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips:input_type -> pylabrobot.liquid_handler.v1.DropTipsRequest
-	8,  // 57: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips:input_type -> pylabrobot.liquid_handler.v1.ReturnTipsRequest
-	9,  // 58: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips:input_type -> pylabrobot.liquid_handler.v1.DiscardTipsRequest
-	10, // 59: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate:input_type -> pylabrobot.liquid_handler.v1.AspirateRequest
-	11, // 60: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense:input_type -> pylabrobot.liquid_handler.v1.DispenseRequest
-	12, // 61: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips96:input_type -> pylabrobot.liquid_handler.v1.PickUpTips96Request
-	13, // 62: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips96:input_type -> pylabrobot.liquid_handler.v1.DropTips96Request
-	14, // 63: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips96:input_type -> pylabrobot.liquid_handler.v1.ReturnTips96Request
-	15, // 64: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips96:input_type -> pylabrobot.liquid_handler.v1.DiscardTips96Request
-	16, // 65: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate96:input_type -> pylabrobot.liquid_handler.v1.Aspirate96Request
-	17, // 66: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense96:input_type -> pylabrobot.liquid_handler.v1.Dispense96Request
-	18, // 67: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveResource:input_type -> pylabrobot.liquid_handler.v1.MoveResourceRequest
-	19, // 68: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePlate:input_type -> pylabrobot.liquid_handler.v1.MovePlateRequest
-	20, // 69: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveLid:input_type -> pylabrobot.liquid_handler.v1.MoveLidRequest
-	21, // 70: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpResource:input_type -> pylabrobot.liquid_handler.v1.PickUpResourceRequest
-	22, // 71: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePickedUpResource:input_type -> pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest
-	23, // 72: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropResource:input_type -> pylabrobot.liquid_handler.v1.DropResourceRequest
-	1,  // 73: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetMountedTips:input_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 74: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetPickedUpResource:input_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 75: pylabrobot.liquid_handler.v1.LiquidHandlerService.Setup:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 76: pylabrobot.liquid_handler.v1.LiquidHandlerService.Stop:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 77: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 78: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 79: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 80: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 81: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 82: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 83: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips96:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 84: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips96:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 85: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips96:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 86: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips96:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 87: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate96:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 88: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense96:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 89: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveResource:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 90: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePlate:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 91: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveLid:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 92: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpResource:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 93: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePickedUpResource:output_type -> pylabrobot.liquid_handler.v1.Empty
-	1,  // 94: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropResource:output_type -> pylabrobot.liquid_handler.v1.Empty
-	24, // 95: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetMountedTips:output_type -> pylabrobot.liquid_handler.v1.GetMountedTipsResponse
-	25, // 96: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetPickedUpResource:output_type -> pylabrobot.liquid_handler.v1.GetPickedUpResourceResponse
+	2,  // 52: pylabrobot.liquid_handler.v1.GetMountedTipsResponse.tips:type_name -> pylabrobot.liquid_handler.v1.TipInfo
+	3,  // 53: pylabrobot.liquid_handler.v1.LiquidHandlerService.Setup:input_type -> pylabrobot.liquid_handler.v1.SetupRequest
+	25, // 54: pylabrobot.liquid_handler.v1.LiquidHandlerService.Stop:input_type -> pylabrobot.common.v1.Empty
+	4,  // 55: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips:input_type -> pylabrobot.liquid_handler.v1.PickUpTipsRequest
+	5,  // 56: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips:input_type -> pylabrobot.liquid_handler.v1.DropTipsRequest
+	6,  // 57: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips:input_type -> pylabrobot.liquid_handler.v1.ReturnTipsRequest
+	7,  // 58: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips:input_type -> pylabrobot.liquid_handler.v1.DiscardTipsRequest
+	8,  // 59: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate:input_type -> pylabrobot.liquid_handler.v1.AspirateRequest
+	9,  // 60: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense:input_type -> pylabrobot.liquid_handler.v1.DispenseRequest
+	10, // 61: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips96:input_type -> pylabrobot.liquid_handler.v1.PickUpTips96Request
+	11, // 62: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips96:input_type -> pylabrobot.liquid_handler.v1.DropTips96Request
+	12, // 63: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips96:input_type -> pylabrobot.liquid_handler.v1.ReturnTips96Request
+	13, // 64: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips96:input_type -> pylabrobot.liquid_handler.v1.DiscardTips96Request
+	14, // 65: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate96:input_type -> pylabrobot.liquid_handler.v1.Aspirate96Request
+	15, // 66: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense96:input_type -> pylabrobot.liquid_handler.v1.Dispense96Request
+	16, // 67: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveResource:input_type -> pylabrobot.liquid_handler.v1.MoveResourceRequest
+	17, // 68: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePlate:input_type -> pylabrobot.liquid_handler.v1.MovePlateRequest
+	18, // 69: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveLid:input_type -> pylabrobot.liquid_handler.v1.MoveLidRequest
+	19, // 70: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpResource:input_type -> pylabrobot.liquid_handler.v1.PickUpResourceRequest
+	20, // 71: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePickedUpResource:input_type -> pylabrobot.liquid_handler.v1.MovePickedUpResourceRequest
+	21, // 72: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropResource:input_type -> pylabrobot.liquid_handler.v1.DropResourceRequest
+	25, // 73: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetMountedTips:input_type -> pylabrobot.common.v1.Empty
+	25, // 74: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetPickedUpResource:input_type -> pylabrobot.common.v1.Empty
+	25, // 75: pylabrobot.liquid_handler.v1.LiquidHandlerService.Setup:output_type -> pylabrobot.common.v1.Empty
+	25, // 76: pylabrobot.liquid_handler.v1.LiquidHandlerService.Stop:output_type -> pylabrobot.common.v1.Empty
+	25, // 77: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips:output_type -> pylabrobot.common.v1.Empty
+	25, // 78: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips:output_type -> pylabrobot.common.v1.Empty
+	25, // 79: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips:output_type -> pylabrobot.common.v1.Empty
+	25, // 80: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips:output_type -> pylabrobot.common.v1.Empty
+	25, // 81: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate:output_type -> pylabrobot.common.v1.Empty
+	25, // 82: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense:output_type -> pylabrobot.common.v1.Empty
+	25, // 83: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpTips96:output_type -> pylabrobot.common.v1.Empty
+	25, // 84: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropTips96:output_type -> pylabrobot.common.v1.Empty
+	25, // 85: pylabrobot.liquid_handler.v1.LiquidHandlerService.ReturnTips96:output_type -> pylabrobot.common.v1.Empty
+	25, // 86: pylabrobot.liquid_handler.v1.LiquidHandlerService.DiscardTips96:output_type -> pylabrobot.common.v1.Empty
+	25, // 87: pylabrobot.liquid_handler.v1.LiquidHandlerService.Aspirate96:output_type -> pylabrobot.common.v1.Empty
+	25, // 88: pylabrobot.liquid_handler.v1.LiquidHandlerService.Dispense96:output_type -> pylabrobot.common.v1.Empty
+	25, // 89: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveResource:output_type -> pylabrobot.common.v1.Empty
+	25, // 90: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePlate:output_type -> pylabrobot.common.v1.Empty
+	25, // 91: pylabrobot.liquid_handler.v1.LiquidHandlerService.MoveLid:output_type -> pylabrobot.common.v1.Empty
+	25, // 92: pylabrobot.liquid_handler.v1.LiquidHandlerService.PickUpResource:output_type -> pylabrobot.common.v1.Empty
+	25, // 93: pylabrobot.liquid_handler.v1.LiquidHandlerService.MovePickedUpResource:output_type -> pylabrobot.common.v1.Empty
+	25, // 94: pylabrobot.liquid_handler.v1.LiquidHandlerService.DropResource:output_type -> pylabrobot.common.v1.Empty
+	22, // 95: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetMountedTips:output_type -> pylabrobot.liquid_handler.v1.GetMountedTipsResponse
+	23, // 96: pylabrobot.liquid_handler.v1.LiquidHandlerService.GetPickedUpResource:output_type -> pylabrobot.liquid_handler.v1.GetPickedUpResourceResponse
 	75, // [75:97] is the sub-list for method output_type
 	53, // [53:75] is the sub-list for method input_type
 	53, // [53:53] is the sub-list for extension type_name
@@ -2216,26 +2115,26 @@ var file_liquid_handler_v1_liquid_handler_service_proto_depIdxs = []int32{
 	0,  // [0:53] is the sub-list for field type_name
 }
 
-func init() { file_liquid_handler_v1_liquid_handler_service_proto_init() }
-func file_liquid_handler_v1_liquid_handler_service_proto_init() {
-	if File_liquid_handler_v1_liquid_handler_service_proto != nil {
+func init() { file_liquid_handler_service_proto_init() }
+func file_liquid_handler_service_proto_init() {
+	if File_liquid_handler_service_proto != nil {
 		return
 	}
-	file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[2].OneofWrappers = []any{}
-	file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[17].OneofWrappers = []any{
+	file_liquid_handler_service_proto_msgTypes[0].OneofWrappers = []any{}
+	file_liquid_handler_service_proto_msgTypes[15].OneofWrappers = []any{
 		(*MoveResourceRequest_ToName)(nil),
 		(*MoveResourceRequest_ToCoordinate)(nil),
 	}
-	file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[18].OneofWrappers = []any{
+	file_liquid_handler_service_proto_msgTypes[16].OneofWrappers = []any{
 		(*MovePlateRequest_ToName)(nil),
 		(*MovePlateRequest_ToCoordinate)(nil),
 	}
-	file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[19].OneofWrappers = []any{
+	file_liquid_handler_service_proto_msgTypes[17].OneofWrappers = []any{
 		(*MoveLidRequest_ToName)(nil),
 		(*MoveLidRequest_ToCoordinate)(nil),
 	}
-	file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[21].OneofWrappers = []any{}
-	file_liquid_handler_v1_liquid_handler_service_proto_msgTypes[22].OneofWrappers = []any{
+	file_liquid_handler_service_proto_msgTypes[19].OneofWrappers = []any{}
+	file_liquid_handler_service_proto_msgTypes[20].OneofWrappers = []any{
 		(*DropResourceRequest_DestinationName)(nil),
 		(*DropResourceRequest_DestinationCoordinate)(nil),
 	}
@@ -2243,18 +2142,18 @@ func file_liquid_handler_v1_liquid_handler_service_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_liquid_handler_v1_liquid_handler_service_proto_rawDesc), len(file_liquid_handler_v1_liquid_handler_service_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_liquid_handler_service_proto_rawDesc), len(file_liquid_handler_service_proto_rawDesc)),
 			NumEnums:      1,
-			NumMessages:   25,
+			NumMessages:   23,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_liquid_handler_v1_liquid_handler_service_proto_goTypes,
-		DependencyIndexes: file_liquid_handler_v1_liquid_handler_service_proto_depIdxs,
-		EnumInfos:         file_liquid_handler_v1_liquid_handler_service_proto_enumTypes,
-		MessageInfos:      file_liquid_handler_v1_liquid_handler_service_proto_msgTypes,
+		GoTypes:           file_liquid_handler_service_proto_goTypes,
+		DependencyIndexes: file_liquid_handler_service_proto_depIdxs,
+		EnumInfos:         file_liquid_handler_service_proto_enumTypes,
+		MessageInfos:      file_liquid_handler_service_proto_msgTypes,
 	}.Build()
-	File_liquid_handler_v1_liquid_handler_service_proto = out.File
-	file_liquid_handler_v1_liquid_handler_service_proto_goTypes = nil
-	file_liquid_handler_v1_liquid_handler_service_proto_depIdxs = nil
+	File_liquid_handler_service_proto = out.File
+	file_liquid_handler_service_proto_goTypes = nil
+	file_liquid_handler_service_proto_depIdxs = nil
 }

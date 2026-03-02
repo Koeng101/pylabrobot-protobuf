@@ -14,6 +14,7 @@ from pylabrobot.resources.trash import Trash
 from pylabrobot.resources.well import Well
 
 from ._generated import resource_service_pb2 as pb2
+from ._generated import types_pb2
 from ._generated.resource_service_connect import ResourceService, ResourceServiceASGIApplication
 
 if TYPE_CHECKING:
@@ -59,13 +60,13 @@ def _resource_to_data(resource: Resource) -> pb2.ResourceData:
   # Location relative to parent
   if resource.location is not None:
     data.location.CopyFrom(
-      pb2.Coordinate(x=resource.location.x, y=resource.location.y, z=resource.location.z)
+      types_pb2.Coordinate(x=resource.location.x, y=resource.location.y, z=resource.location.z)
     )
 
   # Rotation
   if resource.rotation is not None:
     data.rotation.CopyFrom(
-      pb2.Rotation(x=resource.rotation.x, y=resource.rotation.y, z=resource.rotation.z)
+      types_pb2.Rotation(x=resource.rotation.x, y=resource.rotation.y, z=resource.rotation.z)
     )
 
   # Parent name
@@ -163,11 +164,11 @@ class ResourceServiceImpl(ResourceService):
   ) -> pb2.BoolResponse:
     return pb2.BoolResponse(value=self._deck.has_resource(request.name))
 
-  async def get_trash_area(self, request: pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
+  async def get_trash_area(self, request: types_pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
     trash = self._deck.get_trash_area()
     return _resource_to_data(trash)
 
-  async def get_trash_area96(self, request: pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
+  async def get_trash_area96(self, request: types_pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
     trash = self._deck.get_trash_area96()
     return _resource_to_data(trash)
 
@@ -175,29 +176,29 @@ class ResourceServiceImpl(ResourceService):
 
   async def get_location_wrt(
     self, request: pb2.GetLocationWrtRequest, ctx: RequestContext
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     resource = self._deck.get_resource(request.resource_name)
     other = self._deck.get_resource(request.other_name)
     coord = resource.get_location_wrt(
       other, x=request.anchor_x, y=request.anchor_y, z=request.anchor_z
     )
-    return pb2.Coordinate(x=coord.x, y=coord.y, z=coord.z)
+    return types_pb2.Coordinate(x=coord.x, y=coord.y, z=coord.z)
 
   async def get_absolute_location(
     self, request: pb2.GetAbsoluteLocationRequest, ctx: RequestContext
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     resource = self._deck.get_resource(request.resource_name)
     coord = resource.get_absolute_location(
       x=request.anchor_x, y=request.anchor_y, z=request.anchor_z
     )
-    return pb2.Coordinate(x=coord.x, y=coord.y, z=coord.z)
+    return types_pb2.Coordinate(x=coord.x, y=coord.y, z=coord.z)
 
   async def get_absolute_rotation(
     self, request: pb2.GetAbsoluteRotationRequest, ctx: RequestContext
-  ) -> pb2.Rotation:
+  ) -> types_pb2.Rotation:
     resource = self._deck.get_resource(request.resource_name)
     rot = resource.get_absolute_rotation()
-    return pb2.Rotation(x=rot.x, y=rot.y, z=rot.z)
+    return types_pb2.Rotation(x=rot.x, y=rot.y, z=rot.z)
 
   async def get_absolute_size(
     self, request: pb2.GetAbsoluteSizeRequest, ctx: RequestContext
@@ -223,7 +224,7 @@ class ResourceServiceImpl(ResourceService):
       resource = self._deck.get_resource(item.resource_name)
       other = self._deck.get_resource(item.other_name)
       coord = resource.get_location_wrt(other, x=item.anchor_x, y=item.anchor_y, z=item.anchor_z)
-      coords.append(pb2.Coordinate(x=coord.x, y=coord.y, z=coord.z))
+      coords.append(types_pb2.Coordinate(x=coord.x, y=coord.y, z=coord.z))
     return pb2.BatchCoordinateResponse(coordinates=coords)
 
   # --- Computed methods ---
@@ -271,31 +272,31 @@ class ResourceServiceImpl(ResourceService):
       is_disabled=tracker.is_disabled,
     )
 
-  async def remove_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def remove_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     resource = cast(Container, self._deck.get_resource(request.resource_name))
     resource.tracker.remove_liquid(request.volume)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def add_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def add_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     resource = cast(Container, self._deck.get_resource(request.resource_name))
     resource.tracker.add_liquid(request.volume)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def batch_remove_liquid(
     self, request: pb2.BatchTrackerOpRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     for op in request.ops:
       resource = cast(Container, self._deck.get_resource(op.resource_name))
       resource.tracker.remove_liquid(op.volume)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def batch_add_liquid(
     self, request: pb2.BatchTrackerOpRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     for op in request.ops:
       resource = cast(Container, self._deck.get_resource(op.resource_name))
       resource.tracker.add_liquid(op.volume)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- Tip tracker ---
 
@@ -312,66 +313,66 @@ class ResourceServiceImpl(ResourceService):
       state.tip.CopyFrom(_tip_to_proto(tracker.get_tip()))
     return state
 
-  async def remove_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def remove_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     resource = cast(TipSpot, self._deck.get_resource(request.tip_spot_name))
     resource.tracker.remove_tip()
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def add_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def add_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     tip_spot = cast(TipSpot, self._deck.get_resource(request.tip_spot_name))
     tip_spot.tracker.add_tip(tip_spot.make_tip(), origin=tip_spot)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- Commit / Rollback ---
 
   async def commit_volume_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     for name in request.resource_names:
       resource = cast(Container, self._deck.get_resource(name))
       resource.tracker.commit()
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def rollback_volume_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     for name in request.resource_names:
       resource = cast(Container, self._deck.get_resource(name))
       resource.tracker.rollback()
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def commit_tip_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     for name in request.resource_names:
       resource = cast(TipSpot, self._deck.get_resource(name))
       resource.tracker.commit()
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def rollback_tip_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     for name in request.resource_names:
       resource = cast(TipSpot, self._deck.get_resource(name))
       resource.tracker.rollback()
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- Structure mutation ---
 
-  async def assign_child(self, request: pb2.AssignChildRequest, ctx: RequestContext) -> pb2.Empty:
+  async def assign_child(self, request: pb2.AssignChildRequest, ctx: RequestContext) -> types_pb2.Empty:
     child = self._deck.get_resource(request.child_name)
     parent = self._deck.get_resource(request.parent_name)
     loc = Coordinate(request.location.x, request.location.y, request.location.z)
     parent.assign_child_resource(child, location=loc)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def unassign_child(
     self, request: pb2.UnassignChildRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     resource = self._deck.get_resource(request.resource_name)
     if resource.parent is not None:
       resource.parent.unassign_child_resource(resource)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
 
 # ============================================================

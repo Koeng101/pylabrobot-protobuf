@@ -1,4 +1,9 @@
 version: v2
+modules:
+  - path: common/v1
+  - path: star/v1
+  - path: resource/v1
+  - path: liquid_handler/v1
 lint:
   use:
     - STANDARD

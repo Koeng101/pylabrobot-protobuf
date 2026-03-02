@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Optional
 
 from ._generated import liquid_handler_service_pb2 as pb2
+from ._generated import types_pb2
 from ._generated.liquid_handler_service_connect import LiquidHandlerServiceClientSync
 
 # Re-export for convenience.
@@ -52,7 +53,7 @@ class RemoteLiquidHandler:
 
   def stop(self) -> None:
     """Tear down the LiquidHandler and disconnect from backend servers."""
-    self._client.stop(pb2.Empty())
+    self._client.stop(types_pb2.Empty())
 
   # --- Single-channel tips ---
 
@@ -67,7 +68,7 @@ class RemoteLiquidHandler:
     if use_channels is not None:
       req.use_channels.extend(use_channels)
     if offsets is not None:
-      req.offsets.extend(pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
+      req.offsets.extend(types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
     self._client.pick_up_tips(req)
 
   def drop_tips(
@@ -85,7 +86,7 @@ class RemoteLiquidHandler:
     if use_channels is not None:
       req.use_channels.extend(use_channels)
     if offsets is not None:
-      req.offsets.extend(pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
+      req.offsets.extend(types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
     self._client.drop_tips(req)
 
   def return_tips(
@@ -99,7 +100,7 @@ class RemoteLiquidHandler:
     if use_channels is not None:
       req.use_channels.extend(use_channels)
     if offsets is not None:
-      req.offsets.extend(pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
+      req.offsets.extend(types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
     self._client.return_tips(req)
 
   def discard_tips(
@@ -113,7 +114,7 @@ class RemoteLiquidHandler:
     if use_channels is not None:
       req.use_channels.extend(use_channels)
     if offsets is not None:
-      req.offsets.extend(pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
+      req.offsets.extend(types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
     self._client.discard_tips(req)
 
   # --- Single-channel liquid ---
@@ -137,7 +138,7 @@ class RemoteLiquidHandler:
         pb2.OptionalFloat(value=v) if v is not None else pb2.OptionalFloat() for v in flow_rates
       )
     if offsets is not None:
-      req.offsets.extend(pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
+      req.offsets.extend(types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
     if liquid_height is not None:
       req.liquid_height.extend(
         pb2.OptionalFloat(value=v) if v is not None else pb2.OptionalFloat()
@@ -169,7 +170,7 @@ class RemoteLiquidHandler:
         pb2.OptionalFloat(value=v) if v is not None else pb2.OptionalFloat() for v in flow_rates
       )
     if offsets is not None:
-      req.offsets.extend(pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
+      req.offsets.extend(types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in offsets)
     if liquid_height is not None:
       req.liquid_height.extend(
         pb2.OptionalFloat(value=v) if v is not None else pb2.OptionalFloat()
@@ -192,7 +193,7 @@ class RemoteLiquidHandler:
     """Pick up tips with the 96-channel head from a tip rack."""
     req = pb2.PickUpTips96Request(tip_rack_name=tip_rack_name)
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     self._client.pick_up_tips96(req)
 
   def drop_tips96(
@@ -207,7 +208,7 @@ class RemoteLiquidHandler:
       allow_nonzero_volume=allow_nonzero_volume,
     )
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     self._client.drop_tips96(req)
 
   def return_tips96(
@@ -218,7 +219,7 @@ class RemoteLiquidHandler:
     """Return 96-head tips to the rack they were originally picked up from."""
     req = pb2.ReturnTips96Request(allow_nonzero_volume=allow_nonzero_volume)
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     self._client.return_tips96(req)
 
   def discard_tips96(self, allow_nonzero_volume: bool = True) -> None:
@@ -239,7 +240,7 @@ class RemoteLiquidHandler:
     """Aspirate liquid with the 96-channel head."""
     req = pb2.Aspirate96Request(resource_name=resource_name, volume=volume)
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     if flow_rate is not None:
       req.flow_rate.CopyFrom(pb2.OptionalFloat(value=flow_rate))
     if liquid_height is not None:
@@ -260,7 +261,7 @@ class RemoteLiquidHandler:
     """Dispense liquid with the 96-channel head."""
     req = pb2.Dispense96Request(resource_name=resource_name, volume=volume)
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     if flow_rate is not None:
       req.flow_rate.CopyFrom(pb2.OptionalFloat(value=flow_rate))
     if liquid_height is not None:
@@ -294,19 +295,19 @@ class RemoteLiquidHandler:
       req.to_name = to_name
     elif to_coordinate is not None:
       req.to_coordinate.CopyFrom(
-        pb2.Coordinate(x=to_coordinate[0], y=to_coordinate[1], z=to_coordinate[2])
+        types_pb2.Coordinate(x=to_coordinate[0], y=to_coordinate[1], z=to_coordinate[2])
       )
     if intermediate_locations is not None:
       req.intermediate_locations.extend(
-        pb2.Coordinate(x=x, y=y, z=z) for x, y, z in intermediate_locations
+        types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in intermediate_locations
       )
     if pickup_offset is not None:
       req.pickup_offset.CopyFrom(
-        pb2.Coordinate(x=pickup_offset[0], y=pickup_offset[1], z=pickup_offset[2])
+        types_pb2.Coordinate(x=pickup_offset[0], y=pickup_offset[1], z=pickup_offset[2])
       )
     if destination_offset is not None:
       req.destination_offset.CopyFrom(
-        pb2.Coordinate(x=destination_offset[0], y=destination_offset[1], z=destination_offset[2])
+        types_pb2.Coordinate(x=destination_offset[0], y=destination_offset[1], z=destination_offset[2])
       )
     self._client.move_resource(req)
 
@@ -332,19 +333,19 @@ class RemoteLiquidHandler:
       req.to_name = to_name
     elif to_coordinate is not None:
       req.to_coordinate.CopyFrom(
-        pb2.Coordinate(x=to_coordinate[0], y=to_coordinate[1], z=to_coordinate[2])
+        types_pb2.Coordinate(x=to_coordinate[0], y=to_coordinate[1], z=to_coordinate[2])
       )
     if intermediate_locations is not None:
       req.intermediate_locations.extend(
-        pb2.Coordinate(x=x, y=y, z=z) for x, y, z in intermediate_locations
+        types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in intermediate_locations
       )
     if pickup_offset is not None:
       req.pickup_offset.CopyFrom(
-        pb2.Coordinate(x=pickup_offset[0], y=pickup_offset[1], z=pickup_offset[2])
+        types_pb2.Coordinate(x=pickup_offset[0], y=pickup_offset[1], z=pickup_offset[2])
       )
     if destination_offset is not None:
       req.destination_offset.CopyFrom(
-        pb2.Coordinate(x=destination_offset[0], y=destination_offset[1], z=destination_offset[2])
+        types_pb2.Coordinate(x=destination_offset[0], y=destination_offset[1], z=destination_offset[2])
       )
     if pickup_distance_from_top is not None:
       req.pickup_distance_from_top.CopyFrom(pb2.OptionalFloat(value=pickup_distance_from_top))
@@ -372,19 +373,19 @@ class RemoteLiquidHandler:
       req.to_name = to_name
     elif to_coordinate is not None:
       req.to_coordinate.CopyFrom(
-        pb2.Coordinate(x=to_coordinate[0], y=to_coordinate[1], z=to_coordinate[2])
+        types_pb2.Coordinate(x=to_coordinate[0], y=to_coordinate[1], z=to_coordinate[2])
       )
     if intermediate_locations is not None:
       req.intermediate_locations.extend(
-        pb2.Coordinate(x=x, y=y, z=z) for x, y, z in intermediate_locations
+        types_pb2.Coordinate(x=x, y=y, z=z) for x, y, z in intermediate_locations
       )
     if pickup_offset is not None:
       req.pickup_offset.CopyFrom(
-        pb2.Coordinate(x=pickup_offset[0], y=pickup_offset[1], z=pickup_offset[2])
+        types_pb2.Coordinate(x=pickup_offset[0], y=pickup_offset[1], z=pickup_offset[2])
       )
     if destination_offset is not None:
       req.destination_offset.CopyFrom(
-        pb2.Coordinate(x=destination_offset[0], y=destination_offset[1], z=destination_offset[2])
+        types_pb2.Coordinate(x=destination_offset[0], y=destination_offset[1], z=destination_offset[2])
       )
     if pickup_distance_from_top is not None:
       req.pickup_distance_from_top.CopyFrom(pb2.OptionalFloat(value=pickup_distance_from_top))
@@ -402,7 +403,7 @@ class RemoteLiquidHandler:
     """Pick up a resource with the gripper arm."""
     req = pb2.PickUpResourceRequest(resource_name=resource_name, direction=direction)
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     if pickup_distance_from_top is not None:
       req.pickup_distance_from_top.CopyFrom(pb2.OptionalFloat(value=pickup_distance_from_top))
     self._client.pick_up_resource(req)
@@ -414,9 +415,9 @@ class RemoteLiquidHandler:
     direction: Optional[pb2.GripDirection] = None,
   ) -> None:
     """Move the currently picked-up resource to a new coordinate."""
-    req = pb2.MovePickedUpResourceRequest(to=pb2.Coordinate(x=to[0], y=to[1], z=to[2]))
+    req = pb2.MovePickedUpResourceRequest(to=types_pb2.Coordinate(x=to[0], y=to[1], z=to[2]))
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     if direction is not None:
       req.direction = direction  # type: ignore[assignment]
     self._client.move_picked_up_resource(req)
@@ -434,24 +435,24 @@ class RemoteLiquidHandler:
       req.destination_name = destination_name
     elif destination_coordinate is not None:
       req.destination_coordinate.CopyFrom(
-        pb2.Coordinate(
+        types_pb2.Coordinate(
           x=destination_coordinate[0], y=destination_coordinate[1], z=destination_coordinate[2]
         )
       )
     if offset is not None:
-      req.offset.CopyFrom(pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
+      req.offset.CopyFrom(types_pb2.Coordinate(x=offset[0], y=offset[1], z=offset[2]))
     self._client.drop_resource(req)
 
   # --- State queries ---
 
   def get_mounted_tips(self) -> list[pb2.TipInfo]:
     """Get the tips currently mounted on each channel of the pipetting head."""
-    resp = self._client.get_mounted_tips(pb2.Empty())
+    resp = self._client.get_mounted_tips(types_pb2.Empty())
     return list(resp.tips)
 
   def get_picked_up_resource(self) -> Optional[str]:
     """Get the name of the resource currently held by the gripper arm, or None."""
-    resp = self._client.get_picked_up_resource(pb2.Empty())
+    resp = self._client.get_picked_up_resource(types_pb2.Empty())
     if resp.has_resource:
       return resp.resource_name
     return None

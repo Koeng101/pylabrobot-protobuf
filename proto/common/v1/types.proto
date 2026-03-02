@@ -1,0 +1,7 @@
+syntax = "proto3";
+package pylabrobot.common.v1;
+option go_package = "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/common/v1;commonv1";
+
+message Empty {}
+message Coordinate { double x = 1; double y = 2; double z = 3; }
+message Rotation   { double x = 1; double y = 2; double z = 3; }

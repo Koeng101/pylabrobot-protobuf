@@ -18,6 +18,7 @@ from pylabrobot_protobuf_client.resource import RemoteResource
 from pylabrobot_protobuf_client.star import RemoteSTARBackend
 
 from ._generated import liquid_handler_service_pb2 as pb2
+from ._generated import types_pb2
 from ._generated.liquid_handler_service_connect import (
   LiquidHandlerService,
   LiquidHandlerServiceASGIApplication,
@@ -43,7 +44,7 @@ def _to_grip_direction(proto_dir: int) -> GripDirection:
   return _GRIP_DIR_MAP.get(proto_dir, GripDirection.FRONT)
 
 
-def _to_coord(c: pb2.Coordinate) -> Coordinate:
+def _to_coord(c: types_pb2.Coordinate) -> Coordinate:
   return Coordinate(x=c.x, y=c.y, z=c.z)
 
 
@@ -90,30 +91,30 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
 
   # --- Lifecycle ---
 
-  async def setup(self, request: pb2.SetupRequest, ctx: RequestContext) -> pb2.Empty:
+  async def setup(self, request: pb2.SetupRequest, ctx: RequestContext) -> types_pb2.Empty:
     backend = RemoteSTARBackend.connect(request.star_url)
     deck = RemoteResource.connect(request.resource_url)
     self._lh = LiquidHandler(backend=backend, deck=deck)
     await self._lh.setup()
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def stop(self, request: pb2.Empty, ctx: RequestContext) -> pb2.Empty:
+  async def stop(self, request: types_pb2.Empty, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     await lh.stop()
     self._lh = None
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- Single-channel tips ---
 
-  async def pick_up_tips(self, request: pb2.PickUpTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def pick_up_tips(self, request: pb2.PickUpTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     tip_spots = [cast(TipSpot, lh.deck.get_resource(n)) for n in request.tip_spot_names]
     use_channels = list(request.use_channels) if request.use_channels else None
     offsets = [_to_coord(o) for o in request.offsets] if request.offsets else None
     await lh.pick_up_tips(tip_spots=tip_spots, use_channels=use_channels, offsets=offsets)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def drop_tips(self, request: pb2.DropTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def drop_tips(self, request: pb2.DropTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     tip_spots: list[Union[TipSpot, Trash]] = [
       cast(Union[TipSpot, Trash], lh.deck.get_resource(n)) for n in request.tip_spot_names
@@ -126,9 +127,9 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       offsets=offsets,
       allow_nonzero_volume=request.allow_nonzero_volume,
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def return_tips(self, request: pb2.ReturnTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def return_tips(self, request: pb2.ReturnTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     use_channels = list(request.use_channels) if request.use_channels else None
     offsets = [_to_coord(o) for o in request.offsets] if request.offsets else None
@@ -137,9 +138,9 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       allow_nonzero_volume=request.allow_nonzero_volume,
       offsets=offsets,
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def discard_tips(self, request: pb2.DiscardTipsRequest, ctx: RequestContext) -> pb2.Empty:
+  async def discard_tips(self, request: pb2.DiscardTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     use_channels = list(request.use_channels) if request.use_channels else None
     offsets = [_to_coord(o) for o in request.offsets] if request.offsets else None
@@ -148,11 +149,11 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       allow_nonzero_volume=request.allow_nonzero_volume,
       offsets=offsets,
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- Single-channel liquid ---
 
-  async def aspirate(self, request: pb2.AspirateRequest, ctx: RequestContext) -> pb2.Empty:
+  async def aspirate(self, request: pb2.AspirateRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     resources = [cast(Container, lh.deck.get_resource(n)) for n in request.resource_names]
     vols = list(request.vols)
@@ -167,9 +168,9 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       liquid_height=_optional_floats(list(request.liquid_height)),
       blow_out_air_volume=_optional_floats(list(request.blow_out_air_volume)),
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def dispense(self, request: pb2.DispenseRequest, ctx: RequestContext) -> pb2.Empty:
+  async def dispense(self, request: pb2.DispenseRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     resources = [cast(Container, lh.deck.get_resource(n)) for n in request.resource_names]
     vols = list(request.vols)
@@ -184,20 +185,20 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       liquid_height=_optional_floats(list(request.liquid_height)),
       blow_out_air_volume=_optional_floats(list(request.blow_out_air_volume)),
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- 96-head tips ---
 
   async def pick_up_tips96(
     self, request: pb2.PickUpTips96Request, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     lh = self._require_lh()
     tip_rack = cast(TipRack, lh.deck.get_resource(request.tip_rack_name))
     offset = _to_coord(request.offset) if request.HasField("offset") else Coordinate.zero()
     await lh.pick_up_tips96(tip_rack=tip_rack, offset=offset)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def drop_tips96(self, request: pb2.DropTips96Request, ctx: RequestContext) -> pb2.Empty:
+  async def drop_tips96(self, request: pb2.DropTips96Request, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     resource = cast(Union[TipRack, Trash], lh.deck.get_resource(request.resource_name))
     offset = _to_coord(request.offset) if request.HasField("offset") else Coordinate.zero()
@@ -206,29 +207,29 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       offset=offset,
       allow_nonzero_volume=request.allow_nonzero_volume,
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def return_tips96(
     self, request: pb2.ReturnTips96Request, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     lh = self._require_lh()
     offset = _to_coord(request.offset) if request.HasField("offset") else Coordinate.zero()
     await lh.return_tips96(
       allow_nonzero_volume=request.allow_nonzero_volume,
       offset=offset,
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def discard_tips96(
     self, request: pb2.DiscardTips96Request, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     lh = self._require_lh()
     await lh.discard_tips96(allow_nonzero_volume=request.allow_nonzero_volume)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- 96-head liquid ---
 
-  async def aspirate96(self, request: pb2.Aspirate96Request, ctx: RequestContext) -> pb2.Empty:
+  async def aspirate96(self, request: pb2.Aspirate96Request, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     resource = lh.deck.get_resource(request.resource_name)
     offset = _to_coord(request.offset) if request.HasField("offset") else Coordinate.zero()
@@ -249,9 +250,9 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       liquid_height=liquid_height,
       blow_out_air_volume=blow_out,
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def dispense96(self, request: pb2.Dispense96Request, ctx: RequestContext) -> pb2.Empty:
+  async def dispense96(self, request: pb2.Dispense96Request, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     resource = lh.deck.get_resource(request.resource_name)
     offset = _to_coord(request.offset) if request.HasField("offset") else Coordinate.zero()
@@ -272,13 +273,13 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       liquid_height=liquid_height,
       blow_out_air_volume=blow_out,
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- Resource movement (high-level) ---
 
   async def move_resource(
     self, request: pb2.MoveResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     lh = self._require_lh()
     resource = lh.deck.get_resource(request.resource_name)
     to = _resolve_destination(lh.deck, request)
@@ -305,9 +306,9 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       pickup_direction=_to_grip_direction(request.pickup_direction),
       drop_direction=_to_grip_direction(request.drop_direction),
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def move_plate(self, request: pb2.MovePlateRequest, ctx: RequestContext) -> pb2.Empty:
+  async def move_plate(self, request: pb2.MovePlateRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     plate = cast(Plate, lh.deck.get_resource(request.plate_name))
     to = _resolve_destination(lh.deck, request)
@@ -338,9 +339,9 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       if dist is not None:
         kwargs["pickup_distance_from_top"] = dist
     await lh.move_plate(**kwargs)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
-  async def move_lid(self, request: pb2.MoveLidRequest, ctx: RequestContext) -> pb2.Empty:
+  async def move_lid(self, request: pb2.MoveLidRequest, ctx: RequestContext) -> types_pb2.Empty:
     lh = self._require_lh()
     lid = cast(Lid, lh.deck.get_resource(request.lid_name))
     to = _resolve_destination(lh.deck, request)
@@ -371,13 +372,13 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       if dist is not None:
         kwargs["pickup_distance_from_top"] = dist
     await lh.move_lid(**kwargs)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- Resource movement (low-level 3-step) ---
 
   async def pick_up_resource(
     self, request: pb2.PickUpResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     lh = self._require_lh()
     resource = lh.deck.get_resource(request.resource_name)
     offset = _to_coord(request.offset) if request.HasField("offset") else Coordinate.zero()
@@ -392,11 +393,11 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       pickup_distance_from_top=pickup_dist,
       direction=_to_grip_direction(request.direction),
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def move_picked_up_resource(
     self, request: pb2.MovePickedUpResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     lh = self._require_lh()
     to = _to_coord(request.to)
     offset = _to_coord(request.offset) if request.HasField("offset") else Coordinate.zero()
@@ -404,11 +405,11 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       _to_grip_direction(request.direction) if request.HasField("direction") else None
     )
     await lh.move_picked_up_resource(to=to, offset=offset, direction=direction)
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   async def drop_resource(
     self, request: pb2.DropResourceRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     lh = self._require_lh()
     dest_field = request.WhichOneof("destination")
     destination: Union[Resource, Coordinate]
@@ -424,12 +425,12 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
       offset=offset,
       direction=_to_grip_direction(request.direction),
     )
-    return pb2.Empty()
+    return types_pb2.Empty()
 
   # --- State queries ---
 
   async def get_mounted_tips(
-    self, request: pb2.Empty, ctx: RequestContext
+    self, request: types_pb2.Empty, ctx: RequestContext
   ) -> pb2.GetMountedTipsResponse:
     lh = self._require_lh()
     tips = lh.get_mounted_tips()
@@ -445,7 +446,7 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
     return pb2.GetMountedTipsResponse(tips=tip_infos)
 
   async def get_picked_up_resource(
-    self, request: pb2.Empty, ctx: RequestContext
+    self, request: types_pb2.Empty, ctx: RequestContext
   ) -> pb2.GetPickedUpResourceResponse:
     lh = self._require_lh()
     resource = lh.get_picked_up_resource()
