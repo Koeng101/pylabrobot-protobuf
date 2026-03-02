@@ -1,0 +1,290 @@
+syntax = "proto3";
+package pylabrobot.liquid_handler.v1;
+option go_package = "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/liquid_handler/v1;liquidhandlerv1";
+
+// ============================================================
+// Messages
+// ============================================================
+
+message Empty {}
+
+message Coordinate {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+message OptionalFloat {
+  optional double value = 1;
+}
+
+enum GripDirection {
+  GRIP_DIRECTION_FRONT = 0;
+  GRIP_DIRECTION_BACK = 1;
+  GRIP_DIRECTION_LEFT = 2;
+  GRIP_DIRECTION_RIGHT = 3;
+}
+
+message TipInfo {
+  int32 channel = 1;
+  bool has_tip = 2;
+  double total_tip_length = 3;
+  double maximal_volume = 4;
+  bool has_filter = 5;
+  double fitting_depth = 6;
+}
+
+// ============================================================
+// Requests
+// ============================================================
+
+message SetupRequest {
+  string star_url = 1;
+  string resource_url = 2;
+}
+
+// --- Single-channel tips ---
+
+message PickUpTipsRequest {
+  repeated string tip_spot_names = 1;
+  repeated int32 use_channels = 2;
+  repeated Coordinate offsets = 3;
+}
+
+message DropTipsRequest {
+  repeated string tip_spot_names = 1;
+  repeated int32 use_channels = 2;
+  repeated Coordinate offsets = 3;
+  bool allow_nonzero_volume = 4;
+}
+
+message ReturnTipsRequest {
+  repeated int32 use_channels = 1;
+  bool allow_nonzero_volume = 2;
+  repeated Coordinate offsets = 3;
+}
+
+message DiscardTipsRequest {
+  repeated int32 use_channels = 1;
+  bool allow_nonzero_volume = 2;
+  repeated Coordinate offsets = 3;
+}
+
+// --- Single-channel liquid ---
+
+message AspirateRequest {
+  repeated string resource_names = 1;
+  repeated double vols = 2;
+  repeated int32 use_channels = 3;
+  repeated OptionalFloat flow_rates = 4;
+  repeated Coordinate offsets = 5;
+  repeated OptionalFloat liquid_height = 6;
+  repeated OptionalFloat blow_out_air_volume = 7;
+}
+
+message DispenseRequest {
+  repeated string resource_names = 1;
+  repeated double vols = 2;
+  repeated int32 use_channels = 3;
+  repeated OptionalFloat flow_rates = 4;
+  repeated Coordinate offsets = 5;
+  repeated OptionalFloat liquid_height = 6;
+  repeated OptionalFloat blow_out_air_volume = 7;
+}
+
+// --- 96-head tips ---
+
+message PickUpTips96Request {
+  string tip_rack_name = 1;
+  Coordinate offset = 2;
+}
+
+message DropTips96Request {
+  string resource_name = 1;
+  Coordinate offset = 2;
+  bool allow_nonzero_volume = 3;
+}
+
+message ReturnTips96Request {
+  bool allow_nonzero_volume = 1;
+  Coordinate offset = 2;
+}
+
+message DiscardTips96Request {
+  bool allow_nonzero_volume = 1;
+}
+
+// --- 96-head liquid ---
+
+message Aspirate96Request {
+  string resource_name = 1;
+  double volume = 2;
+  Coordinate offset = 3;
+  OptionalFloat flow_rate = 4;
+  OptionalFloat liquid_height = 5;
+  OptionalFloat blow_out_air_volume = 6;
+}
+
+message Dispense96Request {
+  string resource_name = 1;
+  double volume = 2;
+  Coordinate offset = 3;
+  OptionalFloat flow_rate = 4;
+  OptionalFloat liquid_height = 5;
+  OptionalFloat blow_out_air_volume = 6;
+}
+
+// --- Resource movement (high-level) ---
+
+message MoveResourceRequest {
+  string resource_name = 1;
+  oneof destination {
+    string to_name = 2;
+    Coordinate to_coordinate = 3;
+  }
+  repeated Coordinate intermediate_locations = 4;
+  Coordinate pickup_offset = 5;
+  Coordinate destination_offset = 6;
+  double pickup_distance_from_top = 7;
+  GripDirection pickup_direction = 8;
+  GripDirection drop_direction = 9;
+}
+
+message MovePlateRequest {
+  string plate_name = 1;
+  oneof destination {
+    string to_name = 2;
+    Coordinate to_coordinate = 3;
+  }
+  repeated Coordinate intermediate_locations = 4;
+  Coordinate pickup_offset = 5;
+  Coordinate destination_offset = 6;
+  GripDirection pickup_direction = 7;
+  GripDirection drop_direction = 8;
+  OptionalFloat pickup_distance_from_top = 9;
+}
+
+message MoveLidRequest {
+  string lid_name = 1;
+  oneof destination {
+    string to_name = 2;
+    Coordinate to_coordinate = 3;
+  }
+  repeated Coordinate intermediate_locations = 4;
+  Coordinate pickup_offset = 5;
+  Coordinate destination_offset = 6;
+  GripDirection pickup_direction = 7;
+  GripDirection drop_direction = 8;
+  OptionalFloat pickup_distance_from_top = 9;
+}
+
+// --- Resource movement (low-level 3-step) ---
+
+message PickUpResourceRequest {
+  string resource_name = 1;
+  Coordinate offset = 2;
+  OptionalFloat pickup_distance_from_top = 3;
+  GripDirection direction = 4;
+}
+
+message MovePickedUpResourceRequest {
+  Coordinate to = 1;
+  Coordinate offset = 2;
+  optional GripDirection direction = 3;
+}
+
+message DropResourceRequest {
+  oneof destination {
+    string destination_name = 1;
+    Coordinate destination_coordinate = 2;
+  }
+  Coordinate offset = 3;
+  GripDirection direction = 4;
+}
+
+// ============================================================
+// Responses
+// ============================================================
+
+message GetMountedTipsResponse {
+  repeated TipInfo tips = 1;
+}
+
+message GetPickedUpResourceResponse {
+  bool has_resource = 1;
+  string resource_name = 2;
+}
+
+// ============================================================
+// Service
+// ============================================================
+
+service LiquidHandlerService {
+  // --- Lifecycle ---
+
+  // Connect to STAR and Resource servers, create and set up LiquidHandler.
+  rpc Setup(SetupRequest) returns (Empty);
+  // Tear down the LiquidHandler and disconnect from backend servers.
+  rpc Stop(Empty) returns (Empty);
+
+  // --- Single-channel tips ---
+
+  // Pick up tips from the given tip spots.
+  rpc PickUpTips(PickUpTipsRequest) returns (Empty);
+  // Drop tips into the given tip spots or trash.
+  rpc DropTips(DropTipsRequest) returns (Empty);
+  // Return tips to the spots they were originally picked up from.
+  rpc ReturnTips(ReturnTipsRequest) returns (Empty);
+  // Discard tips into the trash.
+  rpc DiscardTips(DiscardTipsRequest) returns (Empty);
+
+  // --- Single-channel liquid ---
+
+  // Aspirate liquid from containers.
+  rpc Aspirate(AspirateRequest) returns (Empty);
+  // Dispense liquid into containers.
+  rpc Dispense(DispenseRequest) returns (Empty);
+
+  // --- 96-head tips ---
+
+  // Pick up tips with the 96-channel head from a tip rack.
+  rpc PickUpTips96(PickUpTips96Request) returns (Empty);
+  // Drop tips with the 96-channel head into a tip rack or trash.
+  rpc DropTips96(DropTips96Request) returns (Empty);
+  // Return 96-head tips to the rack they were originally picked up from.
+  rpc ReturnTips96(ReturnTips96Request) returns (Empty);
+  // Discard 96-head tips into the trash.
+  rpc DiscardTips96(DiscardTips96Request) returns (Empty);
+
+  // --- 96-head liquid ---
+
+  // Aspirate liquid with the 96-channel head.
+  rpc Aspirate96(Aspirate96Request) returns (Empty);
+  // Dispense liquid with the 96-channel head.
+  rpc Dispense96(Dispense96Request) returns (Empty);
+
+  // --- Resource movement (high-level) ---
+
+  // Move a resource from its current location to a destination.
+  rpc MoveResource(MoveResourceRequest) returns (Empty);
+  // Move a plate (convenience wrapper with plate-specific defaults).
+  rpc MovePlate(MovePlateRequest) returns (Empty);
+  // Move a lid (convenience wrapper with lid-specific defaults).
+  rpc MoveLid(MoveLidRequest) returns (Empty);
+
+  // --- Resource movement (low-level 3-step) ---
+
+  // Pick up a resource with the gripper arm.
+  rpc PickUpResource(PickUpResourceRequest) returns (Empty);
+  // Move the currently picked-up resource to a new coordinate.
+  rpc MovePickedUpResource(MovePickedUpResourceRequest) returns (Empty);
+  // Drop the currently picked-up resource at a destination.
+  rpc DropResource(DropResourceRequest) returns (Empty);
+
+  // --- State queries ---
+
+  // Get the tips currently mounted on each channel of the pipetting head.
+  rpc GetMountedTips(Empty) returns (GetMountedTipsResponse);
+  // Get the resource currently held by the gripper arm, if any.
+  rpc GetPickedUpResource(Empty) returns (GetPickedUpResourceResponse);
+}
