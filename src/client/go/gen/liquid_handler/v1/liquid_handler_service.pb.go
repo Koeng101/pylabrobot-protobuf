@@ -204,8 +204,6 @@ func (x *TipInfo) GetFittingDepth() float64 {
 
 type SetupRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	StarUrl       string                 `protobuf:"bytes,1,opt,name=star_url,json=starUrl,proto3" json:"star_url,omitempty"`
-	ResourceUrl   string                 `protobuf:"bytes,2,opt,name=resource_url,json=resourceUrl,proto3" json:"resource_url,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -238,20 +236,6 @@ func (x *SetupRequest) ProtoReflect() protoreflect.Message {
 // Deprecated: Use SetupRequest.ProtoReflect.Descriptor instead.
 func (*SetupRequest) Descriptor() ([]byte, []int) {
 	return file_liquid_handler_service_proto_rawDescGZIP(), []int{2}
-}
-
-func (x *SetupRequest) GetStarUrl() string {
-	if x != nil {
-		return x.StarUrl
-	}
-	return ""
-}
-
-func (x *SetupRequest) GetResourceUrl() string {
-	if x != nil {
-		return x.ResourceUrl
-	}
-	return ""
 }
 
 type PickUpTipsRequest struct {
@@ -1813,10 +1797,8 @@ const file_liquid_handler_service_proto_rawDesc = "" +
 	"\x0emaximal_volume\x18\x04 \x01(\x01R\rmaximalVolume\x12\x1d\n" +
 	"\n" +
 	"has_filter\x18\x05 \x01(\bR\thasFilter\x12#\n" +
-	"\rfitting_depth\x18\x06 \x01(\x01R\ffittingDepth\"L\n" +
-	"\fSetupRequest\x12\x19\n" +
-	"\bstar_url\x18\x01 \x01(\tR\astarUrl\x12!\n" +
-	"\fresource_url\x18\x02 \x01(\tR\vresourceUrl\"\x98\x01\n" +
+	"\rfitting_depth\x18\x06 \x01(\x01R\ffittingDepth\"\x0e\n" +
+	"\fSetupRequest\"\x98\x01\n" +
 	"\x11PickUpTipsRequest\x12$\n" +
 	"\x0etip_spot_names\x18\x01 \x03(\tR\ftipSpotNames\x12!\n" +
 	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12:\n" +

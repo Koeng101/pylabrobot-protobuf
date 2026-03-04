@@ -35,7 +35,10 @@ from pylabrobot.resources.carrier import PlateCarrier
 from pylabrobot.resources.hamilton import STARLetDeck
 from pylabrobot.resources.plate import Plate
 from pylabrobot_protobuf_client.star import RemoteSTARBackend
-from pylabrobot_protobuf_client.star._generated.star_service_connect import STARServiceClientSync
+from pylabrobot_protobuf_client.star._generated.star_service_connect import (
+  STARServiceClient,
+  STARServiceClientSync,
+)
 
 from pylabrobot_protobuf_service.star import create_star_app
 
@@ -241,8 +244,8 @@ def star_service():
   server_thread.start()
 
   try:
-    client = STARServiceClientSync(address=f"http://127.0.0.1:{_PORT}")
-    remote = RemoteSTARBackend(client)
+    addr = f"http://127.0.0.1:{_PORT}"
+    remote = RemoteSTARBackend(STARServiceClient(address=addr), STARServiceClientSync(address=addr))
     yield StarServiceFixture(backend=backend, remote=remote, deck=deck, bb=bb)
   finally:
     server_thread.stop()
@@ -258,8 +261,8 @@ def star_service_iswap():
   server_thread.start()
 
   try:
-    client = STARServiceClientSync(address=f"http://127.0.0.1:{_PORT_ISWAP}")
-    remote = RemoteSTARBackend(client)
+    addr = f"http://127.0.0.1:{_PORT_ISWAP}"
+    remote = RemoteSTARBackend(STARServiceClient(address=addr), STARServiceClientSync(address=addr))
     yield StarServiceIswapFixture(
       backend=backend,
       remote=remote,
@@ -282,8 +285,8 @@ def star_service_foil():
   server_thread.start()
 
   try:
-    client = STARServiceClientSync(address=f"http://127.0.0.1:{_PORT_FOIL}")
-    remote = RemoteSTARBackend(client)
+    addr = f"http://127.0.0.1:{_PORT_FOIL}"
+    remote = RemoteSTARBackend(STARServiceClient(address=addr), STARServiceClientSync(address=addr))
     yield StarServiceFoilFixture(backend=backend, remote=remote, deck=deck)
   finally:
     server_thread.stop()

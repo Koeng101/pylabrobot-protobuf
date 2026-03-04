@@ -32,10 +32,7 @@ message TipInfo {
 // Requests
 // ============================================================
 
-message SetupRequest {
-  string star_url = 1;
-  string resource_url = 2;
-}
+message SetupRequest {}
 
 // --- Single-channel tips ---
 

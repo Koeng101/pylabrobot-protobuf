@@ -61,14 +61,8 @@ class TipInfo(_message.Message):
 # ============================================================
 
 class SetupRequest(_message.Message):
-  __slots__ = ("star_url", "resource_url")
-  STAR_URL_FIELD_NUMBER: _ClassVar[int]
-  RESOURCE_URL_FIELD_NUMBER: _ClassVar[int]
-  star_url: str
-  resource_url: str
-  def __init__(
-    self, star_url: _Optional[str] = ..., resource_url: _Optional[str] = ...
-  ) -> None: ...
+  __slots__ = ()
+  def __init__(self) -> None: ...
 
 class PickUpTipsRequest(_message.Message):
   __slots__ = ("tip_spot_names", "use_channels", "offsets")

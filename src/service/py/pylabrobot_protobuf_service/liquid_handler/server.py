@@ -81,7 +81,9 @@ def _resolve_destination(
 class LiquidHandlerServiceImpl(LiquidHandlerService):
   """ConnectRPC service that wraps a LiquidHandler connected to remote STAR and Resource servers."""
 
-  def __init__(self) -> None:
+  def __init__(self, star_url: str, resource_url: str) -> None:
+    self._star_url = star_url
+    self._resource_url = resource_url
     self._lh: Optional[LiquidHandler] = None
 
   def _require_lh(self) -> LiquidHandler:
@@ -92,8 +94,8 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
   # --- Lifecycle ---
 
   async def setup(self, request: pb2.SetupRequest, ctx: RequestContext) -> types_pb2.Empty:
-    backend = RemoteSTARBackend.connect(request.star_url)
-    deck = RemoteResource.connect(request.resource_url)
+    backend = RemoteSTARBackend.connect(self._star_url)
+    deck = RemoteResource.connect(self._resource_url)
     self._lh = LiquidHandler(backend=backend, deck=deck)
     await self._lh.setup()
     return types_pb2.Empty()
@@ -460,17 +462,27 @@ class LiquidHandlerServiceImpl(LiquidHandlerService):
 # ============================================================
 
 
-def create_liquid_handler_app() -> LiquidHandlerServiceASGIApplication:
+def create_liquid_handler_app(
+  star_url: str,
+  resource_url: str,
+) -> LiquidHandlerServiceASGIApplication:
   """Create an ASGI application for the LiquidHandler coordinator service.
 
-  The service lazily connects to STAR and Resource servers when Setup is called.
+  Args:
+    star_url: URL of the STAR backend ConnectRPC service.
+    resource_url: URL of the Resource/Deck ConnectRPC service.
 
   Usage::
 
       import uvicorn
       from pylabrobot_protobuf_service.liquid_handler import create_liquid_handler_app
 
-      app = create_liquid_handler_app()
+      app = create_liquid_handler_app(
+        star_url="http://localhost:8080",
+        resource_url="http://localhost:8081",
+      )
       uvicorn.run(app, host="0.0.0.0", port=8082)
   """
-  return LiquidHandlerServiceASGIApplication(LiquidHandlerServiceImpl())
+  return LiquidHandlerServiceASGIApplication(
+    LiquidHandlerServiceImpl(star_url=star_url, resource_url=resource_url)
+  )
