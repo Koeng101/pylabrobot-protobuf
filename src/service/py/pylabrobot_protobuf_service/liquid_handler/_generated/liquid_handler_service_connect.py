@@ -48,10 +48,6 @@ _NS = IdempotencyLevel.NO_SIDE_EFFECTS
 # Method descriptors
 # ============================================================
 
-# Lifecycle
-_SETUP = _method("Setup", pb2.SetupRequest, types_pb2.Empty)
-_STOP = _method("Stop", types_pb2.Empty, types_pb2.Empty)
-
 # Single-channel tips
 _PICK_UP_TIPS = _method("PickUpTips", pb2.PickUpTipsRequest, types_pb2.Empty)
 _DROP_TIPS = _method("DropTips", pb2.DropTipsRequest, types_pb2.Empty)
@@ -97,14 +93,6 @@ _GET_PICKED_UP_RESOURCE = _method(
 
 
 class LiquidHandlerService(Protocol):
-  # --- Lifecycle ---
-
-  async def setup(self, request: pb2.SetupRequest, ctx: RequestContext) -> types_pb2.Empty:
-    raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
-
-  async def stop(self, request: types_pb2.Empty, ctx: RequestContext) -> types_pb2.Empty:
-    raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
-
   # --- Single-channel tips ---
 
   async def pick_up_tips(self, request: pb2.PickUpTipsRequest, ctx: RequestContext) -> types_pb2.Empty:
@@ -214,9 +202,6 @@ class LiquidHandlerServiceASGIApplication(ConnectASGIApplication[LiquidHandlerSe
     super().__init__(
       service=service,
       endpoints=lambda svc: {
-        # Lifecycle
-        f"/{_SVC}/Setup": Endpoint.unary(method=_SETUP, function=svc.setup),
-        f"/{_SVC}/Stop": Endpoint.unary(method=_STOP, function=svc.stop),
         # Single-channel tips
         f"/{_SVC}/PickUpTips": Endpoint.unary(method=_PICK_UP_TIPS, function=svc.pick_up_tips),
         f"/{_SVC}/DropTips": Endpoint.unary(method=_DROP_TIPS, function=svc.drop_tips),
@@ -278,30 +263,6 @@ class LiquidHandlerServiceASGIApplication(ConnectASGIApplication[LiquidHandlerSe
 
 
 class LiquidHandlerServiceClient(ConnectClient):
-  # --- Lifecycle ---
-
-  async def setup(
-    self,
-    request: pb2.SetupRequest,
-    *,
-    headers: Headers | Mapping[str, str] | None = None,
-    timeout_ms: int | None = None,
-  ) -> types_pb2.Empty:
-    return await self.execute_unary(
-      request=request, method=_SETUP, headers=headers, timeout_ms=timeout_ms
-    )
-
-  async def stop(
-    self,
-    request: types_pb2.Empty,
-    *,
-    headers: Headers | Mapping[str, str] | None = None,
-    timeout_ms: int | None = None,
-  ) -> types_pb2.Empty:
-    return await self.execute_unary(
-      request=request, method=_STOP, headers=headers, timeout_ms=timeout_ms
-    )
-
   # --- Single-channel tips ---
 
   async def pick_up_tips(
@@ -553,30 +514,6 @@ class LiquidHandlerServiceClient(ConnectClient):
 
 
 class LiquidHandlerServiceClientSync(ConnectClientSync):
-  # --- Lifecycle ---
-
-  def setup(
-    self,
-    request: pb2.SetupRequest,
-    *,
-    headers: Headers | Mapping[str, str] | None = None,
-    timeout_ms: int | None = None,
-  ) -> types_pb2.Empty:
-    return self.execute_unary(
-      request=request, method=_SETUP, headers=headers, timeout_ms=timeout_ms
-    )
-
-  def stop(
-    self,
-    request: types_pb2.Empty,
-    *,
-    headers: Headers | Mapping[str, str] | None = None,
-    timeout_ms: int | None = None,
-  ) -> types_pb2.Empty:
-    return self.execute_unary(
-      request=request, method=_STOP, headers=headers, timeout_ms=timeout_ms
-    )
-
   # --- Single-channel tips ---
 
   def pick_up_tips(

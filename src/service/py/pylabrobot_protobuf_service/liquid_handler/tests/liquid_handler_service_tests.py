@@ -128,6 +128,9 @@ class TestLiquidHandlerIntegration(unittest.TestCase):
 
     cls.star_fixture = _ServerFixture(create_star_app(backend), _STAR_PORT)
     cls.resource_fixture = _ServerFixture(create_resource_app(deck), _RESOURCE_PORT)
+    cls.star_fixture.start()
+    cls.resource_fixture.start()
+
     cls.lh_fixture = _ServerFixture(
       create_liquid_handler_app(
         star_url=f"http://127.0.0.1:{_STAR_PORT}",
@@ -135,20 +138,12 @@ class TestLiquidHandlerIntegration(unittest.TestCase):
       ),
       _LH_PORT,
     )
-
-    cls.star_fixture.start()
-    cls.resource_fixture.start()
     cls.lh_fixture.start()
 
     cls.client = RemoteLiquidHandler.connect(cls.lh_fixture.url)
-    asyncio.run(cls.client.setup())
 
   @classmethod
   def tearDownClass(cls):
-    try:
-      asyncio.run(cls.client.stop())
-    except Exception:
-      pass
     cls.lh_fixture.stop()
     cls.resource_fixture.stop()
     cls.star_fixture.stop()

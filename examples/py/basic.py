@@ -14,7 +14,6 @@
 ## protobuf (remote, async)
 #
 #   lh = RemoteLiquidHandler.connect(lh_url)
-#   await lh.setup()
 #
 #   await lh.pick_up_tips(["tip_rack_01_tipspot_A1"])
 #   await lh.aspirate(["plate_01_well_A1"], vols=[100])
@@ -85,24 +84,28 @@ _STAR_PORT = 18_300
 _RESOURCE_PORT = 18_301
 _LH_PORT = 18_302
 
-# Start three servers in background threads
+# Start STAR and Resource servers first (LH connects to them on creation)
 servers = []
 for app, port in [
   (create_star_app(backend), _STAR_PORT),
   (create_resource_app(deck), _RESOURCE_PORT),
-  (
-    create_liquid_handler_app(
-      star_url=f"http://127.0.0.1:{_STAR_PORT}",
-      resource_url=f"http://127.0.0.1:{_RESOURCE_PORT}",
-    ),
-    _LH_PORT,
-  ),
 ]:
   srv = uvicorn.Server(uvicorn.Config(app, host="127.0.0.1", port=port, log_level="error"))
   threading.Thread(target=srv.run, daemon=True).start()
   servers.append(srv)
 
-time.sleep(1)  # wait for servers to be ready
+time.sleep(1)  # wait for upstream servers to be ready
+
+# Now start LH server (connects to STAR + Resource during init)
+lh_app = create_liquid_handler_app(
+  star_url=f"http://127.0.0.1:{_STAR_PORT}",
+  resource_url=f"http://127.0.0.1:{_RESOURCE_PORT}",
+)
+srv = uvicorn.Server(uvicorn.Config(lh_app, host="127.0.0.1", port=_LH_PORT, log_level="error"))
+threading.Thread(target=srv.run, daemon=True).start()
+servers.append(srv)
+
+time.sleep(0.5)
 print("Servers ready.\n")
 
 # ---------------------------------------------------------------------------
@@ -112,14 +115,12 @@ print("Servers ready.\n")
 
 async def main():
   lh = RemoteLiquidHandler.connect(f"http://127.0.0.1:{_LH_PORT}")
-  await lh.setup()
 
   await lh.pick_up_tips(["tip_rack_01_tipspot_A1"])
   await lh.aspirate(["plate_01_well_A1"], vols=[100])
   await lh.dispense(["plate_01_well_A2"], vols=[100])
   await lh.return_tips()
 
-  await lh.stop()
   print("Done.")
 
 

@@ -25,12 +25,10 @@ class RemoteLiquidHandler:
   Usage::
 
       lh = RemoteLiquidHandler.connect("http://localhost:8082")
-      await lh.setup()
       await lh.pick_up_tips(["tip_rack_0_A1", "tip_rack_0_B1"])
       await lh.aspirate(["plate_0_A1", "plate_0_B1"], vols=[50.0, 50.0])
       await lh.dispense(["plate_0_A2", "plate_0_B2"], vols=[50.0, 50.0])
       await lh.drop_tips(["tip_rack_0_A1", "tip_rack_0_B1"])
-      await lh.stop()
   """
 
   def __init__(self, client: LiquidHandlerServiceClient) -> None:
@@ -44,16 +42,6 @@ class RemoteLiquidHandler:
         base_url: The HTTP URL of the LiquidHandler server.
     """
     return cls(LiquidHandlerServiceClient(address=base_url))
-
-  # --- Lifecycle ---
-
-  async def setup(self) -> None:
-    """Connect to STAR and Resource servers and set up the LiquidHandler."""
-    await self._client.setup(pb2.SetupRequest())
-
-  async def stop(self) -> None:
-    """Tear down the LiquidHandler and disconnect from backend servers."""
-    await self._client.stop(types_pb2.Empty())
 
   # --- Single-channel tips ---
 

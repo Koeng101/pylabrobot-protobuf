@@ -32,8 +32,6 @@ message TipInfo {
 // Requests
 // ============================================================
 
-message SetupRequest {}
-
 // --- Single-channel tips ---
 
 message PickUpTipsRequest {
@@ -211,13 +209,6 @@ message GetPickedUpResourceResponse {
 // ============================================================
 
 service LiquidHandlerService {
-  // --- Lifecycle ---
-
-  // Connect to STAR and Resource servers, create and set up LiquidHandler.
-  rpc Setup(SetupRequest) returns (pylabrobot.common.v1.Empty);
-  // Tear down the LiquidHandler and disconnect from backend servers.
-  rpc Stop(pylabrobot.common.v1.Empty) returns (pylabrobot.common.v1.Empty);
-
   // --- Single-channel tips ---
 
   // Pick up tips from the given tip spots.
