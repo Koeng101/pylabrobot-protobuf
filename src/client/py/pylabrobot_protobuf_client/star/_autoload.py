@@ -20,53 +20,53 @@ _BARCODE_SYMBOLOGY_TO_PROTO: dict[Barcode1DSymbology, int] = {
 }
 
 if TYPE_CHECKING:
-  from ._generated.star_service_connect import STARServiceClientSync
+  from ._generated.star_service_connect import STARServiceClient
 
 
 class AutoloadClientMixin:
-  _client: STARServiceClientSync
+  _client: STARServiceClient
   """Client stubs for autoload operations.
 
-  ``self._client`` is a :class:`STARServiceClientSync` instance.
+  ``self._client`` is a :class:`STARServiceClient` instance.
   """
 
   # -- initialization --
 
   async def initialize_autoload(self) -> None:
-    self._client.initialize_autoload(pb2.InitializeAutoloadRequest())
+    await self._client.initialize_autoload(pb2.InitializeAutoloadRequest())
 
   # -- movement --
 
   async def move_autoload_to_safe_z_position(self) -> None:
-    self._client.move_autoload_to_safe_z_position(pb2.MoveAutoloadToSafeZPositionRequest())
+    await self._client.move_autoload_to_safe_z_position(pb2.MoveAutoloadToSafeZPositionRequest())
 
   async def move_autoload_to_slot(self, slot_number: int) -> None:
-    self._client.move_autoload_to_slot(pb2.MoveAutoloadToSlotRequest(slot_number=slot_number))
+    await self._client.move_autoload_to_slot(pb2.MoveAutoloadToSlotRequest(slot_number=slot_number))
 
   async def move_autoload_to_track(self, track: int) -> None:
-    self._client.move_autoload_to_track(pb2.MoveAutoloadToTrackRequest(track=track))
+    await self._client.move_autoload_to_track(pb2.MoveAutoloadToTrackRequest(track=track))
 
   async def park_autoload(self) -> None:
-    self._client.park_autoload(pb2.ParkAutoloadRequest())
+    await self._client.park_autoload(pb2.ParkAutoloadRequest())
 
   # -- queries --
 
   async def request_autoload_track(self) -> int:
-    resp = self._client.request_autoload_track(pb2.RequestAutoloadTrackRequest())
+    resp = await self._client.request_autoload_track(pb2.RequestAutoloadTrackRequest())
     return resp.track
 
   async def request_autoload_type(self) -> str:
-    resp = self._client.request_autoload_type(pb2.RequestAutoloadTypeRequest())
+    resp = await self._client.request_autoload_type(pb2.RequestAutoloadTypeRequest())
     return resp.autoload_type
 
   async def request_presence_of_carriers_on_deck(self) -> list[int]:
-    resp = self._client.request_presence_of_carriers_on_deck(
+    resp = await self._client.request_presence_of_carriers_on_deck(
       pb2.RequestPresenceOfCarriersOnDeckRequest()
     )
     return list(resp.carriers)
 
   async def request_presence_of_carriers_on_loading_tray(self) -> list[int]:
-    resp = self._client.request_presence_of_carriers_on_loading_tray(
+    resp = await self._client.request_presence_of_carriers_on_loading_tray(
       pb2.RequestPresenceOfCarriersOnLoadingTrayRequest()
     )
     return list(resp.carriers)
@@ -75,7 +75,7 @@ class AutoloadClientMixin:
     self,
     track: int,
   ) -> bool:
-    resp = self._client.request_presence_of_single_carrier_on_loading_tray(
+    resp = await self._client.request_presence_of_single_carrier_on_loading_tray(
       pb2.RequestPresenceOfSingleCarrierOnLoadingTrayRequest(track=track)
     )
     return resp.present
@@ -83,15 +83,15 @@ class AutoloadClientMixin:
   # -- carrier operations --
 
   async def take_carrier_out_to_autoload_belt(self, carrier: Carrier) -> None:
-    self._client.take_carrier_out_to_autoload_belt(
+    await self._client.take_carrier_out_to_autoload_belt(
       pb2.TakeCarrierOutToAutoloadBeltRequest(carrier_name=carrier.name)
     )
 
   async def load_carrier(self, carrier: Carrier) -> None:
-    self._client.load_carrier(pb2.LoadCarrierRequest(carrier_name=carrier.name))
+    await self._client.load_carrier(pb2.LoadCarrierRequest(carrier_name=carrier.name))
 
   async def unload_carrier(self, carrier: Carrier) -> None:
-    self._client.unload_carrier(pb2.UnloadCarrierRequest(carrier_name=carrier.name))
+    await self._client.unload_carrier(pb2.UnloadCarrierRequest(carrier_name=carrier.name))
 
   # -- barcode --
 
@@ -100,7 +100,7 @@ class AutoloadClientMixin:
     barcode_symbology: Optional[Barcode1DSymbology],
   ) -> None:
     proto_sym = _BARCODE_SYMBOLOGY_TO_PROTO.get(barcode_symbology, pb2.BARCODE_UNKNOWN)  # type: ignore[arg-type]
-    self._client.set_barcode_type(pb2.SetBarcodeTypeRequest(barcode_symbology=proto_sym))
+    await self._client.set_barcode_type(pb2.SetBarcodeTypeRequest(barcode_symbology=proto_sym))
 
   async def load_carrier_from_tray_and_scan_carrier_barcode(
     self,
@@ -123,7 +123,7 @@ class AutoloadClientMixin:
         barcode_symbology, pb2.BARCODE_UNKNOWN
       )
 
-    resp = self._client.load_carrier_from_tray_and_scan_carrier_barcode(
+    resp = await self._client.load_carrier_from_tray_and_scan_carrier_barcode(
       pb2.LoadCarrierFromTrayAndScanCarrierBarcodeRequest(**kwargs)
     )
 
@@ -134,7 +134,7 @@ class AutoloadClientMixin:
   # -- monitoring / indicators --
 
   async def set_carrier_monitoring(self, should_monitor: bool = False) -> None:
-    self._client.set_carrier_monitoring(
+    await self._client.set_carrier_monitoring(
       pb2.SetCarrierMonitoringRequest(should_monitor=should_monitor)
     )
 
@@ -143,7 +143,7 @@ class AutoloadClientMixin:
     bit_pattern: List[bool],
     blink_pattern: List[bool],
   ) -> None:
-    self._client.set_loading_indicators(
+    await self._client.set_loading_indicators(
       pb2.SetLoadingIndicatorsRequest(
         bit_pattern=bit_pattern,
         blink_pattern=blink_pattern,
@@ -153,13 +153,13 @@ class AutoloadClientMixin:
   # -- initialization status queries --
 
   async def request_instrument_initialization_status(self) -> bool:
-    resp = self._client.request_instrument_initialization_status(
+    resp = await self._client.request_instrument_initialization_status(
       pb2.RequestInstrumentInitializationStatusRequest()
     )
     return resp.initialized
 
   async def request_autoload_initialization_status(self) -> bool:
-    resp = self._client.request_autoload_initialization_status(
+    resp = await self._client.request_autoload_initialization_status(
       pb2.RequestAutoloadInitializationStatusRequest()
     )
     return resp.initialized

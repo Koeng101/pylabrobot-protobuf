@@ -30,6 +30,7 @@ from pylabrobot.resources.tip_rack import TipRack, TipSpot
 from pylabrobot.resources.well import Well
 
 from ._generated import star_service_pb2 as pb2
+from ._generated import types_pb2
 
 if TYPE_CHECKING:
   from pylabrobot.resources import Deck
@@ -40,19 +41,19 @@ if TYPE_CHECKING:
 # =============================================================================
 
 
-def coordinate_to_proto(c: Coordinate) -> pb2.Coordinate:
-  return pb2.Coordinate(x=c.x, y=c.y, z=c.z)
+def coordinate_to_proto(c: Coordinate) -> types_pb2.Coordinate:
+  return types_pb2.Coordinate(x=c.x, y=c.y, z=c.z)
 
 
-def coordinate_from_proto(msg: pb2.Coordinate) -> Coordinate:
+def coordinate_from_proto(msg: types_pb2.Coordinate) -> Coordinate:
   return Coordinate(x=msg.x, y=msg.y, z=msg.z)
 
 
-def rotation_to_proto(r: Rotation) -> pb2.Rotation:
-  return pb2.Rotation(x=r.x, y=r.y, z=r.z)
+def rotation_to_proto(r: Rotation) -> types_pb2.Rotation:
+  return types_pb2.Rotation(x=r.x, y=r.y, z=r.z)
 
 
-def rotation_from_proto(msg: pb2.Rotation) -> Rotation:
+def rotation_from_proto(msg: types_pb2.Rotation) -> Rotation:
   return Rotation(x=msg.x, y=msg.y, z=msg.z)
 
 

@@ -50,11 +50,11 @@ _PICKUP_METHOD_TO_PROTO = {
 }
 
 if TYPE_CHECKING:
-  from ._generated.star_service_connect import STARServiceClientSync
+  from ._generated.star_service_connect import STARServiceClient
 
 
 class PipettingClientMixin:
-  _client: STARServiceClientSync
+  _client: STARServiceClient
   """Client stubs for pipetting RPCs: core LH interface, low-level pip, and TADM/LLD.
 
   ``self._client`` is a :class:`STARServiceClientSync` instance.
@@ -87,7 +87,7 @@ class PipettingClientMixin:
       )
     if pickup_method is not None:
       kwargs["pickup_method"] = pickup_method.value
-    self._client.pick_up_tips(pb2.PickUpTipsRequest(**kwargs))
+    await self._client.pick_up_tips(pb2.PickUpTipsRequest(**kwargs))
 
   async def drop_tips(
     self,
@@ -115,7 +115,7 @@ class PipettingClientMixin:
       )
     if z_position_at_end_of_a_command is not None:
       kwargs["z_position_at_end_of_a_command"] = z_position_at_end_of_a_command
-    self._client.drop_tips(pb2.DropTipsRequest(**kwargs))
+    await self._client.drop_tips(pb2.DropTipsRequest(**kwargs))
 
   async def aspirate(
     self,
@@ -238,7 +238,7 @@ class PipettingClientMixin:
       kwargs["liquid_surface_no_lld"] = liquid_surface_no_lld
     if disable_volume_correction is not None:
       kwargs["disable_volume_correction"] = disable_volume_correction
-    self._client.aspirate(pb2.AspirateRequest(**kwargs))
+    await self._client.aspirate(pb2.AspirateRequest(**kwargs))
 
   async def dispense(
     self,
@@ -335,7 +335,7 @@ class PipettingClientMixin:
       kwargs["empty"] = empty
     if disable_volume_correction is not None:
       kwargs["disable_volume_correction"] = disable_volume_correction
-    self._client.dispense(pb2.DispenseRequest(**kwargs))
+    await self._client.dispense(pb2.DispenseRequest(**kwargs))
 
   # =========================================================================
   # Core LH interface: 96-head high-level
@@ -360,7 +360,7 @@ class PipettingClientMixin:
       kwargs["minimum_traverse_height_at_beginning_of_a_command"] = (
         minimum_traverse_height_at_beginning_of_a_command
       )
-    self._client.pick_up_tips96(pb2.PickUpTips96Request(**kwargs))
+    await self._client.pick_up_tips96(pb2.PickUpTips96Request(**kwargs))
 
   async def drop_tips96(
     self,
@@ -379,7 +379,7 @@ class PipettingClientMixin:
       kwargs["minimum_traverse_height_at_beginning_of_a_command"] = (
         minimum_traverse_height_at_beginning_of_a_command
       )
-    self._client.drop_tips96(pb2.DropTips96Request(**kwargs))
+    await self._client.drop_tips96(pb2.DropTips96Request(**kwargs))
 
   async def aspirate96(
     self,
@@ -441,7 +441,7 @@ class PipettingClientMixin:
       kwargs["min_z_endpos"] = min_z_endpos
     if minimum_height is not None:
       kwargs["minimum_height"] = minimum_height
-    self._client.aspirate96(pb2.Aspirate96Request(**kwargs))
+    await self._client.aspirate96(pb2.Aspirate96Request(**kwargs))
 
   async def dispense96(
     self,
@@ -505,7 +505,7 @@ class PipettingClientMixin:
       kwargs["min_z_endpos"] = min_z_endpos
     if minimum_height is not None:
       kwargs["minimum_height"] = minimum_height
-    self._client.dispense96(pb2.Dispense96Request(**kwargs))
+    await self._client.dispense96(pb2.Dispense96Request(**kwargs))
 
   # =========================================================================
   # Low-level pip: InitializePip, InitializePipettingChannels, PickUpTipFw,
@@ -514,7 +514,7 @@ class PipettingClientMixin:
   # =========================================================================
 
   async def initialize_pip(self) -> None:
-    self._client.initialize_pip(pb2.InitializePipRequest())
+    await self._client.initialize_pip(pb2.InitializePipRequest())
 
   async def initialize_pipetting_channels(
     self,
@@ -527,7 +527,7 @@ class PipettingClientMixin:
     tip_type: int = 16,
     discarding_method: int = 1,
   ) -> None:
-    self._client.initialize_pipetting_channels(
+    await self._client.initialize_pipetting_channels(
       pb2.InitializePipettingChannelsRequest(
         x_positions=x_positions,
         y_positions=y_positions,
@@ -551,7 +551,7 @@ class PipettingClientMixin:
     minimum_traverse_height_at_beginning_of_a_command: int = 3600,
     pickup_method: TipPickupMethod = TipPickupMethod.OUT_OF_RACK,
   ) -> None:
-    self._client.pick_up_tip_fw(
+    await self._client.pick_up_tip_fw(
       pb2.PickUpTipFwRequest(
         x_positions=x_positions,
         y_positions=y_positions,
@@ -575,7 +575,7 @@ class PipettingClientMixin:
     z_position_at_end_of_a_command: int = 3600,
     discarding_method: int = 1,
   ) -> None:
-    self._client.discard_tip_fw(
+    await self._client.discard_tip_fw(
       pb2.DiscardTipFwRequest(
         x_positions=x_positions,
         y_positions=y_positions,
@@ -633,7 +633,7 @@ class PipettingClientMixin:
     z_drive_speed_during_2nd_section_search: List[int] = [215],
     cup_upper_edge: List[int] = [3600],
   ) -> None:
-    self._client.aspirate_pip(
+    await self._client.aspirate_pip(
       pb2.AspiratePipRequest(
         aspiration_type=aspiration_type,
         tip_pattern=tip_pattern,
@@ -719,7 +719,7 @@ class PipettingClientMixin:
     tadm_algorithm: bool = False,
     recording_mode: int = 0,
   ) -> None:
-    self._client.dispense_pip(
+    await self._client.dispense_pip(
       pb2.DispensePipRequest(
         tip_pattern=tip_pattern,
         dispensing_mode=dispensing_mode,
@@ -761,7 +761,7 @@ class PipettingClientMixin:
     )
 
   async def spread_pip_channels(self) -> None:
-    self._client.spread_pip_channels(pb2.SpreadPipChannelsRequest())
+    await self._client.spread_pip_channels(pb2.SpreadPipChannelsRequest())
 
   async def move_all_pipetting_channels_to_defined_position(
     self,
@@ -771,7 +771,7 @@ class PipettingClientMixin:
     minimum_traverse_height_at_beginning_of_command: int = 3600,
     z_endpos: int = 0,
   ) -> None:
-    self._client.move_all_pipetting_channels_to_defined_position(
+    await self._client.move_all_pipetting_channels_to_defined_position(
       pb2.MoveAllPipettingChannelsToDefinedPositionRequest(
         tip_pattern=tip_pattern,
         x_positions=x_positions,
@@ -790,7 +790,7 @@ class PipettingClientMixin:
     tip_size: TipSize,
     pickup_method: TipPickupMethod,
   ) -> None:
-    self._client.define_tip_needle(
+    await self._client.define_tip_needle(
       pb2.DefineTipNeedleRequest(
         tip_type_table_index=tip_type_table_index,
         has_filter=has_filter,
@@ -826,7 +826,7 @@ class PipettingClientMixin:
       kwargs["use_channels"] = use_channels
     if resource_offsets is not None:
       kwargs["resource_offsets"] = [coordinate_to_proto(o) for o in resource_offsets]
-    resp = self._client.probe_liquid_heights(pb2.ProbeLiquidHeightsRequest(**kwargs))
+    resp = await self._client.probe_liquid_heights(pb2.ProbeLiquidHeightsRequest(**kwargs))
     return list(resp.heights)
 
   async def probe_liquid_volumes(
@@ -850,36 +850,36 @@ class PipettingClientMixin:
       kwargs["use_channels"] = use_channels
     if resource_offsets is not None:
       kwargs["resource_offsets"] = [coordinate_to_proto(o) for o in resource_offsets]
-    resp = self._client.probe_liquid_volumes(pb2.ProbeLiquidVolumesRequest(**kwargs))
+    resp = await self._client.probe_liquid_volumes(pb2.ProbeLiquidVolumesRequest(**kwargs))
     return list(resp.volumes)
 
   async def request_tip_presence(self) -> List[int]:
-    resp = self._client.request_tip_presence(pb2.RequestTipPresenceRequest())
+    resp = await self._client.request_tip_presence(pb2.RequestTipPresenceRequest())
     return list(resp.tip_presences)
 
   async def channels_sense_tip_presence(self) -> List[int]:
-    resp = self._client.channels_sense_tip_presence(pb2.ChannelsSenseTipPresenceRequest())
+    resp = await self._client.channels_sense_tip_presence(pb2.ChannelsSenseTipPresenceRequest())
     return list(resp.tip_presences)
 
   async def request_pip_height_last_lld(self) -> List[float]:
-    resp = self._client.request_pip_height_last_lld(pb2.RequestPipHeightLastLldRequest())
+    resp = await self._client.request_pip_height_last_lld(pb2.RequestPipHeightLastLldRequest())
     return list(resp.heights)
 
   async def request_tadm_status(self) -> None:
-    self._client.request_tadm_status(pb2.RequestTadmStatusRequest())
+    await self._client.request_tadm_status(pb2.RequestTadmStatusRequest())
 
   async def request_volume_in_tip(self, channel: int) -> float:
-    resp = self._client.request_volume_in_tip(pb2.RequestVolumeInTipRequest(channel=channel))
+    resp = await self._client.request_volume_in_tip(pb2.RequestVolumeInTipRequest(channel=channel))
     return resp.volume
 
   async def request_tip_len_on_channel(self, channel_idx: int) -> float:
-    resp = self._client.request_tip_len_on_channel(
+    resp = await self._client.request_tip_len_on_channel(
       pb2.RequestTipLenOnChannelRequest(channel_idx=channel_idx)
     )
     return resp.length
 
   async def request_probe_z_position(self, channel_idx: int) -> float:
-    resp = self._client.request_probe_z_position(
+    resp = await self._client.request_probe_z_position(
       pb2.RequestProbeZPositionRequest(channel_idx=channel_idx)
     )
     return resp.z_position
@@ -901,7 +901,7 @@ class PipettingClientMixin:
       kwargs["channel_speed"] = channel_speed
     if gamma_lld_sensitivity is not None:
       kwargs["gamma_lld_sensitivity"] = gamma_lld_sensitivity
-    self._client.clld_probe_z_height_using_channel(
+    await self._client.clld_probe_z_height_using_channel(
       pb2.ClldProbeZHeightUsingChannelRequest(**kwargs)
     )
 
@@ -922,7 +922,7 @@ class PipettingClientMixin:
       kwargs["channel_speed"] = channel_speed
     if dp_lld_sensitivity is not None:
       kwargs["dp_lld_sensitivity"] = dp_lld_sensitivity
-    self._client.plld_probe_z_height_using_channel(
+    await self._client.plld_probe_z_height_using_channel(
       pb2.PlldProbeZHeightUsingChannelRequest(**kwargs)
     )
 
@@ -940,7 +940,7 @@ class PipettingClientMixin:
       kwargs["highest_reading_position"] = highest_reading_position
     if channel_speed is not None:
       kwargs["channel_speed"] = channel_speed
-    self._client.ztouch_probe_z_height_using_channel(
+    await self._client.ztouch_probe_z_height_using_channel(
       pb2.ZtouchProbeZHeightUsingChannelRequest(**kwargs)
     )
 
@@ -967,7 +967,7 @@ class PipettingClientMixin:
       kwargs["z_speed"] = z_speed
     if minimum_traverse_height is not None:
       kwargs["minimum_traverse_height"] = minimum_traverse_height
-    self._client.pierce_foil(pb2.PierceFoilRequest(**kwargs))
+    await self._client.pierce_foil(pb2.PierceFoilRequest(**kwargs))
 
   async def pierce_foil_high_level(
     self,
@@ -979,7 +979,7 @@ class PipettingClientMixin:
     one_by_one: bool = False,
     distance_from_bottom: float = 20.0,
   ) -> None:
-    self._client.pierce_foil_high_level(
+    await self._client.pierce_foil_high_level(
       pb2.PierceFoilHighLevelRequest(
         well_names=well_names,
         piercing_channels=piercing_channels,
@@ -1008,7 +1008,7 @@ class PipettingClientMixin:
       kwargs["z_position"] = z_position
     if minimum_traverse_height is not None:
       kwargs["minimum_traverse_height"] = minimum_traverse_height
-    self._client.step_off_foil(pb2.StepOffFoilRequest(**kwargs))
+    await self._client.step_off_foil(pb2.StepOffFoilRequest(**kwargs))
 
   async def empty_tip(
     self,
@@ -1018,7 +1018,7 @@ class PipettingClientMixin:
     flow_rate: float,
     current_limit: int,
   ) -> None:
-    self._client.empty_tip(
+    await self._client.empty_tip(
       pb2.EmptyTipRequest(
         channel_idx=channel_idx,
         holding_volume=holding_volume,
@@ -1036,7 +1036,7 @@ class PipettingClientMixin:
     flow_rate: float,
     current_limit: int,
   ) -> None:
-    self._client.empty_tips(
+    await self._client.empty_tips(
       pb2.EmptyTipsRequest(
         channels=channels,
         holding_volume=holding_volume,

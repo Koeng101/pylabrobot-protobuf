@@ -18,6 +18,7 @@ from connectrpc.server import (
 )
 
 from . import resource_service_pb2 as pb2
+from . import types_pb2
 
 if TYPE_CHECKING:
   from collections.abc import AsyncGenerator, Iterable, Mapping
@@ -50,15 +51,15 @@ _NS = IdempotencyLevel.NO_SIDE_EFFECTS
 _GET_TREE = _method("GetTree", pb2.GetTreeRequest, pb2.ResourceTree, _NS)
 _GET_RESOURCE = _method("GetResource", pb2.ResourceByNameRequest, pb2.ResourceData, _NS)
 _HAS_RESOURCE = _method("HasResource", pb2.ResourceByNameRequest, pb2.BoolResponse, _NS)
-_GET_TRASH_AREA = _method("GetTrashArea", pb2.Empty, pb2.ResourceData, _NS)
-_GET_TRASH_AREA96 = _method("GetTrashArea96", pb2.Empty, pb2.ResourceData, _NS)
+_GET_TRASH_AREA = _method("GetTrashArea", types_pb2.Empty, pb2.ResourceData, _NS)
+_GET_TRASH_AREA96 = _method("GetTrashArea96", types_pb2.Empty, pb2.ResourceData, _NS)
 
-_GET_LOCATION_WRT = _method("GetLocationWrt", pb2.GetLocationWrtRequest, pb2.Coordinate, _NS)
+_GET_LOCATION_WRT = _method("GetLocationWrt", pb2.GetLocationWrtRequest, types_pb2.Coordinate, _NS)
 _GET_ABSOLUTE_LOCATION = _method(
-  "GetAbsoluteLocation", pb2.GetAbsoluteLocationRequest, pb2.Coordinate, _NS
+  "GetAbsoluteLocation", pb2.GetAbsoluteLocationRequest, types_pb2.Coordinate, _NS
 )
 _GET_ABSOLUTE_ROTATION = _method(
-  "GetAbsoluteRotation", pb2.GetAbsoluteRotationRequest, pb2.Rotation, _NS
+  "GetAbsoluteRotation", pb2.GetAbsoluteRotationRequest, types_pb2.Rotation, _NS
 )
 _GET_ABSOLUTE_SIZE = _method("GetAbsoluteSize", pb2.GetAbsoluteSizeRequest, pb2.Size, _NS)
 _GET_HIGHEST_POINT = _method("GetHighestPoint", pb2.GetHighestPointRequest, pb2.FloatResponse, _NS)
@@ -82,24 +83,24 @@ _GET_TIP = _method("GetTip", pb2.GetTipRequest, pb2.TipData, _NS)
 _GET_VOLUME_TRACKER_STATE = _method(
   "GetVolumeTrackerState", pb2.ResourceByNameRequest, pb2.VolumeTrackerState, _NS
 )
-_REMOVE_LIQUID = _method("RemoveLiquid", pb2.TrackerOpRequest, pb2.Empty)
-_ADD_LIQUID = _method("AddLiquid", pb2.TrackerOpRequest, pb2.Empty)
-_BATCH_REMOVE_LIQUID = _method("BatchRemoveLiquid", pb2.BatchTrackerOpRequest, pb2.Empty)
-_BATCH_ADD_LIQUID = _method("BatchAddLiquid", pb2.BatchTrackerOpRequest, pb2.Empty)
+_REMOVE_LIQUID = _method("RemoveLiquid", pb2.TrackerOpRequest, types_pb2.Empty)
+_ADD_LIQUID = _method("AddLiquid", pb2.TrackerOpRequest, types_pb2.Empty)
+_BATCH_REMOVE_LIQUID = _method("BatchRemoveLiquid", pb2.BatchTrackerOpRequest, types_pb2.Empty)
+_BATCH_ADD_LIQUID = _method("BatchAddLiquid", pb2.BatchTrackerOpRequest, types_pb2.Empty)
 
 _GET_TIP_TRACKER_STATE = _method(
   "GetTipTrackerState", pb2.ResourceByNameRequest, pb2.TipTrackerState, _NS
 )
-_REMOVE_TIP = _method("RemoveTip", pb2.TipTrackerOpRequest, pb2.Empty)
-_ADD_TIP = _method("AddTip", pb2.TipTrackerOpRequest, pb2.Empty)
+_REMOVE_TIP = _method("RemoveTip", pb2.TipTrackerOpRequest, types_pb2.Empty)
+_ADD_TIP = _method("AddTip", pb2.TipTrackerOpRequest, types_pb2.Empty)
 
-_COMMIT_VOLUME_TRACKERS = _method("CommitVolumeTrackers", pb2.CommitRollbackRequest, pb2.Empty)
-_ROLLBACK_VOLUME_TRACKERS = _method("RollbackVolumeTrackers", pb2.CommitRollbackRequest, pb2.Empty)
-_COMMIT_TIP_TRACKERS = _method("CommitTipTrackers", pb2.CommitRollbackRequest, pb2.Empty)
-_ROLLBACK_TIP_TRACKERS = _method("RollbackTipTrackers", pb2.CommitRollbackRequest, pb2.Empty)
+_COMMIT_VOLUME_TRACKERS = _method("CommitVolumeTrackers", pb2.CommitRollbackRequest, types_pb2.Empty)
+_ROLLBACK_VOLUME_TRACKERS = _method("RollbackVolumeTrackers", pb2.CommitRollbackRequest, types_pb2.Empty)
+_COMMIT_TIP_TRACKERS = _method("CommitTipTrackers", pb2.CommitRollbackRequest, types_pb2.Empty)
+_ROLLBACK_TIP_TRACKERS = _method("RollbackTipTrackers", pb2.CommitRollbackRequest, types_pb2.Empty)
 
-_ASSIGN_CHILD = _method("AssignChild", pb2.AssignChildRequest, pb2.Empty)
-_UNASSIGN_CHILD = _method("UnassignChild", pb2.UnassignChildRequest, pb2.Empty)
+_ASSIGN_CHILD = _method("AssignChild", pb2.AssignChildRequest, types_pb2.Empty)
+_UNASSIGN_CHILD = _method("UnassignChild", pb2.UnassignChildRequest, types_pb2.Empty)
 
 
 # ============================================================
@@ -121,25 +122,25 @@ class ResourceService(Protocol):
   ) -> pb2.BoolResponse:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def get_trash_area(self, request: pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
+  async def get_trash_area(self, request: types_pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def get_trash_area96(self, request: pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
+  async def get_trash_area96(self, request: types_pb2.Empty, ctx: RequestContext) -> pb2.ResourceData:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def get_location_wrt(
     self, request: pb2.GetLocationWrtRequest, ctx: RequestContext
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def get_absolute_location(
     self, request: pb2.GetAbsoluteLocationRequest, ctx: RequestContext
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def get_absolute_rotation(
     self, request: pb2.GetAbsoluteRotationRequest, ctx: RequestContext
-  ) -> pb2.Rotation:
+  ) -> types_pb2.Rotation:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def get_absolute_size(
@@ -183,20 +184,20 @@ class ResourceService(Protocol):
   ) -> pb2.VolumeTrackerState:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def remove_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def remove_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def add_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def add_liquid(self, request: pb2.TrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def batch_remove_liquid(
     self, request: pb2.BatchTrackerOpRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def batch_add_liquid(
     self, request: pb2.BatchTrackerOpRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def get_tip_tracker_state(
@@ -204,38 +205,38 @@ class ResourceService(Protocol):
   ) -> pb2.TipTrackerState:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def remove_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def remove_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def add_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> pb2.Empty:
+  async def add_tip(self, request: pb2.TipTrackerOpRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def commit_volume_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def rollback_volume_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def commit_tip_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def rollback_tip_trackers(
     self, request: pb2.CommitRollbackRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
-  async def assign_child(self, request: pb2.AssignChildRequest, ctx: RequestContext) -> pb2.Empty:
+  async def assign_child(self, request: pb2.AssignChildRequest, ctx: RequestContext) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
   async def unassign_child(
     self, request: pb2.UnassignChildRequest, ctx: RequestContext
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     raise ConnectError(Code.UNIMPLEMENTED, "Not implemented")
 
 
@@ -379,7 +380,7 @@ class ResourceServiceClient(ConnectClient):
 
   async def get_trash_area(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
@@ -395,7 +396,7 @@ class ResourceServiceClient(ConnectClient):
 
   async def get_trash_area96(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
@@ -416,7 +417,7 @@ class ResourceServiceClient(ConnectClient):
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
     use_get: bool = False,
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     return await self.execute_unary(
       request=request,
       method=_GET_LOCATION_WRT,
@@ -432,7 +433,7 @@ class ResourceServiceClient(ConnectClient):
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
     use_get: bool = False,
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     return await self.execute_unary(
       request=request,
       method=_GET_ABSOLUTE_LOCATION,
@@ -448,7 +449,7 @@ class ResourceServiceClient(ConnectClient):
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
     use_get: bool = False,
-  ) -> pb2.Rotation:
+  ) -> types_pb2.Rotation:
     return await self.execute_unary(
       request=request,
       method=_GET_ABSOLUTE_ROTATION,
@@ -589,7 +590,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_REMOVE_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -600,7 +601,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_ADD_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -611,7 +612,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_BATCH_REMOVE_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -622,7 +623,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_BATCH_ADD_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -649,7 +650,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_REMOVE_TIP, headers=headers, timeout_ms=timeout_ms
     )
@@ -660,7 +661,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_ADD_TIP, headers=headers, timeout_ms=timeout_ms
     )
@@ -671,7 +672,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_COMMIT_VOLUME_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -682,7 +683,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_ROLLBACK_VOLUME_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -693,7 +694,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_COMMIT_TIP_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -704,7 +705,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_ROLLBACK_TIP_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -715,7 +716,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_ASSIGN_CHILD, headers=headers, timeout_ms=timeout_ms
     )
@@ -726,7 +727,7 @@ class ResourceServiceClient(ConnectClient):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return await self.execute_unary(
       request=request, method=_UNASSIGN_CHILD, headers=headers, timeout_ms=timeout_ms
     )
@@ -776,7 +777,7 @@ class ResourceServiceClientSync(ConnectClientSync):
 
   def get_trash_area(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
@@ -792,7 +793,7 @@ class ResourceServiceClientSync(ConnectClientSync):
 
   def get_trash_area96(
     self,
-    request: pb2.Empty,
+    request: types_pb2.Empty,
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
@@ -813,7 +814,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
     use_get: bool = False,
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     return self.execute_unary(
       request=request,
       method=_GET_LOCATION_WRT,
@@ -829,7 +830,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
     use_get: bool = False,
-  ) -> pb2.Coordinate:
+  ) -> types_pb2.Coordinate:
     return self.execute_unary(
       request=request,
       method=_GET_ABSOLUTE_LOCATION,
@@ -845,7 +846,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
     use_get: bool = False,
-  ) -> pb2.Rotation:
+  ) -> types_pb2.Rotation:
     return self.execute_unary(
       request=request,
       method=_GET_ABSOLUTE_ROTATION,
@@ -986,7 +987,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_REMOVE_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -997,7 +998,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_ADD_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -1008,7 +1009,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_BATCH_REMOVE_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -1019,7 +1020,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_BATCH_ADD_LIQUID, headers=headers, timeout_ms=timeout_ms
     )
@@ -1046,7 +1047,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_REMOVE_TIP, headers=headers, timeout_ms=timeout_ms
     )
@@ -1057,7 +1058,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_ADD_TIP, headers=headers, timeout_ms=timeout_ms
     )
@@ -1068,7 +1069,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_COMMIT_VOLUME_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -1079,7 +1080,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_ROLLBACK_VOLUME_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -1090,7 +1091,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_COMMIT_TIP_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -1101,7 +1102,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_ROLLBACK_TIP_TRACKERS, headers=headers, timeout_ms=timeout_ms
     )
@@ -1112,7 +1113,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_ASSIGN_CHILD, headers=headers, timeout_ms=timeout_ms
     )
@@ -1123,7 +1124,7 @@ class ResourceServiceClientSync(ConnectClientSync):
     *,
     headers: Headers | Mapping[str, str] | None = None,
     timeout_ms: int | None = None,
-  ) -> pb2.Empty:
+  ) -> types_pb2.Empty:
     return self.execute_unary(
       request=request, method=_UNASSIGN_CHILD, headers=headers, timeout_ms=timeout_ms
     )

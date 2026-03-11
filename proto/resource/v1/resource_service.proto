@@ -2,23 +2,11 @@ syntax = "proto3";
 package pylabrobot.resource.v1;
 option go_package = "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/resource/v1;resourcev1";
 
+import "types.proto";
+
 // ============================================================
 // Messages
 // ============================================================
-
-message Empty {}
-
-message Coordinate {
-  double x = 1;
-  double y = 2;
-  double z = 3;
-}
-
-message Rotation {
-  double x = 1;
-  double y = 2;
-  double z = 3;
-}
 
 message Size {
   double x = 1;
@@ -45,8 +33,8 @@ message ResourceData {
   double size_z = 5;
   string category = 6;
   string model = 7;
-  Coordinate location = 8;
-  Rotation rotation = 9;
+  pylabrobot.common.v1.Coordinate location = 8;
+  pylabrobot.common.v1.Rotation rotation = 9;
   string parent_name = 10;
 
   optional double material_z_thickness = 11;
@@ -135,7 +123,7 @@ message BatchGetLocationWrtRequest {
 }
 
 message BatchCoordinateResponse {
-  repeated Coordinate coordinates = 1;
+  repeated pylabrobot.common.v1.Coordinate coordinates = 1;
 }
 
 message ComputeVolumeHeightRequest {
@@ -175,7 +163,7 @@ message CommitRollbackRequest {
 message AssignChildRequest {
   string child_name = 1;
   string parent_name = 2;
-  Coordinate location = 3;
+  pylabrobot.common.v1.Coordinate location = 3;
 }
 
 message UnassignChildRequest {
@@ -200,18 +188,18 @@ service ResourceService {
   // Check whether a resource with the given name exists on the deck.
   rpc HasResource(ResourceByNameRequest) returns (BoolResponse);
   // Return the single-channel trash area resource.
-  rpc GetTrashArea(Empty) returns (ResourceData);
+  rpc GetTrashArea(pylabrobot.common.v1.Empty) returns (ResourceData);
   // Return the 96-channel trash area resource.
-  rpc GetTrashArea96(Empty) returns (ResourceData);
+  rpc GetTrashArea96(pylabrobot.common.v1.Empty) returns (ResourceData);
 
   // --- Spatial ---
 
   // Get the location of a resource relative to another resource, with anchor offsets.
-  rpc GetLocationWrt(GetLocationWrtRequest) returns (Coordinate);
+  rpc GetLocationWrt(GetLocationWrtRequest) returns (pylabrobot.common.v1.Coordinate);
   // Get the absolute (deck-space) location of a resource, with anchor offsets.
-  rpc GetAbsoluteLocation(GetAbsoluteLocationRequest) returns (Coordinate);
+  rpc GetAbsoluteLocation(GetAbsoluteLocationRequest) returns (pylabrobot.common.v1.Coordinate);
   // Get the cumulative rotation of a resource in deck-space.
-  rpc GetAbsoluteRotation(GetAbsoluteRotationRequest) returns (Rotation);
+  rpc GetAbsoluteRotation(GetAbsoluteRotationRequest) returns (pylabrobot.common.v1.Rotation);
   // Get the rotation-aware bounding-box size of a resource.
   rpc GetAbsoluteSize(GetAbsoluteSizeRequest) returns (Size);
   // Get the highest known z-coordinate point of a resource and its children.
@@ -240,38 +228,38 @@ service ResourceService {
   // Get the current volume tracker state (volume, pending, max, disabled) for a container.
   rpc GetVolumeTrackerState(ResourceByNameRequest) returns (VolumeTrackerState);
   // Record a pending liquid removal from a container's volume tracker.
-  rpc RemoveLiquid(TrackerOpRequest) returns (Empty);
+  rpc RemoveLiquid(TrackerOpRequest) returns (pylabrobot.common.v1.Empty);
   // Record a pending liquid addition to a container's volume tracker.
-  rpc AddLiquid(TrackerOpRequest) returns (Empty);
+  rpc AddLiquid(TrackerOpRequest) returns (pylabrobot.common.v1.Empty);
   // Batch version of RemoveLiquid for multiple containers at once.
-  rpc BatchRemoveLiquid(BatchTrackerOpRequest) returns (Empty);
+  rpc BatchRemoveLiquid(BatchTrackerOpRequest) returns (pylabrobot.common.v1.Empty);
   // Batch version of AddLiquid for multiple containers at once.
-  rpc BatchAddLiquid(BatchTrackerOpRequest) returns (Empty);
+  rpc BatchAddLiquid(BatchTrackerOpRequest) returns (pylabrobot.common.v1.Empty);
 
   // --- Tip tracker ---
 
   // Get the current tip tracker state (has_tip, tip data, disabled) for a tip spot.
   rpc GetTipTrackerState(ResourceByNameRequest) returns (TipTrackerState);
   // Remove the tip from a tip spot's tracker (e.g. after a pick-up).
-  rpc RemoveTip(TipTrackerOpRequest) returns (Empty);
+  rpc RemoveTip(TipTrackerOpRequest) returns (pylabrobot.common.v1.Empty);
   // Add a new tip to a tip spot's tracker (e.g. after a return).
-  rpc AddTip(TipTrackerOpRequest) returns (Empty);
+  rpc AddTip(TipTrackerOpRequest) returns (pylabrobot.common.v1.Empty);
 
   // --- Commit / Rollback ---
 
   // Commit pending volume tracker changes for the given containers.
-  rpc CommitVolumeTrackers(CommitRollbackRequest) returns (Empty);
+  rpc CommitVolumeTrackers(CommitRollbackRequest) returns (pylabrobot.common.v1.Empty);
   // Roll back pending volume tracker changes for the given containers.
-  rpc RollbackVolumeTrackers(CommitRollbackRequest) returns (Empty);
+  rpc RollbackVolumeTrackers(CommitRollbackRequest) returns (pylabrobot.common.v1.Empty);
   // Commit pending tip tracker changes for the given tip spots.
-  rpc CommitTipTrackers(CommitRollbackRequest) returns (Empty);
+  rpc CommitTipTrackers(CommitRollbackRequest) returns (pylabrobot.common.v1.Empty);
   // Roll back pending tip tracker changes for the given tip spots.
-  rpc RollbackTipTrackers(CommitRollbackRequest) returns (Empty);
+  rpc RollbackTipTrackers(CommitRollbackRequest) returns (pylabrobot.common.v1.Empty);
 
   // --- Structure mutation ---
 
   // Re-parent a child resource under a new parent at the given location.
-  rpc AssignChild(AssignChildRequest) returns (Empty);
+  rpc AssignChild(AssignChildRequest) returns (pylabrobot.common.v1.Empty);
   // Remove a resource from its current parent.
-  rpc UnassignChild(UnassignChildRequest) returns (Empty);
+  rpc UnassignChild(UnassignChildRequest) returns (pylabrobot.common.v1.Empty);
 }

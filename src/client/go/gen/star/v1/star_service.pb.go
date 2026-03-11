@@ -2,11 +2,12 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: star/v1/star_service.proto
+// source: star_service.proto
 
 package starv1
 
 import (
+	v1 "github.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/common/v1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -60,11 +61,11 @@ func (x LLDMode) String() string {
 }
 
 func (LLDMode) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[0].Descriptor()
+	return file_star_service_proto_enumTypes[0].Descriptor()
 }
 
 func (LLDMode) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[0]
+	return &file_star_service_proto_enumTypes[0]
 }
 
 func (x LLDMode) Number() protoreflect.EnumNumber {
@@ -73,7 +74,7 @@ func (x LLDMode) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use LLDMode.Descriptor instead.
 func (LLDMode) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{0}
+	return file_star_service_proto_rawDescGZIP(), []int{0}
 }
 
 type TipPickupMethod int32
@@ -106,11 +107,11 @@ func (x TipPickupMethod) String() string {
 }
 
 func (TipPickupMethod) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[1].Descriptor()
+	return file_star_service_proto_enumTypes[1].Descriptor()
 }
 
 func (TipPickupMethod) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[1]
+	return &file_star_service_proto_enumTypes[1]
 }
 
 func (x TipPickupMethod) Number() protoreflect.EnumNumber {
@@ -119,7 +120,7 @@ func (x TipPickupMethod) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use TipPickupMethod.Descriptor instead.
 func (TipPickupMethod) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{1}
+	return file_star_service_proto_rawDescGZIP(), []int{1}
 }
 
 type TipDropMethodEnum int32
@@ -152,11 +153,11 @@ func (x TipDropMethodEnum) String() string {
 }
 
 func (TipDropMethodEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[2].Descriptor()
+	return file_star_service_proto_enumTypes[2].Descriptor()
 }
 
 func (TipDropMethodEnum) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[2]
+	return &file_star_service_proto_enumTypes[2]
 }
 
 func (x TipDropMethodEnum) Number() protoreflect.EnumNumber {
@@ -165,7 +166,7 @@ func (x TipDropMethodEnum) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use TipDropMethodEnum.Descriptor instead.
 func (TipDropMethodEnum) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{2}
+	return file_star_service_proto_rawDescGZIP(), []int{2}
 }
 
 type TipSizeEnum int32
@@ -210,11 +211,11 @@ func (x TipSizeEnum) String() string {
 }
 
 func (TipSizeEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[3].Descriptor()
+	return file_star_service_proto_enumTypes[3].Descriptor()
 }
 
 func (TipSizeEnum) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[3]
+	return &file_star_service_proto_enumTypes[3]
 }
 
 func (x TipSizeEnum) Number() protoreflect.EnumNumber {
@@ -223,7 +224,7 @@ func (x TipSizeEnum) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use TipSizeEnum.Descriptor instead.
 func (TipSizeEnum) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{3}
+	return file_star_service_proto_rawDescGZIP(), []int{3}
 }
 
 type GripDirectionEnum int32
@@ -262,11 +263,11 @@ func (x GripDirectionEnum) String() string {
 }
 
 func (GripDirectionEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[4].Descriptor()
+	return file_star_service_proto_enumTypes[4].Descriptor()
 }
 
 func (GripDirectionEnum) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[4]
+	return &file_star_service_proto_enumTypes[4]
 }
 
 func (x GripDirectionEnum) Number() protoreflect.EnumNumber {
@@ -275,7 +276,7 @@ func (x GripDirectionEnum) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use GripDirectionEnum.Descriptor instead.
 func (GripDirectionEnum) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{4}
+	return file_star_service_proto_rawDescGZIP(), []int{4}
 }
 
 type RotationDriveOrientationEnum int32
@@ -311,11 +312,11 @@ func (x RotationDriveOrientationEnum) String() string {
 }
 
 func (RotationDriveOrientationEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[5].Descriptor()
+	return file_star_service_proto_enumTypes[5].Descriptor()
 }
 
 func (RotationDriveOrientationEnum) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[5]
+	return &file_star_service_proto_enumTypes[5]
 }
 
 func (x RotationDriveOrientationEnum) Number() protoreflect.EnumNumber {
@@ -324,7 +325,7 @@ func (x RotationDriveOrientationEnum) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use RotationDriveOrientationEnum.Descriptor instead.
 func (RotationDriveOrientationEnum) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{5}
+	return file_star_service_proto_rawDescGZIP(), []int{5}
 }
 
 type WristDriveOrientationEnum int32
@@ -363,11 +364,11 @@ func (x WristDriveOrientationEnum) String() string {
 }
 
 func (WristDriveOrientationEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[6].Descriptor()
+	return file_star_service_proto_enumTypes[6].Descriptor()
 }
 
 func (WristDriveOrientationEnum) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[6]
+	return &file_star_service_proto_enumTypes[6]
 }
 
 func (x WristDriveOrientationEnum) Number() protoreflect.EnumNumber {
@@ -376,7 +377,7 @@ func (x WristDriveOrientationEnum) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use WristDriveOrientationEnum.Descriptor instead.
 func (WristDriveOrientationEnum) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{6}
+	return file_star_service_proto_rawDescGZIP(), []int{6}
 }
 
 type Barcode1DSymbologyEnum int32
@@ -424,11 +425,11 @@ func (x Barcode1DSymbologyEnum) String() string {
 }
 
 func (Barcode1DSymbologyEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_star_v1_star_service_proto_enumTypes[7].Descriptor()
+	return file_star_service_proto_enumTypes[7].Descriptor()
 }
 
 func (Barcode1DSymbologyEnum) Type() protoreflect.EnumType {
-	return &file_star_v1_star_service_proto_enumTypes[7]
+	return &file_star_service_proto_enumTypes[7]
 }
 
 func (x Barcode1DSymbologyEnum) Number() protoreflect.EnumNumber {
@@ -437,163 +438,7 @@ func (x Barcode1DSymbologyEnum) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Barcode1DSymbologyEnum.Descriptor instead.
 func (Barcode1DSymbologyEnum) EnumDescriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{7}
-}
-
-type Empty struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Empty) Reset() {
-	*x = Empty{}
-	mi := &file_star_v1_star_service_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Empty) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Empty) ProtoMessage() {}
-
-func (x *Empty) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[0]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Empty.ProtoReflect.Descriptor instead.
-func (*Empty) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{0}
-}
-
-type Coordinate struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	X             float64                `protobuf:"fixed64,1,opt,name=x,proto3" json:"x,omitempty"`
-	Y             float64                `protobuf:"fixed64,2,opt,name=y,proto3" json:"y,omitempty"`
-	Z             float64                `protobuf:"fixed64,3,opt,name=z,proto3" json:"z,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Coordinate) Reset() {
-	*x = Coordinate{}
-	mi := &file_star_v1_star_service_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Coordinate) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Coordinate) ProtoMessage() {}
-
-func (x *Coordinate) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[1]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Coordinate.ProtoReflect.Descriptor instead.
-func (*Coordinate) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{1}
-}
-
-func (x *Coordinate) GetX() float64 {
-	if x != nil {
-		return x.X
-	}
-	return 0
-}
-
-func (x *Coordinate) GetY() float64 {
-	if x != nil {
-		return x.Y
-	}
-	return 0
-}
-
-func (x *Coordinate) GetZ() float64 {
-	if x != nil {
-		return x.Z
-	}
-	return 0
-}
-
-type Rotation struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	X             float64                `protobuf:"fixed64,1,opt,name=x,proto3" json:"x,omitempty"`
-	Y             float64                `protobuf:"fixed64,2,opt,name=y,proto3" json:"y,omitempty"`
-	Z             float64                `protobuf:"fixed64,3,opt,name=z,proto3" json:"z,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Rotation) Reset() {
-	*x = Rotation{}
-	mi := &file_star_v1_star_service_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Rotation) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Rotation) ProtoMessage() {}
-
-func (x *Rotation) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[2]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Rotation.ProtoReflect.Descriptor instead.
-func (*Rotation) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{2}
-}
-
-func (x *Rotation) GetX() float64 {
-	if x != nil {
-		return x.X
-	}
-	return 0
-}
-
-func (x *Rotation) GetY() float64 {
-	if x != nil {
-		return x.Y
-	}
-	return 0
-}
-
-func (x *Rotation) GetZ() float64 {
-	if x != nil {
-		return x.Z
-	}
-	return 0
+	return file_star_service_proto_rawDescGZIP(), []int{7}
 }
 
 type TipData struct {
@@ -611,7 +456,7 @@ type TipData struct {
 
 func (x *TipData) Reset() {
 	*x = TipData{}
-	mi := &file_star_v1_star_service_proto_msgTypes[3]
+	mi := &file_star_service_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -623,7 +468,7 @@ func (x *TipData) String() string {
 func (*TipData) ProtoMessage() {}
 
 func (x *TipData) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[3]
+	mi := &file_star_service_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -636,7 +481,7 @@ func (x *TipData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TipData.ProtoReflect.Descriptor instead.
 func (*TipData) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{3}
+	return file_star_service_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *TipData) GetType() string {
@@ -699,7 +544,7 @@ type MixData struct {
 
 func (x *MixData) Reset() {
 	*x = MixData{}
-	mi := &file_star_v1_star_service_proto_msgTypes[4]
+	mi := &file_star_service_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -711,7 +556,7 @@ func (x *MixData) String() string {
 func (*MixData) ProtoMessage() {}
 
 func (x *MixData) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[4]
+	mi := &file_star_service_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -724,7 +569,7 @@ func (x *MixData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MixData.ProtoReflect.Descriptor instead.
 func (*MixData) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{4}
+	return file_star_service_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *MixData) GetVolume() float64 {
@@ -751,7 +596,7 @@ func (x *MixData) GetFlowRate() float64 {
 type PickupOp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName  string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset        *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset        *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tip           *TipData               `protobuf:"bytes,3,opt,name=tip,proto3" json:"tip,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -759,7 +604,7 @@ type PickupOp struct {
 
 func (x *PickupOp) Reset() {
 	*x = PickupOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[5]
+	mi := &file_star_service_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -771,7 +616,7 @@ func (x *PickupOp) String() string {
 func (*PickupOp) ProtoMessage() {}
 
 func (x *PickupOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[5]
+	mi := &file_star_service_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -784,7 +629,7 @@ func (x *PickupOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickupOp.ProtoReflect.Descriptor instead.
 func (*PickupOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{5}
+	return file_star_service_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *PickupOp) GetResourceName() string {
@@ -794,7 +639,7 @@ func (x *PickupOp) GetResourceName() string {
 	return ""
 }
 
-func (x *PickupOp) GetOffset() *Coordinate {
+func (x *PickupOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -811,7 +656,7 @@ func (x *PickupOp) GetTip() *TipData {
 type DropOp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName  string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset        *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset        *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tip           *TipData               `protobuf:"bytes,3,opt,name=tip,proto3" json:"tip,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -819,7 +664,7 @@ type DropOp struct {
 
 func (x *DropOp) Reset() {
 	*x = DropOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[6]
+	mi := &file_star_service_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -831,7 +676,7 @@ func (x *DropOp) String() string {
 func (*DropOp) ProtoMessage() {}
 
 func (x *DropOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[6]
+	mi := &file_star_service_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -844,7 +689,7 @@ func (x *DropOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropOp.ProtoReflect.Descriptor instead.
 func (*DropOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{6}
+	return file_star_service_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *DropOp) GetResourceName() string {
@@ -854,7 +699,7 @@ func (x *DropOp) GetResourceName() string {
 	return ""
 }
 
-func (x *DropOp) GetOffset() *Coordinate {
+func (x *DropOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -871,7 +716,7 @@ func (x *DropOp) GetTip() *TipData {
 type SingleChannelAspirationOp struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName     string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tip              *TipData               `protobuf:"bytes,3,opt,name=tip,proto3" json:"tip,omitempty"`
 	Volume           float64                `protobuf:"fixed64,4,opt,name=volume,proto3" json:"volume,omitempty"`
 	FlowRate         *float64               `protobuf:"fixed64,5,opt,name=flow_rate,json=flowRate,proto3,oneof" json:"flow_rate,omitempty"`
@@ -884,7 +729,7 @@ type SingleChannelAspirationOp struct {
 
 func (x *SingleChannelAspirationOp) Reset() {
 	*x = SingleChannelAspirationOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[7]
+	mi := &file_star_service_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -896,7 +741,7 @@ func (x *SingleChannelAspirationOp) String() string {
 func (*SingleChannelAspirationOp) ProtoMessage() {}
 
 func (x *SingleChannelAspirationOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[7]
+	mi := &file_star_service_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -909,7 +754,7 @@ func (x *SingleChannelAspirationOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SingleChannelAspirationOp.ProtoReflect.Descriptor instead.
 func (*SingleChannelAspirationOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{7}
+	return file_star_service_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *SingleChannelAspirationOp) GetResourceName() string {
@@ -919,7 +764,7 @@ func (x *SingleChannelAspirationOp) GetResourceName() string {
 	return ""
 }
 
-func (x *SingleChannelAspirationOp) GetOffset() *Coordinate {
+func (x *SingleChannelAspirationOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -971,7 +816,7 @@ func (x *SingleChannelAspirationOp) GetMix() *MixData {
 type SingleChannelDispenseOp struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName     string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tip              *TipData               `protobuf:"bytes,3,opt,name=tip,proto3" json:"tip,omitempty"`
 	Volume           float64                `protobuf:"fixed64,4,opt,name=volume,proto3" json:"volume,omitempty"`
 	FlowRate         *float64               `protobuf:"fixed64,5,opt,name=flow_rate,json=flowRate,proto3,oneof" json:"flow_rate,omitempty"`
@@ -984,7 +829,7 @@ type SingleChannelDispenseOp struct {
 
 func (x *SingleChannelDispenseOp) Reset() {
 	*x = SingleChannelDispenseOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[8]
+	mi := &file_star_service_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -996,7 +841,7 @@ func (x *SingleChannelDispenseOp) String() string {
 func (*SingleChannelDispenseOp) ProtoMessage() {}
 
 func (x *SingleChannelDispenseOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[8]
+	mi := &file_star_service_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1009,7 +854,7 @@ func (x *SingleChannelDispenseOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SingleChannelDispenseOp.ProtoReflect.Descriptor instead.
 func (*SingleChannelDispenseOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{8}
+	return file_star_service_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *SingleChannelDispenseOp) GetResourceName() string {
@@ -1019,7 +864,7 @@ func (x *SingleChannelDispenseOp) GetResourceName() string {
 	return ""
 }
 
-func (x *SingleChannelDispenseOp) GetOffset() *Coordinate {
+func (x *SingleChannelDispenseOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1071,7 +916,7 @@ func (x *SingleChannelDispenseOp) GetMix() *MixData {
 type PickupTipRackOp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName  string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset        *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset        *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tips          []*TipData             `protobuf:"bytes,3,rep,name=tips,proto3" json:"tips,omitempty"`
 	TipPresent    []bool                 `protobuf:"varint,4,rep,packed,name=tip_present,json=tipPresent,proto3" json:"tip_present,omitempty"` // parallel to tips: false = None tip
 	unknownFields protoimpl.UnknownFields
@@ -1080,7 +925,7 @@ type PickupTipRackOp struct {
 
 func (x *PickupTipRackOp) Reset() {
 	*x = PickupTipRackOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[9]
+	mi := &file_star_service_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1092,7 +937,7 @@ func (x *PickupTipRackOp) String() string {
 func (*PickupTipRackOp) ProtoMessage() {}
 
 func (x *PickupTipRackOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[9]
+	mi := &file_star_service_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1105,7 +950,7 @@ func (x *PickupTipRackOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickupTipRackOp.ProtoReflect.Descriptor instead.
 func (*PickupTipRackOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{9}
+	return file_star_service_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *PickupTipRackOp) GetResourceName() string {
@@ -1115,7 +960,7 @@ func (x *PickupTipRackOp) GetResourceName() string {
 	return ""
 }
 
-func (x *PickupTipRackOp) GetOffset() *Coordinate {
+func (x *PickupTipRackOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1139,14 +984,14 @@ func (x *PickupTipRackOp) GetTipPresent() []bool {
 type DropTipRackOp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName  string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset        *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset        *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *DropTipRackOp) Reset() {
 	*x = DropTipRackOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[10]
+	mi := &file_star_service_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1158,7 +1003,7 @@ func (x *DropTipRackOp) String() string {
 func (*DropTipRackOp) ProtoMessage() {}
 
 func (x *DropTipRackOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[10]
+	mi := &file_star_service_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1171,7 +1016,7 @@ func (x *DropTipRackOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropTipRackOp.ProtoReflect.Descriptor instead.
 func (*DropTipRackOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{10}
+	return file_star_service_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *DropTipRackOp) GetResourceName() string {
@@ -1181,7 +1026,7 @@ func (x *DropTipRackOp) GetResourceName() string {
 	return ""
 }
 
-func (x *DropTipRackOp) GetOffset() *Coordinate {
+func (x *DropTipRackOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1191,7 +1036,7 @@ func (x *DropTipRackOp) GetOffset() *Coordinate {
 type MultiHeadAspirationPlateOp struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	WellNames        []string               `protobuf:"bytes,1,rep,name=well_names,json=wellNames,proto3" json:"well_names,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tips             []*TipData             `protobuf:"bytes,3,rep,name=tips,proto3" json:"tips,omitempty"`
 	TipPresent       []bool                 `protobuf:"varint,4,rep,packed,name=tip_present,json=tipPresent,proto3" json:"tip_present,omitempty"`
 	Volume           float64                `protobuf:"fixed64,5,opt,name=volume,proto3" json:"volume,omitempty"`
@@ -1205,7 +1050,7 @@ type MultiHeadAspirationPlateOp struct {
 
 func (x *MultiHeadAspirationPlateOp) Reset() {
 	*x = MultiHeadAspirationPlateOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[11]
+	mi := &file_star_service_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1217,7 +1062,7 @@ func (x *MultiHeadAspirationPlateOp) String() string {
 func (*MultiHeadAspirationPlateOp) ProtoMessage() {}
 
 func (x *MultiHeadAspirationPlateOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[11]
+	mi := &file_star_service_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1230,7 +1075,7 @@ func (x *MultiHeadAspirationPlateOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MultiHeadAspirationPlateOp.ProtoReflect.Descriptor instead.
 func (*MultiHeadAspirationPlateOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{11}
+	return file_star_service_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *MultiHeadAspirationPlateOp) GetWellNames() []string {
@@ -1240,7 +1085,7 @@ func (x *MultiHeadAspirationPlateOp) GetWellNames() []string {
 	return nil
 }
 
-func (x *MultiHeadAspirationPlateOp) GetOffset() *Coordinate {
+func (x *MultiHeadAspirationPlateOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1299,7 +1144,7 @@ func (x *MultiHeadAspirationPlateOp) GetMix() *MixData {
 type MultiHeadDispensePlateOp struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	WellNames        []string               `protobuf:"bytes,1,rep,name=well_names,json=wellNames,proto3" json:"well_names,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tips             []*TipData             `protobuf:"bytes,3,rep,name=tips,proto3" json:"tips,omitempty"`
 	TipPresent       []bool                 `protobuf:"varint,4,rep,packed,name=tip_present,json=tipPresent,proto3" json:"tip_present,omitempty"`
 	Volume           float64                `protobuf:"fixed64,5,opt,name=volume,proto3" json:"volume,omitempty"`
@@ -1313,7 +1158,7 @@ type MultiHeadDispensePlateOp struct {
 
 func (x *MultiHeadDispensePlateOp) Reset() {
 	*x = MultiHeadDispensePlateOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[12]
+	mi := &file_star_service_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1325,7 +1170,7 @@ func (x *MultiHeadDispensePlateOp) String() string {
 func (*MultiHeadDispensePlateOp) ProtoMessage() {}
 
 func (x *MultiHeadDispensePlateOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[12]
+	mi := &file_star_service_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1338,7 +1183,7 @@ func (x *MultiHeadDispensePlateOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MultiHeadDispensePlateOp.ProtoReflect.Descriptor instead.
 func (*MultiHeadDispensePlateOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{12}
+	return file_star_service_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *MultiHeadDispensePlateOp) GetWellNames() []string {
@@ -1348,7 +1193,7 @@ func (x *MultiHeadDispensePlateOp) GetWellNames() []string {
 	return nil
 }
 
-func (x *MultiHeadDispensePlateOp) GetOffset() *Coordinate {
+func (x *MultiHeadDispensePlateOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1407,7 +1252,7 @@ func (x *MultiHeadDispensePlateOp) GetMix() *MixData {
 type MultiHeadAspirationContainerOp struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	ContainerName    string                 `protobuf:"bytes,1,opt,name=container_name,json=containerName,proto3" json:"container_name,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tips             []*TipData             `protobuf:"bytes,3,rep,name=tips,proto3" json:"tips,omitempty"`
 	TipPresent       []bool                 `protobuf:"varint,4,rep,packed,name=tip_present,json=tipPresent,proto3" json:"tip_present,omitempty"`
 	Volume           float64                `protobuf:"fixed64,5,opt,name=volume,proto3" json:"volume,omitempty"`
@@ -1421,7 +1266,7 @@ type MultiHeadAspirationContainerOp struct {
 
 func (x *MultiHeadAspirationContainerOp) Reset() {
 	*x = MultiHeadAspirationContainerOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[13]
+	mi := &file_star_service_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1433,7 +1278,7 @@ func (x *MultiHeadAspirationContainerOp) String() string {
 func (*MultiHeadAspirationContainerOp) ProtoMessage() {}
 
 func (x *MultiHeadAspirationContainerOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[13]
+	mi := &file_star_service_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1446,7 +1291,7 @@ func (x *MultiHeadAspirationContainerOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MultiHeadAspirationContainerOp.ProtoReflect.Descriptor instead.
 func (*MultiHeadAspirationContainerOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{13}
+	return file_star_service_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *MultiHeadAspirationContainerOp) GetContainerName() string {
@@ -1456,7 +1301,7 @@ func (x *MultiHeadAspirationContainerOp) GetContainerName() string {
 	return ""
 }
 
-func (x *MultiHeadAspirationContainerOp) GetOffset() *Coordinate {
+func (x *MultiHeadAspirationContainerOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1515,7 +1360,7 @@ func (x *MultiHeadAspirationContainerOp) GetMix() *MixData {
 type MultiHeadDispenseContainerOp struct {
 	state            protoimpl.MessageState `protogen:"open.v1"`
 	ContainerName    string                 `protobuf:"bytes,1,opt,name=container_name,json=containerName,proto3" json:"container_name,omitempty"`
-	Offset           *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset           *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Tips             []*TipData             `protobuf:"bytes,3,rep,name=tips,proto3" json:"tips,omitempty"`
 	TipPresent       []bool                 `protobuf:"varint,4,rep,packed,name=tip_present,json=tipPresent,proto3" json:"tip_present,omitempty"`
 	Volume           float64                `protobuf:"fixed64,5,opt,name=volume,proto3" json:"volume,omitempty"`
@@ -1529,7 +1374,7 @@ type MultiHeadDispenseContainerOp struct {
 
 func (x *MultiHeadDispenseContainerOp) Reset() {
 	*x = MultiHeadDispenseContainerOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[14]
+	mi := &file_star_service_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1541,7 +1386,7 @@ func (x *MultiHeadDispenseContainerOp) String() string {
 func (*MultiHeadDispenseContainerOp) ProtoMessage() {}
 
 func (x *MultiHeadDispenseContainerOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[14]
+	mi := &file_star_service_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1554,7 +1399,7 @@ func (x *MultiHeadDispenseContainerOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MultiHeadDispenseContainerOp.ProtoReflect.Descriptor instead.
 func (*MultiHeadDispenseContainerOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{14}
+	return file_star_service_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *MultiHeadDispenseContainerOp) GetContainerName() string {
@@ -1564,7 +1409,7 @@ func (x *MultiHeadDispenseContainerOp) GetContainerName() string {
 	return ""
 }
 
-func (x *MultiHeadDispenseContainerOp) GetOffset() *Coordinate {
+func (x *MultiHeadDispenseContainerOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1623,7 +1468,7 @@ func (x *MultiHeadDispenseContainerOp) GetMix() *MixData {
 type ResourcePickupOp struct {
 	state                 protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName          string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Offset                *Coordinate            `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset                *v1.Coordinate         `protobuf:"bytes,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	PickupDistanceFromTop float64                `protobuf:"fixed64,3,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
 	Direction             GripDirectionEnum      `protobuf:"varint,4,opt,name=direction,proto3,enum=pylabrobot.star.v1.GripDirectionEnum" json:"direction,omitempty"`
 	unknownFields         protoimpl.UnknownFields
@@ -1632,7 +1477,7 @@ type ResourcePickupOp struct {
 
 func (x *ResourcePickupOp) Reset() {
 	*x = ResourcePickupOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[15]
+	mi := &file_star_service_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1644,7 +1489,7 @@ func (x *ResourcePickupOp) String() string {
 func (*ResourcePickupOp) ProtoMessage() {}
 
 func (x *ResourcePickupOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[15]
+	mi := &file_star_service_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1657,7 +1502,7 @@ func (x *ResourcePickupOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResourcePickupOp.ProtoReflect.Descriptor instead.
 func (*ResourcePickupOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{15}
+	return file_star_service_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *ResourcePickupOp) GetResourceName() string {
@@ -1667,7 +1512,7 @@ func (x *ResourcePickupOp) GetResourceName() string {
 	return ""
 }
 
-func (x *ResourcePickupOp) GetOffset() *Coordinate {
+func (x *ResourcePickupOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1691,17 +1536,17 @@ func (x *ResourcePickupOp) GetDirection() GripDirectionEnum {
 type ResourceMoveOp struct {
 	state                 protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName          string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Location              *Coordinate            `protobuf:"bytes,2,opt,name=location,proto3" json:"location,omitempty"`
+	Location              *v1.Coordinate         `protobuf:"bytes,2,opt,name=location,proto3" json:"location,omitempty"`
 	GrippedDirection      GripDirectionEnum      `protobuf:"varint,3,opt,name=gripped_direction,json=grippedDirection,proto3,enum=pylabrobot.star.v1.GripDirectionEnum" json:"gripped_direction,omitempty"`
 	PickupDistanceFromTop float64                `protobuf:"fixed64,4,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
-	Offset                *Coordinate            `protobuf:"bytes,5,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset                *v1.Coordinate         `protobuf:"bytes,5,opt,name=offset,proto3" json:"offset,omitempty"`
 	unknownFields         protoimpl.UnknownFields
 	sizeCache             protoimpl.SizeCache
 }
 
 func (x *ResourceMoveOp) Reset() {
 	*x = ResourceMoveOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[16]
+	mi := &file_star_service_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1713,7 +1558,7 @@ func (x *ResourceMoveOp) String() string {
 func (*ResourceMoveOp) ProtoMessage() {}
 
 func (x *ResourceMoveOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[16]
+	mi := &file_star_service_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1726,7 +1571,7 @@ func (x *ResourceMoveOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResourceMoveOp.ProtoReflect.Descriptor instead.
 func (*ResourceMoveOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{16}
+	return file_star_service_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *ResourceMoveOp) GetResourceName() string {
@@ -1736,7 +1581,7 @@ func (x *ResourceMoveOp) GetResourceName() string {
 	return ""
 }
 
-func (x *ResourceMoveOp) GetLocation() *Coordinate {
+func (x *ResourceMoveOp) GetLocation() *v1.Coordinate {
 	if x != nil {
 		return x.Location
 	}
@@ -1757,7 +1602,7 @@ func (x *ResourceMoveOp) GetPickupDistanceFromTop() float64 {
 	return 0
 }
 
-func (x *ResourceMoveOp) GetOffset() *Coordinate {
+func (x *ResourceMoveOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1767,9 +1612,9 @@ func (x *ResourceMoveOp) GetOffset() *Coordinate {
 type ResourceDropOp struct {
 	state                       protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName                string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	Destination                 *Coordinate            `protobuf:"bytes,2,opt,name=destination,proto3" json:"destination,omitempty"`
-	DestinationAbsoluteRotation *Rotation              `protobuf:"bytes,3,opt,name=destination_absolute_rotation,json=destinationAbsoluteRotation,proto3" json:"destination_absolute_rotation,omitempty"`
-	Offset                      *Coordinate            `protobuf:"bytes,4,opt,name=offset,proto3" json:"offset,omitempty"`
+	Destination                 *v1.Coordinate         `protobuf:"bytes,2,opt,name=destination,proto3" json:"destination,omitempty"`
+	DestinationAbsoluteRotation *v1.Rotation           `protobuf:"bytes,3,opt,name=destination_absolute_rotation,json=destinationAbsoluteRotation,proto3" json:"destination_absolute_rotation,omitempty"`
+	Offset                      *v1.Coordinate         `protobuf:"bytes,4,opt,name=offset,proto3" json:"offset,omitempty"`
 	PickupDistanceFromTop       float64                `protobuf:"fixed64,5,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
 	PickupDirection             GripDirectionEnum      `protobuf:"varint,6,opt,name=pickup_direction,json=pickupDirection,proto3,enum=pylabrobot.star.v1.GripDirectionEnum" json:"pickup_direction,omitempty"`
 	Direction                   GripDirectionEnum      `protobuf:"varint,7,opt,name=direction,proto3,enum=pylabrobot.star.v1.GripDirectionEnum" json:"direction,omitempty"`
@@ -1780,7 +1625,7 @@ type ResourceDropOp struct {
 
 func (x *ResourceDropOp) Reset() {
 	*x = ResourceDropOp{}
-	mi := &file_star_v1_star_service_proto_msgTypes[17]
+	mi := &file_star_service_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1792,7 +1637,7 @@ func (x *ResourceDropOp) String() string {
 func (*ResourceDropOp) ProtoMessage() {}
 
 func (x *ResourceDropOp) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[17]
+	mi := &file_star_service_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1805,7 +1650,7 @@ func (x *ResourceDropOp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResourceDropOp.ProtoReflect.Descriptor instead.
 func (*ResourceDropOp) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{17}
+	return file_star_service_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *ResourceDropOp) GetResourceName() string {
@@ -1815,21 +1660,21 @@ func (x *ResourceDropOp) GetResourceName() string {
 	return ""
 }
 
-func (x *ResourceDropOp) GetDestination() *Coordinate {
+func (x *ResourceDropOp) GetDestination() *v1.Coordinate {
 	if x != nil {
 		return x.Destination
 	}
 	return nil
 }
 
-func (x *ResourceDropOp) GetDestinationAbsoluteRotation() *Rotation {
+func (x *ResourceDropOp) GetDestinationAbsoluteRotation() *v1.Rotation {
 	if x != nil {
 		return x.DestinationAbsoluteRotation
 	}
 	return nil
 }
 
-func (x *ResourceDropOp) GetOffset() *Coordinate {
+func (x *ResourceDropOp) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -1874,7 +1719,7 @@ type ChannelFloatMap struct {
 
 func (x *ChannelFloatMap) Reset() {
 	*x = ChannelFloatMap{}
-	mi := &file_star_v1_star_service_proto_msgTypes[18]
+	mi := &file_star_service_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1886,7 +1731,7 @@ func (x *ChannelFloatMap) String() string {
 func (*ChannelFloatMap) ProtoMessage() {}
 
 func (x *ChannelFloatMap) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[18]
+	mi := &file_star_service_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1899,7 +1744,7 @@ func (x *ChannelFloatMap) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChannelFloatMap.ProtoReflect.Descriptor instead.
 func (*ChannelFloatMap) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{18}
+	return file_star_service_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *ChannelFloatMap) GetEntries() map[int32]float64 {
@@ -1917,7 +1762,7 @@ type SetupRequest struct {
 
 func (x *SetupRequest) Reset() {
 	*x = SetupRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[19]
+	mi := &file_star_service_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1929,7 +1774,7 @@ func (x *SetupRequest) String() string {
 func (*SetupRequest) ProtoMessage() {}
 
 func (x *SetupRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[19]
+	mi := &file_star_service_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1942,7 +1787,7 @@ func (x *SetupRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetupRequest.ProtoReflect.Descriptor instead.
 func (*SetupRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{19}
+	return file_star_service_proto_rawDescGZIP(), []int{16}
 }
 
 type SetupResponse struct {
@@ -1953,7 +1798,7 @@ type SetupResponse struct {
 
 func (x *SetupResponse) Reset() {
 	*x = SetupResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[20]
+	mi := &file_star_service_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1965,7 +1810,7 @@ func (x *SetupResponse) String() string {
 func (*SetupResponse) ProtoMessage() {}
 
 func (x *SetupResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[20]
+	mi := &file_star_service_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1978,7 +1823,7 @@ func (x *SetupResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetupResponse.ProtoReflect.Descriptor instead.
 func (*SetupResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{20}
+	return file_star_service_proto_rawDescGZIP(), []int{17}
 }
 
 type StopRequest struct {
@@ -1989,7 +1834,7 @@ type StopRequest struct {
 
 func (x *StopRequest) Reset() {
 	*x = StopRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[21]
+	mi := &file_star_service_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2001,7 +1846,7 @@ func (x *StopRequest) String() string {
 func (*StopRequest) ProtoMessage() {}
 
 func (x *StopRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[21]
+	mi := &file_star_service_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2014,7 +1859,7 @@ func (x *StopRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StopRequest.ProtoReflect.Descriptor instead.
 func (*StopRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{21}
+	return file_star_service_proto_rawDescGZIP(), []int{18}
 }
 
 type StopResponse struct {
@@ -2025,7 +1870,7 @@ type StopResponse struct {
 
 func (x *StopResponse) Reset() {
 	*x = StopResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[22]
+	mi := &file_star_service_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2037,7 +1882,7 @@ func (x *StopResponse) String() string {
 func (*StopResponse) ProtoMessage() {}
 
 func (x *StopResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[22]
+	mi := &file_star_service_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2050,7 +1895,7 @@ func (x *StopResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StopResponse.ProtoReflect.Descriptor instead.
 func (*StopResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{22}
+	return file_star_service_proto_rawDescGZIP(), []int{19}
 }
 
 type GetNumChannelsRequest struct {
@@ -2061,7 +1906,7 @@ type GetNumChannelsRequest struct {
 
 func (x *GetNumChannelsRequest) Reset() {
 	*x = GetNumChannelsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[23]
+	mi := &file_star_service_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2073,7 +1918,7 @@ func (x *GetNumChannelsRequest) String() string {
 func (*GetNumChannelsRequest) ProtoMessage() {}
 
 func (x *GetNumChannelsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[23]
+	mi := &file_star_service_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2086,7 +1931,7 @@ func (x *GetNumChannelsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetNumChannelsRequest.ProtoReflect.Descriptor instead.
 func (*GetNumChannelsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{23}
+	return file_star_service_proto_rawDescGZIP(), []int{20}
 }
 
 type GetNumChannelsResponse struct {
@@ -2098,7 +1943,7 @@ type GetNumChannelsResponse struct {
 
 func (x *GetNumChannelsResponse) Reset() {
 	*x = GetNumChannelsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[24]
+	mi := &file_star_service_proto_msgTypes[21]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2110,7 +1955,7 @@ func (x *GetNumChannelsResponse) String() string {
 func (*GetNumChannelsResponse) ProtoMessage() {}
 
 func (x *GetNumChannelsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[24]
+	mi := &file_star_service_proto_msgTypes[21]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2123,7 +1968,7 @@ func (x *GetNumChannelsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetNumChannelsResponse.ProtoReflect.Descriptor instead.
 func (*GetNumChannelsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{24}
+	return file_star_service_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *GetNumChannelsResponse) GetNumChannels() int32 {
@@ -2141,7 +1986,7 @@ type GetHead96InstalledRequest struct {
 
 func (x *GetHead96InstalledRequest) Reset() {
 	*x = GetHead96InstalledRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[25]
+	mi := &file_star_service_proto_msgTypes[22]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2153,7 +1998,7 @@ func (x *GetHead96InstalledRequest) String() string {
 func (*GetHead96InstalledRequest) ProtoMessage() {}
 
 func (x *GetHead96InstalledRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[25]
+	mi := &file_star_service_proto_msgTypes[22]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2166,7 +2011,7 @@ func (x *GetHead96InstalledRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetHead96InstalledRequest.ProtoReflect.Descriptor instead.
 func (*GetHead96InstalledRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{25}
+	return file_star_service_proto_rawDescGZIP(), []int{22}
 }
 
 type GetHead96InstalledResponse struct {
@@ -2178,7 +2023,7 @@ type GetHead96InstalledResponse struct {
 
 func (x *GetHead96InstalledResponse) Reset() {
 	*x = GetHead96InstalledResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[26]
+	mi := &file_star_service_proto_msgTypes[23]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2190,7 +2035,7 @@ func (x *GetHead96InstalledResponse) String() string {
 func (*GetHead96InstalledResponse) ProtoMessage() {}
 
 func (x *GetHead96InstalledResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[26]
+	mi := &file_star_service_proto_msgTypes[23]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2203,7 +2048,7 @@ func (x *GetHead96InstalledResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetHead96InstalledResponse.ProtoReflect.Descriptor instead.
 func (*GetHead96InstalledResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{26}
+	return file_star_service_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *GetHead96InstalledResponse) GetInstalled() bool {
@@ -2221,7 +2066,7 @@ type GetIswapInstalledRequest struct {
 
 func (x *GetIswapInstalledRequest) Reset() {
 	*x = GetIswapInstalledRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[27]
+	mi := &file_star_service_proto_msgTypes[24]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2233,7 +2078,7 @@ func (x *GetIswapInstalledRequest) String() string {
 func (*GetIswapInstalledRequest) ProtoMessage() {}
 
 func (x *GetIswapInstalledRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[27]
+	mi := &file_star_service_proto_msgTypes[24]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2246,7 +2091,7 @@ func (x *GetIswapInstalledRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetIswapInstalledRequest.ProtoReflect.Descriptor instead.
 func (*GetIswapInstalledRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{27}
+	return file_star_service_proto_rawDescGZIP(), []int{24}
 }
 
 type GetIswapInstalledResponse struct {
@@ -2258,7 +2103,7 @@ type GetIswapInstalledResponse struct {
 
 func (x *GetIswapInstalledResponse) Reset() {
 	*x = GetIswapInstalledResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[28]
+	mi := &file_star_service_proto_msgTypes[25]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2270,7 +2115,7 @@ func (x *GetIswapInstalledResponse) String() string {
 func (*GetIswapInstalledResponse) ProtoMessage() {}
 
 func (x *GetIswapInstalledResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[28]
+	mi := &file_star_service_proto_msgTypes[25]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2283,7 +2128,7 @@ func (x *GetIswapInstalledResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetIswapInstalledResponse.ProtoReflect.Descriptor instead.
 func (*GetIswapInstalledResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{28}
+	return file_star_service_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *GetIswapInstalledResponse) GetInstalled() bool {
@@ -2301,7 +2146,7 @@ type GetIswapParkedRequest struct {
 
 func (x *GetIswapParkedRequest) Reset() {
 	*x = GetIswapParkedRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[29]
+	mi := &file_star_service_proto_msgTypes[26]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2313,7 +2158,7 @@ func (x *GetIswapParkedRequest) String() string {
 func (*GetIswapParkedRequest) ProtoMessage() {}
 
 func (x *GetIswapParkedRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[29]
+	mi := &file_star_service_proto_msgTypes[26]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2326,7 +2171,7 @@ func (x *GetIswapParkedRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetIswapParkedRequest.ProtoReflect.Descriptor instead.
 func (*GetIswapParkedRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{29}
+	return file_star_service_proto_rawDescGZIP(), []int{26}
 }
 
 type GetIswapParkedResponse struct {
@@ -2338,7 +2183,7 @@ type GetIswapParkedResponse struct {
 
 func (x *GetIswapParkedResponse) Reset() {
 	*x = GetIswapParkedResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[30]
+	mi := &file_star_service_proto_msgTypes[27]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2350,7 +2195,7 @@ func (x *GetIswapParkedResponse) String() string {
 func (*GetIswapParkedResponse) ProtoMessage() {}
 
 func (x *GetIswapParkedResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[30]
+	mi := &file_star_service_proto_msgTypes[27]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2363,7 +2208,7 @@ func (x *GetIswapParkedResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetIswapParkedResponse.ProtoReflect.Descriptor instead.
 func (*GetIswapParkedResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{30}
+	return file_star_service_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *GetIswapParkedResponse) GetParked() bool {
@@ -2381,7 +2226,7 @@ type GetCoreParkedRequest struct {
 
 func (x *GetCoreParkedRequest) Reset() {
 	*x = GetCoreParkedRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[31]
+	mi := &file_star_service_proto_msgTypes[28]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2393,7 +2238,7 @@ func (x *GetCoreParkedRequest) String() string {
 func (*GetCoreParkedRequest) ProtoMessage() {}
 
 func (x *GetCoreParkedRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[31]
+	mi := &file_star_service_proto_msgTypes[28]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2406,7 +2251,7 @@ func (x *GetCoreParkedRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCoreParkedRequest.ProtoReflect.Descriptor instead.
 func (*GetCoreParkedRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{31}
+	return file_star_service_proto_rawDescGZIP(), []int{28}
 }
 
 type GetCoreParkedResponse struct {
@@ -2418,7 +2263,7 @@ type GetCoreParkedResponse struct {
 
 func (x *GetCoreParkedResponse) Reset() {
 	*x = GetCoreParkedResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[32]
+	mi := &file_star_service_proto_msgTypes[29]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2430,7 +2275,7 @@ func (x *GetCoreParkedResponse) String() string {
 func (*GetCoreParkedResponse) ProtoMessage() {}
 
 func (x *GetCoreParkedResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[32]
+	mi := &file_star_service_proto_msgTypes[29]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2443,7 +2288,7 @@ func (x *GetCoreParkedResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCoreParkedResponse.ProtoReflect.Descriptor instead.
 func (*GetCoreParkedResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{32}
+	return file_star_service_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *GetCoreParkedResponse) GetParked() bool {
@@ -2468,7 +2313,7 @@ type PickUpTipsRequest struct {
 
 func (x *PickUpTipsRequest) Reset() {
 	*x = PickUpTipsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[33]
+	mi := &file_star_service_proto_msgTypes[30]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2480,7 +2325,7 @@ func (x *PickUpTipsRequest) String() string {
 func (*PickUpTipsRequest) ProtoMessage() {}
 
 func (x *PickUpTipsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[33]
+	mi := &file_star_service_proto_msgTypes[30]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2493,7 +2338,7 @@ func (x *PickUpTipsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTipsRequest.ProtoReflect.Descriptor instead.
 func (*PickUpTipsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{33}
+	return file_star_service_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *PickUpTipsRequest) GetOps() []*PickupOp {
@@ -2546,7 +2391,7 @@ type PickUpTipsResponse struct {
 
 func (x *PickUpTipsResponse) Reset() {
 	*x = PickUpTipsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[34]
+	mi := &file_star_service_proto_msgTypes[31]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2558,7 +2403,7 @@ func (x *PickUpTipsResponse) String() string {
 func (*PickUpTipsResponse) ProtoMessage() {}
 
 func (x *PickUpTipsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[34]
+	mi := &file_star_service_proto_msgTypes[31]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2571,7 +2416,7 @@ func (x *PickUpTipsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTipsResponse.ProtoReflect.Descriptor instead.
 func (*PickUpTipsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{34}
+	return file_star_service_proto_rawDescGZIP(), []int{31}
 }
 
 // --- drop_tips ---
@@ -2590,7 +2435,7 @@ type DropTipsRequest struct {
 
 func (x *DropTipsRequest) Reset() {
 	*x = DropTipsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[35]
+	mi := &file_star_service_proto_msgTypes[32]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2602,7 +2447,7 @@ func (x *DropTipsRequest) String() string {
 func (*DropTipsRequest) ProtoMessage() {}
 
 func (x *DropTipsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[35]
+	mi := &file_star_service_proto_msgTypes[32]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2615,7 +2460,7 @@ func (x *DropTipsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropTipsRequest.ProtoReflect.Descriptor instead.
 func (*DropTipsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{35}
+	return file_star_service_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *DropTipsRequest) GetOps() []*DropOp {
@@ -2675,7 +2520,7 @@ type DropTipsResponse struct {
 
 func (x *DropTipsResponse) Reset() {
 	*x = DropTipsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[36]
+	mi := &file_star_service_proto_msgTypes[33]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2687,7 +2532,7 @@ func (x *DropTipsResponse) String() string {
 func (*DropTipsResponse) ProtoMessage() {}
 
 func (x *DropTipsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[36]
+	mi := &file_star_service_proto_msgTypes[33]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2700,7 +2545,7 @@ func (x *DropTipsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropTipsResponse.ProtoReflect.Descriptor instead.
 func (*DropTipsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{36}
+	return file_star_service_proto_rawDescGZIP(), []int{33}
 }
 
 // --- aspirate ---
@@ -2750,7 +2595,7 @@ type AspirateRequest struct {
 
 func (x *AspirateRequest) Reset() {
 	*x = AspirateRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[37]
+	mi := &file_star_service_proto_msgTypes[34]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2762,7 +2607,7 @@ func (x *AspirateRequest) String() string {
 func (*AspirateRequest) ProtoMessage() {}
 
 func (x *AspirateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[37]
+	mi := &file_star_service_proto_msgTypes[34]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2775,7 +2620,7 @@ func (x *AspirateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AspirateRequest.ProtoReflect.Descriptor instead.
 func (*AspirateRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{37}
+	return file_star_service_proto_rawDescGZIP(), []int{34}
 }
 
 func (x *AspirateRequest) GetOps() []*SingleChannelAspirationOp {
@@ -3052,7 +2897,7 @@ type AspirateResponse struct {
 
 func (x *AspirateResponse) Reset() {
 	*x = AspirateResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[38]
+	mi := &file_star_service_proto_msgTypes[35]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3064,7 +2909,7 @@ func (x *AspirateResponse) String() string {
 func (*AspirateResponse) ProtoMessage() {}
 
 func (x *AspirateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[38]
+	mi := &file_star_service_proto_msgTypes[35]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3077,7 +2922,7 @@ func (x *AspirateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AspirateResponse.ProtoReflect.Descriptor instead.
 func (*AspirateResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{38}
+	return file_star_service_proto_rawDescGZIP(), []int{35}
 }
 
 // --- dispense ---
@@ -3120,7 +2965,7 @@ type DispenseRequest struct {
 
 func (x *DispenseRequest) Reset() {
 	*x = DispenseRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[39]
+	mi := &file_star_service_proto_msgTypes[36]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3132,7 +2977,7 @@ func (x *DispenseRequest) String() string {
 func (*DispenseRequest) ProtoMessage() {}
 
 func (x *DispenseRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[39]
+	mi := &file_star_service_proto_msgTypes[36]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3145,7 +2990,7 @@ func (x *DispenseRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DispenseRequest.ProtoReflect.Descriptor instead.
 func (*DispenseRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{39}
+	return file_star_service_proto_rawDescGZIP(), []int{36}
 }
 
 func (x *DispenseRequest) GetOps() []*SingleChannelDispenseOp {
@@ -3373,7 +3218,7 @@ type DispenseResponse struct {
 
 func (x *DispenseResponse) Reset() {
 	*x = DispenseResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[40]
+	mi := &file_star_service_proto_msgTypes[37]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3385,7 +3230,7 @@ func (x *DispenseResponse) String() string {
 func (*DispenseResponse) ProtoMessage() {}
 
 func (x *DispenseResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[40]
+	mi := &file_star_service_proto_msgTypes[37]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3398,7 +3243,7 @@ func (x *DispenseResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DispenseResponse.ProtoReflect.Descriptor instead.
 func (*DispenseResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{40}
+	return file_star_service_proto_rawDescGZIP(), []int{37}
 }
 
 // --- pick_up_tips96 ---
@@ -3415,7 +3260,7 @@ type PickUpTips96Request struct {
 
 func (x *PickUpTips96Request) Reset() {
 	*x = PickUpTips96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[41]
+	mi := &file_star_service_proto_msgTypes[38]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3427,7 +3272,7 @@ func (x *PickUpTips96Request) String() string {
 func (*PickUpTips96Request) ProtoMessage() {}
 
 func (x *PickUpTips96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[41]
+	mi := &file_star_service_proto_msgTypes[38]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3440,7 +3285,7 @@ func (x *PickUpTips96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTips96Request.ProtoReflect.Descriptor instead.
 func (*PickUpTips96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{41}
+	return file_star_service_proto_rawDescGZIP(), []int{38}
 }
 
 func (x *PickUpTips96Request) GetPickup() *PickupTipRackOp {
@@ -3486,7 +3331,7 @@ type PickUpTips96Response struct {
 
 func (x *PickUpTips96Response) Reset() {
 	*x = PickUpTips96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[42]
+	mi := &file_star_service_proto_msgTypes[39]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3498,7 +3343,7 @@ func (x *PickUpTips96Response) String() string {
 func (*PickUpTips96Response) ProtoMessage() {}
 
 func (x *PickUpTips96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[42]
+	mi := &file_star_service_proto_msgTypes[39]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3511,7 +3356,7 @@ func (x *PickUpTips96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTips96Response.ProtoReflect.Descriptor instead.
 func (*PickUpTips96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{42}
+	return file_star_service_proto_rawDescGZIP(), []int{39}
 }
 
 // --- drop_tips96 ---
@@ -3527,7 +3372,7 @@ type DropTips96Request struct {
 
 func (x *DropTips96Request) Reset() {
 	*x = DropTips96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[43]
+	mi := &file_star_service_proto_msgTypes[40]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3539,7 +3384,7 @@ func (x *DropTips96Request) String() string {
 func (*DropTips96Request) ProtoMessage() {}
 
 func (x *DropTips96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[43]
+	mi := &file_star_service_proto_msgTypes[40]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3552,7 +3397,7 @@ func (x *DropTips96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropTips96Request.ProtoReflect.Descriptor instead.
 func (*DropTips96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{43}
+	return file_star_service_proto_rawDescGZIP(), []int{40}
 }
 
 func (x *DropTips96Request) GetDrop() *DropTipRackOp {
@@ -3591,7 +3436,7 @@ type DropTips96Response struct {
 
 func (x *DropTips96Response) Reset() {
 	*x = DropTips96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[44]
+	mi := &file_star_service_proto_msgTypes[41]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3603,7 +3448,7 @@ func (x *DropTips96Response) String() string {
 func (*DropTips96Response) ProtoMessage() {}
 
 func (x *DropTips96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[44]
+	mi := &file_star_service_proto_msgTypes[41]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3616,7 +3461,7 @@ func (x *DropTips96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropTips96Response.ProtoReflect.Descriptor instead.
 func (*DropTips96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{44}
+	return file_star_service_proto_rawDescGZIP(), []int{41}
 }
 
 // --- aspirate96 ---
@@ -3657,7 +3502,7 @@ type Aspirate96Request struct {
 
 func (x *Aspirate96Request) Reset() {
 	*x = Aspirate96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[45]
+	mi := &file_star_service_proto_msgTypes[42]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3669,7 +3514,7 @@ func (x *Aspirate96Request) String() string {
 func (*Aspirate96Request) ProtoMessage() {}
 
 func (x *Aspirate96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[45]
+	mi := &file_star_service_proto_msgTypes[42]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3682,7 +3527,7 @@ func (x *Aspirate96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Aspirate96Request.ProtoReflect.Descriptor instead.
 func (*Aspirate96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{45}
+	return file_star_service_proto_rawDescGZIP(), []int{42}
 }
 
 func (x *Aspirate96Request) GetAspiration() isAspirate96Request_Aspiration {
@@ -3888,7 +3733,7 @@ type Aspirate96Response struct {
 
 func (x *Aspirate96Response) Reset() {
 	*x = Aspirate96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[46]
+	mi := &file_star_service_proto_msgTypes[43]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3900,7 +3745,7 @@ func (x *Aspirate96Response) String() string {
 func (*Aspirate96Response) ProtoMessage() {}
 
 func (x *Aspirate96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[46]
+	mi := &file_star_service_proto_msgTypes[43]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3913,7 +3758,7 @@ func (x *Aspirate96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Aspirate96Response.ProtoReflect.Descriptor instead.
 func (*Aspirate96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{46}
+	return file_star_service_proto_rawDescGZIP(), []int{43}
 }
 
 // --- dispense96 ---
@@ -3953,7 +3798,7 @@ type Dispense96Request struct {
 
 func (x *Dispense96Request) Reset() {
 	*x = Dispense96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[47]
+	mi := &file_star_service_proto_msgTypes[44]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3965,7 +3810,7 @@ func (x *Dispense96Request) String() string {
 func (*Dispense96Request) ProtoMessage() {}
 
 func (x *Dispense96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[47]
+	mi := &file_star_service_proto_msgTypes[44]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3978,7 +3823,7 @@ func (x *Dispense96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Dispense96Request.ProtoReflect.Descriptor instead.
 func (*Dispense96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{47}
+	return file_star_service_proto_rawDescGZIP(), []int{44}
 }
 
 func (x *Dispense96Request) GetDispenseOp() isDispense96Request_DispenseOp {
@@ -4191,7 +4036,7 @@ type Dispense96Response struct {
 
 func (x *Dispense96Response) Reset() {
 	*x = Dispense96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[48]
+	mi := &file_star_service_proto_msgTypes[45]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4203,7 +4048,7 @@ func (x *Dispense96Response) String() string {
 func (*Dispense96Response) ProtoMessage() {}
 
 func (x *Dispense96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[48]
+	mi := &file_star_service_proto_msgTypes[45]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4216,7 +4061,7 @@ func (x *Dispense96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Dispense96Response.ProtoReflect.Descriptor instead.
 func (*Dispense96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{48}
+	return file_star_service_proto_rawDescGZIP(), []int{45}
 }
 
 type InitializePipRequest struct {
@@ -4227,7 +4072,7 @@ type InitializePipRequest struct {
 
 func (x *InitializePipRequest) Reset() {
 	*x = InitializePipRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[49]
+	mi := &file_star_service_proto_msgTypes[46]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4239,7 +4084,7 @@ func (x *InitializePipRequest) String() string {
 func (*InitializePipRequest) ProtoMessage() {}
 
 func (x *InitializePipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[49]
+	mi := &file_star_service_proto_msgTypes[46]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4252,7 +4097,7 @@ func (x *InitializePipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializePipRequest.ProtoReflect.Descriptor instead.
 func (*InitializePipRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{49}
+	return file_star_service_proto_rawDescGZIP(), []int{46}
 }
 
 type InitializePipResponse struct {
@@ -4263,7 +4108,7 @@ type InitializePipResponse struct {
 
 func (x *InitializePipResponse) Reset() {
 	*x = InitializePipResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[50]
+	mi := &file_star_service_proto_msgTypes[47]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4275,7 +4120,7 @@ func (x *InitializePipResponse) String() string {
 func (*InitializePipResponse) ProtoMessage() {}
 
 func (x *InitializePipResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[50]
+	mi := &file_star_service_proto_msgTypes[47]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4288,7 +4133,7 @@ func (x *InitializePipResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializePipResponse.ProtoReflect.Descriptor instead.
 func (*InitializePipResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{50}
+	return file_star_service_proto_rawDescGZIP(), []int{47}
 }
 
 type InitializePipettingChannelsRequest struct {
@@ -4307,7 +4152,7 @@ type InitializePipettingChannelsRequest struct {
 
 func (x *InitializePipettingChannelsRequest) Reset() {
 	*x = InitializePipettingChannelsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[51]
+	mi := &file_star_service_proto_msgTypes[48]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4319,7 +4164,7 @@ func (x *InitializePipettingChannelsRequest) String() string {
 func (*InitializePipettingChannelsRequest) ProtoMessage() {}
 
 func (x *InitializePipettingChannelsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[51]
+	mi := &file_star_service_proto_msgTypes[48]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4332,7 +4177,7 @@ func (x *InitializePipettingChannelsRequest) ProtoReflect() protoreflect.Message
 
 // Deprecated: Use InitializePipettingChannelsRequest.ProtoReflect.Descriptor instead.
 func (*InitializePipettingChannelsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{51}
+	return file_star_service_proto_rawDescGZIP(), []int{48}
 }
 
 func (x *InitializePipettingChannelsRequest) GetXPositions() []int32 {
@@ -4399,7 +4244,7 @@ type InitializePipettingChannelsResponse struct {
 
 func (x *InitializePipettingChannelsResponse) Reset() {
 	*x = InitializePipettingChannelsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[52]
+	mi := &file_star_service_proto_msgTypes[49]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4411,7 +4256,7 @@ func (x *InitializePipettingChannelsResponse) String() string {
 func (*InitializePipettingChannelsResponse) ProtoMessage() {}
 
 func (x *InitializePipettingChannelsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[52]
+	mi := &file_star_service_proto_msgTypes[49]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4424,7 +4269,7 @@ func (x *InitializePipettingChannelsResponse) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use InitializePipettingChannelsResponse.ProtoReflect.Descriptor instead.
 func (*InitializePipettingChannelsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{52}
+	return file_star_service_proto_rawDescGZIP(), []int{49}
 }
 
 type PickUpTipFwRequest struct {
@@ -4443,7 +4288,7 @@ type PickUpTipFwRequest struct {
 
 func (x *PickUpTipFwRequest) Reset() {
 	*x = PickUpTipFwRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[53]
+	mi := &file_star_service_proto_msgTypes[50]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4455,7 +4300,7 @@ func (x *PickUpTipFwRequest) String() string {
 func (*PickUpTipFwRequest) ProtoMessage() {}
 
 func (x *PickUpTipFwRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[53]
+	mi := &file_star_service_proto_msgTypes[50]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4468,7 +4313,7 @@ func (x *PickUpTipFwRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTipFwRequest.ProtoReflect.Descriptor instead.
 func (*PickUpTipFwRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{53}
+	return file_star_service_proto_rawDescGZIP(), []int{50}
 }
 
 func (x *PickUpTipFwRequest) GetXPositions() []int32 {
@@ -4535,7 +4380,7 @@ type PickUpTipFwResponse struct {
 
 func (x *PickUpTipFwResponse) Reset() {
 	*x = PickUpTipFwResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[54]
+	mi := &file_star_service_proto_msgTypes[51]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4547,7 +4392,7 @@ func (x *PickUpTipFwResponse) String() string {
 func (*PickUpTipFwResponse) ProtoMessage() {}
 
 func (x *PickUpTipFwResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[54]
+	mi := &file_star_service_proto_msgTypes[51]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4560,7 +4405,7 @@ func (x *PickUpTipFwResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTipFwResponse.ProtoReflect.Descriptor instead.
 func (*PickUpTipFwResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{54}
+	return file_star_service_proto_rawDescGZIP(), []int{51}
 }
 
 type DiscardTipFwRequest struct {
@@ -4579,7 +4424,7 @@ type DiscardTipFwRequest struct {
 
 func (x *DiscardTipFwRequest) Reset() {
 	*x = DiscardTipFwRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[55]
+	mi := &file_star_service_proto_msgTypes[52]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4591,7 +4436,7 @@ func (x *DiscardTipFwRequest) String() string {
 func (*DiscardTipFwRequest) ProtoMessage() {}
 
 func (x *DiscardTipFwRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[55]
+	mi := &file_star_service_proto_msgTypes[52]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4604,7 +4449,7 @@ func (x *DiscardTipFwRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DiscardTipFwRequest.ProtoReflect.Descriptor instead.
 func (*DiscardTipFwRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{55}
+	return file_star_service_proto_rawDescGZIP(), []int{52}
 }
 
 func (x *DiscardTipFwRequest) GetXPositions() []int32 {
@@ -4671,7 +4516,7 @@ type DiscardTipFwResponse struct {
 
 func (x *DiscardTipFwResponse) Reset() {
 	*x = DiscardTipFwResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[56]
+	mi := &file_star_service_proto_msgTypes[53]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4683,7 +4528,7 @@ func (x *DiscardTipFwResponse) String() string {
 func (*DiscardTipFwResponse) ProtoMessage() {}
 
 func (x *DiscardTipFwResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[56]
+	mi := &file_star_service_proto_msgTypes[53]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4696,7 +4541,7 @@ func (x *DiscardTipFwResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DiscardTipFwResponse.ProtoReflect.Descriptor instead.
 func (*DiscardTipFwResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{56}
+	return file_star_service_proto_rawDescGZIP(), []int{53}
 }
 
 type AspiratePipRequest struct {
@@ -4749,7 +4594,7 @@ type AspiratePipRequest struct {
 
 func (x *AspiratePipRequest) Reset() {
 	*x = AspiratePipRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[57]
+	mi := &file_star_service_proto_msgTypes[54]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4761,7 +4606,7 @@ func (x *AspiratePipRequest) String() string {
 func (*AspiratePipRequest) ProtoMessage() {}
 
 func (x *AspiratePipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[57]
+	mi := &file_star_service_proto_msgTypes[54]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4774,7 +4619,7 @@ func (x *AspiratePipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AspiratePipRequest.ProtoReflect.Descriptor instead.
 func (*AspiratePipRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{57}
+	return file_star_service_proto_rawDescGZIP(), []int{54}
 }
 
 func (x *AspiratePipRequest) GetAspirationType() []int32 {
@@ -5079,7 +4924,7 @@ type AspiratePipResponse struct {
 
 func (x *AspiratePipResponse) Reset() {
 	*x = AspiratePipResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[58]
+	mi := &file_star_service_proto_msgTypes[55]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5091,7 +4936,7 @@ func (x *AspiratePipResponse) String() string {
 func (*AspiratePipResponse) ProtoMessage() {}
 
 func (x *AspiratePipResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[58]
+	mi := &file_star_service_proto_msgTypes[55]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5104,7 +4949,7 @@ func (x *AspiratePipResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AspiratePipResponse.ProtoReflect.Descriptor instead.
 func (*AspiratePipResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{58}
+	return file_star_service_proto_rawDescGZIP(), []int{55}
 }
 
 type DispensePipRequest struct {
@@ -5151,7 +4996,7 @@ type DispensePipRequest struct {
 
 func (x *DispensePipRequest) Reset() {
 	*x = DispensePipRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[59]
+	mi := &file_star_service_proto_msgTypes[56]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5163,7 +5008,7 @@ func (x *DispensePipRequest) String() string {
 func (*DispensePipRequest) ProtoMessage() {}
 
 func (x *DispensePipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[59]
+	mi := &file_star_service_proto_msgTypes[56]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5176,7 +5021,7 @@ func (x *DispensePipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DispensePipRequest.ProtoReflect.Descriptor instead.
 func (*DispensePipRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{59}
+	return file_star_service_proto_rawDescGZIP(), []int{56}
 }
 
 func (x *DispensePipRequest) GetTipPattern() []bool {
@@ -5439,7 +5284,7 @@ type DispensePipResponse struct {
 
 func (x *DispensePipResponse) Reset() {
 	*x = DispensePipResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[60]
+	mi := &file_star_service_proto_msgTypes[57]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5451,7 +5296,7 @@ func (x *DispensePipResponse) String() string {
 func (*DispensePipResponse) ProtoMessage() {}
 
 func (x *DispensePipResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[60]
+	mi := &file_star_service_proto_msgTypes[57]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5464,7 +5309,7 @@ func (x *DispensePipResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DispensePipResponse.ProtoReflect.Descriptor instead.
 func (*DispensePipResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{60}
+	return file_star_service_proto_rawDescGZIP(), []int{57}
 }
 
 type SpreadPipChannelsRequest struct {
@@ -5475,7 +5320,7 @@ type SpreadPipChannelsRequest struct {
 
 func (x *SpreadPipChannelsRequest) Reset() {
 	*x = SpreadPipChannelsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[61]
+	mi := &file_star_service_proto_msgTypes[58]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5487,7 +5332,7 @@ func (x *SpreadPipChannelsRequest) String() string {
 func (*SpreadPipChannelsRequest) ProtoMessage() {}
 
 func (x *SpreadPipChannelsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[61]
+	mi := &file_star_service_proto_msgTypes[58]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5500,7 +5345,7 @@ func (x *SpreadPipChannelsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SpreadPipChannelsRequest.ProtoReflect.Descriptor instead.
 func (*SpreadPipChannelsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{61}
+	return file_star_service_proto_rawDescGZIP(), []int{58}
 }
 
 type SpreadPipChannelsResponse struct {
@@ -5511,7 +5356,7 @@ type SpreadPipChannelsResponse struct {
 
 func (x *SpreadPipChannelsResponse) Reset() {
 	*x = SpreadPipChannelsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[62]
+	mi := &file_star_service_proto_msgTypes[59]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5523,7 +5368,7 @@ func (x *SpreadPipChannelsResponse) String() string {
 func (*SpreadPipChannelsResponse) ProtoMessage() {}
 
 func (x *SpreadPipChannelsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[62]
+	mi := &file_star_service_proto_msgTypes[59]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5536,7 +5381,7 @@ func (x *SpreadPipChannelsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SpreadPipChannelsResponse.ProtoReflect.Descriptor instead.
 func (*SpreadPipChannelsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{62}
+	return file_star_service_proto_rawDescGZIP(), []int{59}
 }
 
 type MoveAllPipettingChannelsToDefinedPositionRequest struct {
@@ -5552,7 +5397,7 @@ type MoveAllPipettingChannelsToDefinedPositionRequest struct {
 
 func (x *MoveAllPipettingChannelsToDefinedPositionRequest) Reset() {
 	*x = MoveAllPipettingChannelsToDefinedPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[63]
+	mi := &file_star_service_proto_msgTypes[60]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5564,7 +5409,7 @@ func (x *MoveAllPipettingChannelsToDefinedPositionRequest) String() string {
 func (*MoveAllPipettingChannelsToDefinedPositionRequest) ProtoMessage() {}
 
 func (x *MoveAllPipettingChannelsToDefinedPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[63]
+	mi := &file_star_service_proto_msgTypes[60]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5577,7 +5422,7 @@ func (x *MoveAllPipettingChannelsToDefinedPositionRequest) ProtoReflect() protor
 
 // Deprecated: Use MoveAllPipettingChannelsToDefinedPositionRequest.ProtoReflect.Descriptor instead.
 func (*MoveAllPipettingChannelsToDefinedPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{63}
+	return file_star_service_proto_rawDescGZIP(), []int{60}
 }
 
 func (x *MoveAllPipettingChannelsToDefinedPositionRequest) GetTipPattern() bool {
@@ -5623,7 +5468,7 @@ type MoveAllPipettingChannelsToDefinedPositionResponse struct {
 
 func (x *MoveAllPipettingChannelsToDefinedPositionResponse) Reset() {
 	*x = MoveAllPipettingChannelsToDefinedPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[64]
+	mi := &file_star_service_proto_msgTypes[61]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5635,7 +5480,7 @@ func (x *MoveAllPipettingChannelsToDefinedPositionResponse) String() string {
 func (*MoveAllPipettingChannelsToDefinedPositionResponse) ProtoMessage() {}
 
 func (x *MoveAllPipettingChannelsToDefinedPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[64]
+	mi := &file_star_service_proto_msgTypes[61]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5648,7 +5493,7 @@ func (x *MoveAllPipettingChannelsToDefinedPositionResponse) ProtoReflect() proto
 
 // Deprecated: Use MoveAllPipettingChannelsToDefinedPositionResponse.ProtoReflect.Descriptor instead.
 func (*MoveAllPipettingChannelsToDefinedPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{64}
+	return file_star_service_proto_rawDescGZIP(), []int{61}
 }
 
 type DefineTipNeedleRequest struct {
@@ -5665,7 +5510,7 @@ type DefineTipNeedleRequest struct {
 
 func (x *DefineTipNeedleRequest) Reset() {
 	*x = DefineTipNeedleRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[65]
+	mi := &file_star_service_proto_msgTypes[62]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5677,7 +5522,7 @@ func (x *DefineTipNeedleRequest) String() string {
 func (*DefineTipNeedleRequest) ProtoMessage() {}
 
 func (x *DefineTipNeedleRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[65]
+	mi := &file_star_service_proto_msgTypes[62]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5690,7 +5535,7 @@ func (x *DefineTipNeedleRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DefineTipNeedleRequest.ProtoReflect.Descriptor instead.
 func (*DefineTipNeedleRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{65}
+	return file_star_service_proto_rawDescGZIP(), []int{62}
 }
 
 func (x *DefineTipNeedleRequest) GetTipTypeTableIndex() int32 {
@@ -5743,7 +5588,7 @@ type DefineTipNeedleResponse struct {
 
 func (x *DefineTipNeedleResponse) Reset() {
 	*x = DefineTipNeedleResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[66]
+	mi := &file_star_service_proto_msgTypes[63]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5755,7 +5600,7 @@ func (x *DefineTipNeedleResponse) String() string {
 func (*DefineTipNeedleResponse) ProtoMessage() {}
 
 func (x *DefineTipNeedleResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[66]
+	mi := &file_star_service_proto_msgTypes[63]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5768,14 +5613,14 @@ func (x *DefineTipNeedleResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DefineTipNeedleResponse.ProtoReflect.Descriptor instead.
 func (*DefineTipNeedleResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{66}
+	return file_star_service_proto_rawDescGZIP(), []int{63}
 }
 
 type ProbeLiquidHeightsRequest struct {
 	state              protoimpl.MessageState `protogen:"open.v1"`
 	ContainerNames     []string               `protobuf:"bytes,1,rep,name=container_names,json=containerNames,proto3" json:"container_names,omitempty"`
 	UseChannels        []int32                `protobuf:"varint,2,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
-	ResourceOffsets    []*Coordinate          `protobuf:"bytes,3,rep,name=resource_offsets,json=resourceOffsets,proto3" json:"resource_offsets,omitempty"`
+	ResourceOffsets    []*v1.Coordinate       `protobuf:"bytes,3,rep,name=resource_offsets,json=resourceOffsets,proto3" json:"resource_offsets,omitempty"`
 	LldMode            int32                  `protobuf:"varint,4,opt,name=lld_mode,json=lldMode,proto3" json:"lld_mode,omitempty"`
 	SearchSpeed        float64                `protobuf:"fixed64,5,opt,name=search_speed,json=searchSpeed,proto3" json:"search_speed,omitempty"`
 	NReplicates        int32                  `protobuf:"varint,6,opt,name=n_replicates,json=nReplicates,proto3" json:"n_replicates,omitempty"`
@@ -5786,7 +5631,7 @@ type ProbeLiquidHeightsRequest struct {
 
 func (x *ProbeLiquidHeightsRequest) Reset() {
 	*x = ProbeLiquidHeightsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[67]
+	mi := &file_star_service_proto_msgTypes[64]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5798,7 +5643,7 @@ func (x *ProbeLiquidHeightsRequest) String() string {
 func (*ProbeLiquidHeightsRequest) ProtoMessage() {}
 
 func (x *ProbeLiquidHeightsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[67]
+	mi := &file_star_service_proto_msgTypes[64]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5811,7 +5656,7 @@ func (x *ProbeLiquidHeightsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ProbeLiquidHeightsRequest.ProtoReflect.Descriptor instead.
 func (*ProbeLiquidHeightsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{67}
+	return file_star_service_proto_rawDescGZIP(), []int{64}
 }
 
 func (x *ProbeLiquidHeightsRequest) GetContainerNames() []string {
@@ -5828,7 +5673,7 @@ func (x *ProbeLiquidHeightsRequest) GetUseChannels() []int32 {
 	return nil
 }
 
-func (x *ProbeLiquidHeightsRequest) GetResourceOffsets() []*Coordinate {
+func (x *ProbeLiquidHeightsRequest) GetResourceOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.ResourceOffsets
 	}
@@ -5872,7 +5717,7 @@ type ProbeLiquidHeightsResponse struct {
 
 func (x *ProbeLiquidHeightsResponse) Reset() {
 	*x = ProbeLiquidHeightsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[68]
+	mi := &file_star_service_proto_msgTypes[65]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5884,7 +5729,7 @@ func (x *ProbeLiquidHeightsResponse) String() string {
 func (*ProbeLiquidHeightsResponse) ProtoMessage() {}
 
 func (x *ProbeLiquidHeightsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[68]
+	mi := &file_star_service_proto_msgTypes[65]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5897,7 +5742,7 @@ func (x *ProbeLiquidHeightsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ProbeLiquidHeightsResponse.ProtoReflect.Descriptor instead.
 func (*ProbeLiquidHeightsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{68}
+	return file_star_service_proto_rawDescGZIP(), []int{65}
 }
 
 func (x *ProbeLiquidHeightsResponse) GetHeights() []float64 {
@@ -5911,7 +5756,7 @@ type ProbeLiquidVolumesRequest struct {
 	state              protoimpl.MessageState `protogen:"open.v1"`
 	ContainerNames     []string               `protobuf:"bytes,1,rep,name=container_names,json=containerNames,proto3" json:"container_names,omitempty"`
 	UseChannels        []int32                `protobuf:"varint,2,rep,packed,name=use_channels,json=useChannels,proto3" json:"use_channels,omitempty"`
-	ResourceOffsets    []*Coordinate          `protobuf:"bytes,3,rep,name=resource_offsets,json=resourceOffsets,proto3" json:"resource_offsets,omitempty"`
+	ResourceOffsets    []*v1.Coordinate       `protobuf:"bytes,3,rep,name=resource_offsets,json=resourceOffsets,proto3" json:"resource_offsets,omitempty"`
 	LldMode            int32                  `protobuf:"varint,4,opt,name=lld_mode,json=lldMode,proto3" json:"lld_mode,omitempty"`
 	SearchSpeed        float64                `protobuf:"fixed64,5,opt,name=search_speed,json=searchSpeed,proto3" json:"search_speed,omitempty"`
 	NReplicates        int32                  `protobuf:"varint,6,opt,name=n_replicates,json=nReplicates,proto3" json:"n_replicates,omitempty"`
@@ -5922,7 +5767,7 @@ type ProbeLiquidVolumesRequest struct {
 
 func (x *ProbeLiquidVolumesRequest) Reset() {
 	*x = ProbeLiquidVolumesRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[69]
+	mi := &file_star_service_proto_msgTypes[66]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5934,7 +5779,7 @@ func (x *ProbeLiquidVolumesRequest) String() string {
 func (*ProbeLiquidVolumesRequest) ProtoMessage() {}
 
 func (x *ProbeLiquidVolumesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[69]
+	mi := &file_star_service_proto_msgTypes[66]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5947,7 +5792,7 @@ func (x *ProbeLiquidVolumesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ProbeLiquidVolumesRequest.ProtoReflect.Descriptor instead.
 func (*ProbeLiquidVolumesRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{69}
+	return file_star_service_proto_rawDescGZIP(), []int{66}
 }
 
 func (x *ProbeLiquidVolumesRequest) GetContainerNames() []string {
@@ -5964,7 +5809,7 @@ func (x *ProbeLiquidVolumesRequest) GetUseChannels() []int32 {
 	return nil
 }
 
-func (x *ProbeLiquidVolumesRequest) GetResourceOffsets() []*Coordinate {
+func (x *ProbeLiquidVolumesRequest) GetResourceOffsets() []*v1.Coordinate {
 	if x != nil {
 		return x.ResourceOffsets
 	}
@@ -6008,7 +5853,7 @@ type ProbeLiquidVolumesResponse struct {
 
 func (x *ProbeLiquidVolumesResponse) Reset() {
 	*x = ProbeLiquidVolumesResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[70]
+	mi := &file_star_service_proto_msgTypes[67]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6020,7 +5865,7 @@ func (x *ProbeLiquidVolumesResponse) String() string {
 func (*ProbeLiquidVolumesResponse) ProtoMessage() {}
 
 func (x *ProbeLiquidVolumesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[70]
+	mi := &file_star_service_proto_msgTypes[67]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6033,7 +5878,7 @@ func (x *ProbeLiquidVolumesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ProbeLiquidVolumesResponse.ProtoReflect.Descriptor instead.
 func (*ProbeLiquidVolumesResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{70}
+	return file_star_service_proto_rawDescGZIP(), []int{67}
 }
 
 func (x *ProbeLiquidVolumesResponse) GetVolumes() []float64 {
@@ -6051,7 +5896,7 @@ type RequestTipPresenceRequest struct {
 
 func (x *RequestTipPresenceRequest) Reset() {
 	*x = RequestTipPresenceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[71]
+	mi := &file_star_service_proto_msgTypes[68]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6063,7 +5908,7 @@ func (x *RequestTipPresenceRequest) String() string {
 func (*RequestTipPresenceRequest) ProtoMessage() {}
 
 func (x *RequestTipPresenceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[71]
+	mi := &file_star_service_proto_msgTypes[68]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6076,7 +5921,7 @@ func (x *RequestTipPresenceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestTipPresenceRequest.ProtoReflect.Descriptor instead.
 func (*RequestTipPresenceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{71}
+	return file_star_service_proto_rawDescGZIP(), []int{68}
 }
 
 type RequestTipPresenceResponse struct {
@@ -6088,7 +5933,7 @@ type RequestTipPresenceResponse struct {
 
 func (x *RequestTipPresenceResponse) Reset() {
 	*x = RequestTipPresenceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[72]
+	mi := &file_star_service_proto_msgTypes[69]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6100,7 +5945,7 @@ func (x *RequestTipPresenceResponse) String() string {
 func (*RequestTipPresenceResponse) ProtoMessage() {}
 
 func (x *RequestTipPresenceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[72]
+	mi := &file_star_service_proto_msgTypes[69]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6113,7 +5958,7 @@ func (x *RequestTipPresenceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestTipPresenceResponse.ProtoReflect.Descriptor instead.
 func (*RequestTipPresenceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{72}
+	return file_star_service_proto_rawDescGZIP(), []int{69}
 }
 
 func (x *RequestTipPresenceResponse) GetTipPresences() []int32 {
@@ -6131,7 +5976,7 @@ type ChannelsSenseTipPresenceRequest struct {
 
 func (x *ChannelsSenseTipPresenceRequest) Reset() {
 	*x = ChannelsSenseTipPresenceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[73]
+	mi := &file_star_service_proto_msgTypes[70]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6143,7 +5988,7 @@ func (x *ChannelsSenseTipPresenceRequest) String() string {
 func (*ChannelsSenseTipPresenceRequest) ProtoMessage() {}
 
 func (x *ChannelsSenseTipPresenceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[73]
+	mi := &file_star_service_proto_msgTypes[70]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6156,7 +6001,7 @@ func (x *ChannelsSenseTipPresenceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChannelsSenseTipPresenceRequest.ProtoReflect.Descriptor instead.
 func (*ChannelsSenseTipPresenceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{73}
+	return file_star_service_proto_rawDescGZIP(), []int{70}
 }
 
 type ChannelsSenseTipPresenceResponse struct {
@@ -6168,7 +6013,7 @@ type ChannelsSenseTipPresenceResponse struct {
 
 func (x *ChannelsSenseTipPresenceResponse) Reset() {
 	*x = ChannelsSenseTipPresenceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[74]
+	mi := &file_star_service_proto_msgTypes[71]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6180,7 +6025,7 @@ func (x *ChannelsSenseTipPresenceResponse) String() string {
 func (*ChannelsSenseTipPresenceResponse) ProtoMessage() {}
 
 func (x *ChannelsSenseTipPresenceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[74]
+	mi := &file_star_service_proto_msgTypes[71]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6193,7 +6038,7 @@ func (x *ChannelsSenseTipPresenceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChannelsSenseTipPresenceResponse.ProtoReflect.Descriptor instead.
 func (*ChannelsSenseTipPresenceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{74}
+	return file_star_service_proto_rawDescGZIP(), []int{71}
 }
 
 func (x *ChannelsSenseTipPresenceResponse) GetTipPresences() []int32 {
@@ -6211,7 +6056,7 @@ type RequestPipHeightLastLldRequest struct {
 
 func (x *RequestPipHeightLastLldRequest) Reset() {
 	*x = RequestPipHeightLastLldRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[75]
+	mi := &file_star_service_proto_msgTypes[72]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6223,7 +6068,7 @@ func (x *RequestPipHeightLastLldRequest) String() string {
 func (*RequestPipHeightLastLldRequest) ProtoMessage() {}
 
 func (x *RequestPipHeightLastLldRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[75]
+	mi := &file_star_service_proto_msgTypes[72]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6236,7 +6081,7 @@ func (x *RequestPipHeightLastLldRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPipHeightLastLldRequest.ProtoReflect.Descriptor instead.
 func (*RequestPipHeightLastLldRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{75}
+	return file_star_service_proto_rawDescGZIP(), []int{72}
 }
 
 type RequestPipHeightLastLldResponse struct {
@@ -6248,7 +6093,7 @@ type RequestPipHeightLastLldResponse struct {
 
 func (x *RequestPipHeightLastLldResponse) Reset() {
 	*x = RequestPipHeightLastLldResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[76]
+	mi := &file_star_service_proto_msgTypes[73]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6260,7 +6105,7 @@ func (x *RequestPipHeightLastLldResponse) String() string {
 func (*RequestPipHeightLastLldResponse) ProtoMessage() {}
 
 func (x *RequestPipHeightLastLldResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[76]
+	mi := &file_star_service_proto_msgTypes[73]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6273,7 +6118,7 @@ func (x *RequestPipHeightLastLldResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPipHeightLastLldResponse.ProtoReflect.Descriptor instead.
 func (*RequestPipHeightLastLldResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{76}
+	return file_star_service_proto_rawDescGZIP(), []int{73}
 }
 
 func (x *RequestPipHeightLastLldResponse) GetHeights() []float64 {
@@ -6291,7 +6136,7 @@ type RequestTadmStatusRequest struct {
 
 func (x *RequestTadmStatusRequest) Reset() {
 	*x = RequestTadmStatusRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[77]
+	mi := &file_star_service_proto_msgTypes[74]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6303,7 +6148,7 @@ func (x *RequestTadmStatusRequest) String() string {
 func (*RequestTadmStatusRequest) ProtoMessage() {}
 
 func (x *RequestTadmStatusRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[77]
+	mi := &file_star_service_proto_msgTypes[74]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6316,7 +6161,7 @@ func (x *RequestTadmStatusRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestTadmStatusRequest.ProtoReflect.Descriptor instead.
 func (*RequestTadmStatusRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{77}
+	return file_star_service_proto_rawDescGZIP(), []int{74}
 }
 
 type RequestTadmStatusResponse struct {
@@ -6327,7 +6172,7 @@ type RequestTadmStatusResponse struct {
 
 func (x *RequestTadmStatusResponse) Reset() {
 	*x = RequestTadmStatusResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[78]
+	mi := &file_star_service_proto_msgTypes[75]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6339,7 +6184,7 @@ func (x *RequestTadmStatusResponse) String() string {
 func (*RequestTadmStatusResponse) ProtoMessage() {}
 
 func (x *RequestTadmStatusResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[78]
+	mi := &file_star_service_proto_msgTypes[75]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6352,7 +6197,7 @@ func (x *RequestTadmStatusResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestTadmStatusResponse.ProtoReflect.Descriptor instead.
 func (*RequestTadmStatusResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{78}
+	return file_star_service_proto_rawDescGZIP(), []int{75}
 }
 
 type RequestVolumeInTipRequest struct {
@@ -6364,7 +6209,7 @@ type RequestVolumeInTipRequest struct {
 
 func (x *RequestVolumeInTipRequest) Reset() {
 	*x = RequestVolumeInTipRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[79]
+	mi := &file_star_service_proto_msgTypes[76]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6376,7 +6221,7 @@ func (x *RequestVolumeInTipRequest) String() string {
 func (*RequestVolumeInTipRequest) ProtoMessage() {}
 
 func (x *RequestVolumeInTipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[79]
+	mi := &file_star_service_proto_msgTypes[76]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6389,7 +6234,7 @@ func (x *RequestVolumeInTipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestVolumeInTipRequest.ProtoReflect.Descriptor instead.
 func (*RequestVolumeInTipRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{79}
+	return file_star_service_proto_rawDescGZIP(), []int{76}
 }
 
 func (x *RequestVolumeInTipRequest) GetChannel() int32 {
@@ -6408,7 +6253,7 @@ type RequestVolumeInTipResponse struct {
 
 func (x *RequestVolumeInTipResponse) Reset() {
 	*x = RequestVolumeInTipResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[80]
+	mi := &file_star_service_proto_msgTypes[77]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6420,7 +6265,7 @@ func (x *RequestVolumeInTipResponse) String() string {
 func (*RequestVolumeInTipResponse) ProtoMessage() {}
 
 func (x *RequestVolumeInTipResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[80]
+	mi := &file_star_service_proto_msgTypes[77]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6433,7 +6278,7 @@ func (x *RequestVolumeInTipResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestVolumeInTipResponse.ProtoReflect.Descriptor instead.
 func (*RequestVolumeInTipResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{80}
+	return file_star_service_proto_rawDescGZIP(), []int{77}
 }
 
 func (x *RequestVolumeInTipResponse) GetVolume() float64 {
@@ -6452,7 +6297,7 @@ type RequestTipLenOnChannelRequest struct {
 
 func (x *RequestTipLenOnChannelRequest) Reset() {
 	*x = RequestTipLenOnChannelRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[81]
+	mi := &file_star_service_proto_msgTypes[78]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6464,7 +6309,7 @@ func (x *RequestTipLenOnChannelRequest) String() string {
 func (*RequestTipLenOnChannelRequest) ProtoMessage() {}
 
 func (x *RequestTipLenOnChannelRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[81]
+	mi := &file_star_service_proto_msgTypes[78]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6477,7 +6322,7 @@ func (x *RequestTipLenOnChannelRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestTipLenOnChannelRequest.ProtoReflect.Descriptor instead.
 func (*RequestTipLenOnChannelRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{81}
+	return file_star_service_proto_rawDescGZIP(), []int{78}
 }
 
 func (x *RequestTipLenOnChannelRequest) GetChannelIdx() int32 {
@@ -6496,7 +6341,7 @@ type RequestTipLenOnChannelResponse struct {
 
 func (x *RequestTipLenOnChannelResponse) Reset() {
 	*x = RequestTipLenOnChannelResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[82]
+	mi := &file_star_service_proto_msgTypes[79]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6508,7 +6353,7 @@ func (x *RequestTipLenOnChannelResponse) String() string {
 func (*RequestTipLenOnChannelResponse) ProtoMessage() {}
 
 func (x *RequestTipLenOnChannelResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[82]
+	mi := &file_star_service_proto_msgTypes[79]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6521,7 +6366,7 @@ func (x *RequestTipLenOnChannelResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestTipLenOnChannelResponse.ProtoReflect.Descriptor instead.
 func (*RequestTipLenOnChannelResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{82}
+	return file_star_service_proto_rawDescGZIP(), []int{79}
 }
 
 func (x *RequestTipLenOnChannelResponse) GetLength() float64 {
@@ -6540,7 +6385,7 @@ type RequestProbeZPositionRequest struct {
 
 func (x *RequestProbeZPositionRequest) Reset() {
 	*x = RequestProbeZPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[83]
+	mi := &file_star_service_proto_msgTypes[80]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6552,7 +6397,7 @@ func (x *RequestProbeZPositionRequest) String() string {
 func (*RequestProbeZPositionRequest) ProtoMessage() {}
 
 func (x *RequestProbeZPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[83]
+	mi := &file_star_service_proto_msgTypes[80]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6565,7 +6410,7 @@ func (x *RequestProbeZPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestProbeZPositionRequest.ProtoReflect.Descriptor instead.
 func (*RequestProbeZPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{83}
+	return file_star_service_proto_rawDescGZIP(), []int{80}
 }
 
 func (x *RequestProbeZPositionRequest) GetChannelIdx() int32 {
@@ -6584,7 +6429,7 @@ type RequestProbeZPositionResponse struct {
 
 func (x *RequestProbeZPositionResponse) Reset() {
 	*x = RequestProbeZPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[84]
+	mi := &file_star_service_proto_msgTypes[81]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6596,7 +6441,7 @@ func (x *RequestProbeZPositionResponse) String() string {
 func (*RequestProbeZPositionResponse) ProtoMessage() {}
 
 func (x *RequestProbeZPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[84]
+	mi := &file_star_service_proto_msgTypes[81]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6609,7 +6454,7 @@ func (x *RequestProbeZPositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestProbeZPositionResponse.ProtoReflect.Descriptor instead.
 func (*RequestProbeZPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{84}
+	return file_star_service_proto_rawDescGZIP(), []int{81}
 }
 
 func (x *RequestProbeZPositionResponse) GetZPosition() float64 {
@@ -6633,7 +6478,7 @@ type ClldProbeZHeightUsingChannelRequest struct {
 
 func (x *ClldProbeZHeightUsingChannelRequest) Reset() {
 	*x = ClldProbeZHeightUsingChannelRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[85]
+	mi := &file_star_service_proto_msgTypes[82]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6645,7 +6490,7 @@ func (x *ClldProbeZHeightUsingChannelRequest) String() string {
 func (*ClldProbeZHeightUsingChannelRequest) ProtoMessage() {}
 
 func (x *ClldProbeZHeightUsingChannelRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[85]
+	mi := &file_star_service_proto_msgTypes[82]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6658,7 +6503,7 @@ func (x *ClldProbeZHeightUsingChannelRequest) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use ClldProbeZHeightUsingChannelRequest.ProtoReflect.Descriptor instead.
 func (*ClldProbeZHeightUsingChannelRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{85}
+	return file_star_service_proto_rawDescGZIP(), []int{82}
 }
 
 func (x *ClldProbeZHeightUsingChannelRequest) GetChannelIdx() int32 {
@@ -6704,7 +6549,7 @@ type ClldProbeZHeightUsingChannelResponse struct {
 
 func (x *ClldProbeZHeightUsingChannelResponse) Reset() {
 	*x = ClldProbeZHeightUsingChannelResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[86]
+	mi := &file_star_service_proto_msgTypes[83]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6716,7 +6561,7 @@ func (x *ClldProbeZHeightUsingChannelResponse) String() string {
 func (*ClldProbeZHeightUsingChannelResponse) ProtoMessage() {}
 
 func (x *ClldProbeZHeightUsingChannelResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[86]
+	mi := &file_star_service_proto_msgTypes[83]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6729,7 +6574,7 @@ func (x *ClldProbeZHeightUsingChannelResponse) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use ClldProbeZHeightUsingChannelResponse.ProtoReflect.Descriptor instead.
 func (*ClldProbeZHeightUsingChannelResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{86}
+	return file_star_service_proto_rawDescGZIP(), []int{83}
 }
 
 type PlldProbeZHeightUsingChannelRequest struct {
@@ -6745,7 +6590,7 @@ type PlldProbeZHeightUsingChannelRequest struct {
 
 func (x *PlldProbeZHeightUsingChannelRequest) Reset() {
 	*x = PlldProbeZHeightUsingChannelRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[87]
+	mi := &file_star_service_proto_msgTypes[84]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6757,7 +6602,7 @@ func (x *PlldProbeZHeightUsingChannelRequest) String() string {
 func (*PlldProbeZHeightUsingChannelRequest) ProtoMessage() {}
 
 func (x *PlldProbeZHeightUsingChannelRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[87]
+	mi := &file_star_service_proto_msgTypes[84]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6770,7 +6615,7 @@ func (x *PlldProbeZHeightUsingChannelRequest) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use PlldProbeZHeightUsingChannelRequest.ProtoReflect.Descriptor instead.
 func (*PlldProbeZHeightUsingChannelRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{87}
+	return file_star_service_proto_rawDescGZIP(), []int{84}
 }
 
 func (x *PlldProbeZHeightUsingChannelRequest) GetChannelIdx() int32 {
@@ -6816,7 +6661,7 @@ type PlldProbeZHeightUsingChannelResponse struct {
 
 func (x *PlldProbeZHeightUsingChannelResponse) Reset() {
 	*x = PlldProbeZHeightUsingChannelResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[88]
+	mi := &file_star_service_proto_msgTypes[85]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6828,7 +6673,7 @@ func (x *PlldProbeZHeightUsingChannelResponse) String() string {
 func (*PlldProbeZHeightUsingChannelResponse) ProtoMessage() {}
 
 func (x *PlldProbeZHeightUsingChannelResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[88]
+	mi := &file_star_service_proto_msgTypes[85]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6841,7 +6686,7 @@ func (x *PlldProbeZHeightUsingChannelResponse) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use PlldProbeZHeightUsingChannelResponse.ProtoReflect.Descriptor instead.
 func (*PlldProbeZHeightUsingChannelResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{88}
+	return file_star_service_proto_rawDescGZIP(), []int{85}
 }
 
 type ZtouchProbeZHeightUsingChannelRequest struct {
@@ -6856,7 +6701,7 @@ type ZtouchProbeZHeightUsingChannelRequest struct {
 
 func (x *ZtouchProbeZHeightUsingChannelRequest) Reset() {
 	*x = ZtouchProbeZHeightUsingChannelRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[89]
+	mi := &file_star_service_proto_msgTypes[86]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6868,7 +6713,7 @@ func (x *ZtouchProbeZHeightUsingChannelRequest) String() string {
 func (*ZtouchProbeZHeightUsingChannelRequest) ProtoMessage() {}
 
 func (x *ZtouchProbeZHeightUsingChannelRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[89]
+	mi := &file_star_service_proto_msgTypes[86]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6881,7 +6726,7 @@ func (x *ZtouchProbeZHeightUsingChannelRequest) ProtoReflect() protoreflect.Mess
 
 // Deprecated: Use ZtouchProbeZHeightUsingChannelRequest.ProtoReflect.Descriptor instead.
 func (*ZtouchProbeZHeightUsingChannelRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{89}
+	return file_star_service_proto_rawDescGZIP(), []int{86}
 }
 
 func (x *ZtouchProbeZHeightUsingChannelRequest) GetChannelIdx() int32 {
@@ -6920,7 +6765,7 @@ type ZtouchProbeZHeightUsingChannelResponse struct {
 
 func (x *ZtouchProbeZHeightUsingChannelResponse) Reset() {
 	*x = ZtouchProbeZHeightUsingChannelResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[90]
+	mi := &file_star_service_proto_msgTypes[87]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6932,7 +6777,7 @@ func (x *ZtouchProbeZHeightUsingChannelResponse) String() string {
 func (*ZtouchProbeZHeightUsingChannelResponse) ProtoMessage() {}
 
 func (x *ZtouchProbeZHeightUsingChannelResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[90]
+	mi := &file_star_service_proto_msgTypes[87]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6945,7 +6790,7 @@ func (x *ZtouchProbeZHeightUsingChannelResponse) ProtoReflect() protoreflect.Mes
 
 // Deprecated: Use ZtouchProbeZHeightUsingChannelResponse.ProtoReflect.Descriptor instead.
 func (*ZtouchProbeZHeightUsingChannelResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{90}
+	return file_star_service_proto_rawDescGZIP(), []int{87}
 }
 
 type PierceFoilRequest struct {
@@ -6963,7 +6808,7 @@ type PierceFoilRequest struct {
 
 func (x *PierceFoilRequest) Reset() {
 	*x = PierceFoilRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[91]
+	mi := &file_star_service_proto_msgTypes[88]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6975,7 +6820,7 @@ func (x *PierceFoilRequest) String() string {
 func (*PierceFoilRequest) ProtoMessage() {}
 
 func (x *PierceFoilRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[91]
+	mi := &file_star_service_proto_msgTypes[88]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6988,7 +6833,7 @@ func (x *PierceFoilRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PierceFoilRequest.ProtoReflect.Descriptor instead.
 func (*PierceFoilRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{91}
+	return file_star_service_proto_rawDescGZIP(), []int{88}
 }
 
 func (x *PierceFoilRequest) GetChannelIdx() int32 {
@@ -7048,7 +6893,7 @@ type PierceFoilResponse struct {
 
 func (x *PierceFoilResponse) Reset() {
 	*x = PierceFoilResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[92]
+	mi := &file_star_service_proto_msgTypes[89]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7060,7 +6905,7 @@ func (x *PierceFoilResponse) String() string {
 func (*PierceFoilResponse) ProtoMessage() {}
 
 func (x *PierceFoilResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[92]
+	mi := &file_star_service_proto_msgTypes[89]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7073,7 +6918,7 @@ func (x *PierceFoilResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PierceFoilResponse.ProtoReflect.Descriptor instead.
 func (*PierceFoilResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{92}
+	return file_star_service_proto_rawDescGZIP(), []int{89}
 }
 
 type PierceFoilHighLevelRequest struct {
@@ -7091,7 +6936,7 @@ type PierceFoilHighLevelRequest struct {
 
 func (x *PierceFoilHighLevelRequest) Reset() {
 	*x = PierceFoilHighLevelRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[93]
+	mi := &file_star_service_proto_msgTypes[90]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7103,7 +6948,7 @@ func (x *PierceFoilHighLevelRequest) String() string {
 func (*PierceFoilHighLevelRequest) ProtoMessage() {}
 
 func (x *PierceFoilHighLevelRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[93]
+	mi := &file_star_service_proto_msgTypes[90]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7116,7 +6961,7 @@ func (x *PierceFoilHighLevelRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PierceFoilHighLevelRequest.ProtoReflect.Descriptor instead.
 func (*PierceFoilHighLevelRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{93}
+	return file_star_service_proto_rawDescGZIP(), []int{90}
 }
 
 func (x *PierceFoilHighLevelRequest) GetWellNames() []string {
@@ -7176,7 +7021,7 @@ type PierceFoilHighLevelResponse struct {
 
 func (x *PierceFoilHighLevelResponse) Reset() {
 	*x = PierceFoilHighLevelResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[94]
+	mi := &file_star_service_proto_msgTypes[91]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7188,7 +7033,7 @@ func (x *PierceFoilHighLevelResponse) String() string {
 func (*PierceFoilHighLevelResponse) ProtoMessage() {}
 
 func (x *PierceFoilHighLevelResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[94]
+	mi := &file_star_service_proto_msgTypes[91]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7201,7 +7046,7 @@ func (x *PierceFoilHighLevelResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PierceFoilHighLevelResponse.ProtoReflect.Descriptor instead.
 func (*PierceFoilHighLevelResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{94}
+	return file_star_service_proto_rawDescGZIP(), []int{91}
 }
 
 type StepOffFoilRequest struct {
@@ -7217,7 +7062,7 @@ type StepOffFoilRequest struct {
 
 func (x *StepOffFoilRequest) Reset() {
 	*x = StepOffFoilRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[95]
+	mi := &file_star_service_proto_msgTypes[92]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7229,7 +7074,7 @@ func (x *StepOffFoilRequest) String() string {
 func (*StepOffFoilRequest) ProtoMessage() {}
 
 func (x *StepOffFoilRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[95]
+	mi := &file_star_service_proto_msgTypes[92]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7242,7 +7087,7 @@ func (x *StepOffFoilRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StepOffFoilRequest.ProtoReflect.Descriptor instead.
 func (*StepOffFoilRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{95}
+	return file_star_service_proto_rawDescGZIP(), []int{92}
 }
 
 func (x *StepOffFoilRequest) GetChannelIdx() int32 {
@@ -7288,7 +7133,7 @@ type StepOffFoilResponse struct {
 
 func (x *StepOffFoilResponse) Reset() {
 	*x = StepOffFoilResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[96]
+	mi := &file_star_service_proto_msgTypes[93]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7300,7 +7145,7 @@ func (x *StepOffFoilResponse) String() string {
 func (*StepOffFoilResponse) ProtoMessage() {}
 
 func (x *StepOffFoilResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[96]
+	mi := &file_star_service_proto_msgTypes[93]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7313,7 +7158,7 @@ func (x *StepOffFoilResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use StepOffFoilResponse.ProtoReflect.Descriptor instead.
 func (*StepOffFoilResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{96}
+	return file_star_service_proto_rawDescGZIP(), []int{93}
 }
 
 type EmptyTipRequest struct {
@@ -7329,7 +7174,7 @@ type EmptyTipRequest struct {
 
 func (x *EmptyTipRequest) Reset() {
 	*x = EmptyTipRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[97]
+	mi := &file_star_service_proto_msgTypes[94]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7341,7 +7186,7 @@ func (x *EmptyTipRequest) String() string {
 func (*EmptyTipRequest) ProtoMessage() {}
 
 func (x *EmptyTipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[97]
+	mi := &file_star_service_proto_msgTypes[94]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7354,7 +7199,7 @@ func (x *EmptyTipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyTipRequest.ProtoReflect.Descriptor instead.
 func (*EmptyTipRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{97}
+	return file_star_service_proto_rawDescGZIP(), []int{94}
 }
 
 func (x *EmptyTipRequest) GetChannelIdx() int32 {
@@ -7400,7 +7245,7 @@ type EmptyTipResponse struct {
 
 func (x *EmptyTipResponse) Reset() {
 	*x = EmptyTipResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[98]
+	mi := &file_star_service_proto_msgTypes[95]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7412,7 +7257,7 @@ func (x *EmptyTipResponse) String() string {
 func (*EmptyTipResponse) ProtoMessage() {}
 
 func (x *EmptyTipResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[98]
+	mi := &file_star_service_proto_msgTypes[95]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7425,7 +7270,7 @@ func (x *EmptyTipResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyTipResponse.ProtoReflect.Descriptor instead.
 func (*EmptyTipResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{98}
+	return file_star_service_proto_rawDescGZIP(), []int{95}
 }
 
 type EmptyTipsRequest struct {
@@ -7441,7 +7286,7 @@ type EmptyTipsRequest struct {
 
 func (x *EmptyTipsRequest) Reset() {
 	*x = EmptyTipsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[99]
+	mi := &file_star_service_proto_msgTypes[96]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7453,7 +7298,7 @@ func (x *EmptyTipsRequest) String() string {
 func (*EmptyTipsRequest) ProtoMessage() {}
 
 func (x *EmptyTipsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[99]
+	mi := &file_star_service_proto_msgTypes[96]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7466,7 +7311,7 @@ func (x *EmptyTipsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyTipsRequest.ProtoReflect.Descriptor instead.
 func (*EmptyTipsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{99}
+	return file_star_service_proto_rawDescGZIP(), []int{96}
 }
 
 func (x *EmptyTipsRequest) GetChannels() []int32 {
@@ -7512,7 +7357,7 @@ type EmptyTipsResponse struct {
 
 func (x *EmptyTipsResponse) Reset() {
 	*x = EmptyTipsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[100]
+	mi := &file_star_service_proto_msgTypes[97]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7524,7 +7369,7 @@ func (x *EmptyTipsResponse) String() string {
 func (*EmptyTipsResponse) ProtoMessage() {}
 
 func (x *EmptyTipsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[100]
+	mi := &file_star_service_proto_msgTypes[97]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7537,7 +7382,7 @@ func (x *EmptyTipsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyTipsResponse.ProtoReflect.Descriptor instead.
 func (*EmptyTipsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{100}
+	return file_star_service_proto_rawDescGZIP(), []int{97}
 }
 
 type MoveChannelXRequest struct {
@@ -7550,7 +7395,7 @@ type MoveChannelXRequest struct {
 
 func (x *MoveChannelXRequest) Reset() {
 	*x = MoveChannelXRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[101]
+	mi := &file_star_service_proto_msgTypes[98]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7562,7 +7407,7 @@ func (x *MoveChannelXRequest) String() string {
 func (*MoveChannelXRequest) ProtoMessage() {}
 
 func (x *MoveChannelXRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[101]
+	mi := &file_star_service_proto_msgTypes[98]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7575,7 +7420,7 @@ func (x *MoveChannelXRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelXRequest.ProtoReflect.Descriptor instead.
 func (*MoveChannelXRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{101}
+	return file_star_service_proto_rawDescGZIP(), []int{98}
 }
 
 func (x *MoveChannelXRequest) GetChannel() int32 {
@@ -7600,7 +7445,7 @@ type MoveChannelXResponse struct {
 
 func (x *MoveChannelXResponse) Reset() {
 	*x = MoveChannelXResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[102]
+	mi := &file_star_service_proto_msgTypes[99]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7612,7 +7457,7 @@ func (x *MoveChannelXResponse) String() string {
 func (*MoveChannelXResponse) ProtoMessage() {}
 
 func (x *MoveChannelXResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[102]
+	mi := &file_star_service_proto_msgTypes[99]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7625,7 +7470,7 @@ func (x *MoveChannelXResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelXResponse.ProtoReflect.Descriptor instead.
 func (*MoveChannelXResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{102}
+	return file_star_service_proto_rawDescGZIP(), []int{99}
 }
 
 type MoveChannelYRequest struct {
@@ -7638,7 +7483,7 @@ type MoveChannelYRequest struct {
 
 func (x *MoveChannelYRequest) Reset() {
 	*x = MoveChannelYRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[103]
+	mi := &file_star_service_proto_msgTypes[100]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7650,7 +7495,7 @@ func (x *MoveChannelYRequest) String() string {
 func (*MoveChannelYRequest) ProtoMessage() {}
 
 func (x *MoveChannelYRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[103]
+	mi := &file_star_service_proto_msgTypes[100]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7663,7 +7508,7 @@ func (x *MoveChannelYRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelYRequest.ProtoReflect.Descriptor instead.
 func (*MoveChannelYRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{103}
+	return file_star_service_proto_rawDescGZIP(), []int{100}
 }
 
 func (x *MoveChannelYRequest) GetChannel() int32 {
@@ -7688,7 +7533,7 @@ type MoveChannelYResponse struct {
 
 func (x *MoveChannelYResponse) Reset() {
 	*x = MoveChannelYResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[104]
+	mi := &file_star_service_proto_msgTypes[101]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7700,7 +7545,7 @@ func (x *MoveChannelYResponse) String() string {
 func (*MoveChannelYResponse) ProtoMessage() {}
 
 func (x *MoveChannelYResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[104]
+	mi := &file_star_service_proto_msgTypes[101]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7713,7 +7558,7 @@ func (x *MoveChannelYResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelYResponse.ProtoReflect.Descriptor instead.
 func (*MoveChannelYResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{104}
+	return file_star_service_proto_rawDescGZIP(), []int{101}
 }
 
 type MoveChannelZRequest struct {
@@ -7726,7 +7571,7 @@ type MoveChannelZRequest struct {
 
 func (x *MoveChannelZRequest) Reset() {
 	*x = MoveChannelZRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[105]
+	mi := &file_star_service_proto_msgTypes[102]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7738,7 +7583,7 @@ func (x *MoveChannelZRequest) String() string {
 func (*MoveChannelZRequest) ProtoMessage() {}
 
 func (x *MoveChannelZRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[105]
+	mi := &file_star_service_proto_msgTypes[102]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7751,7 +7596,7 @@ func (x *MoveChannelZRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelZRequest.ProtoReflect.Descriptor instead.
 func (*MoveChannelZRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{105}
+	return file_star_service_proto_rawDescGZIP(), []int{102}
 }
 
 func (x *MoveChannelZRequest) GetChannel() int32 {
@@ -7776,7 +7621,7 @@ type MoveChannelZResponse struct {
 
 func (x *MoveChannelZResponse) Reset() {
 	*x = MoveChannelZResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[106]
+	mi := &file_star_service_proto_msgTypes[103]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7788,7 +7633,7 @@ func (x *MoveChannelZResponse) String() string {
 func (*MoveChannelZResponse) ProtoMessage() {}
 
 func (x *MoveChannelZResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[106]
+	mi := &file_star_service_proto_msgTypes[103]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7801,7 +7646,7 @@ func (x *MoveChannelZResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelZResponse.ProtoReflect.Descriptor instead.
 func (*MoveChannelZResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{106}
+	return file_star_service_proto_rawDescGZIP(), []int{103}
 }
 
 type MoveChannelXRelativeRequest struct {
@@ -7814,7 +7659,7 @@ type MoveChannelXRelativeRequest struct {
 
 func (x *MoveChannelXRelativeRequest) Reset() {
 	*x = MoveChannelXRelativeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[107]
+	mi := &file_star_service_proto_msgTypes[104]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7826,7 +7671,7 @@ func (x *MoveChannelXRelativeRequest) String() string {
 func (*MoveChannelXRelativeRequest) ProtoMessage() {}
 
 func (x *MoveChannelXRelativeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[107]
+	mi := &file_star_service_proto_msgTypes[104]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7839,7 +7684,7 @@ func (x *MoveChannelXRelativeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelXRelativeRequest.ProtoReflect.Descriptor instead.
 func (*MoveChannelXRelativeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{107}
+	return file_star_service_proto_rawDescGZIP(), []int{104}
 }
 
 func (x *MoveChannelXRelativeRequest) GetChannel() int32 {
@@ -7864,7 +7709,7 @@ type MoveChannelXRelativeResponse struct {
 
 func (x *MoveChannelXRelativeResponse) Reset() {
 	*x = MoveChannelXRelativeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[108]
+	mi := &file_star_service_proto_msgTypes[105]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7876,7 +7721,7 @@ func (x *MoveChannelXRelativeResponse) String() string {
 func (*MoveChannelXRelativeResponse) ProtoMessage() {}
 
 func (x *MoveChannelXRelativeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[108]
+	mi := &file_star_service_proto_msgTypes[105]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7889,7 +7734,7 @@ func (x *MoveChannelXRelativeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelXRelativeResponse.ProtoReflect.Descriptor instead.
 func (*MoveChannelXRelativeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{108}
+	return file_star_service_proto_rawDescGZIP(), []int{105}
 }
 
 type MoveChannelYRelativeRequest struct {
@@ -7902,7 +7747,7 @@ type MoveChannelYRelativeRequest struct {
 
 func (x *MoveChannelYRelativeRequest) Reset() {
 	*x = MoveChannelYRelativeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[109]
+	mi := &file_star_service_proto_msgTypes[106]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7914,7 +7759,7 @@ func (x *MoveChannelYRelativeRequest) String() string {
 func (*MoveChannelYRelativeRequest) ProtoMessage() {}
 
 func (x *MoveChannelYRelativeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[109]
+	mi := &file_star_service_proto_msgTypes[106]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7927,7 +7772,7 @@ func (x *MoveChannelYRelativeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelYRelativeRequest.ProtoReflect.Descriptor instead.
 func (*MoveChannelYRelativeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{109}
+	return file_star_service_proto_rawDescGZIP(), []int{106}
 }
 
 func (x *MoveChannelYRelativeRequest) GetChannel() int32 {
@@ -7952,7 +7797,7 @@ type MoveChannelYRelativeResponse struct {
 
 func (x *MoveChannelYRelativeResponse) Reset() {
 	*x = MoveChannelYRelativeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[110]
+	mi := &file_star_service_proto_msgTypes[107]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7964,7 +7809,7 @@ func (x *MoveChannelYRelativeResponse) String() string {
 func (*MoveChannelYRelativeResponse) ProtoMessage() {}
 
 func (x *MoveChannelYRelativeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[110]
+	mi := &file_star_service_proto_msgTypes[107]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7977,7 +7822,7 @@ func (x *MoveChannelYRelativeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelYRelativeResponse.ProtoReflect.Descriptor instead.
 func (*MoveChannelYRelativeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{110}
+	return file_star_service_proto_rawDescGZIP(), []int{107}
 }
 
 type MoveChannelZRelativeRequest struct {
@@ -7990,7 +7835,7 @@ type MoveChannelZRelativeRequest struct {
 
 func (x *MoveChannelZRelativeRequest) Reset() {
 	*x = MoveChannelZRelativeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[111]
+	mi := &file_star_service_proto_msgTypes[108]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8002,7 +7847,7 @@ func (x *MoveChannelZRelativeRequest) String() string {
 func (*MoveChannelZRelativeRequest) ProtoMessage() {}
 
 func (x *MoveChannelZRelativeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[111]
+	mi := &file_star_service_proto_msgTypes[108]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8015,7 +7860,7 @@ func (x *MoveChannelZRelativeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelZRelativeRequest.ProtoReflect.Descriptor instead.
 func (*MoveChannelZRelativeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{111}
+	return file_star_service_proto_rawDescGZIP(), []int{108}
 }
 
 func (x *MoveChannelZRelativeRequest) GetChannel() int32 {
@@ -8040,7 +7885,7 @@ type MoveChannelZRelativeResponse struct {
 
 func (x *MoveChannelZRelativeResponse) Reset() {
 	*x = MoveChannelZRelativeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[112]
+	mi := &file_star_service_proto_msgTypes[109]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8052,7 +7897,7 @@ func (x *MoveChannelZRelativeResponse) String() string {
 func (*MoveChannelZRelativeResponse) ProtoMessage() {}
 
 func (x *MoveChannelZRelativeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[112]
+	mi := &file_star_service_proto_msgTypes[109]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8065,7 +7910,7 @@ func (x *MoveChannelZRelativeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveChannelZRelativeResponse.ProtoReflect.Descriptor instead.
 func (*MoveChannelZRelativeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{112}
+	return file_star_service_proto_rawDescGZIP(), []int{109}
 }
 
 type PrepareForManualChannelOperationRequest struct {
@@ -8077,7 +7922,7 @@ type PrepareForManualChannelOperationRequest struct {
 
 func (x *PrepareForManualChannelOperationRequest) Reset() {
 	*x = PrepareForManualChannelOperationRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[113]
+	mi := &file_star_service_proto_msgTypes[110]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8089,7 +7934,7 @@ func (x *PrepareForManualChannelOperationRequest) String() string {
 func (*PrepareForManualChannelOperationRequest) ProtoMessage() {}
 
 func (x *PrepareForManualChannelOperationRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[113]
+	mi := &file_star_service_proto_msgTypes[110]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8102,7 +7947,7 @@ func (x *PrepareForManualChannelOperationRequest) ProtoReflect() protoreflect.Me
 
 // Deprecated: Use PrepareForManualChannelOperationRequest.ProtoReflect.Descriptor instead.
 func (*PrepareForManualChannelOperationRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{113}
+	return file_star_service_proto_rawDescGZIP(), []int{110}
 }
 
 func (x *PrepareForManualChannelOperationRequest) GetChannel() int32 {
@@ -8120,7 +7965,7 @@ type PrepareForManualChannelOperationResponse struct {
 
 func (x *PrepareForManualChannelOperationResponse) Reset() {
 	*x = PrepareForManualChannelOperationResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[114]
+	mi := &file_star_service_proto_msgTypes[111]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8132,7 +7977,7 @@ func (x *PrepareForManualChannelOperationResponse) String() string {
 func (*PrepareForManualChannelOperationResponse) ProtoMessage() {}
 
 func (x *PrepareForManualChannelOperationResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[114]
+	mi := &file_star_service_proto_msgTypes[111]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8145,7 +7990,7 @@ func (x *PrepareForManualChannelOperationResponse) ProtoReflect() protoreflect.M
 
 // Deprecated: Use PrepareForManualChannelOperationResponse.ProtoReflect.Descriptor instead.
 func (*PrepareForManualChannelOperationResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{114}
+	return file_star_service_proto_rawDescGZIP(), []int{111}
 }
 
 type MoveAllChannelsInZSafetyRequest struct {
@@ -8156,7 +8001,7 @@ type MoveAllChannelsInZSafetyRequest struct {
 
 func (x *MoveAllChannelsInZSafetyRequest) Reset() {
 	*x = MoveAllChannelsInZSafetyRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[115]
+	mi := &file_star_service_proto_msgTypes[112]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8168,7 +8013,7 @@ func (x *MoveAllChannelsInZSafetyRequest) String() string {
 func (*MoveAllChannelsInZSafetyRequest) ProtoMessage() {}
 
 func (x *MoveAllChannelsInZSafetyRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[115]
+	mi := &file_star_service_proto_msgTypes[112]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8181,7 +8026,7 @@ func (x *MoveAllChannelsInZSafetyRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveAllChannelsInZSafetyRequest.ProtoReflect.Descriptor instead.
 func (*MoveAllChannelsInZSafetyRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{115}
+	return file_star_service_proto_rawDescGZIP(), []int{112}
 }
 
 type MoveAllChannelsInZSafetyResponse struct {
@@ -8192,7 +8037,7 @@ type MoveAllChannelsInZSafetyResponse struct {
 
 func (x *MoveAllChannelsInZSafetyResponse) Reset() {
 	*x = MoveAllChannelsInZSafetyResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[116]
+	mi := &file_star_service_proto_msgTypes[113]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8204,7 +8049,7 @@ func (x *MoveAllChannelsInZSafetyResponse) String() string {
 func (*MoveAllChannelsInZSafetyResponse) ProtoMessage() {}
 
 func (x *MoveAllChannelsInZSafetyResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[116]
+	mi := &file_star_service_proto_msgTypes[113]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8217,7 +8062,7 @@ func (x *MoveAllChannelsInZSafetyResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveAllChannelsInZSafetyResponse.ProtoReflect.Descriptor instead.
 func (*MoveAllChannelsInZSafetyResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{116}
+	return file_star_service_proto_rawDescGZIP(), []int{113}
 }
 
 type PositionSinglePipettingChannelInYDirectionRequest struct {
@@ -8230,7 +8075,7 @@ type PositionSinglePipettingChannelInYDirectionRequest struct {
 
 func (x *PositionSinglePipettingChannelInYDirectionRequest) Reset() {
 	*x = PositionSinglePipettingChannelInYDirectionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[117]
+	mi := &file_star_service_proto_msgTypes[114]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8242,7 +8087,7 @@ func (x *PositionSinglePipettingChannelInYDirectionRequest) String() string {
 func (*PositionSinglePipettingChannelInYDirectionRequest) ProtoMessage() {}
 
 func (x *PositionSinglePipettingChannelInYDirectionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[117]
+	mi := &file_star_service_proto_msgTypes[114]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8255,7 +8100,7 @@ func (x *PositionSinglePipettingChannelInYDirectionRequest) ProtoReflect() proto
 
 // Deprecated: Use PositionSinglePipettingChannelInYDirectionRequest.ProtoReflect.Descriptor instead.
 func (*PositionSinglePipettingChannelInYDirectionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{117}
+	return file_star_service_proto_rawDescGZIP(), []int{114}
 }
 
 func (x *PositionSinglePipettingChannelInYDirectionRequest) GetPipettingChannelIndex() int32 {
@@ -8280,7 +8125,7 @@ type PositionSinglePipettingChannelInYDirectionResponse struct {
 
 func (x *PositionSinglePipettingChannelInYDirectionResponse) Reset() {
 	*x = PositionSinglePipettingChannelInYDirectionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[118]
+	mi := &file_star_service_proto_msgTypes[115]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8292,7 +8137,7 @@ func (x *PositionSinglePipettingChannelInYDirectionResponse) String() string {
 func (*PositionSinglePipettingChannelInYDirectionResponse) ProtoMessage() {}
 
 func (x *PositionSinglePipettingChannelInYDirectionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[118]
+	mi := &file_star_service_proto_msgTypes[115]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8305,7 +8150,7 @@ func (x *PositionSinglePipettingChannelInYDirectionResponse) ProtoReflect() prot
 
 // Deprecated: Use PositionSinglePipettingChannelInYDirectionResponse.ProtoReflect.Descriptor instead.
 func (*PositionSinglePipettingChannelInYDirectionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{118}
+	return file_star_service_proto_rawDescGZIP(), []int{115}
 }
 
 type PositionSinglePipettingChannelInZDirectionRequest struct {
@@ -8318,7 +8163,7 @@ type PositionSinglePipettingChannelInZDirectionRequest struct {
 
 func (x *PositionSinglePipettingChannelInZDirectionRequest) Reset() {
 	*x = PositionSinglePipettingChannelInZDirectionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[119]
+	mi := &file_star_service_proto_msgTypes[116]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8330,7 +8175,7 @@ func (x *PositionSinglePipettingChannelInZDirectionRequest) String() string {
 func (*PositionSinglePipettingChannelInZDirectionRequest) ProtoMessage() {}
 
 func (x *PositionSinglePipettingChannelInZDirectionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[119]
+	mi := &file_star_service_proto_msgTypes[116]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8343,7 +8188,7 @@ func (x *PositionSinglePipettingChannelInZDirectionRequest) ProtoReflect() proto
 
 // Deprecated: Use PositionSinglePipettingChannelInZDirectionRequest.ProtoReflect.Descriptor instead.
 func (*PositionSinglePipettingChannelInZDirectionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{119}
+	return file_star_service_proto_rawDescGZIP(), []int{116}
 }
 
 func (x *PositionSinglePipettingChannelInZDirectionRequest) GetPipettingChannelIndex() int32 {
@@ -8368,7 +8213,7 @@ type PositionSinglePipettingChannelInZDirectionResponse struct {
 
 func (x *PositionSinglePipettingChannelInZDirectionResponse) Reset() {
 	*x = PositionSinglePipettingChannelInZDirectionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[120]
+	mi := &file_star_service_proto_msgTypes[117]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8380,7 +8225,7 @@ func (x *PositionSinglePipettingChannelInZDirectionResponse) String() string {
 func (*PositionSinglePipettingChannelInZDirectionResponse) ProtoMessage() {}
 
 func (x *PositionSinglePipettingChannelInZDirectionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[120]
+	mi := &file_star_service_proto_msgTypes[117]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8393,7 +8238,7 @@ func (x *PositionSinglePipettingChannelInZDirectionResponse) ProtoReflect() prot
 
 // Deprecated: Use PositionSinglePipettingChannelInZDirectionResponse.ProtoReflect.Descriptor instead.
 func (*PositionSinglePipettingChannelInZDirectionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{120}
+	return file_star_service_proto_rawDescGZIP(), []int{117}
 }
 
 type PositionMaxFreeYForNRequest struct {
@@ -8405,7 +8250,7 @@ type PositionMaxFreeYForNRequest struct {
 
 func (x *PositionMaxFreeYForNRequest) Reset() {
 	*x = PositionMaxFreeYForNRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[121]
+	mi := &file_star_service_proto_msgTypes[118]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8417,7 +8262,7 @@ func (x *PositionMaxFreeYForNRequest) String() string {
 func (*PositionMaxFreeYForNRequest) ProtoMessage() {}
 
 func (x *PositionMaxFreeYForNRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[121]
+	mi := &file_star_service_proto_msgTypes[118]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8430,7 +8275,7 @@ func (x *PositionMaxFreeYForNRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PositionMaxFreeYForNRequest.ProtoReflect.Descriptor instead.
 func (*PositionMaxFreeYForNRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{121}
+	return file_star_service_proto_rawDescGZIP(), []int{118}
 }
 
 func (x *PositionMaxFreeYForNRequest) GetPipettingChannelIndex() int32 {
@@ -8448,7 +8293,7 @@ type PositionMaxFreeYForNResponse struct {
 
 func (x *PositionMaxFreeYForNResponse) Reset() {
 	*x = PositionMaxFreeYForNResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[122]
+	mi := &file_star_service_proto_msgTypes[119]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8460,7 +8305,7 @@ func (x *PositionMaxFreeYForNResponse) String() string {
 func (*PositionMaxFreeYForNResponse) ProtoMessage() {}
 
 func (x *PositionMaxFreeYForNResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[122]
+	mi := &file_star_service_proto_msgTypes[119]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8473,7 +8318,7 @@ func (x *PositionMaxFreeYForNResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PositionMaxFreeYForNResponse.ProtoReflect.Descriptor instead.
 func (*PositionMaxFreeYForNResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{122}
+	return file_star_service_proto_rawDescGZIP(), []int{119}
 }
 
 type RequestXPosChannelNRequest struct {
@@ -8485,7 +8330,7 @@ type RequestXPosChannelNRequest struct {
 
 func (x *RequestXPosChannelNRequest) Reset() {
 	*x = RequestXPosChannelNRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[123]
+	mi := &file_star_service_proto_msgTypes[120]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8497,7 +8342,7 @@ func (x *RequestXPosChannelNRequest) String() string {
 func (*RequestXPosChannelNRequest) ProtoMessage() {}
 
 func (x *RequestXPosChannelNRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[123]
+	mi := &file_star_service_proto_msgTypes[120]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8510,7 +8355,7 @@ func (x *RequestXPosChannelNRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestXPosChannelNRequest.ProtoReflect.Descriptor instead.
 func (*RequestXPosChannelNRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{123}
+	return file_star_service_proto_rawDescGZIP(), []int{120}
 }
 
 func (x *RequestXPosChannelNRequest) GetPipettingChannelIndex() int32 {
@@ -8529,7 +8374,7 @@ type RequestXPosChannelNResponse struct {
 
 func (x *RequestXPosChannelNResponse) Reset() {
 	*x = RequestXPosChannelNResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[124]
+	mi := &file_star_service_proto_msgTypes[121]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8541,7 +8386,7 @@ func (x *RequestXPosChannelNResponse) String() string {
 func (*RequestXPosChannelNResponse) ProtoMessage() {}
 
 func (x *RequestXPosChannelNResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[124]
+	mi := &file_star_service_proto_msgTypes[121]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8554,7 +8399,7 @@ func (x *RequestXPosChannelNResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestXPosChannelNResponse.ProtoReflect.Descriptor instead.
 func (*RequestXPosChannelNResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{124}
+	return file_star_service_proto_rawDescGZIP(), []int{121}
 }
 
 func (x *RequestXPosChannelNResponse) GetXPosition() float64 {
@@ -8573,7 +8418,7 @@ type RequestYPosChannelNRequest struct {
 
 func (x *RequestYPosChannelNRequest) Reset() {
 	*x = RequestYPosChannelNRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[125]
+	mi := &file_star_service_proto_msgTypes[122]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8585,7 +8430,7 @@ func (x *RequestYPosChannelNRequest) String() string {
 func (*RequestYPosChannelNRequest) ProtoMessage() {}
 
 func (x *RequestYPosChannelNRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[125]
+	mi := &file_star_service_proto_msgTypes[122]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8598,7 +8443,7 @@ func (x *RequestYPosChannelNRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestYPosChannelNRequest.ProtoReflect.Descriptor instead.
 func (*RequestYPosChannelNRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{125}
+	return file_star_service_proto_rawDescGZIP(), []int{122}
 }
 
 func (x *RequestYPosChannelNRequest) GetPipettingChannelIndex() int32 {
@@ -8617,7 +8462,7 @@ type RequestYPosChannelNResponse struct {
 
 func (x *RequestYPosChannelNResponse) Reset() {
 	*x = RequestYPosChannelNResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[126]
+	mi := &file_star_service_proto_msgTypes[123]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8629,7 +8474,7 @@ func (x *RequestYPosChannelNResponse) String() string {
 func (*RequestYPosChannelNResponse) ProtoMessage() {}
 
 func (x *RequestYPosChannelNResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[126]
+	mi := &file_star_service_proto_msgTypes[123]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8642,7 +8487,7 @@ func (x *RequestYPosChannelNResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestYPosChannelNResponse.ProtoReflect.Descriptor instead.
 func (*RequestYPosChannelNResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{126}
+	return file_star_service_proto_rawDescGZIP(), []int{123}
 }
 
 func (x *RequestYPosChannelNResponse) GetYPosition() float64 {
@@ -8661,7 +8506,7 @@ type RequestZPosChannelNRequest struct {
 
 func (x *RequestZPosChannelNRequest) Reset() {
 	*x = RequestZPosChannelNRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[127]
+	mi := &file_star_service_proto_msgTypes[124]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8673,7 +8518,7 @@ func (x *RequestZPosChannelNRequest) String() string {
 func (*RequestZPosChannelNRequest) ProtoMessage() {}
 
 func (x *RequestZPosChannelNRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[127]
+	mi := &file_star_service_proto_msgTypes[124]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8686,7 +8531,7 @@ func (x *RequestZPosChannelNRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestZPosChannelNRequest.ProtoReflect.Descriptor instead.
 func (*RequestZPosChannelNRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{127}
+	return file_star_service_proto_rawDescGZIP(), []int{124}
 }
 
 func (x *RequestZPosChannelNRequest) GetPipettingChannelIndex() int32 {
@@ -8705,7 +8550,7 @@ type RequestZPosChannelNResponse struct {
 
 func (x *RequestZPosChannelNResponse) Reset() {
 	*x = RequestZPosChannelNResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[128]
+	mi := &file_star_service_proto_msgTypes[125]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8717,7 +8562,7 @@ func (x *RequestZPosChannelNResponse) String() string {
 func (*RequestZPosChannelNResponse) ProtoMessage() {}
 
 func (x *RequestZPosChannelNResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[128]
+	mi := &file_star_service_proto_msgTypes[125]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8730,7 +8575,7 @@ func (x *RequestZPosChannelNResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestZPosChannelNResponse.ProtoReflect.Descriptor instead.
 func (*RequestZPosChannelNResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{128}
+	return file_star_service_proto_rawDescGZIP(), []int{125}
 }
 
 func (x *RequestZPosChannelNResponse) GetZPosition() float64 {
@@ -8749,7 +8594,7 @@ type RequestTipBottomZPositionRequest struct {
 
 func (x *RequestTipBottomZPositionRequest) Reset() {
 	*x = RequestTipBottomZPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[129]
+	mi := &file_star_service_proto_msgTypes[126]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8761,7 +8606,7 @@ func (x *RequestTipBottomZPositionRequest) String() string {
 func (*RequestTipBottomZPositionRequest) ProtoMessage() {}
 
 func (x *RequestTipBottomZPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[129]
+	mi := &file_star_service_proto_msgTypes[126]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8774,7 +8619,7 @@ func (x *RequestTipBottomZPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestTipBottomZPositionRequest.ProtoReflect.Descriptor instead.
 func (*RequestTipBottomZPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{129}
+	return file_star_service_proto_rawDescGZIP(), []int{126}
 }
 
 func (x *RequestTipBottomZPositionRequest) GetChannelIdx() int32 {
@@ -8793,7 +8638,7 @@ type RequestTipBottomZPositionResponse struct {
 
 func (x *RequestTipBottomZPositionResponse) Reset() {
 	*x = RequestTipBottomZPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[130]
+	mi := &file_star_service_proto_msgTypes[127]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8805,7 +8650,7 @@ func (x *RequestTipBottomZPositionResponse) String() string {
 func (*RequestTipBottomZPositionResponse) ProtoMessage() {}
 
 func (x *RequestTipBottomZPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[130]
+	mi := &file_star_service_proto_msgTypes[127]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8818,7 +8663,7 @@ func (x *RequestTipBottomZPositionResponse) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use RequestTipBottomZPositionResponse.ProtoReflect.Descriptor instead.
 func (*RequestTipBottomZPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{130}
+	return file_star_service_proto_rawDescGZIP(), []int{127}
 }
 
 func (x *RequestTipBottomZPositionResponse) GetZPosition() float64 {
@@ -8836,7 +8681,7 @@ type GetChannelsYPositionsRequest struct {
 
 func (x *GetChannelsYPositionsRequest) Reset() {
 	*x = GetChannelsYPositionsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[131]
+	mi := &file_star_service_proto_msgTypes[128]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8848,7 +8693,7 @@ func (x *GetChannelsYPositionsRequest) String() string {
 func (*GetChannelsYPositionsRequest) ProtoMessage() {}
 
 func (x *GetChannelsYPositionsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[131]
+	mi := &file_star_service_proto_msgTypes[128]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8861,7 +8706,7 @@ func (x *GetChannelsYPositionsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetChannelsYPositionsRequest.ProtoReflect.Descriptor instead.
 func (*GetChannelsYPositionsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{131}
+	return file_star_service_proto_rawDescGZIP(), []int{128}
 }
 
 type GetChannelsYPositionsResponse struct {
@@ -8873,7 +8718,7 @@ type GetChannelsYPositionsResponse struct {
 
 func (x *GetChannelsYPositionsResponse) Reset() {
 	*x = GetChannelsYPositionsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[132]
+	mi := &file_star_service_proto_msgTypes[129]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8885,7 +8730,7 @@ func (x *GetChannelsYPositionsResponse) String() string {
 func (*GetChannelsYPositionsResponse) ProtoMessage() {}
 
 func (x *GetChannelsYPositionsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[132]
+	mi := &file_star_service_proto_msgTypes[129]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8898,7 +8743,7 @@ func (x *GetChannelsYPositionsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetChannelsYPositionsResponse.ProtoReflect.Descriptor instead.
 func (*GetChannelsYPositionsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{132}
+	return file_star_service_proto_rawDescGZIP(), []int{129}
 }
 
 func (x *GetChannelsYPositionsResponse) GetPositions() *ChannelFloatMap {
@@ -8918,7 +8763,7 @@ type PositionChannelsInYDirectionRequest struct {
 
 func (x *PositionChannelsInYDirectionRequest) Reset() {
 	*x = PositionChannelsInYDirectionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[133]
+	mi := &file_star_service_proto_msgTypes[130]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8930,7 +8775,7 @@ func (x *PositionChannelsInYDirectionRequest) String() string {
 func (*PositionChannelsInYDirectionRequest) ProtoMessage() {}
 
 func (x *PositionChannelsInYDirectionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[133]
+	mi := &file_star_service_proto_msgTypes[130]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8943,7 +8788,7 @@ func (x *PositionChannelsInYDirectionRequest) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use PositionChannelsInYDirectionRequest.ProtoReflect.Descriptor instead.
 func (*PositionChannelsInYDirectionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{133}
+	return file_star_service_proto_rawDescGZIP(), []int{130}
 }
 
 func (x *PositionChannelsInYDirectionRequest) GetYs() *ChannelFloatMap {
@@ -8968,7 +8813,7 @@ type PositionChannelsInYDirectionResponse struct {
 
 func (x *PositionChannelsInYDirectionResponse) Reset() {
 	*x = PositionChannelsInYDirectionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[134]
+	mi := &file_star_service_proto_msgTypes[131]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8980,7 +8825,7 @@ func (x *PositionChannelsInYDirectionResponse) String() string {
 func (*PositionChannelsInYDirectionResponse) ProtoMessage() {}
 
 func (x *PositionChannelsInYDirectionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[134]
+	mi := &file_star_service_proto_msgTypes[131]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8993,7 +8838,7 @@ func (x *PositionChannelsInYDirectionResponse) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use PositionChannelsInYDirectionResponse.ProtoReflect.Descriptor instead.
 func (*PositionChannelsInYDirectionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{134}
+	return file_star_service_proto_rawDescGZIP(), []int{131}
 }
 
 type GetChannelsZPositionsRequest struct {
@@ -9004,7 +8849,7 @@ type GetChannelsZPositionsRequest struct {
 
 func (x *GetChannelsZPositionsRequest) Reset() {
 	*x = GetChannelsZPositionsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[135]
+	mi := &file_star_service_proto_msgTypes[132]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9016,7 +8861,7 @@ func (x *GetChannelsZPositionsRequest) String() string {
 func (*GetChannelsZPositionsRequest) ProtoMessage() {}
 
 func (x *GetChannelsZPositionsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[135]
+	mi := &file_star_service_proto_msgTypes[132]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9029,7 +8874,7 @@ func (x *GetChannelsZPositionsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetChannelsZPositionsRequest.ProtoReflect.Descriptor instead.
 func (*GetChannelsZPositionsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{135}
+	return file_star_service_proto_rawDescGZIP(), []int{132}
 }
 
 type GetChannelsZPositionsResponse struct {
@@ -9041,7 +8886,7 @@ type GetChannelsZPositionsResponse struct {
 
 func (x *GetChannelsZPositionsResponse) Reset() {
 	*x = GetChannelsZPositionsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[136]
+	mi := &file_star_service_proto_msgTypes[133]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9053,7 +8898,7 @@ func (x *GetChannelsZPositionsResponse) String() string {
 func (*GetChannelsZPositionsResponse) ProtoMessage() {}
 
 func (x *GetChannelsZPositionsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[136]
+	mi := &file_star_service_proto_msgTypes[133]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9066,7 +8911,7 @@ func (x *GetChannelsZPositionsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetChannelsZPositionsResponse.ProtoReflect.Descriptor instead.
 func (*GetChannelsZPositionsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{136}
+	return file_star_service_proto_rawDescGZIP(), []int{133}
 }
 
 func (x *GetChannelsZPositionsResponse) GetPositions() *ChannelFloatMap {
@@ -9085,7 +8930,7 @@ type PositionChannelsInZDirectionRequest struct {
 
 func (x *PositionChannelsInZDirectionRequest) Reset() {
 	*x = PositionChannelsInZDirectionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[137]
+	mi := &file_star_service_proto_msgTypes[134]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9097,7 +8942,7 @@ func (x *PositionChannelsInZDirectionRequest) String() string {
 func (*PositionChannelsInZDirectionRequest) ProtoMessage() {}
 
 func (x *PositionChannelsInZDirectionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[137]
+	mi := &file_star_service_proto_msgTypes[134]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9110,7 +8955,7 @@ func (x *PositionChannelsInZDirectionRequest) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use PositionChannelsInZDirectionRequest.ProtoReflect.Descriptor instead.
 func (*PositionChannelsInZDirectionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{137}
+	return file_star_service_proto_rawDescGZIP(), []int{134}
 }
 
 func (x *PositionChannelsInZDirectionRequest) GetZs() *ChannelFloatMap {
@@ -9128,7 +8973,7 @@ type PositionChannelsInZDirectionResponse struct {
 
 func (x *PositionChannelsInZDirectionResponse) Reset() {
 	*x = PositionChannelsInZDirectionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[138]
+	mi := &file_star_service_proto_msgTypes[135]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9140,7 +8985,7 @@ func (x *PositionChannelsInZDirectionResponse) String() string {
 func (*PositionChannelsInZDirectionResponse) ProtoMessage() {}
 
 func (x *PositionChannelsInZDirectionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[138]
+	mi := &file_star_service_proto_msgTypes[135]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9153,7 +8998,7 @@ func (x *PositionChannelsInZDirectionResponse) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use PositionChannelsInZDirectionResponse.ProtoReflect.Descriptor instead.
 func (*PositionChannelsInZDirectionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{138}
+	return file_star_service_proto_rawDescGZIP(), []int{135}
 }
 
 type RequestPipChannelVersionRequest struct {
@@ -9165,7 +9010,7 @@ type RequestPipChannelVersionRequest struct {
 
 func (x *RequestPipChannelVersionRequest) Reset() {
 	*x = RequestPipChannelVersionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[139]
+	mi := &file_star_service_proto_msgTypes[136]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9177,7 +9022,7 @@ func (x *RequestPipChannelVersionRequest) String() string {
 func (*RequestPipChannelVersionRequest) ProtoMessage() {}
 
 func (x *RequestPipChannelVersionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[139]
+	mi := &file_star_service_proto_msgTypes[136]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9190,7 +9035,7 @@ func (x *RequestPipChannelVersionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPipChannelVersionRequest.ProtoReflect.Descriptor instead.
 func (*RequestPipChannelVersionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{139}
+	return file_star_service_proto_rawDescGZIP(), []int{136}
 }
 
 func (x *RequestPipChannelVersionRequest) GetChannel() int32 {
@@ -9209,7 +9054,7 @@ type RequestPipChannelVersionResponse struct {
 
 func (x *RequestPipChannelVersionResponse) Reset() {
 	*x = RequestPipChannelVersionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[140]
+	mi := &file_star_service_proto_msgTypes[137]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9221,7 +9066,7 @@ func (x *RequestPipChannelVersionResponse) String() string {
 func (*RequestPipChannelVersionResponse) ProtoMessage() {}
 
 func (x *RequestPipChannelVersionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[140]
+	mi := &file_star_service_proto_msgTypes[137]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9234,7 +9079,7 @@ func (x *RequestPipChannelVersionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPipChannelVersionResponse.ProtoReflect.Descriptor instead.
 func (*RequestPipChannelVersionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{140}
+	return file_star_service_proto_rawDescGZIP(), []int{137}
 }
 
 func (x *RequestPipChannelVersionResponse) GetVersion() string {
@@ -9254,7 +9099,7 @@ type InitializeCore96HeadRequest struct {
 
 func (x *InitializeCore96HeadRequest) Reset() {
 	*x = InitializeCore96HeadRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[141]
+	mi := &file_star_service_proto_msgTypes[138]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9266,7 +9111,7 @@ func (x *InitializeCore96HeadRequest) String() string {
 func (*InitializeCore96HeadRequest) ProtoMessage() {}
 
 func (x *InitializeCore96HeadRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[141]
+	mi := &file_star_service_proto_msgTypes[138]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9279,7 +9124,7 @@ func (x *InitializeCore96HeadRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeCore96HeadRequest.ProtoReflect.Descriptor instead.
 func (*InitializeCore96HeadRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{141}
+	return file_star_service_proto_rawDescGZIP(), []int{138}
 }
 
 func (x *InitializeCore96HeadRequest) GetTrash96Name() string {
@@ -9304,7 +9149,7 @@ type InitializeCore96HeadResponse struct {
 
 func (x *InitializeCore96HeadResponse) Reset() {
 	*x = InitializeCore96HeadResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[142]
+	mi := &file_star_service_proto_msgTypes[139]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9316,7 +9161,7 @@ func (x *InitializeCore96HeadResponse) String() string {
 func (*InitializeCore96HeadResponse) ProtoMessage() {}
 
 func (x *InitializeCore96HeadResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[142]
+	mi := &file_star_service_proto_msgTypes[139]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9329,7 +9174,7 @@ func (x *InitializeCore96HeadResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeCore96HeadResponse.ProtoReflect.Descriptor instead.
 func (*InitializeCore96HeadResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{142}
+	return file_star_service_proto_rawDescGZIP(), []int{139}
 }
 
 type RequestCore96HeadInitializationStatusRequest struct {
@@ -9340,7 +9185,7 @@ type RequestCore96HeadInitializationStatusRequest struct {
 
 func (x *RequestCore96HeadInitializationStatusRequest) Reset() {
 	*x = RequestCore96HeadInitializationStatusRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[143]
+	mi := &file_star_service_proto_msgTypes[140]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9352,7 +9197,7 @@ func (x *RequestCore96HeadInitializationStatusRequest) String() string {
 func (*RequestCore96HeadInitializationStatusRequest) ProtoMessage() {}
 
 func (x *RequestCore96HeadInitializationStatusRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[143]
+	mi := &file_star_service_proto_msgTypes[140]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9365,7 +9210,7 @@ func (x *RequestCore96HeadInitializationStatusRequest) ProtoReflect() protorefle
 
 // Deprecated: Use RequestCore96HeadInitializationStatusRequest.ProtoReflect.Descriptor instead.
 func (*RequestCore96HeadInitializationStatusRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{143}
+	return file_star_service_proto_rawDescGZIP(), []int{140}
 }
 
 type RequestCore96HeadInitializationStatusResponse struct {
@@ -9377,7 +9222,7 @@ type RequestCore96HeadInitializationStatusResponse struct {
 
 func (x *RequestCore96HeadInitializationStatusResponse) Reset() {
 	*x = RequestCore96HeadInitializationStatusResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[144]
+	mi := &file_star_service_proto_msgTypes[141]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9389,7 +9234,7 @@ func (x *RequestCore96HeadInitializationStatusResponse) String() string {
 func (*RequestCore96HeadInitializationStatusResponse) ProtoMessage() {}
 
 func (x *RequestCore96HeadInitializationStatusResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[144]
+	mi := &file_star_service_proto_msgTypes[141]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9402,7 +9247,7 @@ func (x *RequestCore96HeadInitializationStatusResponse) ProtoReflect() protorefl
 
 // Deprecated: Use RequestCore96HeadInitializationStatusResponse.ProtoReflect.Descriptor instead.
 func (*RequestCore96HeadInitializationStatusResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{144}
+	return file_star_service_proto_rawDescGZIP(), []int{141}
 }
 
 func (x *RequestCore96HeadInitializationStatusResponse) GetInitialized() bool {
@@ -9420,7 +9265,7 @@ type Head96RequestFirmwareVersionRequest struct {
 
 func (x *Head96RequestFirmwareVersionRequest) Reset() {
 	*x = Head96RequestFirmwareVersionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[145]
+	mi := &file_star_service_proto_msgTypes[142]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9432,7 +9277,7 @@ func (x *Head96RequestFirmwareVersionRequest) String() string {
 func (*Head96RequestFirmwareVersionRequest) ProtoMessage() {}
 
 func (x *Head96RequestFirmwareVersionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[145]
+	mi := &file_star_service_proto_msgTypes[142]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9445,7 +9290,7 @@ func (x *Head96RequestFirmwareVersionRequest) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use Head96RequestFirmwareVersionRequest.ProtoReflect.Descriptor instead.
 func (*Head96RequestFirmwareVersionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{145}
+	return file_star_service_proto_rawDescGZIP(), []int{142}
 }
 
 type Head96RequestFirmwareVersionResponse struct {
@@ -9457,7 +9302,7 @@ type Head96RequestFirmwareVersionResponse struct {
 
 func (x *Head96RequestFirmwareVersionResponse) Reset() {
 	*x = Head96RequestFirmwareVersionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[146]
+	mi := &file_star_service_proto_msgTypes[143]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9469,7 +9314,7 @@ func (x *Head96RequestFirmwareVersionResponse) String() string {
 func (*Head96RequestFirmwareVersionResponse) ProtoMessage() {}
 
 func (x *Head96RequestFirmwareVersionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[146]
+	mi := &file_star_service_proto_msgTypes[143]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9482,7 +9327,7 @@ func (x *Head96RequestFirmwareVersionResponse) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use Head96RequestFirmwareVersionResponse.ProtoReflect.Descriptor instead.
 func (*Head96RequestFirmwareVersionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{146}
+	return file_star_service_proto_rawDescGZIP(), []int{143}
 }
 
 func (x *Head96RequestFirmwareVersionResponse) GetDate() string {
@@ -9500,7 +9345,7 @@ type Head96RequestTypeRequest struct {
 
 func (x *Head96RequestTypeRequest) Reset() {
 	*x = Head96RequestTypeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[147]
+	mi := &file_star_service_proto_msgTypes[144]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9512,7 +9357,7 @@ func (x *Head96RequestTypeRequest) String() string {
 func (*Head96RequestTypeRequest) ProtoMessage() {}
 
 func (x *Head96RequestTypeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[147]
+	mi := &file_star_service_proto_msgTypes[144]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9525,7 +9370,7 @@ func (x *Head96RequestTypeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96RequestTypeRequest.ProtoReflect.Descriptor instead.
 func (*Head96RequestTypeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{147}
+	return file_star_service_proto_rawDescGZIP(), []int{144}
 }
 
 type Head96RequestTypeResponse struct {
@@ -9537,7 +9382,7 @@ type Head96RequestTypeResponse struct {
 
 func (x *Head96RequestTypeResponse) Reset() {
 	*x = Head96RequestTypeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[148]
+	mi := &file_star_service_proto_msgTypes[145]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9549,7 +9394,7 @@ func (x *Head96RequestTypeResponse) String() string {
 func (*Head96RequestTypeResponse) ProtoMessage() {}
 
 func (x *Head96RequestTypeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[148]
+	mi := &file_star_service_proto_msgTypes[145]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9562,7 +9407,7 @@ func (x *Head96RequestTypeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96RequestTypeResponse.ProtoReflect.Descriptor instead.
 func (*Head96RequestTypeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{148}
+	return file_star_service_proto_rawDescGZIP(), []int{145}
 }
 
 func (x *Head96RequestTypeResponse) GetHeadType() int32 {
@@ -9584,7 +9429,7 @@ type Head96DispensingDriveAndSqueezerDriverInitializeRequest struct {
 
 func (x *Head96DispensingDriveAndSqueezerDriverInitializeRequest) Reset() {
 	*x = Head96DispensingDriveAndSqueezerDriverInitializeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[149]
+	mi := &file_star_service_proto_msgTypes[146]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9596,7 +9441,7 @@ func (x *Head96DispensingDriveAndSqueezerDriverInitializeRequest) String() strin
 func (*Head96DispensingDriveAndSqueezerDriverInitializeRequest) ProtoMessage() {}
 
 func (x *Head96DispensingDriveAndSqueezerDriverInitializeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[149]
+	mi := &file_star_service_proto_msgTypes[146]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9609,7 +9454,7 @@ func (x *Head96DispensingDriveAndSqueezerDriverInitializeRequest) ProtoReflect()
 
 // Deprecated: Use Head96DispensingDriveAndSqueezerDriverInitializeRequest.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveAndSqueezerDriverInitializeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{149}
+	return file_star_service_proto_rawDescGZIP(), []int{146}
 }
 
 func (x *Head96DispensingDriveAndSqueezerDriverInitializeRequest) GetSqueezerSpeed() float64 {
@@ -9648,7 +9493,7 @@ type Head96DispensingDriveAndSqueezerDriverInitializeResponse struct {
 
 func (x *Head96DispensingDriveAndSqueezerDriverInitializeResponse) Reset() {
 	*x = Head96DispensingDriveAndSqueezerDriverInitializeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[150]
+	mi := &file_star_service_proto_msgTypes[147]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9660,7 +9505,7 @@ func (x *Head96DispensingDriveAndSqueezerDriverInitializeResponse) String() stri
 func (*Head96DispensingDriveAndSqueezerDriverInitializeResponse) ProtoMessage() {}
 
 func (x *Head96DispensingDriveAndSqueezerDriverInitializeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[150]
+	mi := &file_star_service_proto_msgTypes[147]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9673,7 +9518,7 @@ func (x *Head96DispensingDriveAndSqueezerDriverInitializeResponse) ProtoReflect(
 
 // Deprecated: Use Head96DispensingDriveAndSqueezerDriverInitializeResponse.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveAndSqueezerDriverInitializeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{150}
+	return file_star_service_proto_rawDescGZIP(), []int{147}
 }
 
 type MoveCore96ToSafePositionRequest struct {
@@ -9684,7 +9529,7 @@ type MoveCore96ToSafePositionRequest struct {
 
 func (x *MoveCore96ToSafePositionRequest) Reset() {
 	*x = MoveCore96ToSafePositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[151]
+	mi := &file_star_service_proto_msgTypes[148]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9696,7 +9541,7 @@ func (x *MoveCore96ToSafePositionRequest) String() string {
 func (*MoveCore96ToSafePositionRequest) ProtoMessage() {}
 
 func (x *MoveCore96ToSafePositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[151]
+	mi := &file_star_service_proto_msgTypes[148]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9709,7 +9554,7 @@ func (x *MoveCore96ToSafePositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveCore96ToSafePositionRequest.ProtoReflect.Descriptor instead.
 func (*MoveCore96ToSafePositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{151}
+	return file_star_service_proto_rawDescGZIP(), []int{148}
 }
 
 type MoveCore96ToSafePositionResponse struct {
@@ -9720,7 +9565,7 @@ type MoveCore96ToSafePositionResponse struct {
 
 func (x *MoveCore96ToSafePositionResponse) Reset() {
 	*x = MoveCore96ToSafePositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[152]
+	mi := &file_star_service_proto_msgTypes[149]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9732,7 +9577,7 @@ func (x *MoveCore96ToSafePositionResponse) String() string {
 func (*MoveCore96ToSafePositionResponse) ProtoMessage() {}
 
 func (x *MoveCore96ToSafePositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[152]
+	mi := &file_star_service_proto_msgTypes[149]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9745,7 +9590,7 @@ func (x *MoveCore96ToSafePositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveCore96ToSafePositionResponse.ProtoReflect.Descriptor instead.
 func (*MoveCore96ToSafePositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{152}
+	return file_star_service_proto_rawDescGZIP(), []int{149}
 }
 
 type Head96MoveToZSafetyRequest struct {
@@ -9756,7 +9601,7 @@ type Head96MoveToZSafetyRequest struct {
 
 func (x *Head96MoveToZSafetyRequest) Reset() {
 	*x = Head96MoveToZSafetyRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[153]
+	mi := &file_star_service_proto_msgTypes[150]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9768,7 +9613,7 @@ func (x *Head96MoveToZSafetyRequest) String() string {
 func (*Head96MoveToZSafetyRequest) ProtoMessage() {}
 
 func (x *Head96MoveToZSafetyRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[153]
+	mi := &file_star_service_proto_msgTypes[150]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9781,7 +9626,7 @@ func (x *Head96MoveToZSafetyRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveToZSafetyRequest.ProtoReflect.Descriptor instead.
 func (*Head96MoveToZSafetyRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{153}
+	return file_star_service_proto_rawDescGZIP(), []int{150}
 }
 
 type Head96MoveToZSafetyResponse struct {
@@ -9792,7 +9637,7 @@ type Head96MoveToZSafetyResponse struct {
 
 func (x *Head96MoveToZSafetyResponse) Reset() {
 	*x = Head96MoveToZSafetyResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[154]
+	mi := &file_star_service_proto_msgTypes[151]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9804,7 +9649,7 @@ func (x *Head96MoveToZSafetyResponse) String() string {
 func (*Head96MoveToZSafetyResponse) ProtoMessage() {}
 
 func (x *Head96MoveToZSafetyResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[154]
+	mi := &file_star_service_proto_msgTypes[151]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9817,7 +9662,7 @@ func (x *Head96MoveToZSafetyResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveToZSafetyResponse.ProtoReflect.Descriptor instead.
 func (*Head96MoveToZSafetyResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{154}
+	return file_star_service_proto_rawDescGZIP(), []int{151}
 }
 
 type Head96ParkRequest struct {
@@ -9828,7 +9673,7 @@ type Head96ParkRequest struct {
 
 func (x *Head96ParkRequest) Reset() {
 	*x = Head96ParkRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[155]
+	mi := &file_star_service_proto_msgTypes[152]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9840,7 +9685,7 @@ func (x *Head96ParkRequest) String() string {
 func (*Head96ParkRequest) ProtoMessage() {}
 
 func (x *Head96ParkRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[155]
+	mi := &file_star_service_proto_msgTypes[152]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9853,7 +9698,7 @@ func (x *Head96ParkRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96ParkRequest.ProtoReflect.Descriptor instead.
 func (*Head96ParkRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{155}
+	return file_star_service_proto_rawDescGZIP(), []int{152}
 }
 
 type Head96ParkResponse struct {
@@ -9864,7 +9709,7 @@ type Head96ParkResponse struct {
 
 func (x *Head96ParkResponse) Reset() {
 	*x = Head96ParkResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[156]
+	mi := &file_star_service_proto_msgTypes[153]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9876,7 +9721,7 @@ func (x *Head96ParkResponse) String() string {
 func (*Head96ParkResponse) ProtoMessage() {}
 
 func (x *Head96ParkResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[156]
+	mi := &file_star_service_proto_msgTypes[153]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9889,7 +9734,7 @@ func (x *Head96ParkResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96ParkResponse.ProtoReflect.Descriptor instead.
 func (*Head96ParkResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{156}
+	return file_star_service_proto_rawDescGZIP(), []int{153}
 }
 
 type Head96MoveXRequest struct {
@@ -9901,7 +9746,7 @@ type Head96MoveXRequest struct {
 
 func (x *Head96MoveXRequest) Reset() {
 	*x = Head96MoveXRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[157]
+	mi := &file_star_service_proto_msgTypes[154]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9913,7 +9758,7 @@ func (x *Head96MoveXRequest) String() string {
 func (*Head96MoveXRequest) ProtoMessage() {}
 
 func (x *Head96MoveXRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[157]
+	mi := &file_star_service_proto_msgTypes[154]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9926,7 +9771,7 @@ func (x *Head96MoveXRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveXRequest.ProtoReflect.Descriptor instead.
 func (*Head96MoveXRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{157}
+	return file_star_service_proto_rawDescGZIP(), []int{154}
 }
 
 func (x *Head96MoveXRequest) GetX() float64 {
@@ -9944,7 +9789,7 @@ type Head96MoveXResponse struct {
 
 func (x *Head96MoveXResponse) Reset() {
 	*x = Head96MoveXResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[158]
+	mi := &file_star_service_proto_msgTypes[155]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9956,7 +9801,7 @@ func (x *Head96MoveXResponse) String() string {
 func (*Head96MoveXResponse) ProtoMessage() {}
 
 func (x *Head96MoveXResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[158]
+	mi := &file_star_service_proto_msgTypes[155]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -9969,7 +9814,7 @@ func (x *Head96MoveXResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveXResponse.ProtoReflect.Descriptor instead.
 func (*Head96MoveXResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{158}
+	return file_star_service_proto_rawDescGZIP(), []int{155}
 }
 
 type Head96MoveYRequest struct {
@@ -9983,7 +9828,7 @@ type Head96MoveYRequest struct {
 
 func (x *Head96MoveYRequest) Reset() {
 	*x = Head96MoveYRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[159]
+	mi := &file_star_service_proto_msgTypes[156]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -9995,7 +9840,7 @@ func (x *Head96MoveYRequest) String() string {
 func (*Head96MoveYRequest) ProtoMessage() {}
 
 func (x *Head96MoveYRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[159]
+	mi := &file_star_service_proto_msgTypes[156]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10008,7 +9853,7 @@ func (x *Head96MoveYRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveYRequest.ProtoReflect.Descriptor instead.
 func (*Head96MoveYRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{159}
+	return file_star_service_proto_rawDescGZIP(), []int{156}
 }
 
 func (x *Head96MoveYRequest) GetY() float64 {
@@ -10040,7 +9885,7 @@ type Head96MoveYResponse struct {
 
 func (x *Head96MoveYResponse) Reset() {
 	*x = Head96MoveYResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[160]
+	mi := &file_star_service_proto_msgTypes[157]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10052,7 +9897,7 @@ func (x *Head96MoveYResponse) String() string {
 func (*Head96MoveYResponse) ProtoMessage() {}
 
 func (x *Head96MoveYResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[160]
+	mi := &file_star_service_proto_msgTypes[157]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10065,7 +9910,7 @@ func (x *Head96MoveYResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveYResponse.ProtoReflect.Descriptor instead.
 func (*Head96MoveYResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{160}
+	return file_star_service_proto_rawDescGZIP(), []int{157}
 }
 
 type Head96MoveZRequest struct {
@@ -10077,7 +9922,7 @@ type Head96MoveZRequest struct {
 
 func (x *Head96MoveZRequest) Reset() {
 	*x = Head96MoveZRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[161]
+	mi := &file_star_service_proto_msgTypes[158]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10089,7 +9934,7 @@ func (x *Head96MoveZRequest) String() string {
 func (*Head96MoveZRequest) ProtoMessage() {}
 
 func (x *Head96MoveZRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[161]
+	mi := &file_star_service_proto_msgTypes[158]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10102,7 +9947,7 @@ func (x *Head96MoveZRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveZRequest.ProtoReflect.Descriptor instead.
 func (*Head96MoveZRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{161}
+	return file_star_service_proto_rawDescGZIP(), []int{158}
 }
 
 func (x *Head96MoveZRequest) GetZ() float64 {
@@ -10120,7 +9965,7 @@ type Head96MoveZResponse struct {
 
 func (x *Head96MoveZResponse) Reset() {
 	*x = Head96MoveZResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[162]
+	mi := &file_star_service_proto_msgTypes[159]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10132,7 +9977,7 @@ func (x *Head96MoveZResponse) String() string {
 func (*Head96MoveZResponse) ProtoMessage() {}
 
 func (x *Head96MoveZResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[162]
+	mi := &file_star_service_proto_msgTypes[159]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10145,7 +9990,7 @@ func (x *Head96MoveZResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveZResponse.ProtoReflect.Descriptor instead.
 func (*Head96MoveZResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{162}
+	return file_star_service_proto_rawDescGZIP(), []int{159}
 }
 
 type MoveCore96HeadToDefinedPositionRequest struct {
@@ -10159,7 +10004,7 @@ type MoveCore96HeadToDefinedPositionRequest struct {
 
 func (x *MoveCore96HeadToDefinedPositionRequest) Reset() {
 	*x = MoveCore96HeadToDefinedPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[163]
+	mi := &file_star_service_proto_msgTypes[160]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10171,7 +10016,7 @@ func (x *MoveCore96HeadToDefinedPositionRequest) String() string {
 func (*MoveCore96HeadToDefinedPositionRequest) ProtoMessage() {}
 
 func (x *MoveCore96HeadToDefinedPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[163]
+	mi := &file_star_service_proto_msgTypes[160]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10184,7 +10029,7 @@ func (x *MoveCore96HeadToDefinedPositionRequest) ProtoReflect() protoreflect.Mes
 
 // Deprecated: Use MoveCore96HeadToDefinedPositionRequest.ProtoReflect.Descriptor instead.
 func (*MoveCore96HeadToDefinedPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{163}
+	return file_star_service_proto_rawDescGZIP(), []int{160}
 }
 
 func (x *MoveCore96HeadToDefinedPositionRequest) GetX() float64 {
@@ -10216,7 +10061,7 @@ type MoveCore96HeadToDefinedPositionResponse struct {
 
 func (x *MoveCore96HeadToDefinedPositionResponse) Reset() {
 	*x = MoveCore96HeadToDefinedPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[164]
+	mi := &file_star_service_proto_msgTypes[161]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10228,7 +10073,7 @@ func (x *MoveCore96HeadToDefinedPositionResponse) String() string {
 func (*MoveCore96HeadToDefinedPositionResponse) ProtoMessage() {}
 
 func (x *MoveCore96HeadToDefinedPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[164]
+	mi := &file_star_service_proto_msgTypes[161]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10241,19 +10086,19 @@ func (x *MoveCore96HeadToDefinedPositionResponse) ProtoReflect() protoreflect.Me
 
 // Deprecated: Use MoveCore96HeadToDefinedPositionResponse.ProtoReflect.Descriptor instead.
 func (*MoveCore96HeadToDefinedPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{164}
+	return file_star_service_proto_rawDescGZIP(), []int{161}
 }
 
 type Head96MoveToCoordinateRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Coordinate    *Coordinate            `protobuf:"bytes,1,opt,name=coordinate,proto3" json:"coordinate,omitempty"`
+	Coordinate    *v1.Coordinate         `protobuf:"bytes,1,opt,name=coordinate,proto3" json:"coordinate,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *Head96MoveToCoordinateRequest) Reset() {
 	*x = Head96MoveToCoordinateRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[165]
+	mi := &file_star_service_proto_msgTypes[162]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10265,7 +10110,7 @@ func (x *Head96MoveToCoordinateRequest) String() string {
 func (*Head96MoveToCoordinateRequest) ProtoMessage() {}
 
 func (x *Head96MoveToCoordinateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[165]
+	mi := &file_star_service_proto_msgTypes[162]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10278,10 +10123,10 @@ func (x *Head96MoveToCoordinateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveToCoordinateRequest.ProtoReflect.Descriptor instead.
 func (*Head96MoveToCoordinateRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{165}
+	return file_star_service_proto_rawDescGZIP(), []int{162}
 }
 
-func (x *Head96MoveToCoordinateRequest) GetCoordinate() *Coordinate {
+func (x *Head96MoveToCoordinateRequest) GetCoordinate() *v1.Coordinate {
 	if x != nil {
 		return x.Coordinate
 	}
@@ -10296,7 +10141,7 @@ type Head96MoveToCoordinateResponse struct {
 
 func (x *Head96MoveToCoordinateResponse) Reset() {
 	*x = Head96MoveToCoordinateResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[166]
+	mi := &file_star_service_proto_msgTypes[163]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10308,7 +10153,7 @@ func (x *Head96MoveToCoordinateResponse) String() string {
 func (*Head96MoveToCoordinateResponse) ProtoMessage() {}
 
 func (x *Head96MoveToCoordinateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[166]
+	mi := &file_star_service_proto_msgTypes[163]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10321,7 +10166,7 @@ func (x *Head96MoveToCoordinateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96MoveToCoordinateResponse.ProtoReflect.Descriptor instead.
 func (*Head96MoveToCoordinateResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{166}
+	return file_star_service_proto_rawDescGZIP(), []int{163}
 }
 
 type Head96DispensingDriveMoveToHomeVolumeRequest struct {
@@ -10332,7 +10177,7 @@ type Head96DispensingDriveMoveToHomeVolumeRequest struct {
 
 func (x *Head96DispensingDriveMoveToHomeVolumeRequest) Reset() {
 	*x = Head96DispensingDriveMoveToHomeVolumeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[167]
+	mi := &file_star_service_proto_msgTypes[164]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10344,7 +10189,7 @@ func (x *Head96DispensingDriveMoveToHomeVolumeRequest) String() string {
 func (*Head96DispensingDriveMoveToHomeVolumeRequest) ProtoMessage() {}
 
 func (x *Head96DispensingDriveMoveToHomeVolumeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[167]
+	mi := &file_star_service_proto_msgTypes[164]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10357,7 +10202,7 @@ func (x *Head96DispensingDriveMoveToHomeVolumeRequest) ProtoReflect() protorefle
 
 // Deprecated: Use Head96DispensingDriveMoveToHomeVolumeRequest.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveMoveToHomeVolumeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{167}
+	return file_star_service_proto_rawDescGZIP(), []int{164}
 }
 
 type Head96DispensingDriveMoveToHomeVolumeResponse struct {
@@ -10368,7 +10213,7 @@ type Head96DispensingDriveMoveToHomeVolumeResponse struct {
 
 func (x *Head96DispensingDriveMoveToHomeVolumeResponse) Reset() {
 	*x = Head96DispensingDriveMoveToHomeVolumeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[168]
+	mi := &file_star_service_proto_msgTypes[165]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10380,7 +10225,7 @@ func (x *Head96DispensingDriveMoveToHomeVolumeResponse) String() string {
 func (*Head96DispensingDriveMoveToHomeVolumeResponse) ProtoMessage() {}
 
 func (x *Head96DispensingDriveMoveToHomeVolumeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[168]
+	mi := &file_star_service_proto_msgTypes[165]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10393,7 +10238,7 @@ func (x *Head96DispensingDriveMoveToHomeVolumeResponse) ProtoReflect() protorefl
 
 // Deprecated: Use Head96DispensingDriveMoveToHomeVolumeResponse.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveMoveToHomeVolumeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{168}
+	return file_star_service_proto_rawDescGZIP(), []int{165}
 }
 
 type Head96DispensingDriveMoveToPositionRequest struct {
@@ -10407,7 +10252,7 @@ type Head96DispensingDriveMoveToPositionRequest struct {
 
 func (x *Head96DispensingDriveMoveToPositionRequest) Reset() {
 	*x = Head96DispensingDriveMoveToPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[169]
+	mi := &file_star_service_proto_msgTypes[166]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10419,7 +10264,7 @@ func (x *Head96DispensingDriveMoveToPositionRequest) String() string {
 func (*Head96DispensingDriveMoveToPositionRequest) ProtoMessage() {}
 
 func (x *Head96DispensingDriveMoveToPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[169]
+	mi := &file_star_service_proto_msgTypes[166]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10432,7 +10277,7 @@ func (x *Head96DispensingDriveMoveToPositionRequest) ProtoReflect() protoreflect
 
 // Deprecated: Use Head96DispensingDriveMoveToPositionRequest.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveMoveToPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{169}
+	return file_star_service_proto_rawDescGZIP(), []int{166}
 }
 
 func (x *Head96DispensingDriveMoveToPositionRequest) GetPosition() float64 {
@@ -10464,7 +10309,7 @@ type Head96DispensingDriveMoveToPositionResponse struct {
 
 func (x *Head96DispensingDriveMoveToPositionResponse) Reset() {
 	*x = Head96DispensingDriveMoveToPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[170]
+	mi := &file_star_service_proto_msgTypes[167]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10476,7 +10321,7 @@ func (x *Head96DispensingDriveMoveToPositionResponse) String() string {
 func (*Head96DispensingDriveMoveToPositionResponse) ProtoMessage() {}
 
 func (x *Head96DispensingDriveMoveToPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[170]
+	mi := &file_star_service_proto_msgTypes[167]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10489,7 +10334,7 @@ func (x *Head96DispensingDriveMoveToPositionResponse) ProtoReflect() protoreflec
 
 // Deprecated: Use Head96DispensingDriveMoveToPositionResponse.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveMoveToPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{170}
+	return file_star_service_proto_rawDescGZIP(), []int{167}
 }
 
 type Head96DispensingDriveRequestPositionMmRequest struct {
@@ -10500,7 +10345,7 @@ type Head96DispensingDriveRequestPositionMmRequest struct {
 
 func (x *Head96DispensingDriveRequestPositionMmRequest) Reset() {
 	*x = Head96DispensingDriveRequestPositionMmRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[171]
+	mi := &file_star_service_proto_msgTypes[168]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10512,7 +10357,7 @@ func (x *Head96DispensingDriveRequestPositionMmRequest) String() string {
 func (*Head96DispensingDriveRequestPositionMmRequest) ProtoMessage() {}
 
 func (x *Head96DispensingDriveRequestPositionMmRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[171]
+	mi := &file_star_service_proto_msgTypes[168]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10525,7 +10370,7 @@ func (x *Head96DispensingDriveRequestPositionMmRequest) ProtoReflect() protorefl
 
 // Deprecated: Use Head96DispensingDriveRequestPositionMmRequest.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveRequestPositionMmRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{171}
+	return file_star_service_proto_rawDescGZIP(), []int{168}
 }
 
 type Head96DispensingDriveRequestPositionMmResponse struct {
@@ -10537,7 +10382,7 @@ type Head96DispensingDriveRequestPositionMmResponse struct {
 
 func (x *Head96DispensingDriveRequestPositionMmResponse) Reset() {
 	*x = Head96DispensingDriveRequestPositionMmResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[172]
+	mi := &file_star_service_proto_msgTypes[169]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10549,7 +10394,7 @@ func (x *Head96DispensingDriveRequestPositionMmResponse) String() string {
 func (*Head96DispensingDriveRequestPositionMmResponse) ProtoMessage() {}
 
 func (x *Head96DispensingDriveRequestPositionMmResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[172]
+	mi := &file_star_service_proto_msgTypes[169]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10562,7 +10407,7 @@ func (x *Head96DispensingDriveRequestPositionMmResponse) ProtoReflect() protoref
 
 // Deprecated: Use Head96DispensingDriveRequestPositionMmResponse.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveRequestPositionMmResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{172}
+	return file_star_service_proto_rawDescGZIP(), []int{169}
 }
 
 func (x *Head96DispensingDriveRequestPositionMmResponse) GetPosition() float64 {
@@ -10580,7 +10425,7 @@ type Head96DispensingDriveRequestPositionUlRequest struct {
 
 func (x *Head96DispensingDriveRequestPositionUlRequest) Reset() {
 	*x = Head96DispensingDriveRequestPositionUlRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[173]
+	mi := &file_star_service_proto_msgTypes[170]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10592,7 +10437,7 @@ func (x *Head96DispensingDriveRequestPositionUlRequest) String() string {
 func (*Head96DispensingDriveRequestPositionUlRequest) ProtoMessage() {}
 
 func (x *Head96DispensingDriveRequestPositionUlRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[173]
+	mi := &file_star_service_proto_msgTypes[170]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10605,7 +10450,7 @@ func (x *Head96DispensingDriveRequestPositionUlRequest) ProtoReflect() protorefl
 
 // Deprecated: Use Head96DispensingDriveRequestPositionUlRequest.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveRequestPositionUlRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{173}
+	return file_star_service_proto_rawDescGZIP(), []int{170}
 }
 
 type Head96DispensingDriveRequestPositionUlResponse struct {
@@ -10617,7 +10462,7 @@ type Head96DispensingDriveRequestPositionUlResponse struct {
 
 func (x *Head96DispensingDriveRequestPositionUlResponse) Reset() {
 	*x = Head96DispensingDriveRequestPositionUlResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[174]
+	mi := &file_star_service_proto_msgTypes[171]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10629,7 +10474,7 @@ func (x *Head96DispensingDriveRequestPositionUlResponse) String() string {
 func (*Head96DispensingDriveRequestPositionUlResponse) ProtoMessage() {}
 
 func (x *Head96DispensingDriveRequestPositionUlResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[174]
+	mi := &file_star_service_proto_msgTypes[171]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10642,7 +10487,7 @@ func (x *Head96DispensingDriveRequestPositionUlResponse) ProtoReflect() protoref
 
 // Deprecated: Use Head96DispensingDriveRequestPositionUlResponse.ProtoReflect.Descriptor instead.
 func (*Head96DispensingDriveRequestPositionUlResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{174}
+	return file_star_service_proto_rawDescGZIP(), []int{171}
 }
 
 func (x *Head96DispensingDriveRequestPositionUlResponse) GetPosition() float64 {
@@ -10660,7 +10505,7 @@ type Head96RequestTipPresenceRequest struct {
 
 func (x *Head96RequestTipPresenceRequest) Reset() {
 	*x = Head96RequestTipPresenceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[175]
+	mi := &file_star_service_proto_msgTypes[172]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10672,7 +10517,7 @@ func (x *Head96RequestTipPresenceRequest) String() string {
 func (*Head96RequestTipPresenceRequest) ProtoMessage() {}
 
 func (x *Head96RequestTipPresenceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[175]
+	mi := &file_star_service_proto_msgTypes[172]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10685,7 +10530,7 @@ func (x *Head96RequestTipPresenceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96RequestTipPresenceRequest.ProtoReflect.Descriptor instead.
 func (*Head96RequestTipPresenceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{175}
+	return file_star_service_proto_rawDescGZIP(), []int{172}
 }
 
 type Head96RequestTipPresenceResponse struct {
@@ -10697,7 +10542,7 @@ type Head96RequestTipPresenceResponse struct {
 
 func (x *Head96RequestTipPresenceResponse) Reset() {
 	*x = Head96RequestTipPresenceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[176]
+	mi := &file_star_service_proto_msgTypes[173]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10709,7 +10554,7 @@ func (x *Head96RequestTipPresenceResponse) String() string {
 func (*Head96RequestTipPresenceResponse) ProtoMessage() {}
 
 func (x *Head96RequestTipPresenceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[176]
+	mi := &file_star_service_proto_msgTypes[173]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10722,7 +10567,7 @@ func (x *Head96RequestTipPresenceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96RequestTipPresenceResponse.ProtoReflect.Descriptor instead.
 func (*Head96RequestTipPresenceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{176}
+	return file_star_service_proto_rawDescGZIP(), []int{173}
 }
 
 func (x *Head96RequestTipPresenceResponse) GetTipPresence() int32 {
@@ -10740,7 +10585,7 @@ type Head96RequestPositionRequest struct {
 
 func (x *Head96RequestPositionRequest) Reset() {
 	*x = Head96RequestPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[177]
+	mi := &file_star_service_proto_msgTypes[174]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10752,7 +10597,7 @@ func (x *Head96RequestPositionRequest) String() string {
 func (*Head96RequestPositionRequest) ProtoMessage() {}
 
 func (x *Head96RequestPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[177]
+	mi := &file_star_service_proto_msgTypes[174]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10765,19 +10610,19 @@ func (x *Head96RequestPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96RequestPositionRequest.ProtoReflect.Descriptor instead.
 func (*Head96RequestPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{177}
+	return file_star_service_proto_rawDescGZIP(), []int{174}
 }
 
 type Head96RequestPositionResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Position      *Coordinate            `protobuf:"bytes,1,opt,name=position,proto3" json:"position,omitempty"`
+	Position      *v1.Coordinate         `protobuf:"bytes,1,opt,name=position,proto3" json:"position,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *Head96RequestPositionResponse) Reset() {
 	*x = Head96RequestPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[178]
+	mi := &file_star_service_proto_msgTypes[175]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10789,7 +10634,7 @@ func (x *Head96RequestPositionResponse) String() string {
 func (*Head96RequestPositionResponse) ProtoMessage() {}
 
 func (x *Head96RequestPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[178]
+	mi := &file_star_service_proto_msgTypes[175]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10802,10 +10647,10 @@ func (x *Head96RequestPositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Head96RequestPositionResponse.ProtoReflect.Descriptor instead.
 func (*Head96RequestPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{178}
+	return file_star_service_proto_rawDescGZIP(), []int{175}
 }
 
-func (x *Head96RequestPositionResponse) GetPosition() *Coordinate {
+func (x *Head96RequestPositionResponse) GetPosition() *v1.Coordinate {
 	if x != nil {
 		return x.Position
 	}
@@ -10829,7 +10674,7 @@ type PickUpTipsCore96Request struct {
 
 func (x *PickUpTipsCore96Request) Reset() {
 	*x = PickUpTipsCore96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[179]
+	mi := &file_star_service_proto_msgTypes[176]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10841,7 +10686,7 @@ func (x *PickUpTipsCore96Request) String() string {
 func (*PickUpTipsCore96Request) ProtoMessage() {}
 
 func (x *PickUpTipsCore96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[179]
+	mi := &file_star_service_proto_msgTypes[176]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10854,7 +10699,7 @@ func (x *PickUpTipsCore96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTipsCore96Request.ProtoReflect.Descriptor instead.
 func (*PickUpTipsCore96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{179}
+	return file_star_service_proto_rawDescGZIP(), []int{176}
 }
 
 func (x *PickUpTipsCore96Request) GetXPosition() int32 {
@@ -10921,7 +10766,7 @@ type PickUpTipsCore96Response struct {
 
 func (x *PickUpTipsCore96Response) Reset() {
 	*x = PickUpTipsCore96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[180]
+	mi := &file_star_service_proto_msgTypes[177]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10933,7 +10778,7 @@ func (x *PickUpTipsCore96Response) String() string {
 func (*PickUpTipsCore96Response) ProtoMessage() {}
 
 func (x *PickUpTipsCore96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[180]
+	mi := &file_star_service_proto_msgTypes[177]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10946,7 +10791,7 @@ func (x *PickUpTipsCore96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpTipsCore96Response.ProtoReflect.Descriptor instead.
 func (*PickUpTipsCore96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{180}
+	return file_star_service_proto_rawDescGZIP(), []int{177}
 }
 
 type DiscardTipsCore96Request struct {
@@ -10963,7 +10808,7 @@ type DiscardTipsCore96Request struct {
 
 func (x *DiscardTipsCore96Request) Reset() {
 	*x = DiscardTipsCore96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[181]
+	mi := &file_star_service_proto_msgTypes[178]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -10975,7 +10820,7 @@ func (x *DiscardTipsCore96Request) String() string {
 func (*DiscardTipsCore96Request) ProtoMessage() {}
 
 func (x *DiscardTipsCore96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[181]
+	mi := &file_star_service_proto_msgTypes[178]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -10988,7 +10833,7 @@ func (x *DiscardTipsCore96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DiscardTipsCore96Request.ProtoReflect.Descriptor instead.
 func (*DiscardTipsCore96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{181}
+	return file_star_service_proto_rawDescGZIP(), []int{178}
 }
 
 func (x *DiscardTipsCore96Request) GetXPosition() int32 {
@@ -11041,7 +10886,7 @@ type DiscardTipsCore96Response struct {
 
 func (x *DiscardTipsCore96Response) Reset() {
 	*x = DiscardTipsCore96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[182]
+	mi := &file_star_service_proto_msgTypes[179]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11053,7 +10898,7 @@ func (x *DiscardTipsCore96Response) String() string {
 func (*DiscardTipsCore96Response) ProtoMessage() {}
 
 func (x *DiscardTipsCore96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[182]
+	mi := &file_star_service_proto_msgTypes[179]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11066,7 +10911,7 @@ func (x *DiscardTipsCore96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DiscardTipsCore96Response.ProtoReflect.Descriptor instead.
 func (*DiscardTipsCore96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{182}
+	return file_star_service_proto_rawDescGZIP(), []int{179}
 }
 
 type AspirateCore96Request struct {
@@ -11110,7 +10955,7 @@ type AspirateCore96Request struct {
 
 func (x *AspirateCore96Request) Reset() {
 	*x = AspirateCore96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[183]
+	mi := &file_star_service_proto_msgTypes[180]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11122,7 +10967,7 @@ func (x *AspirateCore96Request) String() string {
 func (*AspirateCore96Request) ProtoMessage() {}
 
 func (x *AspirateCore96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[183]
+	mi := &file_star_service_proto_msgTypes[180]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11135,7 +10980,7 @@ func (x *AspirateCore96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AspirateCore96Request.ProtoReflect.Descriptor instead.
 func (*AspirateCore96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{183}
+	return file_star_service_proto_rawDescGZIP(), []int{180}
 }
 
 func (x *AspirateCore96Request) GetAspirationType() int32 {
@@ -11377,7 +11222,7 @@ type AspirateCore96Response struct {
 
 func (x *AspirateCore96Response) Reset() {
 	*x = AspirateCore96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[184]
+	mi := &file_star_service_proto_msgTypes[181]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11389,7 +11234,7 @@ func (x *AspirateCore96Response) String() string {
 func (*AspirateCore96Response) ProtoMessage() {}
 
 func (x *AspirateCore96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[184]
+	mi := &file_star_service_proto_msgTypes[181]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11402,7 +11247,7 @@ func (x *AspirateCore96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AspirateCore96Response.ProtoReflect.Descriptor instead.
 func (*AspirateCore96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{184}
+	return file_star_service_proto_rawDescGZIP(), []int{181}
 }
 
 type DispenseCore96Request struct {
@@ -11447,7 +11292,7 @@ type DispenseCore96Request struct {
 
 func (x *DispenseCore96Request) Reset() {
 	*x = DispenseCore96Request{}
-	mi := &file_star_v1_star_service_proto_msgTypes[185]
+	mi := &file_star_service_proto_msgTypes[182]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11459,7 +11304,7 @@ func (x *DispenseCore96Request) String() string {
 func (*DispenseCore96Request) ProtoMessage() {}
 
 func (x *DispenseCore96Request) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[185]
+	mi := &file_star_service_proto_msgTypes[182]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11472,7 +11317,7 @@ func (x *DispenseCore96Request) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DispenseCore96Request.ProtoReflect.Descriptor instead.
 func (*DispenseCore96Request) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{185}
+	return file_star_service_proto_rawDescGZIP(), []int{182}
 }
 
 func (x *DispenseCore96Request) GetDispensingMode() int32 {
@@ -11721,7 +11566,7 @@ type DispenseCore96Response struct {
 
 func (x *DispenseCore96Response) Reset() {
 	*x = DispenseCore96Response{}
-	mi := &file_star_v1_star_service_proto_msgTypes[186]
+	mi := &file_star_service_proto_msgTypes[183]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11733,7 +11578,7 @@ func (x *DispenseCore96Response) String() string {
 func (*DispenseCore96Response) ProtoMessage() {}
 
 func (x *DispenseCore96Response) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[186]
+	mi := &file_star_service_proto_msgTypes[183]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11746,7 +11591,7 @@ func (x *DispenseCore96Response) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DispenseCore96Response.ProtoReflect.Descriptor instead.
 func (*DispenseCore96Response) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{186}
+	return file_star_service_proto_rawDescGZIP(), []int{183}
 }
 
 type InitializeIswapRequest struct {
@@ -11757,7 +11602,7 @@ type InitializeIswapRequest struct {
 
 func (x *InitializeIswapRequest) Reset() {
 	*x = InitializeIswapRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[187]
+	mi := &file_star_service_proto_msgTypes[184]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11769,7 +11614,7 @@ func (x *InitializeIswapRequest) String() string {
 func (*InitializeIswapRequest) ProtoMessage() {}
 
 func (x *InitializeIswapRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[187]
+	mi := &file_star_service_proto_msgTypes[184]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11782,7 +11627,7 @@ func (x *InitializeIswapRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeIswapRequest.ProtoReflect.Descriptor instead.
 func (*InitializeIswapRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{187}
+	return file_star_service_proto_rawDescGZIP(), []int{184}
 }
 
 type InitializeIswapResponse struct {
@@ -11793,7 +11638,7 @@ type InitializeIswapResponse struct {
 
 func (x *InitializeIswapResponse) Reset() {
 	*x = InitializeIswapResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[188]
+	mi := &file_star_service_proto_msgTypes[185]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11805,7 +11650,7 @@ func (x *InitializeIswapResponse) String() string {
 func (*InitializeIswapResponse) ProtoMessage() {}
 
 func (x *InitializeIswapResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[188]
+	mi := &file_star_service_proto_msgTypes[185]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11818,7 +11663,7 @@ func (x *InitializeIswapResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeIswapResponse.ProtoReflect.Descriptor instead.
 func (*InitializeIswapResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{188}
+	return file_star_service_proto_rawDescGZIP(), []int{185}
 }
 
 type PositionComponentsForFreeIswapYRangeRequest struct {
@@ -11829,7 +11674,7 @@ type PositionComponentsForFreeIswapYRangeRequest struct {
 
 func (x *PositionComponentsForFreeIswapYRangeRequest) Reset() {
 	*x = PositionComponentsForFreeIswapYRangeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[189]
+	mi := &file_star_service_proto_msgTypes[186]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11841,7 +11686,7 @@ func (x *PositionComponentsForFreeIswapYRangeRequest) String() string {
 func (*PositionComponentsForFreeIswapYRangeRequest) ProtoMessage() {}
 
 func (x *PositionComponentsForFreeIswapYRangeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[189]
+	mi := &file_star_service_proto_msgTypes[186]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11854,7 +11699,7 @@ func (x *PositionComponentsForFreeIswapYRangeRequest) ProtoReflect() protoreflec
 
 // Deprecated: Use PositionComponentsForFreeIswapYRangeRequest.ProtoReflect.Descriptor instead.
 func (*PositionComponentsForFreeIswapYRangeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{189}
+	return file_star_service_proto_rawDescGZIP(), []int{186}
 }
 
 type PositionComponentsForFreeIswapYRangeResponse struct {
@@ -11865,7 +11710,7 @@ type PositionComponentsForFreeIswapYRangeResponse struct {
 
 func (x *PositionComponentsForFreeIswapYRangeResponse) Reset() {
 	*x = PositionComponentsForFreeIswapYRangeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[190]
+	mi := &file_star_service_proto_msgTypes[187]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11877,7 +11722,7 @@ func (x *PositionComponentsForFreeIswapYRangeResponse) String() string {
 func (*PositionComponentsForFreeIswapYRangeResponse) ProtoMessage() {}
 
 func (x *PositionComponentsForFreeIswapYRangeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[190]
+	mi := &file_star_service_proto_msgTypes[187]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11890,7 +11735,7 @@ func (x *PositionComponentsForFreeIswapYRangeResponse) ProtoReflect() protorefle
 
 // Deprecated: Use PositionComponentsForFreeIswapYRangeResponse.ProtoReflect.Descriptor instead.
 func (*PositionComponentsForFreeIswapYRangeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{190}
+	return file_star_service_proto_rawDescGZIP(), []int{187}
 }
 
 type MoveIswapXRelativeRequest struct {
@@ -11903,7 +11748,7 @@ type MoveIswapXRelativeRequest struct {
 
 func (x *MoveIswapXRelativeRequest) Reset() {
 	*x = MoveIswapXRelativeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[191]
+	mi := &file_star_service_proto_msgTypes[188]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11915,7 +11760,7 @@ func (x *MoveIswapXRelativeRequest) String() string {
 func (*MoveIswapXRelativeRequest) ProtoMessage() {}
 
 func (x *MoveIswapXRelativeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[191]
+	mi := &file_star_service_proto_msgTypes[188]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11928,7 +11773,7 @@ func (x *MoveIswapXRelativeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapXRelativeRequest.ProtoReflect.Descriptor instead.
 func (*MoveIswapXRelativeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{191}
+	return file_star_service_proto_rawDescGZIP(), []int{188}
 }
 
 func (x *MoveIswapXRelativeRequest) GetStepSize() float64 {
@@ -11953,7 +11798,7 @@ type MoveIswapXRelativeResponse struct {
 
 func (x *MoveIswapXRelativeResponse) Reset() {
 	*x = MoveIswapXRelativeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[192]
+	mi := &file_star_service_proto_msgTypes[189]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -11965,7 +11810,7 @@ func (x *MoveIswapXRelativeResponse) String() string {
 func (*MoveIswapXRelativeResponse) ProtoMessage() {}
 
 func (x *MoveIswapXRelativeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[192]
+	mi := &file_star_service_proto_msgTypes[189]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -11978,7 +11823,7 @@ func (x *MoveIswapXRelativeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapXRelativeResponse.ProtoReflect.Descriptor instead.
 func (*MoveIswapXRelativeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{192}
+	return file_star_service_proto_rawDescGZIP(), []int{189}
 }
 
 type MoveIswapYRelativeRequest struct {
@@ -11991,7 +11836,7 @@ type MoveIswapYRelativeRequest struct {
 
 func (x *MoveIswapYRelativeRequest) Reset() {
 	*x = MoveIswapYRelativeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[193]
+	mi := &file_star_service_proto_msgTypes[190]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12003,7 +11848,7 @@ func (x *MoveIswapYRelativeRequest) String() string {
 func (*MoveIswapYRelativeRequest) ProtoMessage() {}
 
 func (x *MoveIswapYRelativeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[193]
+	mi := &file_star_service_proto_msgTypes[190]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12016,7 +11861,7 @@ func (x *MoveIswapYRelativeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapYRelativeRequest.ProtoReflect.Descriptor instead.
 func (*MoveIswapYRelativeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{193}
+	return file_star_service_proto_rawDescGZIP(), []int{190}
 }
 
 func (x *MoveIswapYRelativeRequest) GetStepSize() float64 {
@@ -12041,7 +11886,7 @@ type MoveIswapYRelativeResponse struct {
 
 func (x *MoveIswapYRelativeResponse) Reset() {
 	*x = MoveIswapYRelativeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[194]
+	mi := &file_star_service_proto_msgTypes[191]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12053,7 +11898,7 @@ func (x *MoveIswapYRelativeResponse) String() string {
 func (*MoveIswapYRelativeResponse) ProtoMessage() {}
 
 func (x *MoveIswapYRelativeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[194]
+	mi := &file_star_service_proto_msgTypes[191]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12066,7 +11911,7 @@ func (x *MoveIswapYRelativeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapYRelativeResponse.ProtoReflect.Descriptor instead.
 func (*MoveIswapYRelativeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{194}
+	return file_star_service_proto_rawDescGZIP(), []int{191}
 }
 
 type MoveIswapZRelativeRequest struct {
@@ -12079,7 +11924,7 @@ type MoveIswapZRelativeRequest struct {
 
 func (x *MoveIswapZRelativeRequest) Reset() {
 	*x = MoveIswapZRelativeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[195]
+	mi := &file_star_service_proto_msgTypes[192]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12091,7 +11936,7 @@ func (x *MoveIswapZRelativeRequest) String() string {
 func (*MoveIswapZRelativeRequest) ProtoMessage() {}
 
 func (x *MoveIswapZRelativeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[195]
+	mi := &file_star_service_proto_msgTypes[192]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12104,7 +11949,7 @@ func (x *MoveIswapZRelativeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapZRelativeRequest.ProtoReflect.Descriptor instead.
 func (*MoveIswapZRelativeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{195}
+	return file_star_service_proto_rawDescGZIP(), []int{192}
 }
 
 func (x *MoveIswapZRelativeRequest) GetStepSize() float64 {
@@ -12129,7 +11974,7 @@ type MoveIswapZRelativeResponse struct {
 
 func (x *MoveIswapZRelativeResponse) Reset() {
 	*x = MoveIswapZRelativeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[196]
+	mi := &file_star_service_proto_msgTypes[193]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12141,7 +11986,7 @@ func (x *MoveIswapZRelativeResponse) String() string {
 func (*MoveIswapZRelativeResponse) ProtoMessage() {}
 
 func (x *MoveIswapZRelativeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[196]
+	mi := &file_star_service_proto_msgTypes[193]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12154,7 +11999,7 @@ func (x *MoveIswapZRelativeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapZRelativeResponse.ProtoReflect.Descriptor instead.
 func (*MoveIswapZRelativeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{196}
+	return file_star_service_proto_rawDescGZIP(), []int{193}
 }
 
 type MoveIswapXRequest struct {
@@ -12166,7 +12011,7 @@ type MoveIswapXRequest struct {
 
 func (x *MoveIswapXRequest) Reset() {
 	*x = MoveIswapXRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[197]
+	mi := &file_star_service_proto_msgTypes[194]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12178,7 +12023,7 @@ func (x *MoveIswapXRequest) String() string {
 func (*MoveIswapXRequest) ProtoMessage() {}
 
 func (x *MoveIswapXRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[197]
+	mi := &file_star_service_proto_msgTypes[194]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12191,7 +12036,7 @@ func (x *MoveIswapXRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapXRequest.ProtoReflect.Descriptor instead.
 func (*MoveIswapXRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{197}
+	return file_star_service_proto_rawDescGZIP(), []int{194}
 }
 
 func (x *MoveIswapXRequest) GetXPosition() float64 {
@@ -12209,7 +12054,7 @@ type MoveIswapXResponse struct {
 
 func (x *MoveIswapXResponse) Reset() {
 	*x = MoveIswapXResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[198]
+	mi := &file_star_service_proto_msgTypes[195]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12221,7 +12066,7 @@ func (x *MoveIswapXResponse) String() string {
 func (*MoveIswapXResponse) ProtoMessage() {}
 
 func (x *MoveIswapXResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[198]
+	mi := &file_star_service_proto_msgTypes[195]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12234,7 +12079,7 @@ func (x *MoveIswapXResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapXResponse.ProtoReflect.Descriptor instead.
 func (*MoveIswapXResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{198}
+	return file_star_service_proto_rawDescGZIP(), []int{195}
 }
 
 type MoveIswapYRequest struct {
@@ -12246,7 +12091,7 @@ type MoveIswapYRequest struct {
 
 func (x *MoveIswapYRequest) Reset() {
 	*x = MoveIswapYRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[199]
+	mi := &file_star_service_proto_msgTypes[196]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12258,7 +12103,7 @@ func (x *MoveIswapYRequest) String() string {
 func (*MoveIswapYRequest) ProtoMessage() {}
 
 func (x *MoveIswapYRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[199]
+	mi := &file_star_service_proto_msgTypes[196]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12271,7 +12116,7 @@ func (x *MoveIswapYRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapYRequest.ProtoReflect.Descriptor instead.
 func (*MoveIswapYRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{199}
+	return file_star_service_proto_rawDescGZIP(), []int{196}
 }
 
 func (x *MoveIswapYRequest) GetYPosition() float64 {
@@ -12289,7 +12134,7 @@ type MoveIswapYResponse struct {
 
 func (x *MoveIswapYResponse) Reset() {
 	*x = MoveIswapYResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[200]
+	mi := &file_star_service_proto_msgTypes[197]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12301,7 +12146,7 @@ func (x *MoveIswapYResponse) String() string {
 func (*MoveIswapYResponse) ProtoMessage() {}
 
 func (x *MoveIswapYResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[200]
+	mi := &file_star_service_proto_msgTypes[197]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12314,7 +12159,7 @@ func (x *MoveIswapYResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapYResponse.ProtoReflect.Descriptor instead.
 func (*MoveIswapYResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{200}
+	return file_star_service_proto_rawDescGZIP(), []int{197}
 }
 
 type MoveIswapZRequest struct {
@@ -12326,7 +12171,7 @@ type MoveIswapZRequest struct {
 
 func (x *MoveIswapZRequest) Reset() {
 	*x = MoveIswapZRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[201]
+	mi := &file_star_service_proto_msgTypes[198]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12338,7 +12183,7 @@ func (x *MoveIswapZRequest) String() string {
 func (*MoveIswapZRequest) ProtoMessage() {}
 
 func (x *MoveIswapZRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[201]
+	mi := &file_star_service_proto_msgTypes[198]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12351,7 +12196,7 @@ func (x *MoveIswapZRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapZRequest.ProtoReflect.Descriptor instead.
 func (*MoveIswapZRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{201}
+	return file_star_service_proto_rawDescGZIP(), []int{198}
 }
 
 func (x *MoveIswapZRequest) GetZPosition() float64 {
@@ -12369,7 +12214,7 @@ type MoveIswapZResponse struct {
 
 func (x *MoveIswapZResponse) Reset() {
 	*x = MoveIswapZResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[202]
+	mi := &file_star_service_proto_msgTypes[199]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12381,7 +12226,7 @@ func (x *MoveIswapZResponse) String() string {
 func (*MoveIswapZResponse) ProtoMessage() {}
 
 func (x *MoveIswapZResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[202]
+	mi := &file_star_service_proto_msgTypes[199]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12394,7 +12239,7 @@ func (x *MoveIswapZResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveIswapZResponse.ProtoReflect.Descriptor instead.
 func (*MoveIswapZResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{202}
+	return file_star_service_proto_rawDescGZIP(), []int{199}
 }
 
 type OpenNotInitializedGripperRequest struct {
@@ -12405,7 +12250,7 @@ type OpenNotInitializedGripperRequest struct {
 
 func (x *OpenNotInitializedGripperRequest) Reset() {
 	*x = OpenNotInitializedGripperRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[203]
+	mi := &file_star_service_proto_msgTypes[200]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12417,7 +12262,7 @@ func (x *OpenNotInitializedGripperRequest) String() string {
 func (*OpenNotInitializedGripperRequest) ProtoMessage() {}
 
 func (x *OpenNotInitializedGripperRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[203]
+	mi := &file_star_service_proto_msgTypes[200]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12430,7 +12275,7 @@ func (x *OpenNotInitializedGripperRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use OpenNotInitializedGripperRequest.ProtoReflect.Descriptor instead.
 func (*OpenNotInitializedGripperRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{203}
+	return file_star_service_proto_rawDescGZIP(), []int{200}
 }
 
 type OpenNotInitializedGripperResponse struct {
@@ -12441,7 +12286,7 @@ type OpenNotInitializedGripperResponse struct {
 
 func (x *OpenNotInitializedGripperResponse) Reset() {
 	*x = OpenNotInitializedGripperResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[204]
+	mi := &file_star_service_proto_msgTypes[201]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12453,7 +12298,7 @@ func (x *OpenNotInitializedGripperResponse) String() string {
 func (*OpenNotInitializedGripperResponse) ProtoMessage() {}
 
 func (x *OpenNotInitializedGripperResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[204]
+	mi := &file_star_service_proto_msgTypes[201]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12466,7 +12311,7 @@ func (x *OpenNotInitializedGripperResponse) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use OpenNotInitializedGripperResponse.ProtoReflect.Descriptor instead.
 func (*OpenNotInitializedGripperResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{204}
+	return file_star_service_proto_rawDescGZIP(), []int{201}
 }
 
 type IswapOpenGripperRequest struct {
@@ -12478,7 +12323,7 @@ type IswapOpenGripperRequest struct {
 
 func (x *IswapOpenGripperRequest) Reset() {
 	*x = IswapOpenGripperRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[205]
+	mi := &file_star_service_proto_msgTypes[202]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12490,7 +12335,7 @@ func (x *IswapOpenGripperRequest) String() string {
 func (*IswapOpenGripperRequest) ProtoMessage() {}
 
 func (x *IswapOpenGripperRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[205]
+	mi := &file_star_service_proto_msgTypes[202]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12503,7 +12348,7 @@ func (x *IswapOpenGripperRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapOpenGripperRequest.ProtoReflect.Descriptor instead.
 func (*IswapOpenGripperRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{205}
+	return file_star_service_proto_rawDescGZIP(), []int{202}
 }
 
 func (x *IswapOpenGripperRequest) GetOpenPosition() float64 {
@@ -12521,7 +12366,7 @@ type IswapOpenGripperResponse struct {
 
 func (x *IswapOpenGripperResponse) Reset() {
 	*x = IswapOpenGripperResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[206]
+	mi := &file_star_service_proto_msgTypes[203]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12533,7 +12378,7 @@ func (x *IswapOpenGripperResponse) String() string {
 func (*IswapOpenGripperResponse) ProtoMessage() {}
 
 func (x *IswapOpenGripperResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[206]
+	mi := &file_star_service_proto_msgTypes[203]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12546,7 +12391,7 @@ func (x *IswapOpenGripperResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapOpenGripperResponse.ProtoReflect.Descriptor instead.
 func (*IswapOpenGripperResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{206}
+	return file_star_service_proto_rawDescGZIP(), []int{203}
 }
 
 type IswapCloseGripperRequest struct {
@@ -12560,7 +12405,7 @@ type IswapCloseGripperRequest struct {
 
 func (x *IswapCloseGripperRequest) Reset() {
 	*x = IswapCloseGripperRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[207]
+	mi := &file_star_service_proto_msgTypes[204]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12572,7 +12417,7 @@ func (x *IswapCloseGripperRequest) String() string {
 func (*IswapCloseGripperRequest) ProtoMessage() {}
 
 func (x *IswapCloseGripperRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[207]
+	mi := &file_star_service_proto_msgTypes[204]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12585,7 +12430,7 @@ func (x *IswapCloseGripperRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapCloseGripperRequest.ProtoReflect.Descriptor instead.
 func (*IswapCloseGripperRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{207}
+	return file_star_service_proto_rawDescGZIP(), []int{204}
 }
 
 func (x *IswapCloseGripperRequest) GetGripStrength() int32 {
@@ -12617,7 +12462,7 @@ type IswapCloseGripperResponse struct {
 
 func (x *IswapCloseGripperResponse) Reset() {
 	*x = IswapCloseGripperResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[208]
+	mi := &file_star_service_proto_msgTypes[205]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12629,7 +12474,7 @@ func (x *IswapCloseGripperResponse) String() string {
 func (*IswapCloseGripperResponse) ProtoMessage() {}
 
 func (x *IswapCloseGripperResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[208]
+	mi := &file_star_service_proto_msgTypes[205]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12642,7 +12487,7 @@ func (x *IswapCloseGripperResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapCloseGripperResponse.ProtoReflect.Descriptor instead.
 func (*IswapCloseGripperResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{208}
+	return file_star_service_proto_rawDescGZIP(), []int{205}
 }
 
 type ParkIswapRequest struct {
@@ -12654,7 +12499,7 @@ type ParkIswapRequest struct {
 
 func (x *ParkIswapRequest) Reset() {
 	*x = ParkIswapRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[209]
+	mi := &file_star_service_proto_msgTypes[206]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12666,7 +12511,7 @@ func (x *ParkIswapRequest) String() string {
 func (*ParkIswapRequest) ProtoMessage() {}
 
 func (x *ParkIswapRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[209]
+	mi := &file_star_service_proto_msgTypes[206]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12679,7 +12524,7 @@ func (x *ParkIswapRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParkIswapRequest.ProtoReflect.Descriptor instead.
 func (*ParkIswapRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{209}
+	return file_star_service_proto_rawDescGZIP(), []int{206}
 }
 
 func (x *ParkIswapRequest) GetMinimumTraverseHeightAtBeginningOfACommand() int32 {
@@ -12697,7 +12542,7 @@ type ParkIswapResponse struct {
 
 func (x *ParkIswapResponse) Reset() {
 	*x = ParkIswapResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[210]
+	mi := &file_star_service_proto_msgTypes[207]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12709,7 +12554,7 @@ func (x *ParkIswapResponse) String() string {
 func (*ParkIswapResponse) ProtoMessage() {}
 
 func (x *ParkIswapResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[210]
+	mi := &file_star_service_proto_msgTypes[207]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12722,7 +12567,7 @@ func (x *ParkIswapResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParkIswapResponse.ProtoReflect.Descriptor instead.
 func (*ParkIswapResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{210}
+	return file_star_service_proto_rawDescGZIP(), []int{207}
 }
 
 type IswapGetPlateRequest struct {
@@ -12750,7 +12595,7 @@ type IswapGetPlateRequest struct {
 
 func (x *IswapGetPlateRequest) Reset() {
 	*x = IswapGetPlateRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[211]
+	mi := &file_star_service_proto_msgTypes[208]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12762,7 +12607,7 @@ func (x *IswapGetPlateRequest) String() string {
 func (*IswapGetPlateRequest) ProtoMessage() {}
 
 func (x *IswapGetPlateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[211]
+	mi := &file_star_service_proto_msgTypes[208]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12775,7 +12620,7 @@ func (x *IswapGetPlateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapGetPlateRequest.ProtoReflect.Descriptor instead.
 func (*IswapGetPlateRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{211}
+	return file_star_service_proto_rawDescGZIP(), []int{208}
 }
 
 func (x *IswapGetPlateRequest) GetXPosition() int32 {
@@ -12905,7 +12750,7 @@ type IswapGetPlateResponse struct {
 
 func (x *IswapGetPlateResponse) Reset() {
 	*x = IswapGetPlateResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[212]
+	mi := &file_star_service_proto_msgTypes[209]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12917,7 +12762,7 @@ func (x *IswapGetPlateResponse) String() string {
 func (*IswapGetPlateResponse) ProtoMessage() {}
 
 func (x *IswapGetPlateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[212]
+	mi := &file_star_service_proto_msgTypes[209]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12930,7 +12775,7 @@ func (x *IswapGetPlateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapGetPlateResponse.ProtoReflect.Descriptor instead.
 func (*IswapGetPlateResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{212}
+	return file_star_service_proto_rawDescGZIP(), []int{209}
 }
 
 type IswapPutPlateRequest struct {
@@ -12953,7 +12798,7 @@ type IswapPutPlateRequest struct {
 
 func (x *IswapPutPlateRequest) Reset() {
 	*x = IswapPutPlateRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[213]
+	mi := &file_star_service_proto_msgTypes[210]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -12965,7 +12810,7 @@ func (x *IswapPutPlateRequest) String() string {
 func (*IswapPutPlateRequest) ProtoMessage() {}
 
 func (x *IswapPutPlateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[213]
+	mi := &file_star_service_proto_msgTypes[210]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -12978,7 +12823,7 @@ func (x *IswapPutPlateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapPutPlateRequest.ProtoReflect.Descriptor instead.
 func (*IswapPutPlateRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{213}
+	return file_star_service_proto_rawDescGZIP(), []int{210}
 }
 
 func (x *IswapPutPlateRequest) GetXPosition() int32 {
@@ -13073,7 +12918,7 @@ type IswapPutPlateResponse struct {
 
 func (x *IswapPutPlateResponse) Reset() {
 	*x = IswapPutPlateResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[214]
+	mi := &file_star_service_proto_msgTypes[211]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13085,7 +12930,7 @@ func (x *IswapPutPlateResponse) String() string {
 func (*IswapPutPlateResponse) ProtoMessage() {}
 
 func (x *IswapPutPlateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[214]
+	mi := &file_star_service_proto_msgTypes[211]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13098,7 +12943,7 @@ func (x *IswapPutPlateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapPutPlateResponse.ProtoReflect.Descriptor instead.
 func (*IswapPutPlateResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{214}
+	return file_star_service_proto_rawDescGZIP(), []int{211}
 }
 
 type MovePlateToPositionRequest struct {
@@ -13120,7 +12965,7 @@ type MovePlateToPositionRequest struct {
 
 func (x *MovePlateToPositionRequest) Reset() {
 	*x = MovePlateToPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[215]
+	mi := &file_star_service_proto_msgTypes[212]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13132,7 +12977,7 @@ func (x *MovePlateToPositionRequest) String() string {
 func (*MovePlateToPositionRequest) ProtoMessage() {}
 
 func (x *MovePlateToPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[215]
+	mi := &file_star_service_proto_msgTypes[212]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13145,7 +12990,7 @@ func (x *MovePlateToPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MovePlateToPositionRequest.ProtoReflect.Descriptor instead.
 func (*MovePlateToPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{215}
+	return file_star_service_proto_rawDescGZIP(), []int{212}
 }
 
 func (x *MovePlateToPositionRequest) GetXPosition() int32 {
@@ -13233,7 +13078,7 @@ type MovePlateToPositionResponse struct {
 
 func (x *MovePlateToPositionResponse) Reset() {
 	*x = MovePlateToPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[216]
+	mi := &file_star_service_proto_msgTypes[213]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13245,7 +13090,7 @@ func (x *MovePlateToPositionResponse) String() string {
 func (*MovePlateToPositionResponse) ProtoMessage() {}
 
 func (x *MovePlateToPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[216]
+	mi := &file_star_service_proto_msgTypes[213]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13258,7 +13103,7 @@ func (x *MovePlateToPositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MovePlateToPositionResponse.ProtoReflect.Descriptor instead.
 func (*MovePlateToPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{216}
+	return file_star_service_proto_rawDescGZIP(), []int{213}
 }
 
 type CollapseGripperArmRequest struct {
@@ -13271,7 +13116,7 @@ type CollapseGripperArmRequest struct {
 
 func (x *CollapseGripperArmRequest) Reset() {
 	*x = CollapseGripperArmRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[217]
+	mi := &file_star_service_proto_msgTypes[214]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13283,7 +13128,7 @@ func (x *CollapseGripperArmRequest) String() string {
 func (*CollapseGripperArmRequest) ProtoMessage() {}
 
 func (x *CollapseGripperArmRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[217]
+	mi := &file_star_service_proto_msgTypes[214]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13296,7 +13141,7 @@ func (x *CollapseGripperArmRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CollapseGripperArmRequest.ProtoReflect.Descriptor instead.
 func (*CollapseGripperArmRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{217}
+	return file_star_service_proto_rawDescGZIP(), []int{214}
 }
 
 func (x *CollapseGripperArmRequest) GetMinimumTraverseHeightAtBeginningOfACommand() int32 {
@@ -13321,7 +13166,7 @@ type CollapseGripperArmResponse struct {
 
 func (x *CollapseGripperArmResponse) Reset() {
 	*x = CollapseGripperArmResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[218]
+	mi := &file_star_service_proto_msgTypes[215]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13333,7 +13178,7 @@ func (x *CollapseGripperArmResponse) String() string {
 func (*CollapseGripperArmResponse) ProtoMessage() {}
 
 func (x *CollapseGripperArmResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[218]
+	mi := &file_star_service_proto_msgTypes[215]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13346,7 +13191,7 @@ func (x *CollapseGripperArmResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CollapseGripperArmResponse.ProtoReflect.Descriptor instead.
 func (*CollapseGripperArmResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{218}
+	return file_star_service_proto_rawDescGZIP(), []int{215}
 }
 
 type IswapRotateRequest struct {
@@ -13358,7 +13203,7 @@ type IswapRotateRequest struct {
 
 func (x *IswapRotateRequest) Reset() {
 	*x = IswapRotateRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[219]
+	mi := &file_star_service_proto_msgTypes[216]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13370,7 +13215,7 @@ func (x *IswapRotateRequest) String() string {
 func (*IswapRotateRequest) ProtoMessage() {}
 
 func (x *IswapRotateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[219]
+	mi := &file_star_service_proto_msgTypes[216]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13383,7 +13228,7 @@ func (x *IswapRotateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapRotateRequest.ProtoReflect.Descriptor instead.
 func (*IswapRotateRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{219}
+	return file_star_service_proto_rawDescGZIP(), []int{216}
 }
 
 func (x *IswapRotateRequest) GetOrientation() RotationDriveOrientationEnum {
@@ -13401,7 +13246,7 @@ type IswapRotateResponse struct {
 
 func (x *IswapRotateResponse) Reset() {
 	*x = IswapRotateResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[220]
+	mi := &file_star_service_proto_msgTypes[217]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13413,7 +13258,7 @@ func (x *IswapRotateResponse) String() string {
 func (*IswapRotateResponse) ProtoMessage() {}
 
 func (x *IswapRotateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[220]
+	mi := &file_star_service_proto_msgTypes[217]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13426,7 +13271,7 @@ func (x *IswapRotateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapRotateResponse.ProtoReflect.Descriptor instead.
 func (*IswapRotateResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{220}
+	return file_star_service_proto_rawDescGZIP(), []int{217}
 }
 
 type RotateIswapRotationDriveRequest struct {
@@ -13438,7 +13283,7 @@ type RotateIswapRotationDriveRequest struct {
 
 func (x *RotateIswapRotationDriveRequest) Reset() {
 	*x = RotateIswapRotationDriveRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[221]
+	mi := &file_star_service_proto_msgTypes[218]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13450,7 +13295,7 @@ func (x *RotateIswapRotationDriveRequest) String() string {
 func (*RotateIswapRotationDriveRequest) ProtoMessage() {}
 
 func (x *RotateIswapRotationDriveRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[221]
+	mi := &file_star_service_proto_msgTypes[218]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13463,7 +13308,7 @@ func (x *RotateIswapRotationDriveRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RotateIswapRotationDriveRequest.ProtoReflect.Descriptor instead.
 func (*RotateIswapRotationDriveRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{221}
+	return file_star_service_proto_rawDescGZIP(), []int{218}
 }
 
 func (x *RotateIswapRotationDriveRequest) GetOrientation() RotationDriveOrientationEnum {
@@ -13481,7 +13326,7 @@ type RotateIswapRotationDriveResponse struct {
 
 func (x *RotateIswapRotationDriveResponse) Reset() {
 	*x = RotateIswapRotationDriveResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[222]
+	mi := &file_star_service_proto_msgTypes[219]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13493,7 +13338,7 @@ func (x *RotateIswapRotationDriveResponse) String() string {
 func (*RotateIswapRotationDriveResponse) ProtoMessage() {}
 
 func (x *RotateIswapRotationDriveResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[222]
+	mi := &file_star_service_proto_msgTypes[219]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13506,7 +13351,7 @@ func (x *RotateIswapRotationDriveResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RotateIswapRotationDriveResponse.ProtoReflect.Descriptor instead.
 func (*RotateIswapRotationDriveResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{222}
+	return file_star_service_proto_rawDescGZIP(), []int{219}
 }
 
 type RotateIswapWristRequest struct {
@@ -13518,7 +13363,7 @@ type RotateIswapWristRequest struct {
 
 func (x *RotateIswapWristRequest) Reset() {
 	*x = RotateIswapWristRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[223]
+	mi := &file_star_service_proto_msgTypes[220]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13530,7 +13375,7 @@ func (x *RotateIswapWristRequest) String() string {
 func (*RotateIswapWristRequest) ProtoMessage() {}
 
 func (x *RotateIswapWristRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[223]
+	mi := &file_star_service_proto_msgTypes[220]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13543,7 +13388,7 @@ func (x *RotateIswapWristRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RotateIswapWristRequest.ProtoReflect.Descriptor instead.
 func (*RotateIswapWristRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{223}
+	return file_star_service_proto_rawDescGZIP(), []int{220}
 }
 
 func (x *RotateIswapWristRequest) GetOrientation() WristDriveOrientationEnum {
@@ -13561,7 +13406,7 @@ type RotateIswapWristResponse struct {
 
 func (x *RotateIswapWristResponse) Reset() {
 	*x = RotateIswapWristResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[224]
+	mi := &file_star_service_proto_msgTypes[221]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13573,7 +13418,7 @@ func (x *RotateIswapWristResponse) String() string {
 func (*RotateIswapWristResponse) ProtoMessage() {}
 
 func (x *RotateIswapWristResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[224]
+	mi := &file_star_service_proto_msgTypes[221]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13586,7 +13431,7 @@ func (x *RotateIswapWristResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RotateIswapWristResponse.ProtoReflect.Descriptor instead.
 func (*RotateIswapWristResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{224}
+	return file_star_service_proto_rawDescGZIP(), []int{221}
 }
 
 type IswapDangerousReleaseBreakRequest struct {
@@ -13597,7 +13442,7 @@ type IswapDangerousReleaseBreakRequest struct {
 
 func (x *IswapDangerousReleaseBreakRequest) Reset() {
 	*x = IswapDangerousReleaseBreakRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[225]
+	mi := &file_star_service_proto_msgTypes[222]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13609,7 +13454,7 @@ func (x *IswapDangerousReleaseBreakRequest) String() string {
 func (*IswapDangerousReleaseBreakRequest) ProtoMessage() {}
 
 func (x *IswapDangerousReleaseBreakRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[225]
+	mi := &file_star_service_proto_msgTypes[222]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13622,7 +13467,7 @@ func (x *IswapDangerousReleaseBreakRequest) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use IswapDangerousReleaseBreakRequest.ProtoReflect.Descriptor instead.
 func (*IswapDangerousReleaseBreakRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{225}
+	return file_star_service_proto_rawDescGZIP(), []int{222}
 }
 
 type IswapDangerousReleaseBreakResponse struct {
@@ -13633,7 +13478,7 @@ type IswapDangerousReleaseBreakResponse struct {
 
 func (x *IswapDangerousReleaseBreakResponse) Reset() {
 	*x = IswapDangerousReleaseBreakResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[226]
+	mi := &file_star_service_proto_msgTypes[223]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13645,7 +13490,7 @@ func (x *IswapDangerousReleaseBreakResponse) String() string {
 func (*IswapDangerousReleaseBreakResponse) ProtoMessage() {}
 
 func (x *IswapDangerousReleaseBreakResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[226]
+	mi := &file_star_service_proto_msgTypes[223]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13658,7 +13503,7 @@ func (x *IswapDangerousReleaseBreakResponse) ProtoReflect() protoreflect.Message
 
 // Deprecated: Use IswapDangerousReleaseBreakResponse.ProtoReflect.Descriptor instead.
 func (*IswapDangerousReleaseBreakResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{226}
+	return file_star_service_proto_rawDescGZIP(), []int{223}
 }
 
 type IswapReengageBreakRequest struct {
@@ -13669,7 +13514,7 @@ type IswapReengageBreakRequest struct {
 
 func (x *IswapReengageBreakRequest) Reset() {
 	*x = IswapReengageBreakRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[227]
+	mi := &file_star_service_proto_msgTypes[224]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13681,7 +13526,7 @@ func (x *IswapReengageBreakRequest) String() string {
 func (*IswapReengageBreakRequest) ProtoMessage() {}
 
 func (x *IswapReengageBreakRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[227]
+	mi := &file_star_service_proto_msgTypes[224]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13694,7 +13539,7 @@ func (x *IswapReengageBreakRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapReengageBreakRequest.ProtoReflect.Descriptor instead.
 func (*IswapReengageBreakRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{227}
+	return file_star_service_proto_rawDescGZIP(), []int{224}
 }
 
 type IswapReengageBreakResponse struct {
@@ -13705,7 +13550,7 @@ type IswapReengageBreakResponse struct {
 
 func (x *IswapReengageBreakResponse) Reset() {
 	*x = IswapReengageBreakResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[228]
+	mi := &file_star_service_proto_msgTypes[225]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13717,7 +13562,7 @@ func (x *IswapReengageBreakResponse) String() string {
 func (*IswapReengageBreakResponse) ProtoMessage() {}
 
 func (x *IswapReengageBreakResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[228]
+	mi := &file_star_service_proto_msgTypes[225]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13730,7 +13575,7 @@ func (x *IswapReengageBreakResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapReengageBreakResponse.ProtoReflect.Descriptor instead.
 func (*IswapReengageBreakResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{228}
+	return file_star_service_proto_rawDescGZIP(), []int{225}
 }
 
 type IswapInitializeZAxisRequest struct {
@@ -13741,7 +13586,7 @@ type IswapInitializeZAxisRequest struct {
 
 func (x *IswapInitializeZAxisRequest) Reset() {
 	*x = IswapInitializeZAxisRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[229]
+	mi := &file_star_service_proto_msgTypes[226]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13753,7 +13598,7 @@ func (x *IswapInitializeZAxisRequest) String() string {
 func (*IswapInitializeZAxisRequest) ProtoMessage() {}
 
 func (x *IswapInitializeZAxisRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[229]
+	mi := &file_star_service_proto_msgTypes[226]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13766,7 +13611,7 @@ func (x *IswapInitializeZAxisRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapInitializeZAxisRequest.ProtoReflect.Descriptor instead.
 func (*IswapInitializeZAxisRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{229}
+	return file_star_service_proto_rawDescGZIP(), []int{226}
 }
 
 type IswapInitializeZAxisResponse struct {
@@ -13777,7 +13622,7 @@ type IswapInitializeZAxisResponse struct {
 
 func (x *IswapInitializeZAxisResponse) Reset() {
 	*x = IswapInitializeZAxisResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[230]
+	mi := &file_star_service_proto_msgTypes[227]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13789,7 +13634,7 @@ func (x *IswapInitializeZAxisResponse) String() string {
 func (*IswapInitializeZAxisResponse) ProtoMessage() {}
 
 func (x *IswapInitializeZAxisResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[230]
+	mi := &file_star_service_proto_msgTypes[227]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13802,7 +13647,7 @@ func (x *IswapInitializeZAxisResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapInitializeZAxisResponse.ProtoReflect.Descriptor instead.
 func (*IswapInitializeZAxisResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{230}
+	return file_star_service_proto_rawDescGZIP(), []int{227}
 }
 
 type RequestIswapRotationDrivePositionIncrementsRequest struct {
@@ -13813,7 +13658,7 @@ type RequestIswapRotationDrivePositionIncrementsRequest struct {
 
 func (x *RequestIswapRotationDrivePositionIncrementsRequest) Reset() {
 	*x = RequestIswapRotationDrivePositionIncrementsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[231]
+	mi := &file_star_service_proto_msgTypes[228]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13825,7 +13670,7 @@ func (x *RequestIswapRotationDrivePositionIncrementsRequest) String() string {
 func (*RequestIswapRotationDrivePositionIncrementsRequest) ProtoMessage() {}
 
 func (x *RequestIswapRotationDrivePositionIncrementsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[231]
+	mi := &file_star_service_proto_msgTypes[228]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13838,7 +13683,7 @@ func (x *RequestIswapRotationDrivePositionIncrementsRequest) ProtoReflect() prot
 
 // Deprecated: Use RequestIswapRotationDrivePositionIncrementsRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapRotationDrivePositionIncrementsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{231}
+	return file_star_service_proto_rawDescGZIP(), []int{228}
 }
 
 type RequestIswapRotationDrivePositionIncrementsResponse struct {
@@ -13850,7 +13695,7 @@ type RequestIswapRotationDrivePositionIncrementsResponse struct {
 
 func (x *RequestIswapRotationDrivePositionIncrementsResponse) Reset() {
 	*x = RequestIswapRotationDrivePositionIncrementsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[232]
+	mi := &file_star_service_proto_msgTypes[229]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13862,7 +13707,7 @@ func (x *RequestIswapRotationDrivePositionIncrementsResponse) String() string {
 func (*RequestIswapRotationDrivePositionIncrementsResponse) ProtoMessage() {}
 
 func (x *RequestIswapRotationDrivePositionIncrementsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[232]
+	mi := &file_star_service_proto_msgTypes[229]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13875,7 +13720,7 @@ func (x *RequestIswapRotationDrivePositionIncrementsResponse) ProtoReflect() pro
 
 // Deprecated: Use RequestIswapRotationDrivePositionIncrementsResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapRotationDrivePositionIncrementsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{232}
+	return file_star_service_proto_rawDescGZIP(), []int{229}
 }
 
 func (x *RequestIswapRotationDrivePositionIncrementsResponse) GetPosition() int32 {
@@ -13893,7 +13738,7 @@ type RequestIswapRotationDriveOrientationRequest struct {
 
 func (x *RequestIswapRotationDriveOrientationRequest) Reset() {
 	*x = RequestIswapRotationDriveOrientationRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[233]
+	mi := &file_star_service_proto_msgTypes[230]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13905,7 +13750,7 @@ func (x *RequestIswapRotationDriveOrientationRequest) String() string {
 func (*RequestIswapRotationDriveOrientationRequest) ProtoMessage() {}
 
 func (x *RequestIswapRotationDriveOrientationRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[233]
+	mi := &file_star_service_proto_msgTypes[230]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13918,7 +13763,7 @@ func (x *RequestIswapRotationDriveOrientationRequest) ProtoReflect() protoreflec
 
 // Deprecated: Use RequestIswapRotationDriveOrientationRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapRotationDriveOrientationRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{233}
+	return file_star_service_proto_rawDescGZIP(), []int{230}
 }
 
 type RequestIswapRotationDriveOrientationResponse struct {
@@ -13930,7 +13775,7 @@ type RequestIswapRotationDriveOrientationResponse struct {
 
 func (x *RequestIswapRotationDriveOrientationResponse) Reset() {
 	*x = RequestIswapRotationDriveOrientationResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[234]
+	mi := &file_star_service_proto_msgTypes[231]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13942,7 +13787,7 @@ func (x *RequestIswapRotationDriveOrientationResponse) String() string {
 func (*RequestIswapRotationDriveOrientationResponse) ProtoMessage() {}
 
 func (x *RequestIswapRotationDriveOrientationResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[234]
+	mi := &file_star_service_proto_msgTypes[231]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13955,7 +13800,7 @@ func (x *RequestIswapRotationDriveOrientationResponse) ProtoReflect() protorefle
 
 // Deprecated: Use RequestIswapRotationDriveOrientationResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapRotationDriveOrientationResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{234}
+	return file_star_service_proto_rawDescGZIP(), []int{231}
 }
 
 func (x *RequestIswapRotationDriveOrientationResponse) GetOrientation() RotationDriveOrientationEnum {
@@ -13973,7 +13818,7 @@ type RequestIswapWristDrivePositionIncrementsRequest struct {
 
 func (x *RequestIswapWristDrivePositionIncrementsRequest) Reset() {
 	*x = RequestIswapWristDrivePositionIncrementsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[235]
+	mi := &file_star_service_proto_msgTypes[232]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -13985,7 +13830,7 @@ func (x *RequestIswapWristDrivePositionIncrementsRequest) String() string {
 func (*RequestIswapWristDrivePositionIncrementsRequest) ProtoMessage() {}
 
 func (x *RequestIswapWristDrivePositionIncrementsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[235]
+	mi := &file_star_service_proto_msgTypes[232]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -13998,7 +13843,7 @@ func (x *RequestIswapWristDrivePositionIncrementsRequest) ProtoReflect() protore
 
 // Deprecated: Use RequestIswapWristDrivePositionIncrementsRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapWristDrivePositionIncrementsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{235}
+	return file_star_service_proto_rawDescGZIP(), []int{232}
 }
 
 type RequestIswapWristDrivePositionIncrementsResponse struct {
@@ -14010,7 +13855,7 @@ type RequestIswapWristDrivePositionIncrementsResponse struct {
 
 func (x *RequestIswapWristDrivePositionIncrementsResponse) Reset() {
 	*x = RequestIswapWristDrivePositionIncrementsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[236]
+	mi := &file_star_service_proto_msgTypes[233]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14022,7 +13867,7 @@ func (x *RequestIswapWristDrivePositionIncrementsResponse) String() string {
 func (*RequestIswapWristDrivePositionIncrementsResponse) ProtoMessage() {}
 
 func (x *RequestIswapWristDrivePositionIncrementsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[236]
+	mi := &file_star_service_proto_msgTypes[233]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14035,7 +13880,7 @@ func (x *RequestIswapWristDrivePositionIncrementsResponse) ProtoReflect() protor
 
 // Deprecated: Use RequestIswapWristDrivePositionIncrementsResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapWristDrivePositionIncrementsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{236}
+	return file_star_service_proto_rawDescGZIP(), []int{233}
 }
 
 func (x *RequestIswapWristDrivePositionIncrementsResponse) GetPosition() int32 {
@@ -14053,7 +13898,7 @@ type RequestIswapWristDriveOrientationRequest struct {
 
 func (x *RequestIswapWristDriveOrientationRequest) Reset() {
 	*x = RequestIswapWristDriveOrientationRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[237]
+	mi := &file_star_service_proto_msgTypes[234]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14065,7 +13910,7 @@ func (x *RequestIswapWristDriveOrientationRequest) String() string {
 func (*RequestIswapWristDriveOrientationRequest) ProtoMessage() {}
 
 func (x *RequestIswapWristDriveOrientationRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[237]
+	mi := &file_star_service_proto_msgTypes[234]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14078,7 +13923,7 @@ func (x *RequestIswapWristDriveOrientationRequest) ProtoReflect() protoreflect.M
 
 // Deprecated: Use RequestIswapWristDriveOrientationRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapWristDriveOrientationRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{237}
+	return file_star_service_proto_rawDescGZIP(), []int{234}
 }
 
 type RequestIswapWristDriveOrientationResponse struct {
@@ -14090,7 +13935,7 @@ type RequestIswapWristDriveOrientationResponse struct {
 
 func (x *RequestIswapWristDriveOrientationResponse) Reset() {
 	*x = RequestIswapWristDriveOrientationResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[238]
+	mi := &file_star_service_proto_msgTypes[235]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14102,7 +13947,7 @@ func (x *RequestIswapWristDriveOrientationResponse) String() string {
 func (*RequestIswapWristDriveOrientationResponse) ProtoMessage() {}
 
 func (x *RequestIswapWristDriveOrientationResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[238]
+	mi := &file_star_service_proto_msgTypes[235]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14115,7 +13960,7 @@ func (x *RequestIswapWristDriveOrientationResponse) ProtoReflect() protoreflect.
 
 // Deprecated: Use RequestIswapWristDriveOrientationResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapWristDriveOrientationResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{238}
+	return file_star_service_proto_rawDescGZIP(), []int{235}
 }
 
 func (x *RequestIswapWristDriveOrientationResponse) GetOrientation() WristDriveOrientationEnum {
@@ -14133,7 +13978,7 @@ type RequestIswapInParkingPositionRequest struct {
 
 func (x *RequestIswapInParkingPositionRequest) Reset() {
 	*x = RequestIswapInParkingPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[239]
+	mi := &file_star_service_proto_msgTypes[236]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14145,7 +13990,7 @@ func (x *RequestIswapInParkingPositionRequest) String() string {
 func (*RequestIswapInParkingPositionRequest) ProtoMessage() {}
 
 func (x *RequestIswapInParkingPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[239]
+	mi := &file_star_service_proto_msgTypes[236]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14158,7 +14003,7 @@ func (x *RequestIswapInParkingPositionRequest) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use RequestIswapInParkingPositionRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapInParkingPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{239}
+	return file_star_service_proto_rawDescGZIP(), []int{236}
 }
 
 type RequestIswapInParkingPositionResponse struct {
@@ -14169,7 +14014,7 @@ type RequestIswapInParkingPositionResponse struct {
 
 func (x *RequestIswapInParkingPositionResponse) Reset() {
 	*x = RequestIswapInParkingPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[240]
+	mi := &file_star_service_proto_msgTypes[237]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14181,7 +14026,7 @@ func (x *RequestIswapInParkingPositionResponse) String() string {
 func (*RequestIswapInParkingPositionResponse) ProtoMessage() {}
 
 func (x *RequestIswapInParkingPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[240]
+	mi := &file_star_service_proto_msgTypes[237]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14194,7 +14039,7 @@ func (x *RequestIswapInParkingPositionResponse) ProtoReflect() protoreflect.Mess
 
 // Deprecated: Use RequestIswapInParkingPositionResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapInParkingPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{240}
+	return file_star_service_proto_rawDescGZIP(), []int{237}
 }
 
 type RequestPlateInIswapRequest struct {
@@ -14205,7 +14050,7 @@ type RequestPlateInIswapRequest struct {
 
 func (x *RequestPlateInIswapRequest) Reset() {
 	*x = RequestPlateInIswapRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[241]
+	mi := &file_star_service_proto_msgTypes[238]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14217,7 +14062,7 @@ func (x *RequestPlateInIswapRequest) String() string {
 func (*RequestPlateInIswapRequest) ProtoMessage() {}
 
 func (x *RequestPlateInIswapRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[241]
+	mi := &file_star_service_proto_msgTypes[238]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14230,7 +14075,7 @@ func (x *RequestPlateInIswapRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPlateInIswapRequest.ProtoReflect.Descriptor instead.
 func (*RequestPlateInIswapRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{241}
+	return file_star_service_proto_rawDescGZIP(), []int{238}
 }
 
 type RequestPlateInIswapResponse struct {
@@ -14242,7 +14087,7 @@ type RequestPlateInIswapResponse struct {
 
 func (x *RequestPlateInIswapResponse) Reset() {
 	*x = RequestPlateInIswapResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[242]
+	mi := &file_star_service_proto_msgTypes[239]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14254,7 +14099,7 @@ func (x *RequestPlateInIswapResponse) String() string {
 func (*RequestPlateInIswapResponse) ProtoMessage() {}
 
 func (x *RequestPlateInIswapResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[242]
+	mi := &file_star_service_proto_msgTypes[239]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14267,7 +14112,7 @@ func (x *RequestPlateInIswapResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPlateInIswapResponse.ProtoReflect.Descriptor instead.
 func (*RequestPlateInIswapResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{242}
+	return file_star_service_proto_rawDescGZIP(), []int{239}
 }
 
 func (x *RequestPlateInIswapResponse) GetPlateInIswap() bool {
@@ -14285,7 +14130,7 @@ type RequestIswapPositionRequest struct {
 
 func (x *RequestIswapPositionRequest) Reset() {
 	*x = RequestIswapPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[243]
+	mi := &file_star_service_proto_msgTypes[240]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14297,7 +14142,7 @@ func (x *RequestIswapPositionRequest) String() string {
 func (*RequestIswapPositionRequest) ProtoMessage() {}
 
 func (x *RequestIswapPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[243]
+	mi := &file_star_service_proto_msgTypes[240]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14310,19 +14155,19 @@ func (x *RequestIswapPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestIswapPositionRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{243}
+	return file_star_service_proto_rawDescGZIP(), []int{240}
 }
 
 type RequestIswapPositionResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Position      *Coordinate            `protobuf:"bytes,1,opt,name=position,proto3" json:"position,omitempty"`
+	Position      *v1.Coordinate         `protobuf:"bytes,1,opt,name=position,proto3" json:"position,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *RequestIswapPositionResponse) Reset() {
 	*x = RequestIswapPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[244]
+	mi := &file_star_service_proto_msgTypes[241]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14334,7 +14179,7 @@ func (x *RequestIswapPositionResponse) String() string {
 func (*RequestIswapPositionResponse) ProtoMessage() {}
 
 func (x *RequestIswapPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[244]
+	mi := &file_star_service_proto_msgTypes[241]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14347,10 +14192,10 @@ func (x *RequestIswapPositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestIswapPositionResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{244}
+	return file_star_service_proto_rawDescGZIP(), []int{241}
 }
 
-func (x *RequestIswapPositionResponse) GetPosition() *Coordinate {
+func (x *RequestIswapPositionResponse) GetPosition() *v1.Coordinate {
 	if x != nil {
 		return x.Position
 	}
@@ -14365,7 +14210,7 @@ type IswapRotationDriveRequestYRequest struct {
 
 func (x *IswapRotationDriveRequestYRequest) Reset() {
 	*x = IswapRotationDriveRequestYRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[245]
+	mi := &file_star_service_proto_msgTypes[242]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14377,7 +14222,7 @@ func (x *IswapRotationDriveRequestYRequest) String() string {
 func (*IswapRotationDriveRequestYRequest) ProtoMessage() {}
 
 func (x *IswapRotationDriveRequestYRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[245]
+	mi := &file_star_service_proto_msgTypes[242]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14390,7 +14235,7 @@ func (x *IswapRotationDriveRequestYRequest) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use IswapRotationDriveRequestYRequest.ProtoReflect.Descriptor instead.
 func (*IswapRotationDriveRequestYRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{245}
+	return file_star_service_proto_rawDescGZIP(), []int{242}
 }
 
 type IswapRotationDriveRequestYResponse struct {
@@ -14402,7 +14247,7 @@ type IswapRotationDriveRequestYResponse struct {
 
 func (x *IswapRotationDriveRequestYResponse) Reset() {
 	*x = IswapRotationDriveRequestYResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[246]
+	mi := &file_star_service_proto_msgTypes[243]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14414,7 +14259,7 @@ func (x *IswapRotationDriveRequestYResponse) String() string {
 func (*IswapRotationDriveRequestYResponse) ProtoMessage() {}
 
 func (x *IswapRotationDriveRequestYResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[246]
+	mi := &file_star_service_proto_msgTypes[243]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14427,7 +14272,7 @@ func (x *IswapRotationDriveRequestYResponse) ProtoReflect() protoreflect.Message
 
 // Deprecated: Use IswapRotationDriveRequestYResponse.ProtoReflect.Descriptor instead.
 func (*IswapRotationDriveRequestYResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{246}
+	return file_star_service_proto_rawDescGZIP(), []int{243}
 }
 
 func (x *IswapRotationDriveRequestYResponse) GetY() float64 {
@@ -14445,7 +14290,7 @@ type RequestIswapInitializationStatusRequest struct {
 
 func (x *RequestIswapInitializationStatusRequest) Reset() {
 	*x = RequestIswapInitializationStatusRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[247]
+	mi := &file_star_service_proto_msgTypes[244]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14457,7 +14302,7 @@ func (x *RequestIswapInitializationStatusRequest) String() string {
 func (*RequestIswapInitializationStatusRequest) ProtoMessage() {}
 
 func (x *RequestIswapInitializationStatusRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[247]
+	mi := &file_star_service_proto_msgTypes[244]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14470,7 +14315,7 @@ func (x *RequestIswapInitializationStatusRequest) ProtoReflect() protoreflect.Me
 
 // Deprecated: Use RequestIswapInitializationStatusRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapInitializationStatusRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{247}
+	return file_star_service_proto_rawDescGZIP(), []int{244}
 }
 
 type RequestIswapInitializationStatusResponse struct {
@@ -14482,7 +14327,7 @@ type RequestIswapInitializationStatusResponse struct {
 
 func (x *RequestIswapInitializationStatusResponse) Reset() {
 	*x = RequestIswapInitializationStatusResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[248]
+	mi := &file_star_service_proto_msgTypes[245]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14494,7 +14339,7 @@ func (x *RequestIswapInitializationStatusResponse) String() string {
 func (*RequestIswapInitializationStatusResponse) ProtoMessage() {}
 
 func (x *RequestIswapInitializationStatusResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[248]
+	mi := &file_star_service_proto_msgTypes[245]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14507,7 +14352,7 @@ func (x *RequestIswapInitializationStatusResponse) ProtoReflect() protoreflect.M
 
 // Deprecated: Use RequestIswapInitializationStatusResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapInitializationStatusResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{248}
+	return file_star_service_proto_rawDescGZIP(), []int{245}
 }
 
 func (x *RequestIswapInitializationStatusResponse) GetInitialized() bool {
@@ -14525,7 +14370,7 @@ type RequestIswapVersionRequest struct {
 
 func (x *RequestIswapVersionRequest) Reset() {
 	*x = RequestIswapVersionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[249]
+	mi := &file_star_service_proto_msgTypes[246]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14537,7 +14382,7 @@ func (x *RequestIswapVersionRequest) String() string {
 func (*RequestIswapVersionRequest) ProtoMessage() {}
 
 func (x *RequestIswapVersionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[249]
+	mi := &file_star_service_proto_msgTypes[246]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14550,7 +14395,7 @@ func (x *RequestIswapVersionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestIswapVersionRequest.ProtoReflect.Descriptor instead.
 func (*RequestIswapVersionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{249}
+	return file_star_service_proto_rawDescGZIP(), []int{246}
 }
 
 type RequestIswapVersionResponse struct {
@@ -14562,7 +14407,7 @@ type RequestIswapVersionResponse struct {
 
 func (x *RequestIswapVersionResponse) Reset() {
 	*x = RequestIswapVersionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[250]
+	mi := &file_star_service_proto_msgTypes[247]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14574,7 +14419,7 @@ func (x *RequestIswapVersionResponse) String() string {
 func (*RequestIswapVersionResponse) ProtoMessage() {}
 
 func (x *RequestIswapVersionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[250]
+	mi := &file_star_service_proto_msgTypes[247]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14587,7 +14432,7 @@ func (x *RequestIswapVersionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestIswapVersionResponse.ProtoReflect.Descriptor instead.
 func (*RequestIswapVersionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{250}
+	return file_star_service_proto_rawDescGZIP(), []int{247}
 }
 
 func (x *RequestIswapVersionResponse) GetVersion() string {
@@ -14605,7 +14450,7 @@ type GetIswapVersionRequest struct {
 
 func (x *GetIswapVersionRequest) Reset() {
 	*x = GetIswapVersionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[251]
+	mi := &file_star_service_proto_msgTypes[248]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14617,7 +14462,7 @@ func (x *GetIswapVersionRequest) String() string {
 func (*GetIswapVersionRequest) ProtoMessage() {}
 
 func (x *GetIswapVersionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[251]
+	mi := &file_star_service_proto_msgTypes[248]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14630,7 +14475,7 @@ func (x *GetIswapVersionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetIswapVersionRequest.ProtoReflect.Descriptor instead.
 func (*GetIswapVersionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{251}
+	return file_star_service_proto_rawDescGZIP(), []int{248}
 }
 
 type GetIswapVersionResponse struct {
@@ -14642,7 +14487,7 @@ type GetIswapVersionResponse struct {
 
 func (x *GetIswapVersionResponse) Reset() {
 	*x = GetIswapVersionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[252]
+	mi := &file_star_service_proto_msgTypes[249]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14654,7 +14499,7 @@ func (x *GetIswapVersionResponse) String() string {
 func (*GetIswapVersionResponse) ProtoMessage() {}
 
 func (x *GetIswapVersionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[252]
+	mi := &file_star_service_proto_msgTypes[249]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14667,7 +14512,7 @@ func (x *GetIswapVersionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetIswapVersionResponse.ProtoReflect.Descriptor instead.
 func (*GetIswapVersionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{252}
+	return file_star_service_proto_rawDescGZIP(), []int{249}
 }
 
 func (x *GetIswapVersionResponse) GetVersion() string {
@@ -14687,7 +14532,7 @@ type SlowIswapRequest struct {
 
 func (x *SlowIswapRequest) Reset() {
 	*x = SlowIswapRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[253]
+	mi := &file_star_service_proto_msgTypes[250]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14699,7 +14544,7 @@ func (x *SlowIswapRequest) String() string {
 func (*SlowIswapRequest) ProtoMessage() {}
 
 func (x *SlowIswapRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[253]
+	mi := &file_star_service_proto_msgTypes[250]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14712,7 +14557,7 @@ func (x *SlowIswapRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SlowIswapRequest.ProtoReflect.Descriptor instead.
 func (*SlowIswapRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{253}
+	return file_star_service_proto_rawDescGZIP(), []int{250}
 }
 
 func (x *SlowIswapRequest) GetWristVelocity() int32 {
@@ -14737,7 +14582,7 @@ type SlowIswapResponse struct {
 
 func (x *SlowIswapResponse) Reset() {
 	*x = SlowIswapResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[254]
+	mi := &file_star_service_proto_msgTypes[251]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14749,7 +14594,7 @@ func (x *SlowIswapResponse) String() string {
 func (*SlowIswapResponse) ProtoMessage() {}
 
 func (x *SlowIswapResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[254]
+	mi := &file_star_service_proto_msgTypes[251]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14762,12 +14607,12 @@ func (x *SlowIswapResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SlowIswapResponse.ProtoReflect.Descriptor instead.
 func (*SlowIswapResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{254}
+	return file_star_service_proto_rawDescGZIP(), []int{251}
 }
 
 type IswapMovePickedUpResourceRequest struct {
 	state                                      protoimpl.MessageState `protogen:"open.v1"`
-	Center                                     *Coordinate            `protobuf:"bytes,1,opt,name=center,proto3" json:"center,omitempty"`
+	Center                                     *v1.Coordinate         `protobuf:"bytes,1,opt,name=center,proto3" json:"center,omitempty"`
 	GripDirection                              GripDirectionEnum      `protobuf:"varint,2,opt,name=grip_direction,json=gripDirection,proto3,enum=pylabrobot.star.v1.GripDirectionEnum" json:"grip_direction,omitempty"`
 	MinimumTraverseHeightAtBeginningOfACommand *float64               `protobuf:"fixed64,3,opt,name=minimum_traverse_height_at_beginning_of_a_command,json=minimumTraverseHeightAtBeginningOfACommand,proto3,oneof" json:"minimum_traverse_height_at_beginning_of_a_command,omitempty"`
 	CollisionControlLevel                      int32                  `protobuf:"varint,4,opt,name=collision_control_level,json=collisionControlLevel,proto3" json:"collision_control_level,omitempty"`
@@ -14779,7 +14624,7 @@ type IswapMovePickedUpResourceRequest struct {
 
 func (x *IswapMovePickedUpResourceRequest) Reset() {
 	*x = IswapMovePickedUpResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[255]
+	mi := &file_star_service_proto_msgTypes[252]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14791,7 +14636,7 @@ func (x *IswapMovePickedUpResourceRequest) String() string {
 func (*IswapMovePickedUpResourceRequest) ProtoMessage() {}
 
 func (x *IswapMovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[255]
+	mi := &file_star_service_proto_msgTypes[252]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14804,10 +14649,10 @@ func (x *IswapMovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IswapMovePickedUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*IswapMovePickedUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{255}
+	return file_star_service_proto_rawDescGZIP(), []int{252}
 }
 
-func (x *IswapMovePickedUpResourceRequest) GetCenter() *Coordinate {
+func (x *IswapMovePickedUpResourceRequest) GetCenter() *v1.Coordinate {
 	if x != nil {
 		return x.Center
 	}
@@ -14857,7 +14702,7 @@ type IswapMovePickedUpResourceResponse struct {
 
 func (x *IswapMovePickedUpResourceResponse) Reset() {
 	*x = IswapMovePickedUpResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[256]
+	mi := &file_star_service_proto_msgTypes[253]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14869,7 +14714,7 @@ func (x *IswapMovePickedUpResourceResponse) String() string {
 func (*IswapMovePickedUpResourceResponse) ProtoMessage() {}
 
 func (x *IswapMovePickedUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[256]
+	mi := &file_star_service_proto_msgTypes[253]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14882,7 +14727,7 @@ func (x *IswapMovePickedUpResourceResponse) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use IswapMovePickedUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*IswapMovePickedUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{256}
+	return file_star_service_proto_rawDescGZIP(), []int{253}
 }
 
 // High-level resource handling
@@ -14910,7 +14755,7 @@ type PickUpResourceRequest struct {
 
 func (x *PickUpResourceRequest) Reset() {
 	*x = PickUpResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[257]
+	mi := &file_star_service_proto_msgTypes[254]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -14922,7 +14767,7 @@ func (x *PickUpResourceRequest) String() string {
 func (*PickUpResourceRequest) ProtoMessage() {}
 
 func (x *PickUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[257]
+	mi := &file_star_service_proto_msgTypes[254]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -14935,7 +14780,7 @@ func (x *PickUpResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*PickUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{257}
+	return file_star_service_proto_rawDescGZIP(), []int{254}
 }
 
 func (x *PickUpResourceRequest) GetPickup() *ResourcePickupOp {
@@ -15058,7 +14903,7 @@ type PickUpResourceResponse struct {
 
 func (x *PickUpResourceResponse) Reset() {
 	*x = PickUpResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[258]
+	mi := &file_star_service_proto_msgTypes[255]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15070,7 +14915,7 @@ func (x *PickUpResourceResponse) String() string {
 func (*PickUpResourceResponse) ProtoMessage() {}
 
 func (x *PickUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[258]
+	mi := &file_star_service_proto_msgTypes[255]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15083,7 +14928,7 @@ func (x *PickUpResourceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*PickUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{258}
+	return file_star_service_proto_rawDescGZIP(), []int{255}
 }
 
 type MovePickedUpResourceRequest struct {
@@ -15096,7 +14941,7 @@ type MovePickedUpResourceRequest struct {
 
 func (x *MovePickedUpResourceRequest) Reset() {
 	*x = MovePickedUpResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[259]
+	mi := &file_star_service_proto_msgTypes[256]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15108,7 +14953,7 @@ func (x *MovePickedUpResourceRequest) String() string {
 func (*MovePickedUpResourceRequest) ProtoMessage() {}
 
 func (x *MovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[259]
+	mi := &file_star_service_proto_msgTypes[256]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15121,7 +14966,7 @@ func (x *MovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MovePickedUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*MovePickedUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{259}
+	return file_star_service_proto_rawDescGZIP(), []int{256}
 }
 
 func (x *MovePickedUpResourceRequest) GetMove() *ResourceMoveOp {
@@ -15146,7 +14991,7 @@ type MovePickedUpResourceResponse struct {
 
 func (x *MovePickedUpResourceResponse) Reset() {
 	*x = MovePickedUpResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[260]
+	mi := &file_star_service_proto_msgTypes[257]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15158,7 +15003,7 @@ func (x *MovePickedUpResourceResponse) String() string {
 func (*MovePickedUpResourceResponse) ProtoMessage() {}
 
 func (x *MovePickedUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[260]
+	mi := &file_star_service_proto_msgTypes[257]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15171,7 +15016,7 @@ func (x *MovePickedUpResourceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MovePickedUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*MovePickedUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{260}
+	return file_star_service_proto_rawDescGZIP(), []int{257}
 }
 
 type DropResourceRequest struct {
@@ -15194,7 +15039,7 @@ type DropResourceRequest struct {
 
 func (x *DropResourceRequest) Reset() {
 	*x = DropResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[261]
+	mi := &file_star_service_proto_msgTypes[258]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15206,7 +15051,7 @@ func (x *DropResourceRequest) String() string {
 func (*DropResourceRequest) ProtoMessage() {}
 
 func (x *DropResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[261]
+	mi := &file_star_service_proto_msgTypes[258]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15219,7 +15064,7 @@ func (x *DropResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropResourceRequest.ProtoReflect.Descriptor instead.
 func (*DropResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{261}
+	return file_star_service_proto_rawDescGZIP(), []int{258}
 }
 
 func (x *DropResourceRequest) GetDrop() *ResourceDropOp {
@@ -15314,7 +15159,7 @@ type DropResourceResponse struct {
 
 func (x *DropResourceResponse) Reset() {
 	*x = DropResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[262]
+	mi := &file_star_service_proto_msgTypes[259]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15326,7 +15171,7 @@ func (x *DropResourceResponse) String() string {
 func (*DropResourceResponse) ProtoMessage() {}
 
 func (x *DropResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[262]
+	mi := &file_star_service_proto_msgTypes[259]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15339,21 +15184,21 @@ func (x *DropResourceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DropResourceResponse.ProtoReflect.Descriptor instead.
 func (*DropResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{262}
+	return file_star_service_proto_rawDescGZIP(), []int{259}
 }
 
 type PickUpCoreGripperToolsRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	FrontChannel  int32                  `protobuf:"varint,1,opt,name=front_channel,json=frontChannel,proto3" json:"front_channel,omitempty"`
-	FrontOffset   *Coordinate            `protobuf:"bytes,2,opt,name=front_offset,json=frontOffset,proto3,oneof" json:"front_offset,omitempty"`
-	BackOffset    *Coordinate            `protobuf:"bytes,3,opt,name=back_offset,json=backOffset,proto3,oneof" json:"back_offset,omitempty"`
+	FrontOffset   *v1.Coordinate         `protobuf:"bytes,2,opt,name=front_offset,json=frontOffset,proto3,oneof" json:"front_offset,omitempty"`
+	BackOffset    *v1.Coordinate         `protobuf:"bytes,3,opt,name=back_offset,json=backOffset,proto3,oneof" json:"back_offset,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *PickUpCoreGripperToolsRequest) Reset() {
 	*x = PickUpCoreGripperToolsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[263]
+	mi := &file_star_service_proto_msgTypes[260]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15365,7 +15210,7 @@ func (x *PickUpCoreGripperToolsRequest) String() string {
 func (*PickUpCoreGripperToolsRequest) ProtoMessage() {}
 
 func (x *PickUpCoreGripperToolsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[263]
+	mi := &file_star_service_proto_msgTypes[260]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15378,7 +15223,7 @@ func (x *PickUpCoreGripperToolsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpCoreGripperToolsRequest.ProtoReflect.Descriptor instead.
 func (*PickUpCoreGripperToolsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{263}
+	return file_star_service_proto_rawDescGZIP(), []int{260}
 }
 
 func (x *PickUpCoreGripperToolsRequest) GetFrontChannel() int32 {
@@ -15388,14 +15233,14 @@ func (x *PickUpCoreGripperToolsRequest) GetFrontChannel() int32 {
 	return 0
 }
 
-func (x *PickUpCoreGripperToolsRequest) GetFrontOffset() *Coordinate {
+func (x *PickUpCoreGripperToolsRequest) GetFrontOffset() *v1.Coordinate {
 	if x != nil {
 		return x.FrontOffset
 	}
 	return nil
 }
 
-func (x *PickUpCoreGripperToolsRequest) GetBackOffset() *Coordinate {
+func (x *PickUpCoreGripperToolsRequest) GetBackOffset() *v1.Coordinate {
 	if x != nil {
 		return x.BackOffset
 	}
@@ -15410,7 +15255,7 @@ type PickUpCoreGripperToolsResponse struct {
 
 func (x *PickUpCoreGripperToolsResponse) Reset() {
 	*x = PickUpCoreGripperToolsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[264]
+	mi := &file_star_service_proto_msgTypes[261]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15422,7 +15267,7 @@ func (x *PickUpCoreGripperToolsResponse) String() string {
 func (*PickUpCoreGripperToolsResponse) ProtoMessage() {}
 
 func (x *PickUpCoreGripperToolsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[264]
+	mi := &file_star_service_proto_msgTypes[261]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15435,20 +15280,20 @@ func (x *PickUpCoreGripperToolsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickUpCoreGripperToolsResponse.ProtoReflect.Descriptor instead.
 func (*PickUpCoreGripperToolsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{264}
+	return file_star_service_proto_rawDescGZIP(), []int{261}
 }
 
 type ReturnCoreGripperToolsRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	FrontOffset   *Coordinate            `protobuf:"bytes,1,opt,name=front_offset,json=frontOffset,proto3,oneof" json:"front_offset,omitempty"`
-	BackOffset    *Coordinate            `protobuf:"bytes,2,opt,name=back_offset,json=backOffset,proto3,oneof" json:"back_offset,omitempty"`
+	FrontOffset   *v1.Coordinate         `protobuf:"bytes,1,opt,name=front_offset,json=frontOffset,proto3,oneof" json:"front_offset,omitempty"`
+	BackOffset    *v1.Coordinate         `protobuf:"bytes,2,opt,name=back_offset,json=backOffset,proto3,oneof" json:"back_offset,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
 func (x *ReturnCoreGripperToolsRequest) Reset() {
 	*x = ReturnCoreGripperToolsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[265]
+	mi := &file_star_service_proto_msgTypes[262]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15460,7 +15305,7 @@ func (x *ReturnCoreGripperToolsRequest) String() string {
 func (*ReturnCoreGripperToolsRequest) ProtoMessage() {}
 
 func (x *ReturnCoreGripperToolsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[265]
+	mi := &file_star_service_proto_msgTypes[262]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15473,17 +15318,17 @@ func (x *ReturnCoreGripperToolsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReturnCoreGripperToolsRequest.ProtoReflect.Descriptor instead.
 func (*ReturnCoreGripperToolsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{265}
+	return file_star_service_proto_rawDescGZIP(), []int{262}
 }
 
-func (x *ReturnCoreGripperToolsRequest) GetFrontOffset() *Coordinate {
+func (x *ReturnCoreGripperToolsRequest) GetFrontOffset() *v1.Coordinate {
 	if x != nil {
 		return x.FrontOffset
 	}
 	return nil
 }
 
-func (x *ReturnCoreGripperToolsRequest) GetBackOffset() *Coordinate {
+func (x *ReturnCoreGripperToolsRequest) GetBackOffset() *v1.Coordinate {
 	if x != nil {
 		return x.BackOffset
 	}
@@ -15498,7 +15343,7 @@ type ReturnCoreGripperToolsResponse struct {
 
 func (x *ReturnCoreGripperToolsResponse) Reset() {
 	*x = ReturnCoreGripperToolsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[266]
+	mi := &file_star_service_proto_msgTypes[263]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15510,7 +15355,7 @@ func (x *ReturnCoreGripperToolsResponse) String() string {
 func (*ReturnCoreGripperToolsResponse) ProtoMessage() {}
 
 func (x *ReturnCoreGripperToolsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[266]
+	mi := &file_star_service_proto_msgTypes[263]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15523,7 +15368,7 @@ func (x *ReturnCoreGripperToolsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReturnCoreGripperToolsResponse.ProtoReflect.Descriptor instead.
 func (*ReturnCoreGripperToolsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{266}
+	return file_star_service_proto_rawDescGZIP(), []int{263}
 }
 
 type CoreOpenGripperRequest struct {
@@ -15534,7 +15379,7 @@ type CoreOpenGripperRequest struct {
 
 func (x *CoreOpenGripperRequest) Reset() {
 	*x = CoreOpenGripperRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[267]
+	mi := &file_star_service_proto_msgTypes[264]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15546,7 +15391,7 @@ func (x *CoreOpenGripperRequest) String() string {
 func (*CoreOpenGripperRequest) ProtoMessage() {}
 
 func (x *CoreOpenGripperRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[267]
+	mi := &file_star_service_proto_msgTypes[264]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15559,7 +15404,7 @@ func (x *CoreOpenGripperRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreOpenGripperRequest.ProtoReflect.Descriptor instead.
 func (*CoreOpenGripperRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{267}
+	return file_star_service_proto_rawDescGZIP(), []int{264}
 }
 
 type CoreOpenGripperResponse struct {
@@ -15570,7 +15415,7 @@ type CoreOpenGripperResponse struct {
 
 func (x *CoreOpenGripperResponse) Reset() {
 	*x = CoreOpenGripperResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[268]
+	mi := &file_star_service_proto_msgTypes[265]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15582,7 +15427,7 @@ func (x *CoreOpenGripperResponse) String() string {
 func (*CoreOpenGripperResponse) ProtoMessage() {}
 
 func (x *CoreOpenGripperResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[268]
+	mi := &file_star_service_proto_msgTypes[265]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15595,7 +15440,7 @@ func (x *CoreOpenGripperResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreOpenGripperResponse.ProtoReflect.Descriptor instead.
 func (*CoreOpenGripperResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{268}
+	return file_star_service_proto_rawDescGZIP(), []int{265}
 }
 
 type CoreGetPlateRequest struct {
@@ -15617,7 +15462,7 @@ type CoreGetPlateRequest struct {
 
 func (x *CoreGetPlateRequest) Reset() {
 	*x = CoreGetPlateRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[269]
+	mi := &file_star_service_proto_msgTypes[266]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15629,7 +15474,7 @@ func (x *CoreGetPlateRequest) String() string {
 func (*CoreGetPlateRequest) ProtoMessage() {}
 
 func (x *CoreGetPlateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[269]
+	mi := &file_star_service_proto_msgTypes[266]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15642,7 +15487,7 @@ func (x *CoreGetPlateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreGetPlateRequest.ProtoReflect.Descriptor instead.
 func (*CoreGetPlateRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{269}
+	return file_star_service_proto_rawDescGZIP(), []int{266}
 }
 
 func (x *CoreGetPlateRequest) GetXPosition() int32 {
@@ -15730,7 +15575,7 @@ type CoreGetPlateResponse struct {
 
 func (x *CoreGetPlateResponse) Reset() {
 	*x = CoreGetPlateResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[270]
+	mi := &file_star_service_proto_msgTypes[267]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15742,7 +15587,7 @@ func (x *CoreGetPlateResponse) String() string {
 func (*CoreGetPlateResponse) ProtoMessage() {}
 
 func (x *CoreGetPlateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[270]
+	mi := &file_star_service_proto_msgTypes[267]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15755,7 +15600,7 @@ func (x *CoreGetPlateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreGetPlateResponse.ProtoReflect.Descriptor instead.
 func (*CoreGetPlateResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{270}
+	return file_star_service_proto_rawDescGZIP(), []int{267}
 }
 
 type CorePutPlateRequest struct {
@@ -15776,7 +15621,7 @@ type CorePutPlateRequest struct {
 
 func (x *CorePutPlateRequest) Reset() {
 	*x = CorePutPlateRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[271]
+	mi := &file_star_service_proto_msgTypes[268]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15788,7 +15633,7 @@ func (x *CorePutPlateRequest) String() string {
 func (*CorePutPlateRequest) ProtoMessage() {}
 
 func (x *CorePutPlateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[271]
+	mi := &file_star_service_proto_msgTypes[268]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15801,7 +15646,7 @@ func (x *CorePutPlateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CorePutPlateRequest.ProtoReflect.Descriptor instead.
 func (*CorePutPlateRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{271}
+	return file_star_service_proto_rawDescGZIP(), []int{268}
 }
 
 func (x *CorePutPlateRequest) GetXPosition() int32 {
@@ -15882,7 +15727,7 @@ type CorePutPlateResponse struct {
 
 func (x *CorePutPlateResponse) Reset() {
 	*x = CorePutPlateResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[272]
+	mi := &file_star_service_proto_msgTypes[269]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15894,7 +15739,7 @@ func (x *CorePutPlateResponse) String() string {
 func (*CorePutPlateResponse) ProtoMessage() {}
 
 func (x *CorePutPlateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[272]
+	mi := &file_star_service_proto_msgTypes[269]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15907,7 +15752,7 @@ func (x *CorePutPlateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CorePutPlateResponse.ProtoReflect.Descriptor instead.
 func (*CorePutPlateResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{272}
+	return file_star_service_proto_rawDescGZIP(), []int{269}
 }
 
 type CoreMovePlateToPositionRequest struct {
@@ -15925,7 +15770,7 @@ type CoreMovePlateToPositionRequest struct {
 
 func (x *CoreMovePlateToPositionRequest) Reset() {
 	*x = CoreMovePlateToPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[273]
+	mi := &file_star_service_proto_msgTypes[270]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -15937,7 +15782,7 @@ func (x *CoreMovePlateToPositionRequest) String() string {
 func (*CoreMovePlateToPositionRequest) ProtoMessage() {}
 
 func (x *CoreMovePlateToPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[273]
+	mi := &file_star_service_proto_msgTypes[270]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -15950,7 +15795,7 @@ func (x *CoreMovePlateToPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreMovePlateToPositionRequest.ProtoReflect.Descriptor instead.
 func (*CoreMovePlateToPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{273}
+	return file_star_service_proto_rawDescGZIP(), []int{270}
 }
 
 func (x *CoreMovePlateToPositionRequest) GetXPosition() int32 {
@@ -16010,7 +15855,7 @@ type CoreMovePlateToPositionResponse struct {
 
 func (x *CoreMovePlateToPositionResponse) Reset() {
 	*x = CoreMovePlateToPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[274]
+	mi := &file_star_service_proto_msgTypes[271]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16022,7 +15867,7 @@ func (x *CoreMovePlateToPositionResponse) String() string {
 func (*CoreMovePlateToPositionResponse) ProtoMessage() {}
 
 func (x *CoreMovePlateToPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[274]
+	mi := &file_star_service_proto_msgTypes[271]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16035,14 +15880,14 @@ func (x *CoreMovePlateToPositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreMovePlateToPositionResponse.ProtoReflect.Descriptor instead.
 func (*CoreMovePlateToPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{274}
+	return file_star_service_proto_rawDescGZIP(), []int{271}
 }
 
 type CorePickUpResourceRequest struct {
 	state                                      protoimpl.MessageState `protogen:"open.v1"`
 	ResourceName                               string                 `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
 	PickupDistanceFromTop                      float64                `protobuf:"fixed64,2,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
-	Offset                                     *Coordinate            `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset                                     *v1.Coordinate         `protobuf:"bytes,3,opt,name=offset,proto3" json:"offset,omitempty"`
 	MinimumTraverseHeightAtBeginningOfACommand *float64               `protobuf:"fixed64,4,opt,name=minimum_traverse_height_at_beginning_of_a_command,json=minimumTraverseHeightAtBeginningOfACommand,proto3,oneof" json:"minimum_traverse_height_at_beginning_of_a_command,omitempty"`
 	MinimumZPositionAtTheCommandEnd            *float64               `protobuf:"fixed64,5,opt,name=minimum_z_position_at_the_command_end,json=minimumZPositionAtTheCommandEnd,proto3,oneof" json:"minimum_z_position_at_the_command_end,omitempty"`
 	GripStrength                               int32                  `protobuf:"varint,6,opt,name=grip_strength,json=gripStrength,proto3" json:"grip_strength,omitempty"`
@@ -16055,7 +15900,7 @@ type CorePickUpResourceRequest struct {
 
 func (x *CorePickUpResourceRequest) Reset() {
 	*x = CorePickUpResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[275]
+	mi := &file_star_service_proto_msgTypes[272]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16067,7 +15912,7 @@ func (x *CorePickUpResourceRequest) String() string {
 func (*CorePickUpResourceRequest) ProtoMessage() {}
 
 func (x *CorePickUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[275]
+	mi := &file_star_service_proto_msgTypes[272]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16080,7 +15925,7 @@ func (x *CorePickUpResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CorePickUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*CorePickUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{275}
+	return file_star_service_proto_rawDescGZIP(), []int{272}
 }
 
 func (x *CorePickUpResourceRequest) GetResourceName() string {
@@ -16097,7 +15942,7 @@ func (x *CorePickUpResourceRequest) GetPickupDistanceFromTop() float64 {
 	return 0
 }
 
-func (x *CorePickUpResourceRequest) GetOffset() *Coordinate {
+func (x *CorePickUpResourceRequest) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -16154,7 +15999,7 @@ type CorePickUpResourceResponse struct {
 
 func (x *CorePickUpResourceResponse) Reset() {
 	*x = CorePickUpResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[276]
+	mi := &file_star_service_proto_msgTypes[273]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16166,7 +16011,7 @@ func (x *CorePickUpResourceResponse) String() string {
 func (*CorePickUpResourceResponse) ProtoMessage() {}
 
 func (x *CorePickUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[276]
+	mi := &file_star_service_proto_msgTypes[273]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16179,12 +16024,12 @@ func (x *CorePickUpResourceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CorePickUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*CorePickUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{276}
+	return file_star_service_proto_rawDescGZIP(), []int{273}
 }
 
 type CoreMovePickedUpResourceRequest struct {
 	state                                      protoimpl.MessageState `protogen:"open.v1"`
-	Center                                     *Coordinate            `protobuf:"bytes,1,opt,name=center,proto3" json:"center,omitempty"`
+	Center                                     *v1.Coordinate         `protobuf:"bytes,1,opt,name=center,proto3" json:"center,omitempty"`
 	MinimumTraverseHeightAtBeginningOfACommand *float64               `protobuf:"fixed64,2,opt,name=minimum_traverse_height_at_beginning_of_a_command,json=minimumTraverseHeightAtBeginningOfACommand,proto3,oneof" json:"minimum_traverse_height_at_beginning_of_a_command,omitempty"`
 	AccelerationIndex                          int32                  `protobuf:"varint,3,opt,name=acceleration_index,json=accelerationIndex,proto3" json:"acceleration_index,omitempty"`
 	ZSpeed                                     float64                `protobuf:"fixed64,4,opt,name=z_speed,json=zSpeed,proto3" json:"z_speed,omitempty"`
@@ -16194,7 +16039,7 @@ type CoreMovePickedUpResourceRequest struct {
 
 func (x *CoreMovePickedUpResourceRequest) Reset() {
 	*x = CoreMovePickedUpResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[277]
+	mi := &file_star_service_proto_msgTypes[274]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16206,7 +16051,7 @@ func (x *CoreMovePickedUpResourceRequest) String() string {
 func (*CoreMovePickedUpResourceRequest) ProtoMessage() {}
 
 func (x *CoreMovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[277]
+	mi := &file_star_service_proto_msgTypes[274]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16219,10 +16064,10 @@ func (x *CoreMovePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreMovePickedUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*CoreMovePickedUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{277}
+	return file_star_service_proto_rawDescGZIP(), []int{274}
 }
 
-func (x *CoreMovePickedUpResourceRequest) GetCenter() *Coordinate {
+func (x *CoreMovePickedUpResourceRequest) GetCenter() *v1.Coordinate {
 	if x != nil {
 		return x.Center
 	}
@@ -16258,7 +16103,7 @@ type CoreMovePickedUpResourceResponse struct {
 
 func (x *CoreMovePickedUpResourceResponse) Reset() {
 	*x = CoreMovePickedUpResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[278]
+	mi := &file_star_service_proto_msgTypes[275]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16270,7 +16115,7 @@ func (x *CoreMovePickedUpResourceResponse) String() string {
 func (*CoreMovePickedUpResourceResponse) ProtoMessage() {}
 
 func (x *CoreMovePickedUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[278]
+	mi := &file_star_service_proto_msgTypes[275]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16283,12 +16128,12 @@ func (x *CoreMovePickedUpResourceResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CoreMovePickedUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*CoreMovePickedUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{278}
+	return file_star_service_proto_rawDescGZIP(), []int{275}
 }
 
 type CoreReleasePickedUpResourceRequest struct {
 	state                                      protoimpl.MessageState `protogen:"open.v1"`
-	Location                                   *Coordinate            `protobuf:"bytes,1,opt,name=location,proto3" json:"location,omitempty"`
+	Location                                   *v1.Coordinate         `protobuf:"bytes,1,opt,name=location,proto3" json:"location,omitempty"`
 	ResourceName                               string                 `protobuf:"bytes,2,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
 	PickupDistanceFromTop                      float64                `protobuf:"fixed64,3,opt,name=pickup_distance_from_top,json=pickupDistanceFromTop,proto3" json:"pickup_distance_from_top,omitempty"`
 	MinimumTraverseHeightAtBeginningOfACommand *float64               `protobuf:"fixed64,4,opt,name=minimum_traverse_height_at_beginning_of_a_command,json=minimumTraverseHeightAtBeginningOfACommand,proto3,oneof" json:"minimum_traverse_height_at_beginning_of_a_command,omitempty"`
@@ -16300,7 +16145,7 @@ type CoreReleasePickedUpResourceRequest struct {
 
 func (x *CoreReleasePickedUpResourceRequest) Reset() {
 	*x = CoreReleasePickedUpResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[279]
+	mi := &file_star_service_proto_msgTypes[276]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16312,7 +16157,7 @@ func (x *CoreReleasePickedUpResourceRequest) String() string {
 func (*CoreReleasePickedUpResourceRequest) ProtoMessage() {}
 
 func (x *CoreReleasePickedUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[279]
+	mi := &file_star_service_proto_msgTypes[276]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16325,10 +16170,10 @@ func (x *CoreReleasePickedUpResourceRequest) ProtoReflect() protoreflect.Message
 
 // Deprecated: Use CoreReleasePickedUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*CoreReleasePickedUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{279}
+	return file_star_service_proto_rawDescGZIP(), []int{276}
 }
 
-func (x *CoreReleasePickedUpResourceRequest) GetLocation() *Coordinate {
+func (x *CoreReleasePickedUpResourceRequest) GetLocation() *v1.Coordinate {
 	if x != nil {
 		return x.Location
 	}
@@ -16378,7 +16223,7 @@ type CoreReleasePickedUpResourceResponse struct {
 
 func (x *CoreReleasePickedUpResourceResponse) Reset() {
 	*x = CoreReleasePickedUpResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[280]
+	mi := &file_star_service_proto_msgTypes[277]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16390,7 +16235,7 @@ func (x *CoreReleasePickedUpResourceResponse) String() string {
 func (*CoreReleasePickedUpResourceResponse) ProtoMessage() {}
 
 func (x *CoreReleasePickedUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[280]
+	mi := &file_star_service_proto_msgTypes[277]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16403,15 +16248,15 @@ func (x *CoreReleasePickedUpResourceResponse) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use CoreReleasePickedUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*CoreReleasePickedUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{280}
+	return file_star_service_proto_rawDescGZIP(), []int{277}
 }
 
 type CoreCheckResourceExistsAtLocationCenterRequest struct {
 	state                                      protoimpl.MessageState `protogen:"open.v1"`
-	Location                                   *Coordinate            `protobuf:"bytes,1,opt,name=location,proto3" json:"location,omitempty"`
+	Location                                   *v1.Coordinate         `protobuf:"bytes,1,opt,name=location,proto3" json:"location,omitempty"`
 	ResourceName                               string                 `protobuf:"bytes,2,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
 	GripperYMargin                             float64                `protobuf:"fixed64,3,opt,name=gripper_y_margin,json=gripperYMargin,proto3" json:"gripper_y_margin,omitempty"`
-	Offset                                     *Coordinate            `protobuf:"bytes,4,opt,name=offset,proto3" json:"offset,omitempty"`
+	Offset                                     *v1.Coordinate         `protobuf:"bytes,4,opt,name=offset,proto3" json:"offset,omitempty"`
 	MinimumTraverseHeightAtBeginningOfACommand float64                `protobuf:"fixed64,5,opt,name=minimum_traverse_height_at_beginning_of_a_command,json=minimumTraverseHeightAtBeginningOfACommand,proto3" json:"minimum_traverse_height_at_beginning_of_a_command,omitempty"`
 	ZPositionAtTheCommandEnd                   float64                `protobuf:"fixed64,6,opt,name=z_position_at_the_command_end,json=zPositionAtTheCommandEnd,proto3" json:"z_position_at_the_command_end,omitempty"`
 	EnableRecovery                             bool                   `protobuf:"varint,7,opt,name=enable_recovery,json=enableRecovery,proto3" json:"enable_recovery,omitempty"`
@@ -16422,7 +16267,7 @@ type CoreCheckResourceExistsAtLocationCenterRequest struct {
 
 func (x *CoreCheckResourceExistsAtLocationCenterRequest) Reset() {
 	*x = CoreCheckResourceExistsAtLocationCenterRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[281]
+	mi := &file_star_service_proto_msgTypes[278]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16434,7 +16279,7 @@ func (x *CoreCheckResourceExistsAtLocationCenterRequest) String() string {
 func (*CoreCheckResourceExistsAtLocationCenterRequest) ProtoMessage() {}
 
 func (x *CoreCheckResourceExistsAtLocationCenterRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[281]
+	mi := &file_star_service_proto_msgTypes[278]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16447,10 +16292,10 @@ func (x *CoreCheckResourceExistsAtLocationCenterRequest) ProtoReflect() protoref
 
 // Deprecated: Use CoreCheckResourceExistsAtLocationCenterRequest.ProtoReflect.Descriptor instead.
 func (*CoreCheckResourceExistsAtLocationCenterRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{281}
+	return file_star_service_proto_rawDescGZIP(), []int{278}
 }
 
-func (x *CoreCheckResourceExistsAtLocationCenterRequest) GetLocation() *Coordinate {
+func (x *CoreCheckResourceExistsAtLocationCenterRequest) GetLocation() *v1.Coordinate {
 	if x != nil {
 		return x.Location
 	}
@@ -16471,7 +16316,7 @@ func (x *CoreCheckResourceExistsAtLocationCenterRequest) GetGripperYMargin() flo
 	return 0
 }
 
-func (x *CoreCheckResourceExistsAtLocationCenterRequest) GetOffset() *Coordinate {
+func (x *CoreCheckResourceExistsAtLocationCenterRequest) GetOffset() *v1.Coordinate {
 	if x != nil {
 		return x.Offset
 	}
@@ -16515,7 +16360,7 @@ type CoreCheckResourceExistsAtLocationCenterResponse struct {
 
 func (x *CoreCheckResourceExistsAtLocationCenterResponse) Reset() {
 	*x = CoreCheckResourceExistsAtLocationCenterResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[282]
+	mi := &file_star_service_proto_msgTypes[279]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16527,7 +16372,7 @@ func (x *CoreCheckResourceExistsAtLocationCenterResponse) String() string {
 func (*CoreCheckResourceExistsAtLocationCenterResponse) ProtoMessage() {}
 
 func (x *CoreCheckResourceExistsAtLocationCenterResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[282]
+	mi := &file_star_service_proto_msgTypes[279]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16540,7 +16385,7 @@ func (x *CoreCheckResourceExistsAtLocationCenterResponse) ProtoReflect() protore
 
 // Deprecated: Use CoreCheckResourceExistsAtLocationCenterResponse.ProtoReflect.Descriptor instead.
 func (*CoreCheckResourceExistsAtLocationCenterResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{282}
+	return file_star_service_proto_rawDescGZIP(), []int{279}
 }
 
 func (x *CoreCheckResourceExistsAtLocationCenterResponse) GetExists() bool {
@@ -16560,7 +16405,7 @@ type GetCoreRequest struct {
 
 func (x *GetCoreRequest) Reset() {
 	*x = GetCoreRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[283]
+	mi := &file_star_service_proto_msgTypes[280]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16572,7 +16417,7 @@ func (x *GetCoreRequest) String() string {
 func (*GetCoreRequest) ProtoMessage() {}
 
 func (x *GetCoreRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[283]
+	mi := &file_star_service_proto_msgTypes[280]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16585,7 +16430,7 @@ func (x *GetCoreRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCoreRequest.ProtoReflect.Descriptor instead.
 func (*GetCoreRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{283}
+	return file_star_service_proto_rawDescGZIP(), []int{280}
 }
 
 func (x *GetCoreRequest) GetP1() int32 {
@@ -16610,7 +16455,7 @@ type GetCoreResponse struct {
 
 func (x *GetCoreResponse) Reset() {
 	*x = GetCoreResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[284]
+	mi := &file_star_service_proto_msgTypes[281]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16622,7 +16467,7 @@ func (x *GetCoreResponse) String() string {
 func (*GetCoreResponse) ProtoMessage() {}
 
 func (x *GetCoreResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[284]
+	mi := &file_star_service_proto_msgTypes[281]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16635,7 +16480,7 @@ func (x *GetCoreResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetCoreResponse.ProtoReflect.Descriptor instead.
 func (*GetCoreResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{284}
+	return file_star_service_proto_rawDescGZIP(), []int{281}
 }
 
 type PutCoreRequest struct {
@@ -16646,7 +16491,7 @@ type PutCoreRequest struct {
 
 func (x *PutCoreRequest) Reset() {
 	*x = PutCoreRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[285]
+	mi := &file_star_service_proto_msgTypes[282]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16658,7 +16503,7 @@ func (x *PutCoreRequest) String() string {
 func (*PutCoreRequest) ProtoMessage() {}
 
 func (x *PutCoreRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[285]
+	mi := &file_star_service_proto_msgTypes[282]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16671,7 +16516,7 @@ func (x *PutCoreRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PutCoreRequest.ProtoReflect.Descriptor instead.
 func (*PutCoreRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{285}
+	return file_star_service_proto_rawDescGZIP(), []int{282}
 }
 
 type PutCoreResponse struct {
@@ -16682,7 +16527,7 @@ type PutCoreResponse struct {
 
 func (x *PutCoreResponse) Reset() {
 	*x = PutCoreResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[286]
+	mi := &file_star_service_proto_msgTypes[283]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16694,7 +16539,7 @@ func (x *PutCoreResponse) String() string {
 func (*PutCoreResponse) ProtoMessage() {}
 
 func (x *PutCoreResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[286]
+	mi := &file_star_service_proto_msgTypes[283]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16707,7 +16552,7 @@ func (x *PutCoreResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PutCoreResponse.ProtoReflect.Descriptor instead.
 func (*PutCoreResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{286}
+	return file_star_service_proto_rawDescGZIP(), []int{283}
 }
 
 type CoreReadBarcodeOfPickedUpResourceRequest struct {
@@ -16725,7 +16570,7 @@ type CoreReadBarcodeOfPickedUpResourceRequest struct {
 
 func (x *CoreReadBarcodeOfPickedUpResourceRequest) Reset() {
 	*x = CoreReadBarcodeOfPickedUpResourceRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[287]
+	mi := &file_star_service_proto_msgTypes[284]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16737,7 +16582,7 @@ func (x *CoreReadBarcodeOfPickedUpResourceRequest) String() string {
 func (*CoreReadBarcodeOfPickedUpResourceRequest) ProtoMessage() {}
 
 func (x *CoreReadBarcodeOfPickedUpResourceRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[287]
+	mi := &file_star_service_proto_msgTypes[284]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16750,7 +16595,7 @@ func (x *CoreReadBarcodeOfPickedUpResourceRequest) ProtoReflect() protoreflect.M
 
 // Deprecated: Use CoreReadBarcodeOfPickedUpResourceRequest.ProtoReflect.Descriptor instead.
 func (*CoreReadBarcodeOfPickedUpResourceRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{287}
+	return file_star_service_proto_rawDescGZIP(), []int{284}
 }
 
 func (x *CoreReadBarcodeOfPickedUpResourceRequest) GetRails() int32 {
@@ -16810,7 +16655,7 @@ type CoreReadBarcodeOfPickedUpResourceResponse struct {
 
 func (x *CoreReadBarcodeOfPickedUpResourceResponse) Reset() {
 	*x = CoreReadBarcodeOfPickedUpResourceResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[288]
+	mi := &file_star_service_proto_msgTypes[285]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16822,7 +16667,7 @@ func (x *CoreReadBarcodeOfPickedUpResourceResponse) String() string {
 func (*CoreReadBarcodeOfPickedUpResourceResponse) ProtoMessage() {}
 
 func (x *CoreReadBarcodeOfPickedUpResourceResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[288]
+	mi := &file_star_service_proto_msgTypes[285]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16835,7 +16680,7 @@ func (x *CoreReadBarcodeOfPickedUpResourceResponse) ProtoReflect() protoreflect.
 
 // Deprecated: Use CoreReadBarcodeOfPickedUpResourceResponse.ProtoReflect.Descriptor instead.
 func (*CoreReadBarcodeOfPickedUpResourceResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{288}
+	return file_star_service_proto_rawDescGZIP(), []int{285}
 }
 
 type InitializeAutoloadRequest struct {
@@ -16846,7 +16691,7 @@ type InitializeAutoloadRequest struct {
 
 func (x *InitializeAutoloadRequest) Reset() {
 	*x = InitializeAutoloadRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[289]
+	mi := &file_star_service_proto_msgTypes[286]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16858,7 +16703,7 @@ func (x *InitializeAutoloadRequest) String() string {
 func (*InitializeAutoloadRequest) ProtoMessage() {}
 
 func (x *InitializeAutoloadRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[289]
+	mi := &file_star_service_proto_msgTypes[286]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16871,7 +16716,7 @@ func (x *InitializeAutoloadRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeAutoloadRequest.ProtoReflect.Descriptor instead.
 func (*InitializeAutoloadRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{289}
+	return file_star_service_proto_rawDescGZIP(), []int{286}
 }
 
 type InitializeAutoloadResponse struct {
@@ -16882,7 +16727,7 @@ type InitializeAutoloadResponse struct {
 
 func (x *InitializeAutoloadResponse) Reset() {
 	*x = InitializeAutoloadResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[290]
+	mi := &file_star_service_proto_msgTypes[287]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16894,7 +16739,7 @@ func (x *InitializeAutoloadResponse) String() string {
 func (*InitializeAutoloadResponse) ProtoMessage() {}
 
 func (x *InitializeAutoloadResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[290]
+	mi := &file_star_service_proto_msgTypes[287]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16907,7 +16752,7 @@ func (x *InitializeAutoloadResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeAutoloadResponse.ProtoReflect.Descriptor instead.
 func (*InitializeAutoloadResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{290}
+	return file_star_service_proto_rawDescGZIP(), []int{287}
 }
 
 type MoveAutoloadToSafeZPositionRequest struct {
@@ -16918,7 +16763,7 @@ type MoveAutoloadToSafeZPositionRequest struct {
 
 func (x *MoveAutoloadToSafeZPositionRequest) Reset() {
 	*x = MoveAutoloadToSafeZPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[291]
+	mi := &file_star_service_proto_msgTypes[288]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16930,7 +16775,7 @@ func (x *MoveAutoloadToSafeZPositionRequest) String() string {
 func (*MoveAutoloadToSafeZPositionRequest) ProtoMessage() {}
 
 func (x *MoveAutoloadToSafeZPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[291]
+	mi := &file_star_service_proto_msgTypes[288]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16943,7 +16788,7 @@ func (x *MoveAutoloadToSafeZPositionRequest) ProtoReflect() protoreflect.Message
 
 // Deprecated: Use MoveAutoloadToSafeZPositionRequest.ProtoReflect.Descriptor instead.
 func (*MoveAutoloadToSafeZPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{291}
+	return file_star_service_proto_rawDescGZIP(), []int{288}
 }
 
 type MoveAutoloadToSafeZPositionResponse struct {
@@ -16954,7 +16799,7 @@ type MoveAutoloadToSafeZPositionResponse struct {
 
 func (x *MoveAutoloadToSafeZPositionResponse) Reset() {
 	*x = MoveAutoloadToSafeZPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[292]
+	mi := &file_star_service_proto_msgTypes[289]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -16966,7 +16811,7 @@ func (x *MoveAutoloadToSafeZPositionResponse) String() string {
 func (*MoveAutoloadToSafeZPositionResponse) ProtoMessage() {}
 
 func (x *MoveAutoloadToSafeZPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[292]
+	mi := &file_star_service_proto_msgTypes[289]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -16979,7 +16824,7 @@ func (x *MoveAutoloadToSafeZPositionResponse) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use MoveAutoloadToSafeZPositionResponse.ProtoReflect.Descriptor instead.
 func (*MoveAutoloadToSafeZPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{292}
+	return file_star_service_proto_rawDescGZIP(), []int{289}
 }
 
 type RequestAutoloadTrackRequest struct {
@@ -16990,7 +16835,7 @@ type RequestAutoloadTrackRequest struct {
 
 func (x *RequestAutoloadTrackRequest) Reset() {
 	*x = RequestAutoloadTrackRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[293]
+	mi := &file_star_service_proto_msgTypes[290]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17002,7 +16847,7 @@ func (x *RequestAutoloadTrackRequest) String() string {
 func (*RequestAutoloadTrackRequest) ProtoMessage() {}
 
 func (x *RequestAutoloadTrackRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[293]
+	mi := &file_star_service_proto_msgTypes[290]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17015,7 +16860,7 @@ func (x *RequestAutoloadTrackRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestAutoloadTrackRequest.ProtoReflect.Descriptor instead.
 func (*RequestAutoloadTrackRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{293}
+	return file_star_service_proto_rawDescGZIP(), []int{290}
 }
 
 type RequestAutoloadTrackResponse struct {
@@ -17027,7 +16872,7 @@ type RequestAutoloadTrackResponse struct {
 
 func (x *RequestAutoloadTrackResponse) Reset() {
 	*x = RequestAutoloadTrackResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[294]
+	mi := &file_star_service_proto_msgTypes[291]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17039,7 +16884,7 @@ func (x *RequestAutoloadTrackResponse) String() string {
 func (*RequestAutoloadTrackResponse) ProtoMessage() {}
 
 func (x *RequestAutoloadTrackResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[294]
+	mi := &file_star_service_proto_msgTypes[291]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17052,7 +16897,7 @@ func (x *RequestAutoloadTrackResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestAutoloadTrackResponse.ProtoReflect.Descriptor instead.
 func (*RequestAutoloadTrackResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{294}
+	return file_star_service_proto_rawDescGZIP(), []int{291}
 }
 
 func (x *RequestAutoloadTrackResponse) GetTrack() int32 {
@@ -17070,7 +16915,7 @@ type RequestAutoloadTypeRequest struct {
 
 func (x *RequestAutoloadTypeRequest) Reset() {
 	*x = RequestAutoloadTypeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[295]
+	mi := &file_star_service_proto_msgTypes[292]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17082,7 +16927,7 @@ func (x *RequestAutoloadTypeRequest) String() string {
 func (*RequestAutoloadTypeRequest) ProtoMessage() {}
 
 func (x *RequestAutoloadTypeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[295]
+	mi := &file_star_service_proto_msgTypes[292]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17095,7 +16940,7 @@ func (x *RequestAutoloadTypeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestAutoloadTypeRequest.ProtoReflect.Descriptor instead.
 func (*RequestAutoloadTypeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{295}
+	return file_star_service_proto_rawDescGZIP(), []int{292}
 }
 
 type RequestAutoloadTypeResponse struct {
@@ -17107,7 +16952,7 @@ type RequestAutoloadTypeResponse struct {
 
 func (x *RequestAutoloadTypeResponse) Reset() {
 	*x = RequestAutoloadTypeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[296]
+	mi := &file_star_service_proto_msgTypes[293]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17119,7 +16964,7 @@ func (x *RequestAutoloadTypeResponse) String() string {
 func (*RequestAutoloadTypeResponse) ProtoMessage() {}
 
 func (x *RequestAutoloadTypeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[296]
+	mi := &file_star_service_proto_msgTypes[293]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17132,7 +16977,7 @@ func (x *RequestAutoloadTypeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestAutoloadTypeResponse.ProtoReflect.Descriptor instead.
 func (*RequestAutoloadTypeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{296}
+	return file_star_service_proto_rawDescGZIP(), []int{293}
 }
 
 func (x *RequestAutoloadTypeResponse) GetAutoloadType() string {
@@ -17150,7 +16995,7 @@ type RequestPresenceOfCarriersOnDeckRequest struct {
 
 func (x *RequestPresenceOfCarriersOnDeckRequest) Reset() {
 	*x = RequestPresenceOfCarriersOnDeckRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[297]
+	mi := &file_star_service_proto_msgTypes[294]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17162,7 +17007,7 @@ func (x *RequestPresenceOfCarriersOnDeckRequest) String() string {
 func (*RequestPresenceOfCarriersOnDeckRequest) ProtoMessage() {}
 
 func (x *RequestPresenceOfCarriersOnDeckRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[297]
+	mi := &file_star_service_proto_msgTypes[294]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17175,7 +17020,7 @@ func (x *RequestPresenceOfCarriersOnDeckRequest) ProtoReflect() protoreflect.Mes
 
 // Deprecated: Use RequestPresenceOfCarriersOnDeckRequest.ProtoReflect.Descriptor instead.
 func (*RequestPresenceOfCarriersOnDeckRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{297}
+	return file_star_service_proto_rawDescGZIP(), []int{294}
 }
 
 type RequestPresenceOfCarriersOnDeckResponse struct {
@@ -17187,7 +17032,7 @@ type RequestPresenceOfCarriersOnDeckResponse struct {
 
 func (x *RequestPresenceOfCarriersOnDeckResponse) Reset() {
 	*x = RequestPresenceOfCarriersOnDeckResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[298]
+	mi := &file_star_service_proto_msgTypes[295]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17199,7 +17044,7 @@ func (x *RequestPresenceOfCarriersOnDeckResponse) String() string {
 func (*RequestPresenceOfCarriersOnDeckResponse) ProtoMessage() {}
 
 func (x *RequestPresenceOfCarriersOnDeckResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[298]
+	mi := &file_star_service_proto_msgTypes[295]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17212,7 +17057,7 @@ func (x *RequestPresenceOfCarriersOnDeckResponse) ProtoReflect() protoreflect.Me
 
 // Deprecated: Use RequestPresenceOfCarriersOnDeckResponse.ProtoReflect.Descriptor instead.
 func (*RequestPresenceOfCarriersOnDeckResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{298}
+	return file_star_service_proto_rawDescGZIP(), []int{295}
 }
 
 func (x *RequestPresenceOfCarriersOnDeckResponse) GetCarriers() []int32 {
@@ -17230,7 +17075,7 @@ type RequestPresenceOfCarriersOnLoadingTrayRequest struct {
 
 func (x *RequestPresenceOfCarriersOnLoadingTrayRequest) Reset() {
 	*x = RequestPresenceOfCarriersOnLoadingTrayRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[299]
+	mi := &file_star_service_proto_msgTypes[296]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17242,7 +17087,7 @@ func (x *RequestPresenceOfCarriersOnLoadingTrayRequest) String() string {
 func (*RequestPresenceOfCarriersOnLoadingTrayRequest) ProtoMessage() {}
 
 func (x *RequestPresenceOfCarriersOnLoadingTrayRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[299]
+	mi := &file_star_service_proto_msgTypes[296]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17255,7 +17100,7 @@ func (x *RequestPresenceOfCarriersOnLoadingTrayRequest) ProtoReflect() protorefl
 
 // Deprecated: Use RequestPresenceOfCarriersOnLoadingTrayRequest.ProtoReflect.Descriptor instead.
 func (*RequestPresenceOfCarriersOnLoadingTrayRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{299}
+	return file_star_service_proto_rawDescGZIP(), []int{296}
 }
 
 type RequestPresenceOfCarriersOnLoadingTrayResponse struct {
@@ -17267,7 +17112,7 @@ type RequestPresenceOfCarriersOnLoadingTrayResponse struct {
 
 func (x *RequestPresenceOfCarriersOnLoadingTrayResponse) Reset() {
 	*x = RequestPresenceOfCarriersOnLoadingTrayResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[300]
+	mi := &file_star_service_proto_msgTypes[297]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17279,7 +17124,7 @@ func (x *RequestPresenceOfCarriersOnLoadingTrayResponse) String() string {
 func (*RequestPresenceOfCarriersOnLoadingTrayResponse) ProtoMessage() {}
 
 func (x *RequestPresenceOfCarriersOnLoadingTrayResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[300]
+	mi := &file_star_service_proto_msgTypes[297]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17292,7 +17137,7 @@ func (x *RequestPresenceOfCarriersOnLoadingTrayResponse) ProtoReflect() protoref
 
 // Deprecated: Use RequestPresenceOfCarriersOnLoadingTrayResponse.ProtoReflect.Descriptor instead.
 func (*RequestPresenceOfCarriersOnLoadingTrayResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{300}
+	return file_star_service_proto_rawDescGZIP(), []int{297}
 }
 
 func (x *RequestPresenceOfCarriersOnLoadingTrayResponse) GetCarriers() []int32 {
@@ -17311,7 +17156,7 @@ type RequestPresenceOfSingleCarrierOnLoadingTrayRequest struct {
 
 func (x *RequestPresenceOfSingleCarrierOnLoadingTrayRequest) Reset() {
 	*x = RequestPresenceOfSingleCarrierOnLoadingTrayRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[301]
+	mi := &file_star_service_proto_msgTypes[298]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17323,7 +17168,7 @@ func (x *RequestPresenceOfSingleCarrierOnLoadingTrayRequest) String() string {
 func (*RequestPresenceOfSingleCarrierOnLoadingTrayRequest) ProtoMessage() {}
 
 func (x *RequestPresenceOfSingleCarrierOnLoadingTrayRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[301]
+	mi := &file_star_service_proto_msgTypes[298]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17336,7 +17181,7 @@ func (x *RequestPresenceOfSingleCarrierOnLoadingTrayRequest) ProtoReflect() prot
 
 // Deprecated: Use RequestPresenceOfSingleCarrierOnLoadingTrayRequest.ProtoReflect.Descriptor instead.
 func (*RequestPresenceOfSingleCarrierOnLoadingTrayRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{301}
+	return file_star_service_proto_rawDescGZIP(), []int{298}
 }
 
 func (x *RequestPresenceOfSingleCarrierOnLoadingTrayRequest) GetTrack() int32 {
@@ -17355,7 +17200,7 @@ type RequestPresenceOfSingleCarrierOnLoadingTrayResponse struct {
 
 func (x *RequestPresenceOfSingleCarrierOnLoadingTrayResponse) Reset() {
 	*x = RequestPresenceOfSingleCarrierOnLoadingTrayResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[302]
+	mi := &file_star_service_proto_msgTypes[299]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17367,7 +17212,7 @@ func (x *RequestPresenceOfSingleCarrierOnLoadingTrayResponse) String() string {
 func (*RequestPresenceOfSingleCarrierOnLoadingTrayResponse) ProtoMessage() {}
 
 func (x *RequestPresenceOfSingleCarrierOnLoadingTrayResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[302]
+	mi := &file_star_service_proto_msgTypes[299]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17380,7 +17225,7 @@ func (x *RequestPresenceOfSingleCarrierOnLoadingTrayResponse) ProtoReflect() pro
 
 // Deprecated: Use RequestPresenceOfSingleCarrierOnLoadingTrayResponse.ProtoReflect.Descriptor instead.
 func (*RequestPresenceOfSingleCarrierOnLoadingTrayResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{302}
+	return file_star_service_proto_rawDescGZIP(), []int{299}
 }
 
 func (x *RequestPresenceOfSingleCarrierOnLoadingTrayResponse) GetPresent() bool {
@@ -17399,7 +17244,7 @@ type MoveAutoloadToSlotRequest struct {
 
 func (x *MoveAutoloadToSlotRequest) Reset() {
 	*x = MoveAutoloadToSlotRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[303]
+	mi := &file_star_service_proto_msgTypes[300]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17411,7 +17256,7 @@ func (x *MoveAutoloadToSlotRequest) String() string {
 func (*MoveAutoloadToSlotRequest) ProtoMessage() {}
 
 func (x *MoveAutoloadToSlotRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[303]
+	mi := &file_star_service_proto_msgTypes[300]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17424,7 +17269,7 @@ func (x *MoveAutoloadToSlotRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveAutoloadToSlotRequest.ProtoReflect.Descriptor instead.
 func (*MoveAutoloadToSlotRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{303}
+	return file_star_service_proto_rawDescGZIP(), []int{300}
 }
 
 func (x *MoveAutoloadToSlotRequest) GetSlotNumber() int32 {
@@ -17442,7 +17287,7 @@ type MoveAutoloadToSlotResponse struct {
 
 func (x *MoveAutoloadToSlotResponse) Reset() {
 	*x = MoveAutoloadToSlotResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[304]
+	mi := &file_star_service_proto_msgTypes[301]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17454,7 +17299,7 @@ func (x *MoveAutoloadToSlotResponse) String() string {
 func (*MoveAutoloadToSlotResponse) ProtoMessage() {}
 
 func (x *MoveAutoloadToSlotResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[304]
+	mi := &file_star_service_proto_msgTypes[301]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17467,7 +17312,7 @@ func (x *MoveAutoloadToSlotResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveAutoloadToSlotResponse.ProtoReflect.Descriptor instead.
 func (*MoveAutoloadToSlotResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{304}
+	return file_star_service_proto_rawDescGZIP(), []int{301}
 }
 
 type MoveAutoloadToTrackRequest struct {
@@ -17479,7 +17324,7 @@ type MoveAutoloadToTrackRequest struct {
 
 func (x *MoveAutoloadToTrackRequest) Reset() {
 	*x = MoveAutoloadToTrackRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[305]
+	mi := &file_star_service_proto_msgTypes[302]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17491,7 +17336,7 @@ func (x *MoveAutoloadToTrackRequest) String() string {
 func (*MoveAutoloadToTrackRequest) ProtoMessage() {}
 
 func (x *MoveAutoloadToTrackRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[305]
+	mi := &file_star_service_proto_msgTypes[302]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17504,7 +17349,7 @@ func (x *MoveAutoloadToTrackRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveAutoloadToTrackRequest.ProtoReflect.Descriptor instead.
 func (*MoveAutoloadToTrackRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{305}
+	return file_star_service_proto_rawDescGZIP(), []int{302}
 }
 
 func (x *MoveAutoloadToTrackRequest) GetTrack() int32 {
@@ -17522,7 +17367,7 @@ type MoveAutoloadToTrackResponse struct {
 
 func (x *MoveAutoloadToTrackResponse) Reset() {
 	*x = MoveAutoloadToTrackResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[306]
+	mi := &file_star_service_proto_msgTypes[303]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17534,7 +17379,7 @@ func (x *MoveAutoloadToTrackResponse) String() string {
 func (*MoveAutoloadToTrackResponse) ProtoMessage() {}
 
 func (x *MoveAutoloadToTrackResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[306]
+	mi := &file_star_service_proto_msgTypes[303]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17547,7 +17392,7 @@ func (x *MoveAutoloadToTrackResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MoveAutoloadToTrackResponse.ProtoReflect.Descriptor instead.
 func (*MoveAutoloadToTrackResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{306}
+	return file_star_service_proto_rawDescGZIP(), []int{303}
 }
 
 type ParkAutoloadRequest struct {
@@ -17558,7 +17403,7 @@ type ParkAutoloadRequest struct {
 
 func (x *ParkAutoloadRequest) Reset() {
 	*x = ParkAutoloadRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[307]
+	mi := &file_star_service_proto_msgTypes[304]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17570,7 +17415,7 @@ func (x *ParkAutoloadRequest) String() string {
 func (*ParkAutoloadRequest) ProtoMessage() {}
 
 func (x *ParkAutoloadRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[307]
+	mi := &file_star_service_proto_msgTypes[304]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17583,7 +17428,7 @@ func (x *ParkAutoloadRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParkAutoloadRequest.ProtoReflect.Descriptor instead.
 func (*ParkAutoloadRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{307}
+	return file_star_service_proto_rawDescGZIP(), []int{304}
 }
 
 type ParkAutoloadResponse struct {
@@ -17594,7 +17439,7 @@ type ParkAutoloadResponse struct {
 
 func (x *ParkAutoloadResponse) Reset() {
 	*x = ParkAutoloadResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[308]
+	mi := &file_star_service_proto_msgTypes[305]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17606,7 +17451,7 @@ func (x *ParkAutoloadResponse) String() string {
 func (*ParkAutoloadResponse) ProtoMessage() {}
 
 func (x *ParkAutoloadResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[308]
+	mi := &file_star_service_proto_msgTypes[305]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17619,7 +17464,7 @@ func (x *ParkAutoloadResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ParkAutoloadResponse.ProtoReflect.Descriptor instead.
 func (*ParkAutoloadResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{308}
+	return file_star_service_proto_rawDescGZIP(), []int{305}
 }
 
 type TakeCarrierOutToAutoloadBeltRequest struct {
@@ -17631,7 +17476,7 @@ type TakeCarrierOutToAutoloadBeltRequest struct {
 
 func (x *TakeCarrierOutToAutoloadBeltRequest) Reset() {
 	*x = TakeCarrierOutToAutoloadBeltRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[309]
+	mi := &file_star_service_proto_msgTypes[306]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17643,7 +17488,7 @@ func (x *TakeCarrierOutToAutoloadBeltRequest) String() string {
 func (*TakeCarrierOutToAutoloadBeltRequest) ProtoMessage() {}
 
 func (x *TakeCarrierOutToAutoloadBeltRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[309]
+	mi := &file_star_service_proto_msgTypes[306]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17656,7 +17501,7 @@ func (x *TakeCarrierOutToAutoloadBeltRequest) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use TakeCarrierOutToAutoloadBeltRequest.ProtoReflect.Descriptor instead.
 func (*TakeCarrierOutToAutoloadBeltRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{309}
+	return file_star_service_proto_rawDescGZIP(), []int{306}
 }
 
 func (x *TakeCarrierOutToAutoloadBeltRequest) GetCarrierName() string {
@@ -17674,7 +17519,7 @@ type TakeCarrierOutToAutoloadBeltResponse struct {
 
 func (x *TakeCarrierOutToAutoloadBeltResponse) Reset() {
 	*x = TakeCarrierOutToAutoloadBeltResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[310]
+	mi := &file_star_service_proto_msgTypes[307]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17686,7 +17531,7 @@ func (x *TakeCarrierOutToAutoloadBeltResponse) String() string {
 func (*TakeCarrierOutToAutoloadBeltResponse) ProtoMessage() {}
 
 func (x *TakeCarrierOutToAutoloadBeltResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[310]
+	mi := &file_star_service_proto_msgTypes[307]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17699,7 +17544,7 @@ func (x *TakeCarrierOutToAutoloadBeltResponse) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use TakeCarrierOutToAutoloadBeltResponse.ProtoReflect.Descriptor instead.
 func (*TakeCarrierOutToAutoloadBeltResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{310}
+	return file_star_service_proto_rawDescGZIP(), []int{307}
 }
 
 type SetBarcodeTypeRequest struct {
@@ -17711,7 +17556,7 @@ type SetBarcodeTypeRequest struct {
 
 func (x *SetBarcodeTypeRequest) Reset() {
 	*x = SetBarcodeTypeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[311]
+	mi := &file_star_service_proto_msgTypes[308]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17723,7 +17568,7 @@ func (x *SetBarcodeTypeRequest) String() string {
 func (*SetBarcodeTypeRequest) ProtoMessage() {}
 
 func (x *SetBarcodeTypeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[311]
+	mi := &file_star_service_proto_msgTypes[308]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17736,7 +17581,7 @@ func (x *SetBarcodeTypeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetBarcodeTypeRequest.ProtoReflect.Descriptor instead.
 func (*SetBarcodeTypeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{311}
+	return file_star_service_proto_rawDescGZIP(), []int{308}
 }
 
 func (x *SetBarcodeTypeRequest) GetBarcodeSymbology() int32 {
@@ -17754,7 +17599,7 @@ type SetBarcodeTypeResponse struct {
 
 func (x *SetBarcodeTypeResponse) Reset() {
 	*x = SetBarcodeTypeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[312]
+	mi := &file_star_service_proto_msgTypes[309]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17766,7 +17611,7 @@ func (x *SetBarcodeTypeResponse) String() string {
 func (*SetBarcodeTypeResponse) ProtoMessage() {}
 
 func (x *SetBarcodeTypeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[312]
+	mi := &file_star_service_proto_msgTypes[309]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17779,7 +17624,7 @@ func (x *SetBarcodeTypeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetBarcodeTypeResponse.ProtoReflect.Descriptor instead.
 func (*SetBarcodeTypeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{312}
+	return file_star_service_proto_rawDescGZIP(), []int{309}
 }
 
 type LoadCarrierFromTrayAndScanCarrierBarcodeRequest struct {
@@ -17796,7 +17641,7 @@ type LoadCarrierFromTrayAndScanCarrierBarcodeRequest struct {
 
 func (x *LoadCarrierFromTrayAndScanCarrierBarcodeRequest) Reset() {
 	*x = LoadCarrierFromTrayAndScanCarrierBarcodeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[313]
+	mi := &file_star_service_proto_msgTypes[310]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17808,7 +17653,7 @@ func (x *LoadCarrierFromTrayAndScanCarrierBarcodeRequest) String() string {
 func (*LoadCarrierFromTrayAndScanCarrierBarcodeRequest) ProtoMessage() {}
 
 func (x *LoadCarrierFromTrayAndScanCarrierBarcodeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[313]
+	mi := &file_star_service_proto_msgTypes[310]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17821,7 +17666,7 @@ func (x *LoadCarrierFromTrayAndScanCarrierBarcodeRequest) ProtoReflect() protore
 
 // Deprecated: Use LoadCarrierFromTrayAndScanCarrierBarcodeRequest.ProtoReflect.Descriptor instead.
 func (*LoadCarrierFromTrayAndScanCarrierBarcodeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{313}
+	return file_star_service_proto_rawDescGZIP(), []int{310}
 }
 
 func (x *LoadCarrierFromTrayAndScanCarrierBarcodeRequest) GetCarrierName() string {
@@ -17875,7 +17720,7 @@ type LoadCarrierFromTrayAndScanCarrierBarcodeResponse struct {
 
 func (x *LoadCarrierFromTrayAndScanCarrierBarcodeResponse) Reset() {
 	*x = LoadCarrierFromTrayAndScanCarrierBarcodeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[314]
+	mi := &file_star_service_proto_msgTypes[311]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17887,7 +17732,7 @@ func (x *LoadCarrierFromTrayAndScanCarrierBarcodeResponse) String() string {
 func (*LoadCarrierFromTrayAndScanCarrierBarcodeResponse) ProtoMessage() {}
 
 func (x *LoadCarrierFromTrayAndScanCarrierBarcodeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[314]
+	mi := &file_star_service_proto_msgTypes[311]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17900,7 +17745,7 @@ func (x *LoadCarrierFromTrayAndScanCarrierBarcodeResponse) ProtoReflect() protor
 
 // Deprecated: Use LoadCarrierFromTrayAndScanCarrierBarcodeResponse.ProtoReflect.Descriptor instead.
 func (*LoadCarrierFromTrayAndScanCarrierBarcodeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{314}
+	return file_star_service_proto_rawDescGZIP(), []int{311}
 }
 
 func (x *LoadCarrierFromTrayAndScanCarrierBarcodeResponse) GetBarcode() string {
@@ -17918,7 +17763,7 @@ type UnloadCarrierAfterCarcodeBarcardeScanningRequest struct {
 
 func (x *UnloadCarrierAfterCarcodeBarcardeScanningRequest) Reset() {
 	*x = UnloadCarrierAfterCarcodeBarcardeScanningRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[315]
+	mi := &file_star_service_proto_msgTypes[312]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17930,7 +17775,7 @@ func (x *UnloadCarrierAfterCarcodeBarcardeScanningRequest) String() string {
 func (*UnloadCarrierAfterCarcodeBarcardeScanningRequest) ProtoMessage() {}
 
 func (x *UnloadCarrierAfterCarcodeBarcardeScanningRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[315]
+	mi := &file_star_service_proto_msgTypes[312]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17943,7 +17788,7 @@ func (x *UnloadCarrierAfterCarcodeBarcardeScanningRequest) ProtoReflect() protor
 
 // Deprecated: Use UnloadCarrierAfterCarcodeBarcardeScanningRequest.ProtoReflect.Descriptor instead.
 func (*UnloadCarrierAfterCarcodeBarcardeScanningRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{315}
+	return file_star_service_proto_rawDescGZIP(), []int{312}
 }
 
 type UnloadCarrierAfterCarcodeBarcardeScanningResponse struct {
@@ -17954,7 +17799,7 @@ type UnloadCarrierAfterCarcodeBarcardeScanningResponse struct {
 
 func (x *UnloadCarrierAfterCarcodeBarcardeScanningResponse) Reset() {
 	*x = UnloadCarrierAfterCarcodeBarcardeScanningResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[316]
+	mi := &file_star_service_proto_msgTypes[313]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -17966,7 +17811,7 @@ func (x *UnloadCarrierAfterCarcodeBarcardeScanningResponse) String() string {
 func (*UnloadCarrierAfterCarcodeBarcardeScanningResponse) ProtoMessage() {}
 
 func (x *UnloadCarrierAfterCarcodeBarcardeScanningResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[316]
+	mi := &file_star_service_proto_msgTypes[313]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -17979,7 +17824,7 @@ func (x *UnloadCarrierAfterCarcodeBarcardeScanningResponse) ProtoReflect() proto
 
 // Deprecated: Use UnloadCarrierAfterCarcodeBarcardeScanningResponse.ProtoReflect.Descriptor instead.
 func (*UnloadCarrierAfterCarcodeBarcardeScanningResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{316}
+	return file_star_service_proto_rawDescGZIP(), []int{313}
 }
 
 type SetCarrierMonitoringRequest struct {
@@ -17991,7 +17836,7 @@ type SetCarrierMonitoringRequest struct {
 
 func (x *SetCarrierMonitoringRequest) Reset() {
 	*x = SetCarrierMonitoringRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[317]
+	mi := &file_star_service_proto_msgTypes[314]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18003,7 +17848,7 @@ func (x *SetCarrierMonitoringRequest) String() string {
 func (*SetCarrierMonitoringRequest) ProtoMessage() {}
 
 func (x *SetCarrierMonitoringRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[317]
+	mi := &file_star_service_proto_msgTypes[314]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18016,7 +17861,7 @@ func (x *SetCarrierMonitoringRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetCarrierMonitoringRequest.ProtoReflect.Descriptor instead.
 func (*SetCarrierMonitoringRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{317}
+	return file_star_service_proto_rawDescGZIP(), []int{314}
 }
 
 func (x *SetCarrierMonitoringRequest) GetShouldMonitor() bool {
@@ -18034,7 +17879,7 @@ type SetCarrierMonitoringResponse struct {
 
 func (x *SetCarrierMonitoringResponse) Reset() {
 	*x = SetCarrierMonitoringResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[318]
+	mi := &file_star_service_proto_msgTypes[315]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18046,7 +17891,7 @@ func (x *SetCarrierMonitoringResponse) String() string {
 func (*SetCarrierMonitoringResponse) ProtoMessage() {}
 
 func (x *SetCarrierMonitoringResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[318]
+	mi := &file_star_service_proto_msgTypes[315]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18059,7 +17904,7 @@ func (x *SetCarrierMonitoringResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetCarrierMonitoringResponse.ProtoReflect.Descriptor instead.
 func (*SetCarrierMonitoringResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{318}
+	return file_star_service_proto_rawDescGZIP(), []int{315}
 }
 
 type LoadCarrierRequest struct {
@@ -18071,7 +17916,7 @@ type LoadCarrierRequest struct {
 
 func (x *LoadCarrierRequest) Reset() {
 	*x = LoadCarrierRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[319]
+	mi := &file_star_service_proto_msgTypes[316]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18083,7 +17928,7 @@ func (x *LoadCarrierRequest) String() string {
 func (*LoadCarrierRequest) ProtoMessage() {}
 
 func (x *LoadCarrierRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[319]
+	mi := &file_star_service_proto_msgTypes[316]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18096,7 +17941,7 @@ func (x *LoadCarrierRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LoadCarrierRequest.ProtoReflect.Descriptor instead.
 func (*LoadCarrierRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{319}
+	return file_star_service_proto_rawDescGZIP(), []int{316}
 }
 
 func (x *LoadCarrierRequest) GetCarrierName() string {
@@ -18114,7 +17959,7 @@ type LoadCarrierResponse struct {
 
 func (x *LoadCarrierResponse) Reset() {
 	*x = LoadCarrierResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[320]
+	mi := &file_star_service_proto_msgTypes[317]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18126,7 +17971,7 @@ func (x *LoadCarrierResponse) String() string {
 func (*LoadCarrierResponse) ProtoMessage() {}
 
 func (x *LoadCarrierResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[320]
+	mi := &file_star_service_proto_msgTypes[317]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18139,7 +17984,7 @@ func (x *LoadCarrierResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LoadCarrierResponse.ProtoReflect.Descriptor instead.
 func (*LoadCarrierResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{320}
+	return file_star_service_proto_rawDescGZIP(), []int{317}
 }
 
 type SetLoadingIndicatorsRequest struct {
@@ -18152,7 +17997,7 @@ type SetLoadingIndicatorsRequest struct {
 
 func (x *SetLoadingIndicatorsRequest) Reset() {
 	*x = SetLoadingIndicatorsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[321]
+	mi := &file_star_service_proto_msgTypes[318]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18164,7 +18009,7 @@ func (x *SetLoadingIndicatorsRequest) String() string {
 func (*SetLoadingIndicatorsRequest) ProtoMessage() {}
 
 func (x *SetLoadingIndicatorsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[321]
+	mi := &file_star_service_proto_msgTypes[318]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18177,7 +18022,7 @@ func (x *SetLoadingIndicatorsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetLoadingIndicatorsRequest.ProtoReflect.Descriptor instead.
 func (*SetLoadingIndicatorsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{321}
+	return file_star_service_proto_rawDescGZIP(), []int{318}
 }
 
 func (x *SetLoadingIndicatorsRequest) GetBitPattern() []bool {
@@ -18202,7 +18047,7 @@ type SetLoadingIndicatorsResponse struct {
 
 func (x *SetLoadingIndicatorsResponse) Reset() {
 	*x = SetLoadingIndicatorsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[322]
+	mi := &file_star_service_proto_msgTypes[319]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18214,7 +18059,7 @@ func (x *SetLoadingIndicatorsResponse) String() string {
 func (*SetLoadingIndicatorsResponse) ProtoMessage() {}
 
 func (x *SetLoadingIndicatorsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[322]
+	mi := &file_star_service_proto_msgTypes[319]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18227,7 +18072,7 @@ func (x *SetLoadingIndicatorsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetLoadingIndicatorsResponse.ProtoReflect.Descriptor instead.
 func (*SetLoadingIndicatorsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{322}
+	return file_star_service_proto_rawDescGZIP(), []int{319}
 }
 
 type UnloadCarrierRequest struct {
@@ -18239,7 +18084,7 @@ type UnloadCarrierRequest struct {
 
 func (x *UnloadCarrierRequest) Reset() {
 	*x = UnloadCarrierRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[323]
+	mi := &file_star_service_proto_msgTypes[320]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18251,7 +18096,7 @@ func (x *UnloadCarrierRequest) String() string {
 func (*UnloadCarrierRequest) ProtoMessage() {}
 
 func (x *UnloadCarrierRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[323]
+	mi := &file_star_service_proto_msgTypes[320]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18264,7 +18109,7 @@ func (x *UnloadCarrierRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnloadCarrierRequest.ProtoReflect.Descriptor instead.
 func (*UnloadCarrierRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{323}
+	return file_star_service_proto_rawDescGZIP(), []int{320}
 }
 
 func (x *UnloadCarrierRequest) GetCarrierName() string {
@@ -18282,7 +18127,7 @@ type UnloadCarrierResponse struct {
 
 func (x *UnloadCarrierResponse) Reset() {
 	*x = UnloadCarrierResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[324]
+	mi := &file_star_service_proto_msgTypes[321]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18294,7 +18139,7 @@ func (x *UnloadCarrierResponse) String() string {
 func (*UnloadCarrierResponse) ProtoMessage() {}
 
 func (x *UnloadCarrierResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[324]
+	mi := &file_star_service_proto_msgTypes[321]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18307,7 +18152,7 @@ func (x *UnloadCarrierResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnloadCarrierResponse.ProtoReflect.Descriptor instead.
 func (*UnloadCarrierResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{324}
+	return file_star_service_proto_rawDescGZIP(), []int{321}
 }
 
 type RequestInstrumentInitializationStatusRequest struct {
@@ -18318,7 +18163,7 @@ type RequestInstrumentInitializationStatusRequest struct {
 
 func (x *RequestInstrumentInitializationStatusRequest) Reset() {
 	*x = RequestInstrumentInitializationStatusRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[325]
+	mi := &file_star_service_proto_msgTypes[322]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18330,7 +18175,7 @@ func (x *RequestInstrumentInitializationStatusRequest) String() string {
 func (*RequestInstrumentInitializationStatusRequest) ProtoMessage() {}
 
 func (x *RequestInstrumentInitializationStatusRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[325]
+	mi := &file_star_service_proto_msgTypes[322]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18343,7 +18188,7 @@ func (x *RequestInstrumentInitializationStatusRequest) ProtoReflect() protorefle
 
 // Deprecated: Use RequestInstrumentInitializationStatusRequest.ProtoReflect.Descriptor instead.
 func (*RequestInstrumentInitializationStatusRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{325}
+	return file_star_service_proto_rawDescGZIP(), []int{322}
 }
 
 type RequestInstrumentInitializationStatusResponse struct {
@@ -18355,7 +18200,7 @@ type RequestInstrumentInitializationStatusResponse struct {
 
 func (x *RequestInstrumentInitializationStatusResponse) Reset() {
 	*x = RequestInstrumentInitializationStatusResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[326]
+	mi := &file_star_service_proto_msgTypes[323]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18367,7 +18212,7 @@ func (x *RequestInstrumentInitializationStatusResponse) String() string {
 func (*RequestInstrumentInitializationStatusResponse) ProtoMessage() {}
 
 func (x *RequestInstrumentInitializationStatusResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[326]
+	mi := &file_star_service_proto_msgTypes[323]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18380,7 +18225,7 @@ func (x *RequestInstrumentInitializationStatusResponse) ProtoReflect() protorefl
 
 // Deprecated: Use RequestInstrumentInitializationStatusResponse.ProtoReflect.Descriptor instead.
 func (*RequestInstrumentInitializationStatusResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{326}
+	return file_star_service_proto_rawDescGZIP(), []int{323}
 }
 
 func (x *RequestInstrumentInitializationStatusResponse) GetInitialized() bool {
@@ -18398,7 +18243,7 @@ type RequestAutoloadInitializationStatusRequest struct {
 
 func (x *RequestAutoloadInitializationStatusRequest) Reset() {
 	*x = RequestAutoloadInitializationStatusRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[327]
+	mi := &file_star_service_proto_msgTypes[324]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18410,7 +18255,7 @@ func (x *RequestAutoloadInitializationStatusRequest) String() string {
 func (*RequestAutoloadInitializationStatusRequest) ProtoMessage() {}
 
 func (x *RequestAutoloadInitializationStatusRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[327]
+	mi := &file_star_service_proto_msgTypes[324]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18423,7 +18268,7 @@ func (x *RequestAutoloadInitializationStatusRequest) ProtoReflect() protoreflect
 
 // Deprecated: Use RequestAutoloadInitializationStatusRequest.ProtoReflect.Descriptor instead.
 func (*RequestAutoloadInitializationStatusRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{327}
+	return file_star_service_proto_rawDescGZIP(), []int{324}
 }
 
 type RequestAutoloadInitializationStatusResponse struct {
@@ -18435,7 +18280,7 @@ type RequestAutoloadInitializationStatusResponse struct {
 
 func (x *RequestAutoloadInitializationStatusResponse) Reset() {
 	*x = RequestAutoloadInitializationStatusResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[328]
+	mi := &file_star_service_proto_msgTypes[325]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18447,7 +18292,7 @@ func (x *RequestAutoloadInitializationStatusResponse) String() string {
 func (*RequestAutoloadInitializationStatusResponse) ProtoMessage() {}
 
 func (x *RequestAutoloadInitializationStatusResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[328]
+	mi := &file_star_service_proto_msgTypes[325]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18460,7 +18305,7 @@ func (x *RequestAutoloadInitializationStatusResponse) ProtoReflect() protoreflec
 
 // Deprecated: Use RequestAutoloadInitializationStatusResponse.ProtoReflect.Descriptor instead.
 func (*RequestAutoloadInitializationStatusResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{328}
+	return file_star_service_proto_rawDescGZIP(), []int{325}
 }
 
 func (x *RequestAutoloadInitializationStatusResponse) GetInitialized() bool {
@@ -18479,7 +18324,7 @@ type LockCoverRequest struct {
 
 func (x *LockCoverRequest) Reset() {
 	*x = LockCoverRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[329]
+	mi := &file_star_service_proto_msgTypes[326]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18491,7 +18336,7 @@ func (x *LockCoverRequest) String() string {
 func (*LockCoverRequest) ProtoMessage() {}
 
 func (x *LockCoverRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[329]
+	mi := &file_star_service_proto_msgTypes[326]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18504,7 +18349,7 @@ func (x *LockCoverRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LockCoverRequest.ProtoReflect.Descriptor instead.
 func (*LockCoverRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{329}
+	return file_star_service_proto_rawDescGZIP(), []int{326}
 }
 
 type LockCoverResponse struct {
@@ -18515,7 +18360,7 @@ type LockCoverResponse struct {
 
 func (x *LockCoverResponse) Reset() {
 	*x = LockCoverResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[330]
+	mi := &file_star_service_proto_msgTypes[327]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18527,7 +18372,7 @@ func (x *LockCoverResponse) String() string {
 func (*LockCoverResponse) ProtoMessage() {}
 
 func (x *LockCoverResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[330]
+	mi := &file_star_service_proto_msgTypes[327]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18540,7 +18385,7 @@ func (x *LockCoverResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LockCoverResponse.ProtoReflect.Descriptor instead.
 func (*LockCoverResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{330}
+	return file_star_service_proto_rawDescGZIP(), []int{327}
 }
 
 type UnlockCoverRequest struct {
@@ -18551,7 +18396,7 @@ type UnlockCoverRequest struct {
 
 func (x *UnlockCoverRequest) Reset() {
 	*x = UnlockCoverRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[331]
+	mi := &file_star_service_proto_msgTypes[328]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18563,7 +18408,7 @@ func (x *UnlockCoverRequest) String() string {
 func (*UnlockCoverRequest) ProtoMessage() {}
 
 func (x *UnlockCoverRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[331]
+	mi := &file_star_service_proto_msgTypes[328]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18576,7 +18421,7 @@ func (x *UnlockCoverRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnlockCoverRequest.ProtoReflect.Descriptor instead.
 func (*UnlockCoverRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{331}
+	return file_star_service_proto_rawDescGZIP(), []int{328}
 }
 
 type UnlockCoverResponse struct {
@@ -18587,7 +18432,7 @@ type UnlockCoverResponse struct {
 
 func (x *UnlockCoverResponse) Reset() {
 	*x = UnlockCoverResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[332]
+	mi := &file_star_service_proto_msgTypes[329]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18599,7 +18444,7 @@ func (x *UnlockCoverResponse) String() string {
 func (*UnlockCoverResponse) ProtoMessage() {}
 
 func (x *UnlockCoverResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[332]
+	mi := &file_star_service_proto_msgTypes[329]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18612,7 +18457,7 @@ func (x *UnlockCoverResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnlockCoverResponse.ProtoReflect.Descriptor instead.
 func (*UnlockCoverResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{332}
+	return file_star_service_proto_rawDescGZIP(), []int{329}
 }
 
 type DisableCoverControlRequest struct {
@@ -18623,7 +18468,7 @@ type DisableCoverControlRequest struct {
 
 func (x *DisableCoverControlRequest) Reset() {
 	*x = DisableCoverControlRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[333]
+	mi := &file_star_service_proto_msgTypes[330]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18635,7 +18480,7 @@ func (x *DisableCoverControlRequest) String() string {
 func (*DisableCoverControlRequest) ProtoMessage() {}
 
 func (x *DisableCoverControlRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[333]
+	mi := &file_star_service_proto_msgTypes[330]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18648,7 +18493,7 @@ func (x *DisableCoverControlRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DisableCoverControlRequest.ProtoReflect.Descriptor instead.
 func (*DisableCoverControlRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{333}
+	return file_star_service_proto_rawDescGZIP(), []int{330}
 }
 
 type DisableCoverControlResponse struct {
@@ -18659,7 +18504,7 @@ type DisableCoverControlResponse struct {
 
 func (x *DisableCoverControlResponse) Reset() {
 	*x = DisableCoverControlResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[334]
+	mi := &file_star_service_proto_msgTypes[331]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18671,7 +18516,7 @@ func (x *DisableCoverControlResponse) String() string {
 func (*DisableCoverControlResponse) ProtoMessage() {}
 
 func (x *DisableCoverControlResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[334]
+	mi := &file_star_service_proto_msgTypes[331]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18684,7 +18529,7 @@ func (x *DisableCoverControlResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DisableCoverControlResponse.ProtoReflect.Descriptor instead.
 func (*DisableCoverControlResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{334}
+	return file_star_service_proto_rawDescGZIP(), []int{331}
 }
 
 type EnableCoverControlRequest struct {
@@ -18695,7 +18540,7 @@ type EnableCoverControlRequest struct {
 
 func (x *EnableCoverControlRequest) Reset() {
 	*x = EnableCoverControlRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[335]
+	mi := &file_star_service_proto_msgTypes[332]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18707,7 +18552,7 @@ func (x *EnableCoverControlRequest) String() string {
 func (*EnableCoverControlRequest) ProtoMessage() {}
 
 func (x *EnableCoverControlRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[335]
+	mi := &file_star_service_proto_msgTypes[332]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18720,7 +18565,7 @@ func (x *EnableCoverControlRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EnableCoverControlRequest.ProtoReflect.Descriptor instead.
 func (*EnableCoverControlRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{335}
+	return file_star_service_proto_rawDescGZIP(), []int{332}
 }
 
 type EnableCoverControlResponse struct {
@@ -18731,7 +18576,7 @@ type EnableCoverControlResponse struct {
 
 func (x *EnableCoverControlResponse) Reset() {
 	*x = EnableCoverControlResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[336]
+	mi := &file_star_service_proto_msgTypes[333]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18743,7 +18588,7 @@ func (x *EnableCoverControlResponse) String() string {
 func (*EnableCoverControlResponse) ProtoMessage() {}
 
 func (x *EnableCoverControlResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[336]
+	mi := &file_star_service_proto_msgTypes[333]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18756,7 +18601,7 @@ func (x *EnableCoverControlResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EnableCoverControlResponse.ProtoReflect.Descriptor instead.
 func (*EnableCoverControlResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{336}
+	return file_star_service_proto_rawDescGZIP(), []int{333}
 }
 
 type SetCoverOutputRequest struct {
@@ -18768,7 +18613,7 @@ type SetCoverOutputRequest struct {
 
 func (x *SetCoverOutputRequest) Reset() {
 	*x = SetCoverOutputRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[337]
+	mi := &file_star_service_proto_msgTypes[334]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18780,7 +18625,7 @@ func (x *SetCoverOutputRequest) String() string {
 func (*SetCoverOutputRequest) ProtoMessage() {}
 
 func (x *SetCoverOutputRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[337]
+	mi := &file_star_service_proto_msgTypes[334]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18793,7 +18638,7 @@ func (x *SetCoverOutputRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetCoverOutputRequest.ProtoReflect.Descriptor instead.
 func (*SetCoverOutputRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{337}
+	return file_star_service_proto_rawDescGZIP(), []int{334}
 }
 
 func (x *SetCoverOutputRequest) GetOutput() int32 {
@@ -18811,7 +18656,7 @@ type SetCoverOutputResponse struct {
 
 func (x *SetCoverOutputResponse) Reset() {
 	*x = SetCoverOutputResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[338]
+	mi := &file_star_service_proto_msgTypes[335]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18823,7 +18668,7 @@ func (x *SetCoverOutputResponse) String() string {
 func (*SetCoverOutputResponse) ProtoMessage() {}
 
 func (x *SetCoverOutputResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[338]
+	mi := &file_star_service_proto_msgTypes[335]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18836,7 +18681,7 @@ func (x *SetCoverOutputResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetCoverOutputResponse.ProtoReflect.Descriptor instead.
 func (*SetCoverOutputResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{338}
+	return file_star_service_proto_rawDescGZIP(), []int{335}
 }
 
 type ResetOutputRequest struct {
@@ -18848,7 +18693,7 @@ type ResetOutputRequest struct {
 
 func (x *ResetOutputRequest) Reset() {
 	*x = ResetOutputRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[339]
+	mi := &file_star_service_proto_msgTypes[336]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18860,7 +18705,7 @@ func (x *ResetOutputRequest) String() string {
 func (*ResetOutputRequest) ProtoMessage() {}
 
 func (x *ResetOutputRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[339]
+	mi := &file_star_service_proto_msgTypes[336]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18873,7 +18718,7 @@ func (x *ResetOutputRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResetOutputRequest.ProtoReflect.Descriptor instead.
 func (*ResetOutputRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{339}
+	return file_star_service_proto_rawDescGZIP(), []int{336}
 }
 
 func (x *ResetOutputRequest) GetOutput() int32 {
@@ -18891,7 +18736,7 @@ type ResetOutputResponse struct {
 
 func (x *ResetOutputResponse) Reset() {
 	*x = ResetOutputResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[340]
+	mi := &file_star_service_proto_msgTypes[337]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18903,7 +18748,7 @@ func (x *ResetOutputResponse) String() string {
 func (*ResetOutputResponse) ProtoMessage() {}
 
 func (x *ResetOutputResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[340]
+	mi := &file_star_service_proto_msgTypes[337]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18916,7 +18761,7 @@ func (x *ResetOutputResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResetOutputResponse.ProtoReflect.Descriptor instead.
 func (*ResetOutputResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{340}
+	return file_star_service_proto_rawDescGZIP(), []int{337}
 }
 
 type RequestCoverOpenRequest struct {
@@ -18927,7 +18772,7 @@ type RequestCoverOpenRequest struct {
 
 func (x *RequestCoverOpenRequest) Reset() {
 	*x = RequestCoverOpenRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[341]
+	mi := &file_star_service_proto_msgTypes[338]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18939,7 +18784,7 @@ func (x *RequestCoverOpenRequest) String() string {
 func (*RequestCoverOpenRequest) ProtoMessage() {}
 
 func (x *RequestCoverOpenRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[341]
+	mi := &file_star_service_proto_msgTypes[338]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18952,7 +18797,7 @@ func (x *RequestCoverOpenRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestCoverOpenRequest.ProtoReflect.Descriptor instead.
 func (*RequestCoverOpenRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{341}
+	return file_star_service_proto_rawDescGZIP(), []int{338}
 }
 
 type RequestCoverOpenResponse struct {
@@ -18964,7 +18809,7 @@ type RequestCoverOpenResponse struct {
 
 func (x *RequestCoverOpenResponse) Reset() {
 	*x = RequestCoverOpenResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[342]
+	mi := &file_star_service_proto_msgTypes[339]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -18976,7 +18821,7 @@ func (x *RequestCoverOpenResponse) String() string {
 func (*RequestCoverOpenResponse) ProtoMessage() {}
 
 func (x *RequestCoverOpenResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[342]
+	mi := &file_star_service_proto_msgTypes[339]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -18989,7 +18834,7 @@ func (x *RequestCoverOpenResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestCoverOpenResponse.ProtoReflect.Descriptor instead.
 func (*RequestCoverOpenResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{342}
+	return file_star_service_proto_rawDescGZIP(), []int{339}
 }
 
 func (x *RequestCoverOpenResponse) GetOpen() bool {
@@ -19010,7 +18855,7 @@ type SendHhsCommandRequest struct {
 
 func (x *SendHhsCommandRequest) Reset() {
 	*x = SendHhsCommandRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[343]
+	mi := &file_star_service_proto_msgTypes[340]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19022,7 +18867,7 @@ func (x *SendHhsCommandRequest) String() string {
 func (*SendHhsCommandRequest) ProtoMessage() {}
 
 func (x *SendHhsCommandRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[343]
+	mi := &file_star_service_proto_msgTypes[340]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19035,7 +18880,7 @@ func (x *SendHhsCommandRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SendHhsCommandRequest.ProtoReflect.Descriptor instead.
 func (*SendHhsCommandRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{343}
+	return file_star_service_proto_rawDescGZIP(), []int{340}
 }
 
 func (x *SendHhsCommandRequest) GetIndex() int32 {
@@ -19061,7 +18906,7 @@ type SendHhsCommandResponse struct {
 
 func (x *SendHhsCommandResponse) Reset() {
 	*x = SendHhsCommandResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[344]
+	mi := &file_star_service_proto_msgTypes[341]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19073,7 +18918,7 @@ func (x *SendHhsCommandResponse) String() string {
 func (*SendHhsCommandResponse) ProtoMessage() {}
 
 func (x *SendHhsCommandResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[344]
+	mi := &file_star_service_proto_msgTypes[341]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19086,7 +18931,7 @@ func (x *SendHhsCommandResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SendHhsCommandResponse.ProtoReflect.Descriptor instead.
 func (*SendHhsCommandResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{344}
+	return file_star_service_proto_rawDescGZIP(), []int{341}
 }
 
 func (x *SendHhsCommandResponse) GetResponse() string {
@@ -19105,7 +18950,7 @@ type CheckTypeIsHhcRequest struct {
 
 func (x *CheckTypeIsHhcRequest) Reset() {
 	*x = CheckTypeIsHhcRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[345]
+	mi := &file_star_service_proto_msgTypes[342]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19117,7 +18962,7 @@ func (x *CheckTypeIsHhcRequest) String() string {
 func (*CheckTypeIsHhcRequest) ProtoMessage() {}
 
 func (x *CheckTypeIsHhcRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[345]
+	mi := &file_star_service_proto_msgTypes[342]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19130,7 +18975,7 @@ func (x *CheckTypeIsHhcRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CheckTypeIsHhcRequest.ProtoReflect.Descriptor instead.
 func (*CheckTypeIsHhcRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{345}
+	return file_star_service_proto_rawDescGZIP(), []int{342}
 }
 
 func (x *CheckTypeIsHhcRequest) GetDeviceNumber() int32 {
@@ -19148,7 +18993,7 @@ type CheckTypeIsHhcResponse struct {
 
 func (x *CheckTypeIsHhcResponse) Reset() {
 	*x = CheckTypeIsHhcResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[346]
+	mi := &file_star_service_proto_msgTypes[343]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19160,7 +19005,7 @@ func (x *CheckTypeIsHhcResponse) String() string {
 func (*CheckTypeIsHhcResponse) ProtoMessage() {}
 
 func (x *CheckTypeIsHhcResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[346]
+	mi := &file_star_service_proto_msgTypes[343]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19173,7 +19018,7 @@ func (x *CheckTypeIsHhcResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CheckTypeIsHhcResponse.ProtoReflect.Descriptor instead.
 func (*CheckTypeIsHhcResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{346}
+	return file_star_service_proto_rawDescGZIP(), []int{343}
 }
 
 type InitializeHhcRequest struct {
@@ -19185,7 +19030,7 @@ type InitializeHhcRequest struct {
 
 func (x *InitializeHhcRequest) Reset() {
 	*x = InitializeHhcRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[347]
+	mi := &file_star_service_proto_msgTypes[344]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19197,7 +19042,7 @@ func (x *InitializeHhcRequest) String() string {
 func (*InitializeHhcRequest) ProtoMessage() {}
 
 func (x *InitializeHhcRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[347]
+	mi := &file_star_service_proto_msgTypes[344]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19210,7 +19055,7 @@ func (x *InitializeHhcRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeHhcRequest.ProtoReflect.Descriptor instead.
 func (*InitializeHhcRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{347}
+	return file_star_service_proto_rawDescGZIP(), []int{344}
 }
 
 func (x *InitializeHhcRequest) GetDeviceNumber() int32 {
@@ -19229,7 +19074,7 @@ type InitializeHhcResponse struct {
 
 func (x *InitializeHhcResponse) Reset() {
 	*x = InitializeHhcResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[348]
+	mi := &file_star_service_proto_msgTypes[345]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19241,7 +19086,7 @@ func (x *InitializeHhcResponse) String() string {
 func (*InitializeHhcResponse) ProtoMessage() {}
 
 func (x *InitializeHhcResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[348]
+	mi := &file_star_service_proto_msgTypes[345]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19254,7 +19099,7 @@ func (x *InitializeHhcResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InitializeHhcResponse.ProtoReflect.Descriptor instead.
 func (*InitializeHhcResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{348}
+	return file_star_service_proto_rawDescGZIP(), []int{345}
 }
 
 func (x *InitializeHhcResponse) GetResponse() string {
@@ -19274,7 +19119,7 @@ type StartTemperatureControlAtHhcRequest struct {
 
 func (x *StartTemperatureControlAtHhcRequest) Reset() {
 	*x = StartTemperatureControlAtHhcRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[349]
+	mi := &file_star_service_proto_msgTypes[346]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19286,7 +19131,7 @@ func (x *StartTemperatureControlAtHhcRequest) String() string {
 func (*StartTemperatureControlAtHhcRequest) ProtoMessage() {}
 
 func (x *StartTemperatureControlAtHhcRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[349]
+	mi := &file_star_service_proto_msgTypes[346]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19299,7 +19144,7 @@ func (x *StartTemperatureControlAtHhcRequest) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use StartTemperatureControlAtHhcRequest.ProtoReflect.Descriptor instead.
 func (*StartTemperatureControlAtHhcRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{349}
+	return file_star_service_proto_rawDescGZIP(), []int{346}
 }
 
 func (x *StartTemperatureControlAtHhcRequest) GetDeviceNumber() int32 {
@@ -19324,7 +19169,7 @@ type StartTemperatureControlAtHhcResponse struct {
 
 func (x *StartTemperatureControlAtHhcResponse) Reset() {
 	*x = StartTemperatureControlAtHhcResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[350]
+	mi := &file_star_service_proto_msgTypes[347]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19336,7 +19181,7 @@ func (x *StartTemperatureControlAtHhcResponse) String() string {
 func (*StartTemperatureControlAtHhcResponse) ProtoMessage() {}
 
 func (x *StartTemperatureControlAtHhcResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[350]
+	mi := &file_star_service_proto_msgTypes[347]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19349,7 +19194,7 @@ func (x *StartTemperatureControlAtHhcResponse) ProtoReflect() protoreflect.Messa
 
 // Deprecated: Use StartTemperatureControlAtHhcResponse.ProtoReflect.Descriptor instead.
 func (*StartTemperatureControlAtHhcResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{350}
+	return file_star_service_proto_rawDescGZIP(), []int{347}
 }
 
 type GetTemperatureAtHhcRequest struct {
@@ -19361,7 +19206,7 @@ type GetTemperatureAtHhcRequest struct {
 
 func (x *GetTemperatureAtHhcRequest) Reset() {
 	*x = GetTemperatureAtHhcRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[351]
+	mi := &file_star_service_proto_msgTypes[348]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19373,7 +19218,7 @@ func (x *GetTemperatureAtHhcRequest) String() string {
 func (*GetTemperatureAtHhcRequest) ProtoMessage() {}
 
 func (x *GetTemperatureAtHhcRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[351]
+	mi := &file_star_service_proto_msgTypes[348]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19386,7 +19231,7 @@ func (x *GetTemperatureAtHhcRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTemperatureAtHhcRequest.ProtoReflect.Descriptor instead.
 func (*GetTemperatureAtHhcRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{351}
+	return file_star_service_proto_rawDescGZIP(), []int{348}
 }
 
 func (x *GetTemperatureAtHhcRequest) GetDeviceNumber() int32 {
@@ -19406,7 +19251,7 @@ type GetTemperatureAtHhcResponse struct {
 
 func (x *GetTemperatureAtHhcResponse) Reset() {
 	*x = GetTemperatureAtHhcResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[352]
+	mi := &file_star_service_proto_msgTypes[349]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19418,7 +19263,7 @@ func (x *GetTemperatureAtHhcResponse) String() string {
 func (*GetTemperatureAtHhcResponse) ProtoMessage() {}
 
 func (x *GetTemperatureAtHhcResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[352]
+	mi := &file_star_service_proto_msgTypes[349]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19431,7 +19276,7 @@ func (x *GetTemperatureAtHhcResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTemperatureAtHhcResponse.ProtoReflect.Descriptor instead.
 func (*GetTemperatureAtHhcResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{352}
+	return file_star_service_proto_rawDescGZIP(), []int{349}
 }
 
 func (x *GetTemperatureAtHhcResponse) GetCurrentTemperature() float64 {
@@ -19457,7 +19302,7 @@ type QueryWhetherTemperatureReachedAtHhcRequest struct {
 
 func (x *QueryWhetherTemperatureReachedAtHhcRequest) Reset() {
 	*x = QueryWhetherTemperatureReachedAtHhcRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[353]
+	mi := &file_star_service_proto_msgTypes[350]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19469,7 +19314,7 @@ func (x *QueryWhetherTemperatureReachedAtHhcRequest) String() string {
 func (*QueryWhetherTemperatureReachedAtHhcRequest) ProtoMessage() {}
 
 func (x *QueryWhetherTemperatureReachedAtHhcRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[353]
+	mi := &file_star_service_proto_msgTypes[350]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19482,7 +19327,7 @@ func (x *QueryWhetherTemperatureReachedAtHhcRequest) ProtoReflect() protoreflect
 
 // Deprecated: Use QueryWhetherTemperatureReachedAtHhcRequest.ProtoReflect.Descriptor instead.
 func (*QueryWhetherTemperatureReachedAtHhcRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{353}
+	return file_star_service_proto_rawDescGZIP(), []int{350}
 }
 
 func (x *QueryWhetherTemperatureReachedAtHhcRequest) GetDeviceNumber() int32 {
@@ -19500,7 +19345,7 @@ type QueryWhetherTemperatureReachedAtHhcResponse struct {
 
 func (x *QueryWhetherTemperatureReachedAtHhcResponse) Reset() {
 	*x = QueryWhetherTemperatureReachedAtHhcResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[354]
+	mi := &file_star_service_proto_msgTypes[351]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19512,7 +19357,7 @@ func (x *QueryWhetherTemperatureReachedAtHhcResponse) String() string {
 func (*QueryWhetherTemperatureReachedAtHhcResponse) ProtoMessage() {}
 
 func (x *QueryWhetherTemperatureReachedAtHhcResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[354]
+	mi := &file_star_service_proto_msgTypes[351]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19525,7 +19370,7 @@ func (x *QueryWhetherTemperatureReachedAtHhcResponse) ProtoReflect() protoreflec
 
 // Deprecated: Use QueryWhetherTemperatureReachedAtHhcResponse.ProtoReflect.Descriptor instead.
 func (*QueryWhetherTemperatureReachedAtHhcResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{354}
+	return file_star_service_proto_rawDescGZIP(), []int{351}
 }
 
 type StopTemperatureControlAtHhcRequest struct {
@@ -19537,7 +19382,7 @@ type StopTemperatureControlAtHhcRequest struct {
 
 func (x *StopTemperatureControlAtHhcRequest) Reset() {
 	*x = StopTemperatureControlAtHhcRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[355]
+	mi := &file_star_service_proto_msgTypes[352]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19549,7 +19394,7 @@ func (x *StopTemperatureControlAtHhcRequest) String() string {
 func (*StopTemperatureControlAtHhcRequest) ProtoMessage() {}
 
 func (x *StopTemperatureControlAtHhcRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[355]
+	mi := &file_star_service_proto_msgTypes[352]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19562,7 +19407,7 @@ func (x *StopTemperatureControlAtHhcRequest) ProtoReflect() protoreflect.Message
 
 // Deprecated: Use StopTemperatureControlAtHhcRequest.ProtoReflect.Descriptor instead.
 func (*StopTemperatureControlAtHhcRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{355}
+	return file_star_service_proto_rawDescGZIP(), []int{352}
 }
 
 func (x *StopTemperatureControlAtHhcRequest) GetDeviceNumber() int32 {
@@ -19580,7 +19425,7 @@ type StopTemperatureControlAtHhcResponse struct {
 
 func (x *StopTemperatureControlAtHhcResponse) Reset() {
 	*x = StopTemperatureControlAtHhcResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[356]
+	mi := &file_star_service_proto_msgTypes[353]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19592,7 +19437,7 @@ func (x *StopTemperatureControlAtHhcResponse) String() string {
 func (*StopTemperatureControlAtHhcResponse) ProtoMessage() {}
 
 func (x *StopTemperatureControlAtHhcResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[356]
+	mi := &file_star_service_proto_msgTypes[353]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19605,7 +19450,7 @@ func (x *StopTemperatureControlAtHhcResponse) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use StopTemperatureControlAtHhcResponse.ProtoReflect.Descriptor instead.
 func (*StopTemperatureControlAtHhcResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{356}
+	return file_star_service_proto_rawDescGZIP(), []int{353}
 }
 
 // --- Firmware queries ---
@@ -19617,7 +19462,7 @@ type RequestFirmwareVersionRequest struct {
 
 func (x *RequestFirmwareVersionRequest) Reset() {
 	*x = RequestFirmwareVersionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[357]
+	mi := &file_star_service_proto_msgTypes[354]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19629,7 +19474,7 @@ func (x *RequestFirmwareVersionRequest) String() string {
 func (*RequestFirmwareVersionRequest) ProtoMessage() {}
 
 func (x *RequestFirmwareVersionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[357]
+	mi := &file_star_service_proto_msgTypes[354]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19642,7 +19487,7 @@ func (x *RequestFirmwareVersionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestFirmwareVersionRequest.ProtoReflect.Descriptor instead.
 func (*RequestFirmwareVersionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{357}
+	return file_star_service_proto_rawDescGZIP(), []int{354}
 }
 
 type RequestFirmwareVersionResponse struct {
@@ -19653,7 +19498,7 @@ type RequestFirmwareVersionResponse struct {
 
 func (x *RequestFirmwareVersionResponse) Reset() {
 	*x = RequestFirmwareVersionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[358]
+	mi := &file_star_service_proto_msgTypes[355]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19665,7 +19510,7 @@ func (x *RequestFirmwareVersionResponse) String() string {
 func (*RequestFirmwareVersionResponse) ProtoMessage() {}
 
 func (x *RequestFirmwareVersionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[358]
+	mi := &file_star_service_proto_msgTypes[355]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19678,7 +19523,7 @@ func (x *RequestFirmwareVersionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestFirmwareVersionResponse.ProtoReflect.Descriptor instead.
 func (*RequestFirmwareVersionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{358}
+	return file_star_service_proto_rawDescGZIP(), []int{355}
 }
 
 type RequestErrorCodeRequest struct {
@@ -19689,7 +19534,7 @@ type RequestErrorCodeRequest struct {
 
 func (x *RequestErrorCodeRequest) Reset() {
 	*x = RequestErrorCodeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[359]
+	mi := &file_star_service_proto_msgTypes[356]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19701,7 +19546,7 @@ func (x *RequestErrorCodeRequest) String() string {
 func (*RequestErrorCodeRequest) ProtoMessage() {}
 
 func (x *RequestErrorCodeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[359]
+	mi := &file_star_service_proto_msgTypes[356]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19714,7 +19559,7 @@ func (x *RequestErrorCodeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestErrorCodeRequest.ProtoReflect.Descriptor instead.
 func (*RequestErrorCodeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{359}
+	return file_star_service_proto_rawDescGZIP(), []int{356}
 }
 
 type RequestErrorCodeResponse struct {
@@ -19725,7 +19570,7 @@ type RequestErrorCodeResponse struct {
 
 func (x *RequestErrorCodeResponse) Reset() {
 	*x = RequestErrorCodeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[360]
+	mi := &file_star_service_proto_msgTypes[357]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19737,7 +19582,7 @@ func (x *RequestErrorCodeResponse) String() string {
 func (*RequestErrorCodeResponse) ProtoMessage() {}
 
 func (x *RequestErrorCodeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[360]
+	mi := &file_star_service_proto_msgTypes[357]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19750,7 +19595,7 @@ func (x *RequestErrorCodeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestErrorCodeResponse.ProtoReflect.Descriptor instead.
 func (*RequestErrorCodeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{360}
+	return file_star_service_proto_rawDescGZIP(), []int{357}
 }
 
 type RequestParameterValueRequest struct {
@@ -19761,7 +19606,7 @@ type RequestParameterValueRequest struct {
 
 func (x *RequestParameterValueRequest) Reset() {
 	*x = RequestParameterValueRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[361]
+	mi := &file_star_service_proto_msgTypes[358]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19773,7 +19618,7 @@ func (x *RequestParameterValueRequest) String() string {
 func (*RequestParameterValueRequest) ProtoMessage() {}
 
 func (x *RequestParameterValueRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[361]
+	mi := &file_star_service_proto_msgTypes[358]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19786,7 +19631,7 @@ func (x *RequestParameterValueRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestParameterValueRequest.ProtoReflect.Descriptor instead.
 func (*RequestParameterValueRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{361}
+	return file_star_service_proto_rawDescGZIP(), []int{358}
 }
 
 type RequestParameterValueResponse struct {
@@ -19797,7 +19642,7 @@ type RequestParameterValueResponse struct {
 
 func (x *RequestParameterValueResponse) Reset() {
 	*x = RequestParameterValueResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[362]
+	mi := &file_star_service_proto_msgTypes[359]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19809,7 +19654,7 @@ func (x *RequestParameterValueResponse) String() string {
 func (*RequestParameterValueResponse) ProtoMessage() {}
 
 func (x *RequestParameterValueResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[362]
+	mi := &file_star_service_proto_msgTypes[359]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19822,7 +19667,7 @@ func (x *RequestParameterValueResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestParameterValueResponse.ProtoReflect.Descriptor instead.
 func (*RequestParameterValueResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{362}
+	return file_star_service_proto_rawDescGZIP(), []int{359}
 }
 
 type RequestDeviceSerialNumberRequest struct {
@@ -19833,7 +19678,7 @@ type RequestDeviceSerialNumberRequest struct {
 
 func (x *RequestDeviceSerialNumberRequest) Reset() {
 	*x = RequestDeviceSerialNumberRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[363]
+	mi := &file_star_service_proto_msgTypes[360]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19845,7 +19690,7 @@ func (x *RequestDeviceSerialNumberRequest) String() string {
 func (*RequestDeviceSerialNumberRequest) ProtoMessage() {}
 
 func (x *RequestDeviceSerialNumberRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[363]
+	mi := &file_star_service_proto_msgTypes[360]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19858,7 +19703,7 @@ func (x *RequestDeviceSerialNumberRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestDeviceSerialNumberRequest.ProtoReflect.Descriptor instead.
 func (*RequestDeviceSerialNumberRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{363}
+	return file_star_service_proto_rawDescGZIP(), []int{360}
 }
 
 type RequestDeviceSerialNumberResponse struct {
@@ -19870,7 +19715,7 @@ type RequestDeviceSerialNumberResponse struct {
 
 func (x *RequestDeviceSerialNumberResponse) Reset() {
 	*x = RequestDeviceSerialNumberResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[364]
+	mi := &file_star_service_proto_msgTypes[361]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19882,7 +19727,7 @@ func (x *RequestDeviceSerialNumberResponse) String() string {
 func (*RequestDeviceSerialNumberResponse) ProtoMessage() {}
 
 func (x *RequestDeviceSerialNumberResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[364]
+	mi := &file_star_service_proto_msgTypes[361]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19895,7 +19740,7 @@ func (x *RequestDeviceSerialNumberResponse) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use RequestDeviceSerialNumberResponse.ProtoReflect.Descriptor instead.
 func (*RequestDeviceSerialNumberResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{364}
+	return file_star_service_proto_rawDescGZIP(), []int{361}
 }
 
 func (x *RequestDeviceSerialNumberResponse) GetSerialNumber() string {
@@ -19913,7 +19758,7 @@ type RequestMasterStatusRequest struct {
 
 func (x *RequestMasterStatusRequest) Reset() {
 	*x = RequestMasterStatusRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[365]
+	mi := &file_star_service_proto_msgTypes[362]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19925,7 +19770,7 @@ func (x *RequestMasterStatusRequest) String() string {
 func (*RequestMasterStatusRequest) ProtoMessage() {}
 
 func (x *RequestMasterStatusRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[365]
+	mi := &file_star_service_proto_msgTypes[362]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19938,7 +19783,7 @@ func (x *RequestMasterStatusRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestMasterStatusRequest.ProtoReflect.Descriptor instead.
 func (*RequestMasterStatusRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{365}
+	return file_star_service_proto_rawDescGZIP(), []int{362}
 }
 
 type RequestMasterStatusResponse struct {
@@ -19949,7 +19794,7 @@ type RequestMasterStatusResponse struct {
 
 func (x *RequestMasterStatusResponse) Reset() {
 	*x = RequestMasterStatusResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[366]
+	mi := &file_star_service_proto_msgTypes[363]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19961,7 +19806,7 @@ func (x *RequestMasterStatusResponse) String() string {
 func (*RequestMasterStatusResponse) ProtoMessage() {}
 
 func (x *RequestMasterStatusResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[366]
+	mi := &file_star_service_proto_msgTypes[363]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -19974,7 +19819,7 @@ func (x *RequestMasterStatusResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestMasterStatusResponse.ProtoReflect.Descriptor instead.
 func (*RequestMasterStatusResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{366}
+	return file_star_service_proto_rawDescGZIP(), []int{363}
 }
 
 type RequestNameOfLastFaultyParameterRequest struct {
@@ -19985,7 +19830,7 @@ type RequestNameOfLastFaultyParameterRequest struct {
 
 func (x *RequestNameOfLastFaultyParameterRequest) Reset() {
 	*x = RequestNameOfLastFaultyParameterRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[367]
+	mi := &file_star_service_proto_msgTypes[364]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -19997,7 +19842,7 @@ func (x *RequestNameOfLastFaultyParameterRequest) String() string {
 func (*RequestNameOfLastFaultyParameterRequest) ProtoMessage() {}
 
 func (x *RequestNameOfLastFaultyParameterRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[367]
+	mi := &file_star_service_proto_msgTypes[364]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20010,7 +19855,7 @@ func (x *RequestNameOfLastFaultyParameterRequest) ProtoReflect() protoreflect.Me
 
 // Deprecated: Use RequestNameOfLastFaultyParameterRequest.ProtoReflect.Descriptor instead.
 func (*RequestNameOfLastFaultyParameterRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{367}
+	return file_star_service_proto_rawDescGZIP(), []int{364}
 }
 
 type RequestNameOfLastFaultyParameterResponse struct {
@@ -20021,7 +19866,7 @@ type RequestNameOfLastFaultyParameterResponse struct {
 
 func (x *RequestNameOfLastFaultyParameterResponse) Reset() {
 	*x = RequestNameOfLastFaultyParameterResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[368]
+	mi := &file_star_service_proto_msgTypes[365]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20033,7 +19878,7 @@ func (x *RequestNameOfLastFaultyParameterResponse) String() string {
 func (*RequestNameOfLastFaultyParameterResponse) ProtoMessage() {}
 
 func (x *RequestNameOfLastFaultyParameterResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[368]
+	mi := &file_star_service_proto_msgTypes[365]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20046,7 +19891,7 @@ func (x *RequestNameOfLastFaultyParameterResponse) ProtoReflect() protoreflect.M
 
 // Deprecated: Use RequestNameOfLastFaultyParameterResponse.ProtoReflect.Descriptor instead.
 func (*RequestNameOfLastFaultyParameterResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{368}
+	return file_star_service_proto_rawDescGZIP(), []int{365}
 }
 
 // --- Configuration ---
@@ -20059,7 +19904,7 @@ type SetSingleStepModeRequest struct {
 
 func (x *SetSingleStepModeRequest) Reset() {
 	*x = SetSingleStepModeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[369]
+	mi := &file_star_service_proto_msgTypes[366]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20071,7 +19916,7 @@ func (x *SetSingleStepModeRequest) String() string {
 func (*SetSingleStepModeRequest) ProtoMessage() {}
 
 func (x *SetSingleStepModeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[369]
+	mi := &file_star_service_proto_msgTypes[366]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20084,7 +19929,7 @@ func (x *SetSingleStepModeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetSingleStepModeRequest.ProtoReflect.Descriptor instead.
 func (*SetSingleStepModeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{369}
+	return file_star_service_proto_rawDescGZIP(), []int{366}
 }
 
 func (x *SetSingleStepModeRequest) GetSingleStepMode() bool {
@@ -20102,7 +19947,7 @@ type SetSingleStepModeResponse struct {
 
 func (x *SetSingleStepModeResponse) Reset() {
 	*x = SetSingleStepModeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[370]
+	mi := &file_star_service_proto_msgTypes[367]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20114,7 +19959,7 @@ func (x *SetSingleStepModeResponse) String() string {
 func (*SetSingleStepModeResponse) ProtoMessage() {}
 
 func (x *SetSingleStepModeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[370]
+	mi := &file_star_service_proto_msgTypes[367]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20127,7 +19972,7 @@ func (x *SetSingleStepModeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetSingleStepModeResponse.ProtoReflect.Descriptor instead.
 func (*SetSingleStepModeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{370}
+	return file_star_service_proto_rawDescGZIP(), []int{367}
 }
 
 type TriggerNextStepRequest struct {
@@ -20138,7 +19983,7 @@ type TriggerNextStepRequest struct {
 
 func (x *TriggerNextStepRequest) Reset() {
 	*x = TriggerNextStepRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[371]
+	mi := &file_star_service_proto_msgTypes[368]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20150,7 +19995,7 @@ func (x *TriggerNextStepRequest) String() string {
 func (*TriggerNextStepRequest) ProtoMessage() {}
 
 func (x *TriggerNextStepRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[371]
+	mi := &file_star_service_proto_msgTypes[368]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20163,7 +20008,7 @@ func (x *TriggerNextStepRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TriggerNextStepRequest.ProtoReflect.Descriptor instead.
 func (*TriggerNextStepRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{371}
+	return file_star_service_proto_rawDescGZIP(), []int{368}
 }
 
 type TriggerNextStepResponse struct {
@@ -20174,7 +20019,7 @@ type TriggerNextStepResponse struct {
 
 func (x *TriggerNextStepResponse) Reset() {
 	*x = TriggerNextStepResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[372]
+	mi := &file_star_service_proto_msgTypes[369]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20186,7 +20031,7 @@ func (x *TriggerNextStepResponse) String() string {
 func (*TriggerNextStepResponse) ProtoMessage() {}
 
 func (x *TriggerNextStepResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[372]
+	mi := &file_star_service_proto_msgTypes[369]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20199,7 +20044,7 @@ func (x *TriggerNextStepResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TriggerNextStepResponse.ProtoReflect.Descriptor instead.
 func (*TriggerNextStepResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{372}
+	return file_star_service_proto_rawDescGZIP(), []int{369}
 }
 
 type HaltRequest struct {
@@ -20210,7 +20055,7 @@ type HaltRequest struct {
 
 func (x *HaltRequest) Reset() {
 	*x = HaltRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[373]
+	mi := &file_star_service_proto_msgTypes[370]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20222,7 +20067,7 @@ func (x *HaltRequest) String() string {
 func (*HaltRequest) ProtoMessage() {}
 
 func (x *HaltRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[373]
+	mi := &file_star_service_proto_msgTypes[370]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20235,7 +20080,7 @@ func (x *HaltRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HaltRequest.ProtoReflect.Descriptor instead.
 func (*HaltRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{373}
+	return file_star_service_proto_rawDescGZIP(), []int{370}
 }
 
 type HaltResponse struct {
@@ -20246,7 +20091,7 @@ type HaltResponse struct {
 
 func (x *HaltResponse) Reset() {
 	*x = HaltResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[374]
+	mi := &file_star_service_proto_msgTypes[371]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20258,7 +20103,7 @@ func (x *HaltResponse) String() string {
 func (*HaltResponse) ProtoMessage() {}
 
 func (x *HaltResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[374]
+	mi := &file_star_service_proto_msgTypes[371]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20271,7 +20116,7 @@ func (x *HaltResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HaltResponse.ProtoReflect.Descriptor instead.
 func (*HaltResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{374}
+	return file_star_service_proto_rawDescGZIP(), []int{371}
 }
 
 type SaveAllCycleCountersRequest struct {
@@ -20282,7 +20127,7 @@ type SaveAllCycleCountersRequest struct {
 
 func (x *SaveAllCycleCountersRequest) Reset() {
 	*x = SaveAllCycleCountersRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[375]
+	mi := &file_star_service_proto_msgTypes[372]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20294,7 +20139,7 @@ func (x *SaveAllCycleCountersRequest) String() string {
 func (*SaveAllCycleCountersRequest) ProtoMessage() {}
 
 func (x *SaveAllCycleCountersRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[375]
+	mi := &file_star_service_proto_msgTypes[372]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20307,7 +20152,7 @@ func (x *SaveAllCycleCountersRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SaveAllCycleCountersRequest.ProtoReflect.Descriptor instead.
 func (*SaveAllCycleCountersRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{375}
+	return file_star_service_proto_rawDescGZIP(), []int{372}
 }
 
 type SaveAllCycleCountersResponse struct {
@@ -20318,7 +20163,7 @@ type SaveAllCycleCountersResponse struct {
 
 func (x *SaveAllCycleCountersResponse) Reset() {
 	*x = SaveAllCycleCountersResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[376]
+	mi := &file_star_service_proto_msgTypes[373]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20330,7 +20175,7 @@ func (x *SaveAllCycleCountersResponse) String() string {
 func (*SaveAllCycleCountersResponse) ProtoMessage() {}
 
 func (x *SaveAllCycleCountersResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[376]
+	mi := &file_star_service_proto_msgTypes[373]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20343,7 +20188,7 @@ func (x *SaveAllCycleCountersResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SaveAllCycleCountersResponse.ProtoReflect.Descriptor instead.
 func (*SaveAllCycleCountersResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{376}
+	return file_star_service_proto_rawDescGZIP(), []int{373}
 }
 
 type SetNotStopRequest struct {
@@ -20355,7 +20200,7 @@ type SetNotStopRequest struct {
 
 func (x *SetNotStopRequest) Reset() {
 	*x = SetNotStopRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[377]
+	mi := &file_star_service_proto_msgTypes[374]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20367,7 +20212,7 @@ func (x *SetNotStopRequest) String() string {
 func (*SetNotStopRequest) ProtoMessage() {}
 
 func (x *SetNotStopRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[377]
+	mi := &file_star_service_proto_msgTypes[374]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20380,7 +20225,7 @@ func (x *SetNotStopRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetNotStopRequest.ProtoReflect.Descriptor instead.
 func (*SetNotStopRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{377}
+	return file_star_service_proto_rawDescGZIP(), []int{374}
 }
 
 func (x *SetNotStopRequest) GetNonStop() bool {
@@ -20398,7 +20243,7 @@ type SetNotStopResponse struct {
 
 func (x *SetNotStopResponse) Reset() {
 	*x = SetNotStopResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[378]
+	mi := &file_star_service_proto_msgTypes[375]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20410,7 +20255,7 @@ func (x *SetNotStopResponse) String() string {
 func (*SetNotStopResponse) ProtoMessage() {}
 
 func (x *SetNotStopResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[378]
+	mi := &file_star_service_proto_msgTypes[375]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20423,7 +20268,7 @@ func (x *SetNotStopResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetNotStopResponse.ProtoReflect.Descriptor instead.
 func (*SetNotStopResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{378}
+	return file_star_service_proto_rawDescGZIP(), []int{375}
 }
 
 type ConfigureNodeNamesRequest struct {
@@ -20434,7 +20279,7 @@ type ConfigureNodeNamesRequest struct {
 
 func (x *ConfigureNodeNamesRequest) Reset() {
 	*x = ConfigureNodeNamesRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[379]
+	mi := &file_star_service_proto_msgTypes[376]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20446,7 +20291,7 @@ func (x *ConfigureNodeNamesRequest) String() string {
 func (*ConfigureNodeNamesRequest) ProtoMessage() {}
 
 func (x *ConfigureNodeNamesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[379]
+	mi := &file_star_service_proto_msgTypes[376]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20459,7 +20304,7 @@ func (x *ConfigureNodeNamesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConfigureNodeNamesRequest.ProtoReflect.Descriptor instead.
 func (*ConfigureNodeNamesRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{379}
+	return file_star_service_proto_rawDescGZIP(), []int{376}
 }
 
 type ConfigureNodeNamesResponse struct {
@@ -20470,7 +20315,7 @@ type ConfigureNodeNamesResponse struct {
 
 func (x *ConfigureNodeNamesResponse) Reset() {
 	*x = ConfigureNodeNamesResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[380]
+	mi := &file_star_service_proto_msgTypes[377]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20482,7 +20327,7 @@ func (x *ConfigureNodeNamesResponse) String() string {
 func (*ConfigureNodeNamesResponse) ProtoMessage() {}
 
 func (x *ConfigureNodeNamesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[380]
+	mi := &file_star_service_proto_msgTypes[377]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20495,7 +20340,7 @@ func (x *ConfigureNodeNamesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConfigureNodeNamesResponse.ProtoReflect.Descriptor instead.
 func (*ConfigureNodeNamesResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{380}
+	return file_star_service_proto_rawDescGZIP(), []int{377}
 }
 
 type SetDeckDataRequest struct {
@@ -20508,7 +20353,7 @@ type SetDeckDataRequest struct {
 
 func (x *SetDeckDataRequest) Reset() {
 	*x = SetDeckDataRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[381]
+	mi := &file_star_service_proto_msgTypes[378]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20520,7 +20365,7 @@ func (x *SetDeckDataRequest) String() string {
 func (*SetDeckDataRequest) ProtoMessage() {}
 
 func (x *SetDeckDataRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[381]
+	mi := &file_star_service_proto_msgTypes[378]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20533,7 +20378,7 @@ func (x *SetDeckDataRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetDeckDataRequest.ProtoReflect.Descriptor instead.
 func (*SetDeckDataRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{381}
+	return file_star_service_proto_rawDescGZIP(), []int{378}
 }
 
 func (x *SetDeckDataRequest) GetDataIndex() int32 {
@@ -20558,7 +20403,7 @@ type SetDeckDataResponse struct {
 
 func (x *SetDeckDataResponse) Reset() {
 	*x = SetDeckDataResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[382]
+	mi := &file_star_service_proto_msgTypes[379]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20570,7 +20415,7 @@ func (x *SetDeckDataResponse) String() string {
 func (*SetDeckDataResponse) ProtoMessage() {}
 
 func (x *SetDeckDataResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[382]
+	mi := &file_star_service_proto_msgTypes[379]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20583,7 +20428,7 @@ func (x *SetDeckDataResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetDeckDataResponse.ProtoReflect.Descriptor instead.
 func (*SetDeckDataResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{382}
+	return file_star_service_proto_rawDescGZIP(), []int{379}
 }
 
 // --- X-arm ---
@@ -20596,7 +20441,7 @@ type PositionLeftXArmRequest struct {
 
 func (x *PositionLeftXArmRequest) Reset() {
 	*x = PositionLeftXArmRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[383]
+	mi := &file_star_service_proto_msgTypes[380]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20608,7 +20453,7 @@ func (x *PositionLeftXArmRequest) String() string {
 func (*PositionLeftXArmRequest) ProtoMessage() {}
 
 func (x *PositionLeftXArmRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[383]
+	mi := &file_star_service_proto_msgTypes[380]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20621,7 +20466,7 @@ func (x *PositionLeftXArmRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PositionLeftXArmRequest.ProtoReflect.Descriptor instead.
 func (*PositionLeftXArmRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{383}
+	return file_star_service_proto_rawDescGZIP(), []int{380}
 }
 
 func (x *PositionLeftXArmRequest) GetXPosition() int32 {
@@ -20639,7 +20484,7 @@ type PositionLeftXArmResponse struct {
 
 func (x *PositionLeftXArmResponse) Reset() {
 	*x = PositionLeftXArmResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[384]
+	mi := &file_star_service_proto_msgTypes[381]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20651,7 +20496,7 @@ func (x *PositionLeftXArmResponse) String() string {
 func (*PositionLeftXArmResponse) ProtoMessage() {}
 
 func (x *PositionLeftXArmResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[384]
+	mi := &file_star_service_proto_msgTypes[381]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20664,7 +20509,7 @@ func (x *PositionLeftXArmResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PositionLeftXArmResponse.ProtoReflect.Descriptor instead.
 func (*PositionLeftXArmResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{384}
+	return file_star_service_proto_rawDescGZIP(), []int{381}
 }
 
 type PositionRightXArmRequest struct {
@@ -20676,7 +20521,7 @@ type PositionRightXArmRequest struct {
 
 func (x *PositionRightXArmRequest) Reset() {
 	*x = PositionRightXArmRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[385]
+	mi := &file_star_service_proto_msgTypes[382]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20688,7 +20533,7 @@ func (x *PositionRightXArmRequest) String() string {
 func (*PositionRightXArmRequest) ProtoMessage() {}
 
 func (x *PositionRightXArmRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[385]
+	mi := &file_star_service_proto_msgTypes[382]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20701,7 +20546,7 @@ func (x *PositionRightXArmRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PositionRightXArmRequest.ProtoReflect.Descriptor instead.
 func (*PositionRightXArmRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{385}
+	return file_star_service_proto_rawDescGZIP(), []int{382}
 }
 
 func (x *PositionRightXArmRequest) GetXPosition() int32 {
@@ -20719,7 +20564,7 @@ type PositionRightXArmResponse struct {
 
 func (x *PositionRightXArmResponse) Reset() {
 	*x = PositionRightXArmResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[386]
+	mi := &file_star_service_proto_msgTypes[383]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20731,7 +20576,7 @@ func (x *PositionRightXArmResponse) String() string {
 func (*PositionRightXArmResponse) ProtoMessage() {}
 
 func (x *PositionRightXArmResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[386]
+	mi := &file_star_service_proto_msgTypes[383]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20744,7 +20589,7 @@ func (x *PositionRightXArmResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PositionRightXArmResponse.ProtoReflect.Descriptor instead.
 func (*PositionRightXArmResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{386}
+	return file_star_service_proto_rawDescGZIP(), []int{383}
 }
 
 type MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest struct {
@@ -20756,7 +20601,7 @@ type MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest str
 
 func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) Reset() {
 	*x = MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[387]
+	mi := &file_star_service_proto_msgTypes[384]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20768,7 +20613,7 @@ func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
 func (*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) ProtoMessage() {}
 
 func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[387]
+	mi := &file_star_service_proto_msgTypes[384]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20781,7 +20626,7 @@ func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
 
 // Deprecated: Use MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest.ProtoReflect.Descriptor instead.
 func (*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{387}
+	return file_star_service_proto_rawDescGZIP(), []int{384}
 }
 
 func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) GetXPosition() int32 {
@@ -20799,7 +20644,7 @@ type MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse st
 
 func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) Reset() {
 	*x = MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[388]
+	mi := &file_star_service_proto_msgTypes[385]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20811,7 +20656,7 @@ func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRespons
 func (*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) ProtoMessage() {}
 
 func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[388]
+	mi := &file_star_service_proto_msgTypes[385]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20824,7 +20669,7 @@ func (x *MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRespons
 
 // Deprecated: Use MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse.ProtoReflect.Descriptor instead.
 func (*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{388}
+	return file_star_service_proto_rawDescGZIP(), []int{385}
 }
 
 type MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest struct {
@@ -20836,7 +20681,7 @@ type MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest st
 
 func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) Reset() {
 	*x = MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[389]
+	mi := &file_star_service_proto_msgTypes[386]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20848,7 +20693,7 @@ func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionReques
 func (*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) ProtoMessage() {}
 
 func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[389]
+	mi := &file_star_service_proto_msgTypes[386]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20861,7 +20706,7 @@ func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionReques
 
 // Deprecated: Use MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest.ProtoReflect.Descriptor instead.
 func (*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{389}
+	return file_star_service_proto_rawDescGZIP(), []int{386}
 }
 
 func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest) GetXPosition() int32 {
@@ -20879,7 +20724,7 @@ type MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse s
 
 func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) Reset() {
 	*x = MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[390]
+	mi := &file_star_service_proto_msgTypes[387]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20891,7 +20736,7 @@ func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRespon
 func (*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) ProtoMessage() {}
 
 func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[390]
+	mi := &file_star_service_proto_msgTypes[387]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20904,7 +20749,7 @@ func (x *MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRespon
 
 // Deprecated: Use MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse.ProtoReflect.Descriptor instead.
 func (*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{390}
+	return file_star_service_proto_rawDescGZIP(), []int{387}
 }
 
 type RequestLeftXArmPositionRequest struct {
@@ -20915,7 +20760,7 @@ type RequestLeftXArmPositionRequest struct {
 
 func (x *RequestLeftXArmPositionRequest) Reset() {
 	*x = RequestLeftXArmPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[391]
+	mi := &file_star_service_proto_msgTypes[388]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20927,7 +20772,7 @@ func (x *RequestLeftXArmPositionRequest) String() string {
 func (*RequestLeftXArmPositionRequest) ProtoMessage() {}
 
 func (x *RequestLeftXArmPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[391]
+	mi := &file_star_service_proto_msgTypes[388]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20940,7 +20785,7 @@ func (x *RequestLeftXArmPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestLeftXArmPositionRequest.ProtoReflect.Descriptor instead.
 func (*RequestLeftXArmPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{391}
+	return file_star_service_proto_rawDescGZIP(), []int{388}
 }
 
 type RequestLeftXArmPositionResponse struct {
@@ -20952,7 +20797,7 @@ type RequestLeftXArmPositionResponse struct {
 
 func (x *RequestLeftXArmPositionResponse) Reset() {
 	*x = RequestLeftXArmPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[392]
+	mi := &file_star_service_proto_msgTypes[389]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -20964,7 +20809,7 @@ func (x *RequestLeftXArmPositionResponse) String() string {
 func (*RequestLeftXArmPositionResponse) ProtoMessage() {}
 
 func (x *RequestLeftXArmPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[392]
+	mi := &file_star_service_proto_msgTypes[389]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -20977,7 +20822,7 @@ func (x *RequestLeftXArmPositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestLeftXArmPositionResponse.ProtoReflect.Descriptor instead.
 func (*RequestLeftXArmPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{392}
+	return file_star_service_proto_rawDescGZIP(), []int{389}
 }
 
 func (x *RequestLeftXArmPositionResponse) GetPosition() float64 {
@@ -20995,7 +20840,7 @@ type RequestRightXArmPositionRequest struct {
 
 func (x *RequestRightXArmPositionRequest) Reset() {
 	*x = RequestRightXArmPositionRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[393]
+	mi := &file_star_service_proto_msgTypes[390]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21007,7 +20852,7 @@ func (x *RequestRightXArmPositionRequest) String() string {
 func (*RequestRightXArmPositionRequest) ProtoMessage() {}
 
 func (x *RequestRightXArmPositionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[393]
+	mi := &file_star_service_proto_msgTypes[390]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21020,7 +20865,7 @@ func (x *RequestRightXArmPositionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestRightXArmPositionRequest.ProtoReflect.Descriptor instead.
 func (*RequestRightXArmPositionRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{393}
+	return file_star_service_proto_rawDescGZIP(), []int{390}
 }
 
 type RequestRightXArmPositionResponse struct {
@@ -21032,7 +20877,7 @@ type RequestRightXArmPositionResponse struct {
 
 func (x *RequestRightXArmPositionResponse) Reset() {
 	*x = RequestRightXArmPositionResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[394]
+	mi := &file_star_service_proto_msgTypes[391]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21044,7 +20889,7 @@ func (x *RequestRightXArmPositionResponse) String() string {
 func (*RequestRightXArmPositionResponse) ProtoMessage() {}
 
 func (x *RequestRightXArmPositionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[394]
+	mi := &file_star_service_proto_msgTypes[391]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21057,7 +20902,7 @@ func (x *RequestRightXArmPositionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestRightXArmPositionResponse.ProtoReflect.Descriptor instead.
 func (*RequestRightXArmPositionResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{394}
+	return file_star_service_proto_rawDescGZIP(), []int{391}
 }
 
 func (x *RequestRightXArmPositionResponse) GetPosition() float64 {
@@ -21075,7 +20920,7 @@ type RequestRightXArmLastCollisionTypeRequest struct {
 
 func (x *RequestRightXArmLastCollisionTypeRequest) Reset() {
 	*x = RequestRightXArmLastCollisionTypeRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[395]
+	mi := &file_star_service_proto_msgTypes[392]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21087,7 +20932,7 @@ func (x *RequestRightXArmLastCollisionTypeRequest) String() string {
 func (*RequestRightXArmLastCollisionTypeRequest) ProtoMessage() {}
 
 func (x *RequestRightXArmLastCollisionTypeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[395]
+	mi := &file_star_service_proto_msgTypes[392]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21100,7 +20945,7 @@ func (x *RequestRightXArmLastCollisionTypeRequest) ProtoReflect() protoreflect.M
 
 // Deprecated: Use RequestRightXArmLastCollisionTypeRequest.ProtoReflect.Descriptor instead.
 func (*RequestRightXArmLastCollisionTypeRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{395}
+	return file_star_service_proto_rawDescGZIP(), []int{392}
 }
 
 type RequestRightXArmLastCollisionTypeResponse struct {
@@ -21112,7 +20957,7 @@ type RequestRightXArmLastCollisionTypeResponse struct {
 
 func (x *RequestRightXArmLastCollisionTypeResponse) Reset() {
 	*x = RequestRightXArmLastCollisionTypeResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[396]
+	mi := &file_star_service_proto_msgTypes[393]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21124,7 +20969,7 @@ func (x *RequestRightXArmLastCollisionTypeResponse) String() string {
 func (*RequestRightXArmLastCollisionTypeResponse) ProtoMessage() {}
 
 func (x *RequestRightXArmLastCollisionTypeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[396]
+	mi := &file_star_service_proto_msgTypes[393]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21137,7 +20982,7 @@ func (x *RequestRightXArmLastCollisionTypeResponse) ProtoReflect() protoreflect.
 
 // Deprecated: Use RequestRightXArmLastCollisionTypeResponse.ProtoReflect.Descriptor instead.
 func (*RequestRightXArmLastCollisionTypeResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{396}
+	return file_star_service_proto_rawDescGZIP(), []int{393}
 }
 
 func (x *RequestRightXArmLastCollisionTypeResponse) GetCollision() bool {
@@ -21157,7 +21002,7 @@ type RequestPumpSettingsRequest struct {
 
 func (x *RequestPumpSettingsRequest) Reset() {
 	*x = RequestPumpSettingsRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[397]
+	mi := &file_star_service_proto_msgTypes[394]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21169,7 +21014,7 @@ func (x *RequestPumpSettingsRequest) String() string {
 func (*RequestPumpSettingsRequest) ProtoMessage() {}
 
 func (x *RequestPumpSettingsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[397]
+	mi := &file_star_service_proto_msgTypes[394]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21182,7 +21027,7 @@ func (x *RequestPumpSettingsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPumpSettingsRequest.ProtoReflect.Descriptor instead.
 func (*RequestPumpSettingsRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{397}
+	return file_star_service_proto_rawDescGZIP(), []int{394}
 }
 
 func (x *RequestPumpSettingsRequest) GetPumpStation() int32 {
@@ -21200,7 +21045,7 @@ type RequestPumpSettingsResponse struct {
 
 func (x *RequestPumpSettingsResponse) Reset() {
 	*x = RequestPumpSettingsResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[398]
+	mi := &file_star_service_proto_msgTypes[395]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21212,7 +21057,7 @@ func (x *RequestPumpSettingsResponse) String() string {
 func (*RequestPumpSettingsResponse) ProtoMessage() {}
 
 func (x *RequestPumpSettingsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[398]
+	mi := &file_star_service_proto_msgTypes[395]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21225,7 +21070,7 @@ func (x *RequestPumpSettingsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestPumpSettingsResponse.ProtoReflect.Descriptor instead.
 func (*RequestPumpSettingsResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{398}
+	return file_star_service_proto_rawDescGZIP(), []int{395}
 }
 
 type InitializeDualPumpStationValvesRequest struct {
@@ -21237,7 +21082,7 @@ type InitializeDualPumpStationValvesRequest struct {
 
 func (x *InitializeDualPumpStationValvesRequest) Reset() {
 	*x = InitializeDualPumpStationValvesRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[399]
+	mi := &file_star_service_proto_msgTypes[396]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21249,7 +21094,7 @@ func (x *InitializeDualPumpStationValvesRequest) String() string {
 func (*InitializeDualPumpStationValvesRequest) ProtoMessage() {}
 
 func (x *InitializeDualPumpStationValvesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[399]
+	mi := &file_star_service_proto_msgTypes[396]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21262,7 +21107,7 @@ func (x *InitializeDualPumpStationValvesRequest) ProtoReflect() protoreflect.Mes
 
 // Deprecated: Use InitializeDualPumpStationValvesRequest.ProtoReflect.Descriptor instead.
 func (*InitializeDualPumpStationValvesRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{399}
+	return file_star_service_proto_rawDescGZIP(), []int{396}
 }
 
 func (x *InitializeDualPumpStationValvesRequest) GetPumpStation() int32 {
@@ -21280,7 +21125,7 @@ type InitializeDualPumpStationValvesResponse struct {
 
 func (x *InitializeDualPumpStationValvesResponse) Reset() {
 	*x = InitializeDualPumpStationValvesResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[400]
+	mi := &file_star_service_proto_msgTypes[397]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21292,7 +21137,7 @@ func (x *InitializeDualPumpStationValvesResponse) String() string {
 func (*InitializeDualPumpStationValvesResponse) ProtoMessage() {}
 
 func (x *InitializeDualPumpStationValvesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[400]
+	mi := &file_star_service_proto_msgTypes[397]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21305,7 +21150,7 @@ func (x *InitializeDualPumpStationValvesResponse) ProtoReflect() protoreflect.Me
 
 // Deprecated: Use InitializeDualPumpStationValvesResponse.ProtoReflect.Descriptor instead.
 func (*InitializeDualPumpStationValvesResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{400}
+	return file_star_service_proto_rawDescGZIP(), []int{397}
 }
 
 type DrainDualChamberSystemRequest struct {
@@ -21317,7 +21162,7 @@ type DrainDualChamberSystemRequest struct {
 
 func (x *DrainDualChamberSystemRequest) Reset() {
 	*x = DrainDualChamberSystemRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[401]
+	mi := &file_star_service_proto_msgTypes[398]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21329,7 +21174,7 @@ func (x *DrainDualChamberSystemRequest) String() string {
 func (*DrainDualChamberSystemRequest) ProtoMessage() {}
 
 func (x *DrainDualChamberSystemRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[401]
+	mi := &file_star_service_proto_msgTypes[398]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21342,7 +21187,7 @@ func (x *DrainDualChamberSystemRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DrainDualChamberSystemRequest.ProtoReflect.Descriptor instead.
 func (*DrainDualChamberSystemRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{401}
+	return file_star_service_proto_rawDescGZIP(), []int{398}
 }
 
 func (x *DrainDualChamberSystemRequest) GetPumpStation() int32 {
@@ -21360,7 +21205,7 @@ type DrainDualChamberSystemResponse struct {
 
 func (x *DrainDualChamberSystemResponse) Reset() {
 	*x = DrainDualChamberSystemResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[402]
+	mi := &file_star_service_proto_msgTypes[399]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21372,7 +21217,7 @@ func (x *DrainDualChamberSystemResponse) String() string {
 func (*DrainDualChamberSystemResponse) ProtoMessage() {}
 
 func (x *DrainDualChamberSystemResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[402]
+	mi := &file_star_service_proto_msgTypes[399]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21385,7 +21230,7 @@ func (x *DrainDualChamberSystemResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DrainDualChamberSystemResponse.ProtoReflect.Descriptor instead.
 func (*DrainDualChamberSystemResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{402}
+	return file_star_service_proto_rawDescGZIP(), []int{399}
 }
 
 // --- Special ---
@@ -21398,7 +21243,7 @@ type ViolentlyShootDownTipRequest struct {
 
 func (x *ViolentlyShootDownTipRequest) Reset() {
 	*x = ViolentlyShootDownTipRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[403]
+	mi := &file_star_service_proto_msgTypes[400]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21410,7 +21255,7 @@ func (x *ViolentlyShootDownTipRequest) String() string {
 func (*ViolentlyShootDownTipRequest) ProtoMessage() {}
 
 func (x *ViolentlyShootDownTipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[403]
+	mi := &file_star_service_proto_msgTypes[400]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21423,7 +21268,7 @@ func (x *ViolentlyShootDownTipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ViolentlyShootDownTipRequest.ProtoReflect.Descriptor instead.
 func (*ViolentlyShootDownTipRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{403}
+	return file_star_service_proto_rawDescGZIP(), []int{400}
 }
 
 func (x *ViolentlyShootDownTipRequest) GetChannelIdx() int32 {
@@ -21441,7 +21286,7 @@ type ViolentlyShootDownTipResponse struct {
 
 func (x *ViolentlyShootDownTipResponse) Reset() {
 	*x = ViolentlyShootDownTipResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[404]
+	mi := &file_star_service_proto_msgTypes[401]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21453,7 +21298,7 @@ func (x *ViolentlyShootDownTipResponse) String() string {
 func (*ViolentlyShootDownTipResponse) ProtoMessage() {}
 
 func (x *ViolentlyShootDownTipResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[404]
+	mi := &file_star_service_proto_msgTypes[401]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21466,7 +21311,7 @@ func (x *ViolentlyShootDownTipResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ViolentlyShootDownTipResponse.ProtoReflect.Descriptor instead.
 func (*ViolentlyShootDownTipResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{404}
+	return file_star_service_proto_rawDescGZIP(), []int{401}
 }
 
 type CanPickUpTipRequest struct {
@@ -21479,7 +21324,7 @@ type CanPickUpTipRequest struct {
 
 func (x *CanPickUpTipRequest) Reset() {
 	*x = CanPickUpTipRequest{}
-	mi := &file_star_v1_star_service_proto_msgTypes[405]
+	mi := &file_star_service_proto_msgTypes[402]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21491,7 +21336,7 @@ func (x *CanPickUpTipRequest) String() string {
 func (*CanPickUpTipRequest) ProtoMessage() {}
 
 func (x *CanPickUpTipRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[405]
+	mi := &file_star_service_proto_msgTypes[402]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21504,7 +21349,7 @@ func (x *CanPickUpTipRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CanPickUpTipRequest.ProtoReflect.Descriptor instead.
 func (*CanPickUpTipRequest) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{405}
+	return file_star_service_proto_rawDescGZIP(), []int{402}
 }
 
 func (x *CanPickUpTipRequest) GetChannelIdx() int32 {
@@ -21530,7 +21375,7 @@ type CanPickUpTipResponse struct {
 
 func (x *CanPickUpTipResponse) Reset() {
 	*x = CanPickUpTipResponse{}
-	mi := &file_star_v1_star_service_proto_msgTypes[406]
+	mi := &file_star_service_proto_msgTypes[403]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -21542,7 +21387,7 @@ func (x *CanPickUpTipResponse) String() string {
 func (*CanPickUpTipResponse) ProtoMessage() {}
 
 func (x *CanPickUpTipResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_star_v1_star_service_proto_msgTypes[406]
+	mi := &file_star_service_proto_msgTypes[403]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -21555,7 +21400,7 @@ func (x *CanPickUpTipResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CanPickUpTipResponse.ProtoReflect.Descriptor instead.
 func (*CanPickUpTipResponse) Descriptor() ([]byte, []int) {
-	return file_star_v1_star_service_proto_rawDescGZIP(), []int{406}
+	return file_star_service_proto_rawDescGZIP(), []int{403}
 }
 
 func (x *CanPickUpTipResponse) GetCanPickUp() bool {
@@ -21565,21 +21410,11 @@ func (x *CanPickUpTipResponse) GetCanPickUp() bool {
 	return false
 }
 
-var File_star_v1_star_service_proto protoreflect.FileDescriptor
+var File_star_service_proto protoreflect.FileDescriptor
 
-const file_star_v1_star_service_proto_rawDesc = "" +
+const file_star_service_proto_rawDesc = "" +
 	"\n" +
-	"\x1astar/v1/star_service.proto\x12\x12pylabrobot.star.v1\"\a\n" +
-	"\x05Empty\"6\n" +
-	"\n" +
-	"Coordinate\x12\f\n" +
-	"\x01x\x18\x01 \x01(\x01R\x01x\x12\f\n" +
-	"\x01y\x18\x02 \x01(\x01R\x01y\x12\f\n" +
-	"\x01z\x18\x03 \x01(\x01R\x01z\"4\n" +
-	"\bRotation\x12\f\n" +
-	"\x01x\x18\x01 \x01(\x01R\x01x\x12\f\n" +
-	"\x01y\x18\x02 \x01(\x01R\x01y\x12\f\n" +
-	"\x01z\x18\x03 \x01(\x01R\x01z\"\xb8\x02\n" +
+	"\x12star_service.proto\x12\x12pylabrobot.star.v1\x1a\vtypes.proto\"\xb8\x02\n" +
 	"\aTipData\x12\x12\n" +
 	"\x04type\x18\x01 \x01(\tR\x04type\x12\x1d\n" +
 	"\n" +
@@ -21592,18 +21427,18 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\aMixData\x12\x16\n" +
 	"\x06volume\x18\x01 \x01(\x01R\x06volume\x12 \n" +
 	"\vrepetitions\x18\x02 \x01(\x05R\vrepetitions\x12\x1b\n" +
-	"\tflow_rate\x18\x03 \x01(\x01R\bflowRate\"\x96\x01\n" +
+	"\tflow_rate\x18\x03 \x01(\x01R\bflowRate\"\x98\x01\n" +
 	"\bPickupOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12-\n" +
-	"\x03tip\x18\x03 \x01(\v2\x1b.pylabrobot.star.v1.TipDataR\x03tip\"\x94\x01\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12-\n" +
+	"\x03tip\x18\x03 \x01(\v2\x1b.pylabrobot.star.v1.TipDataR\x03tip\"\x96\x01\n" +
 	"\x06DropOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12-\n" +
-	"\x03tip\x18\x03 \x01(\v2\x1b.pylabrobot.star.v1.TipDataR\x03tip\"\xb3\x03\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12-\n" +
+	"\x03tip\x18\x03 \x01(\v2\x1b.pylabrobot.star.v1.TipDataR\x03tip\"\xb5\x03\n" +
 	"\x19SingleChannelAspirationOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12-\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12-\n" +
 	"\x03tip\x18\x03 \x01(\v2\x1b.pylabrobot.star.v1.TipDataR\x03tip\x12\x16\n" +
 	"\x06volume\x18\x04 \x01(\x01R\x06volume\x12 \n" +
 	"\tflow_rate\x18\x05 \x01(\x01H\x00R\bflowRate\x88\x01\x01\x12(\n" +
@@ -21614,10 +21449,10 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"_flow_rateB\x10\n" +
 	"\x0e_liquid_heightB\x16\n" +
 	"\x14_blow_out_air_volumeB\x06\n" +
-	"\x04_mix\"\xb1\x03\n" +
+	"\x04_mix\"\xb3\x03\n" +
 	"\x17SingleChannelDispenseOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12-\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12-\n" +
 	"\x03tip\x18\x03 \x01(\v2\x1b.pylabrobot.star.v1.TipDataR\x03tip\x12\x16\n" +
 	"\x06volume\x18\x04 \x01(\x01R\x06volume\x12 \n" +
 	"\tflow_rate\x18\x05 \x01(\x01H\x00R\bflowRate\x88\x01\x01\x12(\n" +
@@ -21628,20 +21463,20 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"_flow_rateB\x10\n" +
 	"\x0e_liquid_heightB\x16\n" +
 	"\x14_blow_out_air_volumeB\x06\n" +
-	"\x04_mix\"\xc0\x01\n" +
+	"\x04_mix\"\xc2\x01\n" +
 	"\x0fPickupTipRackOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12/\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12/\n" +
 	"\x04tips\x18\x03 \x03(\v2\x1b.pylabrobot.star.v1.TipDataR\x04tips\x12\x1f\n" +
 	"\vtip_present\x18\x04 \x03(\bR\n" +
-	"tipPresent\"l\n" +
+	"tipPresent\"n\n" +
 	"\rDropTipRackOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\"\xd1\x03\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\"\xd3\x03\n" +
 	"\x1aMultiHeadAspirationPlateOp\x12\x1d\n" +
 	"\n" +
-	"well_names\x18\x01 \x03(\tR\twellNames\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12/\n" +
+	"well_names\x18\x01 \x03(\tR\twellNames\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12/\n" +
 	"\x04tips\x18\x03 \x03(\v2\x1b.pylabrobot.star.v1.TipDataR\x04tips\x12\x1f\n" +
 	"\vtip_present\x18\x04 \x03(\bR\n" +
 	"tipPresent\x12\x16\n" +
@@ -21654,11 +21489,27 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"_flow_rateB\x10\n" +
 	"\x0e_liquid_heightB\x16\n" +
 	"\x14_blow_out_air_volumeB\x06\n" +
-	"\x04_mix\"\xcf\x03\n" +
+	"\x04_mix\"\xd1\x03\n" +
 	"\x18MultiHeadDispensePlateOp\x12\x1d\n" +
 	"\n" +
-	"well_names\x18\x01 \x03(\tR\twellNames\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12/\n" +
+	"well_names\x18\x01 \x03(\tR\twellNames\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12/\n" +
+	"\x04tips\x18\x03 \x03(\v2\x1b.pylabrobot.star.v1.TipDataR\x04tips\x12\x1f\n" +
+	"\vtip_present\x18\x04 \x03(\bR\n" +
+	"tipPresent\x12\x16\n" +
+	"\x06volume\x18\x05 \x01(\x01R\x06volume\x12 \n" +
+	"\tflow_rate\x18\x06 \x01(\x01H\x00R\bflowRate\x88\x01\x01\x12(\n" +
+	"\rliquid_height\x18\a \x01(\x01H\x01R\fliquidHeight\x88\x01\x01\x122\n" +
+	"\x13blow_out_air_volume\x18\b \x01(\x01H\x02R\x10blowOutAirVolume\x88\x01\x01\x122\n" +
+	"\x03mix\x18\t \x01(\v2\x1b.pylabrobot.star.v1.MixDataH\x03R\x03mix\x88\x01\x01B\f\n" +
+	"\n" +
+	"_flow_rateB\x10\n" +
+	"\x0e_liquid_heightB\x16\n" +
+	"\x14_blow_out_air_volumeB\x06\n" +
+	"\x04_mix\"\xdf\x03\n" +
+	"\x1eMultiHeadAspirationContainerOp\x12%\n" +
+	"\x0econtainer_name\x18\x01 \x01(\tR\rcontainerName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12/\n" +
 	"\x04tips\x18\x03 \x03(\v2\x1b.pylabrobot.star.v1.TipDataR\x04tips\x12\x1f\n" +
 	"\vtip_present\x18\x04 \x03(\bR\n" +
 	"tipPresent\x12\x16\n" +
@@ -21672,25 +21523,9 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\x0e_liquid_heightB\x16\n" +
 	"\x14_blow_out_air_volumeB\x06\n" +
 	"\x04_mix\"\xdd\x03\n" +
-	"\x1eMultiHeadAspirationContainerOp\x12%\n" +
-	"\x0econtainer_name\x18\x01 \x01(\tR\rcontainerName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12/\n" +
-	"\x04tips\x18\x03 \x03(\v2\x1b.pylabrobot.star.v1.TipDataR\x04tips\x12\x1f\n" +
-	"\vtip_present\x18\x04 \x03(\bR\n" +
-	"tipPresent\x12\x16\n" +
-	"\x06volume\x18\x05 \x01(\x01R\x06volume\x12 \n" +
-	"\tflow_rate\x18\x06 \x01(\x01H\x00R\bflowRate\x88\x01\x01\x12(\n" +
-	"\rliquid_height\x18\a \x01(\x01H\x01R\fliquidHeight\x88\x01\x01\x122\n" +
-	"\x13blow_out_air_volume\x18\b \x01(\x01H\x02R\x10blowOutAirVolume\x88\x01\x01\x122\n" +
-	"\x03mix\x18\t \x01(\v2\x1b.pylabrobot.star.v1.MixDataH\x03R\x03mix\x88\x01\x01B\f\n" +
-	"\n" +
-	"_flow_rateB\x10\n" +
-	"\x0e_liquid_heightB\x16\n" +
-	"\x14_blow_out_air_volumeB\x06\n" +
-	"\x04_mix\"\xdb\x03\n" +
 	"\x1cMultiHeadDispenseContainerOp\x12%\n" +
-	"\x0econtainer_name\x18\x01 \x01(\tR\rcontainerName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12/\n" +
+	"\x0econtainer_name\x18\x01 \x01(\tR\rcontainerName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12/\n" +
 	"\x04tips\x18\x03 \x03(\v2\x1b.pylabrobot.star.v1.TipDataR\x04tips\x12\x1f\n" +
 	"\vtip_present\x18\x04 \x03(\bR\n" +
 	"tipPresent\x12\x16\n" +
@@ -21703,23 +21538,23 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"_flow_rateB\x10\n" +
 	"\x0e_liquid_heightB\x16\n" +
 	"\x14_blow_out_air_volumeB\x06\n" +
-	"\x04_mix\"\xed\x01\n" +
+	"\x04_mix\"\xef\x01\n" +
 	"\x10ResourcePickupOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x126\n" +
-	"\x06offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x127\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x128\n" +
+	"\x06offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x127\n" +
 	"\x18pickup_distance_from_top\x18\x03 \x01(\x01R\x15pickupDistanceFromTop\x12C\n" +
-	"\tdirection\x18\x04 \x01(\x0e2%.pylabrobot.star.v1.GripDirectionEnumR\tdirection\"\xb6\x02\n" +
+	"\tdirection\x18\x04 \x01(\x0e2%.pylabrobot.star.v1.GripDirectionEnumR\tdirection\"\xba\x02\n" +
 	"\x0eResourceMoveOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12:\n" +
-	"\blocation\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\blocation\x12R\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12<\n" +
+	"\blocation\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\blocation\x12R\n" +
 	"\x11gripped_direction\x18\x03 \x01(\x0e2%.pylabrobot.star.v1.GripDirectionEnumR\x10grippedDirection\x127\n" +
-	"\x18pickup_distance_from_top\x18\x04 \x01(\x01R\x15pickupDistanceFromTop\x126\n" +
-	"\x06offset\x18\x05 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\"\xfd\x03\n" +
+	"\x18pickup_distance_from_top\x18\x04 \x01(\x01R\x15pickupDistanceFromTop\x128\n" +
+	"\x06offset\x18\x05 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\"\x83\x04\n" +
 	"\x0eResourceDropOp\x12#\n" +
-	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12@\n" +
-	"\vdestination\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\vdestination\x12`\n" +
-	"\x1ddestination_absolute_rotation\x18\x03 \x01(\v2\x1c.pylabrobot.star.v1.RotationR\x1bdestinationAbsoluteRotation\x126\n" +
-	"\x06offset\x18\x04 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x127\n" +
+	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x12B\n" +
+	"\vdestination\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateR\vdestination\x12b\n" +
+	"\x1ddestination_absolute_rotation\x18\x03 \x01(\v2\x1e.pylabrobot.common.v1.RotationR\x1bdestinationAbsoluteRotation\x128\n" +
+	"\x06offset\x18\x04 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x127\n" +
 	"\x18pickup_distance_from_top\x18\x05 \x01(\x01R\x15pickupDistanceFromTop\x12P\n" +
 	"\x10pickup_direction\x18\x06 \x01(\x0e2%.pylabrobot.star.v1.GripDirectionEnumR\x0fpickupDirection\x12C\n" +
 	"\tdirection\x18\a \x01(\x0e2%.pylabrobot.star.v1.GripDirectionEnumR\tdirection\x12\x1a\n" +
@@ -22106,21 +21941,21 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\x12maximum_tip_volume\x18\x04 \x01(\x05R\x10maximumTipVolume\x12:\n" +
 	"\btip_size\x18\x05 \x01(\x0e2\x1f.pylabrobot.star.v1.TipSizeEnumR\atipSize\x12H\n" +
 	"\rpickup_method\x18\x06 \x01(\x0e2#.pylabrobot.star.v1.TipPickupMethodR\fpickupMethod\"\x19\n" +
-	"\x17DefineTipNeedleResponse\"\xc7\x02\n" +
+	"\x17DefineTipNeedleResponse\"\xc9\x02\n" +
 	"\x19ProbeLiquidHeightsRequest\x12'\n" +
 	"\x0fcontainer_names\x18\x01 \x03(\tR\x0econtainerNames\x12!\n" +
-	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12I\n" +
-	"\x10resource_offsets\x18\x03 \x03(\v2\x1e.pylabrobot.star.v1.CoordinateR\x0fresourceOffsets\x12\x19\n" +
+	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12K\n" +
+	"\x10resource_offsets\x18\x03 \x03(\v2 .pylabrobot.common.v1.CoordinateR\x0fresourceOffsets\x12\x19\n" +
 	"\blld_mode\x18\x04 \x01(\x05R\alldMode\x12!\n" +
 	"\fsearch_speed\x18\x05 \x01(\x01R\vsearchSpeed\x12!\n" +
 	"\fn_replicates\x18\x06 \x01(\x05R\vnReplicates\x122\n" +
 	"\x16move_to_z_safety_after\x18\a \x01(\bR\x12moveToZSafetyAfter\"6\n" +
 	"\x1aProbeLiquidHeightsResponse\x12\x18\n" +
-	"\aheights\x18\x01 \x03(\x01R\aheights\"\xc7\x02\n" +
+	"\aheights\x18\x01 \x03(\x01R\aheights\"\xc9\x02\n" +
 	"\x19ProbeLiquidVolumesRequest\x12'\n" +
 	"\x0fcontainer_names\x18\x01 \x03(\tR\x0econtainerNames\x12!\n" +
-	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12I\n" +
-	"\x10resource_offsets\x18\x03 \x03(\v2\x1e.pylabrobot.star.v1.CoordinateR\x0fresourceOffsets\x12\x19\n" +
+	"\fuse_channels\x18\x02 \x03(\x05R\vuseChannels\x12K\n" +
+	"\x10resource_offsets\x18\x03 \x03(\v2 .pylabrobot.common.v1.CoordinateR\x0fresourceOffsets\x12\x19\n" +
 	"\blld_mode\x18\x04 \x01(\x05R\alldMode\x12!\n" +
 	"\fsearch_speed\x18\x05 \x01(\x01R\vsearchSpeed\x12!\n" +
 	"\fn_replicates\x18\x06 \x01(\x05R\vnReplicates\x122\n" +
@@ -22368,10 +22203,10 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\x01x\x18\x01 \x01(\x01R\x01x\x12\f\n" +
 	"\x01y\x18\x02 \x01(\x01R\x01y\x12\f\n" +
 	"\x01z\x18\x03 \x01(\x01R\x01z\")\n" +
-	"'MoveCore96HeadToDefinedPositionResponse\"_\n" +
-	"\x1dHead96MoveToCoordinateRequest\x12>\n" +
+	"'MoveCore96HeadToDefinedPositionResponse\"a\n" +
+	"\x1dHead96MoveToCoordinateRequest\x12@\n" +
 	"\n" +
-	"coordinate\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\n" +
+	"coordinate\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\n" +
 	"coordinate\" \n" +
 	"\x1eHead96MoveToCoordinateResponse\".\n" +
 	",Head96DispensingDriveMoveToHomeVolumeRequest\"/\n" +
@@ -22390,9 +22225,9 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\x1fHead96RequestTipPresenceRequest\"E\n" +
 	" Head96RequestTipPresenceResponse\x12!\n" +
 	"\ftip_presence\x18\x01 \x01(\x05R\vtipPresence\"\x1e\n" +
-	"\x1cHead96RequestPositionRequest\"[\n" +
-	"\x1dHead96RequestPositionResponse\x12:\n" +
-	"\bposition\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\bposition\"\x98\x03\n" +
+	"\x1cHead96RequestPositionRequest\"]\n" +
+	"\x1dHead96RequestPositionResponse\x12<\n" +
+	"\bposition\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\bposition\"\x98\x03\n" +
 	"\x17PickUpTipsCore96Request\x12\x1d\n" +
 	"\n" +
 	"x_position\x18\x01 \x01(\x05R\txPosition\x12\x1f\n" +
@@ -22655,9 +22490,9 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\x1aRequestPlateInIswapRequest\"C\n" +
 	"\x1bRequestPlateInIswapResponse\x12$\n" +
 	"\x0eplate_in_iswap\x18\x01 \x01(\bR\fplateInIswap\"\x1d\n" +
-	"\x1bRequestIswapPositionRequest\"Z\n" +
-	"\x1cRequestIswapPositionResponse\x12:\n" +
-	"\bposition\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\bposition\"#\n" +
+	"\x1bRequestIswapPositionRequest\"\\\n" +
+	"\x1cRequestIswapPositionResponse\x12<\n" +
+	"\bposition\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\bposition\"#\n" +
 	"!IswapRotationDriveRequestYRequest\"2\n" +
 	"\"IswapRotationDriveRequestYResponse\x12\f\n" +
 	"\x01y\x18\x01 \x01(\x01R\x01y\")\n" +
@@ -22673,9 +22508,9 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\x10SlowIswapRequest\x12%\n" +
 	"\x0ewrist_velocity\x18\x01 \x01(\x05R\rwristVelocity\x12)\n" +
 	"\x10gripper_velocity\x18\x02 \x01(\x05R\x0fgripperVelocity\"\x13\n" +
-	"\x11SlowIswapResponse\"\xfe\x03\n" +
-	" IswapMovePickedUpResourceRequest\x126\n" +
-	"\x06center\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06center\x12L\n" +
+	"\x11SlowIswapResponse\"\x80\x04\n" +
+	" IswapMovePickedUpResourceRequest\x128\n" +
+	"\x06center\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06center\x12L\n" +
 	"\x0egrip_direction\x18\x02 \x01(\x0e2%.pylabrobot.star.v1.GripDirectionEnumR\rgripDirection\x12j\n" +
 	"1minimum_traverse_height_at_beginning_of_a_command\x18\x03 \x01(\x01H\x00R*minimumTraverseHeightAtBeginningOfACommand\x88\x01\x01\x126\n" +
 	"\x17collision_control_level\x18\x04 \x01(\x05R\x15collisionControlLevel\x12=\n" +
@@ -22731,18 +22566,18 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"2_minimum_traverse_height_at_beginning_of_a_commandB \n" +
 	"\x1e_z_position_at_the_command_endB\x18\n" +
 	"\x16_open_gripper_position\"\x16\n" +
-	"\x14DropResourceResponse\"\xf3\x01\n" +
+	"\x14DropResourceResponse\"\xf7\x01\n" +
 	"\x1dPickUpCoreGripperToolsRequest\x12#\n" +
-	"\rfront_channel\x18\x01 \x01(\x05R\ffrontChannel\x12F\n" +
-	"\ffront_offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateH\x00R\vfrontOffset\x88\x01\x01\x12D\n" +
-	"\vback_offset\x18\x03 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateH\x01R\n" +
+	"\rfront_channel\x18\x01 \x01(\x05R\ffrontChannel\x12H\n" +
+	"\ffront_offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x00R\vfrontOffset\x88\x01\x01\x12F\n" +
+	"\vback_offset\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x01R\n" +
 	"backOffset\x88\x01\x01B\x0f\n" +
 	"\r_front_offsetB\x0e\n" +
 	"\f_back_offset\" \n" +
-	"\x1ePickUpCoreGripperToolsResponse\"\xce\x01\n" +
-	"\x1dReturnCoreGripperToolsRequest\x12F\n" +
-	"\ffront_offset\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateH\x00R\vfrontOffset\x88\x01\x01\x12D\n" +
-	"\vback_offset\x18\x02 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateH\x01R\n" +
+	"\x1ePickUpCoreGripperToolsResponse\"\xd2\x01\n" +
+	"\x1dReturnCoreGripperToolsRequest\x12H\n" +
+	"\ffront_offset\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x00R\vfrontOffset\x88\x01\x01\x12F\n" +
+	"\vback_offset\x18\x02 \x01(\v2 .pylabrobot.common.v1.CoordinateH\x01R\n" +
 	"backOffset\x88\x01\x01B\x0f\n" +
 	"\r_front_offsetB\x0e\n" +
 	"\f_back_offset\" \n" +
@@ -22798,11 +22633,11 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"z_position\x18\x05 \x01(\x05R\tzPosition\x12\x17\n" +
 	"\az_speed\x18\x06 \x01(\x05R\x06zSpeed\x12e\n" +
 	"1minimum_traverse_height_at_beginning_of_a_command\x18\a \x01(\x05R*minimumTraverseHeightAtBeginningOfACommand\"!\n" +
-	"\x1fCoreMovePlateToPositionResponse\"\xdf\x04\n" +
+	"\x1fCoreMovePlateToPositionResponse\"\xe1\x04\n" +
 	"\x19CorePickUpResourceRequest\x12#\n" +
 	"\rresource_name\x18\x01 \x01(\tR\fresourceName\x127\n" +
-	"\x18pickup_distance_from_top\x18\x02 \x01(\x01R\x15pickupDistanceFromTop\x126\n" +
-	"\x06offset\x18\x03 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12j\n" +
+	"\x18pickup_distance_from_top\x18\x02 \x01(\x01R\x15pickupDistanceFromTop\x128\n" +
+	"\x06offset\x18\x03 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12j\n" +
 	"1minimum_traverse_height_at_beginning_of_a_command\x18\x04 \x01(\x01H\x00R*minimumTraverseHeightAtBeginningOfACommand\x88\x01\x01\x12S\n" +
 	"%minimum_z_position_at_the_command_end\x18\x05 \x01(\x01H\x01R\x1fminimumZPositionAtTheCommandEnd\x88\x01\x01\x12#\n" +
 	"\rgrip_strength\x18\x06 \x01(\x05R\fgripStrength\x12\x17\n" +
@@ -22811,16 +22646,16 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\rfront_channel\x18\t \x01(\x05R\ffrontChannelB4\n" +
 	"2_minimum_traverse_height_at_beginning_of_a_commandB(\n" +
 	"&_minimum_z_position_at_the_command_end\"\x1c\n" +
-	"\x1aCorePickUpResourceResponse\"\xc3\x02\n" +
-	"\x1fCoreMovePickedUpResourceRequest\x126\n" +
-	"\x06center\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06center\x12j\n" +
+	"\x1aCorePickUpResourceResponse\"\xc5\x02\n" +
+	"\x1fCoreMovePickedUpResourceRequest\x128\n" +
+	"\x06center\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06center\x12j\n" +
 	"1minimum_traverse_height_at_beginning_of_a_command\x18\x02 \x01(\x01H\x00R*minimumTraverseHeightAtBeginningOfACommand\x88\x01\x01\x12-\n" +
 	"\x12acceleration_index\x18\x03 \x01(\x05R\x11accelerationIndex\x12\x17\n" +
 	"\az_speed\x18\x04 \x01(\x01R\x06zSpeedB4\n" +
 	"2_minimum_traverse_height_at_beginning_of_a_command\"\"\n" +
-	" CoreMovePickedUpResourceResponse\"\xe9\x03\n" +
-	"\"CoreReleasePickedUpResourceRequest\x12:\n" +
-	"\blocation\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\blocation\x12#\n" +
+	" CoreMovePickedUpResourceResponse\"\xeb\x03\n" +
+	"\"CoreReleasePickedUpResourceRequest\x12<\n" +
+	"\blocation\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\blocation\x12#\n" +
 	"\rresource_name\x18\x02 \x01(\tR\fresourceName\x127\n" +
 	"\x18pickup_distance_from_top\x18\x03 \x01(\x01R\x15pickupDistanceFromTop\x12j\n" +
 	"1minimum_traverse_height_at_beginning_of_a_command\x18\x04 \x01(\x01H\x00R*minimumTraverseHeightAtBeginningOfACommand\x88\x01\x01\x12D\n" +
@@ -22829,12 +22664,12 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"returnToolB4\n" +
 	"2_minimum_traverse_height_at_beginning_of_a_commandB \n" +
 	"\x1e_z_position_at_the_command_end\"%\n" +
-	"#CoreReleasePickedUpResourceResponse\"\xeb\x03\n" +
-	".CoreCheckResourceExistsAtLocationCenterRequest\x12:\n" +
-	"\blocation\x18\x01 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\blocation\x12#\n" +
+	"#CoreReleasePickedUpResourceResponse\"\xef\x03\n" +
+	".CoreCheckResourceExistsAtLocationCenterRequest\x12<\n" +
+	"\blocation\x18\x01 \x01(\v2 .pylabrobot.common.v1.CoordinateR\blocation\x12#\n" +
 	"\rresource_name\x18\x02 \x01(\tR\fresourceName\x12(\n" +
-	"\x10gripper_y_margin\x18\x03 \x01(\x01R\x0egripperYMargin\x126\n" +
-	"\x06offset\x18\x04 \x01(\v2\x1e.pylabrobot.star.v1.CoordinateR\x06offset\x12e\n" +
+	"\x10gripper_y_margin\x18\x03 \x01(\x01R\x0egripperYMargin\x128\n" +
+	"\x06offset\x18\x04 \x01(\v2 .pylabrobot.common.v1.CoordinateR\x06offset\x12e\n" +
 	"1minimum_traverse_height_at_beginning_of_a_command\x18\x05 \x01(\x01R*minimumTraverseHeightAtBeginningOfACommand\x12?\n" +
 	"\x1dz_position_at_the_command_end\x18\x06 \x01(\x01R\x18zPositionAtTheCommandEnd\x12'\n" +
 	"\x0fenable_recovery\x18\a \x01(\bR\x0eenableRecovery\x12%\n" +
@@ -23296,20 +23131,20 @@ const file_star_v1_star_service_proto_rawDesc = "" +
 	"\fCanPickUpTip\x12'.pylabrobot.star.v1.CanPickUpTipRequest\x1a(.pylabrobot.star.v1.CanPickUpTipResponseBLZJgithub.com/PyLabRobot/pylabrobot-protobuf/src/client/go/gen/star/v1;starv1b\x06proto3"
 
 var (
-	file_star_v1_star_service_proto_rawDescOnce sync.Once
-	file_star_v1_star_service_proto_rawDescData []byte
+	file_star_service_proto_rawDescOnce sync.Once
+	file_star_service_proto_rawDescData []byte
 )
 
-func file_star_v1_star_service_proto_rawDescGZIP() []byte {
-	file_star_v1_star_service_proto_rawDescOnce.Do(func() {
-		file_star_v1_star_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_star_v1_star_service_proto_rawDesc), len(file_star_v1_star_service_proto_rawDesc)))
+func file_star_service_proto_rawDescGZIP() []byte {
+	file_star_service_proto_rawDescOnce.Do(func() {
+		file_star_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_star_service_proto_rawDesc), len(file_star_service_proto_rawDesc)))
 	})
-	return file_star_v1_star_service_proto_rawDescData
+	return file_star_service_proto_rawDescData
 }
 
-var file_star_v1_star_service_proto_enumTypes = make([]protoimpl.EnumInfo, 8)
-var file_star_v1_star_service_proto_msgTypes = make([]protoimpl.MessageInfo, 408)
-var file_star_v1_star_service_proto_goTypes = []any{
+var file_star_service_proto_enumTypes = make([]protoimpl.EnumInfo, 8)
+var file_star_service_proto_msgTypes = make([]protoimpl.MessageInfo, 405)
+var file_star_service_proto_goTypes = []any{
 	(LLDMode)(0),                                                                      // 0: pylabrobot.star.v1.LLDMode
 	(TipPickupMethod)(0),                                                              // 1: pylabrobot.star.v1.TipPickupMethod
 	(TipDropMethodEnum)(0),                                                            // 2: pylabrobot.star.v1.TipDropMethodEnum
@@ -23318,877 +23153,876 @@ var file_star_v1_star_service_proto_goTypes = []any{
 	(RotationDriveOrientationEnum)(0),                                                 // 5: pylabrobot.star.v1.RotationDriveOrientationEnum
 	(WristDriveOrientationEnum)(0),                                                    // 6: pylabrobot.star.v1.WristDriveOrientationEnum
 	(Barcode1DSymbologyEnum)(0),                                                       // 7: pylabrobot.star.v1.Barcode1DSymbologyEnum
-	(*Empty)(nil),                                                                     // 8: pylabrobot.star.v1.Empty
-	(*Coordinate)(nil),                                                                // 9: pylabrobot.star.v1.Coordinate
-	(*Rotation)(nil),                                                                  // 10: pylabrobot.star.v1.Rotation
-	(*TipData)(nil),                                                                   // 11: pylabrobot.star.v1.TipData
-	(*MixData)(nil),                                                                   // 12: pylabrobot.star.v1.MixData
-	(*PickupOp)(nil),                                                                  // 13: pylabrobot.star.v1.PickupOp
-	(*DropOp)(nil),                                                                    // 14: pylabrobot.star.v1.DropOp
-	(*SingleChannelAspirationOp)(nil),                                                 // 15: pylabrobot.star.v1.SingleChannelAspirationOp
-	(*SingleChannelDispenseOp)(nil),                                                   // 16: pylabrobot.star.v1.SingleChannelDispenseOp
-	(*PickupTipRackOp)(nil),                                                           // 17: pylabrobot.star.v1.PickupTipRackOp
-	(*DropTipRackOp)(nil),                                                             // 18: pylabrobot.star.v1.DropTipRackOp
-	(*MultiHeadAspirationPlateOp)(nil),                                                // 19: pylabrobot.star.v1.MultiHeadAspirationPlateOp
-	(*MultiHeadDispensePlateOp)(nil),                                                  // 20: pylabrobot.star.v1.MultiHeadDispensePlateOp
-	(*MultiHeadAspirationContainerOp)(nil),                                            // 21: pylabrobot.star.v1.MultiHeadAspirationContainerOp
-	(*MultiHeadDispenseContainerOp)(nil),                                              // 22: pylabrobot.star.v1.MultiHeadDispenseContainerOp
-	(*ResourcePickupOp)(nil),                                                          // 23: pylabrobot.star.v1.ResourcePickupOp
-	(*ResourceMoveOp)(nil),                                                            // 24: pylabrobot.star.v1.ResourceMoveOp
-	(*ResourceDropOp)(nil),                                                            // 25: pylabrobot.star.v1.ResourceDropOp
-	(*ChannelFloatMap)(nil),                                                           // 26: pylabrobot.star.v1.ChannelFloatMap
-	(*SetupRequest)(nil),                                                              // 27: pylabrobot.star.v1.SetupRequest
-	(*SetupResponse)(nil),                                                             // 28: pylabrobot.star.v1.SetupResponse
-	(*StopRequest)(nil),                                                               // 29: pylabrobot.star.v1.StopRequest
-	(*StopResponse)(nil),                                                              // 30: pylabrobot.star.v1.StopResponse
-	(*GetNumChannelsRequest)(nil),                                                     // 31: pylabrobot.star.v1.GetNumChannelsRequest
-	(*GetNumChannelsResponse)(nil),                                                    // 32: pylabrobot.star.v1.GetNumChannelsResponse
-	(*GetHead96InstalledRequest)(nil),                                                 // 33: pylabrobot.star.v1.GetHead96InstalledRequest
-	(*GetHead96InstalledResponse)(nil),                                                // 34: pylabrobot.star.v1.GetHead96InstalledResponse
-	(*GetIswapInstalledRequest)(nil),                                                  // 35: pylabrobot.star.v1.GetIswapInstalledRequest
-	(*GetIswapInstalledResponse)(nil),                                                 // 36: pylabrobot.star.v1.GetIswapInstalledResponse
-	(*GetIswapParkedRequest)(nil),                                                     // 37: pylabrobot.star.v1.GetIswapParkedRequest
-	(*GetIswapParkedResponse)(nil),                                                    // 38: pylabrobot.star.v1.GetIswapParkedResponse
-	(*GetCoreParkedRequest)(nil),                                                      // 39: pylabrobot.star.v1.GetCoreParkedRequest
-	(*GetCoreParkedResponse)(nil),                                                     // 40: pylabrobot.star.v1.GetCoreParkedResponse
-	(*PickUpTipsRequest)(nil),                                                         // 41: pylabrobot.star.v1.PickUpTipsRequest
-	(*PickUpTipsResponse)(nil),                                                        // 42: pylabrobot.star.v1.PickUpTipsResponse
-	(*DropTipsRequest)(nil),                                                           // 43: pylabrobot.star.v1.DropTipsRequest
-	(*DropTipsResponse)(nil),                                                          // 44: pylabrobot.star.v1.DropTipsResponse
-	(*AspirateRequest)(nil),                                                           // 45: pylabrobot.star.v1.AspirateRequest
-	(*AspirateResponse)(nil),                                                          // 46: pylabrobot.star.v1.AspirateResponse
-	(*DispenseRequest)(nil),                                                           // 47: pylabrobot.star.v1.DispenseRequest
-	(*DispenseResponse)(nil),                                                          // 48: pylabrobot.star.v1.DispenseResponse
-	(*PickUpTips96Request)(nil),                                                       // 49: pylabrobot.star.v1.PickUpTips96Request
-	(*PickUpTips96Response)(nil),                                                      // 50: pylabrobot.star.v1.PickUpTips96Response
-	(*DropTips96Request)(nil),                                                         // 51: pylabrobot.star.v1.DropTips96Request
-	(*DropTips96Response)(nil),                                                        // 52: pylabrobot.star.v1.DropTips96Response
-	(*Aspirate96Request)(nil),                                                         // 53: pylabrobot.star.v1.Aspirate96Request
-	(*Aspirate96Response)(nil),                                                        // 54: pylabrobot.star.v1.Aspirate96Response
-	(*Dispense96Request)(nil),                                                         // 55: pylabrobot.star.v1.Dispense96Request
-	(*Dispense96Response)(nil),                                                        // 56: pylabrobot.star.v1.Dispense96Response
-	(*InitializePipRequest)(nil),                                                      // 57: pylabrobot.star.v1.InitializePipRequest
-	(*InitializePipResponse)(nil),                                                     // 58: pylabrobot.star.v1.InitializePipResponse
-	(*InitializePipettingChannelsRequest)(nil),                                        // 59: pylabrobot.star.v1.InitializePipettingChannelsRequest
-	(*InitializePipettingChannelsResponse)(nil),                                       // 60: pylabrobot.star.v1.InitializePipettingChannelsResponse
-	(*PickUpTipFwRequest)(nil),                                                        // 61: pylabrobot.star.v1.PickUpTipFwRequest
-	(*PickUpTipFwResponse)(nil),                                                       // 62: pylabrobot.star.v1.PickUpTipFwResponse
-	(*DiscardTipFwRequest)(nil),                                                       // 63: pylabrobot.star.v1.DiscardTipFwRequest
-	(*DiscardTipFwResponse)(nil),                                                      // 64: pylabrobot.star.v1.DiscardTipFwResponse
-	(*AspiratePipRequest)(nil),                                                        // 65: pylabrobot.star.v1.AspiratePipRequest
-	(*AspiratePipResponse)(nil),                                                       // 66: pylabrobot.star.v1.AspiratePipResponse
-	(*DispensePipRequest)(nil),                                                        // 67: pylabrobot.star.v1.DispensePipRequest
-	(*DispensePipResponse)(nil),                                                       // 68: pylabrobot.star.v1.DispensePipResponse
-	(*SpreadPipChannelsRequest)(nil),                                                  // 69: pylabrobot.star.v1.SpreadPipChannelsRequest
-	(*SpreadPipChannelsResponse)(nil),                                                 // 70: pylabrobot.star.v1.SpreadPipChannelsResponse
-	(*MoveAllPipettingChannelsToDefinedPositionRequest)(nil),                          // 71: pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionRequest
-	(*MoveAllPipettingChannelsToDefinedPositionResponse)(nil),                         // 72: pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionResponse
-	(*DefineTipNeedleRequest)(nil),                                                    // 73: pylabrobot.star.v1.DefineTipNeedleRequest
-	(*DefineTipNeedleResponse)(nil),                                                   // 74: pylabrobot.star.v1.DefineTipNeedleResponse
-	(*ProbeLiquidHeightsRequest)(nil),                                                 // 75: pylabrobot.star.v1.ProbeLiquidHeightsRequest
-	(*ProbeLiquidHeightsResponse)(nil),                                                // 76: pylabrobot.star.v1.ProbeLiquidHeightsResponse
-	(*ProbeLiquidVolumesRequest)(nil),                                                 // 77: pylabrobot.star.v1.ProbeLiquidVolumesRequest
-	(*ProbeLiquidVolumesResponse)(nil),                                                // 78: pylabrobot.star.v1.ProbeLiquidVolumesResponse
-	(*RequestTipPresenceRequest)(nil),                                                 // 79: pylabrobot.star.v1.RequestTipPresenceRequest
-	(*RequestTipPresenceResponse)(nil),                                                // 80: pylabrobot.star.v1.RequestTipPresenceResponse
-	(*ChannelsSenseTipPresenceRequest)(nil),                                           // 81: pylabrobot.star.v1.ChannelsSenseTipPresenceRequest
-	(*ChannelsSenseTipPresenceResponse)(nil),                                          // 82: pylabrobot.star.v1.ChannelsSenseTipPresenceResponse
-	(*RequestPipHeightLastLldRequest)(nil),                                            // 83: pylabrobot.star.v1.RequestPipHeightLastLldRequest
-	(*RequestPipHeightLastLldResponse)(nil),                                           // 84: pylabrobot.star.v1.RequestPipHeightLastLldResponse
-	(*RequestTadmStatusRequest)(nil),                                                  // 85: pylabrobot.star.v1.RequestTadmStatusRequest
-	(*RequestTadmStatusResponse)(nil),                                                 // 86: pylabrobot.star.v1.RequestTadmStatusResponse
-	(*RequestVolumeInTipRequest)(nil),                                                 // 87: pylabrobot.star.v1.RequestVolumeInTipRequest
-	(*RequestVolumeInTipResponse)(nil),                                                // 88: pylabrobot.star.v1.RequestVolumeInTipResponse
-	(*RequestTipLenOnChannelRequest)(nil),                                             // 89: pylabrobot.star.v1.RequestTipLenOnChannelRequest
-	(*RequestTipLenOnChannelResponse)(nil),                                            // 90: pylabrobot.star.v1.RequestTipLenOnChannelResponse
-	(*RequestProbeZPositionRequest)(nil),                                              // 91: pylabrobot.star.v1.RequestProbeZPositionRequest
-	(*RequestProbeZPositionResponse)(nil),                                             // 92: pylabrobot.star.v1.RequestProbeZPositionResponse
-	(*ClldProbeZHeightUsingChannelRequest)(nil),                                       // 93: pylabrobot.star.v1.ClldProbeZHeightUsingChannelRequest
-	(*ClldProbeZHeightUsingChannelResponse)(nil),                                      // 94: pylabrobot.star.v1.ClldProbeZHeightUsingChannelResponse
-	(*PlldProbeZHeightUsingChannelRequest)(nil),                                       // 95: pylabrobot.star.v1.PlldProbeZHeightUsingChannelRequest
-	(*PlldProbeZHeightUsingChannelResponse)(nil),                                      // 96: pylabrobot.star.v1.PlldProbeZHeightUsingChannelResponse
-	(*ZtouchProbeZHeightUsingChannelRequest)(nil),                                     // 97: pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelRequest
-	(*ZtouchProbeZHeightUsingChannelResponse)(nil),                                    // 98: pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelResponse
-	(*PierceFoilRequest)(nil),                                                         // 99: pylabrobot.star.v1.PierceFoilRequest
-	(*PierceFoilResponse)(nil),                                                        // 100: pylabrobot.star.v1.PierceFoilResponse
-	(*PierceFoilHighLevelRequest)(nil),                                                // 101: pylabrobot.star.v1.PierceFoilHighLevelRequest
-	(*PierceFoilHighLevelResponse)(nil),                                               // 102: pylabrobot.star.v1.PierceFoilHighLevelResponse
-	(*StepOffFoilRequest)(nil),                                                        // 103: pylabrobot.star.v1.StepOffFoilRequest
-	(*StepOffFoilResponse)(nil),                                                       // 104: pylabrobot.star.v1.StepOffFoilResponse
-	(*EmptyTipRequest)(nil),                                                           // 105: pylabrobot.star.v1.EmptyTipRequest
-	(*EmptyTipResponse)(nil),                                                          // 106: pylabrobot.star.v1.EmptyTipResponse
-	(*EmptyTipsRequest)(nil),                                                          // 107: pylabrobot.star.v1.EmptyTipsRequest
-	(*EmptyTipsResponse)(nil),                                                         // 108: pylabrobot.star.v1.EmptyTipsResponse
-	(*MoveChannelXRequest)(nil),                                                       // 109: pylabrobot.star.v1.MoveChannelXRequest
-	(*MoveChannelXResponse)(nil),                                                      // 110: pylabrobot.star.v1.MoveChannelXResponse
-	(*MoveChannelYRequest)(nil),                                                       // 111: pylabrobot.star.v1.MoveChannelYRequest
-	(*MoveChannelYResponse)(nil),                                                      // 112: pylabrobot.star.v1.MoveChannelYResponse
-	(*MoveChannelZRequest)(nil),                                                       // 113: pylabrobot.star.v1.MoveChannelZRequest
-	(*MoveChannelZResponse)(nil),                                                      // 114: pylabrobot.star.v1.MoveChannelZResponse
-	(*MoveChannelXRelativeRequest)(nil),                                               // 115: pylabrobot.star.v1.MoveChannelXRelativeRequest
-	(*MoveChannelXRelativeResponse)(nil),                                              // 116: pylabrobot.star.v1.MoveChannelXRelativeResponse
-	(*MoveChannelYRelativeRequest)(nil),                                               // 117: pylabrobot.star.v1.MoveChannelYRelativeRequest
-	(*MoveChannelYRelativeResponse)(nil),                                              // 118: pylabrobot.star.v1.MoveChannelYRelativeResponse
-	(*MoveChannelZRelativeRequest)(nil),                                               // 119: pylabrobot.star.v1.MoveChannelZRelativeRequest
-	(*MoveChannelZRelativeResponse)(nil),                                              // 120: pylabrobot.star.v1.MoveChannelZRelativeResponse
-	(*PrepareForManualChannelOperationRequest)(nil),                                   // 121: pylabrobot.star.v1.PrepareForManualChannelOperationRequest
-	(*PrepareForManualChannelOperationResponse)(nil),                                  // 122: pylabrobot.star.v1.PrepareForManualChannelOperationResponse
-	(*MoveAllChannelsInZSafetyRequest)(nil),                                           // 123: pylabrobot.star.v1.MoveAllChannelsInZSafetyRequest
-	(*MoveAllChannelsInZSafetyResponse)(nil),                                          // 124: pylabrobot.star.v1.MoveAllChannelsInZSafetyResponse
-	(*PositionSinglePipettingChannelInYDirectionRequest)(nil),                         // 125: pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionRequest
-	(*PositionSinglePipettingChannelInYDirectionResponse)(nil),                        // 126: pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionResponse
-	(*PositionSinglePipettingChannelInZDirectionRequest)(nil),                         // 127: pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionRequest
-	(*PositionSinglePipettingChannelInZDirectionResponse)(nil),                        // 128: pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionResponse
-	(*PositionMaxFreeYForNRequest)(nil),                                               // 129: pylabrobot.star.v1.PositionMaxFreeYForNRequest
-	(*PositionMaxFreeYForNResponse)(nil),                                              // 130: pylabrobot.star.v1.PositionMaxFreeYForNResponse
-	(*RequestXPosChannelNRequest)(nil),                                                // 131: pylabrobot.star.v1.RequestXPosChannelNRequest
-	(*RequestXPosChannelNResponse)(nil),                                               // 132: pylabrobot.star.v1.RequestXPosChannelNResponse
-	(*RequestYPosChannelNRequest)(nil),                                                // 133: pylabrobot.star.v1.RequestYPosChannelNRequest
-	(*RequestYPosChannelNResponse)(nil),                                               // 134: pylabrobot.star.v1.RequestYPosChannelNResponse
-	(*RequestZPosChannelNRequest)(nil),                                                // 135: pylabrobot.star.v1.RequestZPosChannelNRequest
-	(*RequestZPosChannelNResponse)(nil),                                               // 136: pylabrobot.star.v1.RequestZPosChannelNResponse
-	(*RequestTipBottomZPositionRequest)(nil),                                          // 137: pylabrobot.star.v1.RequestTipBottomZPositionRequest
-	(*RequestTipBottomZPositionResponse)(nil),                                         // 138: pylabrobot.star.v1.RequestTipBottomZPositionResponse
-	(*GetChannelsYPositionsRequest)(nil),                                              // 139: pylabrobot.star.v1.GetChannelsYPositionsRequest
-	(*GetChannelsYPositionsResponse)(nil),                                             // 140: pylabrobot.star.v1.GetChannelsYPositionsResponse
-	(*PositionChannelsInYDirectionRequest)(nil),                                       // 141: pylabrobot.star.v1.PositionChannelsInYDirectionRequest
-	(*PositionChannelsInYDirectionResponse)(nil),                                      // 142: pylabrobot.star.v1.PositionChannelsInYDirectionResponse
-	(*GetChannelsZPositionsRequest)(nil),                                              // 143: pylabrobot.star.v1.GetChannelsZPositionsRequest
-	(*GetChannelsZPositionsResponse)(nil),                                             // 144: pylabrobot.star.v1.GetChannelsZPositionsResponse
-	(*PositionChannelsInZDirectionRequest)(nil),                                       // 145: pylabrobot.star.v1.PositionChannelsInZDirectionRequest
-	(*PositionChannelsInZDirectionResponse)(nil),                                      // 146: pylabrobot.star.v1.PositionChannelsInZDirectionResponse
-	(*RequestPipChannelVersionRequest)(nil),                                           // 147: pylabrobot.star.v1.RequestPipChannelVersionRequest
-	(*RequestPipChannelVersionResponse)(nil),                                          // 148: pylabrobot.star.v1.RequestPipChannelVersionResponse
-	(*InitializeCore96HeadRequest)(nil),                                               // 149: pylabrobot.star.v1.InitializeCore96HeadRequest
-	(*InitializeCore96HeadResponse)(nil),                                              // 150: pylabrobot.star.v1.InitializeCore96HeadResponse
-	(*RequestCore96HeadInitializationStatusRequest)(nil),                              // 151: pylabrobot.star.v1.RequestCore96HeadInitializationStatusRequest
-	(*RequestCore96HeadInitializationStatusResponse)(nil),                             // 152: pylabrobot.star.v1.RequestCore96HeadInitializationStatusResponse
-	(*Head96RequestFirmwareVersionRequest)(nil),                                       // 153: pylabrobot.star.v1.Head96RequestFirmwareVersionRequest
-	(*Head96RequestFirmwareVersionResponse)(nil),                                      // 154: pylabrobot.star.v1.Head96RequestFirmwareVersionResponse
-	(*Head96RequestTypeRequest)(nil),                                                  // 155: pylabrobot.star.v1.Head96RequestTypeRequest
-	(*Head96RequestTypeResponse)(nil),                                                 // 156: pylabrobot.star.v1.Head96RequestTypeResponse
-	(*Head96DispensingDriveAndSqueezerDriverInitializeRequest)(nil),                   // 157: pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeRequest
-	(*Head96DispensingDriveAndSqueezerDriverInitializeResponse)(nil),                  // 158: pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeResponse
-	(*MoveCore96ToSafePositionRequest)(nil),                                           // 159: pylabrobot.star.v1.MoveCore96ToSafePositionRequest
-	(*MoveCore96ToSafePositionResponse)(nil),                                          // 160: pylabrobot.star.v1.MoveCore96ToSafePositionResponse
-	(*Head96MoveToZSafetyRequest)(nil),                                                // 161: pylabrobot.star.v1.Head96MoveToZSafetyRequest
-	(*Head96MoveToZSafetyResponse)(nil),                                               // 162: pylabrobot.star.v1.Head96MoveToZSafetyResponse
-	(*Head96ParkRequest)(nil),                                                         // 163: pylabrobot.star.v1.Head96ParkRequest
-	(*Head96ParkResponse)(nil),                                                        // 164: pylabrobot.star.v1.Head96ParkResponse
-	(*Head96MoveXRequest)(nil),                                                        // 165: pylabrobot.star.v1.Head96MoveXRequest
-	(*Head96MoveXResponse)(nil),                                                       // 166: pylabrobot.star.v1.Head96MoveXResponse
-	(*Head96MoveYRequest)(nil),                                                        // 167: pylabrobot.star.v1.Head96MoveYRequest
-	(*Head96MoveYResponse)(nil),                                                       // 168: pylabrobot.star.v1.Head96MoveYResponse
-	(*Head96MoveZRequest)(nil),                                                        // 169: pylabrobot.star.v1.Head96MoveZRequest
-	(*Head96MoveZResponse)(nil),                                                       // 170: pylabrobot.star.v1.Head96MoveZResponse
-	(*MoveCore96HeadToDefinedPositionRequest)(nil),                                    // 171: pylabrobot.star.v1.MoveCore96HeadToDefinedPositionRequest
-	(*MoveCore96HeadToDefinedPositionResponse)(nil),                                   // 172: pylabrobot.star.v1.MoveCore96HeadToDefinedPositionResponse
-	(*Head96MoveToCoordinateRequest)(nil),                                             // 173: pylabrobot.star.v1.Head96MoveToCoordinateRequest
-	(*Head96MoveToCoordinateResponse)(nil),                                            // 174: pylabrobot.star.v1.Head96MoveToCoordinateResponse
-	(*Head96DispensingDriveMoveToHomeVolumeRequest)(nil),                              // 175: pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeRequest
-	(*Head96DispensingDriveMoveToHomeVolumeResponse)(nil),                             // 176: pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeResponse
-	(*Head96DispensingDriveMoveToPositionRequest)(nil),                                // 177: pylabrobot.star.v1.Head96DispensingDriveMoveToPositionRequest
-	(*Head96DispensingDriveMoveToPositionResponse)(nil),                               // 178: pylabrobot.star.v1.Head96DispensingDriveMoveToPositionResponse
-	(*Head96DispensingDriveRequestPositionMmRequest)(nil),                             // 179: pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmRequest
-	(*Head96DispensingDriveRequestPositionMmResponse)(nil),                            // 180: pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmResponse
-	(*Head96DispensingDriveRequestPositionUlRequest)(nil),                             // 181: pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlRequest
-	(*Head96DispensingDriveRequestPositionUlResponse)(nil),                            // 182: pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlResponse
-	(*Head96RequestTipPresenceRequest)(nil),                                           // 183: pylabrobot.star.v1.Head96RequestTipPresenceRequest
-	(*Head96RequestTipPresenceResponse)(nil),                                          // 184: pylabrobot.star.v1.Head96RequestTipPresenceResponse
-	(*Head96RequestPositionRequest)(nil),                                              // 185: pylabrobot.star.v1.Head96RequestPositionRequest
-	(*Head96RequestPositionResponse)(nil),                                             // 186: pylabrobot.star.v1.Head96RequestPositionResponse
-	(*PickUpTipsCore96Request)(nil),                                                   // 187: pylabrobot.star.v1.PickUpTipsCore96Request
-	(*PickUpTipsCore96Response)(nil),                                                  // 188: pylabrobot.star.v1.PickUpTipsCore96Response
-	(*DiscardTipsCore96Request)(nil),                                                  // 189: pylabrobot.star.v1.DiscardTipsCore96Request
-	(*DiscardTipsCore96Response)(nil),                                                 // 190: pylabrobot.star.v1.DiscardTipsCore96Response
-	(*AspirateCore96Request)(nil),                                                     // 191: pylabrobot.star.v1.AspirateCore96Request
-	(*AspirateCore96Response)(nil),                                                    // 192: pylabrobot.star.v1.AspirateCore96Response
-	(*DispenseCore96Request)(nil),                                                     // 193: pylabrobot.star.v1.DispenseCore96Request
-	(*DispenseCore96Response)(nil),                                                    // 194: pylabrobot.star.v1.DispenseCore96Response
-	(*InitializeIswapRequest)(nil),                                                    // 195: pylabrobot.star.v1.InitializeIswapRequest
-	(*InitializeIswapResponse)(nil),                                                   // 196: pylabrobot.star.v1.InitializeIswapResponse
-	(*PositionComponentsForFreeIswapYRangeRequest)(nil),                               // 197: pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeRequest
-	(*PositionComponentsForFreeIswapYRangeResponse)(nil),                              // 198: pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeResponse
-	(*MoveIswapXRelativeRequest)(nil),                                                 // 199: pylabrobot.star.v1.MoveIswapXRelativeRequest
-	(*MoveIswapXRelativeResponse)(nil),                                                // 200: pylabrobot.star.v1.MoveIswapXRelativeResponse
-	(*MoveIswapYRelativeRequest)(nil),                                                 // 201: pylabrobot.star.v1.MoveIswapYRelativeRequest
-	(*MoveIswapYRelativeResponse)(nil),                                                // 202: pylabrobot.star.v1.MoveIswapYRelativeResponse
-	(*MoveIswapZRelativeRequest)(nil),                                                 // 203: pylabrobot.star.v1.MoveIswapZRelativeRequest
-	(*MoveIswapZRelativeResponse)(nil),                                                // 204: pylabrobot.star.v1.MoveIswapZRelativeResponse
-	(*MoveIswapXRequest)(nil),                                                         // 205: pylabrobot.star.v1.MoveIswapXRequest
-	(*MoveIswapXResponse)(nil),                                                        // 206: pylabrobot.star.v1.MoveIswapXResponse
-	(*MoveIswapYRequest)(nil),                                                         // 207: pylabrobot.star.v1.MoveIswapYRequest
-	(*MoveIswapYResponse)(nil),                                                        // 208: pylabrobot.star.v1.MoveIswapYResponse
-	(*MoveIswapZRequest)(nil),                                                         // 209: pylabrobot.star.v1.MoveIswapZRequest
-	(*MoveIswapZResponse)(nil),                                                        // 210: pylabrobot.star.v1.MoveIswapZResponse
-	(*OpenNotInitializedGripperRequest)(nil),                                          // 211: pylabrobot.star.v1.OpenNotInitializedGripperRequest
-	(*OpenNotInitializedGripperResponse)(nil),                                         // 212: pylabrobot.star.v1.OpenNotInitializedGripperResponse
-	(*IswapOpenGripperRequest)(nil),                                                   // 213: pylabrobot.star.v1.IswapOpenGripperRequest
-	(*IswapOpenGripperResponse)(nil),                                                  // 214: pylabrobot.star.v1.IswapOpenGripperResponse
-	(*IswapCloseGripperRequest)(nil),                                                  // 215: pylabrobot.star.v1.IswapCloseGripperRequest
-	(*IswapCloseGripperResponse)(nil),                                                 // 216: pylabrobot.star.v1.IswapCloseGripperResponse
-	(*ParkIswapRequest)(nil),                                                          // 217: pylabrobot.star.v1.ParkIswapRequest
-	(*ParkIswapResponse)(nil),                                                         // 218: pylabrobot.star.v1.ParkIswapResponse
-	(*IswapGetPlateRequest)(nil),                                                      // 219: pylabrobot.star.v1.IswapGetPlateRequest
-	(*IswapGetPlateResponse)(nil),                                                     // 220: pylabrobot.star.v1.IswapGetPlateResponse
-	(*IswapPutPlateRequest)(nil),                                                      // 221: pylabrobot.star.v1.IswapPutPlateRequest
-	(*IswapPutPlateResponse)(nil),                                                     // 222: pylabrobot.star.v1.IswapPutPlateResponse
-	(*MovePlateToPositionRequest)(nil),                                                // 223: pylabrobot.star.v1.MovePlateToPositionRequest
-	(*MovePlateToPositionResponse)(nil),                                               // 224: pylabrobot.star.v1.MovePlateToPositionResponse
-	(*CollapseGripperArmRequest)(nil),                                                 // 225: pylabrobot.star.v1.CollapseGripperArmRequest
-	(*CollapseGripperArmResponse)(nil),                                                // 226: pylabrobot.star.v1.CollapseGripperArmResponse
-	(*IswapRotateRequest)(nil),                                                        // 227: pylabrobot.star.v1.IswapRotateRequest
-	(*IswapRotateResponse)(nil),                                                       // 228: pylabrobot.star.v1.IswapRotateResponse
-	(*RotateIswapRotationDriveRequest)(nil),                                           // 229: pylabrobot.star.v1.RotateIswapRotationDriveRequest
-	(*RotateIswapRotationDriveResponse)(nil),                                          // 230: pylabrobot.star.v1.RotateIswapRotationDriveResponse
-	(*RotateIswapWristRequest)(nil),                                                   // 231: pylabrobot.star.v1.RotateIswapWristRequest
-	(*RotateIswapWristResponse)(nil),                                                  // 232: pylabrobot.star.v1.RotateIswapWristResponse
-	(*IswapDangerousReleaseBreakRequest)(nil),                                         // 233: pylabrobot.star.v1.IswapDangerousReleaseBreakRequest
-	(*IswapDangerousReleaseBreakResponse)(nil),                                        // 234: pylabrobot.star.v1.IswapDangerousReleaseBreakResponse
-	(*IswapReengageBreakRequest)(nil),                                                 // 235: pylabrobot.star.v1.IswapReengageBreakRequest
-	(*IswapReengageBreakResponse)(nil),                                                // 236: pylabrobot.star.v1.IswapReengageBreakResponse
-	(*IswapInitializeZAxisRequest)(nil),                                               // 237: pylabrobot.star.v1.IswapInitializeZAxisRequest
-	(*IswapInitializeZAxisResponse)(nil),                                              // 238: pylabrobot.star.v1.IswapInitializeZAxisResponse
-	(*RequestIswapRotationDrivePositionIncrementsRequest)(nil),                        // 239: pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsRequest
-	(*RequestIswapRotationDrivePositionIncrementsResponse)(nil),                       // 240: pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsResponse
-	(*RequestIswapRotationDriveOrientationRequest)(nil),                               // 241: pylabrobot.star.v1.RequestIswapRotationDriveOrientationRequest
-	(*RequestIswapRotationDriveOrientationResponse)(nil),                              // 242: pylabrobot.star.v1.RequestIswapRotationDriveOrientationResponse
-	(*RequestIswapWristDrivePositionIncrementsRequest)(nil),                           // 243: pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsRequest
-	(*RequestIswapWristDrivePositionIncrementsResponse)(nil),                          // 244: pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsResponse
-	(*RequestIswapWristDriveOrientationRequest)(nil),                                  // 245: pylabrobot.star.v1.RequestIswapWristDriveOrientationRequest
-	(*RequestIswapWristDriveOrientationResponse)(nil),                                 // 246: pylabrobot.star.v1.RequestIswapWristDriveOrientationResponse
-	(*RequestIswapInParkingPositionRequest)(nil),                                      // 247: pylabrobot.star.v1.RequestIswapInParkingPositionRequest
-	(*RequestIswapInParkingPositionResponse)(nil),                                     // 248: pylabrobot.star.v1.RequestIswapInParkingPositionResponse
-	(*RequestPlateInIswapRequest)(nil),                                                // 249: pylabrobot.star.v1.RequestPlateInIswapRequest
-	(*RequestPlateInIswapResponse)(nil),                                               // 250: pylabrobot.star.v1.RequestPlateInIswapResponse
-	(*RequestIswapPositionRequest)(nil),                                               // 251: pylabrobot.star.v1.RequestIswapPositionRequest
-	(*RequestIswapPositionResponse)(nil),                                              // 252: pylabrobot.star.v1.RequestIswapPositionResponse
-	(*IswapRotationDriveRequestYRequest)(nil),                                         // 253: pylabrobot.star.v1.IswapRotationDriveRequestYRequest
-	(*IswapRotationDriveRequestYResponse)(nil),                                        // 254: pylabrobot.star.v1.IswapRotationDriveRequestYResponse
-	(*RequestIswapInitializationStatusRequest)(nil),                                   // 255: pylabrobot.star.v1.RequestIswapInitializationStatusRequest
-	(*RequestIswapInitializationStatusResponse)(nil),                                  // 256: pylabrobot.star.v1.RequestIswapInitializationStatusResponse
-	(*RequestIswapVersionRequest)(nil),                                                // 257: pylabrobot.star.v1.RequestIswapVersionRequest
-	(*RequestIswapVersionResponse)(nil),                                               // 258: pylabrobot.star.v1.RequestIswapVersionResponse
-	(*GetIswapVersionRequest)(nil),                                                    // 259: pylabrobot.star.v1.GetIswapVersionRequest
-	(*GetIswapVersionResponse)(nil),                                                   // 260: pylabrobot.star.v1.GetIswapVersionResponse
-	(*SlowIswapRequest)(nil),                                                          // 261: pylabrobot.star.v1.SlowIswapRequest
-	(*SlowIswapResponse)(nil),                                                         // 262: pylabrobot.star.v1.SlowIswapResponse
-	(*IswapMovePickedUpResourceRequest)(nil),                                          // 263: pylabrobot.star.v1.IswapMovePickedUpResourceRequest
-	(*IswapMovePickedUpResourceResponse)(nil),                                         // 264: pylabrobot.star.v1.IswapMovePickedUpResourceResponse
-	(*PickUpResourceRequest)(nil),                                                     // 265: pylabrobot.star.v1.PickUpResourceRequest
-	(*PickUpResourceResponse)(nil),                                                    // 266: pylabrobot.star.v1.PickUpResourceResponse
-	(*MovePickedUpResourceRequest)(nil),                                               // 267: pylabrobot.star.v1.MovePickedUpResourceRequest
-	(*MovePickedUpResourceResponse)(nil),                                              // 268: pylabrobot.star.v1.MovePickedUpResourceResponse
-	(*DropResourceRequest)(nil),                                                       // 269: pylabrobot.star.v1.DropResourceRequest
-	(*DropResourceResponse)(nil),                                                      // 270: pylabrobot.star.v1.DropResourceResponse
-	(*PickUpCoreGripperToolsRequest)(nil),                                             // 271: pylabrobot.star.v1.PickUpCoreGripperToolsRequest
-	(*PickUpCoreGripperToolsResponse)(nil),                                            // 272: pylabrobot.star.v1.PickUpCoreGripperToolsResponse
-	(*ReturnCoreGripperToolsRequest)(nil),                                             // 273: pylabrobot.star.v1.ReturnCoreGripperToolsRequest
-	(*ReturnCoreGripperToolsResponse)(nil),                                            // 274: pylabrobot.star.v1.ReturnCoreGripperToolsResponse
-	(*CoreOpenGripperRequest)(nil),                                                    // 275: pylabrobot.star.v1.CoreOpenGripperRequest
-	(*CoreOpenGripperResponse)(nil),                                                   // 276: pylabrobot.star.v1.CoreOpenGripperResponse
-	(*CoreGetPlateRequest)(nil),                                                       // 277: pylabrobot.star.v1.CoreGetPlateRequest
-	(*CoreGetPlateResponse)(nil),                                                      // 278: pylabrobot.star.v1.CoreGetPlateResponse
-	(*CorePutPlateRequest)(nil),                                                       // 279: pylabrobot.star.v1.CorePutPlateRequest
-	(*CorePutPlateResponse)(nil),                                                      // 280: pylabrobot.star.v1.CorePutPlateResponse
-	(*CoreMovePlateToPositionRequest)(nil),                                            // 281: pylabrobot.star.v1.CoreMovePlateToPositionRequest
-	(*CoreMovePlateToPositionResponse)(nil),                                           // 282: pylabrobot.star.v1.CoreMovePlateToPositionResponse
-	(*CorePickUpResourceRequest)(nil),                                                 // 283: pylabrobot.star.v1.CorePickUpResourceRequest
-	(*CorePickUpResourceResponse)(nil),                                                // 284: pylabrobot.star.v1.CorePickUpResourceResponse
-	(*CoreMovePickedUpResourceRequest)(nil),                                           // 285: pylabrobot.star.v1.CoreMovePickedUpResourceRequest
-	(*CoreMovePickedUpResourceResponse)(nil),                                          // 286: pylabrobot.star.v1.CoreMovePickedUpResourceResponse
-	(*CoreReleasePickedUpResourceRequest)(nil),                                        // 287: pylabrobot.star.v1.CoreReleasePickedUpResourceRequest
-	(*CoreReleasePickedUpResourceResponse)(nil),                                       // 288: pylabrobot.star.v1.CoreReleasePickedUpResourceResponse
-	(*CoreCheckResourceExistsAtLocationCenterRequest)(nil),                            // 289: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest
-	(*CoreCheckResourceExistsAtLocationCenterResponse)(nil),                           // 290: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterResponse
-	(*GetCoreRequest)(nil),                                                            // 291: pylabrobot.star.v1.GetCoreRequest
-	(*GetCoreResponse)(nil),                                                           // 292: pylabrobot.star.v1.GetCoreResponse
-	(*PutCoreRequest)(nil),                                                            // 293: pylabrobot.star.v1.PutCoreRequest
-	(*PutCoreResponse)(nil),                                                           // 294: pylabrobot.star.v1.PutCoreResponse
-	(*CoreReadBarcodeOfPickedUpResourceRequest)(nil),                                  // 295: pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceRequest
-	(*CoreReadBarcodeOfPickedUpResourceResponse)(nil),                                 // 296: pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceResponse
-	(*InitializeAutoloadRequest)(nil),                                                 // 297: pylabrobot.star.v1.InitializeAutoloadRequest
-	(*InitializeAutoloadResponse)(nil),                                                // 298: pylabrobot.star.v1.InitializeAutoloadResponse
-	(*MoveAutoloadToSafeZPositionRequest)(nil),                                        // 299: pylabrobot.star.v1.MoveAutoloadToSafeZPositionRequest
-	(*MoveAutoloadToSafeZPositionResponse)(nil),                                       // 300: pylabrobot.star.v1.MoveAutoloadToSafeZPositionResponse
-	(*RequestAutoloadTrackRequest)(nil),                                               // 301: pylabrobot.star.v1.RequestAutoloadTrackRequest
-	(*RequestAutoloadTrackResponse)(nil),                                              // 302: pylabrobot.star.v1.RequestAutoloadTrackResponse
-	(*RequestAutoloadTypeRequest)(nil),                                                // 303: pylabrobot.star.v1.RequestAutoloadTypeRequest
-	(*RequestAutoloadTypeResponse)(nil),                                               // 304: pylabrobot.star.v1.RequestAutoloadTypeResponse
-	(*RequestPresenceOfCarriersOnDeckRequest)(nil),                                    // 305: pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckRequest
-	(*RequestPresenceOfCarriersOnDeckResponse)(nil),                                   // 306: pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckResponse
-	(*RequestPresenceOfCarriersOnLoadingTrayRequest)(nil),                             // 307: pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayRequest
-	(*RequestPresenceOfCarriersOnLoadingTrayResponse)(nil),                            // 308: pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayResponse
-	(*RequestPresenceOfSingleCarrierOnLoadingTrayRequest)(nil),                        // 309: pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayRequest
-	(*RequestPresenceOfSingleCarrierOnLoadingTrayResponse)(nil),                       // 310: pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayResponse
-	(*MoveAutoloadToSlotRequest)(nil),                                                 // 311: pylabrobot.star.v1.MoveAutoloadToSlotRequest
-	(*MoveAutoloadToSlotResponse)(nil),                                                // 312: pylabrobot.star.v1.MoveAutoloadToSlotResponse
-	(*MoveAutoloadToTrackRequest)(nil),                                                // 313: pylabrobot.star.v1.MoveAutoloadToTrackRequest
-	(*MoveAutoloadToTrackResponse)(nil),                                               // 314: pylabrobot.star.v1.MoveAutoloadToTrackResponse
-	(*ParkAutoloadRequest)(nil),                                                       // 315: pylabrobot.star.v1.ParkAutoloadRequest
-	(*ParkAutoloadResponse)(nil),                                                      // 316: pylabrobot.star.v1.ParkAutoloadResponse
-	(*TakeCarrierOutToAutoloadBeltRequest)(nil),                                       // 317: pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltRequest
-	(*TakeCarrierOutToAutoloadBeltResponse)(nil),                                      // 318: pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltResponse
-	(*SetBarcodeTypeRequest)(nil),                                                     // 319: pylabrobot.star.v1.SetBarcodeTypeRequest
-	(*SetBarcodeTypeResponse)(nil),                                                    // 320: pylabrobot.star.v1.SetBarcodeTypeResponse
-	(*LoadCarrierFromTrayAndScanCarrierBarcodeRequest)(nil),                           // 321: pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeRequest
-	(*LoadCarrierFromTrayAndScanCarrierBarcodeResponse)(nil),                          // 322: pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeResponse
-	(*UnloadCarrierAfterCarcodeBarcardeScanningRequest)(nil),                          // 323: pylabrobot.star.v1.UnloadCarrierAfterCarcodeBarcardeScanningRequest
-	(*UnloadCarrierAfterCarcodeBarcardeScanningResponse)(nil),                         // 324: pylabrobot.star.v1.UnloadCarrierAfterCarcodeBarcardeScanningResponse
-	(*SetCarrierMonitoringRequest)(nil),                                               // 325: pylabrobot.star.v1.SetCarrierMonitoringRequest
-	(*SetCarrierMonitoringResponse)(nil),                                              // 326: pylabrobot.star.v1.SetCarrierMonitoringResponse
-	(*LoadCarrierRequest)(nil),                                                        // 327: pylabrobot.star.v1.LoadCarrierRequest
-	(*LoadCarrierResponse)(nil),                                                       // 328: pylabrobot.star.v1.LoadCarrierResponse
-	(*SetLoadingIndicatorsRequest)(nil),                                               // 329: pylabrobot.star.v1.SetLoadingIndicatorsRequest
-	(*SetLoadingIndicatorsResponse)(nil),                                              // 330: pylabrobot.star.v1.SetLoadingIndicatorsResponse
-	(*UnloadCarrierRequest)(nil),                                                      // 331: pylabrobot.star.v1.UnloadCarrierRequest
-	(*UnloadCarrierResponse)(nil),                                                     // 332: pylabrobot.star.v1.UnloadCarrierResponse
-	(*RequestInstrumentInitializationStatusRequest)(nil),                              // 333: pylabrobot.star.v1.RequestInstrumentInitializationStatusRequest
-	(*RequestInstrumentInitializationStatusResponse)(nil),                             // 334: pylabrobot.star.v1.RequestInstrumentInitializationStatusResponse
-	(*RequestAutoloadInitializationStatusRequest)(nil),                                // 335: pylabrobot.star.v1.RequestAutoloadInitializationStatusRequest
-	(*RequestAutoloadInitializationStatusResponse)(nil),                               // 336: pylabrobot.star.v1.RequestAutoloadInitializationStatusResponse
-	(*LockCoverRequest)(nil),                                                          // 337: pylabrobot.star.v1.LockCoverRequest
-	(*LockCoverResponse)(nil),                                                         // 338: pylabrobot.star.v1.LockCoverResponse
-	(*UnlockCoverRequest)(nil),                                                        // 339: pylabrobot.star.v1.UnlockCoverRequest
-	(*UnlockCoverResponse)(nil),                                                       // 340: pylabrobot.star.v1.UnlockCoverResponse
-	(*DisableCoverControlRequest)(nil),                                                // 341: pylabrobot.star.v1.DisableCoverControlRequest
-	(*DisableCoverControlResponse)(nil),                                               // 342: pylabrobot.star.v1.DisableCoverControlResponse
-	(*EnableCoverControlRequest)(nil),                                                 // 343: pylabrobot.star.v1.EnableCoverControlRequest
-	(*EnableCoverControlResponse)(nil),                                                // 344: pylabrobot.star.v1.EnableCoverControlResponse
-	(*SetCoverOutputRequest)(nil),                                                     // 345: pylabrobot.star.v1.SetCoverOutputRequest
-	(*SetCoverOutputResponse)(nil),                                                    // 346: pylabrobot.star.v1.SetCoverOutputResponse
-	(*ResetOutputRequest)(nil),                                                        // 347: pylabrobot.star.v1.ResetOutputRequest
-	(*ResetOutputResponse)(nil),                                                       // 348: pylabrobot.star.v1.ResetOutputResponse
-	(*RequestCoverOpenRequest)(nil),                                                   // 349: pylabrobot.star.v1.RequestCoverOpenRequest
-	(*RequestCoverOpenResponse)(nil),                                                  // 350: pylabrobot.star.v1.RequestCoverOpenResponse
-	(*SendHhsCommandRequest)(nil),                                                     // 351: pylabrobot.star.v1.SendHhsCommandRequest
-	(*SendHhsCommandResponse)(nil),                                                    // 352: pylabrobot.star.v1.SendHhsCommandResponse
-	(*CheckTypeIsHhcRequest)(nil),                                                     // 353: pylabrobot.star.v1.CheckTypeIsHhcRequest
-	(*CheckTypeIsHhcResponse)(nil),                                                    // 354: pylabrobot.star.v1.CheckTypeIsHhcResponse
-	(*InitializeHhcRequest)(nil),                                                      // 355: pylabrobot.star.v1.InitializeHhcRequest
-	(*InitializeHhcResponse)(nil),                                                     // 356: pylabrobot.star.v1.InitializeHhcResponse
-	(*StartTemperatureControlAtHhcRequest)(nil),                                       // 357: pylabrobot.star.v1.StartTemperatureControlAtHhcRequest
-	(*StartTemperatureControlAtHhcResponse)(nil),                                      // 358: pylabrobot.star.v1.StartTemperatureControlAtHhcResponse
-	(*GetTemperatureAtHhcRequest)(nil),                                                // 359: pylabrobot.star.v1.GetTemperatureAtHhcRequest
-	(*GetTemperatureAtHhcResponse)(nil),                                               // 360: pylabrobot.star.v1.GetTemperatureAtHhcResponse
-	(*QueryWhetherTemperatureReachedAtHhcRequest)(nil),                                // 361: pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcRequest
-	(*QueryWhetherTemperatureReachedAtHhcResponse)(nil),                               // 362: pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcResponse
-	(*StopTemperatureControlAtHhcRequest)(nil),                                        // 363: pylabrobot.star.v1.StopTemperatureControlAtHhcRequest
-	(*StopTemperatureControlAtHhcResponse)(nil),                                       // 364: pylabrobot.star.v1.StopTemperatureControlAtHhcResponse
-	(*RequestFirmwareVersionRequest)(nil),                                             // 365: pylabrobot.star.v1.RequestFirmwareVersionRequest
-	(*RequestFirmwareVersionResponse)(nil),                                            // 366: pylabrobot.star.v1.RequestFirmwareVersionResponse
-	(*RequestErrorCodeRequest)(nil),                                                   // 367: pylabrobot.star.v1.RequestErrorCodeRequest
-	(*RequestErrorCodeResponse)(nil),                                                  // 368: pylabrobot.star.v1.RequestErrorCodeResponse
-	(*RequestParameterValueRequest)(nil),                                              // 369: pylabrobot.star.v1.RequestParameterValueRequest
-	(*RequestParameterValueResponse)(nil),                                             // 370: pylabrobot.star.v1.RequestParameterValueResponse
-	(*RequestDeviceSerialNumberRequest)(nil),                                          // 371: pylabrobot.star.v1.RequestDeviceSerialNumberRequest
-	(*RequestDeviceSerialNumberResponse)(nil),                                         // 372: pylabrobot.star.v1.RequestDeviceSerialNumberResponse
-	(*RequestMasterStatusRequest)(nil),                                                // 373: pylabrobot.star.v1.RequestMasterStatusRequest
-	(*RequestMasterStatusResponse)(nil),                                               // 374: pylabrobot.star.v1.RequestMasterStatusResponse
-	(*RequestNameOfLastFaultyParameterRequest)(nil),                                   // 375: pylabrobot.star.v1.RequestNameOfLastFaultyParameterRequest
-	(*RequestNameOfLastFaultyParameterResponse)(nil),                                  // 376: pylabrobot.star.v1.RequestNameOfLastFaultyParameterResponse
-	(*SetSingleStepModeRequest)(nil),                                                  // 377: pylabrobot.star.v1.SetSingleStepModeRequest
-	(*SetSingleStepModeResponse)(nil),                                                 // 378: pylabrobot.star.v1.SetSingleStepModeResponse
-	(*TriggerNextStepRequest)(nil),                                                    // 379: pylabrobot.star.v1.TriggerNextStepRequest
-	(*TriggerNextStepResponse)(nil),                                                   // 380: pylabrobot.star.v1.TriggerNextStepResponse
-	(*HaltRequest)(nil),                                                               // 381: pylabrobot.star.v1.HaltRequest
-	(*HaltResponse)(nil),                                                              // 382: pylabrobot.star.v1.HaltResponse
-	(*SaveAllCycleCountersRequest)(nil),                                               // 383: pylabrobot.star.v1.SaveAllCycleCountersRequest
-	(*SaveAllCycleCountersResponse)(nil),                                              // 384: pylabrobot.star.v1.SaveAllCycleCountersResponse
-	(*SetNotStopRequest)(nil),                                                         // 385: pylabrobot.star.v1.SetNotStopRequest
-	(*SetNotStopResponse)(nil),                                                        // 386: pylabrobot.star.v1.SetNotStopResponse
-	(*ConfigureNodeNamesRequest)(nil),                                                 // 387: pylabrobot.star.v1.ConfigureNodeNamesRequest
-	(*ConfigureNodeNamesResponse)(nil),                                                // 388: pylabrobot.star.v1.ConfigureNodeNamesResponse
-	(*SetDeckDataRequest)(nil),                                                        // 389: pylabrobot.star.v1.SetDeckDataRequest
-	(*SetDeckDataResponse)(nil),                                                       // 390: pylabrobot.star.v1.SetDeckDataResponse
-	(*PositionLeftXArmRequest)(nil),                                                   // 391: pylabrobot.star.v1.PositionLeftXArmRequest
-	(*PositionLeftXArmResponse)(nil),                                                  // 392: pylabrobot.star.v1.PositionLeftXArmResponse
-	(*PositionRightXArmRequest)(nil),                                                  // 393: pylabrobot.star.v1.PositionRightXArmRequest
-	(*PositionRightXArmResponse)(nil),                                                 // 394: pylabrobot.star.v1.PositionRightXArmResponse
-	(*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest)(nil),   // 395: pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
-	(*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse)(nil),  // 396: pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
-	(*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest)(nil),  // 397: pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
-	(*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse)(nil), // 398: pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
-	(*RequestLeftXArmPositionRequest)(nil),                                            // 399: pylabrobot.star.v1.RequestLeftXArmPositionRequest
-	(*RequestLeftXArmPositionResponse)(nil),                                           // 400: pylabrobot.star.v1.RequestLeftXArmPositionResponse
-	(*RequestRightXArmPositionRequest)(nil),                                           // 401: pylabrobot.star.v1.RequestRightXArmPositionRequest
-	(*RequestRightXArmPositionResponse)(nil),                                          // 402: pylabrobot.star.v1.RequestRightXArmPositionResponse
-	(*RequestRightXArmLastCollisionTypeRequest)(nil),                                  // 403: pylabrobot.star.v1.RequestRightXArmLastCollisionTypeRequest
-	(*RequestRightXArmLastCollisionTypeResponse)(nil),                                 // 404: pylabrobot.star.v1.RequestRightXArmLastCollisionTypeResponse
-	(*RequestPumpSettingsRequest)(nil),                                                // 405: pylabrobot.star.v1.RequestPumpSettingsRequest
-	(*RequestPumpSettingsResponse)(nil),                                               // 406: pylabrobot.star.v1.RequestPumpSettingsResponse
-	(*InitializeDualPumpStationValvesRequest)(nil),                                    // 407: pylabrobot.star.v1.InitializeDualPumpStationValvesRequest
-	(*InitializeDualPumpStationValvesResponse)(nil),                                   // 408: pylabrobot.star.v1.InitializeDualPumpStationValvesResponse
-	(*DrainDualChamberSystemRequest)(nil),                                             // 409: pylabrobot.star.v1.DrainDualChamberSystemRequest
-	(*DrainDualChamberSystemResponse)(nil),                                            // 410: pylabrobot.star.v1.DrainDualChamberSystemResponse
-	(*ViolentlyShootDownTipRequest)(nil),                                              // 411: pylabrobot.star.v1.ViolentlyShootDownTipRequest
-	(*ViolentlyShootDownTipResponse)(nil),                                             // 412: pylabrobot.star.v1.ViolentlyShootDownTipResponse
-	(*CanPickUpTipRequest)(nil),                                                       // 413: pylabrobot.star.v1.CanPickUpTipRequest
-	(*CanPickUpTipResponse)(nil),                                                      // 414: pylabrobot.star.v1.CanPickUpTipResponse
-	nil,                                                                               // 415: pylabrobot.star.v1.ChannelFloatMap.EntriesEntry
+	(*TipData)(nil),                                                                   // 8: pylabrobot.star.v1.TipData
+	(*MixData)(nil),                                                                   // 9: pylabrobot.star.v1.MixData
+	(*PickupOp)(nil),                                                                  // 10: pylabrobot.star.v1.PickupOp
+	(*DropOp)(nil),                                                                    // 11: pylabrobot.star.v1.DropOp
+	(*SingleChannelAspirationOp)(nil),                                                 // 12: pylabrobot.star.v1.SingleChannelAspirationOp
+	(*SingleChannelDispenseOp)(nil),                                                   // 13: pylabrobot.star.v1.SingleChannelDispenseOp
+	(*PickupTipRackOp)(nil),                                                           // 14: pylabrobot.star.v1.PickupTipRackOp
+	(*DropTipRackOp)(nil),                                                             // 15: pylabrobot.star.v1.DropTipRackOp
+	(*MultiHeadAspirationPlateOp)(nil),                                                // 16: pylabrobot.star.v1.MultiHeadAspirationPlateOp
+	(*MultiHeadDispensePlateOp)(nil),                                                  // 17: pylabrobot.star.v1.MultiHeadDispensePlateOp
+	(*MultiHeadAspirationContainerOp)(nil),                                            // 18: pylabrobot.star.v1.MultiHeadAspirationContainerOp
+	(*MultiHeadDispenseContainerOp)(nil),                                              // 19: pylabrobot.star.v1.MultiHeadDispenseContainerOp
+	(*ResourcePickupOp)(nil),                                                          // 20: pylabrobot.star.v1.ResourcePickupOp
+	(*ResourceMoveOp)(nil),                                                            // 21: pylabrobot.star.v1.ResourceMoveOp
+	(*ResourceDropOp)(nil),                                                            // 22: pylabrobot.star.v1.ResourceDropOp
+	(*ChannelFloatMap)(nil),                                                           // 23: pylabrobot.star.v1.ChannelFloatMap
+	(*SetupRequest)(nil),                                                              // 24: pylabrobot.star.v1.SetupRequest
+	(*SetupResponse)(nil),                                                             // 25: pylabrobot.star.v1.SetupResponse
+	(*StopRequest)(nil),                                                               // 26: pylabrobot.star.v1.StopRequest
+	(*StopResponse)(nil),                                                              // 27: pylabrobot.star.v1.StopResponse
+	(*GetNumChannelsRequest)(nil),                                                     // 28: pylabrobot.star.v1.GetNumChannelsRequest
+	(*GetNumChannelsResponse)(nil),                                                    // 29: pylabrobot.star.v1.GetNumChannelsResponse
+	(*GetHead96InstalledRequest)(nil),                                                 // 30: pylabrobot.star.v1.GetHead96InstalledRequest
+	(*GetHead96InstalledResponse)(nil),                                                // 31: pylabrobot.star.v1.GetHead96InstalledResponse
+	(*GetIswapInstalledRequest)(nil),                                                  // 32: pylabrobot.star.v1.GetIswapInstalledRequest
+	(*GetIswapInstalledResponse)(nil),                                                 // 33: pylabrobot.star.v1.GetIswapInstalledResponse
+	(*GetIswapParkedRequest)(nil),                                                     // 34: pylabrobot.star.v1.GetIswapParkedRequest
+	(*GetIswapParkedResponse)(nil),                                                    // 35: pylabrobot.star.v1.GetIswapParkedResponse
+	(*GetCoreParkedRequest)(nil),                                                      // 36: pylabrobot.star.v1.GetCoreParkedRequest
+	(*GetCoreParkedResponse)(nil),                                                     // 37: pylabrobot.star.v1.GetCoreParkedResponse
+	(*PickUpTipsRequest)(nil),                                                         // 38: pylabrobot.star.v1.PickUpTipsRequest
+	(*PickUpTipsResponse)(nil),                                                        // 39: pylabrobot.star.v1.PickUpTipsResponse
+	(*DropTipsRequest)(nil),                                                           // 40: pylabrobot.star.v1.DropTipsRequest
+	(*DropTipsResponse)(nil),                                                          // 41: pylabrobot.star.v1.DropTipsResponse
+	(*AspirateRequest)(nil),                                                           // 42: pylabrobot.star.v1.AspirateRequest
+	(*AspirateResponse)(nil),                                                          // 43: pylabrobot.star.v1.AspirateResponse
+	(*DispenseRequest)(nil),                                                           // 44: pylabrobot.star.v1.DispenseRequest
+	(*DispenseResponse)(nil),                                                          // 45: pylabrobot.star.v1.DispenseResponse
+	(*PickUpTips96Request)(nil),                                                       // 46: pylabrobot.star.v1.PickUpTips96Request
+	(*PickUpTips96Response)(nil),                                                      // 47: pylabrobot.star.v1.PickUpTips96Response
+	(*DropTips96Request)(nil),                                                         // 48: pylabrobot.star.v1.DropTips96Request
+	(*DropTips96Response)(nil),                                                        // 49: pylabrobot.star.v1.DropTips96Response
+	(*Aspirate96Request)(nil),                                                         // 50: pylabrobot.star.v1.Aspirate96Request
+	(*Aspirate96Response)(nil),                                                        // 51: pylabrobot.star.v1.Aspirate96Response
+	(*Dispense96Request)(nil),                                                         // 52: pylabrobot.star.v1.Dispense96Request
+	(*Dispense96Response)(nil),                                                        // 53: pylabrobot.star.v1.Dispense96Response
+	(*InitializePipRequest)(nil),                                                      // 54: pylabrobot.star.v1.InitializePipRequest
+	(*InitializePipResponse)(nil),                                                     // 55: pylabrobot.star.v1.InitializePipResponse
+	(*InitializePipettingChannelsRequest)(nil),                                        // 56: pylabrobot.star.v1.InitializePipettingChannelsRequest
+	(*InitializePipettingChannelsResponse)(nil),                                       // 57: pylabrobot.star.v1.InitializePipettingChannelsResponse
+	(*PickUpTipFwRequest)(nil),                                                        // 58: pylabrobot.star.v1.PickUpTipFwRequest
+	(*PickUpTipFwResponse)(nil),                                                       // 59: pylabrobot.star.v1.PickUpTipFwResponse
+	(*DiscardTipFwRequest)(nil),                                                       // 60: pylabrobot.star.v1.DiscardTipFwRequest
+	(*DiscardTipFwResponse)(nil),                                                      // 61: pylabrobot.star.v1.DiscardTipFwResponse
+	(*AspiratePipRequest)(nil),                                                        // 62: pylabrobot.star.v1.AspiratePipRequest
+	(*AspiratePipResponse)(nil),                                                       // 63: pylabrobot.star.v1.AspiratePipResponse
+	(*DispensePipRequest)(nil),                                                        // 64: pylabrobot.star.v1.DispensePipRequest
+	(*DispensePipResponse)(nil),                                                       // 65: pylabrobot.star.v1.DispensePipResponse
+	(*SpreadPipChannelsRequest)(nil),                                                  // 66: pylabrobot.star.v1.SpreadPipChannelsRequest
+	(*SpreadPipChannelsResponse)(nil),                                                 // 67: pylabrobot.star.v1.SpreadPipChannelsResponse
+	(*MoveAllPipettingChannelsToDefinedPositionRequest)(nil),                          // 68: pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionRequest
+	(*MoveAllPipettingChannelsToDefinedPositionResponse)(nil),                         // 69: pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionResponse
+	(*DefineTipNeedleRequest)(nil),                                                    // 70: pylabrobot.star.v1.DefineTipNeedleRequest
+	(*DefineTipNeedleResponse)(nil),                                                   // 71: pylabrobot.star.v1.DefineTipNeedleResponse
+	(*ProbeLiquidHeightsRequest)(nil),                                                 // 72: pylabrobot.star.v1.ProbeLiquidHeightsRequest
+	(*ProbeLiquidHeightsResponse)(nil),                                                // 73: pylabrobot.star.v1.ProbeLiquidHeightsResponse
+	(*ProbeLiquidVolumesRequest)(nil),                                                 // 74: pylabrobot.star.v1.ProbeLiquidVolumesRequest
+	(*ProbeLiquidVolumesResponse)(nil),                                                // 75: pylabrobot.star.v1.ProbeLiquidVolumesResponse
+	(*RequestTipPresenceRequest)(nil),                                                 // 76: pylabrobot.star.v1.RequestTipPresenceRequest
+	(*RequestTipPresenceResponse)(nil),                                                // 77: pylabrobot.star.v1.RequestTipPresenceResponse
+	(*ChannelsSenseTipPresenceRequest)(nil),                                           // 78: pylabrobot.star.v1.ChannelsSenseTipPresenceRequest
+	(*ChannelsSenseTipPresenceResponse)(nil),                                          // 79: pylabrobot.star.v1.ChannelsSenseTipPresenceResponse
+	(*RequestPipHeightLastLldRequest)(nil),                                            // 80: pylabrobot.star.v1.RequestPipHeightLastLldRequest
+	(*RequestPipHeightLastLldResponse)(nil),                                           // 81: pylabrobot.star.v1.RequestPipHeightLastLldResponse
+	(*RequestTadmStatusRequest)(nil),                                                  // 82: pylabrobot.star.v1.RequestTadmStatusRequest
+	(*RequestTadmStatusResponse)(nil),                                                 // 83: pylabrobot.star.v1.RequestTadmStatusResponse
+	(*RequestVolumeInTipRequest)(nil),                                                 // 84: pylabrobot.star.v1.RequestVolumeInTipRequest
+	(*RequestVolumeInTipResponse)(nil),                                                // 85: pylabrobot.star.v1.RequestVolumeInTipResponse
+	(*RequestTipLenOnChannelRequest)(nil),                                             // 86: pylabrobot.star.v1.RequestTipLenOnChannelRequest
+	(*RequestTipLenOnChannelResponse)(nil),                                            // 87: pylabrobot.star.v1.RequestTipLenOnChannelResponse
+	(*RequestProbeZPositionRequest)(nil),                                              // 88: pylabrobot.star.v1.RequestProbeZPositionRequest
+	(*RequestProbeZPositionResponse)(nil),                                             // 89: pylabrobot.star.v1.RequestProbeZPositionResponse
+	(*ClldProbeZHeightUsingChannelRequest)(nil),                                       // 90: pylabrobot.star.v1.ClldProbeZHeightUsingChannelRequest
+	(*ClldProbeZHeightUsingChannelResponse)(nil),                                      // 91: pylabrobot.star.v1.ClldProbeZHeightUsingChannelResponse
+	(*PlldProbeZHeightUsingChannelRequest)(nil),                                       // 92: pylabrobot.star.v1.PlldProbeZHeightUsingChannelRequest
+	(*PlldProbeZHeightUsingChannelResponse)(nil),                                      // 93: pylabrobot.star.v1.PlldProbeZHeightUsingChannelResponse
+	(*ZtouchProbeZHeightUsingChannelRequest)(nil),                                     // 94: pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelRequest
+	(*ZtouchProbeZHeightUsingChannelResponse)(nil),                                    // 95: pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelResponse
+	(*PierceFoilRequest)(nil),                                                         // 96: pylabrobot.star.v1.PierceFoilRequest
+	(*PierceFoilResponse)(nil),                                                        // 97: pylabrobot.star.v1.PierceFoilResponse
+	(*PierceFoilHighLevelRequest)(nil),                                                // 98: pylabrobot.star.v1.PierceFoilHighLevelRequest
+	(*PierceFoilHighLevelResponse)(nil),                                               // 99: pylabrobot.star.v1.PierceFoilHighLevelResponse
+	(*StepOffFoilRequest)(nil),                                                        // 100: pylabrobot.star.v1.StepOffFoilRequest
+	(*StepOffFoilResponse)(nil),                                                       // 101: pylabrobot.star.v1.StepOffFoilResponse
+	(*EmptyTipRequest)(nil),                                                           // 102: pylabrobot.star.v1.EmptyTipRequest
+	(*EmptyTipResponse)(nil),                                                          // 103: pylabrobot.star.v1.EmptyTipResponse
+	(*EmptyTipsRequest)(nil),                                                          // 104: pylabrobot.star.v1.EmptyTipsRequest
+	(*EmptyTipsResponse)(nil),                                                         // 105: pylabrobot.star.v1.EmptyTipsResponse
+	(*MoveChannelXRequest)(nil),                                                       // 106: pylabrobot.star.v1.MoveChannelXRequest
+	(*MoveChannelXResponse)(nil),                                                      // 107: pylabrobot.star.v1.MoveChannelXResponse
+	(*MoveChannelYRequest)(nil),                                                       // 108: pylabrobot.star.v1.MoveChannelYRequest
+	(*MoveChannelYResponse)(nil),                                                      // 109: pylabrobot.star.v1.MoveChannelYResponse
+	(*MoveChannelZRequest)(nil),                                                       // 110: pylabrobot.star.v1.MoveChannelZRequest
+	(*MoveChannelZResponse)(nil),                                                      // 111: pylabrobot.star.v1.MoveChannelZResponse
+	(*MoveChannelXRelativeRequest)(nil),                                               // 112: pylabrobot.star.v1.MoveChannelXRelativeRequest
+	(*MoveChannelXRelativeResponse)(nil),                                              // 113: pylabrobot.star.v1.MoveChannelXRelativeResponse
+	(*MoveChannelYRelativeRequest)(nil),                                               // 114: pylabrobot.star.v1.MoveChannelYRelativeRequest
+	(*MoveChannelYRelativeResponse)(nil),                                              // 115: pylabrobot.star.v1.MoveChannelYRelativeResponse
+	(*MoveChannelZRelativeRequest)(nil),                                               // 116: pylabrobot.star.v1.MoveChannelZRelativeRequest
+	(*MoveChannelZRelativeResponse)(nil),                                              // 117: pylabrobot.star.v1.MoveChannelZRelativeResponse
+	(*PrepareForManualChannelOperationRequest)(nil),                                   // 118: pylabrobot.star.v1.PrepareForManualChannelOperationRequest
+	(*PrepareForManualChannelOperationResponse)(nil),                                  // 119: pylabrobot.star.v1.PrepareForManualChannelOperationResponse
+	(*MoveAllChannelsInZSafetyRequest)(nil),                                           // 120: pylabrobot.star.v1.MoveAllChannelsInZSafetyRequest
+	(*MoveAllChannelsInZSafetyResponse)(nil),                                          // 121: pylabrobot.star.v1.MoveAllChannelsInZSafetyResponse
+	(*PositionSinglePipettingChannelInYDirectionRequest)(nil),                         // 122: pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionRequest
+	(*PositionSinglePipettingChannelInYDirectionResponse)(nil),                        // 123: pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionResponse
+	(*PositionSinglePipettingChannelInZDirectionRequest)(nil),                         // 124: pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionRequest
+	(*PositionSinglePipettingChannelInZDirectionResponse)(nil),                        // 125: pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionResponse
+	(*PositionMaxFreeYForNRequest)(nil),                                               // 126: pylabrobot.star.v1.PositionMaxFreeYForNRequest
+	(*PositionMaxFreeYForNResponse)(nil),                                              // 127: pylabrobot.star.v1.PositionMaxFreeYForNResponse
+	(*RequestXPosChannelNRequest)(nil),                                                // 128: pylabrobot.star.v1.RequestXPosChannelNRequest
+	(*RequestXPosChannelNResponse)(nil),                                               // 129: pylabrobot.star.v1.RequestXPosChannelNResponse
+	(*RequestYPosChannelNRequest)(nil),                                                // 130: pylabrobot.star.v1.RequestYPosChannelNRequest
+	(*RequestYPosChannelNResponse)(nil),                                               // 131: pylabrobot.star.v1.RequestYPosChannelNResponse
+	(*RequestZPosChannelNRequest)(nil),                                                // 132: pylabrobot.star.v1.RequestZPosChannelNRequest
+	(*RequestZPosChannelNResponse)(nil),                                               // 133: pylabrobot.star.v1.RequestZPosChannelNResponse
+	(*RequestTipBottomZPositionRequest)(nil),                                          // 134: pylabrobot.star.v1.RequestTipBottomZPositionRequest
+	(*RequestTipBottomZPositionResponse)(nil),                                         // 135: pylabrobot.star.v1.RequestTipBottomZPositionResponse
+	(*GetChannelsYPositionsRequest)(nil),                                              // 136: pylabrobot.star.v1.GetChannelsYPositionsRequest
+	(*GetChannelsYPositionsResponse)(nil),                                             // 137: pylabrobot.star.v1.GetChannelsYPositionsResponse
+	(*PositionChannelsInYDirectionRequest)(nil),                                       // 138: pylabrobot.star.v1.PositionChannelsInYDirectionRequest
+	(*PositionChannelsInYDirectionResponse)(nil),                                      // 139: pylabrobot.star.v1.PositionChannelsInYDirectionResponse
+	(*GetChannelsZPositionsRequest)(nil),                                              // 140: pylabrobot.star.v1.GetChannelsZPositionsRequest
+	(*GetChannelsZPositionsResponse)(nil),                                             // 141: pylabrobot.star.v1.GetChannelsZPositionsResponse
+	(*PositionChannelsInZDirectionRequest)(nil),                                       // 142: pylabrobot.star.v1.PositionChannelsInZDirectionRequest
+	(*PositionChannelsInZDirectionResponse)(nil),                                      // 143: pylabrobot.star.v1.PositionChannelsInZDirectionResponse
+	(*RequestPipChannelVersionRequest)(nil),                                           // 144: pylabrobot.star.v1.RequestPipChannelVersionRequest
+	(*RequestPipChannelVersionResponse)(nil),                                          // 145: pylabrobot.star.v1.RequestPipChannelVersionResponse
+	(*InitializeCore96HeadRequest)(nil),                                               // 146: pylabrobot.star.v1.InitializeCore96HeadRequest
+	(*InitializeCore96HeadResponse)(nil),                                              // 147: pylabrobot.star.v1.InitializeCore96HeadResponse
+	(*RequestCore96HeadInitializationStatusRequest)(nil),                              // 148: pylabrobot.star.v1.RequestCore96HeadInitializationStatusRequest
+	(*RequestCore96HeadInitializationStatusResponse)(nil),                             // 149: pylabrobot.star.v1.RequestCore96HeadInitializationStatusResponse
+	(*Head96RequestFirmwareVersionRequest)(nil),                                       // 150: pylabrobot.star.v1.Head96RequestFirmwareVersionRequest
+	(*Head96RequestFirmwareVersionResponse)(nil),                                      // 151: pylabrobot.star.v1.Head96RequestFirmwareVersionResponse
+	(*Head96RequestTypeRequest)(nil),                                                  // 152: pylabrobot.star.v1.Head96RequestTypeRequest
+	(*Head96RequestTypeResponse)(nil),                                                 // 153: pylabrobot.star.v1.Head96RequestTypeResponse
+	(*Head96DispensingDriveAndSqueezerDriverInitializeRequest)(nil),                   // 154: pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeRequest
+	(*Head96DispensingDriveAndSqueezerDriverInitializeResponse)(nil),                  // 155: pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeResponse
+	(*MoveCore96ToSafePositionRequest)(nil),                                           // 156: pylabrobot.star.v1.MoveCore96ToSafePositionRequest
+	(*MoveCore96ToSafePositionResponse)(nil),                                          // 157: pylabrobot.star.v1.MoveCore96ToSafePositionResponse
+	(*Head96MoveToZSafetyRequest)(nil),                                                // 158: pylabrobot.star.v1.Head96MoveToZSafetyRequest
+	(*Head96MoveToZSafetyResponse)(nil),                                               // 159: pylabrobot.star.v1.Head96MoveToZSafetyResponse
+	(*Head96ParkRequest)(nil),                                                         // 160: pylabrobot.star.v1.Head96ParkRequest
+	(*Head96ParkResponse)(nil),                                                        // 161: pylabrobot.star.v1.Head96ParkResponse
+	(*Head96MoveXRequest)(nil),                                                        // 162: pylabrobot.star.v1.Head96MoveXRequest
+	(*Head96MoveXResponse)(nil),                                                       // 163: pylabrobot.star.v1.Head96MoveXResponse
+	(*Head96MoveYRequest)(nil),                                                        // 164: pylabrobot.star.v1.Head96MoveYRequest
+	(*Head96MoveYResponse)(nil),                                                       // 165: pylabrobot.star.v1.Head96MoveYResponse
+	(*Head96MoveZRequest)(nil),                                                        // 166: pylabrobot.star.v1.Head96MoveZRequest
+	(*Head96MoveZResponse)(nil),                                                       // 167: pylabrobot.star.v1.Head96MoveZResponse
+	(*MoveCore96HeadToDefinedPositionRequest)(nil),                                    // 168: pylabrobot.star.v1.MoveCore96HeadToDefinedPositionRequest
+	(*MoveCore96HeadToDefinedPositionResponse)(nil),                                   // 169: pylabrobot.star.v1.MoveCore96HeadToDefinedPositionResponse
+	(*Head96MoveToCoordinateRequest)(nil),                                             // 170: pylabrobot.star.v1.Head96MoveToCoordinateRequest
+	(*Head96MoveToCoordinateResponse)(nil),                                            // 171: pylabrobot.star.v1.Head96MoveToCoordinateResponse
+	(*Head96DispensingDriveMoveToHomeVolumeRequest)(nil),                              // 172: pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeRequest
+	(*Head96DispensingDriveMoveToHomeVolumeResponse)(nil),                             // 173: pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeResponse
+	(*Head96DispensingDriveMoveToPositionRequest)(nil),                                // 174: pylabrobot.star.v1.Head96DispensingDriveMoveToPositionRequest
+	(*Head96DispensingDriveMoveToPositionResponse)(nil),                               // 175: pylabrobot.star.v1.Head96DispensingDriveMoveToPositionResponse
+	(*Head96DispensingDriveRequestPositionMmRequest)(nil),                             // 176: pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmRequest
+	(*Head96DispensingDriveRequestPositionMmResponse)(nil),                            // 177: pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmResponse
+	(*Head96DispensingDriveRequestPositionUlRequest)(nil),                             // 178: pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlRequest
+	(*Head96DispensingDriveRequestPositionUlResponse)(nil),                            // 179: pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlResponse
+	(*Head96RequestTipPresenceRequest)(nil),                                           // 180: pylabrobot.star.v1.Head96RequestTipPresenceRequest
+	(*Head96RequestTipPresenceResponse)(nil),                                          // 181: pylabrobot.star.v1.Head96RequestTipPresenceResponse
+	(*Head96RequestPositionRequest)(nil),                                              // 182: pylabrobot.star.v1.Head96RequestPositionRequest
+	(*Head96RequestPositionResponse)(nil),                                             // 183: pylabrobot.star.v1.Head96RequestPositionResponse
+	(*PickUpTipsCore96Request)(nil),                                                   // 184: pylabrobot.star.v1.PickUpTipsCore96Request
+	(*PickUpTipsCore96Response)(nil),                                                  // 185: pylabrobot.star.v1.PickUpTipsCore96Response
+	(*DiscardTipsCore96Request)(nil),                                                  // 186: pylabrobot.star.v1.DiscardTipsCore96Request
+	(*DiscardTipsCore96Response)(nil),                                                 // 187: pylabrobot.star.v1.DiscardTipsCore96Response
+	(*AspirateCore96Request)(nil),                                                     // 188: pylabrobot.star.v1.AspirateCore96Request
+	(*AspirateCore96Response)(nil),                                                    // 189: pylabrobot.star.v1.AspirateCore96Response
+	(*DispenseCore96Request)(nil),                                                     // 190: pylabrobot.star.v1.DispenseCore96Request
+	(*DispenseCore96Response)(nil),                                                    // 191: pylabrobot.star.v1.DispenseCore96Response
+	(*InitializeIswapRequest)(nil),                                                    // 192: pylabrobot.star.v1.InitializeIswapRequest
+	(*InitializeIswapResponse)(nil),                                                   // 193: pylabrobot.star.v1.InitializeIswapResponse
+	(*PositionComponentsForFreeIswapYRangeRequest)(nil),                               // 194: pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeRequest
+	(*PositionComponentsForFreeIswapYRangeResponse)(nil),                              // 195: pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeResponse
+	(*MoveIswapXRelativeRequest)(nil),                                                 // 196: pylabrobot.star.v1.MoveIswapXRelativeRequest
+	(*MoveIswapXRelativeResponse)(nil),                                                // 197: pylabrobot.star.v1.MoveIswapXRelativeResponse
+	(*MoveIswapYRelativeRequest)(nil),                                                 // 198: pylabrobot.star.v1.MoveIswapYRelativeRequest
+	(*MoveIswapYRelativeResponse)(nil),                                                // 199: pylabrobot.star.v1.MoveIswapYRelativeResponse
+	(*MoveIswapZRelativeRequest)(nil),                                                 // 200: pylabrobot.star.v1.MoveIswapZRelativeRequest
+	(*MoveIswapZRelativeResponse)(nil),                                                // 201: pylabrobot.star.v1.MoveIswapZRelativeResponse
+	(*MoveIswapXRequest)(nil),                                                         // 202: pylabrobot.star.v1.MoveIswapXRequest
+	(*MoveIswapXResponse)(nil),                                                        // 203: pylabrobot.star.v1.MoveIswapXResponse
+	(*MoveIswapYRequest)(nil),                                                         // 204: pylabrobot.star.v1.MoveIswapYRequest
+	(*MoveIswapYResponse)(nil),                                                        // 205: pylabrobot.star.v1.MoveIswapYResponse
+	(*MoveIswapZRequest)(nil),                                                         // 206: pylabrobot.star.v1.MoveIswapZRequest
+	(*MoveIswapZResponse)(nil),                                                        // 207: pylabrobot.star.v1.MoveIswapZResponse
+	(*OpenNotInitializedGripperRequest)(nil),                                          // 208: pylabrobot.star.v1.OpenNotInitializedGripperRequest
+	(*OpenNotInitializedGripperResponse)(nil),                                         // 209: pylabrobot.star.v1.OpenNotInitializedGripperResponse
+	(*IswapOpenGripperRequest)(nil),                                                   // 210: pylabrobot.star.v1.IswapOpenGripperRequest
+	(*IswapOpenGripperResponse)(nil),                                                  // 211: pylabrobot.star.v1.IswapOpenGripperResponse
+	(*IswapCloseGripperRequest)(nil),                                                  // 212: pylabrobot.star.v1.IswapCloseGripperRequest
+	(*IswapCloseGripperResponse)(nil),                                                 // 213: pylabrobot.star.v1.IswapCloseGripperResponse
+	(*ParkIswapRequest)(nil),                                                          // 214: pylabrobot.star.v1.ParkIswapRequest
+	(*ParkIswapResponse)(nil),                                                         // 215: pylabrobot.star.v1.ParkIswapResponse
+	(*IswapGetPlateRequest)(nil),                                                      // 216: pylabrobot.star.v1.IswapGetPlateRequest
+	(*IswapGetPlateResponse)(nil),                                                     // 217: pylabrobot.star.v1.IswapGetPlateResponse
+	(*IswapPutPlateRequest)(nil),                                                      // 218: pylabrobot.star.v1.IswapPutPlateRequest
+	(*IswapPutPlateResponse)(nil),                                                     // 219: pylabrobot.star.v1.IswapPutPlateResponse
+	(*MovePlateToPositionRequest)(nil),                                                // 220: pylabrobot.star.v1.MovePlateToPositionRequest
+	(*MovePlateToPositionResponse)(nil),                                               // 221: pylabrobot.star.v1.MovePlateToPositionResponse
+	(*CollapseGripperArmRequest)(nil),                                                 // 222: pylabrobot.star.v1.CollapseGripperArmRequest
+	(*CollapseGripperArmResponse)(nil),                                                // 223: pylabrobot.star.v1.CollapseGripperArmResponse
+	(*IswapRotateRequest)(nil),                                                        // 224: pylabrobot.star.v1.IswapRotateRequest
+	(*IswapRotateResponse)(nil),                                                       // 225: pylabrobot.star.v1.IswapRotateResponse
+	(*RotateIswapRotationDriveRequest)(nil),                                           // 226: pylabrobot.star.v1.RotateIswapRotationDriveRequest
+	(*RotateIswapRotationDriveResponse)(nil),                                          // 227: pylabrobot.star.v1.RotateIswapRotationDriveResponse
+	(*RotateIswapWristRequest)(nil),                                                   // 228: pylabrobot.star.v1.RotateIswapWristRequest
+	(*RotateIswapWristResponse)(nil),                                                  // 229: pylabrobot.star.v1.RotateIswapWristResponse
+	(*IswapDangerousReleaseBreakRequest)(nil),                                         // 230: pylabrobot.star.v1.IswapDangerousReleaseBreakRequest
+	(*IswapDangerousReleaseBreakResponse)(nil),                                        // 231: pylabrobot.star.v1.IswapDangerousReleaseBreakResponse
+	(*IswapReengageBreakRequest)(nil),                                                 // 232: pylabrobot.star.v1.IswapReengageBreakRequest
+	(*IswapReengageBreakResponse)(nil),                                                // 233: pylabrobot.star.v1.IswapReengageBreakResponse
+	(*IswapInitializeZAxisRequest)(nil),                                               // 234: pylabrobot.star.v1.IswapInitializeZAxisRequest
+	(*IswapInitializeZAxisResponse)(nil),                                              // 235: pylabrobot.star.v1.IswapInitializeZAxisResponse
+	(*RequestIswapRotationDrivePositionIncrementsRequest)(nil),                        // 236: pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsRequest
+	(*RequestIswapRotationDrivePositionIncrementsResponse)(nil),                       // 237: pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsResponse
+	(*RequestIswapRotationDriveOrientationRequest)(nil),                               // 238: pylabrobot.star.v1.RequestIswapRotationDriveOrientationRequest
+	(*RequestIswapRotationDriveOrientationResponse)(nil),                              // 239: pylabrobot.star.v1.RequestIswapRotationDriveOrientationResponse
+	(*RequestIswapWristDrivePositionIncrementsRequest)(nil),                           // 240: pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsRequest
+	(*RequestIswapWristDrivePositionIncrementsResponse)(nil),                          // 241: pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsResponse
+	(*RequestIswapWristDriveOrientationRequest)(nil),                                  // 242: pylabrobot.star.v1.RequestIswapWristDriveOrientationRequest
+	(*RequestIswapWristDriveOrientationResponse)(nil),                                 // 243: pylabrobot.star.v1.RequestIswapWristDriveOrientationResponse
+	(*RequestIswapInParkingPositionRequest)(nil),                                      // 244: pylabrobot.star.v1.RequestIswapInParkingPositionRequest
+	(*RequestIswapInParkingPositionResponse)(nil),                                     // 245: pylabrobot.star.v1.RequestIswapInParkingPositionResponse
+	(*RequestPlateInIswapRequest)(nil),                                                // 246: pylabrobot.star.v1.RequestPlateInIswapRequest
+	(*RequestPlateInIswapResponse)(nil),                                               // 247: pylabrobot.star.v1.RequestPlateInIswapResponse
+	(*RequestIswapPositionRequest)(nil),                                               // 248: pylabrobot.star.v1.RequestIswapPositionRequest
+	(*RequestIswapPositionResponse)(nil),                                              // 249: pylabrobot.star.v1.RequestIswapPositionResponse
+	(*IswapRotationDriveRequestYRequest)(nil),                                         // 250: pylabrobot.star.v1.IswapRotationDriveRequestYRequest
+	(*IswapRotationDriveRequestYResponse)(nil),                                        // 251: pylabrobot.star.v1.IswapRotationDriveRequestYResponse
+	(*RequestIswapInitializationStatusRequest)(nil),                                   // 252: pylabrobot.star.v1.RequestIswapInitializationStatusRequest
+	(*RequestIswapInitializationStatusResponse)(nil),                                  // 253: pylabrobot.star.v1.RequestIswapInitializationStatusResponse
+	(*RequestIswapVersionRequest)(nil),                                                // 254: pylabrobot.star.v1.RequestIswapVersionRequest
+	(*RequestIswapVersionResponse)(nil),                                               // 255: pylabrobot.star.v1.RequestIswapVersionResponse
+	(*GetIswapVersionRequest)(nil),                                                    // 256: pylabrobot.star.v1.GetIswapVersionRequest
+	(*GetIswapVersionResponse)(nil),                                                   // 257: pylabrobot.star.v1.GetIswapVersionResponse
+	(*SlowIswapRequest)(nil),                                                          // 258: pylabrobot.star.v1.SlowIswapRequest
+	(*SlowIswapResponse)(nil),                                                         // 259: pylabrobot.star.v1.SlowIswapResponse
+	(*IswapMovePickedUpResourceRequest)(nil),                                          // 260: pylabrobot.star.v1.IswapMovePickedUpResourceRequest
+	(*IswapMovePickedUpResourceResponse)(nil),                                         // 261: pylabrobot.star.v1.IswapMovePickedUpResourceResponse
+	(*PickUpResourceRequest)(nil),                                                     // 262: pylabrobot.star.v1.PickUpResourceRequest
+	(*PickUpResourceResponse)(nil),                                                    // 263: pylabrobot.star.v1.PickUpResourceResponse
+	(*MovePickedUpResourceRequest)(nil),                                               // 264: pylabrobot.star.v1.MovePickedUpResourceRequest
+	(*MovePickedUpResourceResponse)(nil),                                              // 265: pylabrobot.star.v1.MovePickedUpResourceResponse
+	(*DropResourceRequest)(nil),                                                       // 266: pylabrobot.star.v1.DropResourceRequest
+	(*DropResourceResponse)(nil),                                                      // 267: pylabrobot.star.v1.DropResourceResponse
+	(*PickUpCoreGripperToolsRequest)(nil),                                             // 268: pylabrobot.star.v1.PickUpCoreGripperToolsRequest
+	(*PickUpCoreGripperToolsResponse)(nil),                                            // 269: pylabrobot.star.v1.PickUpCoreGripperToolsResponse
+	(*ReturnCoreGripperToolsRequest)(nil),                                             // 270: pylabrobot.star.v1.ReturnCoreGripperToolsRequest
+	(*ReturnCoreGripperToolsResponse)(nil),                                            // 271: pylabrobot.star.v1.ReturnCoreGripperToolsResponse
+	(*CoreOpenGripperRequest)(nil),                                                    // 272: pylabrobot.star.v1.CoreOpenGripperRequest
+	(*CoreOpenGripperResponse)(nil),                                                   // 273: pylabrobot.star.v1.CoreOpenGripperResponse
+	(*CoreGetPlateRequest)(nil),                                                       // 274: pylabrobot.star.v1.CoreGetPlateRequest
+	(*CoreGetPlateResponse)(nil),                                                      // 275: pylabrobot.star.v1.CoreGetPlateResponse
+	(*CorePutPlateRequest)(nil),                                                       // 276: pylabrobot.star.v1.CorePutPlateRequest
+	(*CorePutPlateResponse)(nil),                                                      // 277: pylabrobot.star.v1.CorePutPlateResponse
+	(*CoreMovePlateToPositionRequest)(nil),                                            // 278: pylabrobot.star.v1.CoreMovePlateToPositionRequest
+	(*CoreMovePlateToPositionResponse)(nil),                                           // 279: pylabrobot.star.v1.CoreMovePlateToPositionResponse
+	(*CorePickUpResourceRequest)(nil),                                                 // 280: pylabrobot.star.v1.CorePickUpResourceRequest
+	(*CorePickUpResourceResponse)(nil),                                                // 281: pylabrobot.star.v1.CorePickUpResourceResponse
+	(*CoreMovePickedUpResourceRequest)(nil),                                           // 282: pylabrobot.star.v1.CoreMovePickedUpResourceRequest
+	(*CoreMovePickedUpResourceResponse)(nil),                                          // 283: pylabrobot.star.v1.CoreMovePickedUpResourceResponse
+	(*CoreReleasePickedUpResourceRequest)(nil),                                        // 284: pylabrobot.star.v1.CoreReleasePickedUpResourceRequest
+	(*CoreReleasePickedUpResourceResponse)(nil),                                       // 285: pylabrobot.star.v1.CoreReleasePickedUpResourceResponse
+	(*CoreCheckResourceExistsAtLocationCenterRequest)(nil),                            // 286: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest
+	(*CoreCheckResourceExistsAtLocationCenterResponse)(nil),                           // 287: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterResponse
+	(*GetCoreRequest)(nil),                                                            // 288: pylabrobot.star.v1.GetCoreRequest
+	(*GetCoreResponse)(nil),                                                           // 289: pylabrobot.star.v1.GetCoreResponse
+	(*PutCoreRequest)(nil),                                                            // 290: pylabrobot.star.v1.PutCoreRequest
+	(*PutCoreResponse)(nil),                                                           // 291: pylabrobot.star.v1.PutCoreResponse
+	(*CoreReadBarcodeOfPickedUpResourceRequest)(nil),                                  // 292: pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceRequest
+	(*CoreReadBarcodeOfPickedUpResourceResponse)(nil),                                 // 293: pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceResponse
+	(*InitializeAutoloadRequest)(nil),                                                 // 294: pylabrobot.star.v1.InitializeAutoloadRequest
+	(*InitializeAutoloadResponse)(nil),                                                // 295: pylabrobot.star.v1.InitializeAutoloadResponse
+	(*MoveAutoloadToSafeZPositionRequest)(nil),                                        // 296: pylabrobot.star.v1.MoveAutoloadToSafeZPositionRequest
+	(*MoveAutoloadToSafeZPositionResponse)(nil),                                       // 297: pylabrobot.star.v1.MoveAutoloadToSafeZPositionResponse
+	(*RequestAutoloadTrackRequest)(nil),                                               // 298: pylabrobot.star.v1.RequestAutoloadTrackRequest
+	(*RequestAutoloadTrackResponse)(nil),                                              // 299: pylabrobot.star.v1.RequestAutoloadTrackResponse
+	(*RequestAutoloadTypeRequest)(nil),                                                // 300: pylabrobot.star.v1.RequestAutoloadTypeRequest
+	(*RequestAutoloadTypeResponse)(nil),                                               // 301: pylabrobot.star.v1.RequestAutoloadTypeResponse
+	(*RequestPresenceOfCarriersOnDeckRequest)(nil),                                    // 302: pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckRequest
+	(*RequestPresenceOfCarriersOnDeckResponse)(nil),                                   // 303: pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckResponse
+	(*RequestPresenceOfCarriersOnLoadingTrayRequest)(nil),                             // 304: pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayRequest
+	(*RequestPresenceOfCarriersOnLoadingTrayResponse)(nil),                            // 305: pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayResponse
+	(*RequestPresenceOfSingleCarrierOnLoadingTrayRequest)(nil),                        // 306: pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayRequest
+	(*RequestPresenceOfSingleCarrierOnLoadingTrayResponse)(nil),                       // 307: pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayResponse
+	(*MoveAutoloadToSlotRequest)(nil),                                                 // 308: pylabrobot.star.v1.MoveAutoloadToSlotRequest
+	(*MoveAutoloadToSlotResponse)(nil),                                                // 309: pylabrobot.star.v1.MoveAutoloadToSlotResponse
+	(*MoveAutoloadToTrackRequest)(nil),                                                // 310: pylabrobot.star.v1.MoveAutoloadToTrackRequest
+	(*MoveAutoloadToTrackResponse)(nil),                                               // 311: pylabrobot.star.v1.MoveAutoloadToTrackResponse
+	(*ParkAutoloadRequest)(nil),                                                       // 312: pylabrobot.star.v1.ParkAutoloadRequest
+	(*ParkAutoloadResponse)(nil),                                                      // 313: pylabrobot.star.v1.ParkAutoloadResponse
+	(*TakeCarrierOutToAutoloadBeltRequest)(nil),                                       // 314: pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltRequest
+	(*TakeCarrierOutToAutoloadBeltResponse)(nil),                                      // 315: pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltResponse
+	(*SetBarcodeTypeRequest)(nil),                                                     // 316: pylabrobot.star.v1.SetBarcodeTypeRequest
+	(*SetBarcodeTypeResponse)(nil),                                                    // 317: pylabrobot.star.v1.SetBarcodeTypeResponse
+	(*LoadCarrierFromTrayAndScanCarrierBarcodeRequest)(nil),                           // 318: pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeRequest
+	(*LoadCarrierFromTrayAndScanCarrierBarcodeResponse)(nil),                          // 319: pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeResponse
+	(*UnloadCarrierAfterCarcodeBarcardeScanningRequest)(nil),                          // 320: pylabrobot.star.v1.UnloadCarrierAfterCarcodeBarcardeScanningRequest
+	(*UnloadCarrierAfterCarcodeBarcardeScanningResponse)(nil),                         // 321: pylabrobot.star.v1.UnloadCarrierAfterCarcodeBarcardeScanningResponse
+	(*SetCarrierMonitoringRequest)(nil),                                               // 322: pylabrobot.star.v1.SetCarrierMonitoringRequest
+	(*SetCarrierMonitoringResponse)(nil),                                              // 323: pylabrobot.star.v1.SetCarrierMonitoringResponse
+	(*LoadCarrierRequest)(nil),                                                        // 324: pylabrobot.star.v1.LoadCarrierRequest
+	(*LoadCarrierResponse)(nil),                                                       // 325: pylabrobot.star.v1.LoadCarrierResponse
+	(*SetLoadingIndicatorsRequest)(nil),                                               // 326: pylabrobot.star.v1.SetLoadingIndicatorsRequest
+	(*SetLoadingIndicatorsResponse)(nil),                                              // 327: pylabrobot.star.v1.SetLoadingIndicatorsResponse
+	(*UnloadCarrierRequest)(nil),                                                      // 328: pylabrobot.star.v1.UnloadCarrierRequest
+	(*UnloadCarrierResponse)(nil),                                                     // 329: pylabrobot.star.v1.UnloadCarrierResponse
+	(*RequestInstrumentInitializationStatusRequest)(nil),                              // 330: pylabrobot.star.v1.RequestInstrumentInitializationStatusRequest
+	(*RequestInstrumentInitializationStatusResponse)(nil),                             // 331: pylabrobot.star.v1.RequestInstrumentInitializationStatusResponse
+	(*RequestAutoloadInitializationStatusRequest)(nil),                                // 332: pylabrobot.star.v1.RequestAutoloadInitializationStatusRequest
+	(*RequestAutoloadInitializationStatusResponse)(nil),                               // 333: pylabrobot.star.v1.RequestAutoloadInitializationStatusResponse
+	(*LockCoverRequest)(nil),                                                          // 334: pylabrobot.star.v1.LockCoverRequest
+	(*LockCoverResponse)(nil),                                                         // 335: pylabrobot.star.v1.LockCoverResponse
+	(*UnlockCoverRequest)(nil),                                                        // 336: pylabrobot.star.v1.UnlockCoverRequest
+	(*UnlockCoverResponse)(nil),                                                       // 337: pylabrobot.star.v1.UnlockCoverResponse
+	(*DisableCoverControlRequest)(nil),                                                // 338: pylabrobot.star.v1.DisableCoverControlRequest
+	(*DisableCoverControlResponse)(nil),                                               // 339: pylabrobot.star.v1.DisableCoverControlResponse
+	(*EnableCoverControlRequest)(nil),                                                 // 340: pylabrobot.star.v1.EnableCoverControlRequest
+	(*EnableCoverControlResponse)(nil),                                                // 341: pylabrobot.star.v1.EnableCoverControlResponse
+	(*SetCoverOutputRequest)(nil),                                                     // 342: pylabrobot.star.v1.SetCoverOutputRequest
+	(*SetCoverOutputResponse)(nil),                                                    // 343: pylabrobot.star.v1.SetCoverOutputResponse
+	(*ResetOutputRequest)(nil),                                                        // 344: pylabrobot.star.v1.ResetOutputRequest
+	(*ResetOutputResponse)(nil),                                                       // 345: pylabrobot.star.v1.ResetOutputResponse
+	(*RequestCoverOpenRequest)(nil),                                                   // 346: pylabrobot.star.v1.RequestCoverOpenRequest
+	(*RequestCoverOpenResponse)(nil),                                                  // 347: pylabrobot.star.v1.RequestCoverOpenResponse
+	(*SendHhsCommandRequest)(nil),                                                     // 348: pylabrobot.star.v1.SendHhsCommandRequest
+	(*SendHhsCommandResponse)(nil),                                                    // 349: pylabrobot.star.v1.SendHhsCommandResponse
+	(*CheckTypeIsHhcRequest)(nil),                                                     // 350: pylabrobot.star.v1.CheckTypeIsHhcRequest
+	(*CheckTypeIsHhcResponse)(nil),                                                    // 351: pylabrobot.star.v1.CheckTypeIsHhcResponse
+	(*InitializeHhcRequest)(nil),                                                      // 352: pylabrobot.star.v1.InitializeHhcRequest
+	(*InitializeHhcResponse)(nil),                                                     // 353: pylabrobot.star.v1.InitializeHhcResponse
+	(*StartTemperatureControlAtHhcRequest)(nil),                                       // 354: pylabrobot.star.v1.StartTemperatureControlAtHhcRequest
+	(*StartTemperatureControlAtHhcResponse)(nil),                                      // 355: pylabrobot.star.v1.StartTemperatureControlAtHhcResponse
+	(*GetTemperatureAtHhcRequest)(nil),                                                // 356: pylabrobot.star.v1.GetTemperatureAtHhcRequest
+	(*GetTemperatureAtHhcResponse)(nil),                                               // 357: pylabrobot.star.v1.GetTemperatureAtHhcResponse
+	(*QueryWhetherTemperatureReachedAtHhcRequest)(nil),                                // 358: pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcRequest
+	(*QueryWhetherTemperatureReachedAtHhcResponse)(nil),                               // 359: pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcResponse
+	(*StopTemperatureControlAtHhcRequest)(nil),                                        // 360: pylabrobot.star.v1.StopTemperatureControlAtHhcRequest
+	(*StopTemperatureControlAtHhcResponse)(nil),                                       // 361: pylabrobot.star.v1.StopTemperatureControlAtHhcResponse
+	(*RequestFirmwareVersionRequest)(nil),                                             // 362: pylabrobot.star.v1.RequestFirmwareVersionRequest
+	(*RequestFirmwareVersionResponse)(nil),                                            // 363: pylabrobot.star.v1.RequestFirmwareVersionResponse
+	(*RequestErrorCodeRequest)(nil),                                                   // 364: pylabrobot.star.v1.RequestErrorCodeRequest
+	(*RequestErrorCodeResponse)(nil),                                                  // 365: pylabrobot.star.v1.RequestErrorCodeResponse
+	(*RequestParameterValueRequest)(nil),                                              // 366: pylabrobot.star.v1.RequestParameterValueRequest
+	(*RequestParameterValueResponse)(nil),                                             // 367: pylabrobot.star.v1.RequestParameterValueResponse
+	(*RequestDeviceSerialNumberRequest)(nil),                                          // 368: pylabrobot.star.v1.RequestDeviceSerialNumberRequest
+	(*RequestDeviceSerialNumberResponse)(nil),                                         // 369: pylabrobot.star.v1.RequestDeviceSerialNumberResponse
+	(*RequestMasterStatusRequest)(nil),                                                // 370: pylabrobot.star.v1.RequestMasterStatusRequest
+	(*RequestMasterStatusResponse)(nil),                                               // 371: pylabrobot.star.v1.RequestMasterStatusResponse
+	(*RequestNameOfLastFaultyParameterRequest)(nil),                                   // 372: pylabrobot.star.v1.RequestNameOfLastFaultyParameterRequest
+	(*RequestNameOfLastFaultyParameterResponse)(nil),                                  // 373: pylabrobot.star.v1.RequestNameOfLastFaultyParameterResponse
+	(*SetSingleStepModeRequest)(nil),                                                  // 374: pylabrobot.star.v1.SetSingleStepModeRequest
+	(*SetSingleStepModeResponse)(nil),                                                 // 375: pylabrobot.star.v1.SetSingleStepModeResponse
+	(*TriggerNextStepRequest)(nil),                                                    // 376: pylabrobot.star.v1.TriggerNextStepRequest
+	(*TriggerNextStepResponse)(nil),                                                   // 377: pylabrobot.star.v1.TriggerNextStepResponse
+	(*HaltRequest)(nil),                                                               // 378: pylabrobot.star.v1.HaltRequest
+	(*HaltResponse)(nil),                                                              // 379: pylabrobot.star.v1.HaltResponse
+	(*SaveAllCycleCountersRequest)(nil),                                               // 380: pylabrobot.star.v1.SaveAllCycleCountersRequest
+	(*SaveAllCycleCountersResponse)(nil),                                              // 381: pylabrobot.star.v1.SaveAllCycleCountersResponse
+	(*SetNotStopRequest)(nil),                                                         // 382: pylabrobot.star.v1.SetNotStopRequest
+	(*SetNotStopResponse)(nil),                                                        // 383: pylabrobot.star.v1.SetNotStopResponse
+	(*ConfigureNodeNamesRequest)(nil),                                                 // 384: pylabrobot.star.v1.ConfigureNodeNamesRequest
+	(*ConfigureNodeNamesResponse)(nil),                                                // 385: pylabrobot.star.v1.ConfigureNodeNamesResponse
+	(*SetDeckDataRequest)(nil),                                                        // 386: pylabrobot.star.v1.SetDeckDataRequest
+	(*SetDeckDataResponse)(nil),                                                       // 387: pylabrobot.star.v1.SetDeckDataResponse
+	(*PositionLeftXArmRequest)(nil),                                                   // 388: pylabrobot.star.v1.PositionLeftXArmRequest
+	(*PositionLeftXArmResponse)(nil),                                                  // 389: pylabrobot.star.v1.PositionLeftXArmResponse
+	(*PositionRightXArmRequest)(nil),                                                  // 390: pylabrobot.star.v1.PositionRightXArmRequest
+	(*PositionRightXArmResponse)(nil),                                                 // 391: pylabrobot.star.v1.PositionRightXArmResponse
+	(*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest)(nil),   // 392: pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
+	(*MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse)(nil),  // 393: pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
+	(*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest)(nil),  // 394: pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
+	(*MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse)(nil), // 395: pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
+	(*RequestLeftXArmPositionRequest)(nil),                                            // 396: pylabrobot.star.v1.RequestLeftXArmPositionRequest
+	(*RequestLeftXArmPositionResponse)(nil),                                           // 397: pylabrobot.star.v1.RequestLeftXArmPositionResponse
+	(*RequestRightXArmPositionRequest)(nil),                                           // 398: pylabrobot.star.v1.RequestRightXArmPositionRequest
+	(*RequestRightXArmPositionResponse)(nil),                                          // 399: pylabrobot.star.v1.RequestRightXArmPositionResponse
+	(*RequestRightXArmLastCollisionTypeRequest)(nil),                                  // 400: pylabrobot.star.v1.RequestRightXArmLastCollisionTypeRequest
+	(*RequestRightXArmLastCollisionTypeResponse)(nil),                                 // 401: pylabrobot.star.v1.RequestRightXArmLastCollisionTypeResponse
+	(*RequestPumpSettingsRequest)(nil),                                                // 402: pylabrobot.star.v1.RequestPumpSettingsRequest
+	(*RequestPumpSettingsResponse)(nil),                                               // 403: pylabrobot.star.v1.RequestPumpSettingsResponse
+	(*InitializeDualPumpStationValvesRequest)(nil),                                    // 404: pylabrobot.star.v1.InitializeDualPumpStationValvesRequest
+	(*InitializeDualPumpStationValvesResponse)(nil),                                   // 405: pylabrobot.star.v1.InitializeDualPumpStationValvesResponse
+	(*DrainDualChamberSystemRequest)(nil),                                             // 406: pylabrobot.star.v1.DrainDualChamberSystemRequest
+	(*DrainDualChamberSystemResponse)(nil),                                            // 407: pylabrobot.star.v1.DrainDualChamberSystemResponse
+	(*ViolentlyShootDownTipRequest)(nil),                                              // 408: pylabrobot.star.v1.ViolentlyShootDownTipRequest
+	(*ViolentlyShootDownTipResponse)(nil),                                             // 409: pylabrobot.star.v1.ViolentlyShootDownTipResponse
+	(*CanPickUpTipRequest)(nil),                                                       // 410: pylabrobot.star.v1.CanPickUpTipRequest
+	(*CanPickUpTipResponse)(nil),                                                      // 411: pylabrobot.star.v1.CanPickUpTipResponse
+	nil,                                                                               // 412: pylabrobot.star.v1.ChannelFloatMap.EntriesEntry
+	(*v1.Coordinate)(nil),                                                             // 413: pylabrobot.common.v1.Coordinate
+	(*v1.Rotation)(nil),                                                               // 414: pylabrobot.common.v1.Rotation
 }
-var file_star_v1_star_service_proto_depIdxs = []int32{
+var file_star_service_proto_depIdxs = []int32{
 	3,   // 0: pylabrobot.star.v1.TipData.tip_size:type_name -> pylabrobot.star.v1.TipSizeEnum
 	1,   // 1: pylabrobot.star.v1.TipData.pickup_method:type_name -> pylabrobot.star.v1.TipPickupMethod
-	9,   // 2: pylabrobot.star.v1.PickupOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 3: pylabrobot.star.v1.PickupOp.tip:type_name -> pylabrobot.star.v1.TipData
-	9,   // 4: pylabrobot.star.v1.DropOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 5: pylabrobot.star.v1.DropOp.tip:type_name -> pylabrobot.star.v1.TipData
-	9,   // 6: pylabrobot.star.v1.SingleChannelAspirationOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 7: pylabrobot.star.v1.SingleChannelAspirationOp.tip:type_name -> pylabrobot.star.v1.TipData
-	12,  // 8: pylabrobot.star.v1.SingleChannelAspirationOp.mix:type_name -> pylabrobot.star.v1.MixData
-	9,   // 9: pylabrobot.star.v1.SingleChannelDispenseOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 10: pylabrobot.star.v1.SingleChannelDispenseOp.tip:type_name -> pylabrobot.star.v1.TipData
-	12,  // 11: pylabrobot.star.v1.SingleChannelDispenseOp.mix:type_name -> pylabrobot.star.v1.MixData
-	9,   // 12: pylabrobot.star.v1.PickupTipRackOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 13: pylabrobot.star.v1.PickupTipRackOp.tips:type_name -> pylabrobot.star.v1.TipData
-	9,   // 14: pylabrobot.star.v1.DropTipRackOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 15: pylabrobot.star.v1.MultiHeadAspirationPlateOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 16: pylabrobot.star.v1.MultiHeadAspirationPlateOp.tips:type_name -> pylabrobot.star.v1.TipData
-	12,  // 17: pylabrobot.star.v1.MultiHeadAspirationPlateOp.mix:type_name -> pylabrobot.star.v1.MixData
-	9,   // 18: pylabrobot.star.v1.MultiHeadDispensePlateOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 19: pylabrobot.star.v1.MultiHeadDispensePlateOp.tips:type_name -> pylabrobot.star.v1.TipData
-	12,  // 20: pylabrobot.star.v1.MultiHeadDispensePlateOp.mix:type_name -> pylabrobot.star.v1.MixData
-	9,   // 21: pylabrobot.star.v1.MultiHeadAspirationContainerOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 22: pylabrobot.star.v1.MultiHeadAspirationContainerOp.tips:type_name -> pylabrobot.star.v1.TipData
-	12,  // 23: pylabrobot.star.v1.MultiHeadAspirationContainerOp.mix:type_name -> pylabrobot.star.v1.MixData
-	9,   // 24: pylabrobot.star.v1.MultiHeadDispenseContainerOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 25: pylabrobot.star.v1.MultiHeadDispenseContainerOp.tips:type_name -> pylabrobot.star.v1.TipData
-	12,  // 26: pylabrobot.star.v1.MultiHeadDispenseContainerOp.mix:type_name -> pylabrobot.star.v1.MixData
-	9,   // 27: pylabrobot.star.v1.ResourcePickupOp.offset:type_name -> pylabrobot.star.v1.Coordinate
+	413, // 2: pylabrobot.star.v1.PickupOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 3: pylabrobot.star.v1.PickupOp.tip:type_name -> pylabrobot.star.v1.TipData
+	413, // 4: pylabrobot.star.v1.DropOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 5: pylabrobot.star.v1.DropOp.tip:type_name -> pylabrobot.star.v1.TipData
+	413, // 6: pylabrobot.star.v1.SingleChannelAspirationOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 7: pylabrobot.star.v1.SingleChannelAspirationOp.tip:type_name -> pylabrobot.star.v1.TipData
+	9,   // 8: pylabrobot.star.v1.SingleChannelAspirationOp.mix:type_name -> pylabrobot.star.v1.MixData
+	413, // 9: pylabrobot.star.v1.SingleChannelDispenseOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 10: pylabrobot.star.v1.SingleChannelDispenseOp.tip:type_name -> pylabrobot.star.v1.TipData
+	9,   // 11: pylabrobot.star.v1.SingleChannelDispenseOp.mix:type_name -> pylabrobot.star.v1.MixData
+	413, // 12: pylabrobot.star.v1.PickupTipRackOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 13: pylabrobot.star.v1.PickupTipRackOp.tips:type_name -> pylabrobot.star.v1.TipData
+	413, // 14: pylabrobot.star.v1.DropTipRackOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 15: pylabrobot.star.v1.MultiHeadAspirationPlateOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 16: pylabrobot.star.v1.MultiHeadAspirationPlateOp.tips:type_name -> pylabrobot.star.v1.TipData
+	9,   // 17: pylabrobot.star.v1.MultiHeadAspirationPlateOp.mix:type_name -> pylabrobot.star.v1.MixData
+	413, // 18: pylabrobot.star.v1.MultiHeadDispensePlateOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 19: pylabrobot.star.v1.MultiHeadDispensePlateOp.tips:type_name -> pylabrobot.star.v1.TipData
+	9,   // 20: pylabrobot.star.v1.MultiHeadDispensePlateOp.mix:type_name -> pylabrobot.star.v1.MixData
+	413, // 21: pylabrobot.star.v1.MultiHeadAspirationContainerOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 22: pylabrobot.star.v1.MultiHeadAspirationContainerOp.tips:type_name -> pylabrobot.star.v1.TipData
+	9,   // 23: pylabrobot.star.v1.MultiHeadAspirationContainerOp.mix:type_name -> pylabrobot.star.v1.MixData
+	413, // 24: pylabrobot.star.v1.MultiHeadDispenseContainerOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 25: pylabrobot.star.v1.MultiHeadDispenseContainerOp.tips:type_name -> pylabrobot.star.v1.TipData
+	9,   // 26: pylabrobot.star.v1.MultiHeadDispenseContainerOp.mix:type_name -> pylabrobot.star.v1.MixData
+	413, // 27: pylabrobot.star.v1.ResourcePickupOp.offset:type_name -> pylabrobot.common.v1.Coordinate
 	4,   // 28: pylabrobot.star.v1.ResourcePickupOp.direction:type_name -> pylabrobot.star.v1.GripDirectionEnum
-	9,   // 29: pylabrobot.star.v1.ResourceMoveOp.location:type_name -> pylabrobot.star.v1.Coordinate
+	413, // 29: pylabrobot.star.v1.ResourceMoveOp.location:type_name -> pylabrobot.common.v1.Coordinate
 	4,   // 30: pylabrobot.star.v1.ResourceMoveOp.gripped_direction:type_name -> pylabrobot.star.v1.GripDirectionEnum
-	9,   // 31: pylabrobot.star.v1.ResourceMoveOp.offset:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 32: pylabrobot.star.v1.ResourceDropOp.destination:type_name -> pylabrobot.star.v1.Coordinate
-	10,  // 33: pylabrobot.star.v1.ResourceDropOp.destination_absolute_rotation:type_name -> pylabrobot.star.v1.Rotation
-	9,   // 34: pylabrobot.star.v1.ResourceDropOp.offset:type_name -> pylabrobot.star.v1.Coordinate
+	413, // 31: pylabrobot.star.v1.ResourceMoveOp.offset:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 32: pylabrobot.star.v1.ResourceDropOp.destination:type_name -> pylabrobot.common.v1.Coordinate
+	414, // 33: pylabrobot.star.v1.ResourceDropOp.destination_absolute_rotation:type_name -> pylabrobot.common.v1.Rotation
+	413, // 34: pylabrobot.star.v1.ResourceDropOp.offset:type_name -> pylabrobot.common.v1.Coordinate
 	4,   // 35: pylabrobot.star.v1.ResourceDropOp.pickup_direction:type_name -> pylabrobot.star.v1.GripDirectionEnum
 	4,   // 36: pylabrobot.star.v1.ResourceDropOp.direction:type_name -> pylabrobot.star.v1.GripDirectionEnum
-	415, // 37: pylabrobot.star.v1.ChannelFloatMap.entries:type_name -> pylabrobot.star.v1.ChannelFloatMap.EntriesEntry
-	13,  // 38: pylabrobot.star.v1.PickUpTipsRequest.ops:type_name -> pylabrobot.star.v1.PickupOp
-	14,  // 39: pylabrobot.star.v1.DropTipsRequest.ops:type_name -> pylabrobot.star.v1.DropOp
-	15,  // 40: pylabrobot.star.v1.AspirateRequest.ops:type_name -> pylabrobot.star.v1.SingleChannelAspirationOp
-	16,  // 41: pylabrobot.star.v1.DispenseRequest.ops:type_name -> pylabrobot.star.v1.SingleChannelDispenseOp
-	17,  // 42: pylabrobot.star.v1.PickUpTips96Request.pickup:type_name -> pylabrobot.star.v1.PickupTipRackOp
-	18,  // 43: pylabrobot.star.v1.DropTips96Request.drop:type_name -> pylabrobot.star.v1.DropTipRackOp
-	19,  // 44: pylabrobot.star.v1.Aspirate96Request.plate:type_name -> pylabrobot.star.v1.MultiHeadAspirationPlateOp
-	21,  // 45: pylabrobot.star.v1.Aspirate96Request.container:type_name -> pylabrobot.star.v1.MultiHeadAspirationContainerOp
-	20,  // 46: pylabrobot.star.v1.Dispense96Request.plate:type_name -> pylabrobot.star.v1.MultiHeadDispensePlateOp
-	22,  // 47: pylabrobot.star.v1.Dispense96Request.container:type_name -> pylabrobot.star.v1.MultiHeadDispenseContainerOp
+	412, // 37: pylabrobot.star.v1.ChannelFloatMap.entries:type_name -> pylabrobot.star.v1.ChannelFloatMap.EntriesEntry
+	10,  // 38: pylabrobot.star.v1.PickUpTipsRequest.ops:type_name -> pylabrobot.star.v1.PickupOp
+	11,  // 39: pylabrobot.star.v1.DropTipsRequest.ops:type_name -> pylabrobot.star.v1.DropOp
+	12,  // 40: pylabrobot.star.v1.AspirateRequest.ops:type_name -> pylabrobot.star.v1.SingleChannelAspirationOp
+	13,  // 41: pylabrobot.star.v1.DispenseRequest.ops:type_name -> pylabrobot.star.v1.SingleChannelDispenseOp
+	14,  // 42: pylabrobot.star.v1.PickUpTips96Request.pickup:type_name -> pylabrobot.star.v1.PickupTipRackOp
+	15,  // 43: pylabrobot.star.v1.DropTips96Request.drop:type_name -> pylabrobot.star.v1.DropTipRackOp
+	16,  // 44: pylabrobot.star.v1.Aspirate96Request.plate:type_name -> pylabrobot.star.v1.MultiHeadAspirationPlateOp
+	18,  // 45: pylabrobot.star.v1.Aspirate96Request.container:type_name -> pylabrobot.star.v1.MultiHeadAspirationContainerOp
+	17,  // 46: pylabrobot.star.v1.Dispense96Request.plate:type_name -> pylabrobot.star.v1.MultiHeadDispensePlateOp
+	19,  // 47: pylabrobot.star.v1.Dispense96Request.container:type_name -> pylabrobot.star.v1.MultiHeadDispenseContainerOp
 	3,   // 48: pylabrobot.star.v1.DefineTipNeedleRequest.tip_size:type_name -> pylabrobot.star.v1.TipSizeEnum
 	1,   // 49: pylabrobot.star.v1.DefineTipNeedleRequest.pickup_method:type_name -> pylabrobot.star.v1.TipPickupMethod
-	9,   // 50: pylabrobot.star.v1.ProbeLiquidHeightsRequest.resource_offsets:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 51: pylabrobot.star.v1.ProbeLiquidVolumesRequest.resource_offsets:type_name -> pylabrobot.star.v1.Coordinate
-	26,  // 52: pylabrobot.star.v1.GetChannelsYPositionsResponse.positions:type_name -> pylabrobot.star.v1.ChannelFloatMap
-	26,  // 53: pylabrobot.star.v1.PositionChannelsInYDirectionRequest.ys:type_name -> pylabrobot.star.v1.ChannelFloatMap
-	26,  // 54: pylabrobot.star.v1.GetChannelsZPositionsResponse.positions:type_name -> pylabrobot.star.v1.ChannelFloatMap
-	26,  // 55: pylabrobot.star.v1.PositionChannelsInZDirectionRequest.zs:type_name -> pylabrobot.star.v1.ChannelFloatMap
-	9,   // 56: pylabrobot.star.v1.Head96MoveToCoordinateRequest.coordinate:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 57: pylabrobot.star.v1.Head96RequestPositionResponse.position:type_name -> pylabrobot.star.v1.Coordinate
+	413, // 50: pylabrobot.star.v1.ProbeLiquidHeightsRequest.resource_offsets:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 51: pylabrobot.star.v1.ProbeLiquidVolumesRequest.resource_offsets:type_name -> pylabrobot.common.v1.Coordinate
+	23,  // 52: pylabrobot.star.v1.GetChannelsYPositionsResponse.positions:type_name -> pylabrobot.star.v1.ChannelFloatMap
+	23,  // 53: pylabrobot.star.v1.PositionChannelsInYDirectionRequest.ys:type_name -> pylabrobot.star.v1.ChannelFloatMap
+	23,  // 54: pylabrobot.star.v1.GetChannelsZPositionsResponse.positions:type_name -> pylabrobot.star.v1.ChannelFloatMap
+	23,  // 55: pylabrobot.star.v1.PositionChannelsInZDirectionRequest.zs:type_name -> pylabrobot.star.v1.ChannelFloatMap
+	413, // 56: pylabrobot.star.v1.Head96MoveToCoordinateRequest.coordinate:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 57: pylabrobot.star.v1.Head96RequestPositionResponse.position:type_name -> pylabrobot.common.v1.Coordinate
 	5,   // 58: pylabrobot.star.v1.IswapRotateRequest.orientation:type_name -> pylabrobot.star.v1.RotationDriveOrientationEnum
 	5,   // 59: pylabrobot.star.v1.RotateIswapRotationDriveRequest.orientation:type_name -> pylabrobot.star.v1.RotationDriveOrientationEnum
 	6,   // 60: pylabrobot.star.v1.RotateIswapWristRequest.orientation:type_name -> pylabrobot.star.v1.WristDriveOrientationEnum
 	5,   // 61: pylabrobot.star.v1.RequestIswapRotationDriveOrientationResponse.orientation:type_name -> pylabrobot.star.v1.RotationDriveOrientationEnum
 	6,   // 62: pylabrobot.star.v1.RequestIswapWristDriveOrientationResponse.orientation:type_name -> pylabrobot.star.v1.WristDriveOrientationEnum
-	9,   // 63: pylabrobot.star.v1.RequestIswapPositionResponse.position:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 64: pylabrobot.star.v1.IswapMovePickedUpResourceRequest.center:type_name -> pylabrobot.star.v1.Coordinate
+	413, // 63: pylabrobot.star.v1.RequestIswapPositionResponse.position:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 64: pylabrobot.star.v1.IswapMovePickedUpResourceRequest.center:type_name -> pylabrobot.common.v1.Coordinate
 	4,   // 65: pylabrobot.star.v1.IswapMovePickedUpResourceRequest.grip_direction:type_name -> pylabrobot.star.v1.GripDirectionEnum
-	23,  // 66: pylabrobot.star.v1.PickUpResourceRequest.pickup:type_name -> pylabrobot.star.v1.ResourcePickupOp
-	24,  // 67: pylabrobot.star.v1.MovePickedUpResourceRequest.move:type_name -> pylabrobot.star.v1.ResourceMoveOp
-	25,  // 68: pylabrobot.star.v1.DropResourceRequest.drop:type_name -> pylabrobot.star.v1.ResourceDropOp
-	9,   // 69: pylabrobot.star.v1.PickUpCoreGripperToolsRequest.front_offset:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 70: pylabrobot.star.v1.PickUpCoreGripperToolsRequest.back_offset:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 71: pylabrobot.star.v1.ReturnCoreGripperToolsRequest.front_offset:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 72: pylabrobot.star.v1.ReturnCoreGripperToolsRequest.back_offset:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 73: pylabrobot.star.v1.CorePickUpResourceRequest.offset:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 74: pylabrobot.star.v1.CoreMovePickedUpResourceRequest.center:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 75: pylabrobot.star.v1.CoreReleasePickedUpResourceRequest.location:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 76: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest.location:type_name -> pylabrobot.star.v1.Coordinate
-	9,   // 77: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest.offset:type_name -> pylabrobot.star.v1.Coordinate
-	11,  // 78: pylabrobot.star.v1.CanPickUpTipRequest.tip:type_name -> pylabrobot.star.v1.TipData
-	27,  // 79: pylabrobot.star.v1.STARService.Setup:input_type -> pylabrobot.star.v1.SetupRequest
-	29,  // 80: pylabrobot.star.v1.STARService.Stop:input_type -> pylabrobot.star.v1.StopRequest
-	31,  // 81: pylabrobot.star.v1.STARService.GetNumChannels:input_type -> pylabrobot.star.v1.GetNumChannelsRequest
-	33,  // 82: pylabrobot.star.v1.STARService.GetHead96Installed:input_type -> pylabrobot.star.v1.GetHead96InstalledRequest
-	35,  // 83: pylabrobot.star.v1.STARService.GetIswapInstalled:input_type -> pylabrobot.star.v1.GetIswapInstalledRequest
-	37,  // 84: pylabrobot.star.v1.STARService.GetIswapParked:input_type -> pylabrobot.star.v1.GetIswapParkedRequest
-	39,  // 85: pylabrobot.star.v1.STARService.GetCoreParked:input_type -> pylabrobot.star.v1.GetCoreParkedRequest
-	41,  // 86: pylabrobot.star.v1.STARService.PickUpTips:input_type -> pylabrobot.star.v1.PickUpTipsRequest
-	43,  // 87: pylabrobot.star.v1.STARService.DropTips:input_type -> pylabrobot.star.v1.DropTipsRequest
-	45,  // 88: pylabrobot.star.v1.STARService.Aspirate:input_type -> pylabrobot.star.v1.AspirateRequest
-	47,  // 89: pylabrobot.star.v1.STARService.Dispense:input_type -> pylabrobot.star.v1.DispenseRequest
-	49,  // 90: pylabrobot.star.v1.STARService.PickUpTips96:input_type -> pylabrobot.star.v1.PickUpTips96Request
-	51,  // 91: pylabrobot.star.v1.STARService.DropTips96:input_type -> pylabrobot.star.v1.DropTips96Request
-	53,  // 92: pylabrobot.star.v1.STARService.Aspirate96:input_type -> pylabrobot.star.v1.Aspirate96Request
-	55,  // 93: pylabrobot.star.v1.STARService.Dispense96:input_type -> pylabrobot.star.v1.Dispense96Request
-	57,  // 94: pylabrobot.star.v1.STARService.InitializePip:input_type -> pylabrobot.star.v1.InitializePipRequest
-	59,  // 95: pylabrobot.star.v1.STARService.InitializePipettingChannels:input_type -> pylabrobot.star.v1.InitializePipettingChannelsRequest
-	61,  // 96: pylabrobot.star.v1.STARService.PickUpTipFw:input_type -> pylabrobot.star.v1.PickUpTipFwRequest
-	63,  // 97: pylabrobot.star.v1.STARService.DiscardTipFw:input_type -> pylabrobot.star.v1.DiscardTipFwRequest
-	65,  // 98: pylabrobot.star.v1.STARService.AspiratePip:input_type -> pylabrobot.star.v1.AspiratePipRequest
-	67,  // 99: pylabrobot.star.v1.STARService.DispensePip:input_type -> pylabrobot.star.v1.DispensePipRequest
-	69,  // 100: pylabrobot.star.v1.STARService.SpreadPipChannels:input_type -> pylabrobot.star.v1.SpreadPipChannelsRequest
-	71,  // 101: pylabrobot.star.v1.STARService.MoveAllPipettingChannelsToDefinedPosition:input_type -> pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionRequest
-	73,  // 102: pylabrobot.star.v1.STARService.DefineTipNeedle:input_type -> pylabrobot.star.v1.DefineTipNeedleRequest
-	75,  // 103: pylabrobot.star.v1.STARService.ProbeLiquidHeights:input_type -> pylabrobot.star.v1.ProbeLiquidHeightsRequest
-	77,  // 104: pylabrobot.star.v1.STARService.ProbeLiquidVolumes:input_type -> pylabrobot.star.v1.ProbeLiquidVolumesRequest
-	79,  // 105: pylabrobot.star.v1.STARService.RequestTipPresence:input_type -> pylabrobot.star.v1.RequestTipPresenceRequest
-	81,  // 106: pylabrobot.star.v1.STARService.ChannelsSenseTipPresence:input_type -> pylabrobot.star.v1.ChannelsSenseTipPresenceRequest
-	83,  // 107: pylabrobot.star.v1.STARService.RequestPipHeightLastLld:input_type -> pylabrobot.star.v1.RequestPipHeightLastLldRequest
-	85,  // 108: pylabrobot.star.v1.STARService.RequestTadmStatus:input_type -> pylabrobot.star.v1.RequestTadmStatusRequest
-	87,  // 109: pylabrobot.star.v1.STARService.RequestVolumeInTip:input_type -> pylabrobot.star.v1.RequestVolumeInTipRequest
-	89,  // 110: pylabrobot.star.v1.STARService.RequestTipLenOnChannel:input_type -> pylabrobot.star.v1.RequestTipLenOnChannelRequest
-	91,  // 111: pylabrobot.star.v1.STARService.RequestProbeZPosition:input_type -> pylabrobot.star.v1.RequestProbeZPositionRequest
-	93,  // 112: pylabrobot.star.v1.STARService.ClldProbeZHeightUsingChannel:input_type -> pylabrobot.star.v1.ClldProbeZHeightUsingChannelRequest
-	95,  // 113: pylabrobot.star.v1.STARService.PlldProbeZHeightUsingChannel:input_type -> pylabrobot.star.v1.PlldProbeZHeightUsingChannelRequest
-	97,  // 114: pylabrobot.star.v1.STARService.ZtouchProbeZHeightUsingChannel:input_type -> pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelRequest
-	99,  // 115: pylabrobot.star.v1.STARService.PierceFoil:input_type -> pylabrobot.star.v1.PierceFoilRequest
-	101, // 116: pylabrobot.star.v1.STARService.PierceFoilHighLevel:input_type -> pylabrobot.star.v1.PierceFoilHighLevelRequest
-	103, // 117: pylabrobot.star.v1.STARService.StepOffFoil:input_type -> pylabrobot.star.v1.StepOffFoilRequest
-	105, // 118: pylabrobot.star.v1.STARService.EmptyTip:input_type -> pylabrobot.star.v1.EmptyTipRequest
-	107, // 119: pylabrobot.star.v1.STARService.EmptyTips:input_type -> pylabrobot.star.v1.EmptyTipsRequest
-	109, // 120: pylabrobot.star.v1.STARService.MoveChannelX:input_type -> pylabrobot.star.v1.MoveChannelXRequest
-	111, // 121: pylabrobot.star.v1.STARService.MoveChannelY:input_type -> pylabrobot.star.v1.MoveChannelYRequest
-	113, // 122: pylabrobot.star.v1.STARService.MoveChannelZ:input_type -> pylabrobot.star.v1.MoveChannelZRequest
-	115, // 123: pylabrobot.star.v1.STARService.MoveChannelXRelative:input_type -> pylabrobot.star.v1.MoveChannelXRelativeRequest
-	117, // 124: pylabrobot.star.v1.STARService.MoveChannelYRelative:input_type -> pylabrobot.star.v1.MoveChannelYRelativeRequest
-	119, // 125: pylabrobot.star.v1.STARService.MoveChannelZRelative:input_type -> pylabrobot.star.v1.MoveChannelZRelativeRequest
-	121, // 126: pylabrobot.star.v1.STARService.PrepareForManualChannelOperation:input_type -> pylabrobot.star.v1.PrepareForManualChannelOperationRequest
-	123, // 127: pylabrobot.star.v1.STARService.MoveAllChannelsInZSafety:input_type -> pylabrobot.star.v1.MoveAllChannelsInZSafetyRequest
-	125, // 128: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInYDirection:input_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionRequest
-	127, // 129: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInZDirection:input_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionRequest
-	129, // 130: pylabrobot.star.v1.STARService.PositionMaxFreeYForN:input_type -> pylabrobot.star.v1.PositionMaxFreeYForNRequest
-	131, // 131: pylabrobot.star.v1.STARService.RequestXPosChannelN:input_type -> pylabrobot.star.v1.RequestXPosChannelNRequest
-	133, // 132: pylabrobot.star.v1.STARService.RequestYPosChannelN:input_type -> pylabrobot.star.v1.RequestYPosChannelNRequest
-	135, // 133: pylabrobot.star.v1.STARService.RequestZPosChannelN:input_type -> pylabrobot.star.v1.RequestZPosChannelNRequest
-	137, // 134: pylabrobot.star.v1.STARService.RequestTipBottomZPosition:input_type -> pylabrobot.star.v1.RequestTipBottomZPositionRequest
-	139, // 135: pylabrobot.star.v1.STARService.GetChannelsYPositions:input_type -> pylabrobot.star.v1.GetChannelsYPositionsRequest
-	141, // 136: pylabrobot.star.v1.STARService.PositionChannelsInYDirection:input_type -> pylabrobot.star.v1.PositionChannelsInYDirectionRequest
-	143, // 137: pylabrobot.star.v1.STARService.GetChannelsZPositions:input_type -> pylabrobot.star.v1.GetChannelsZPositionsRequest
-	145, // 138: pylabrobot.star.v1.STARService.PositionChannelsInZDirection:input_type -> pylabrobot.star.v1.PositionChannelsInZDirectionRequest
-	147, // 139: pylabrobot.star.v1.STARService.RequestPipChannelVersion:input_type -> pylabrobot.star.v1.RequestPipChannelVersionRequest
-	149, // 140: pylabrobot.star.v1.STARService.InitializeCore96Head:input_type -> pylabrobot.star.v1.InitializeCore96HeadRequest
-	151, // 141: pylabrobot.star.v1.STARService.RequestCore96HeadInitializationStatus:input_type -> pylabrobot.star.v1.RequestCore96HeadInitializationStatusRequest
-	153, // 142: pylabrobot.star.v1.STARService.Head96RequestFirmwareVersion:input_type -> pylabrobot.star.v1.Head96RequestFirmwareVersionRequest
-	155, // 143: pylabrobot.star.v1.STARService.Head96RequestType:input_type -> pylabrobot.star.v1.Head96RequestTypeRequest
-	157, // 144: pylabrobot.star.v1.STARService.Head96DispensingDriveAndSqueezerDriverInitialize:input_type -> pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeRequest
-	159, // 145: pylabrobot.star.v1.STARService.MoveCore96ToSafePosition:input_type -> pylabrobot.star.v1.MoveCore96ToSafePositionRequest
-	161, // 146: pylabrobot.star.v1.STARService.Head96MoveToZSafety:input_type -> pylabrobot.star.v1.Head96MoveToZSafetyRequest
-	163, // 147: pylabrobot.star.v1.STARService.Head96Park:input_type -> pylabrobot.star.v1.Head96ParkRequest
-	165, // 148: pylabrobot.star.v1.STARService.Head96MoveX:input_type -> pylabrobot.star.v1.Head96MoveXRequest
-	167, // 149: pylabrobot.star.v1.STARService.Head96MoveY:input_type -> pylabrobot.star.v1.Head96MoveYRequest
-	169, // 150: pylabrobot.star.v1.STARService.Head96MoveZ:input_type -> pylabrobot.star.v1.Head96MoveZRequest
-	171, // 151: pylabrobot.star.v1.STARService.MoveCore96HeadToDefinedPosition:input_type -> pylabrobot.star.v1.MoveCore96HeadToDefinedPositionRequest
-	173, // 152: pylabrobot.star.v1.STARService.Head96MoveToCoordinate:input_type -> pylabrobot.star.v1.Head96MoveToCoordinateRequest
-	175, // 153: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToHomeVolume:input_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeRequest
-	177, // 154: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToPosition:input_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToPositionRequest
-	179, // 155: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionMm:input_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmRequest
-	181, // 156: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionUl:input_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlRequest
-	183, // 157: pylabrobot.star.v1.STARService.Head96RequestTipPresence:input_type -> pylabrobot.star.v1.Head96RequestTipPresenceRequest
-	185, // 158: pylabrobot.star.v1.STARService.Head96RequestPosition:input_type -> pylabrobot.star.v1.Head96RequestPositionRequest
-	187, // 159: pylabrobot.star.v1.STARService.PickUpTipsCore96:input_type -> pylabrobot.star.v1.PickUpTipsCore96Request
-	189, // 160: pylabrobot.star.v1.STARService.DiscardTipsCore96:input_type -> pylabrobot.star.v1.DiscardTipsCore96Request
-	191, // 161: pylabrobot.star.v1.STARService.AspirateCore96:input_type -> pylabrobot.star.v1.AspirateCore96Request
-	193, // 162: pylabrobot.star.v1.STARService.DispenseCore96:input_type -> pylabrobot.star.v1.DispenseCore96Request
-	195, // 163: pylabrobot.star.v1.STARService.InitializeIswap:input_type -> pylabrobot.star.v1.InitializeIswapRequest
-	197, // 164: pylabrobot.star.v1.STARService.PositionComponentsForFreeIswapYRange:input_type -> pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeRequest
-	199, // 165: pylabrobot.star.v1.STARService.MoveIswapXRelative:input_type -> pylabrobot.star.v1.MoveIswapXRelativeRequest
-	201, // 166: pylabrobot.star.v1.STARService.MoveIswapYRelative:input_type -> pylabrobot.star.v1.MoveIswapYRelativeRequest
-	203, // 167: pylabrobot.star.v1.STARService.MoveIswapZRelative:input_type -> pylabrobot.star.v1.MoveIswapZRelativeRequest
-	205, // 168: pylabrobot.star.v1.STARService.MoveIswapX:input_type -> pylabrobot.star.v1.MoveIswapXRequest
-	207, // 169: pylabrobot.star.v1.STARService.MoveIswapY:input_type -> pylabrobot.star.v1.MoveIswapYRequest
-	209, // 170: pylabrobot.star.v1.STARService.MoveIswapZ:input_type -> pylabrobot.star.v1.MoveIswapZRequest
-	211, // 171: pylabrobot.star.v1.STARService.OpenNotInitializedGripper:input_type -> pylabrobot.star.v1.OpenNotInitializedGripperRequest
-	213, // 172: pylabrobot.star.v1.STARService.IswapOpenGripper:input_type -> pylabrobot.star.v1.IswapOpenGripperRequest
-	215, // 173: pylabrobot.star.v1.STARService.IswapCloseGripper:input_type -> pylabrobot.star.v1.IswapCloseGripperRequest
-	217, // 174: pylabrobot.star.v1.STARService.ParkIswap:input_type -> pylabrobot.star.v1.ParkIswapRequest
-	219, // 175: pylabrobot.star.v1.STARService.IswapGetPlate:input_type -> pylabrobot.star.v1.IswapGetPlateRequest
-	221, // 176: pylabrobot.star.v1.STARService.IswapPutPlate:input_type -> pylabrobot.star.v1.IswapPutPlateRequest
-	223, // 177: pylabrobot.star.v1.STARService.MovePlateToPosition:input_type -> pylabrobot.star.v1.MovePlateToPositionRequest
-	225, // 178: pylabrobot.star.v1.STARService.CollapseGripperArm:input_type -> pylabrobot.star.v1.CollapseGripperArmRequest
-	227, // 179: pylabrobot.star.v1.STARService.IswapRotate:input_type -> pylabrobot.star.v1.IswapRotateRequest
-	229, // 180: pylabrobot.star.v1.STARService.RotateIswapRotationDrive:input_type -> pylabrobot.star.v1.RotateIswapRotationDriveRequest
-	231, // 181: pylabrobot.star.v1.STARService.RotateIswapWrist:input_type -> pylabrobot.star.v1.RotateIswapWristRequest
-	233, // 182: pylabrobot.star.v1.STARService.IswapDangerousReleaseBreak:input_type -> pylabrobot.star.v1.IswapDangerousReleaseBreakRequest
-	235, // 183: pylabrobot.star.v1.STARService.IswapReengageBreak:input_type -> pylabrobot.star.v1.IswapReengageBreakRequest
-	237, // 184: pylabrobot.star.v1.STARService.IswapInitializeZAxis:input_type -> pylabrobot.star.v1.IswapInitializeZAxisRequest
-	239, // 185: pylabrobot.star.v1.STARService.RequestIswapRotationDrivePositionIncrements:input_type -> pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsRequest
-	241, // 186: pylabrobot.star.v1.STARService.RequestIswapRotationDriveOrientation:input_type -> pylabrobot.star.v1.RequestIswapRotationDriveOrientationRequest
-	243, // 187: pylabrobot.star.v1.STARService.RequestIswapWristDrivePositionIncrements:input_type -> pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsRequest
-	245, // 188: pylabrobot.star.v1.STARService.RequestIswapWristDriveOrientation:input_type -> pylabrobot.star.v1.RequestIswapWristDriveOrientationRequest
-	247, // 189: pylabrobot.star.v1.STARService.RequestIswapInParkingPosition:input_type -> pylabrobot.star.v1.RequestIswapInParkingPositionRequest
-	249, // 190: pylabrobot.star.v1.STARService.RequestPlateInIswap:input_type -> pylabrobot.star.v1.RequestPlateInIswapRequest
-	251, // 191: pylabrobot.star.v1.STARService.RequestIswapPosition:input_type -> pylabrobot.star.v1.RequestIswapPositionRequest
-	253, // 192: pylabrobot.star.v1.STARService.IswapRotationDriveRequestY:input_type -> pylabrobot.star.v1.IswapRotationDriveRequestYRequest
-	255, // 193: pylabrobot.star.v1.STARService.RequestIswapInitializationStatus:input_type -> pylabrobot.star.v1.RequestIswapInitializationStatusRequest
-	257, // 194: pylabrobot.star.v1.STARService.RequestIswapVersion:input_type -> pylabrobot.star.v1.RequestIswapVersionRequest
-	259, // 195: pylabrobot.star.v1.STARService.GetIswapVersion:input_type -> pylabrobot.star.v1.GetIswapVersionRequest
-	261, // 196: pylabrobot.star.v1.STARService.SlowIswap:input_type -> pylabrobot.star.v1.SlowIswapRequest
-	263, // 197: pylabrobot.star.v1.STARService.IswapMovePickedUpResource:input_type -> pylabrobot.star.v1.IswapMovePickedUpResourceRequest
-	265, // 198: pylabrobot.star.v1.STARService.PickUpResource:input_type -> pylabrobot.star.v1.PickUpResourceRequest
-	267, // 199: pylabrobot.star.v1.STARService.MovePickedUpResource:input_type -> pylabrobot.star.v1.MovePickedUpResourceRequest
-	269, // 200: pylabrobot.star.v1.STARService.DropResource:input_type -> pylabrobot.star.v1.DropResourceRequest
-	271, // 201: pylabrobot.star.v1.STARService.PickUpCoreGripperTools:input_type -> pylabrobot.star.v1.PickUpCoreGripperToolsRequest
-	273, // 202: pylabrobot.star.v1.STARService.ReturnCoreGripperTools:input_type -> pylabrobot.star.v1.ReturnCoreGripperToolsRequest
-	275, // 203: pylabrobot.star.v1.STARService.CoreOpenGripper:input_type -> pylabrobot.star.v1.CoreOpenGripperRequest
-	277, // 204: pylabrobot.star.v1.STARService.CoreGetPlate:input_type -> pylabrobot.star.v1.CoreGetPlateRequest
-	279, // 205: pylabrobot.star.v1.STARService.CorePutPlate:input_type -> pylabrobot.star.v1.CorePutPlateRequest
-	281, // 206: pylabrobot.star.v1.STARService.CoreMovePlateToPosition:input_type -> pylabrobot.star.v1.CoreMovePlateToPositionRequest
-	283, // 207: pylabrobot.star.v1.STARService.CorePickUpResource:input_type -> pylabrobot.star.v1.CorePickUpResourceRequest
-	285, // 208: pylabrobot.star.v1.STARService.CoreMovePickedUpResource:input_type -> pylabrobot.star.v1.CoreMovePickedUpResourceRequest
-	287, // 209: pylabrobot.star.v1.STARService.CoreReleasePickedUpResource:input_type -> pylabrobot.star.v1.CoreReleasePickedUpResourceRequest
-	289, // 210: pylabrobot.star.v1.STARService.CoreCheckResourceExistsAtLocationCenter:input_type -> pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest
-	291, // 211: pylabrobot.star.v1.STARService.GetCore:input_type -> pylabrobot.star.v1.GetCoreRequest
-	293, // 212: pylabrobot.star.v1.STARService.PutCore:input_type -> pylabrobot.star.v1.PutCoreRequest
-	295, // 213: pylabrobot.star.v1.STARService.CoreReadBarcodeOfPickedUpResource:input_type -> pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceRequest
-	297, // 214: pylabrobot.star.v1.STARService.InitializeAutoload:input_type -> pylabrobot.star.v1.InitializeAutoloadRequest
-	299, // 215: pylabrobot.star.v1.STARService.MoveAutoloadToSafeZPosition:input_type -> pylabrobot.star.v1.MoveAutoloadToSafeZPositionRequest
-	301, // 216: pylabrobot.star.v1.STARService.RequestAutoloadTrack:input_type -> pylabrobot.star.v1.RequestAutoloadTrackRequest
-	303, // 217: pylabrobot.star.v1.STARService.RequestAutoloadType:input_type -> pylabrobot.star.v1.RequestAutoloadTypeRequest
-	305, // 218: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnDeck:input_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckRequest
-	307, // 219: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnLoadingTray:input_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayRequest
-	309, // 220: pylabrobot.star.v1.STARService.RequestPresenceOfSingleCarrierOnLoadingTray:input_type -> pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayRequest
-	311, // 221: pylabrobot.star.v1.STARService.MoveAutoloadToSlot:input_type -> pylabrobot.star.v1.MoveAutoloadToSlotRequest
-	313, // 222: pylabrobot.star.v1.STARService.MoveAutoloadToTrack:input_type -> pylabrobot.star.v1.MoveAutoloadToTrackRequest
-	315, // 223: pylabrobot.star.v1.STARService.ParkAutoload:input_type -> pylabrobot.star.v1.ParkAutoloadRequest
-	317, // 224: pylabrobot.star.v1.STARService.TakeCarrierOutToAutoloadBelt:input_type -> pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltRequest
-	319, // 225: pylabrobot.star.v1.STARService.SetBarcodeType:input_type -> pylabrobot.star.v1.SetBarcodeTypeRequest
-	321, // 226: pylabrobot.star.v1.STARService.LoadCarrierFromTrayAndScanCarrierBarcode:input_type -> pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeRequest
-	325, // 227: pylabrobot.star.v1.STARService.SetCarrierMonitoring:input_type -> pylabrobot.star.v1.SetCarrierMonitoringRequest
-	327, // 228: pylabrobot.star.v1.STARService.LoadCarrier:input_type -> pylabrobot.star.v1.LoadCarrierRequest
-	329, // 229: pylabrobot.star.v1.STARService.SetLoadingIndicators:input_type -> pylabrobot.star.v1.SetLoadingIndicatorsRequest
-	331, // 230: pylabrobot.star.v1.STARService.UnloadCarrier:input_type -> pylabrobot.star.v1.UnloadCarrierRequest
-	333, // 231: pylabrobot.star.v1.STARService.RequestInstrumentInitializationStatus:input_type -> pylabrobot.star.v1.RequestInstrumentInitializationStatusRequest
-	335, // 232: pylabrobot.star.v1.STARService.RequestAutoloadInitializationStatus:input_type -> pylabrobot.star.v1.RequestAutoloadInitializationStatusRequest
-	337, // 233: pylabrobot.star.v1.STARService.LockCover:input_type -> pylabrobot.star.v1.LockCoverRequest
-	339, // 234: pylabrobot.star.v1.STARService.UnlockCover:input_type -> pylabrobot.star.v1.UnlockCoverRequest
-	341, // 235: pylabrobot.star.v1.STARService.DisableCoverControl:input_type -> pylabrobot.star.v1.DisableCoverControlRequest
-	343, // 236: pylabrobot.star.v1.STARService.EnableCoverControl:input_type -> pylabrobot.star.v1.EnableCoverControlRequest
-	345, // 237: pylabrobot.star.v1.STARService.SetCoverOutput:input_type -> pylabrobot.star.v1.SetCoverOutputRequest
-	347, // 238: pylabrobot.star.v1.STARService.ResetOutput:input_type -> pylabrobot.star.v1.ResetOutputRequest
-	349, // 239: pylabrobot.star.v1.STARService.RequestCoverOpen:input_type -> pylabrobot.star.v1.RequestCoverOpenRequest
-	351, // 240: pylabrobot.star.v1.STARService.SendHhsCommand:input_type -> pylabrobot.star.v1.SendHhsCommandRequest
-	353, // 241: pylabrobot.star.v1.STARService.CheckTypeIsHhc:input_type -> pylabrobot.star.v1.CheckTypeIsHhcRequest
-	355, // 242: pylabrobot.star.v1.STARService.InitializeHhc:input_type -> pylabrobot.star.v1.InitializeHhcRequest
-	357, // 243: pylabrobot.star.v1.STARService.StartTemperatureControlAtHhc:input_type -> pylabrobot.star.v1.StartTemperatureControlAtHhcRequest
-	359, // 244: pylabrobot.star.v1.STARService.GetTemperatureAtHhc:input_type -> pylabrobot.star.v1.GetTemperatureAtHhcRequest
-	361, // 245: pylabrobot.star.v1.STARService.QueryWhetherTemperatureReachedAtHhc:input_type -> pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcRequest
-	363, // 246: pylabrobot.star.v1.STARService.StopTemperatureControlAtHhc:input_type -> pylabrobot.star.v1.StopTemperatureControlAtHhcRequest
-	365, // 247: pylabrobot.star.v1.STARService.RequestFirmwareVersion:input_type -> pylabrobot.star.v1.RequestFirmwareVersionRequest
-	367, // 248: pylabrobot.star.v1.STARService.RequestErrorCode:input_type -> pylabrobot.star.v1.RequestErrorCodeRequest
-	371, // 249: pylabrobot.star.v1.STARService.RequestDeviceSerialNumber:input_type -> pylabrobot.star.v1.RequestDeviceSerialNumberRequest
-	373, // 250: pylabrobot.star.v1.STARService.RequestMasterStatus:input_type -> pylabrobot.star.v1.RequestMasterStatusRequest
-	377, // 251: pylabrobot.star.v1.STARService.SetSingleStepMode:input_type -> pylabrobot.star.v1.SetSingleStepModeRequest
-	379, // 252: pylabrobot.star.v1.STARService.TriggerNextStep:input_type -> pylabrobot.star.v1.TriggerNextStepRequest
-	381, // 253: pylabrobot.star.v1.STARService.Halt:input_type -> pylabrobot.star.v1.HaltRequest
-	383, // 254: pylabrobot.star.v1.STARService.SaveAllCycleCounters:input_type -> pylabrobot.star.v1.SaveAllCycleCountersRequest
-	385, // 255: pylabrobot.star.v1.STARService.SetNotStop:input_type -> pylabrobot.star.v1.SetNotStopRequest
-	387, // 256: pylabrobot.star.v1.STARService.ConfigureNodeNames:input_type -> pylabrobot.star.v1.ConfigureNodeNamesRequest
-	389, // 257: pylabrobot.star.v1.STARService.SetDeckData:input_type -> pylabrobot.star.v1.SetDeckDataRequest
-	391, // 258: pylabrobot.star.v1.STARService.PositionLeftXArm:input_type -> pylabrobot.star.v1.PositionLeftXArmRequest
-	393, // 259: pylabrobot.star.v1.STARService.PositionRightXArm:input_type -> pylabrobot.star.v1.PositionRightXArmRequest
-	395, // 260: pylabrobot.star.v1.STARService.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPosition:input_type -> pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
-	397, // 261: pylabrobot.star.v1.STARService.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPosition:input_type -> pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
-	399, // 262: pylabrobot.star.v1.STARService.RequestLeftXArmPosition:input_type -> pylabrobot.star.v1.RequestLeftXArmPositionRequest
-	401, // 263: pylabrobot.star.v1.STARService.RequestRightXArmPosition:input_type -> pylabrobot.star.v1.RequestRightXArmPositionRequest
-	403, // 264: pylabrobot.star.v1.STARService.RequestRightXArmLastCollisionType:input_type -> pylabrobot.star.v1.RequestRightXArmLastCollisionTypeRequest
-	405, // 265: pylabrobot.star.v1.STARService.RequestPumpSettings:input_type -> pylabrobot.star.v1.RequestPumpSettingsRequest
-	407, // 266: pylabrobot.star.v1.STARService.InitializeDualPumpStationValves:input_type -> pylabrobot.star.v1.InitializeDualPumpStationValvesRequest
-	409, // 267: pylabrobot.star.v1.STARService.DrainDualChamberSystem:input_type -> pylabrobot.star.v1.DrainDualChamberSystemRequest
-	411, // 268: pylabrobot.star.v1.STARService.ViolentlyShootDownTip:input_type -> pylabrobot.star.v1.ViolentlyShootDownTipRequest
-	413, // 269: pylabrobot.star.v1.STARService.CanPickUpTip:input_type -> pylabrobot.star.v1.CanPickUpTipRequest
-	28,  // 270: pylabrobot.star.v1.STARService.Setup:output_type -> pylabrobot.star.v1.SetupResponse
-	30,  // 271: pylabrobot.star.v1.STARService.Stop:output_type -> pylabrobot.star.v1.StopResponse
-	32,  // 272: pylabrobot.star.v1.STARService.GetNumChannels:output_type -> pylabrobot.star.v1.GetNumChannelsResponse
-	34,  // 273: pylabrobot.star.v1.STARService.GetHead96Installed:output_type -> pylabrobot.star.v1.GetHead96InstalledResponse
-	36,  // 274: pylabrobot.star.v1.STARService.GetIswapInstalled:output_type -> pylabrobot.star.v1.GetIswapInstalledResponse
-	38,  // 275: pylabrobot.star.v1.STARService.GetIswapParked:output_type -> pylabrobot.star.v1.GetIswapParkedResponse
-	40,  // 276: pylabrobot.star.v1.STARService.GetCoreParked:output_type -> pylabrobot.star.v1.GetCoreParkedResponse
-	42,  // 277: pylabrobot.star.v1.STARService.PickUpTips:output_type -> pylabrobot.star.v1.PickUpTipsResponse
-	44,  // 278: pylabrobot.star.v1.STARService.DropTips:output_type -> pylabrobot.star.v1.DropTipsResponse
-	46,  // 279: pylabrobot.star.v1.STARService.Aspirate:output_type -> pylabrobot.star.v1.AspirateResponse
-	48,  // 280: pylabrobot.star.v1.STARService.Dispense:output_type -> pylabrobot.star.v1.DispenseResponse
-	50,  // 281: pylabrobot.star.v1.STARService.PickUpTips96:output_type -> pylabrobot.star.v1.PickUpTips96Response
-	52,  // 282: pylabrobot.star.v1.STARService.DropTips96:output_type -> pylabrobot.star.v1.DropTips96Response
-	54,  // 283: pylabrobot.star.v1.STARService.Aspirate96:output_type -> pylabrobot.star.v1.Aspirate96Response
-	56,  // 284: pylabrobot.star.v1.STARService.Dispense96:output_type -> pylabrobot.star.v1.Dispense96Response
-	58,  // 285: pylabrobot.star.v1.STARService.InitializePip:output_type -> pylabrobot.star.v1.InitializePipResponse
-	60,  // 286: pylabrobot.star.v1.STARService.InitializePipettingChannels:output_type -> pylabrobot.star.v1.InitializePipettingChannelsResponse
-	62,  // 287: pylabrobot.star.v1.STARService.PickUpTipFw:output_type -> pylabrobot.star.v1.PickUpTipFwResponse
-	64,  // 288: pylabrobot.star.v1.STARService.DiscardTipFw:output_type -> pylabrobot.star.v1.DiscardTipFwResponse
-	66,  // 289: pylabrobot.star.v1.STARService.AspiratePip:output_type -> pylabrobot.star.v1.AspiratePipResponse
-	68,  // 290: pylabrobot.star.v1.STARService.DispensePip:output_type -> pylabrobot.star.v1.DispensePipResponse
-	70,  // 291: pylabrobot.star.v1.STARService.SpreadPipChannels:output_type -> pylabrobot.star.v1.SpreadPipChannelsResponse
-	72,  // 292: pylabrobot.star.v1.STARService.MoveAllPipettingChannelsToDefinedPosition:output_type -> pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionResponse
-	74,  // 293: pylabrobot.star.v1.STARService.DefineTipNeedle:output_type -> pylabrobot.star.v1.DefineTipNeedleResponse
-	76,  // 294: pylabrobot.star.v1.STARService.ProbeLiquidHeights:output_type -> pylabrobot.star.v1.ProbeLiquidHeightsResponse
-	78,  // 295: pylabrobot.star.v1.STARService.ProbeLiquidVolumes:output_type -> pylabrobot.star.v1.ProbeLiquidVolumesResponse
-	80,  // 296: pylabrobot.star.v1.STARService.RequestTipPresence:output_type -> pylabrobot.star.v1.RequestTipPresenceResponse
-	82,  // 297: pylabrobot.star.v1.STARService.ChannelsSenseTipPresence:output_type -> pylabrobot.star.v1.ChannelsSenseTipPresenceResponse
-	84,  // 298: pylabrobot.star.v1.STARService.RequestPipHeightLastLld:output_type -> pylabrobot.star.v1.RequestPipHeightLastLldResponse
-	86,  // 299: pylabrobot.star.v1.STARService.RequestTadmStatus:output_type -> pylabrobot.star.v1.RequestTadmStatusResponse
-	88,  // 300: pylabrobot.star.v1.STARService.RequestVolumeInTip:output_type -> pylabrobot.star.v1.RequestVolumeInTipResponse
-	90,  // 301: pylabrobot.star.v1.STARService.RequestTipLenOnChannel:output_type -> pylabrobot.star.v1.RequestTipLenOnChannelResponse
-	92,  // 302: pylabrobot.star.v1.STARService.RequestProbeZPosition:output_type -> pylabrobot.star.v1.RequestProbeZPositionResponse
-	94,  // 303: pylabrobot.star.v1.STARService.ClldProbeZHeightUsingChannel:output_type -> pylabrobot.star.v1.ClldProbeZHeightUsingChannelResponse
-	96,  // 304: pylabrobot.star.v1.STARService.PlldProbeZHeightUsingChannel:output_type -> pylabrobot.star.v1.PlldProbeZHeightUsingChannelResponse
-	98,  // 305: pylabrobot.star.v1.STARService.ZtouchProbeZHeightUsingChannel:output_type -> pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelResponse
-	100, // 306: pylabrobot.star.v1.STARService.PierceFoil:output_type -> pylabrobot.star.v1.PierceFoilResponse
-	102, // 307: pylabrobot.star.v1.STARService.PierceFoilHighLevel:output_type -> pylabrobot.star.v1.PierceFoilHighLevelResponse
-	104, // 308: pylabrobot.star.v1.STARService.StepOffFoil:output_type -> pylabrobot.star.v1.StepOffFoilResponse
-	106, // 309: pylabrobot.star.v1.STARService.EmptyTip:output_type -> pylabrobot.star.v1.EmptyTipResponse
-	108, // 310: pylabrobot.star.v1.STARService.EmptyTips:output_type -> pylabrobot.star.v1.EmptyTipsResponse
-	110, // 311: pylabrobot.star.v1.STARService.MoveChannelX:output_type -> pylabrobot.star.v1.MoveChannelXResponse
-	112, // 312: pylabrobot.star.v1.STARService.MoveChannelY:output_type -> pylabrobot.star.v1.MoveChannelYResponse
-	114, // 313: pylabrobot.star.v1.STARService.MoveChannelZ:output_type -> pylabrobot.star.v1.MoveChannelZResponse
-	116, // 314: pylabrobot.star.v1.STARService.MoveChannelXRelative:output_type -> pylabrobot.star.v1.MoveChannelXRelativeResponse
-	118, // 315: pylabrobot.star.v1.STARService.MoveChannelYRelative:output_type -> pylabrobot.star.v1.MoveChannelYRelativeResponse
-	120, // 316: pylabrobot.star.v1.STARService.MoveChannelZRelative:output_type -> pylabrobot.star.v1.MoveChannelZRelativeResponse
-	122, // 317: pylabrobot.star.v1.STARService.PrepareForManualChannelOperation:output_type -> pylabrobot.star.v1.PrepareForManualChannelOperationResponse
-	124, // 318: pylabrobot.star.v1.STARService.MoveAllChannelsInZSafety:output_type -> pylabrobot.star.v1.MoveAllChannelsInZSafetyResponse
-	126, // 319: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInYDirection:output_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionResponse
-	128, // 320: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInZDirection:output_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionResponse
-	130, // 321: pylabrobot.star.v1.STARService.PositionMaxFreeYForN:output_type -> pylabrobot.star.v1.PositionMaxFreeYForNResponse
-	132, // 322: pylabrobot.star.v1.STARService.RequestXPosChannelN:output_type -> pylabrobot.star.v1.RequestXPosChannelNResponse
-	134, // 323: pylabrobot.star.v1.STARService.RequestYPosChannelN:output_type -> pylabrobot.star.v1.RequestYPosChannelNResponse
-	136, // 324: pylabrobot.star.v1.STARService.RequestZPosChannelN:output_type -> pylabrobot.star.v1.RequestZPosChannelNResponse
-	138, // 325: pylabrobot.star.v1.STARService.RequestTipBottomZPosition:output_type -> pylabrobot.star.v1.RequestTipBottomZPositionResponse
-	140, // 326: pylabrobot.star.v1.STARService.GetChannelsYPositions:output_type -> pylabrobot.star.v1.GetChannelsYPositionsResponse
-	142, // 327: pylabrobot.star.v1.STARService.PositionChannelsInYDirection:output_type -> pylabrobot.star.v1.PositionChannelsInYDirectionResponse
-	144, // 328: pylabrobot.star.v1.STARService.GetChannelsZPositions:output_type -> pylabrobot.star.v1.GetChannelsZPositionsResponse
-	146, // 329: pylabrobot.star.v1.STARService.PositionChannelsInZDirection:output_type -> pylabrobot.star.v1.PositionChannelsInZDirectionResponse
-	148, // 330: pylabrobot.star.v1.STARService.RequestPipChannelVersion:output_type -> pylabrobot.star.v1.RequestPipChannelVersionResponse
-	150, // 331: pylabrobot.star.v1.STARService.InitializeCore96Head:output_type -> pylabrobot.star.v1.InitializeCore96HeadResponse
-	152, // 332: pylabrobot.star.v1.STARService.RequestCore96HeadInitializationStatus:output_type -> pylabrobot.star.v1.RequestCore96HeadInitializationStatusResponse
-	154, // 333: pylabrobot.star.v1.STARService.Head96RequestFirmwareVersion:output_type -> pylabrobot.star.v1.Head96RequestFirmwareVersionResponse
-	156, // 334: pylabrobot.star.v1.STARService.Head96RequestType:output_type -> pylabrobot.star.v1.Head96RequestTypeResponse
-	158, // 335: pylabrobot.star.v1.STARService.Head96DispensingDriveAndSqueezerDriverInitialize:output_type -> pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeResponse
-	160, // 336: pylabrobot.star.v1.STARService.MoveCore96ToSafePosition:output_type -> pylabrobot.star.v1.MoveCore96ToSafePositionResponse
-	162, // 337: pylabrobot.star.v1.STARService.Head96MoveToZSafety:output_type -> pylabrobot.star.v1.Head96MoveToZSafetyResponse
-	164, // 338: pylabrobot.star.v1.STARService.Head96Park:output_type -> pylabrobot.star.v1.Head96ParkResponse
-	166, // 339: pylabrobot.star.v1.STARService.Head96MoveX:output_type -> pylabrobot.star.v1.Head96MoveXResponse
-	168, // 340: pylabrobot.star.v1.STARService.Head96MoveY:output_type -> pylabrobot.star.v1.Head96MoveYResponse
-	170, // 341: pylabrobot.star.v1.STARService.Head96MoveZ:output_type -> pylabrobot.star.v1.Head96MoveZResponse
-	172, // 342: pylabrobot.star.v1.STARService.MoveCore96HeadToDefinedPosition:output_type -> pylabrobot.star.v1.MoveCore96HeadToDefinedPositionResponse
-	174, // 343: pylabrobot.star.v1.STARService.Head96MoveToCoordinate:output_type -> pylabrobot.star.v1.Head96MoveToCoordinateResponse
-	176, // 344: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToHomeVolume:output_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeResponse
-	178, // 345: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToPosition:output_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToPositionResponse
-	180, // 346: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionMm:output_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmResponse
-	182, // 347: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionUl:output_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlResponse
-	184, // 348: pylabrobot.star.v1.STARService.Head96RequestTipPresence:output_type -> pylabrobot.star.v1.Head96RequestTipPresenceResponse
-	186, // 349: pylabrobot.star.v1.STARService.Head96RequestPosition:output_type -> pylabrobot.star.v1.Head96RequestPositionResponse
-	188, // 350: pylabrobot.star.v1.STARService.PickUpTipsCore96:output_type -> pylabrobot.star.v1.PickUpTipsCore96Response
-	190, // 351: pylabrobot.star.v1.STARService.DiscardTipsCore96:output_type -> pylabrobot.star.v1.DiscardTipsCore96Response
-	192, // 352: pylabrobot.star.v1.STARService.AspirateCore96:output_type -> pylabrobot.star.v1.AspirateCore96Response
-	194, // 353: pylabrobot.star.v1.STARService.DispenseCore96:output_type -> pylabrobot.star.v1.DispenseCore96Response
-	196, // 354: pylabrobot.star.v1.STARService.InitializeIswap:output_type -> pylabrobot.star.v1.InitializeIswapResponse
-	198, // 355: pylabrobot.star.v1.STARService.PositionComponentsForFreeIswapYRange:output_type -> pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeResponse
-	200, // 356: pylabrobot.star.v1.STARService.MoveIswapXRelative:output_type -> pylabrobot.star.v1.MoveIswapXRelativeResponse
-	202, // 357: pylabrobot.star.v1.STARService.MoveIswapYRelative:output_type -> pylabrobot.star.v1.MoveIswapYRelativeResponse
-	204, // 358: pylabrobot.star.v1.STARService.MoveIswapZRelative:output_type -> pylabrobot.star.v1.MoveIswapZRelativeResponse
-	206, // 359: pylabrobot.star.v1.STARService.MoveIswapX:output_type -> pylabrobot.star.v1.MoveIswapXResponse
-	208, // 360: pylabrobot.star.v1.STARService.MoveIswapY:output_type -> pylabrobot.star.v1.MoveIswapYResponse
-	210, // 361: pylabrobot.star.v1.STARService.MoveIswapZ:output_type -> pylabrobot.star.v1.MoveIswapZResponse
-	212, // 362: pylabrobot.star.v1.STARService.OpenNotInitializedGripper:output_type -> pylabrobot.star.v1.OpenNotInitializedGripperResponse
-	214, // 363: pylabrobot.star.v1.STARService.IswapOpenGripper:output_type -> pylabrobot.star.v1.IswapOpenGripperResponse
-	216, // 364: pylabrobot.star.v1.STARService.IswapCloseGripper:output_type -> pylabrobot.star.v1.IswapCloseGripperResponse
-	218, // 365: pylabrobot.star.v1.STARService.ParkIswap:output_type -> pylabrobot.star.v1.ParkIswapResponse
-	220, // 366: pylabrobot.star.v1.STARService.IswapGetPlate:output_type -> pylabrobot.star.v1.IswapGetPlateResponse
-	222, // 367: pylabrobot.star.v1.STARService.IswapPutPlate:output_type -> pylabrobot.star.v1.IswapPutPlateResponse
-	224, // 368: pylabrobot.star.v1.STARService.MovePlateToPosition:output_type -> pylabrobot.star.v1.MovePlateToPositionResponse
-	226, // 369: pylabrobot.star.v1.STARService.CollapseGripperArm:output_type -> pylabrobot.star.v1.CollapseGripperArmResponse
-	228, // 370: pylabrobot.star.v1.STARService.IswapRotate:output_type -> pylabrobot.star.v1.IswapRotateResponse
-	230, // 371: pylabrobot.star.v1.STARService.RotateIswapRotationDrive:output_type -> pylabrobot.star.v1.RotateIswapRotationDriveResponse
-	232, // 372: pylabrobot.star.v1.STARService.RotateIswapWrist:output_type -> pylabrobot.star.v1.RotateIswapWristResponse
-	234, // 373: pylabrobot.star.v1.STARService.IswapDangerousReleaseBreak:output_type -> pylabrobot.star.v1.IswapDangerousReleaseBreakResponse
-	236, // 374: pylabrobot.star.v1.STARService.IswapReengageBreak:output_type -> pylabrobot.star.v1.IswapReengageBreakResponse
-	238, // 375: pylabrobot.star.v1.STARService.IswapInitializeZAxis:output_type -> pylabrobot.star.v1.IswapInitializeZAxisResponse
-	240, // 376: pylabrobot.star.v1.STARService.RequestIswapRotationDrivePositionIncrements:output_type -> pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsResponse
-	242, // 377: pylabrobot.star.v1.STARService.RequestIswapRotationDriveOrientation:output_type -> pylabrobot.star.v1.RequestIswapRotationDriveOrientationResponse
-	244, // 378: pylabrobot.star.v1.STARService.RequestIswapWristDrivePositionIncrements:output_type -> pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsResponse
-	246, // 379: pylabrobot.star.v1.STARService.RequestIswapWristDriveOrientation:output_type -> pylabrobot.star.v1.RequestIswapWristDriveOrientationResponse
-	248, // 380: pylabrobot.star.v1.STARService.RequestIswapInParkingPosition:output_type -> pylabrobot.star.v1.RequestIswapInParkingPositionResponse
-	250, // 381: pylabrobot.star.v1.STARService.RequestPlateInIswap:output_type -> pylabrobot.star.v1.RequestPlateInIswapResponse
-	252, // 382: pylabrobot.star.v1.STARService.RequestIswapPosition:output_type -> pylabrobot.star.v1.RequestIswapPositionResponse
-	254, // 383: pylabrobot.star.v1.STARService.IswapRotationDriveRequestY:output_type -> pylabrobot.star.v1.IswapRotationDriveRequestYResponse
-	256, // 384: pylabrobot.star.v1.STARService.RequestIswapInitializationStatus:output_type -> pylabrobot.star.v1.RequestIswapInitializationStatusResponse
-	258, // 385: pylabrobot.star.v1.STARService.RequestIswapVersion:output_type -> pylabrobot.star.v1.RequestIswapVersionResponse
-	260, // 386: pylabrobot.star.v1.STARService.GetIswapVersion:output_type -> pylabrobot.star.v1.GetIswapVersionResponse
-	262, // 387: pylabrobot.star.v1.STARService.SlowIswap:output_type -> pylabrobot.star.v1.SlowIswapResponse
-	264, // 388: pylabrobot.star.v1.STARService.IswapMovePickedUpResource:output_type -> pylabrobot.star.v1.IswapMovePickedUpResourceResponse
-	266, // 389: pylabrobot.star.v1.STARService.PickUpResource:output_type -> pylabrobot.star.v1.PickUpResourceResponse
-	268, // 390: pylabrobot.star.v1.STARService.MovePickedUpResource:output_type -> pylabrobot.star.v1.MovePickedUpResourceResponse
-	270, // 391: pylabrobot.star.v1.STARService.DropResource:output_type -> pylabrobot.star.v1.DropResourceResponse
-	272, // 392: pylabrobot.star.v1.STARService.PickUpCoreGripperTools:output_type -> pylabrobot.star.v1.PickUpCoreGripperToolsResponse
-	274, // 393: pylabrobot.star.v1.STARService.ReturnCoreGripperTools:output_type -> pylabrobot.star.v1.ReturnCoreGripperToolsResponse
-	276, // 394: pylabrobot.star.v1.STARService.CoreOpenGripper:output_type -> pylabrobot.star.v1.CoreOpenGripperResponse
-	278, // 395: pylabrobot.star.v1.STARService.CoreGetPlate:output_type -> pylabrobot.star.v1.CoreGetPlateResponse
-	280, // 396: pylabrobot.star.v1.STARService.CorePutPlate:output_type -> pylabrobot.star.v1.CorePutPlateResponse
-	282, // 397: pylabrobot.star.v1.STARService.CoreMovePlateToPosition:output_type -> pylabrobot.star.v1.CoreMovePlateToPositionResponse
-	284, // 398: pylabrobot.star.v1.STARService.CorePickUpResource:output_type -> pylabrobot.star.v1.CorePickUpResourceResponse
-	286, // 399: pylabrobot.star.v1.STARService.CoreMovePickedUpResource:output_type -> pylabrobot.star.v1.CoreMovePickedUpResourceResponse
-	288, // 400: pylabrobot.star.v1.STARService.CoreReleasePickedUpResource:output_type -> pylabrobot.star.v1.CoreReleasePickedUpResourceResponse
-	290, // 401: pylabrobot.star.v1.STARService.CoreCheckResourceExistsAtLocationCenter:output_type -> pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterResponse
-	292, // 402: pylabrobot.star.v1.STARService.GetCore:output_type -> pylabrobot.star.v1.GetCoreResponse
-	294, // 403: pylabrobot.star.v1.STARService.PutCore:output_type -> pylabrobot.star.v1.PutCoreResponse
-	296, // 404: pylabrobot.star.v1.STARService.CoreReadBarcodeOfPickedUpResource:output_type -> pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceResponse
-	298, // 405: pylabrobot.star.v1.STARService.InitializeAutoload:output_type -> pylabrobot.star.v1.InitializeAutoloadResponse
-	300, // 406: pylabrobot.star.v1.STARService.MoveAutoloadToSafeZPosition:output_type -> pylabrobot.star.v1.MoveAutoloadToSafeZPositionResponse
-	302, // 407: pylabrobot.star.v1.STARService.RequestAutoloadTrack:output_type -> pylabrobot.star.v1.RequestAutoloadTrackResponse
-	304, // 408: pylabrobot.star.v1.STARService.RequestAutoloadType:output_type -> pylabrobot.star.v1.RequestAutoloadTypeResponse
-	306, // 409: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnDeck:output_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckResponse
-	308, // 410: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnLoadingTray:output_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayResponse
-	310, // 411: pylabrobot.star.v1.STARService.RequestPresenceOfSingleCarrierOnLoadingTray:output_type -> pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayResponse
-	312, // 412: pylabrobot.star.v1.STARService.MoveAutoloadToSlot:output_type -> pylabrobot.star.v1.MoveAutoloadToSlotResponse
-	314, // 413: pylabrobot.star.v1.STARService.MoveAutoloadToTrack:output_type -> pylabrobot.star.v1.MoveAutoloadToTrackResponse
-	316, // 414: pylabrobot.star.v1.STARService.ParkAutoload:output_type -> pylabrobot.star.v1.ParkAutoloadResponse
-	318, // 415: pylabrobot.star.v1.STARService.TakeCarrierOutToAutoloadBelt:output_type -> pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltResponse
-	320, // 416: pylabrobot.star.v1.STARService.SetBarcodeType:output_type -> pylabrobot.star.v1.SetBarcodeTypeResponse
-	322, // 417: pylabrobot.star.v1.STARService.LoadCarrierFromTrayAndScanCarrierBarcode:output_type -> pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeResponse
-	326, // 418: pylabrobot.star.v1.STARService.SetCarrierMonitoring:output_type -> pylabrobot.star.v1.SetCarrierMonitoringResponse
-	328, // 419: pylabrobot.star.v1.STARService.LoadCarrier:output_type -> pylabrobot.star.v1.LoadCarrierResponse
-	330, // 420: pylabrobot.star.v1.STARService.SetLoadingIndicators:output_type -> pylabrobot.star.v1.SetLoadingIndicatorsResponse
-	332, // 421: pylabrobot.star.v1.STARService.UnloadCarrier:output_type -> pylabrobot.star.v1.UnloadCarrierResponse
-	334, // 422: pylabrobot.star.v1.STARService.RequestInstrumentInitializationStatus:output_type -> pylabrobot.star.v1.RequestInstrumentInitializationStatusResponse
-	336, // 423: pylabrobot.star.v1.STARService.RequestAutoloadInitializationStatus:output_type -> pylabrobot.star.v1.RequestAutoloadInitializationStatusResponse
-	338, // 424: pylabrobot.star.v1.STARService.LockCover:output_type -> pylabrobot.star.v1.LockCoverResponse
-	340, // 425: pylabrobot.star.v1.STARService.UnlockCover:output_type -> pylabrobot.star.v1.UnlockCoverResponse
-	342, // 426: pylabrobot.star.v1.STARService.DisableCoverControl:output_type -> pylabrobot.star.v1.DisableCoverControlResponse
-	344, // 427: pylabrobot.star.v1.STARService.EnableCoverControl:output_type -> pylabrobot.star.v1.EnableCoverControlResponse
-	346, // 428: pylabrobot.star.v1.STARService.SetCoverOutput:output_type -> pylabrobot.star.v1.SetCoverOutputResponse
-	348, // 429: pylabrobot.star.v1.STARService.ResetOutput:output_type -> pylabrobot.star.v1.ResetOutputResponse
-	350, // 430: pylabrobot.star.v1.STARService.RequestCoverOpen:output_type -> pylabrobot.star.v1.RequestCoverOpenResponse
-	352, // 431: pylabrobot.star.v1.STARService.SendHhsCommand:output_type -> pylabrobot.star.v1.SendHhsCommandResponse
-	354, // 432: pylabrobot.star.v1.STARService.CheckTypeIsHhc:output_type -> pylabrobot.star.v1.CheckTypeIsHhcResponse
-	356, // 433: pylabrobot.star.v1.STARService.InitializeHhc:output_type -> pylabrobot.star.v1.InitializeHhcResponse
-	358, // 434: pylabrobot.star.v1.STARService.StartTemperatureControlAtHhc:output_type -> pylabrobot.star.v1.StartTemperatureControlAtHhcResponse
-	360, // 435: pylabrobot.star.v1.STARService.GetTemperatureAtHhc:output_type -> pylabrobot.star.v1.GetTemperatureAtHhcResponse
-	362, // 436: pylabrobot.star.v1.STARService.QueryWhetherTemperatureReachedAtHhc:output_type -> pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcResponse
-	364, // 437: pylabrobot.star.v1.STARService.StopTemperatureControlAtHhc:output_type -> pylabrobot.star.v1.StopTemperatureControlAtHhcResponse
-	366, // 438: pylabrobot.star.v1.STARService.RequestFirmwareVersion:output_type -> pylabrobot.star.v1.RequestFirmwareVersionResponse
-	368, // 439: pylabrobot.star.v1.STARService.RequestErrorCode:output_type -> pylabrobot.star.v1.RequestErrorCodeResponse
-	372, // 440: pylabrobot.star.v1.STARService.RequestDeviceSerialNumber:output_type -> pylabrobot.star.v1.RequestDeviceSerialNumberResponse
-	374, // 441: pylabrobot.star.v1.STARService.RequestMasterStatus:output_type -> pylabrobot.star.v1.RequestMasterStatusResponse
-	378, // 442: pylabrobot.star.v1.STARService.SetSingleStepMode:output_type -> pylabrobot.star.v1.SetSingleStepModeResponse
-	380, // 443: pylabrobot.star.v1.STARService.TriggerNextStep:output_type -> pylabrobot.star.v1.TriggerNextStepResponse
-	382, // 444: pylabrobot.star.v1.STARService.Halt:output_type -> pylabrobot.star.v1.HaltResponse
-	384, // 445: pylabrobot.star.v1.STARService.SaveAllCycleCounters:output_type -> pylabrobot.star.v1.SaveAllCycleCountersResponse
-	386, // 446: pylabrobot.star.v1.STARService.SetNotStop:output_type -> pylabrobot.star.v1.SetNotStopResponse
-	388, // 447: pylabrobot.star.v1.STARService.ConfigureNodeNames:output_type -> pylabrobot.star.v1.ConfigureNodeNamesResponse
-	390, // 448: pylabrobot.star.v1.STARService.SetDeckData:output_type -> pylabrobot.star.v1.SetDeckDataResponse
-	392, // 449: pylabrobot.star.v1.STARService.PositionLeftXArm:output_type -> pylabrobot.star.v1.PositionLeftXArmResponse
-	394, // 450: pylabrobot.star.v1.STARService.PositionRightXArm:output_type -> pylabrobot.star.v1.PositionRightXArmResponse
-	396, // 451: pylabrobot.star.v1.STARService.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPosition:output_type -> pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
-	398, // 452: pylabrobot.star.v1.STARService.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPosition:output_type -> pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
-	400, // 453: pylabrobot.star.v1.STARService.RequestLeftXArmPosition:output_type -> pylabrobot.star.v1.RequestLeftXArmPositionResponse
-	402, // 454: pylabrobot.star.v1.STARService.RequestRightXArmPosition:output_type -> pylabrobot.star.v1.RequestRightXArmPositionResponse
-	404, // 455: pylabrobot.star.v1.STARService.RequestRightXArmLastCollisionType:output_type -> pylabrobot.star.v1.RequestRightXArmLastCollisionTypeResponse
-	406, // 456: pylabrobot.star.v1.STARService.RequestPumpSettings:output_type -> pylabrobot.star.v1.RequestPumpSettingsResponse
-	408, // 457: pylabrobot.star.v1.STARService.InitializeDualPumpStationValves:output_type -> pylabrobot.star.v1.InitializeDualPumpStationValvesResponse
-	410, // 458: pylabrobot.star.v1.STARService.DrainDualChamberSystem:output_type -> pylabrobot.star.v1.DrainDualChamberSystemResponse
-	412, // 459: pylabrobot.star.v1.STARService.ViolentlyShootDownTip:output_type -> pylabrobot.star.v1.ViolentlyShootDownTipResponse
-	414, // 460: pylabrobot.star.v1.STARService.CanPickUpTip:output_type -> pylabrobot.star.v1.CanPickUpTipResponse
+	20,  // 66: pylabrobot.star.v1.PickUpResourceRequest.pickup:type_name -> pylabrobot.star.v1.ResourcePickupOp
+	21,  // 67: pylabrobot.star.v1.MovePickedUpResourceRequest.move:type_name -> pylabrobot.star.v1.ResourceMoveOp
+	22,  // 68: pylabrobot.star.v1.DropResourceRequest.drop:type_name -> pylabrobot.star.v1.ResourceDropOp
+	413, // 69: pylabrobot.star.v1.PickUpCoreGripperToolsRequest.front_offset:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 70: pylabrobot.star.v1.PickUpCoreGripperToolsRequest.back_offset:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 71: pylabrobot.star.v1.ReturnCoreGripperToolsRequest.front_offset:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 72: pylabrobot.star.v1.ReturnCoreGripperToolsRequest.back_offset:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 73: pylabrobot.star.v1.CorePickUpResourceRequest.offset:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 74: pylabrobot.star.v1.CoreMovePickedUpResourceRequest.center:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 75: pylabrobot.star.v1.CoreReleasePickedUpResourceRequest.location:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 76: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest.location:type_name -> pylabrobot.common.v1.Coordinate
+	413, // 77: pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest.offset:type_name -> pylabrobot.common.v1.Coordinate
+	8,   // 78: pylabrobot.star.v1.CanPickUpTipRequest.tip:type_name -> pylabrobot.star.v1.TipData
+	24,  // 79: pylabrobot.star.v1.STARService.Setup:input_type -> pylabrobot.star.v1.SetupRequest
+	26,  // 80: pylabrobot.star.v1.STARService.Stop:input_type -> pylabrobot.star.v1.StopRequest
+	28,  // 81: pylabrobot.star.v1.STARService.GetNumChannels:input_type -> pylabrobot.star.v1.GetNumChannelsRequest
+	30,  // 82: pylabrobot.star.v1.STARService.GetHead96Installed:input_type -> pylabrobot.star.v1.GetHead96InstalledRequest
+	32,  // 83: pylabrobot.star.v1.STARService.GetIswapInstalled:input_type -> pylabrobot.star.v1.GetIswapInstalledRequest
+	34,  // 84: pylabrobot.star.v1.STARService.GetIswapParked:input_type -> pylabrobot.star.v1.GetIswapParkedRequest
+	36,  // 85: pylabrobot.star.v1.STARService.GetCoreParked:input_type -> pylabrobot.star.v1.GetCoreParkedRequest
+	38,  // 86: pylabrobot.star.v1.STARService.PickUpTips:input_type -> pylabrobot.star.v1.PickUpTipsRequest
+	40,  // 87: pylabrobot.star.v1.STARService.DropTips:input_type -> pylabrobot.star.v1.DropTipsRequest
+	42,  // 88: pylabrobot.star.v1.STARService.Aspirate:input_type -> pylabrobot.star.v1.AspirateRequest
+	44,  // 89: pylabrobot.star.v1.STARService.Dispense:input_type -> pylabrobot.star.v1.DispenseRequest
+	46,  // 90: pylabrobot.star.v1.STARService.PickUpTips96:input_type -> pylabrobot.star.v1.PickUpTips96Request
+	48,  // 91: pylabrobot.star.v1.STARService.DropTips96:input_type -> pylabrobot.star.v1.DropTips96Request
+	50,  // 92: pylabrobot.star.v1.STARService.Aspirate96:input_type -> pylabrobot.star.v1.Aspirate96Request
+	52,  // 93: pylabrobot.star.v1.STARService.Dispense96:input_type -> pylabrobot.star.v1.Dispense96Request
+	54,  // 94: pylabrobot.star.v1.STARService.InitializePip:input_type -> pylabrobot.star.v1.InitializePipRequest
+	56,  // 95: pylabrobot.star.v1.STARService.InitializePipettingChannels:input_type -> pylabrobot.star.v1.InitializePipettingChannelsRequest
+	58,  // 96: pylabrobot.star.v1.STARService.PickUpTipFw:input_type -> pylabrobot.star.v1.PickUpTipFwRequest
+	60,  // 97: pylabrobot.star.v1.STARService.DiscardTipFw:input_type -> pylabrobot.star.v1.DiscardTipFwRequest
+	62,  // 98: pylabrobot.star.v1.STARService.AspiratePip:input_type -> pylabrobot.star.v1.AspiratePipRequest
+	64,  // 99: pylabrobot.star.v1.STARService.DispensePip:input_type -> pylabrobot.star.v1.DispensePipRequest
+	66,  // 100: pylabrobot.star.v1.STARService.SpreadPipChannels:input_type -> pylabrobot.star.v1.SpreadPipChannelsRequest
+	68,  // 101: pylabrobot.star.v1.STARService.MoveAllPipettingChannelsToDefinedPosition:input_type -> pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionRequest
+	70,  // 102: pylabrobot.star.v1.STARService.DefineTipNeedle:input_type -> pylabrobot.star.v1.DefineTipNeedleRequest
+	72,  // 103: pylabrobot.star.v1.STARService.ProbeLiquidHeights:input_type -> pylabrobot.star.v1.ProbeLiquidHeightsRequest
+	74,  // 104: pylabrobot.star.v1.STARService.ProbeLiquidVolumes:input_type -> pylabrobot.star.v1.ProbeLiquidVolumesRequest
+	76,  // 105: pylabrobot.star.v1.STARService.RequestTipPresence:input_type -> pylabrobot.star.v1.RequestTipPresenceRequest
+	78,  // 106: pylabrobot.star.v1.STARService.ChannelsSenseTipPresence:input_type -> pylabrobot.star.v1.ChannelsSenseTipPresenceRequest
+	80,  // 107: pylabrobot.star.v1.STARService.RequestPipHeightLastLld:input_type -> pylabrobot.star.v1.RequestPipHeightLastLldRequest
+	82,  // 108: pylabrobot.star.v1.STARService.RequestTadmStatus:input_type -> pylabrobot.star.v1.RequestTadmStatusRequest
+	84,  // 109: pylabrobot.star.v1.STARService.RequestVolumeInTip:input_type -> pylabrobot.star.v1.RequestVolumeInTipRequest
+	86,  // 110: pylabrobot.star.v1.STARService.RequestTipLenOnChannel:input_type -> pylabrobot.star.v1.RequestTipLenOnChannelRequest
+	88,  // 111: pylabrobot.star.v1.STARService.RequestProbeZPosition:input_type -> pylabrobot.star.v1.RequestProbeZPositionRequest
+	90,  // 112: pylabrobot.star.v1.STARService.ClldProbeZHeightUsingChannel:input_type -> pylabrobot.star.v1.ClldProbeZHeightUsingChannelRequest
+	92,  // 113: pylabrobot.star.v1.STARService.PlldProbeZHeightUsingChannel:input_type -> pylabrobot.star.v1.PlldProbeZHeightUsingChannelRequest
+	94,  // 114: pylabrobot.star.v1.STARService.ZtouchProbeZHeightUsingChannel:input_type -> pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelRequest
+	96,  // 115: pylabrobot.star.v1.STARService.PierceFoil:input_type -> pylabrobot.star.v1.PierceFoilRequest
+	98,  // 116: pylabrobot.star.v1.STARService.PierceFoilHighLevel:input_type -> pylabrobot.star.v1.PierceFoilHighLevelRequest
+	100, // 117: pylabrobot.star.v1.STARService.StepOffFoil:input_type -> pylabrobot.star.v1.StepOffFoilRequest
+	102, // 118: pylabrobot.star.v1.STARService.EmptyTip:input_type -> pylabrobot.star.v1.EmptyTipRequest
+	104, // 119: pylabrobot.star.v1.STARService.EmptyTips:input_type -> pylabrobot.star.v1.EmptyTipsRequest
+	106, // 120: pylabrobot.star.v1.STARService.MoveChannelX:input_type -> pylabrobot.star.v1.MoveChannelXRequest
+	108, // 121: pylabrobot.star.v1.STARService.MoveChannelY:input_type -> pylabrobot.star.v1.MoveChannelYRequest
+	110, // 122: pylabrobot.star.v1.STARService.MoveChannelZ:input_type -> pylabrobot.star.v1.MoveChannelZRequest
+	112, // 123: pylabrobot.star.v1.STARService.MoveChannelXRelative:input_type -> pylabrobot.star.v1.MoveChannelXRelativeRequest
+	114, // 124: pylabrobot.star.v1.STARService.MoveChannelYRelative:input_type -> pylabrobot.star.v1.MoveChannelYRelativeRequest
+	116, // 125: pylabrobot.star.v1.STARService.MoveChannelZRelative:input_type -> pylabrobot.star.v1.MoveChannelZRelativeRequest
+	118, // 126: pylabrobot.star.v1.STARService.PrepareForManualChannelOperation:input_type -> pylabrobot.star.v1.PrepareForManualChannelOperationRequest
+	120, // 127: pylabrobot.star.v1.STARService.MoveAllChannelsInZSafety:input_type -> pylabrobot.star.v1.MoveAllChannelsInZSafetyRequest
+	122, // 128: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInYDirection:input_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionRequest
+	124, // 129: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInZDirection:input_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionRequest
+	126, // 130: pylabrobot.star.v1.STARService.PositionMaxFreeYForN:input_type -> pylabrobot.star.v1.PositionMaxFreeYForNRequest
+	128, // 131: pylabrobot.star.v1.STARService.RequestXPosChannelN:input_type -> pylabrobot.star.v1.RequestXPosChannelNRequest
+	130, // 132: pylabrobot.star.v1.STARService.RequestYPosChannelN:input_type -> pylabrobot.star.v1.RequestYPosChannelNRequest
+	132, // 133: pylabrobot.star.v1.STARService.RequestZPosChannelN:input_type -> pylabrobot.star.v1.RequestZPosChannelNRequest
+	134, // 134: pylabrobot.star.v1.STARService.RequestTipBottomZPosition:input_type -> pylabrobot.star.v1.RequestTipBottomZPositionRequest
+	136, // 135: pylabrobot.star.v1.STARService.GetChannelsYPositions:input_type -> pylabrobot.star.v1.GetChannelsYPositionsRequest
+	138, // 136: pylabrobot.star.v1.STARService.PositionChannelsInYDirection:input_type -> pylabrobot.star.v1.PositionChannelsInYDirectionRequest
+	140, // 137: pylabrobot.star.v1.STARService.GetChannelsZPositions:input_type -> pylabrobot.star.v1.GetChannelsZPositionsRequest
+	142, // 138: pylabrobot.star.v1.STARService.PositionChannelsInZDirection:input_type -> pylabrobot.star.v1.PositionChannelsInZDirectionRequest
+	144, // 139: pylabrobot.star.v1.STARService.RequestPipChannelVersion:input_type -> pylabrobot.star.v1.RequestPipChannelVersionRequest
+	146, // 140: pylabrobot.star.v1.STARService.InitializeCore96Head:input_type -> pylabrobot.star.v1.InitializeCore96HeadRequest
+	148, // 141: pylabrobot.star.v1.STARService.RequestCore96HeadInitializationStatus:input_type -> pylabrobot.star.v1.RequestCore96HeadInitializationStatusRequest
+	150, // 142: pylabrobot.star.v1.STARService.Head96RequestFirmwareVersion:input_type -> pylabrobot.star.v1.Head96RequestFirmwareVersionRequest
+	152, // 143: pylabrobot.star.v1.STARService.Head96RequestType:input_type -> pylabrobot.star.v1.Head96RequestTypeRequest
+	154, // 144: pylabrobot.star.v1.STARService.Head96DispensingDriveAndSqueezerDriverInitialize:input_type -> pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeRequest
+	156, // 145: pylabrobot.star.v1.STARService.MoveCore96ToSafePosition:input_type -> pylabrobot.star.v1.MoveCore96ToSafePositionRequest
+	158, // 146: pylabrobot.star.v1.STARService.Head96MoveToZSafety:input_type -> pylabrobot.star.v1.Head96MoveToZSafetyRequest
+	160, // 147: pylabrobot.star.v1.STARService.Head96Park:input_type -> pylabrobot.star.v1.Head96ParkRequest
+	162, // 148: pylabrobot.star.v1.STARService.Head96MoveX:input_type -> pylabrobot.star.v1.Head96MoveXRequest
+	164, // 149: pylabrobot.star.v1.STARService.Head96MoveY:input_type -> pylabrobot.star.v1.Head96MoveYRequest
+	166, // 150: pylabrobot.star.v1.STARService.Head96MoveZ:input_type -> pylabrobot.star.v1.Head96MoveZRequest
+	168, // 151: pylabrobot.star.v1.STARService.MoveCore96HeadToDefinedPosition:input_type -> pylabrobot.star.v1.MoveCore96HeadToDefinedPositionRequest
+	170, // 152: pylabrobot.star.v1.STARService.Head96MoveToCoordinate:input_type -> pylabrobot.star.v1.Head96MoveToCoordinateRequest
+	172, // 153: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToHomeVolume:input_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeRequest
+	174, // 154: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToPosition:input_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToPositionRequest
+	176, // 155: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionMm:input_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmRequest
+	178, // 156: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionUl:input_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlRequest
+	180, // 157: pylabrobot.star.v1.STARService.Head96RequestTipPresence:input_type -> pylabrobot.star.v1.Head96RequestTipPresenceRequest
+	182, // 158: pylabrobot.star.v1.STARService.Head96RequestPosition:input_type -> pylabrobot.star.v1.Head96RequestPositionRequest
+	184, // 159: pylabrobot.star.v1.STARService.PickUpTipsCore96:input_type -> pylabrobot.star.v1.PickUpTipsCore96Request
+	186, // 160: pylabrobot.star.v1.STARService.DiscardTipsCore96:input_type -> pylabrobot.star.v1.DiscardTipsCore96Request
+	188, // 161: pylabrobot.star.v1.STARService.AspirateCore96:input_type -> pylabrobot.star.v1.AspirateCore96Request
+	190, // 162: pylabrobot.star.v1.STARService.DispenseCore96:input_type -> pylabrobot.star.v1.DispenseCore96Request
+	192, // 163: pylabrobot.star.v1.STARService.InitializeIswap:input_type -> pylabrobot.star.v1.InitializeIswapRequest
+	194, // 164: pylabrobot.star.v1.STARService.PositionComponentsForFreeIswapYRange:input_type -> pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeRequest
+	196, // 165: pylabrobot.star.v1.STARService.MoveIswapXRelative:input_type -> pylabrobot.star.v1.MoveIswapXRelativeRequest
+	198, // 166: pylabrobot.star.v1.STARService.MoveIswapYRelative:input_type -> pylabrobot.star.v1.MoveIswapYRelativeRequest
+	200, // 167: pylabrobot.star.v1.STARService.MoveIswapZRelative:input_type -> pylabrobot.star.v1.MoveIswapZRelativeRequest
+	202, // 168: pylabrobot.star.v1.STARService.MoveIswapX:input_type -> pylabrobot.star.v1.MoveIswapXRequest
+	204, // 169: pylabrobot.star.v1.STARService.MoveIswapY:input_type -> pylabrobot.star.v1.MoveIswapYRequest
+	206, // 170: pylabrobot.star.v1.STARService.MoveIswapZ:input_type -> pylabrobot.star.v1.MoveIswapZRequest
+	208, // 171: pylabrobot.star.v1.STARService.OpenNotInitializedGripper:input_type -> pylabrobot.star.v1.OpenNotInitializedGripperRequest
+	210, // 172: pylabrobot.star.v1.STARService.IswapOpenGripper:input_type -> pylabrobot.star.v1.IswapOpenGripperRequest
+	212, // 173: pylabrobot.star.v1.STARService.IswapCloseGripper:input_type -> pylabrobot.star.v1.IswapCloseGripperRequest
+	214, // 174: pylabrobot.star.v1.STARService.ParkIswap:input_type -> pylabrobot.star.v1.ParkIswapRequest
+	216, // 175: pylabrobot.star.v1.STARService.IswapGetPlate:input_type -> pylabrobot.star.v1.IswapGetPlateRequest
+	218, // 176: pylabrobot.star.v1.STARService.IswapPutPlate:input_type -> pylabrobot.star.v1.IswapPutPlateRequest
+	220, // 177: pylabrobot.star.v1.STARService.MovePlateToPosition:input_type -> pylabrobot.star.v1.MovePlateToPositionRequest
+	222, // 178: pylabrobot.star.v1.STARService.CollapseGripperArm:input_type -> pylabrobot.star.v1.CollapseGripperArmRequest
+	224, // 179: pylabrobot.star.v1.STARService.IswapRotate:input_type -> pylabrobot.star.v1.IswapRotateRequest
+	226, // 180: pylabrobot.star.v1.STARService.RotateIswapRotationDrive:input_type -> pylabrobot.star.v1.RotateIswapRotationDriveRequest
+	228, // 181: pylabrobot.star.v1.STARService.RotateIswapWrist:input_type -> pylabrobot.star.v1.RotateIswapWristRequest
+	230, // 182: pylabrobot.star.v1.STARService.IswapDangerousReleaseBreak:input_type -> pylabrobot.star.v1.IswapDangerousReleaseBreakRequest
+	232, // 183: pylabrobot.star.v1.STARService.IswapReengageBreak:input_type -> pylabrobot.star.v1.IswapReengageBreakRequest
+	234, // 184: pylabrobot.star.v1.STARService.IswapInitializeZAxis:input_type -> pylabrobot.star.v1.IswapInitializeZAxisRequest
+	236, // 185: pylabrobot.star.v1.STARService.RequestIswapRotationDrivePositionIncrements:input_type -> pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsRequest
+	238, // 186: pylabrobot.star.v1.STARService.RequestIswapRotationDriveOrientation:input_type -> pylabrobot.star.v1.RequestIswapRotationDriveOrientationRequest
+	240, // 187: pylabrobot.star.v1.STARService.RequestIswapWristDrivePositionIncrements:input_type -> pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsRequest
+	242, // 188: pylabrobot.star.v1.STARService.RequestIswapWristDriveOrientation:input_type -> pylabrobot.star.v1.RequestIswapWristDriveOrientationRequest
+	244, // 189: pylabrobot.star.v1.STARService.RequestIswapInParkingPosition:input_type -> pylabrobot.star.v1.RequestIswapInParkingPositionRequest
+	246, // 190: pylabrobot.star.v1.STARService.RequestPlateInIswap:input_type -> pylabrobot.star.v1.RequestPlateInIswapRequest
+	248, // 191: pylabrobot.star.v1.STARService.RequestIswapPosition:input_type -> pylabrobot.star.v1.RequestIswapPositionRequest
+	250, // 192: pylabrobot.star.v1.STARService.IswapRotationDriveRequestY:input_type -> pylabrobot.star.v1.IswapRotationDriveRequestYRequest
+	252, // 193: pylabrobot.star.v1.STARService.RequestIswapInitializationStatus:input_type -> pylabrobot.star.v1.RequestIswapInitializationStatusRequest
+	254, // 194: pylabrobot.star.v1.STARService.RequestIswapVersion:input_type -> pylabrobot.star.v1.RequestIswapVersionRequest
+	256, // 195: pylabrobot.star.v1.STARService.GetIswapVersion:input_type -> pylabrobot.star.v1.GetIswapVersionRequest
+	258, // 196: pylabrobot.star.v1.STARService.SlowIswap:input_type -> pylabrobot.star.v1.SlowIswapRequest
+	260, // 197: pylabrobot.star.v1.STARService.IswapMovePickedUpResource:input_type -> pylabrobot.star.v1.IswapMovePickedUpResourceRequest
+	262, // 198: pylabrobot.star.v1.STARService.PickUpResource:input_type -> pylabrobot.star.v1.PickUpResourceRequest
+	264, // 199: pylabrobot.star.v1.STARService.MovePickedUpResource:input_type -> pylabrobot.star.v1.MovePickedUpResourceRequest
+	266, // 200: pylabrobot.star.v1.STARService.DropResource:input_type -> pylabrobot.star.v1.DropResourceRequest
+	268, // 201: pylabrobot.star.v1.STARService.PickUpCoreGripperTools:input_type -> pylabrobot.star.v1.PickUpCoreGripperToolsRequest
+	270, // 202: pylabrobot.star.v1.STARService.ReturnCoreGripperTools:input_type -> pylabrobot.star.v1.ReturnCoreGripperToolsRequest
+	272, // 203: pylabrobot.star.v1.STARService.CoreOpenGripper:input_type -> pylabrobot.star.v1.CoreOpenGripperRequest
+	274, // 204: pylabrobot.star.v1.STARService.CoreGetPlate:input_type -> pylabrobot.star.v1.CoreGetPlateRequest
+	276, // 205: pylabrobot.star.v1.STARService.CorePutPlate:input_type -> pylabrobot.star.v1.CorePutPlateRequest
+	278, // 206: pylabrobot.star.v1.STARService.CoreMovePlateToPosition:input_type -> pylabrobot.star.v1.CoreMovePlateToPositionRequest
+	280, // 207: pylabrobot.star.v1.STARService.CorePickUpResource:input_type -> pylabrobot.star.v1.CorePickUpResourceRequest
+	282, // 208: pylabrobot.star.v1.STARService.CoreMovePickedUpResource:input_type -> pylabrobot.star.v1.CoreMovePickedUpResourceRequest
+	284, // 209: pylabrobot.star.v1.STARService.CoreReleasePickedUpResource:input_type -> pylabrobot.star.v1.CoreReleasePickedUpResourceRequest
+	286, // 210: pylabrobot.star.v1.STARService.CoreCheckResourceExistsAtLocationCenter:input_type -> pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterRequest
+	288, // 211: pylabrobot.star.v1.STARService.GetCore:input_type -> pylabrobot.star.v1.GetCoreRequest
+	290, // 212: pylabrobot.star.v1.STARService.PutCore:input_type -> pylabrobot.star.v1.PutCoreRequest
+	292, // 213: pylabrobot.star.v1.STARService.CoreReadBarcodeOfPickedUpResource:input_type -> pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceRequest
+	294, // 214: pylabrobot.star.v1.STARService.InitializeAutoload:input_type -> pylabrobot.star.v1.InitializeAutoloadRequest
+	296, // 215: pylabrobot.star.v1.STARService.MoveAutoloadToSafeZPosition:input_type -> pylabrobot.star.v1.MoveAutoloadToSafeZPositionRequest
+	298, // 216: pylabrobot.star.v1.STARService.RequestAutoloadTrack:input_type -> pylabrobot.star.v1.RequestAutoloadTrackRequest
+	300, // 217: pylabrobot.star.v1.STARService.RequestAutoloadType:input_type -> pylabrobot.star.v1.RequestAutoloadTypeRequest
+	302, // 218: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnDeck:input_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckRequest
+	304, // 219: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnLoadingTray:input_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayRequest
+	306, // 220: pylabrobot.star.v1.STARService.RequestPresenceOfSingleCarrierOnLoadingTray:input_type -> pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayRequest
+	308, // 221: pylabrobot.star.v1.STARService.MoveAutoloadToSlot:input_type -> pylabrobot.star.v1.MoveAutoloadToSlotRequest
+	310, // 222: pylabrobot.star.v1.STARService.MoveAutoloadToTrack:input_type -> pylabrobot.star.v1.MoveAutoloadToTrackRequest
+	312, // 223: pylabrobot.star.v1.STARService.ParkAutoload:input_type -> pylabrobot.star.v1.ParkAutoloadRequest
+	314, // 224: pylabrobot.star.v1.STARService.TakeCarrierOutToAutoloadBelt:input_type -> pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltRequest
+	316, // 225: pylabrobot.star.v1.STARService.SetBarcodeType:input_type -> pylabrobot.star.v1.SetBarcodeTypeRequest
+	318, // 226: pylabrobot.star.v1.STARService.LoadCarrierFromTrayAndScanCarrierBarcode:input_type -> pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeRequest
+	322, // 227: pylabrobot.star.v1.STARService.SetCarrierMonitoring:input_type -> pylabrobot.star.v1.SetCarrierMonitoringRequest
+	324, // 228: pylabrobot.star.v1.STARService.LoadCarrier:input_type -> pylabrobot.star.v1.LoadCarrierRequest
+	326, // 229: pylabrobot.star.v1.STARService.SetLoadingIndicators:input_type -> pylabrobot.star.v1.SetLoadingIndicatorsRequest
+	328, // 230: pylabrobot.star.v1.STARService.UnloadCarrier:input_type -> pylabrobot.star.v1.UnloadCarrierRequest
+	330, // 231: pylabrobot.star.v1.STARService.RequestInstrumentInitializationStatus:input_type -> pylabrobot.star.v1.RequestInstrumentInitializationStatusRequest
+	332, // 232: pylabrobot.star.v1.STARService.RequestAutoloadInitializationStatus:input_type -> pylabrobot.star.v1.RequestAutoloadInitializationStatusRequest
+	334, // 233: pylabrobot.star.v1.STARService.LockCover:input_type -> pylabrobot.star.v1.LockCoverRequest
+	336, // 234: pylabrobot.star.v1.STARService.UnlockCover:input_type -> pylabrobot.star.v1.UnlockCoverRequest
+	338, // 235: pylabrobot.star.v1.STARService.DisableCoverControl:input_type -> pylabrobot.star.v1.DisableCoverControlRequest
+	340, // 236: pylabrobot.star.v1.STARService.EnableCoverControl:input_type -> pylabrobot.star.v1.EnableCoverControlRequest
+	342, // 237: pylabrobot.star.v1.STARService.SetCoverOutput:input_type -> pylabrobot.star.v1.SetCoverOutputRequest
+	344, // 238: pylabrobot.star.v1.STARService.ResetOutput:input_type -> pylabrobot.star.v1.ResetOutputRequest
+	346, // 239: pylabrobot.star.v1.STARService.RequestCoverOpen:input_type -> pylabrobot.star.v1.RequestCoverOpenRequest
+	348, // 240: pylabrobot.star.v1.STARService.SendHhsCommand:input_type -> pylabrobot.star.v1.SendHhsCommandRequest
+	350, // 241: pylabrobot.star.v1.STARService.CheckTypeIsHhc:input_type -> pylabrobot.star.v1.CheckTypeIsHhcRequest
+	352, // 242: pylabrobot.star.v1.STARService.InitializeHhc:input_type -> pylabrobot.star.v1.InitializeHhcRequest
+	354, // 243: pylabrobot.star.v1.STARService.StartTemperatureControlAtHhc:input_type -> pylabrobot.star.v1.StartTemperatureControlAtHhcRequest
+	356, // 244: pylabrobot.star.v1.STARService.GetTemperatureAtHhc:input_type -> pylabrobot.star.v1.GetTemperatureAtHhcRequest
+	358, // 245: pylabrobot.star.v1.STARService.QueryWhetherTemperatureReachedAtHhc:input_type -> pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcRequest
+	360, // 246: pylabrobot.star.v1.STARService.StopTemperatureControlAtHhc:input_type -> pylabrobot.star.v1.StopTemperatureControlAtHhcRequest
+	362, // 247: pylabrobot.star.v1.STARService.RequestFirmwareVersion:input_type -> pylabrobot.star.v1.RequestFirmwareVersionRequest
+	364, // 248: pylabrobot.star.v1.STARService.RequestErrorCode:input_type -> pylabrobot.star.v1.RequestErrorCodeRequest
+	368, // 249: pylabrobot.star.v1.STARService.RequestDeviceSerialNumber:input_type -> pylabrobot.star.v1.RequestDeviceSerialNumberRequest
+	370, // 250: pylabrobot.star.v1.STARService.RequestMasterStatus:input_type -> pylabrobot.star.v1.RequestMasterStatusRequest
+	374, // 251: pylabrobot.star.v1.STARService.SetSingleStepMode:input_type -> pylabrobot.star.v1.SetSingleStepModeRequest
+	376, // 252: pylabrobot.star.v1.STARService.TriggerNextStep:input_type -> pylabrobot.star.v1.TriggerNextStepRequest
+	378, // 253: pylabrobot.star.v1.STARService.Halt:input_type -> pylabrobot.star.v1.HaltRequest
+	380, // 254: pylabrobot.star.v1.STARService.SaveAllCycleCounters:input_type -> pylabrobot.star.v1.SaveAllCycleCountersRequest
+	382, // 255: pylabrobot.star.v1.STARService.SetNotStop:input_type -> pylabrobot.star.v1.SetNotStopRequest
+	384, // 256: pylabrobot.star.v1.STARService.ConfigureNodeNames:input_type -> pylabrobot.star.v1.ConfigureNodeNamesRequest
+	386, // 257: pylabrobot.star.v1.STARService.SetDeckData:input_type -> pylabrobot.star.v1.SetDeckDataRequest
+	388, // 258: pylabrobot.star.v1.STARService.PositionLeftXArm:input_type -> pylabrobot.star.v1.PositionLeftXArmRequest
+	390, // 259: pylabrobot.star.v1.STARService.PositionRightXArm:input_type -> pylabrobot.star.v1.PositionRightXArmRequest
+	392, // 260: pylabrobot.star.v1.STARService.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPosition:input_type -> pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
+	394, // 261: pylabrobot.star.v1.STARService.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPosition:input_type -> pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionRequest
+	396, // 262: pylabrobot.star.v1.STARService.RequestLeftXArmPosition:input_type -> pylabrobot.star.v1.RequestLeftXArmPositionRequest
+	398, // 263: pylabrobot.star.v1.STARService.RequestRightXArmPosition:input_type -> pylabrobot.star.v1.RequestRightXArmPositionRequest
+	400, // 264: pylabrobot.star.v1.STARService.RequestRightXArmLastCollisionType:input_type -> pylabrobot.star.v1.RequestRightXArmLastCollisionTypeRequest
+	402, // 265: pylabrobot.star.v1.STARService.RequestPumpSettings:input_type -> pylabrobot.star.v1.RequestPumpSettingsRequest
+	404, // 266: pylabrobot.star.v1.STARService.InitializeDualPumpStationValves:input_type -> pylabrobot.star.v1.InitializeDualPumpStationValvesRequest
+	406, // 267: pylabrobot.star.v1.STARService.DrainDualChamberSystem:input_type -> pylabrobot.star.v1.DrainDualChamberSystemRequest
+	408, // 268: pylabrobot.star.v1.STARService.ViolentlyShootDownTip:input_type -> pylabrobot.star.v1.ViolentlyShootDownTipRequest
+	410, // 269: pylabrobot.star.v1.STARService.CanPickUpTip:input_type -> pylabrobot.star.v1.CanPickUpTipRequest
+	25,  // 270: pylabrobot.star.v1.STARService.Setup:output_type -> pylabrobot.star.v1.SetupResponse
+	27,  // 271: pylabrobot.star.v1.STARService.Stop:output_type -> pylabrobot.star.v1.StopResponse
+	29,  // 272: pylabrobot.star.v1.STARService.GetNumChannels:output_type -> pylabrobot.star.v1.GetNumChannelsResponse
+	31,  // 273: pylabrobot.star.v1.STARService.GetHead96Installed:output_type -> pylabrobot.star.v1.GetHead96InstalledResponse
+	33,  // 274: pylabrobot.star.v1.STARService.GetIswapInstalled:output_type -> pylabrobot.star.v1.GetIswapInstalledResponse
+	35,  // 275: pylabrobot.star.v1.STARService.GetIswapParked:output_type -> pylabrobot.star.v1.GetIswapParkedResponse
+	37,  // 276: pylabrobot.star.v1.STARService.GetCoreParked:output_type -> pylabrobot.star.v1.GetCoreParkedResponse
+	39,  // 277: pylabrobot.star.v1.STARService.PickUpTips:output_type -> pylabrobot.star.v1.PickUpTipsResponse
+	41,  // 278: pylabrobot.star.v1.STARService.DropTips:output_type -> pylabrobot.star.v1.DropTipsResponse
+	43,  // 279: pylabrobot.star.v1.STARService.Aspirate:output_type -> pylabrobot.star.v1.AspirateResponse
+	45,  // 280: pylabrobot.star.v1.STARService.Dispense:output_type -> pylabrobot.star.v1.DispenseResponse
+	47,  // 281: pylabrobot.star.v1.STARService.PickUpTips96:output_type -> pylabrobot.star.v1.PickUpTips96Response
+	49,  // 282: pylabrobot.star.v1.STARService.DropTips96:output_type -> pylabrobot.star.v1.DropTips96Response
+	51,  // 283: pylabrobot.star.v1.STARService.Aspirate96:output_type -> pylabrobot.star.v1.Aspirate96Response
+	53,  // 284: pylabrobot.star.v1.STARService.Dispense96:output_type -> pylabrobot.star.v1.Dispense96Response
+	55,  // 285: pylabrobot.star.v1.STARService.InitializePip:output_type -> pylabrobot.star.v1.InitializePipResponse
+	57,  // 286: pylabrobot.star.v1.STARService.InitializePipettingChannels:output_type -> pylabrobot.star.v1.InitializePipettingChannelsResponse
+	59,  // 287: pylabrobot.star.v1.STARService.PickUpTipFw:output_type -> pylabrobot.star.v1.PickUpTipFwResponse
+	61,  // 288: pylabrobot.star.v1.STARService.DiscardTipFw:output_type -> pylabrobot.star.v1.DiscardTipFwResponse
+	63,  // 289: pylabrobot.star.v1.STARService.AspiratePip:output_type -> pylabrobot.star.v1.AspiratePipResponse
+	65,  // 290: pylabrobot.star.v1.STARService.DispensePip:output_type -> pylabrobot.star.v1.DispensePipResponse
+	67,  // 291: pylabrobot.star.v1.STARService.SpreadPipChannels:output_type -> pylabrobot.star.v1.SpreadPipChannelsResponse
+	69,  // 292: pylabrobot.star.v1.STARService.MoveAllPipettingChannelsToDefinedPosition:output_type -> pylabrobot.star.v1.MoveAllPipettingChannelsToDefinedPositionResponse
+	71,  // 293: pylabrobot.star.v1.STARService.DefineTipNeedle:output_type -> pylabrobot.star.v1.DefineTipNeedleResponse
+	73,  // 294: pylabrobot.star.v1.STARService.ProbeLiquidHeights:output_type -> pylabrobot.star.v1.ProbeLiquidHeightsResponse
+	75,  // 295: pylabrobot.star.v1.STARService.ProbeLiquidVolumes:output_type -> pylabrobot.star.v1.ProbeLiquidVolumesResponse
+	77,  // 296: pylabrobot.star.v1.STARService.RequestTipPresence:output_type -> pylabrobot.star.v1.RequestTipPresenceResponse
+	79,  // 297: pylabrobot.star.v1.STARService.ChannelsSenseTipPresence:output_type -> pylabrobot.star.v1.ChannelsSenseTipPresenceResponse
+	81,  // 298: pylabrobot.star.v1.STARService.RequestPipHeightLastLld:output_type -> pylabrobot.star.v1.RequestPipHeightLastLldResponse
+	83,  // 299: pylabrobot.star.v1.STARService.RequestTadmStatus:output_type -> pylabrobot.star.v1.RequestTadmStatusResponse
+	85,  // 300: pylabrobot.star.v1.STARService.RequestVolumeInTip:output_type -> pylabrobot.star.v1.RequestVolumeInTipResponse
+	87,  // 301: pylabrobot.star.v1.STARService.RequestTipLenOnChannel:output_type -> pylabrobot.star.v1.RequestTipLenOnChannelResponse
+	89,  // 302: pylabrobot.star.v1.STARService.RequestProbeZPosition:output_type -> pylabrobot.star.v1.RequestProbeZPositionResponse
+	91,  // 303: pylabrobot.star.v1.STARService.ClldProbeZHeightUsingChannel:output_type -> pylabrobot.star.v1.ClldProbeZHeightUsingChannelResponse
+	93,  // 304: pylabrobot.star.v1.STARService.PlldProbeZHeightUsingChannel:output_type -> pylabrobot.star.v1.PlldProbeZHeightUsingChannelResponse
+	95,  // 305: pylabrobot.star.v1.STARService.ZtouchProbeZHeightUsingChannel:output_type -> pylabrobot.star.v1.ZtouchProbeZHeightUsingChannelResponse
+	97,  // 306: pylabrobot.star.v1.STARService.PierceFoil:output_type -> pylabrobot.star.v1.PierceFoilResponse
+	99,  // 307: pylabrobot.star.v1.STARService.PierceFoilHighLevel:output_type -> pylabrobot.star.v1.PierceFoilHighLevelResponse
+	101, // 308: pylabrobot.star.v1.STARService.StepOffFoil:output_type -> pylabrobot.star.v1.StepOffFoilResponse
+	103, // 309: pylabrobot.star.v1.STARService.EmptyTip:output_type -> pylabrobot.star.v1.EmptyTipResponse
+	105, // 310: pylabrobot.star.v1.STARService.EmptyTips:output_type -> pylabrobot.star.v1.EmptyTipsResponse
+	107, // 311: pylabrobot.star.v1.STARService.MoveChannelX:output_type -> pylabrobot.star.v1.MoveChannelXResponse
+	109, // 312: pylabrobot.star.v1.STARService.MoveChannelY:output_type -> pylabrobot.star.v1.MoveChannelYResponse
+	111, // 313: pylabrobot.star.v1.STARService.MoveChannelZ:output_type -> pylabrobot.star.v1.MoveChannelZResponse
+	113, // 314: pylabrobot.star.v1.STARService.MoveChannelXRelative:output_type -> pylabrobot.star.v1.MoveChannelXRelativeResponse
+	115, // 315: pylabrobot.star.v1.STARService.MoveChannelYRelative:output_type -> pylabrobot.star.v1.MoveChannelYRelativeResponse
+	117, // 316: pylabrobot.star.v1.STARService.MoveChannelZRelative:output_type -> pylabrobot.star.v1.MoveChannelZRelativeResponse
+	119, // 317: pylabrobot.star.v1.STARService.PrepareForManualChannelOperation:output_type -> pylabrobot.star.v1.PrepareForManualChannelOperationResponse
+	121, // 318: pylabrobot.star.v1.STARService.MoveAllChannelsInZSafety:output_type -> pylabrobot.star.v1.MoveAllChannelsInZSafetyResponse
+	123, // 319: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInYDirection:output_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInYDirectionResponse
+	125, // 320: pylabrobot.star.v1.STARService.PositionSinglePipettingChannelInZDirection:output_type -> pylabrobot.star.v1.PositionSinglePipettingChannelInZDirectionResponse
+	127, // 321: pylabrobot.star.v1.STARService.PositionMaxFreeYForN:output_type -> pylabrobot.star.v1.PositionMaxFreeYForNResponse
+	129, // 322: pylabrobot.star.v1.STARService.RequestXPosChannelN:output_type -> pylabrobot.star.v1.RequestXPosChannelNResponse
+	131, // 323: pylabrobot.star.v1.STARService.RequestYPosChannelN:output_type -> pylabrobot.star.v1.RequestYPosChannelNResponse
+	133, // 324: pylabrobot.star.v1.STARService.RequestZPosChannelN:output_type -> pylabrobot.star.v1.RequestZPosChannelNResponse
+	135, // 325: pylabrobot.star.v1.STARService.RequestTipBottomZPosition:output_type -> pylabrobot.star.v1.RequestTipBottomZPositionResponse
+	137, // 326: pylabrobot.star.v1.STARService.GetChannelsYPositions:output_type -> pylabrobot.star.v1.GetChannelsYPositionsResponse
+	139, // 327: pylabrobot.star.v1.STARService.PositionChannelsInYDirection:output_type -> pylabrobot.star.v1.PositionChannelsInYDirectionResponse
+	141, // 328: pylabrobot.star.v1.STARService.GetChannelsZPositions:output_type -> pylabrobot.star.v1.GetChannelsZPositionsResponse
+	143, // 329: pylabrobot.star.v1.STARService.PositionChannelsInZDirection:output_type -> pylabrobot.star.v1.PositionChannelsInZDirectionResponse
+	145, // 330: pylabrobot.star.v1.STARService.RequestPipChannelVersion:output_type -> pylabrobot.star.v1.RequestPipChannelVersionResponse
+	147, // 331: pylabrobot.star.v1.STARService.InitializeCore96Head:output_type -> pylabrobot.star.v1.InitializeCore96HeadResponse
+	149, // 332: pylabrobot.star.v1.STARService.RequestCore96HeadInitializationStatus:output_type -> pylabrobot.star.v1.RequestCore96HeadInitializationStatusResponse
+	151, // 333: pylabrobot.star.v1.STARService.Head96RequestFirmwareVersion:output_type -> pylabrobot.star.v1.Head96RequestFirmwareVersionResponse
+	153, // 334: pylabrobot.star.v1.STARService.Head96RequestType:output_type -> pylabrobot.star.v1.Head96RequestTypeResponse
+	155, // 335: pylabrobot.star.v1.STARService.Head96DispensingDriveAndSqueezerDriverInitialize:output_type -> pylabrobot.star.v1.Head96DispensingDriveAndSqueezerDriverInitializeResponse
+	157, // 336: pylabrobot.star.v1.STARService.MoveCore96ToSafePosition:output_type -> pylabrobot.star.v1.MoveCore96ToSafePositionResponse
+	159, // 337: pylabrobot.star.v1.STARService.Head96MoveToZSafety:output_type -> pylabrobot.star.v1.Head96MoveToZSafetyResponse
+	161, // 338: pylabrobot.star.v1.STARService.Head96Park:output_type -> pylabrobot.star.v1.Head96ParkResponse
+	163, // 339: pylabrobot.star.v1.STARService.Head96MoveX:output_type -> pylabrobot.star.v1.Head96MoveXResponse
+	165, // 340: pylabrobot.star.v1.STARService.Head96MoveY:output_type -> pylabrobot.star.v1.Head96MoveYResponse
+	167, // 341: pylabrobot.star.v1.STARService.Head96MoveZ:output_type -> pylabrobot.star.v1.Head96MoveZResponse
+	169, // 342: pylabrobot.star.v1.STARService.MoveCore96HeadToDefinedPosition:output_type -> pylabrobot.star.v1.MoveCore96HeadToDefinedPositionResponse
+	171, // 343: pylabrobot.star.v1.STARService.Head96MoveToCoordinate:output_type -> pylabrobot.star.v1.Head96MoveToCoordinateResponse
+	173, // 344: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToHomeVolume:output_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToHomeVolumeResponse
+	175, // 345: pylabrobot.star.v1.STARService.Head96DispensingDriveMoveToPosition:output_type -> pylabrobot.star.v1.Head96DispensingDriveMoveToPositionResponse
+	177, // 346: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionMm:output_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionMmResponse
+	179, // 347: pylabrobot.star.v1.STARService.Head96DispensingDriveRequestPositionUl:output_type -> pylabrobot.star.v1.Head96DispensingDriveRequestPositionUlResponse
+	181, // 348: pylabrobot.star.v1.STARService.Head96RequestTipPresence:output_type -> pylabrobot.star.v1.Head96RequestTipPresenceResponse
+	183, // 349: pylabrobot.star.v1.STARService.Head96RequestPosition:output_type -> pylabrobot.star.v1.Head96RequestPositionResponse
+	185, // 350: pylabrobot.star.v1.STARService.PickUpTipsCore96:output_type -> pylabrobot.star.v1.PickUpTipsCore96Response
+	187, // 351: pylabrobot.star.v1.STARService.DiscardTipsCore96:output_type -> pylabrobot.star.v1.DiscardTipsCore96Response
+	189, // 352: pylabrobot.star.v1.STARService.AspirateCore96:output_type -> pylabrobot.star.v1.AspirateCore96Response
+	191, // 353: pylabrobot.star.v1.STARService.DispenseCore96:output_type -> pylabrobot.star.v1.DispenseCore96Response
+	193, // 354: pylabrobot.star.v1.STARService.InitializeIswap:output_type -> pylabrobot.star.v1.InitializeIswapResponse
+	195, // 355: pylabrobot.star.v1.STARService.PositionComponentsForFreeIswapYRange:output_type -> pylabrobot.star.v1.PositionComponentsForFreeIswapYRangeResponse
+	197, // 356: pylabrobot.star.v1.STARService.MoveIswapXRelative:output_type -> pylabrobot.star.v1.MoveIswapXRelativeResponse
+	199, // 357: pylabrobot.star.v1.STARService.MoveIswapYRelative:output_type -> pylabrobot.star.v1.MoveIswapYRelativeResponse
+	201, // 358: pylabrobot.star.v1.STARService.MoveIswapZRelative:output_type -> pylabrobot.star.v1.MoveIswapZRelativeResponse
+	203, // 359: pylabrobot.star.v1.STARService.MoveIswapX:output_type -> pylabrobot.star.v1.MoveIswapXResponse
+	205, // 360: pylabrobot.star.v1.STARService.MoveIswapY:output_type -> pylabrobot.star.v1.MoveIswapYResponse
+	207, // 361: pylabrobot.star.v1.STARService.MoveIswapZ:output_type -> pylabrobot.star.v1.MoveIswapZResponse
+	209, // 362: pylabrobot.star.v1.STARService.OpenNotInitializedGripper:output_type -> pylabrobot.star.v1.OpenNotInitializedGripperResponse
+	211, // 363: pylabrobot.star.v1.STARService.IswapOpenGripper:output_type -> pylabrobot.star.v1.IswapOpenGripperResponse
+	213, // 364: pylabrobot.star.v1.STARService.IswapCloseGripper:output_type -> pylabrobot.star.v1.IswapCloseGripperResponse
+	215, // 365: pylabrobot.star.v1.STARService.ParkIswap:output_type -> pylabrobot.star.v1.ParkIswapResponse
+	217, // 366: pylabrobot.star.v1.STARService.IswapGetPlate:output_type -> pylabrobot.star.v1.IswapGetPlateResponse
+	219, // 367: pylabrobot.star.v1.STARService.IswapPutPlate:output_type -> pylabrobot.star.v1.IswapPutPlateResponse
+	221, // 368: pylabrobot.star.v1.STARService.MovePlateToPosition:output_type -> pylabrobot.star.v1.MovePlateToPositionResponse
+	223, // 369: pylabrobot.star.v1.STARService.CollapseGripperArm:output_type -> pylabrobot.star.v1.CollapseGripperArmResponse
+	225, // 370: pylabrobot.star.v1.STARService.IswapRotate:output_type -> pylabrobot.star.v1.IswapRotateResponse
+	227, // 371: pylabrobot.star.v1.STARService.RotateIswapRotationDrive:output_type -> pylabrobot.star.v1.RotateIswapRotationDriveResponse
+	229, // 372: pylabrobot.star.v1.STARService.RotateIswapWrist:output_type -> pylabrobot.star.v1.RotateIswapWristResponse
+	231, // 373: pylabrobot.star.v1.STARService.IswapDangerousReleaseBreak:output_type -> pylabrobot.star.v1.IswapDangerousReleaseBreakResponse
+	233, // 374: pylabrobot.star.v1.STARService.IswapReengageBreak:output_type -> pylabrobot.star.v1.IswapReengageBreakResponse
+	235, // 375: pylabrobot.star.v1.STARService.IswapInitializeZAxis:output_type -> pylabrobot.star.v1.IswapInitializeZAxisResponse
+	237, // 376: pylabrobot.star.v1.STARService.RequestIswapRotationDrivePositionIncrements:output_type -> pylabrobot.star.v1.RequestIswapRotationDrivePositionIncrementsResponse
+	239, // 377: pylabrobot.star.v1.STARService.RequestIswapRotationDriveOrientation:output_type -> pylabrobot.star.v1.RequestIswapRotationDriveOrientationResponse
+	241, // 378: pylabrobot.star.v1.STARService.RequestIswapWristDrivePositionIncrements:output_type -> pylabrobot.star.v1.RequestIswapWristDrivePositionIncrementsResponse
+	243, // 379: pylabrobot.star.v1.STARService.RequestIswapWristDriveOrientation:output_type -> pylabrobot.star.v1.RequestIswapWristDriveOrientationResponse
+	245, // 380: pylabrobot.star.v1.STARService.RequestIswapInParkingPosition:output_type -> pylabrobot.star.v1.RequestIswapInParkingPositionResponse
+	247, // 381: pylabrobot.star.v1.STARService.RequestPlateInIswap:output_type -> pylabrobot.star.v1.RequestPlateInIswapResponse
+	249, // 382: pylabrobot.star.v1.STARService.RequestIswapPosition:output_type -> pylabrobot.star.v1.RequestIswapPositionResponse
+	251, // 383: pylabrobot.star.v1.STARService.IswapRotationDriveRequestY:output_type -> pylabrobot.star.v1.IswapRotationDriveRequestYResponse
+	253, // 384: pylabrobot.star.v1.STARService.RequestIswapInitializationStatus:output_type -> pylabrobot.star.v1.RequestIswapInitializationStatusResponse
+	255, // 385: pylabrobot.star.v1.STARService.RequestIswapVersion:output_type -> pylabrobot.star.v1.RequestIswapVersionResponse
+	257, // 386: pylabrobot.star.v1.STARService.GetIswapVersion:output_type -> pylabrobot.star.v1.GetIswapVersionResponse
+	259, // 387: pylabrobot.star.v1.STARService.SlowIswap:output_type -> pylabrobot.star.v1.SlowIswapResponse
+	261, // 388: pylabrobot.star.v1.STARService.IswapMovePickedUpResource:output_type -> pylabrobot.star.v1.IswapMovePickedUpResourceResponse
+	263, // 389: pylabrobot.star.v1.STARService.PickUpResource:output_type -> pylabrobot.star.v1.PickUpResourceResponse
+	265, // 390: pylabrobot.star.v1.STARService.MovePickedUpResource:output_type -> pylabrobot.star.v1.MovePickedUpResourceResponse
+	267, // 391: pylabrobot.star.v1.STARService.DropResource:output_type -> pylabrobot.star.v1.DropResourceResponse
+	269, // 392: pylabrobot.star.v1.STARService.PickUpCoreGripperTools:output_type -> pylabrobot.star.v1.PickUpCoreGripperToolsResponse
+	271, // 393: pylabrobot.star.v1.STARService.ReturnCoreGripperTools:output_type -> pylabrobot.star.v1.ReturnCoreGripperToolsResponse
+	273, // 394: pylabrobot.star.v1.STARService.CoreOpenGripper:output_type -> pylabrobot.star.v1.CoreOpenGripperResponse
+	275, // 395: pylabrobot.star.v1.STARService.CoreGetPlate:output_type -> pylabrobot.star.v1.CoreGetPlateResponse
+	277, // 396: pylabrobot.star.v1.STARService.CorePutPlate:output_type -> pylabrobot.star.v1.CorePutPlateResponse
+	279, // 397: pylabrobot.star.v1.STARService.CoreMovePlateToPosition:output_type -> pylabrobot.star.v1.CoreMovePlateToPositionResponse
+	281, // 398: pylabrobot.star.v1.STARService.CorePickUpResource:output_type -> pylabrobot.star.v1.CorePickUpResourceResponse
+	283, // 399: pylabrobot.star.v1.STARService.CoreMovePickedUpResource:output_type -> pylabrobot.star.v1.CoreMovePickedUpResourceResponse
+	285, // 400: pylabrobot.star.v1.STARService.CoreReleasePickedUpResource:output_type -> pylabrobot.star.v1.CoreReleasePickedUpResourceResponse
+	287, // 401: pylabrobot.star.v1.STARService.CoreCheckResourceExistsAtLocationCenter:output_type -> pylabrobot.star.v1.CoreCheckResourceExistsAtLocationCenterResponse
+	289, // 402: pylabrobot.star.v1.STARService.GetCore:output_type -> pylabrobot.star.v1.GetCoreResponse
+	291, // 403: pylabrobot.star.v1.STARService.PutCore:output_type -> pylabrobot.star.v1.PutCoreResponse
+	293, // 404: pylabrobot.star.v1.STARService.CoreReadBarcodeOfPickedUpResource:output_type -> pylabrobot.star.v1.CoreReadBarcodeOfPickedUpResourceResponse
+	295, // 405: pylabrobot.star.v1.STARService.InitializeAutoload:output_type -> pylabrobot.star.v1.InitializeAutoloadResponse
+	297, // 406: pylabrobot.star.v1.STARService.MoveAutoloadToSafeZPosition:output_type -> pylabrobot.star.v1.MoveAutoloadToSafeZPositionResponse
+	299, // 407: pylabrobot.star.v1.STARService.RequestAutoloadTrack:output_type -> pylabrobot.star.v1.RequestAutoloadTrackResponse
+	301, // 408: pylabrobot.star.v1.STARService.RequestAutoloadType:output_type -> pylabrobot.star.v1.RequestAutoloadTypeResponse
+	303, // 409: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnDeck:output_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnDeckResponse
+	305, // 410: pylabrobot.star.v1.STARService.RequestPresenceOfCarriersOnLoadingTray:output_type -> pylabrobot.star.v1.RequestPresenceOfCarriersOnLoadingTrayResponse
+	307, // 411: pylabrobot.star.v1.STARService.RequestPresenceOfSingleCarrierOnLoadingTray:output_type -> pylabrobot.star.v1.RequestPresenceOfSingleCarrierOnLoadingTrayResponse
+	309, // 412: pylabrobot.star.v1.STARService.MoveAutoloadToSlot:output_type -> pylabrobot.star.v1.MoveAutoloadToSlotResponse
+	311, // 413: pylabrobot.star.v1.STARService.MoveAutoloadToTrack:output_type -> pylabrobot.star.v1.MoveAutoloadToTrackResponse
+	313, // 414: pylabrobot.star.v1.STARService.ParkAutoload:output_type -> pylabrobot.star.v1.ParkAutoloadResponse
+	315, // 415: pylabrobot.star.v1.STARService.TakeCarrierOutToAutoloadBelt:output_type -> pylabrobot.star.v1.TakeCarrierOutToAutoloadBeltResponse
+	317, // 416: pylabrobot.star.v1.STARService.SetBarcodeType:output_type -> pylabrobot.star.v1.SetBarcodeTypeResponse
+	319, // 417: pylabrobot.star.v1.STARService.LoadCarrierFromTrayAndScanCarrierBarcode:output_type -> pylabrobot.star.v1.LoadCarrierFromTrayAndScanCarrierBarcodeResponse
+	323, // 418: pylabrobot.star.v1.STARService.SetCarrierMonitoring:output_type -> pylabrobot.star.v1.SetCarrierMonitoringResponse
+	325, // 419: pylabrobot.star.v1.STARService.LoadCarrier:output_type -> pylabrobot.star.v1.LoadCarrierResponse
+	327, // 420: pylabrobot.star.v1.STARService.SetLoadingIndicators:output_type -> pylabrobot.star.v1.SetLoadingIndicatorsResponse
+	329, // 421: pylabrobot.star.v1.STARService.UnloadCarrier:output_type -> pylabrobot.star.v1.UnloadCarrierResponse
+	331, // 422: pylabrobot.star.v1.STARService.RequestInstrumentInitializationStatus:output_type -> pylabrobot.star.v1.RequestInstrumentInitializationStatusResponse
+	333, // 423: pylabrobot.star.v1.STARService.RequestAutoloadInitializationStatus:output_type -> pylabrobot.star.v1.RequestAutoloadInitializationStatusResponse
+	335, // 424: pylabrobot.star.v1.STARService.LockCover:output_type -> pylabrobot.star.v1.LockCoverResponse
+	337, // 425: pylabrobot.star.v1.STARService.UnlockCover:output_type -> pylabrobot.star.v1.UnlockCoverResponse
+	339, // 426: pylabrobot.star.v1.STARService.DisableCoverControl:output_type -> pylabrobot.star.v1.DisableCoverControlResponse
+	341, // 427: pylabrobot.star.v1.STARService.EnableCoverControl:output_type -> pylabrobot.star.v1.EnableCoverControlResponse
+	343, // 428: pylabrobot.star.v1.STARService.SetCoverOutput:output_type -> pylabrobot.star.v1.SetCoverOutputResponse
+	345, // 429: pylabrobot.star.v1.STARService.ResetOutput:output_type -> pylabrobot.star.v1.ResetOutputResponse
+	347, // 430: pylabrobot.star.v1.STARService.RequestCoverOpen:output_type -> pylabrobot.star.v1.RequestCoverOpenResponse
+	349, // 431: pylabrobot.star.v1.STARService.SendHhsCommand:output_type -> pylabrobot.star.v1.SendHhsCommandResponse
+	351, // 432: pylabrobot.star.v1.STARService.CheckTypeIsHhc:output_type -> pylabrobot.star.v1.CheckTypeIsHhcResponse
+	353, // 433: pylabrobot.star.v1.STARService.InitializeHhc:output_type -> pylabrobot.star.v1.InitializeHhcResponse
+	355, // 434: pylabrobot.star.v1.STARService.StartTemperatureControlAtHhc:output_type -> pylabrobot.star.v1.StartTemperatureControlAtHhcResponse
+	357, // 435: pylabrobot.star.v1.STARService.GetTemperatureAtHhc:output_type -> pylabrobot.star.v1.GetTemperatureAtHhcResponse
+	359, // 436: pylabrobot.star.v1.STARService.QueryWhetherTemperatureReachedAtHhc:output_type -> pylabrobot.star.v1.QueryWhetherTemperatureReachedAtHhcResponse
+	361, // 437: pylabrobot.star.v1.STARService.StopTemperatureControlAtHhc:output_type -> pylabrobot.star.v1.StopTemperatureControlAtHhcResponse
+	363, // 438: pylabrobot.star.v1.STARService.RequestFirmwareVersion:output_type -> pylabrobot.star.v1.RequestFirmwareVersionResponse
+	365, // 439: pylabrobot.star.v1.STARService.RequestErrorCode:output_type -> pylabrobot.star.v1.RequestErrorCodeResponse
+	369, // 440: pylabrobot.star.v1.STARService.RequestDeviceSerialNumber:output_type -> pylabrobot.star.v1.RequestDeviceSerialNumberResponse
+	371, // 441: pylabrobot.star.v1.STARService.RequestMasterStatus:output_type -> pylabrobot.star.v1.RequestMasterStatusResponse
+	375, // 442: pylabrobot.star.v1.STARService.SetSingleStepMode:output_type -> pylabrobot.star.v1.SetSingleStepModeResponse
+	377, // 443: pylabrobot.star.v1.STARService.TriggerNextStep:output_type -> pylabrobot.star.v1.TriggerNextStepResponse
+	379, // 444: pylabrobot.star.v1.STARService.Halt:output_type -> pylabrobot.star.v1.HaltResponse
+	381, // 445: pylabrobot.star.v1.STARService.SaveAllCycleCounters:output_type -> pylabrobot.star.v1.SaveAllCycleCountersResponse
+	383, // 446: pylabrobot.star.v1.STARService.SetNotStop:output_type -> pylabrobot.star.v1.SetNotStopResponse
+	385, // 447: pylabrobot.star.v1.STARService.ConfigureNodeNames:output_type -> pylabrobot.star.v1.ConfigureNodeNamesResponse
+	387, // 448: pylabrobot.star.v1.STARService.SetDeckData:output_type -> pylabrobot.star.v1.SetDeckDataResponse
+	389, // 449: pylabrobot.star.v1.STARService.PositionLeftXArm:output_type -> pylabrobot.star.v1.PositionLeftXArmResponse
+	391, // 450: pylabrobot.star.v1.STARService.PositionRightXArm:output_type -> pylabrobot.star.v1.PositionRightXArmResponse
+	393, // 451: pylabrobot.star.v1.STARService.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPosition:output_type -> pylabrobot.star.v1.MoveLeftXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
+	395, // 452: pylabrobot.star.v1.STARService.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPosition:output_type -> pylabrobot.star.v1.MoveRightXArmToPositionWithAllAttachedComponentsInZSafetyPositionResponse
+	397, // 453: pylabrobot.star.v1.STARService.RequestLeftXArmPosition:output_type -> pylabrobot.star.v1.RequestLeftXArmPositionResponse
+	399, // 454: pylabrobot.star.v1.STARService.RequestRightXArmPosition:output_type -> pylabrobot.star.v1.RequestRightXArmPositionResponse
+	401, // 455: pylabrobot.star.v1.STARService.RequestRightXArmLastCollisionType:output_type -> pylabrobot.star.v1.RequestRightXArmLastCollisionTypeResponse
+	403, // 456: pylabrobot.star.v1.STARService.RequestPumpSettings:output_type -> pylabrobot.star.v1.RequestPumpSettingsResponse
+	405, // 457: pylabrobot.star.v1.STARService.InitializeDualPumpStationValves:output_type -> pylabrobot.star.v1.InitializeDualPumpStationValvesResponse
+	407, // 458: pylabrobot.star.v1.STARService.DrainDualChamberSystem:output_type -> pylabrobot.star.v1.DrainDualChamberSystemResponse
+	409, // 459: pylabrobot.star.v1.STARService.ViolentlyShootDownTip:output_type -> pylabrobot.star.v1.ViolentlyShootDownTipResponse
+	411, // 460: pylabrobot.star.v1.STARService.CanPickUpTip:output_type -> pylabrobot.star.v1.CanPickUpTipResponse
 	270, // [270:461] is the sub-list for method output_type
 	79,  // [79:270] is the sub-list for method input_type
 	79,  // [79:79] is the sub-list for extension type_name
@@ -24196,65 +24030,65 @@ var file_star_v1_star_service_proto_depIdxs = []int32{
 	0,   // [0:79] is the sub-list for field type_name
 }
 
-func init() { file_star_v1_star_service_proto_init() }
-func file_star_v1_star_service_proto_init() {
-	if File_star_v1_star_service_proto != nil {
+func init() { file_star_service_proto_init() }
+func file_star_service_proto_init() {
+	if File_star_service_proto != nil {
 		return
 	}
-	file_star_v1_star_service_proto_msgTypes[7].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[8].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[11].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[12].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[13].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[14].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[33].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[35].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[37].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[39].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[41].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[43].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[45].OneofWrappers = []any{
+	file_star_service_proto_msgTypes[4].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[5].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[8].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[9].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[10].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[11].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[30].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[32].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[34].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[36].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[38].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[40].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[42].OneofWrappers = []any{
 		(*Aspirate96Request_Plate)(nil),
 		(*Aspirate96Request_Container)(nil),
 	}
-	file_star_v1_star_service_proto_msgTypes[47].OneofWrappers = []any{
+	file_star_service_proto_msgTypes[44].OneofWrappers = []any{
 		(*Dispense96Request_Plate)(nil),
 		(*Dispense96Request_Container)(nil),
 	}
-	file_star_v1_star_service_proto_msgTypes[85].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[87].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[89].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[91].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[95].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[205].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[209].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[255].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[257].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[261].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[263].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[265].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[275].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[277].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[279].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[287].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[313].OneofWrappers = []any{}
-	file_star_v1_star_service_proto_msgTypes[314].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[82].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[84].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[86].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[88].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[92].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[202].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[206].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[252].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[254].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[258].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[260].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[262].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[272].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[274].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[276].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[284].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[310].OneofWrappers = []any{}
+	file_star_service_proto_msgTypes[311].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_star_v1_star_service_proto_rawDesc), len(file_star_v1_star_service_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_star_service_proto_rawDesc), len(file_star_service_proto_rawDesc)),
 			NumEnums:      8,
-			NumMessages:   408,
+			NumMessages:   405,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_star_v1_star_service_proto_goTypes,
-		DependencyIndexes: file_star_v1_star_service_proto_depIdxs,
-		EnumInfos:         file_star_v1_star_service_proto_enumTypes,
-		MessageInfos:      file_star_v1_star_service_proto_msgTypes,
+		GoTypes:           file_star_service_proto_goTypes,
+		DependencyIndexes: file_star_service_proto_depIdxs,
+		EnumInfos:         file_star_service_proto_enumTypes,
+		MessageInfos:      file_star_service_proto_msgTypes,
 	}.Build()
-	File_star_v1_star_service_proto = out.File
-	file_star_v1_star_service_proto_goTypes = nil
-	file_star_v1_star_service_proto_depIdxs = nil
+	File_star_service_proto = out.File
+	file_star_service_proto_goTypes = nil
+	file_star_service_proto_depIdxs = nil
 }

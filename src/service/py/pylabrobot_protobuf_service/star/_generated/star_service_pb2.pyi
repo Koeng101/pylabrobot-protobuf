@@ -9,6 +9,10 @@ from google.protobuf import message as _message
 from google.protobuf.internal import containers as _containers
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 
+from .types_pb2 import Coordinate as Coordinate
+from .types_pb2 import Empty as Empty
+from .types_pb2 import Rotation as Rotation
+
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class LLDMode(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
@@ -101,34 +105,6 @@ BARCODE_CODABAR: Barcode1DSymbologyEnum
 BARCODE_CODE93: Barcode1DSymbologyEnum
 BARCODE_CODE25: Barcode1DSymbologyEnum
 BARCODE_EAN128: Barcode1DSymbologyEnum
-
-class Empty(_message.Message):
-  __slots__ = ()
-  def __init__(self) -> None: ...
-
-class Coordinate(_message.Message):
-  __slots__ = ("x", "y", "z")
-  X_FIELD_NUMBER: _ClassVar[int]
-  Y_FIELD_NUMBER: _ClassVar[int]
-  Z_FIELD_NUMBER: _ClassVar[int]
-  x: float
-  y: float
-  z: float
-  def __init__(
-    self, x: _Optional[float] = ..., y: _Optional[float] = ..., z: _Optional[float] = ...
-  ) -> None: ...
-
-class Rotation(_message.Message):
-  __slots__ = ("x", "y", "z")
-  X_FIELD_NUMBER: _ClassVar[int]
-  Y_FIELD_NUMBER: _ClassVar[int]
-  Z_FIELD_NUMBER: _ClassVar[int]
-  x: float
-  y: float
-  z: float
-  def __init__(
-    self, x: _Optional[float] = ..., y: _Optional[float] = ..., z: _Optional[float] = ...
-  ) -> None: ...
 
 class TipData(_message.Message):
   __slots__ = (

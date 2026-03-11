@@ -8,35 +8,11 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf.internal import containers as _containers
 
+from .types_pb2 import Coordinate as Coordinate
+from .types_pb2 import Empty as Empty
+from .types_pb2 import Rotation as Rotation
+
 DESCRIPTOR: _descriptor.FileDescriptor
-
-class Empty(_message.Message):
-  __slots__ = ()
-  def __init__(self) -> None: ...
-
-class Coordinate(_message.Message):
-  __slots__ = ("x", "y", "z")
-  X_FIELD_NUMBER: _ClassVar[int]
-  Y_FIELD_NUMBER: _ClassVar[int]
-  Z_FIELD_NUMBER: _ClassVar[int]
-  x: float
-  y: float
-  z: float
-  def __init__(
-    self, x: _Optional[float] = ..., y: _Optional[float] = ..., z: _Optional[float] = ...
-  ) -> None: ...
-
-class Rotation(_message.Message):
-  __slots__ = ("x", "y", "z")
-  X_FIELD_NUMBER: _ClassVar[int]
-  Y_FIELD_NUMBER: _ClassVar[int]
-  Z_FIELD_NUMBER: _ClassVar[int]
-  x: float
-  y: float
-  z: float
-  def __init__(
-    self, x: _Optional[float] = ..., y: _Optional[float] = ..., z: _Optional[float] = ...
-  ) -> None: ...
 
 class Size(_message.Message):
   __slots__ = ("x", "y", "z")

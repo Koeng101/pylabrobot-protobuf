@@ -10,14 +10,14 @@ from ._generated import star_service_pb2 as pb2
 from .helpers import coordinate_from_proto, coordinate_to_proto
 
 if TYPE_CHECKING:
-  from ._generated.star_service_connect import STARServiceClientSync
+  from ._generated.star_service_connect import STARServiceClient
 
 
 class Head96ClientMixin:
-  _client: STARServiceClientSync
+  _client: STARServiceClient
   """Client stubs for 96-head operations.
 
-  ``self._client`` is a :class:`STARServiceClientSync` instance.
+  ``self._client`` is a :class:`STARServiceClient` instance.
   """
 
   # -- initialization --
@@ -27,7 +27,7 @@ class Head96ClientMixin:
     trash96_name: str,
     z_position_at_the_command_end: float = 245.0,
   ) -> None:
-    self._client.initialize_core96_head(
+    await self._client.initialize_core96_head(
       pb2.InitializeCore96HeadRequest(
         trash96_name=trash96_name,
         z_position_at_the_command_end=z_position_at_the_command_end,
@@ -35,17 +35,17 @@ class Head96ClientMixin:
     )
 
   async def request_core_96_head_initialization_status(self) -> bool:
-    resp = self._client.request_core96_head_initialization_status(
+    resp = await self._client.request_core96_head_initialization_status(
       pb2.RequestCore96HeadInitializationStatusRequest()
     )
     return resp.initialized
 
   async def head96_request_firmware_version(self) -> str:
-    resp = self._client.head96_request_firmware_version(pb2.Head96RequestFirmwareVersionRequest())
+    resp = await self._client.head96_request_firmware_version(pb2.Head96RequestFirmwareVersionRequest())
     return resp.date
 
   async def head96_request_type(self) -> int:
-    resp = self._client.head96_request_type(pb2.Head96RequestTypeRequest())
+    resp = await self._client.head96_request_type(pb2.Head96RequestTypeRequest())
     return resp.head_type
 
   async def head96_dispensing_drive_and_squeezer_driver_initialize(
@@ -55,7 +55,7 @@ class Head96ClientMixin:
     squeezer_current_limit: int = 15,
     dispensing_drive_current_limit: int = 7,
   ) -> None:
-    self._client.head96_dispensing_drive_and_squeezer_driver_initialize(
+    await self._client.head96_dispensing_drive_and_squeezer_driver_initialize(
       pb2.Head96DispensingDriveAndSqueezerDriverInitializeRequest(
         squeezer_speed=squeezer_speed,
         squeezer_acceleration=squeezer_acceleration,
@@ -67,18 +67,18 @@ class Head96ClientMixin:
   # -- safe position / parking --
 
   async def move_core_96_to_safe_position(self) -> None:
-    self._client.move_core96_to_safe_position(pb2.MoveCore96ToSafePositionRequest())
+    await self._client.move_core96_to_safe_position(pb2.MoveCore96ToSafePositionRequest())
 
   async def head96_move_to_z_safety(self) -> None:
-    self._client.head96_move_to_z_safety(pb2.Head96MoveToZSafetyRequest())
+    await self._client.head96_move_to_z_safety(pb2.Head96MoveToZSafetyRequest())
 
   async def head96_park(self) -> None:
-    self._client.head96_park(pb2.Head96ParkRequest())
+    await self._client.head96_park(pb2.Head96ParkRequest())
 
   # -- axis moves --
 
   async def head96_move_x(self, x: float) -> None:
-    self._client.head96_move_x(pb2.Head96MoveXRequest(x=x))
+    await self._client.head96_move_x(pb2.Head96MoveXRequest(x=x))
 
   async def head96_move_y(
     self,
@@ -86,7 +86,7 @@ class Head96ClientMixin:
     move_up_before: bool = False,
     move_down_after: bool = False,
   ) -> None:
-    self._client.head96_move_y(
+    await self._client.head96_move_y(
       pb2.Head96MoveYRequest(
         y=y,
         move_up_before=move_up_before,
@@ -95,7 +95,7 @@ class Head96ClientMixin:
     )
 
   async def head96_move_z(self, z: float) -> None:
-    self._client.head96_move_z(pb2.Head96MoveZRequest(z=z))
+    await self._client.head96_move_z(pb2.Head96MoveZRequest(z=z))
 
   async def move_core_96_head_to_defined_position(
     self,
@@ -103,19 +103,19 @@ class Head96ClientMixin:
     y: float,
     z: float = 342.5,
   ) -> None:
-    self._client.move_core96_head_to_defined_position(
+    await self._client.move_core96_head_to_defined_position(
       pb2.MoveCore96HeadToDefinedPositionRequest(x=x, y=y, z=z)
     )
 
   async def head96_move_to_coordinate(self, coordinate: Coordinate) -> None:
-    self._client.head96_move_to_coordinate(
+    await self._client.head96_move_to_coordinate(
       pb2.Head96MoveToCoordinateRequest(coordinate=coordinate_to_proto(coordinate))
     )
 
   # -- dispensing drive --
 
   async def head96_dispensing_drive_move_to_home_volume(self) -> None:
-    self._client.head96_dispensing_drive_move_to_home_volume(
+    await self._client.head96_dispensing_drive_move_to_home_volume(
       pb2.Head96DispensingDriveMoveToHomeVolumeRequest()
     )
 
@@ -125,7 +125,7 @@ class Head96ClientMixin:
     speed: float = 261.1,
     current_protection_limiter: int = 15,
   ) -> None:
-    self._client.head96_dispensing_drive_move_to_position(
+    await self._client.head96_dispensing_drive_move_to_position(
       pb2.Head96DispensingDriveMoveToPositionRequest(
         position=position,
         flow_rate=speed,
@@ -134,13 +134,13 @@ class Head96ClientMixin:
     )
 
   async def head96_dispensing_drive_request_position_mm(self) -> float:
-    resp = self._client.head96_dispensing_drive_request_position_mm(
+    resp = await self._client.head96_dispensing_drive_request_position_mm(
       pb2.Head96DispensingDriveRequestPositionMmRequest()
     )
     return resp.position
 
   async def head96_dispensing_drive_request_position_uL(self) -> float:
-    resp = self._client.head96_dispensing_drive_request_position_ul(
+    resp = await self._client.head96_dispensing_drive_request_position_ul(
       pb2.Head96DispensingDriveRequestPositionUlRequest()
     )
     return resp.position
@@ -148,11 +148,11 @@ class Head96ClientMixin:
   # -- queries --
 
   async def head96_request_tip_presence(self) -> int:
-    resp = self._client.head96_request_tip_presence(pb2.Head96RequestTipPresenceRequest())
+    resp = await self._client.head96_request_tip_presence(pb2.Head96RequestTipPresenceRequest())
     return resp.tip_presence
 
   async def head96_request_position(self) -> Coordinate:
-    resp = self._client.head96_request_position(pb2.Head96RequestPositionRequest())
+    resp = await self._client.head96_request_position(pb2.Head96RequestPositionRequest())
     return coordinate_from_proto(resp.position)
 
   # -- low-level tip operations --
@@ -168,7 +168,7 @@ class Head96ClientMixin:
     minimum_traverse_height_at_beginning_of_a_command: int = 3425,
     minimum_height_command_end: int = 3425,
   ) -> None:
-    self._client.pick_up_tips_core96(
+    await self._client.pick_up_tips_core96(
       pb2.PickUpTipsCore96Request(
         x_position=x_position,
         x_direction=x_direction,
@@ -190,7 +190,7 @@ class Head96ClientMixin:
     minimum_traverse_height_at_beginning_of_a_command: int = 3425,
     minimum_height_command_end: int = 3425,
   ) -> None:
-    self._client.discard_tips_core96(
+    await self._client.discard_tips_core96(
       pb2.DiscardTipsCore96Request(
         x_position=x_position,
         x_direction=x_direction,
@@ -239,7 +239,7 @@ class Head96ClientMixin:
     tadm_algorithm: bool = False,
     recording_mode: int = 0,
   ) -> None:
-    self._client.aspirate_core96(
+    await self._client.aspirate_core96(
       pb2.AspirateCore96Request(
         aspiration_type=aspiration_type,
         x_position=x_position,
@@ -314,7 +314,7 @@ class Head96ClientMixin:
     tadm_algorithm: bool = False,
     recording_mode: int = 0,
   ) -> None:
-    self._client.dispense_core96(
+    await self._client.dispense_core96(
       pb2.DispenseCore96Request(
         dispensing_mode=dispensing_mode,
         x_position=x_position,

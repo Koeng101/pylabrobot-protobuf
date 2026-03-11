@@ -10,14 +10,14 @@ from ._generated import star_service_pb2 as pb2
 from .helpers import coordinate_to_proto
 
 if TYPE_CHECKING:
-  from ._generated.star_service_connect import STARServiceClientSync
+  from ._generated.star_service_connect import STARServiceClient
 
 
 class CoreGripperClientMixin:
-  _client: STARServiceClientSync
+  _client: STARServiceClient
   """Client stubs for core gripper operations.
 
-  ``self._client`` is a :class:`STARServiceClientSync` instance.
+  ``self._client`` is a :class:`STARServiceClient` instance.
   """
 
   # -- tool management --
@@ -33,7 +33,7 @@ class CoreGripperClientMixin:
       kwargs["front_offset"] = coordinate_to_proto(front_offset)
     if back_offset is not None:
       kwargs["back_offset"] = coordinate_to_proto(back_offset)
-    self._client.pick_up_core_gripper_tools(pb2.PickUpCoreGripperToolsRequest(**kwargs))
+    await self._client.pick_up_core_gripper_tools(pb2.PickUpCoreGripperToolsRequest(**kwargs))
 
   async def return_core_gripper_tools(
     self,
@@ -45,10 +45,10 @@ class CoreGripperClientMixin:
       kwargs["front_offset"] = coordinate_to_proto(front_offset)
     if back_offset is not None:
       kwargs["back_offset"] = coordinate_to_proto(back_offset)
-    self._client.return_core_gripper_tools(pb2.ReturnCoreGripperToolsRequest(**kwargs))
+    await self._client.return_core_gripper_tools(pb2.ReturnCoreGripperToolsRequest(**kwargs))
 
   async def core_open_gripper(self) -> None:
-    self._client.core_open_gripper(pb2.CoreOpenGripperRequest())
+    await self._client.core_open_gripper(pb2.CoreOpenGripperRequest())
 
   # -- low-level plate commands --
 
@@ -66,7 +66,7 @@ class CoreGripperClientMixin:
     minimum_traverse_height_at_beginning_of_a_command: int = 2750,
     minimum_z_position_at_the_command_end: int = 2750,
   ) -> None:
-    self._client.core_get_plate(
+    await self._client.core_get_plate(
       pb2.CoreGetPlateRequest(
         x_position=x_position,
         x_direction=x_direction,
@@ -95,7 +95,7 @@ class CoreGripperClientMixin:
     z_position_at_the_command_end: int = 2750,
     return_tool: bool = True,
   ) -> None:
-    self._client.core_put_plate(
+    await self._client.core_put_plate(
       pb2.CorePutPlateRequest(
         x_position=x_position,
         x_direction=x_direction,
@@ -120,7 +120,7 @@ class CoreGripperClientMixin:
     z_speed: int = 500,
     minimum_traverse_height_at_beginning_of_a_command: int = 3600,
   ) -> None:
-    self._client.core_move_plate_to_position(
+    await self._client.core_move_plate_to_position(
       pb2.CoreMovePlateToPositionRequest(
         x_position=x_position,
         x_direction=x_direction,
@@ -161,7 +161,7 @@ class CoreGripperClientMixin:
       )
     if minimum_z_position_at_the_command_end is not None:
       kwargs["minimum_z_position_at_the_command_end"] = minimum_z_position_at_the_command_end
-    self._client.core_pick_up_resource(pb2.CorePickUpResourceRequest(**kwargs))
+    await self._client.core_pick_up_resource(pb2.CorePickUpResourceRequest(**kwargs))
 
   async def core_move_picked_up_resource(
     self,
@@ -179,7 +179,7 @@ class CoreGripperClientMixin:
       kwargs["minimum_traverse_height_at_beginning_of_a_command"] = (
         minimum_traverse_height_at_beginning_of_a_command
       )
-    self._client.core_move_picked_up_resource(pb2.CoreMovePickedUpResourceRequest(**kwargs))
+    await self._client.core_move_picked_up_resource(pb2.CoreMovePickedUpResourceRequest(**kwargs))
 
   async def core_release_picked_up_resource(
     self,
@@ -202,7 +202,7 @@ class CoreGripperClientMixin:
       )
     if z_position_at_the_command_end is not None:
       kwargs["z_position_at_the_command_end"] = z_position_at_the_command_end
-    self._client.core_release_picked_up_resource(pb2.CoreReleasePickedUpResourceRequest(**kwargs))
+    await self._client.core_release_picked_up_resource(pb2.CoreReleasePickedUpResourceRequest(**kwargs))
 
   async def core_check_resource_exists_at_location_center(
     self,
@@ -215,7 +215,7 @@ class CoreGripperClientMixin:
     enable_recovery: bool = True,
     audio_feedback: bool = True,
   ) -> bool:
-    resp = self._client.core_check_resource_exists_at_location_center(
+    resp = await self._client.core_check_resource_exists_at_location_center(
       pb2.CoreCheckResourceExistsAtLocationCenterRequest(
         location=coordinate_to_proto(location),
         resource_name=resource.name,
@@ -232,10 +232,10 @@ class CoreGripperClientMixin:
   # -- deprecated wrappers --
 
   async def get_core(self, p1: int, p2: int) -> None:
-    self._client.get_core(pb2.GetCoreRequest(p1=p1, p2=p2))
+    await self._client.get_core(pb2.GetCoreRequest(p1=p1, p2=p2))
 
   async def put_core(self) -> None:
-    self._client.put_core(pb2.PutCoreRequest())
+    await self._client.put_core(pb2.PutCoreRequest())
 
   # -- barcode reading --
 
@@ -259,6 +259,6 @@ class CoreGripperClientMixin:
     )
     if labware_description is not None:
       kwargs["labware_description"] = labware_description
-    self._client.core_read_barcode_of_picked_up_resource(
+    await self._client.core_read_barcode_of_picked_up_resource(
       pb2.CoreReadBarcodeOfPickedUpResourceRequest(**kwargs)
     )

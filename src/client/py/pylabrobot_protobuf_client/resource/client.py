@@ -7,6 +7,7 @@ from pylabrobot.resources.deck import Deck
 from pylabrobot.resources.resource import Resource
 
 from ._generated import resource_service_pb2 as pb2
+from ._generated import types_pb2
 from ._generated.resource_service_connect import ResourceServiceClientSync
 from .proxies import _SpatialMixin, create_proxy
 
@@ -78,7 +79,7 @@ class RemoteResource(_SpatialMixin, Deck):
         pb2.AssignChildRequest(
           child_name=resource.name,
           parent_name=self.name,
-          location=pb2.Coordinate(x=location.x, y=location.y, z=location.z),
+          location=types_pb2.Coordinate(x=location.x, y=location.y, z=location.z),
         )
       )
 
